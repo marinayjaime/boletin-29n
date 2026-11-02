@@ -10,7 +10,7 @@ import { PartyAvatar, TopicIcon } from "./ui";
 import { Sheet } from "./sheet";
 import { ProposalDetail } from "./proposal-detail";
 
-const KIND_STYLE: Record<Commonality["kind"], string> = { equivalente: "var(--ink)", objetivo: "var(--c5)", parcial: "var(--c3)" };
+const KIND_STYLE: Record<Commonality["kind"], string> = { equivalente: "var(--ink)", objetivo: "#0e7490", parcial: "#b45309" };
 
 export function CommonGround({ groups, parties, proposals, topics, sources }: { groups: Commonality[]; parties: Party[]; proposals: Proposal[]; topics: PolicyTopic[]; sources: SourceDocument[] }) {
   const [selected, setSelected] = useState(parties.map((p) => p.id));

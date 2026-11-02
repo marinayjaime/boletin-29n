@@ -49,8 +49,8 @@ export default function Page() {
       <div className="prose-civic mt-6 text-ink-2">
         <H id="principios">Principios</H>
         <p>
-          <strong className="text-ink">Informar, no recomendar.</strong> La plataforma no indica qué votar, no ordena partidos por calidad y no calcula
-          afinidades globales. Todas las candidaturas reciben la misma estructura, el mismo espacio y el mismo estilo visual; el orden inicial es alfabético.
+          <strong className="text-ink">Informar, no recomendar.</strong> La plataforma no indica qué votar, no ordena partidos por calidad. El test a ciegas
+          muestra el partido con mayor coincidencia en las preguntas respondidas (coincidencias ÷ respuestas comparables, mínimo 4), con el cálculo a la vista. Todas las candidaturas reciben la misma estructura, el mismo espacio y el mismo estilo visual; el orden inicial es alfabético.
         </p>
         <p>
           <strong className="text-ink">Toda afirmación política tiene fuente.</strong> Cada propuesta enlaza a su documento, con la página del PDF y una cita

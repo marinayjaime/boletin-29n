@@ -218,7 +218,7 @@ export function VotesList({ topics }: { topics: Topic[] }) {
                               return (
                                 <span key={g[0]} className="inline-flex items-center gap-1.5 rounded-full py-0.5 pl-0.5 pr-2 text-xs font-extrabold" style={{ background: "var(--surface-2)" }}>
                                   <span className="h-5 w-5 rounded-full" style={{ background: GROUP_COLORS[g[0]] }} aria-hidden />
-                                  {GROUP_SHORT[g[0]]} <span style={{ color: m === "S" ? "var(--yes)" : m === "N" ? "var(--no)" : "var(--ink-3)" }}>{m === "S" ? "Sí" : m === "N" ? "No" : "Abst."}</span>
+                                  {GROUP_SHORT[g[0]]} <span style={{ color: m === "S" ? "var(--yes-ink)" : m === "N" ? "var(--no-ink)" : "var(--ink-3)" }}>{m === "S" ? "Sí" : m === "N" ? "No" : "Abst."}</span>
                                 </span>
                               );
                             })}
@@ -226,7 +226,7 @@ export function VotesList({ topics }: { topics: Topic[] }) {
                         )}
                       </div>
                       <div className="flex flex-col justify-center">
-                        <p className="text-sm font-extrabold" style={{ color: v[3] === "aprobada" || v[3] === "asentimiento" ? "var(--yes)" : v[3] === "rechazada" ? "var(--no)" : "var(--ink-2)" }}>
+                        <p className="text-sm font-extrabold" style={{ color: v[3] === "aprobada" || v[3] === "asentimiento" ? "var(--yes-ink)" : v[3] === "rechazada" ? "var(--no-ink)" : "var(--ink-2)" }}>
                           {RESULT_LABEL[v[3]]}
                         </p>
                         <div className="mt-1.5 flex h-3 overflow-hidden rounded-full bg-surface-2" aria-hidden>

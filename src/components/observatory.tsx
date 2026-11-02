@@ -361,10 +361,10 @@ export function Observatory({ indicators, events, pending, kpis }: { indicators:
                 <span className="text-sm font-extrabold leading-tight">{i.short}</span>
                 <span className="mt-2 flex items-baseline gap-1">
                   <span className="num text-[2rem]">{k ? formatNumber(k.value, i.decimals) : "—"}</span>
-                  <span className={`text-xs font-extrabold ${on ? "opacity-70" : "text-ink-3"}`}>{i.unitShort}</span>
+                  <span className={`text-xs font-extrabold ${on ? "" : "text-ink-3"}`}>{i.unitShort}</span>
                 </span>
                 <span className="mt-2 h-8 w-full">{k && <MiniSpark values={k.spark} color={on ? "var(--brand)" : "var(--ink-3)"} />}</span>
-                <span className={`mt-1 text-xs font-bold ${on ? "opacity-70" : "text-ink-3"}`}>{k ? formatPeriod(k.period) : ""}</span>
+                <span className={`mt-1 text-xs font-bold ${on ? "" : "text-ink-3"}`}>{k ? formatPeriod(k.period) : ""}</span>
               </button>
             </li>
           );

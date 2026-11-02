@@ -53,10 +53,10 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
       <header style={{ background: v.primary, color: v.on }}>
         <div className="mx-auto grid max-w-[1320px] items-end gap-8 px-4 pb-14 pt-8 md:grid-cols-[1fr_auto] md:px-8 md:pt-12">
           <div>
-            <Link href="/partidos" className="text-sm font-bold opacity-80 hover:opacity-100">
+            <Link href="/partidos" className="text-sm font-bold hover:opacity-100">
               ← Partidos
             </Link>
-            <p className="mt-6 text-sm font-extrabold uppercase tracking-wider opacity-80">{p.kind === "coalicion" ? "Coalición electoral" : "Partido político"}</p>
+            <p className="mt-6 text-sm font-extrabold uppercase tracking-wider">{p.kind === "coalicion" ? "Coalición electoral" : "Partido político"}</p>
             <h1 className="display mt-2 text-[3.4rem] md:text-[6rem]">{p.shortName}</h1>
             <p className="mt-2 text-lg font-bold opacity-90">{p.officialName}</p>
             <div className="mt-6 flex flex-wrap gap-2">
@@ -78,7 +78,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
             <div>
               <p className="text-xl font-extrabold">{p.representative.name}</p>
               {p.representative.roles.map((r) => (
-                <p key={r.label} className="text-sm font-bold opacity-85">
+                <p key={r.label} className="text-sm font-bold">
                   {r.label}
                 </p>
               ))}

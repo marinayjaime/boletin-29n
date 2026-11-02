@@ -72,7 +72,9 @@ export function validateAll() {
       if (!s.partyId || !pr.partyIds.includes(s.partyId)) errors.push(`promesa ${pr.id}: ATRIBUCIÓN — la fuente es de ${s.partyId}`);
       if (!quoteInPage(pr.citation.quote, corpus.get(s.id)?.[String(pr.citation.pdfPage)])) errors.push(`promesa ${pr.id}: la cita no aparece en la página indicada`);
     }
-    if (pr.assessment.status !== "no_verificable" && pr.assessment.officialActions.length === 0 && !(pr.series === "psoe-2023-legislativas" && pr.assessment.status === "no_cumplido")) errors.push(`promesa ${pr.id}: un estado concluyente exige acciones oficiales documentadas`);
+    // Regla editorial: solo un compromiso que exige una ley puede declararse incumplido por ausencia de norma.
+    if (pr.nature !== "legislativa" && pr.assessment.status === "no_cumplido" && pr.assessment.officialActions.length === 0) errors.push(`promesa ${pr.id}: una medida ejecutiva o de resultado no puede ser «no cumplida» solo por no encontrar una ley`);
+    if (pr.assessment.status !== "no_verificable" && pr.assessment.officialActions.length === 0 && !(pr.nature === "legislativa" && pr.assessment.status === "no_cumplido" && pr.series?.startsWith("psoe-2023"))) errors.push(`promesa ${pr.id}: un estado concluyente exige acciones oficiales documentadas`);
   }
 
   for (const i of getIndicators()) {
@@ -103,7 +105,7 @@ export function validateAll() {
     const vals = Object.values(p.seats);
     if (p.type === "puntual") {
       const sum = vals.reduce<number>((a, v) => a + (typeof v === "number" ? v : 0), 0);
-      if (sum !== 350) errors.push(`encuesta ${p.id}: suma ${sum} escaños, no 350`);
+      if (sum + (p.unpublishedSeats ?? 0) !== 350) errors.push(`encuesta ${p.id}: ${sum} escaños publicados + ${p.unpublishedSeats ?? 0} no detallados ≠ 350`);
     } else if (vals.some((v) => typeof v === "object" && v.min > v.max)) errors.push(`encuesta ${p.id}: horquilla inválida`);
     if (!/^https?:\/\//.test(p.url)) errors.push(`encuesta ${p.id}: falta URL de la fuente`);
   }

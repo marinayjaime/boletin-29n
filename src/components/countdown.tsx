@@ -28,11 +28,11 @@ export function Countdown({ date, compact = false }: { date: string; compact?: b
     <div className="flex items-end gap-3">
       <div>
         <p className="num text-6xl md:text-7xl">{days}</p>
-        <p className="text-sm font-bold opacity-70">días</p>
+        <p className="text-sm font-bold">días</p>
       </div>
       <div>
         <p className="num text-4xl md:text-5xl">{hours}</p>
-        <p className="text-sm font-bold opacity-70">horas</p>
+        <p className="text-sm font-bold">horas</p>
       </div>
     </div>
   );

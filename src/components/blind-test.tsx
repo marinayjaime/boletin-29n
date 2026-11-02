@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { ArrowLeft, ArrowRight, Check, HelpCircle, RotateCcw, SkipForward, Trash2 } from "lucide-react";
 import type { Party, PolicyTopic, Proposal, QuizStatement, SourceDocument } from "@/lib/schema";
-import { ANSWERS, MIN_COMPARABLE, RELATION_LABELS, clearAnswers, loadAnswers, relation, saveAnswers, topicCoincidence, type AnswerId, type Answers, type Relation } from "@/lib/quiz";
+import { ANSWERS, MIN_OVERALL, RELATION_LABELS, clearAnswers, loadAnswers, relation, saveAnswers, topMatch, type AnswerId, type Answers, type Relation } from "@/lib/quiz";
 import { STANCE_LABELS } from "@/lib/labels";
 import { partyVars } from "@/lib/party-theme";
 import { Disclosure, PartyAvatar, TopicIcon } from "./ui";
@@ -125,11 +125,11 @@ export function BlindTest({ statements, parties, topics, proposals, sources }: {
         <div className="space-y-3">
           <div className="rounded-[24px] bg-ink p-6 text-bg">
             <p className="display text-3xl">Sin etiquetas.</p>
-            <p className="mt-2 font-semibold opacity-80">No verás qué partido defiende cada idea hasta el final. Después comparas, tema a tema, con lo que dejaron escrito.</p>
+            <p className="mt-2 font-semibold opacity-80">No verás qué partido defiende cada idea hasta el final. Al final verás con qué partido coincides más.</p>
           </div>
           <Disclosure summary="Privacidad">Las respuestas se guardan solo en esta pestaña del navegador (sessionStorage) y se borran al cerrarla. No se envían a ningún servidor.</Disclosure>
           <Disclosure summary="¿Cómo se construyen las posturas?">Cada postura enlaza a una propuesta citada literalmente. «Sin posición documentada» no significa oposición. Los programas 2026 no están publicados: se usan documentos anteriores.</Disclosure>
-          <Disclosure summary="¿Me dirá a quién votar?">No. Solo describe coincidencias pregunta a pregunta y tema a tema. No hay ranking ni puntuación global.</Disclosure>
+          <Disclosure summary="¿Me dirá a quién votar?">No. Muestra el partido cuyas posturas documentadas coinciden más con tus respuestas, con el cálculo a la vista. Coincidir en estas preguntas no es una recomendación de voto.</Disclosure>
         </div>
       </div>
     );
@@ -247,7 +247,7 @@ export function BlindTest({ statements, parties, topics, proposals, sources }: {
         </ol>
         <div className="sticky bottom-[calc(80px_+_env(safe-area-inset-bottom))] z-20 -mx-4 mt-8 flex flex-wrap gap-3 bg-bg/90 px-4 py-3 backdrop-blur-xl lg:bottom-0">
           <button onClick={() => setStage("resultados")} className="btn btn-brand text-lg">
-            Ver las posturas documentadas <ArrowRight size={18} aria-hidden />
+            Ver mi resultado <ArrowRight size={18} aria-hidden />
           </button>
           <button onClick={reset} className="btn btn-ghost">
             <RotateCcw size={16} aria-hidden /> Borrar y empezar de nuevo
@@ -257,10 +257,12 @@ export function BlindTest({ statements, parties, topics, proposals, sources }: {
     );
 
   const resultTopics = [...new Set(list.map((s) => s.topicId))];
+  const { top } = topMatch(list, answers, parties.map((p) => p.id));
+  const answeredDirectional = list.filter((s) => ["muy_acuerdo", "acuerdo", "desacuerdo", "muy_desacuerdo"].includes(answers[s.id] ?? "")).length;
   return (
     <div>
       <div className="flex flex-wrap items-end justify-between gap-4">
-        <h2 className="display text-4xl md:text-6xl">Lo que dejaron escrito</h2>
+        <h2 className="display text-4xl md:text-6xl">Tu resultado</h2>
         <div className="flex flex-wrap gap-2">
           <button onClick={() => setStage("revision")} className="btn btn-ghost">
             Cambiar respuestas
@@ -270,57 +272,63 @@ export function BlindTest({ statements, parties, topics, proposals, sources }: {
           </button>
         </div>
       </div>
+
+      {top.length === 0 ? (
+        <section className="card mt-6 p-8 text-center" aria-live="polite">
+          <p className="display text-3xl">Aún no hay suficientes respuestas</p>
+          <p className="mx-auto mt-3 max-w-xl font-semibold text-ink-2">
+            Para calcular un porcentaje hacen falta al menos {MIN_OVERALL} respuestas «de acuerdo» o «en desacuerdo» en preguntas donde el partido tiene una postura documentada. Ahora tienes {answeredDirectional}.
+          </p>
+          <button onClick={() => setStage("revision")} className="btn btn-brand mx-auto mt-6">
+            Responder más preguntas <ArrowRight size={18} aria-hidden />
+          </button>
+        </section>
+      ) : (
+        <section className={`mt-6 grid gap-4 ${top.length > 1 ? "md:grid-cols-2" : ""}`} aria-live="polite" aria-label="Partido con mayor coincidencia">
+          {top.map((c) => {
+            const p = pmap[c.partyId];
+            const v = partyVars(c.partyId);
+            return (
+              <motion.div key={c.partyId} initial={{ opacity: 0, y: 16, scale: 0.98 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ duration: 0.5 }} className="relative overflow-hidden rounded-[32px] p-6 md:p-10" style={{ background: v.primary, color: v.on }}>
+                <p className="text-sm font-extrabold uppercase tracking-wide">{top.length > 1 ? `Empate · ${top.length} partidos con el mismo porcentaje` : "Partido con el que más coincides"}</p>
+                <div className="mt-5 flex flex-wrap items-center gap-5">
+                  <span className="rounded-full bg-white/90 p-1">
+                    <PartyAvatar party={p} size={top.length > 1 ? 88 : 120} ring={0} label={false} />
+                  </span>
+                  <div className="min-w-0">
+                    <p className="display text-4xl md:text-6xl">{p.shortName}</p>
+                    <p className="mt-1 text-sm font-bold">{p.officialName}</p>
+                  </div>
+                </div>
+                <p className="num mt-6 text-7xl md:text-9xl">{c.pct} %</p>
+                <div className="mt-3 h-3 overflow-hidden rounded-full bg-black/20" role="img" aria-label={`${c.coincide} de ${c.comparable} respuestas comparables coinciden`}>
+                  <motion.div className="h-full rounded-full" style={{ background: v.on }} initial={{ width: 0 }} animate={{ width: `${c.pct}%` }} transition={{ duration: 1, delay: 0.3 }} />
+                </div>
+                <p className="mt-3 font-bold">
+                  Coincides en {c.coincide} de {c.comparable} respuestas comparables.
+                </p>
+              </motion.div>
+            );
+          })}
+        </section>
+      )}
+
       <div className="mt-4 grid gap-2 md:grid-cols-2">
-        <Disclosure summary="¿Cómo se calcula el porcentaje?">
-          Por tema y partido: <strong>respuestas que coinciden ÷ respuestas comparables</strong>. Son comparables las preguntas en las que dijiste estar de acuerdo o en desacuerdo y el partido tiene una postura documentada a favor o en contra. No cuentan las posturas matizadas o sin datos, ni tus respuestas «indiferente», «sin información» o saltadas. Solo se muestra con {MIN_COMPARABLE} o más respuestas comparables.
+        <Disclosure summary="¿Cómo se calcula?">
+          Para cada partido: <strong>respuestas que coinciden ÷ respuestas comparables</strong>, sumando todas las preguntas que has contestado. Una respuesta es comparable si dijiste estar de acuerdo o en desacuerdo y el partido tiene una postura documentada a favor o en contra. No cuentan las posturas matizadas o sin datos, ni las respuestas «indiferente», «sin información» o saltadas. Se muestra el partido con la proporción más alta (con al menos {MIN_OVERALL} comparables); si dos o más empatan exactamente, se muestran todos.
         </Disclosure>
-        <Disclosure summary="Lo que este resultado no es">No mide compatibilidad política general ni indica a quién votar. Coincidir en unas preguntas no implica coincidir en el resto de un programa. No se suman temas ni se ordenan partidos.</Disclosure>
+        <Disclosure summary="Lo que este resultado no es">Es una coincidencia con posturas documentadas en {list.length} preguntas, no una recomendación de voto. Coincidir en estas preguntas no implica coincidir en el resto del programa.</Disclosure>
       </div>
 
-      {resultTopics.map((tid) => {
-        const sts = list.filter((s) => s.topicId === tid);
-        return (
-          <section key={tid} className="card mt-6 overflow-hidden" aria-labelledby={`t-${tid}`}>
-            <div className="flex items-center gap-3 border-b border-line p-5">
-              <span className="grid h-11 w-11 place-items-center rounded-xl bg-ink text-brand">
-                <TopicIcon id={tid} size={22} />
-              </span>
-              <h3 id={`t-${tid}`} className="display text-3xl">
-                {tmap[tid]?.name}
+      <Disclosure summary="Ver tus respuestas frente a las de cada partido, pregunta a pregunta" className="mt-4">
+        {resultTopics.map((tid) => {
+          const sts = list.filter((s) => s.topicId === tid);
+          return (
+            <section key={tid} className="mt-4" aria-labelledby={`t-${tid}`}>
+              <h3 id={`t-${tid}`} className="mb-2 flex items-center gap-2 font-extrabold text-ink">
+                <TopicIcon id={tid} size={18} /> {tmap[tid]?.name}
               </h3>
-            </div>
-            <ul className="grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-5">
-              {parties.map((p) => {
-                const c = topicCoincidence(statements, answers, tid, p.id);
-                const v = partyVars(p.id);
-                return (
-                  <li key={p.id} className="rounded-2xl p-3" style={{ background: v.soft }}>
-                    <p className="flex items-center gap-2 font-extrabold" style={{ color: v.strong }}>
-                      <PartyAvatar party={p} size={28} ring={2} label={false} /> {p.shortName}
-                    </p>
-                    {c.pct !== null ? (
-                      <>
-                        <p className="num mt-2 text-4xl" style={{ color: v.strong }}>
-                          {c.pct} %
-                        </p>
-                        <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-surface" role="img" aria-label={`${c.coincide} de ${c.comparable} respuestas comparables coinciden`}>
-                          <motion.div className="h-full rounded-full" style={{ background: v.primary }} initial={{ width: 0 }} whileInView={{ width: `${c.pct}%` }} viewport={{ once: true }} transition={{ duration: 0.8 }} />
-                        </div>
-                        <p className="mt-1.5 text-xs font-bold text-ink-2">
-                          {c.coincide} de {c.comparable} comparables coinciden
-                        </p>
-                      </>
-                    ) : (
-                      <p className="mt-2 text-sm font-bold text-ink-3">
-                        {c.comparable === 0 ? "Sin respuestas comparables" : `Solo ${c.comparable} comparable: insuficiente`}
-                        {c.sinDatos > 0 ? ` · ${c.sinDatos} sin datos` : ""}
-                      </p>
-                    )}
-                  </li>
-                );
-              })}
-            </ul>
-            <div className="overflow-x-auto px-5 pb-5">
+            <div className="overflow-x-auto">
               <table className="w-full min-w-[640px] table-fixed border-separate border-spacing-y-1.5 text-sm">
                 <caption className="sr-only">Comparación pregunta a pregunta en {tmap[tid]?.name}</caption>
                 <thead>
@@ -368,11 +376,10 @@ export function BlindTest({ statements, parties, topics, proposals, sources }: {
                 </tbody>
               </table>
             </div>
-          </section>
-        );
-      })}
-
-      <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm font-bold" aria-label="Leyenda">
+            </section>
+          );
+        })}
+        <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm font-bold" aria-label="Leyenda">
         {(["coincide", "difiere", "matizada", "sin_datos", "no_comparable"] as Relation[]).map((r) => (
           <li key={r} className="flex items-center gap-1.5">
             <span className="grid h-5 w-5 place-items-center rounded-full text-[0.7rem] text-white" style={{ background: REL[r].color }} aria-hidden>
@@ -382,6 +389,7 @@ export function BlindTest({ statements, parties, topics, proposals, sources }: {
           </li>
         ))}
       </ul>
+      </Disclosure>
 
       <Sheet open={!!detail} onClose={() => setDetail(null)} title="Fuente de la postura" accent={detail ? partyVars(detail.partyId).primary : undefined}>
         {detail &&

@@ -4,7 +4,7 @@ import { alphabetical } from "@/lib/compare";
 import { PageHero } from "@/components/ui";
 import { BlindTest } from "@/components/blind-test";
 
-export const metadata: Metadata = { title: "Test a ciegas", description: "Responde sin saber qué partido defiende cada postura. Después, coincidencias tema a tema con sus fuentes. Sin ranking." };
+export const metadata: Metadata = { title: "Test a ciegas", description: "Responde sin saber qué partido defiende cada postura. Al final verás el partido con el que más coincides, con el cálculo y las fuentes." };
 
 export default function Page() {
   const quiz = getQuiz();

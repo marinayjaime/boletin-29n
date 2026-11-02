@@ -57,3 +57,8 @@ export function pointSeats(seats: Record<string, number | { min: number; max: nu
   }
   return out;
 }
+
+/** Encuestas aptas como escenario principal: verificadas o corregidas y con reparto completo. */
+export function isMainScenario(p: { type: string; verification: { status: string }; unpublishedSeats?: number }) {
+  return p.type === "puntual" && (p.verification.status === "verificada" || p.verification.status === "corregida") && !p.unpublishedSeats;
+}

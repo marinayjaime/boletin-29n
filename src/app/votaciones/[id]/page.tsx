@@ -68,7 +68,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
           ["No votan", v.rollCall ? "n. d." : String(v.totals.noVota)],
         ].map(([k, val]) => (
           <div key={k} className="card p-4" style={k === "Resultado" ? { background: v.result === "rechazada" ? "var(--no)" : v.result === "aprobada" || v.result === "asentimiento" ? "var(--yes)" : undefined, color: v.result === "rechazada" || v.result === "aprobada" || v.result === "asentimiento" ? "#fff" : undefined } : undefined}>
-            <p className="text-xs font-extrabold uppercase tracking-wider opacity-70">{k}</p>
+            <p className="text-xs font-extrabold uppercase tracking-wider">{k}</p>
             <p className="num mt-1 text-3xl">{val}</p>
           </div>
         ))}

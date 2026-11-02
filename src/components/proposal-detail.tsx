@@ -36,11 +36,11 @@ export function ProposalDetail({ proposal, source, party, topic, related }: { pr
   return (
     <article className="space-y-6">
       <header className="rounded-[24px] p-5" style={{ background: v.primary, color: v.on }}>
-        <p className="flex items-center gap-2 text-sm font-extrabold uppercase tracking-wide opacity-90">
+        <p className="flex items-center gap-2 text-sm font-extrabold uppercase tracking-wide">
           <TopicIcon id={topic.id} size={16} /> {topic.short} · {party.shortName}
         </p>
         <h2 className="display mt-3 text-[2rem] md:text-4xl">{proposal.summary}</h2>
-        <p className="mt-3 text-sm font-bold opacity-85">{dim?.label}</p>
+        <p className="mt-3 text-sm font-bold">{dim?.label}</p>
       </header>
 
       <div className="flex flex-wrap gap-2">

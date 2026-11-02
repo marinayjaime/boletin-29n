@@ -1,0 +1,10 @@
+{
+  "note": "Páginas que vigila scripts/check-programs.ts para detectar la publicación de los programas de 2026.",
+  "programs": [
+    { "partyId": "pp", "pages": ["https://www.pp.es/"] },
+    { "partyId": "psoe", "pages": ["https://www.psoe.es/", "https://www.psoe.es/documentos/"] },
+    { "partyId": "vox", "pages": ["https://www.voxespana.es/", "https://www.voxespana.es/programa"] },
+    { "partyId": "frente-amplio", "pages": ["https://movimientosumar.es/"] },
+    { "partyId": "podemos", "pages": ["https://podemos.info/", "https://podemos.info/programa/"] }
+  ]
+}

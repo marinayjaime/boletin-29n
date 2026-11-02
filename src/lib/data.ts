@@ -130,7 +130,13 @@ export type Poll = {
   title: string;
   url: string;
   seats: Record<string, number | { min: number; max: number }>;
+  verification: { status: "verificada" | "corregida" | "parcial" | "no_verificable"; checkedAt: string; method: string; notes: string };
+  /** Escaños que la publicación no detalla (no se estiman). */
+  unpublishedSeats?: number;
+  partisan?: string;
 };
+
+
 export const getPolls = cached(() => read("polls.json") as { aggregator: { name: string; url: string; revision: string; revisionTimestamp: string }; checkedAt: string; note: string; polls: Poll[] });
 
 export type Minister = { id: string; name: string; role: string; profileUrl: string; photo: string | null; since: string | null; sinceContext: string | null };

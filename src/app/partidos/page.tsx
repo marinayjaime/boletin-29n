@@ -24,7 +24,7 @@ export default function Page() {
                 <Link href={`/partidos/${p.id}`} className="lift flex h-full flex-col items-center rounded-[26px] p-6 text-center" style={{ background: v.primary, color: v.on }}>
                   <PartyAvatar party={p} size={120} ring={4} />
                   <p className="display mt-4 text-3xl">{p.shortName}</p>
-                  <p className="mt-1 text-sm font-bold opacity-85">{p.representative.name}</p>
+                  <p className="mt-1 text-sm font-bold">{p.representative.name}</p>
                   <p className="mt-4 text-sm font-extrabold">
                     <span className="num text-2xl">{proposals.filter((x) => x.partyId === p.id).length}</span> propuestas
                   </p>

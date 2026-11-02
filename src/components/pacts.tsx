@@ -5,20 +5,30 @@ import { AnimatePresence, motion } from "motion/react";
 import { Check, Minus, Plus, Save, Trash2, X } from "lucide-react";
 import type { Poll } from "@/lib/data";
 import { POLL_PARTY, type PollKey } from "@/lib/party-theme";
-import { ABSOLUTE_MAJORITY, TOTAL_SEATS, investiture, pointSeats, setSeats, sumSeats, type SeatMap, type Vote } from "@/lib/seats";
+import { ABSOLUTE_MAJORITY, TOTAL_SEATS, investiture, isMainScenario, pointSeats, setSeats, sumSeats, type SeatMap, type Vote } from "@/lib/seats";
+import { BadgeCheck, CircleAlert, CircleHelp, Wrench } from "lucide-react";
 import { formatDate } from "@/lib/format";
 import { SeatChart, type SeatBlock } from "./seat-chart";
 import { Disclosure } from "./ui";
 
-const ORDER: PollKey[] = ["PP", "PSOE", "VOX", "FA", "PODEMOS", "ERC", "JUNTS", "BILDU", "PNV", "BNG", "CCA", "FV", "ADELANTE", "SALF", "OTROS"];
+const ORDER: PollKey[] = ["PP", "PSOE", "VOX", "FA", "PODEMOS", "UPN", "ERC", "ERC_PODEMOS", "JUNTS", "BILDU", "PNV", "BNG", "CCA", "CANARIAS", "FV", "ADELANTE", "CHA", "MES", "SALF", "OTROS"];
+const SCENARIO_KEYS: PollKey[] = ["PP", "PSOE", "VOX", "FA", "PODEMOS", "UPN", "ERC", "ERC_PODEMOS", "JUNTS", "BILDU", "PNV", "BNG", "CCA", "FV", "ADELANTE", "OTROS"];
+const VER = {
+  verificada: { label: "Verificada", icon: BadgeCheck, color: "var(--yes-ink)" },
+  corregida: { label: "Corregida con el original", icon: Wrench, color: "#0e7490" },
+  parcial: { label: "Parcial", icon: CircleAlert, color: "var(--partial-ink)" },
+  no_verificable: { label: "No verificable", icon: CircleHelp, color: "var(--abs-ink)" },
+} as const;
 const STORE = "boletin29n.escenarios.v1";
 
 type Saved = { id: string; name: string; seats: SeatMap; votes: Record<string, Vote>; createdAt: string };
 
-function blocksFrom(m: SeatMap, highlight?: string[]): SeatBlock[] {
-  return ORDER.filter((k) => (m[k] ?? 0) > 0)
+function blocksFrom(m: SeatMap, highlight?: string[], unpublished = 0): SeatBlock[] {
+  const b: SeatBlock[] = ORDER.filter((k) => (m[k] ?? 0) > 0)
     .sort((a, b) => (m[b] ?? 0) - (m[a] ?? 0))
     .map((k) => ({ key: k, name: POLL_PARTY[k].name, color: POLL_PARTY[k].color, seats: m[k], dim: highlight && highlight.length > 0 ? !highlight.includes(k) : false }));
+  if (unpublished) b.push({ key: "ND", name: "No detallados en la fuente", color: "var(--ink-3)", seats: unpublished, outline: true });
+  return b;
 }
 
 function MajorityBar({ value, label }: { value: number; label: string }) {
@@ -36,7 +46,7 @@ function MajorityBar({ value, label }: { value: number; label: string }) {
         <motion.div className="h-full rounded-full" style={{ background: ok ? "var(--yes)" : "var(--ink)" }} animate={{ width: `${(value / TOTAL_SEATS) * 100}%` }} transition={{ type: "spring", stiffness: 120, damping: 20 }} />
         <span className="absolute inset-y-0 w-0.5 bg-brand" style={{ left: `${(ABSOLUTE_MAJORITY / TOTAL_SEATS) * 100}%` }} aria-hidden />
       </div>
-      <p className="mt-1.5 text-sm font-bold" style={{ color: ok ? "var(--yes)" : "var(--ink-2)" }}>
+      <p className="mt-1.5 text-sm font-bold" style={{ color: ok ? "var(--yes-ink)" : "var(--ink-2)" }}>
         {ok ? (value === ABSOLUTE_MAJORITY ? "Alcanza justo la mayoría absoluta" : `Supera la mayoría absoluta en ${value - ABSOLUTE_MAJORITY}`) : `Faltan ${ABSOLUTE_MAJORITY - value} para la mayoría absoluta`}
       </p>
     </div>
@@ -46,13 +56,13 @@ function MajorityBar({ value, label }: { value: number; label: string }) {
 export function Pacts({ polls, aggregator }: { polls: Poll[]; aggregator: { name: string; url: string; revisionTimestamp: string } }) {
   const [tab, setTab] = useState<"encuestas" | "escenario">("encuestas");
   const sorted = useMemo(() => [...polls].sort((a, b) => b.published.localeCompare(a.published)), [polls]);
-  const [pollId, setPollId] = useState(sorted.find((p) => p.type === "puntual")?.id ?? sorted[0].id);
+  const [pollId, setPollId] = useState(sorted.find(isMainScenario)?.id ?? sorted[0].id);
   const poll = sorted.find((p) => p.id === pollId)!;
   const point = pointSeats(poll.seats);
   const [bloc, setBloc] = useState<string[]>([]);
 
   // escenario propio
-  const [seats, setS] = useState<SeatMap>(() => Object.fromEntries(ORDER.map((k) => [k, 0])));
+  const [seats, setS] = useState<SeatMap>(() => Object.fromEntries(SCENARIO_KEYS.map((k) => [k, 0])));
   const [votes, setVotes] = useState<Record<string, Vote>>({});
   const [saved, setSaved] = useState<Saved[]>([]);
   const [name, setName] = useState("");
@@ -75,7 +85,7 @@ export function Pacts({ polls, aggregator }: { polls: Poll[]; aggregator: { name
   const loadFromPoll = (p: Poll) => {
     const m = pointSeats(p.seats);
     if (!m) return;
-    setS(Object.fromEntries(ORDER.map((k) => [k, m[k] ?? 0])));
+    setS(Object.fromEntries([...new Set([...SCENARIO_KEYS, ...(Object.keys(m) as PollKey[])])].map((k) => [k, m[k] ?? 0])));
     setTab("escenario");
   };
 
@@ -113,17 +123,33 @@ export function Pacts({ polls, aggregator }: { polls: Poll[]; aggregator: { name
                   className={`w-[210px] shrink-0 rounded-[20px] p-4 text-left transition-all ${p.id === pollId ? "bg-ink text-bg shadow-[var(--shadow-lg)]" : "bg-surface shadow-[inset_0_0_0_1.5px_var(--line)]"}`}
                 >
                   <p className="font-extrabold">{p.firm}</p>
-                  <p className="text-sm font-semibold opacity-75">{p.media}</p>
-                  <p className="mt-3 text-xs font-bold opacity-75">{formatDate(p.published)}</p>
-                  <span className={`mt-2 inline-block rounded-full px-2 py-0.5 text-xs font-extrabold ${p.type === "puntual" ? "bg-brand text-brand-ink" : "bg-surface-3 text-ink"}`}>{p.type === "puntual" ? "Escaños exactos" : "Horquilla"}</span>
+                  <p className="text-sm font-semibold">{p.media}</p>
+                  <p className="mt-3 text-xs font-bold">{formatDate(p.published)}</p>
+                  <span className="mt-2 flex flex-wrap gap-1">
+                    <span className={`rounded-full px-2 py-0.5 text-xs font-extrabold ${p.type === "puntual" ? "bg-brand text-brand-ink" : "bg-surface-3 text-ink"}`}>{p.type === "puntual" ? "Escaños exactos" : "Horquilla"}</span>
+                    {(() => {
+                      const v = VER[p.verification.status];
+                      return (
+                        <span className="inline-flex items-center gap-1 rounded-full bg-surface px-2 py-0.5 text-xs font-extrabold" style={{ color: v.color }}>
+                          <v.icon size={12} aria-hidden /> {v.label}
+                        </span>
+                      );
+                    })()}
+                  </span>
+                  {p.partisan && <span className="mt-1 block text-xs font-extrabold" style={{ color: "var(--no-ink)" }}>{p.partisan}</span>}
                 </button>
               ))}
             </div>
 
-            {point ? (
+            {poll.verification.status === "no_verificable" ? (
+              <div className="hatch mt-6 rounded-[24px] p-8 text-center shadow-[inset_0_0_0_1.5px_var(--line)]">
+                <p className="display text-3xl">Sin cifras verificables</p>
+                <p className="mx-auto mt-2 max-w-md font-semibold text-ink-2">{poll.verification.notes}</p>
+              </div>
+            ) : point ? (
               <div className="mt-6 grid items-start gap-6 lg:grid-cols-[1.35fr_1fr]">
                 <div className="card p-4 md:p-6">
-                  <SeatChart blocks={blocksFrom(point, bloc)} height={330} interactive center={<p className="num text-6xl">{bloc.length ? blocSeats : TOTAL_SEATS}</p>} caption="Escaños ordenados por tamaño, de izquierda a derecha." />
+                  <SeatChart blocks={blocksFrom(point, bloc, poll.unpublishedSeats)} height={330} interactive center={<p className="num text-6xl">{bloc.length ? blocSeats : TOTAL_SEATS}</p>} caption={poll.unpublishedSeats ? `${poll.unpublishedSeats} escaños no detallados en la publicación (contorno gris): no se estiman.` : "Escaños ordenados por tamaño, de izquierda a derecha."} />
                 </div>
                 <div className="card p-5 md:p-6">
                   <p className="eyebrow">Construye una alianza hipotética</p>
@@ -151,7 +177,7 @@ export function Pacts({ polls, aggregator }: { polls: Poll[]; aggregator: { name
                   <div className="mt-5 border-t border-line pt-5">
                     <MajorityBar value={blocSeats} label={bloc.length ? bloc.map((k) => POLL_PARTY[k as PollKey].name).join(" + ") : "Selecciona formaciones"} />
                   </div>
-                  <button type="button" onClick={() => loadFromPoll(poll)} className="btn btn-ghost mt-5 w-full">
+                  <button type="button" onClick={() => loadFromPoll(poll)} disabled={!isMainScenario(poll)} title={!isMainScenario(poll) ? "Solo encuestas verificadas y completas" : undefined} className="btn btn-ghost mt-5 w-full disabled:opacity-40">
                     Usar esta encuesta en mi escenario
                   </button>
                 </div>
@@ -189,8 +215,11 @@ export function Pacts({ polls, aggregator }: { polls: Poll[]; aggregator: { name
                 Recopilación (Wikipedia)
               </a>
             </div>
+            <p className="mt-3 rounded-2xl p-3 text-sm font-semibold" style={{ background: `color-mix(in oklab, ${VER[poll.verification.status].color} 12%, var(--surface))` }}>
+              <strong>{VER[poll.verification.status].label}:</strong> {poll.verification.notes}
+            </p>
             <div className="mt-4 grid gap-2 md:grid-cols-2">
-              <Disclosure summary="¿De dónde salen los escaños?">Son las proyecciones de escaños que publica cada encuestadora, tal cual. Esta web no convierte porcentajes en escaños ni calcula medias. Las encuestas con horquilla se muestran como rangos.</Disclosure>
+              <Disclosure summary="¿De dónde salen los escaños?">Cada encuesta se ha contrastado con su publicación original (2 de noviembre de 2026). Se muestran las cifras tal como las publica el medio: sin convertir porcentajes en escaños, sin medias y sin completar repartos parciales. Las horquillas se muestran como rangos. Solo las verificadas y completas se usan como escenario principal.</Disclosure>
               <Disclosure summary="¿Por qué aparecen otros partidos?">Las proyecciones incluyen formaciones territoriales necesarias para sumar mayorías. El comparador de propuestas sigue limitado a cinco candidaturas.</Disclosure>
             </div>
           </motion.div>
@@ -199,7 +228,7 @@ export function Pacts({ polls, aggregator }: { polls: Poll[]; aggregator: { name
             <div className="space-y-6">
               <div className="card p-4 md:p-6">
                 <SeatChart blocks={blocksFrom(seats)} height={300} interactive center={<p className="num text-6xl">{assigned}</p>} />
-                <p className="mt-2 text-center font-bold" style={{ color: free < 0 ? "var(--no)" : "var(--ink-2)" }}>
+                <p className="mt-2 text-center font-bold" style={{ color: free < 0 ? "var(--no-ink)" : "var(--ink-2)" }}>
                   {free > 0 ? `${free} escaños sin asignar` : "350 escaños asignados"}
                 </p>
               </div>
@@ -253,12 +282,12 @@ export function Pacts({ polls, aggregator }: { polls: Poll[]; aggregator: { name
               <div className="card p-5 md:p-6">
                 <div className="flex items-center justify-between">
                   <p className="eyebrow">Reparte los 350 escaños</p>
-                  <button type="button" className="text-sm font-bold underline" onClick={() => setS(Object.fromEntries(ORDER.map((k) => [k, 0])))}>
+                  <button type="button" className="text-sm font-bold underline" onClick={() => setS(Object.fromEntries(SCENARIO_KEYS.map((k) => [k, 0])))}>
                     Vaciar
                   </button>
                 </div>
                 <ul className="mt-4 space-y-3">
-                  {ORDER.map((k) => (
+                  {ORDER.filter((k) => k in seats).map((k) => (
                     <li key={k}>
                       <div className="flex items-center gap-2">
                         <span className="h-3 w-3 rounded-full" style={{ background: POLL_PARTY[k].color }} aria-hidden />

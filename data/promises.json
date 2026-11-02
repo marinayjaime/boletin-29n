@@ -262,7 +262,9 @@
       "limits": "Compromiso de ámbito europeo: queda fuera del criterio (leyes publicadas en el BOE).",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "origin": "programa",
+    "nature": "legislativa"
   },
   {
     "id": "psoe-2023-ley-reforma-omc",
@@ -289,7 +291,9 @@
       "limits": "Fuera del criterio de leyes publicadas en el BOE.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "origin": "programa",
+    "nature": "legislativa"
   },
   {
     "id": "psoe-2023-ley-economia-social",
@@ -327,7 +331,9 @@
       "limits": "Se evalúa la aprobación de la ley, no su contenido detallado ni sus efectos.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "origin": "programa",
+    "nature": "legislativa"
   },
   {
     "id": "psoe-2023-ley-sociedades-laborales",
@@ -354,7 +360,9 @@
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "origin": "programa",
+    "nature": "legislativa"
   },
   {
     "id": "psoe-2023-ley-agricultura-familiar",
@@ -381,7 +389,9 @@
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "origin": "programa",
+    "nature": "legislativa"
   },
   {
     "id": "psoe-2023-ley-zonas-renovables",
@@ -408,7 +418,9 @@
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "origin": "programa",
+    "nature": "legislativa"
   },
   {
     "id": "psoe-2023-ley-ley-aguas",
@@ -435,7 +447,9 @@
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "origin": "programa",
+    "nature": "legislativa"
   },
   {
     "id": "psoe-2023-ley-paridad",
@@ -478,7 +492,9 @@
       "limits": "Se evalúa la aprobación de la ley, no su aplicación.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "origin": "programa",
+    "nature": "legislativa"
   },
   {
     "id": "psoe-2023-ley-donantes-vivos",
@@ -516,7 +532,9 @@
       "limits": "Se evalúa la aprobación de la ley.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "origin": "programa",
+    "nature": "legislativa"
   },
   {
     "id": "psoe-2023-ley-politica-farmaceutica",
@@ -554,7 +572,9 @@
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "origin": "programa",
+    "nature": "legislativa"
   },
   {
     "id": "psoe-2023-ley-cliente-financiero",
@@ -587,7 +607,9 @@
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "origin": "programa",
+    "nature": "legislativa"
   },
   {
     "id": "psoe-2023-ley-atencion-clientela",
@@ -625,7 +647,9 @@
       "limits": "Se evalúa la aprobación de la ley.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "origin": "programa",
+    "nature": "legislativa"
   },
   {
     "id": "psoe-2023-ley-calidad-arquitectura",
@@ -652,7 +676,9 @@
       "limits": "Fuera del criterio (no exige una nueva ley).",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "origin": "programa",
+    "nature": "legislativa"
   },
   {
     "id": "psoe-2023-ley-cohesion-territorial",
@@ -679,7 +705,9 @@
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "origin": "programa",
+    "nature": "legislativa"
   },
   {
     "id": "psoe-2023-ley-funcion-publica",
@@ -712,7 +740,9 @@
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "origin": "programa",
+    "nature": "legislativa"
   },
   {
     "id": "psoe-2023-ley-lobbies",
@@ -755,7 +785,9 @@
       "limits": "El decreto-ley estuvo vigente entre agosto y septiembre de 2026.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "origin": "programa",
+    "nature": "legislativa"
   },
   {
     "id": "psoe-2023-ley-incompatibilidades",
@@ -782,7 +814,9 @@
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "origin": "programa",
+    "nature": "legislativa"
   },
   {
     "id": "psoe-2023-ley-derecho-defensa",
@@ -820,7 +854,9 @@
       "limits": "Se evalúa la aprobación de la ley.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "origin": "programa",
+    "nature": "legislativa"
   },
   {
     "id": "psoe-2023-ley-lecrim",
@@ -847,7 +883,9 @@
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "origin": "programa",
+    "nature": "legislativa"
   },
   {
     "id": "psoe-2023-ley-equipos-investigacion",
@@ -874,7 +912,9 @@
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "origin": "programa",
+    "nature": "legislativa"
   },
   {
     "id": "psoe-2023-ley-nacionalidad-exterior",
@@ -899,6 +939,656 @@
       "officialActions": [],
       "outcome": "En el registro de normas con rango de ley publicadas en el BOE entre noviembre de 2023 y octubre de 2026 no figura ninguna ley estatal con este objeto.",
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "origin": "programa",
+    "nature": "legislativa"
+  },
+  {
+    "id": "sanchez-2023-smi-ley",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "empleo",
+    "series": "psoe-2023-ampliacion",
+    "origin": "declaracion",
+    "nature": "legislativa",
+    "promise": "Garantizar por ley que el SMI suba cada año para mantenerse en el 60 % del salario medio.",
+    "promisedAt": "2023-11-15",
+    "citation": {
+      "sourceId": "congreso-ds-15-pl-7",
+      "pdfPage": 12,
+      "quote": "la legislatura en la que vamos a garantizar por ley que el salario mínimo interprofesional siga aumentando cada año para mantenerse en el 60 % del sueldo medio"
+    },
+    "assessment": {
+      "status": "cumplido_parcial",
+      "criterion": "Dos partes: (1) subidas anuales del SMI; (2) garantía legal del 60 % (cambio en el Estatuto de los Trabajadores u otra ley).",
+      "officialActions": [
+        {
+          "date": "2024-02-07",
+          "text": "Real Decreto 145/2024 fija el SMI para 2024.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-2251"
+        },
+        {
+          "date": "2025-02-12",
+          "text": "Real Decreto 87/2025 fija el SMI para 2025.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-2576"
+        },
+        {
+          "date": "2026-02-19",
+          "text": "Real Decreto 126/2026 fija el SMI para 2026 y «mantiene el objetivo» del 60 % del salario medio.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3815"
+        }
+      ],
+      "outcome": "El SMI se ha fijado y subido cada año por real decreto. No consta en el BOE una ley que garantice el 60 %: el decreto de 2026 lo presenta como «objetivo».",
+      "limits": "No se evalúa si el SMI alcanza exactamente el 60 % del salario medio: depende de la estadística salarial de referencia.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-smi-estatuto",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "empleo",
+    "series": "psoe-2023-ampliacion",
+    "origin": "programa",
+    "nature": "legislativa",
+    "promise": "Fijar en el Estatuto de los Trabajadores que el SMI se sitúe en el 60 % del salario medio.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 26,
+      "quote": "Garantizaremos en el Estatuto de los trabajadores que el SMI se acompase al 60% del salario medio; medida tambien eficaz para lograr la igualdad salarial entre hombres y mujeres."
+    },
+    "assessment": {
+      "status": "cumplido_parcial",
+      "criterion": "Cumplido si se modifica el Estatuto para fijar el 60 %; parcial si solo se suben los importes anuales.",
+      "officialActions": [
+        {
+          "date": "2024-02-07",
+          "text": "Real Decreto 145/2024 fija el SMI para 2024.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-2251"
+        },
+        {
+          "date": "2025-02-12",
+          "text": "Real Decreto 87/2025 fija el SMI para 2025.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-2576"
+        },
+        {
+          "date": "2026-02-19",
+          "text": "Real Decreto 126/2026 fija el SMI para 2026 y «mantiene el objetivo» del 60 % del salario medio.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3815"
+        }
+      ],
+      "outcome": "Subidas anuales por real decreto; sin modificación del Estatuto con ese contenido en el BOE.",
+      "limits": "Una modificación incluida en una ley con otro título podría no detectarse.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "sanchez-2023-iva-alimentos",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "economia",
+    "series": "psoe-2023-ampliacion",
+    "origin": "declaracion",
+    "nature": "ejecutiva",
+    "promise": "Extender la bajada del IVA de los alimentos hasta junio de 2024.",
+    "promisedAt": "2023-11-15",
+    "citation": {
+      "sourceId": "congreso-ds-15-pl-7",
+      "pdfPage": 13,
+      "quote": "En primer lugar, vamos a extender la bajada del IVA de los alimentos hasta junio de 2024; vamos a elevar el umbral de renta media de los 30 000 euros actuales a los 38 000 euros para que más familias puedan acogerse a la medida de alivio hipotecario en vigor, que consiste en la congelación de la cuota mensual durante un año y la ampliación del plazo de amortización hasta los siete años, y, además,"
+    },
+    "assessment": {
+      "status": "cumplido",
+      "criterion": "Cumplido si una norma prorroga la rebaja del IVA de alimentos al menos hasta el 30 de junio de 2024.",
+      "officialActions": [
+        {
+          "date": "2023-12-28",
+          "text": "El Real Decreto-ley 8/2023 prorroga la rebaja del IVA de determinados alimentos hasta el 30 de junio de 2024.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-26452"
+        },
+        {
+          "date": "2024-01-10",
+          "text": "El Congreso convalida el Real Decreto-ley 8/2023 (172 sí, 171 no, 7 abstenciones).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=10/01/2024"
+        }
+      ],
+      "outcome": "La prórroga consta en el BOE y fue convalidada.",
+      "limits": "No se evalúa el efecto sobre los precios.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "sanchez-2023-alivio-hipotecario",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "vivienda",
+    "series": "psoe-2023-ampliacion",
+    "origin": "declaracion",
+    "nature": "ejecutiva",
+    "promise": "Elevar de 30.000 a 38.000 euros el umbral de renta para acogerse al alivio hipotecario.",
+    "promisedAt": "2023-11-15",
+    "citation": {
+      "sourceId": "congreso-ds-15-pl-7",
+      "pdfPage": 13,
+      "quote": "vamos a elevar el umbral de renta media de los 30 000 euros actuales a los 38 000 euros para que más familias puedan acogerse a la medida de alivio hipotecario en vigor"
+    },
+    "assessment": {
+      "status": "no_verificable",
+      "criterion": "Cumplido si una norma eleva el umbral a 38.000 euros.",
+      "officialActions": [],
+      "outcome": "No se ha localizado la cifra de 38.000 euros en el Real Decreto-ley 8/2023 ni en los títulos de las normas revisadas.",
+      "limits": "La medida pudo aprobarse en una norma no revisada a texto completo. Pendiente de comprobar en el Código de Buenas Prácticas bancario.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "sanchez-2023-impuesto-minimo",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "fiscalidad",
+    "series": "psoe-2023-ampliacion",
+    "origin": "declaracion",
+    "nature": "legislativa",
+    "promise": "Garantizar un impuesto mínimo efectivo del 15 % en el impuesto de sociedades.",
+    "promisedAt": "2023-11-15",
+    "citation": {
+      "sourceId": "congreso-ds-15-pl-7",
+      "pdfPage": 14,
+      "quote": "garantizando un impuesto mínimo efectivo del 15 % en el impuesto de sociedades."
+    },
+    "assessment": {
+      "status": "cumplido_parcial",
+      "criterion": "Cumplido si una ley garantiza una tributación mínima del 15 %.",
+      "officialActions": [
+        {
+          "date": "2024-12-21",
+          "text": "Ley 7/2024: Impuesto Complementario para garantizar un nivel mínimo global de imposición (15 %) para grupos multinacionales y nacionales de gran magnitud.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-26694"
+        },
+        {
+          "date": "2025-04-02",
+          "text": "Real Decreto 252/2025: Reglamento del Impuesto Complementario.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-6598"
+        }
+      ],
+      "outcome": "La tributación mínima global se aprobó para grandes grupos empresariales; no es un mínimo general para todas las empresas.",
+      "limits": "La Ley 7/2024 transpone una directiva europea; el alcance exacto se describe en su texto.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "sanchez-2023-permiso-20",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "familia",
+    "series": "psoe-2023-ampliacion",
+    "origin": "declaracion",
+    "nature": "legislativa",
+    "promise": "Ampliar el permiso de nacimiento a veinte semanas.",
+    "promisedAt": "2023-11-15",
+    "citation": {
+      "sourceId": "congreso-ds-15-pl-7",
+      "pdfPage": 16,
+      "quote": "Y vamos a facilitar la conciliación de padres y madres ampliando el permiso de paternidad y maternidad a las veinte semanas"
+    },
+    "assessment": {
+      "status": "cumplido_parcial",
+      "criterion": "Cumplido si una norma fija el permiso en 20 semanas.",
+      "officialActions": [
+        {
+          "date": "2025-07-30",
+          "text": "El Real Decreto-ley 9/2025 amplía el permiso de nacimiento a diecinueve semanas y el Gobierno «se compromete a extender hasta las veinte semanas» el bloque de permisos.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-15741"
+        },
+        {
+          "date": "2025-09-09",
+          "text": "El Congreso convalida el Real Decreto-ley 9/2025 (313 sí, 0 no, 33 abstenciones).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=09/09/2025"
+        }
+      ],
+      "outcome": "Ampliado a 19 semanas; las 20 semanas figuran como compromiso futuro en la propia norma.",
+      "limits": "",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "sanchez-2023-amnistia",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "justicia",
+    "series": "psoe-2023-ampliacion",
+    "origin": "declaracion",
+    "nature": "legislativa",
+    "promise": "Impulsar una ley de amnistía.",
+    "promisedAt": "2023-11-15",
+    "citation": {
+      "sourceId": "congreso-ds-15-pl-7",
+      "pdfPage": 19,
+      "quote": "hay uno que creo que es también muy relevante para explicar por qué vamos a impulsar esta amnistía, y es que esta medida de gracia nos puede ayudar a superar la fractura que se abrió el 1 de octubre de 2017, a seguir acercando posturas y a persuadir incluso —‌yo puedo ser ingenuo en esto, pero voy a intentarlo— a aquellos catalanes que se sienten independentistas, y también de otros territorios qu"
+    },
+    "assessment": {
+      "status": "cumplido",
+      "criterion": "Cumplido si se publica la ley.",
+      "officialActions": [
+        {
+          "date": "2023-12-12",
+          "text": "El Congreso toma en consideración la proposición de ley (178 sí, 172 no).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=12/12/2023"
+        },
+        {
+          "date": "2024-05-30",
+          "text": "El Congreso levanta el veto del Senado (177 sí, 172 no).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=30/05/2024"
+        },
+        {
+          "date": "2024-06-11",
+          "text": "BOE publica la Ley Orgánica 1/2024, de amnistía.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-11776"
+        }
+      ],
+      "outcome": "Ley orgánica publicada en el BOE.",
+      "limits": "Se evalúa la aprobación de la ley, no su aplicación ni los recursos judiciales posteriores.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "sanchez-2023-ley-derechos-culturales",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "igualdad",
+    "series": "psoe-2023-ampliacion",
+    "origin": "declaracion",
+    "nature": "legislativa",
+    "promise": "Aprobar una ley de derechos culturales.",
+    "promisedAt": "2023-11-15",
+    "citation": {
+      "sourceId": "congreso-ds-15-pl-7",
+      "pdfPage": 13,
+      "quote": "Y vamos a aprobar, señorías, una ley de derechos culturales que garantice el acceso de todas las personas y todos los territorios a la cultura."
+    },
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: cumplido si se publica la ley.",
+      "officialActions": [],
+      "outcome": "No figura en el registro completo de normas del BOE ni en las votaciones finales del Pleno.",
+      "limits": "Registro completo de normas del BOE de la legislatura (leyes, decretos-leyes y reales decretos) y votaciones del Pleno.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "sanchez-2023-servicios-30-min",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "territorial",
+    "series": "psoe-2023-ampliacion",
+    "origin": "declaracion",
+    "nature": "legislativa",
+    "promise": "Garantizar por ley el acceso a servicios públicos básicos en menos de treinta minutos en todos los municipios.",
+    "promisedAt": "2023-11-15",
+    "citation": {
+      "sourceId": "congreso-ds-15-pl-7",
+      "pdfPage": 16,
+      "quote": "vamos a garantizar por ley, por ley, el acceso a servicios públicos básicos de todos los municipios en un radio de menos de treinta minutos para que nadie, en definitiva, tenga que abandonar su pueblo porque no hay un cajero o un centro de salud cerca, o porque las oportunidades no se desarrollan en su municipio."
+    },
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo («por ley»): cumplido si se publica una ley con ese contenido.",
+      "officialActions": [],
+      "outcome": "No figura una ley con ese objeto en el registro completo de normas del BOE de la legislatura.",
+      "limits": "Registro completo de normas del BOE de la legislatura (leyes, decretos-leyes y reales decretos) y votaciones del Pleno.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "sanchez-2023-deuda-autonomica",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "territorial",
+    "series": "psoe-2023-ampliacion",
+    "origin": "declaracion",
+    "nature": "legislativa",
+    "promise": "Asumir parte de la deuda de las comunidades autónomas.",
+    "promisedAt": "2023-11-15",
+    "citation": {
+      "sourceId": "congreso-ds-15-pl-7",
+      "pdfPage": 17,
+      "quote": "y asumir parte de la deuda de las comunidades autónomas, la que contrajeron durante la etapa de Gobierno del Partido Popular."
+    },
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Requiere una norma con rango de ley: cumplido si se publica.",
+      "officialActions": [],
+      "outcome": "No consta en el BOE una norma que asuma deuda autonómica ni una votación final en el Pleno con ese objeto.",
+      "limits": "Registro completo de normas del BOE de la legislatura (leyes, decretos-leyes y reales decretos) y votaciones del Pleno. La asunción de deuda podría tramitarse por otra vía no revisada.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "sanchez-2023-viviendas-183000",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "vivienda",
+    "series": "psoe-2023-ampliacion",
+    "origin": "declaracion",
+    "nature": "resultado",
+    "promise": "Habilitar 183.000 viviendas públicas para alquiler asequible.",
+    "promisedAt": "2023-11-15",
+    "citation": {
+      "sourceId": "congreso-ds-15-pl-7",
+      "pdfPage": 14,
+      "quote": "vamos a acometer la habilitación de 183 000 viviendas públicas para alquiler asequible, que prometimos también hace unos meses."
+    },
+    "assessment": {
+      "status": "no_verificable",
+      "criterion": "Cumplido si una fuente oficial acredita 183.000 viviendas públicas habilitadas para alquiler asequible.",
+      "officialActions": [
+        {
+          "date": "2026-04-23",
+          "text": "Real Decreto 326/2026 regula el Plan Estatal de Vivienda 2026-2030.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-8872"
+        }
+      ],
+      "outcome": "No se ha localizado una estadística oficial que cuantifique las viviendas habilitadas.",
+      "limits": "Las cifras de vivienda dependen de comunidades autónomas, ayuntamientos y entidades públicas como Sepes/Casa 47.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "sanchez-2023-avales-20",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "vivienda",
+    "series": "psoe-2023-ampliacion",
+    "origin": "declaracion",
+    "nature": "ejecutiva",
+    "promise": "Crear una línea de avales que cubra hasta el 20 % de la hipoteca.",
+    "promisedAt": "2023-11-15",
+    "citation": {
+      "sourceId": "congreso-ds-15-pl-7",
+      "pdfPage": 14,
+      "quote": "Crearemos una línea de avales que les permitirá cubrir hasta el 20 % de su hipoteca —‌como ya anuncié durante la campaña electoral— y vamos a acometer la habilitación de 183 000 viviendas públicas para alquiler asequible, que prometimos también hace unos meses."
+    },
+    "assessment": {
+      "status": "no_verificable",
+      "criterion": "Cumplido si consta oficialmente una línea de avales públicos del 20 % para la compra de vivienda.",
+      "officialActions": [],
+      "outcome": "Las líneas de avales se gestionan por el ICO mediante acuerdos del Consejo de Ministros que no figuran en el registro de normas revisado.",
+      "limits": "Pendiente de contrastar con la documentación del ICO.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "sanchez-2023-becas-tasas",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "educacion",
+    "series": "psoe-2023-ampliacion",
+    "origin": "declaracion",
+    "nature": "ejecutiva",
+    "promise": "Aumentar la dotación de las becas y reducir el precio de las tasas universitarias.",
+    "promisedAt": "2023-11-15",
+    "citation": {
+      "sourceId": "congreso-ds-15-pl-7",
+      "pdfPage": 13,
+      "quote": "vamos a aumentar la dotación de las becas y reducir el precio de las tasas universitarias."
+    },
+    "assessment": {
+      "status": "no_verificable",
+      "criterion": "Cumplido si aumenta la dotación presupuestaria de becas y bajan los precios públicos universitarios.",
+      "officialActions": [
+        {
+          "date": "2024-02-28",
+          "text": "Real Decreto 201/2024: umbrales y cuantías de las becas 2024-2025.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-3787"
+        },
+        {
+          "date": "2025-03-05",
+          "text": "Real Decreto 163/2025: umbrales y cuantías de las becas 2025-2026.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-4320"
+        },
+        {
+          "date": "2026-03-12",
+          "text": "Real Decreto 179/2026: umbrales y cuantías de las becas 2026-2027.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-5713"
+        }
+      ],
+      "outcome": "Constan los decretos anuales de becas, pero no se ha comparado la dotación total ni los precios de matrícula, que fijan las comunidades autónomas.",
+      "limits": "Se necesitan los datos presupuestarios y de precios públicos por comunidad.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-transporte-jovenes",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "transporte",
+    "series": "psoe-2023-ampliacion",
+    "origin": "programa",
+    "nature": "ejecutiva",
+    "promise": "Gratuidad total del transporte público urbano para niños y estudiantes hasta los 24 años.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 131,
+      "quote": "Ampliaremos los descuentos al uso del transporte público con la gratuidad total del transporte público urbano para niños y estudiantes hasta los 24 años • Fomentaremos y apoyaremos la adquisición y el uso bicicletas eléctricas."
+    },
+    "assessment": {
+      "status": "cumplido_parcial",
+      "criterion": "Parcial si se aprueban descuentos o gratuidades estatales para jóvenes sin llegar a la gratuidad total urbana hasta los 24 años; cumplido si se alcanza.",
+      "officialActions": [
+        {
+          "date": "2024-06-05",
+          "text": "Real Decreto-ley 3/2024: promoción del transporte público colectivo para jóvenes en verano.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-11373"
+        },
+        {
+          "date": "2025-06-11",
+          "text": "Real Decreto-ley 5/2025: promoción del transporte público para la juventud en verano.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-11722"
+        }
+      ],
+      "outcome": "Hubo descuentos estatales para jóvenes en periodos concretos; no consta una gratuidad total del transporte urbano hasta los 24 años.",
+      "limits": "El transporte urbano depende de ayuntamientos y comunidades; el Estado actúa con ayudas.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ayudas-alquiler",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "vivienda",
+    "series": "psoe-2023-ampliacion",
+    "origin": "programa",
+    "nature": "ejecutiva",
+    "promise": "Reforzar las ayudas directas al alquiler de los Planes Estatales de Vivienda y consolidar el Bono Alquiler Joven.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 226,
+      "quote": "Reforzaremos las ayudas directas para el alquiler de vivienda habitual contempladas en los Planes Estatales de Vivienda."
+    },
+    "assessment": {
+      "status": "cumplido_parcial",
+      "criterion": "Parte verificable: existencia de un nuevo plan con ayudas al alquiler y a la emancipación juvenil. El «refuerzo» exige comparar dotaciones (no evaluado).",
+      "officialActions": [
+        {
+          "date": "2026-04-23",
+          "text": "Real Decreto 326/2026: Plan Estatal de Vivienda 2026-2030, con ayudas al alquiler y a la emancipación de jóvenes.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-8872"
+        }
+      ],
+      "outcome": "El nuevo plan incluye ayudas al alquiler y a la emancipación de los jóvenes. No se ha comparado su dotación con la del plan anterior.",
+      "limits": "",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-gratuidad-universidad",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "educacion",
+    "series": "psoe-2023-ampliacion",
+    "origin": "programa",
+    "nature": "ejecutiva",
+    "promise": "Gratuidad de la universidad y la FP superior para quien apruebe a la primera.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 116,
+      "quote": "Incrementaremos la dotación del sistema de becas y ayudas al estudio y estableceremos la gratuidad de los estudios universitarios y de FP superior para aquellos alumnos que vayan aprobando las asignaturas a la primera, mediante un sistema de crédito ETC aprobado a la primera = crédito ETC que será gratuito en el siguiente curso."
+    },
+    "assessment": {
+      "status": "no_verificable",
+      "criterion": "Cumplido si una norma estatal establece esa gratuidad.",
+      "officialActions": [],
+      "outcome": "No se ha localizado una norma estatal con esa gratuidad en el registro de normas del BOE.",
+      "limits": "Los precios universitarios los fijan las comunidades autónomas; la medida podría aplicarse por otras vías.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-familias",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "familia",
+    "series": "psoe-2023-ampliacion",
+    "origin": "programa",
+    "nature": "legislativa",
+    "promise": "Impulsar la Ley de Familias.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 173,
+      "quote": "Garantizar que todas las familias son iguales en derechos, y a promover el apoyo y la protección social que necesitan mediante el impulso de la Ley de Familias."
+    },
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: cumplido si se publica la ley.",
+      "officialActions": [],
+      "outcome": "No figura en el registro completo de normas del BOE ni en las votaciones finales del Pleno.",
+      "limits": "Registro completo de normas del BOE de la legislatura (leyes, decretos-leyes y reales decretos) y votaciones del Pleno.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-pensiones-minimas",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "pensiones",
+    "series": "psoe-2023-ampliacion",
+    "origin": "programa",
+    "nature": "ejecutiva",
+    "promise": "Aumentar las pensiones mínimas.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 166,
+      "quote": "Aumentaremos el montante de las pensiones mínimas."
+    },
+    "assessment": {
+      "status": "no_verificable",
+      "criterion": "Cumplido si las cuantías mínimas de 2026 superan a las de 2023 en términos reales.",
+      "officialActions": [
+        {
+          "date": "2026-02-04",
+          "text": "Real Decreto-ley 3/2026 fija las cuantías mínimas de pensión para 2026 (anexo I).",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2548"
+        }
+      ],
+      "outcome": "Las cuantías mínimas se actualizan cada año por norma; falta comparar los importes con los de 2023 y con la inflación.",
+      "limits": "Pendiente de extraer los importes de los anexos.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
     }

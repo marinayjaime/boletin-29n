@@ -1,0 +1,106 @@
+name: Actualizar datos
+
+# Cada día a las 06:15 UTC, y bajo demanda.
+#  1. Datos objetivos (series de Eurostat, registro de normas del BOE, informe de enlaces):
+#     se importan, se validan, pasan los tests y se publican solos, con entrada en data/changelog.json.
+#  2. Datos que requieren interpretación (encuestas nuevas, cambios de cargos, programas de 2026,
+#     enlaces rotos): solo se detectan. Se abre o actualiza una incidencia «Revisión de datos»
+#     y nada se publica hasta que una persona lo revisa.
+on:
+  schedule:
+    - cron: "15 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  actions: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+
+      # ── 1. Datos objetivos ────────────────────────────────────────────────
+      - name: Series estadísticas (Eurostat)
+        run: npm run import:eurostat
+        continue-on-error: true
+      - name: Registro de normas del BOE (incremental)
+        run: npx tsx scripts/import-boe-leyes.ts --incremental
+        continue-on-error: true
+      - name: Enlaces
+        run: npm run links
+        continue-on-error: true
+
+      # ── 2. Vigilantes (solo informan) ─────────────────────────────────────
+      - name: Encuestas nuevas
+        run: npx tsx scripts/check-polls.ts
+      - name: Cargos del Gobierno
+        run: npx tsx scripts/check-government.ts
+      - name: Programas de 2026
+        run: npx tsx scripts/check-programs.ts
+
+      # ── Integridad: si algo falla, no se publica nada ─────────────────────
+      - name: Validación de datos
+        run: npm run validate
+      - name: Tests
+        run: npm test
+
+      - name: Registrar y publicar los cambios objetivos
+        id: commit
+        run: |
+          npx tsx scripts/log-changes.ts | tee changes.txt
+          git config user.name "boletin-29n-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Actualización automática de datos ($(date -u +%F))" -m "$(cat changes.txt)"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Los push hechos con GITHUB_TOKEN no disparan otros flujos: se lanza el despliegue a mano.
+      - name: Desplegar en GitHub Pages
+        if: steps.commit.outputs.changed == 'true'
+        run: gh workflow run pages.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Resumen para revisión humana
+        id: review
+        run: npx tsx scripts/review-summary.ts
+
+      - name: Abrir o actualizar la incidencia de revisión
+        if: steps.review.outputs.needs_review == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create revision-datos --color FFD60A --description "Datos que requieren revisión humana" 2>/dev/null || true
+          n=$(gh issue list --label revision-datos --state open --json number --jq '.[0].number')
+          if [ -n "$n" ]; then
+            gh issue edit "$n" --body-file review-summary.md
+          else
+            gh issue create --title "Revisión de datos pendiente" --label revision-datos --body-file review-summary.md
+          fi
+
+      - name: Cerrar la incidencia si ya no hay nada pendiente
+        if: steps.review.outputs.needs_review == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for n in $(gh issue list --label revision-datos --state open --json number --jq '.[].number'); do
+            gh issue close "$n" --comment "Sin novedades pendientes en la comprobación del $(date -u +%F)."
+          done

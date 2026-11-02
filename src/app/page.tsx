@@ -8,7 +8,7 @@ import { PartyAvatar, STATUS_STYLE, TopicIcon } from "@/components/ui";
 import { SeatChart } from "@/components/seat-chart";
 import { CountUp, DrawSpark } from "@/components/anim";
 import { POLL_PARTY, partyVars, type PollKey } from "@/lib/party-theme";
-import { pointSeats } from "@/lib/seats";
+import { isMainScenario, pointSeats } from "@/lib/seats";
 import { formatDate, formatPeriod } from "@/lib/format";
 
 const HEADLINE = [
@@ -26,7 +26,7 @@ export default function Home() {
   const proposals = getProposals();
   const votes = getVotes().votes;
   const polls = getPolls();
-  const latest = [...polls.polls].sort((a, b) => b.published.localeCompare(a.published)).find((p) => p.type === "puntual")!;
+  const latest = [...polls.polls].sort((a, b) => b.published.localeCompare(a.published)).find(isMainScenario)!;
   const seats = pointSeats(latest.seats)!;
   const blocks = Object.entries(seats)
     .sort((a, b) => b[1] - a[1])
@@ -74,7 +74,7 @@ export default function Home() {
 
           <div className="rise rounded-[28px] bg-white/[.04] p-4 md:p-6" style={{ animationDelay: "200ms" }}>
             <div className="flex flex-wrap items-center justify-between gap-2">
-              <p className="text-sm font-extrabold uppercase tracking-wider text-brand">Encuesta más reciente</p>
+              <p className="text-sm font-extrabold uppercase tracking-wider text-brand">Última encuesta verificada</p>
               <Link href="/pactos" className="text-sm font-bold underline decoration-brand decoration-2 underline-offset-4">
                 Simular pactos →
               </Link>
@@ -130,7 +130,7 @@ export default function Home() {
                   </div>
                   <div className="mt-auto space-y-1 p-5">
                     <p className="font-extrabold leading-tight">{p.representative.name}</p>
-                    <p className="text-sm font-semibold opacity-80">Cabeza de lista por Madrid</p>
+                    <p className="text-sm font-semibold">Cabeza de lista por Madrid</p>
                     <p className="pt-2 text-sm font-bold">
                       <span className="num text-2xl">{n}</span> propuestas documentadas
                     </p>
@@ -152,7 +152,7 @@ export default function Home() {
               Test
               <br />a ciegas
             </p>
-            <p className="mt-3 max-w-xs text-lg font-bold">28 preguntas sin etiquetas. Después ves quién dijo qué, tema a tema.</p>
+            <p className="mt-3 max-w-xs text-lg font-bold">28 preguntas sin etiquetas. Al final, el partido con el que más coincides y sus fuentes.</p>
             <span className="btn btn-primary mt-6">
               Empezar <ArrowRight size={18} aria-hidden />
             </span>

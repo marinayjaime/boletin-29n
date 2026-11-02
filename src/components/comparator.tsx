@@ -142,7 +142,7 @@ export function Comparator({ parties, topics, proposals, sources }: { parties: P
                 <PartyAvatar party={p} size={44} ring={on ? 2 : 0} label={false} />
                 <span className="min-w-0 flex-1">
                   <span className="block truncate font-extrabold">{p.shortName}</span>
-                  <span className="block text-xs font-bold opacity-80">{on ? "Comparando" : "Añadir"}</span>
+                  <span className="block text-xs font-bold">{on ? "Comparando" : "Añadir"}</span>
                 </span>
                 <span className="grid h-7 w-7 place-items-center rounded-full bg-black/10" aria-hidden>
                   {on ? <Check size={15} /> : <Plus size={15} />}
@@ -151,7 +151,7 @@ export function Comparator({ parties, topics, proposals, sources }: { parties: P
             );
           })}
         </div>
-        <p role="status" aria-live="polite" className="mt-1 min-h-5 text-sm font-bold text-no">
+        <p role="status" aria-live="polite" className="mt-1 min-h-5 text-sm font-bold text-no-ink">
           {notice}
         </p>
       </div>
@@ -210,7 +210,7 @@ export function Comparator({ parties, topics, proposals, sources }: { parties: P
                   <PartyAvatar party={p} size={42} ring={2} />
                   <div className="min-w-0 flex-1">
                     <p className="truncate font-extrabold">{p.shortName}</p>
-                    <p className="text-xs font-bold opacity-80">{perParty(id)} propuestas</p>
+                    <p className="text-xs font-bold">{perParty(id)} propuestas</p>
                   </div>
                   <span className="flex gap-1">
                     <button type="button" onClick={() => move(id, -1)} disabled={i === 0} className="grid h-8 w-8 place-items-center rounded-full bg-black/15 disabled:opacity-30" aria-label={`Mover ${p.shortName} a la izquierda`}>

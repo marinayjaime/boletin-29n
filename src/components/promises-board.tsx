@@ -18,8 +18,20 @@ const ATTR: Record<HistoricalPromise["attribution"], string> = {
   partido_en_oposicion: "Partido en la oposición",
 };
 const ORDER: Status[] = ["cumplido", "cumplido_parcial", "en_tramitacion", "no_cumplido", "no_verificable"];
+type Origin = HistoricalPromise["origin"];
+const ORIGIN: Record<Origin, { label: string; short: string; first: string }> = {
+  programa: { label: "Programa electoral del PSOE", short: "Programa", first: "Compromiso publicado en el programa" },
+  declaracion: { label: "Pedro Sánchez · discurso de investidura", short: "Sánchez", first: "Anuncio de Pedro Sánchez en el Congreso" },
+  acuerdo_gobierno: { label: "Acuerdo del Gobierno de coalición", short: "Coalición", first: "Compromiso del acuerdo de Gobierno" },
+};
+const NATURE: Record<HistoricalPromise["nature"], string> = {
+  legislativa: "Exige aprobar una ley",
+  ejecutiva: "Medida del Gobierno (decreto, plan o presupuesto)",
+  resultado: "Resultado medible",
+  internacional: "Acción internacional",
+};
 
-function Donut({ counts, total }: { counts: Record<Status, number>; total: number }) {
+function Donut({ counts, total, label }: { counts: Record<Status, number>; total: number; label: string }) {
   let acc = 0;
   const R = 46;
   const C = 2 * Math.PI * R;
@@ -52,7 +64,7 @@ function Donut({ counts, total }: { counts: Record<Status, number>; total: numbe
         {total}
       </text>
       <text x="60" y="76" textAnchor="middle" fontSize="9" fontWeight="800" fill="var(--ink-3)">
-        LEYES
+        {label}
       </text>
     </svg>
   );
@@ -60,16 +72,16 @@ function Donut({ counts, total }: { counts: Record<Status, number>; total: numbe
 
 function Evidence({ p, source, parties, topics }: { p: HistoricalPromise; source?: SourceDocument; parties: Record<string, Party>; topics: Record<string, PolicyTopic> }) {
   const v = partyVars(p.partyIds[0]);
-  const timeline = [{ date: p.promisedAt, text: "Compromiso publicado en el programa", url: "", kind: "promesa" as const }, ...p.assessment.officialActions.map((a) => ({ ...a, kind: "accion" as const }))].sort((a, b) => a.date.localeCompare(b.date));
+  const timeline = [{ date: p.promisedAt, text: ORIGIN[p.origin].first, url: "", kind: "promesa" as const }, ...p.assessment.officialActions.map((a) => ({ ...a, kind: "accion" as const }))].sort((a, b) => a.date.localeCompare(b.date));
   return (
     <article className="space-y-6">
       <header className="rounded-[24px] p-5" style={{ background: v.primary, color: v.on }}>
-        <p className="flex items-center gap-2 text-sm font-extrabold uppercase tracking-wide opacity-90">
+        <p className="flex items-center gap-2 text-sm font-extrabold uppercase tracking-wide">
           <TopicIcon id={p.topicId} size={16} /> {topics[p.topicId]?.short} · {p.partyIds.map((x) => parties[x]?.shortName).join(", ")} · Leg. {p.legislature}
         </p>
         <h2 className="display mt-3 text-3xl">{p.promise}</h2>
-        <p className="mt-2 text-sm font-bold opacity-85">
-          {ATTR[p.attribution]}
+        <p className="mt-2 text-sm font-bold">
+          {p.series?.startsWith("psoe-2023") ? `${ORIGIN[p.origin].label} · ${NATURE[p.nature]}` : ATTR[p.attribution]}
           {p.government ? ` · ${p.government}` : ""}
         </p>
       </header>
@@ -93,7 +105,7 @@ function Evidence({ p, source, parties, topics }: { p: HistoricalPromise; source
         <p className="eyebrow mb-3">Acciones oficiales</p>
         {p.assessment.officialActions.length === 0 && (
           <p className="mb-3 rounded-2xl bg-surface-2 p-3 text-sm font-semibold">
-            {p.series === "psoe-2023-legislativas" ? "Evidencia negativa: ninguna ley con este objeto en el registro completo de leyes del BOE de la legislatura." : "No se han localizado acciones oficiales con las fuentes revisadas."}
+            {p.nature === "legislativa" && p.assessment.status === "no_cumplido" ? "Evidencia negativa: ninguna norma con este objeto en el registro completo del BOE de la legislatura." : "No se han localizado acciones oficiales con las fuentes revisadas."}
           </p>
         )}
         <ol className="relative ml-3 border-l-2 border-line">
@@ -131,6 +143,7 @@ export function PromisesBoard({
   sources,
   coverage,
   boeCount,
+  rdCount,
 }: {
   promises: HistoricalPromise[];
   parties: Party[];
@@ -138,23 +151,26 @@ export function PromisesBoard({
   sources: SourceDocument[];
   coverage: { futureCommitments: number; legislativeCommitments: number; method: string; legislativeMethod: string; periodEnd: string };
   boeCount: number;
+  rdCount: number;
 }) {
   const [tab, setTab] = useState<"psoe" | "otras">("psoe");
   const [status, setStatus] = useState<Status | "">("");
   const [topic, setTopic] = useState("");
   const [party, setParty] = useState("");
+  const [origin, setOrigin] = useState<Origin | "">("");
   const [open, setOpen] = useState<string | null>(null);
   const pmap = Object.fromEntries(parties.map((p) => [p.id, p]));
   const tmap = Object.fromEntries(topics.map((t) => [t.id, t]));
   const smap = Object.fromEntries(sources.map((s) => [s.id, s]));
 
   const psoe = promises.filter((p) => p.series?.startsWith("psoe-2023"));
-  const legis = psoe.filter((p) => p.series === "psoe-2023-legislativas");
+
   const others = promises.filter((p) => !p.series?.startsWith("psoe-2023"));
   const base = tab === "psoe" ? psoe : others;
-  const list = useMemo(() => base.filter((p) => (!status || p.assessment.status === status) && (!topic || p.topicId === topic) && (!party || p.partyIds.includes(party))), [base, status, topic, party]);
-  const counts = Object.fromEntries(ORDER.map((s) => [s, legis.filter((p) => p.assessment.status === s).length])) as Record<Status, number>;
-  const laws = legis.flatMap((p) => p.assessment.officialActions.filter((a) => a.url.includes("boe.es")).map((a) => ({ ...a, p }))).sort((a, b) => a.date.localeCompare(b.date));
+  const list = useMemo(() => base.filter((p) => (!status || p.assessment.status === status) && (!topic || p.topicId === topic) && (!party || p.partyIds.includes(party)) && (!origin || p.origin === origin)), [base, status, topic, party, origin]);
+  const scope = origin ? psoe.filter((p) => p.origin === origin) : psoe;
+  const counts = Object.fromEntries(ORDER.map((s) => [s, scope.filter((p) => p.assessment.status === s).length])) as Record<Status, number>;
+  const laws = scope.flatMap((p) => p.assessment.officialActions.filter((a) => a.url.includes("boe.es")).map((a) => ({ ...a, p }))).sort((a, b) => a.date.localeCompare(b.date));
   const current = promises.find((p) => p.id === open);
 
   return (
@@ -175,6 +191,7 @@ export function PromisesBoard({
               setStatus("");
               setTopic("");
               setParty("");
+              setOrigin("");
             }}
             className={`rounded-full px-5 py-3 text-sm font-extrabold md:text-base ${tab === k ? "bg-ink text-bg" : "text-ink-2"}`}
           >
@@ -187,7 +204,14 @@ export function PromisesBoard({
         <motion.div key={tab} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}>
           {tab === "psoe" && (
             <>
-              <div className="mt-6 grid gap-4 lg:grid-cols-[1.2fr_1fr]">
+              <div className="mt-6 flex flex-wrap gap-2" role="group" aria-label="Procedencia de la promesa">
+                {([["", "Todas", psoe.length], ...(Object.keys(ORIGIN) as Origin[]).map((o) => [o, ORIGIN[o].label, psoe.filter((p) => p.origin === o).length] as const)] as const).map(([k, l, n]) => (
+                  <button key={k || "all"} type="button" disabled={!n} aria-pressed={origin === k} onClick={() => setOrigin(k as Origin | "")} className={`chip ${origin === k ? "!bg-ink !text-bg" : ""} disabled:opacity-40`}>
+                    {l} <span className="num">{n}</span>
+                  </button>
+                ))}
+              </div>
+              <div className="mt-4 grid gap-4 lg:grid-cols-[1.2fr_1fr]">
                 <div className="card p-6">
                   <p className="eyebrow">Cobertura documental · programa del PSOE 2023</p>
                   <div className="mt-4 grid grid-cols-3 gap-3">
@@ -200,7 +224,7 @@ export function PromisesBoard({
                       <p className="text-sm font-bold text-ink-2">compromisos de aprobar una ley</p>
                     </div>
                     <div>
-                      <p className="num text-4xl text-yes md:text-5xl">{psoe.length}</p>
+                      <p className="num text-4xl text-yes-ink md:text-5xl">{psoe.length}</p>
                       <p className="text-sm font-bold text-ink-2">evaluados aquí</p>
                     </div>
                   </div>
@@ -217,18 +241,18 @@ export function PromisesBoard({
                       <p>{coverage.method}</p>
                       <p className="mt-2">{coverage.legislativeMethod}</p>
                     </Disclosure>
-                    <Disclosure summary="Anuncios personales de Pedro Sánchez">Todavía no se incluyen: requieren fuentes primarias (transcripciones oficiales o vídeos completos) que no se han verificado. Se distinguirán de los compromisos del programa del PSOE y de las decisiones del Gobierno de coalición.</Disclosure>
+                    <Disclosure summary="Programa, Sánchez y Gobierno de coalición">Los anuncios de Pedro Sánchez proceden del Diario de Sesiones del debate de investidura (15 nov. 2023). El texto íntegro del acuerdo de coalición PSOE–Sumar no se ha localizado en una fuente oficial; por eso todavía no hay fichas de esa categoría.</Disclosure>
                   </div>
                 </div>
                 <div className="card flex flex-col items-center gap-4 p-6 sm:flex-row lg:flex-col xl:flex-row">
-                  <Donut counts={counts} total={legis.length} />
+                  <Donut counts={counts} total={scope.length} label="PROMESAS" />
                   <div className="w-full">
-                    <p className="eyebrow mb-3">Las {legis.length} leyes prometidas</p>
+                    <p className="eyebrow mb-3">{origin ? ORIGIN[origin].label : "Todas las promesas evaluadas"}</p>
                     <ul className="space-y-1">
                       {ORDER.filter((s) => counts[s]).map((s) => (
                         <li key={s}>
                           <button type="button" onClick={() => setStatus((x) => (x === s ? "" : s))} aria-pressed={status === s} className="flex w-full items-center gap-3 rounded-2xl p-2 text-left hover:bg-surface-2" style={status === s ? { background: "var(--surface-2)" } : undefined}>
-                            <span className="num w-10 text-3xl" style={{ color: STATUS_STYLE[s].color }}>
+                            <span className="num w-10 text-3xl" style={{ color: STATUS_STYLE[s].ink }}>
                               {counts[s]}
                             </span>
                             <span className="font-bold">{PROMISE_STATUS[s].label}</span>
@@ -237,7 +261,7 @@ export function PromisesBoard({
                       ))}
                     </ul>
                     <p className="mt-3 text-xs font-semibold text-ink-3">
-                      Contrastado con {boeCount} normas con rango de ley publicadas en el BOE hasta el {formatDate(coverage.periodEnd)}.
+                      Contrastado con {boeCount.toLocaleString("es-ES")} normas con rango de ley y {rdCount.toLocaleString("es-ES")} reales decretos publicados en el BOE hasta el {formatDate(coverage.periodEnd)}. Una medida ejecutiva sin evidencia se marca «no verificable», nunca «no cumplida».
                     </p>
                   </div>
                 </div>
@@ -247,7 +271,7 @@ export function PromisesBoard({
                 <p className="eyebrow mb-4">Línea temporal · del programa a la disolución</p>
                 <div className="lane -mx-2 flex gap-3 overflow-x-auto px-2 pb-2">
                   <div className="flex w-[170px] shrink-0 flex-col justify-end rounded-2xl p-4" style={{ background: partyVars("psoe").primary, color: partyVars("psoe").on }}>
-                    <p className="text-xs font-extrabold opacity-80">7 jul 2023</p>
+                    <p className="text-xs font-extrabold">7 jul 2023</p>
                     <p className="font-extrabold">Programa electoral</p>
                   </div>
                   {laws.map((l, k) => (
@@ -262,7 +286,7 @@ export function PromisesBoard({
                     </button>
                   ))}
                   <div className="flex w-[170px] shrink-0 flex-col justify-end rounded-2xl bg-ink p-4 text-bg">
-                    <p className="text-xs font-extrabold opacity-80">6 oct 2026</p>
+                    <p className="text-xs font-extrabold">6 oct 2026</p>
                     <p className="font-extrabold">Disolución de las Cortes</p>
                   </div>
                 </div>
@@ -309,7 +333,8 @@ export function PromisesBoard({
                     </span>
                     <StatusBadge status={p.assessment.status} />
                   </span>
-                  <span className="mt-3 text-lg font-extrabold leading-snug">{p.promise}</span>
+                  {tab === "psoe" && <span className="mt-3 text-xs font-extrabold uppercase tracking-wide text-ink-3">{ORIGIN[p.origin].short} · {NATURE[p.nature]}</span>}
+                  <span className="mt-2 text-lg font-extrabold leading-snug">{p.promise}</span>
                   <span className="mt-auto flex items-center justify-between pt-4 text-sm font-bold text-ink-3">
                     <span>
                       {p.partyIds.map((x) => pmap[x]?.shortName).join(", ")} · {p.assessment.officialActions.length} evidencias

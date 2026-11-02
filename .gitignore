@@ -43,3 +43,8 @@ next-env.d.ts
 /test-results
 /playwright-report
 .cache-congreso.log
+
+# informes de los vigilantes automáticos (se publican como incidencia, no en el repo)
+/data/review/
+review-summary.md
+changes.txt

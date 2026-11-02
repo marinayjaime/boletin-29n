@@ -1,13 +1,27 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { BarChart3, FileText, Gavel, Landmark, Mic, Newspaper, Search, type LucideIcon } from "lucide-react";
 import type { SourceDocument } from "@/lib/schema";
 import { CATEGORY_LABELS, CYCLE_LABELS, VERIFICATION_LABELS } from "@/lib/labels";
 import { formatDate } from "@/lib/format";
 import { normalize } from "@/lib/search";
+import { partyVars } from "@/lib/party-theme";
 import { SourceLinks } from "./proposal-detail";
+import { Disclosure } from "./ui";
 
 type Extra = { id: string; title: string; author: string; kind: string; year: string; url: string; topic: string };
+
+/** Agrupación visual: pocas familias reconocibles en lugar de diez categorías técnicas. */
+const GROUPS: { id: string; label: string; icon: LucideIcon; kinds: string[] }[] = [
+  { id: "programas", label: "Programas", icon: FileText, kinds: ["programa_2026", "propuesta_2026", "programa_anterior"] },
+  { id: "declaraciones", label: "Discursos y declaraciones", icon: Mic, kinds: ["declaracion", "periodistica"] },
+  { id: "congreso", label: "Congreso", icon: Landmark, kinds: ["iniciativa_parlamentaria", "votacion"] },
+  { id: "boe", label: "Leyes y BOE", icon: Gavel, kinds: ["ley", "boe"] },
+  { id: "estadistica", label: "Estadística oficial", icon: BarChart3, kinds: ["estadistica"] },
+];
+const groupOf = (kind: string) => GROUPS.find((g) => g.kinds.includes(kind)) ?? GROUPS[1];
+const PAGE = 18;
 
 export function SourcesLibrary({
   sources,
@@ -22,115 +36,157 @@ export function SourcesLibrary({
 }) {
   const [q, setQ] = useState("");
   const [party, setParty] = useState("");
-  const [kind, setKind] = useState("");
-  const [year, setYear] = useState("");
+  const [group, setGroup] = useState("");
+  const [shown, setShown] = useState(PAGE);
   const pmap = Object.fromEntries(parties.map((p) => [p.id, p.shortName]));
-  const years = [...new Set([...sources.map((s) => s.published.slice(0, 4)), ...extras.map((e) => e.year)])].sort().reverse();
-  const kinds = [...new Set([...sources.map((s) => s.kind as string), ...extras.map((e) => e.kind)])];
   const nq = normalize(q);
   const docs = useMemo(
-    () =>
-      sources.filter(
-        (s) =>
-          (!party || s.partyId === party) &&
-          (!kind || s.kind === kind) &&
-          (!year || s.published.startsWith(year)) &&
-          (!nq || normalize(`${s.title} ${s.author} ${s.notes ?? ""}`).includes(nq)),
-      ),
-    [sources, party, kind, year, nq],
+    () => sources.filter((s) => (!party || s.partyId === party) && (!group || groupOf(s.kind).id === group) && (!nq || normalize(`${s.title} ${s.author} ${s.notes ?? ""}`).includes(nq))),
+    [sources, party, group, nq],
   );
-  const ex = useMemo(
-    () => extras.filter((e) => !party && (!kind || e.kind === kind) && (!year || e.year === year) && (!nq || normalize(`${e.title} ${e.author} ${e.topic}`).includes(nq))),
-    [extras, party, kind, year, nq],
-  );
+  const ex = useMemo(() => extras.filter((e) => !party && (!group || groupOf(e.kind).id === group) && (!nq || normalize(`${e.title} ${e.author} ${e.topic}`).includes(nq))), [extras, party, group, nq]);
+  const total = (gid: string) => sources.filter((s) => groupOf(s.kind).id === gid).length + extras.filter((e) => groupOf(e.kind).id === gid).length;
+  const reset = () => setShown(PAGE);
 
   return (
     <div>
-      <div className="grid grid-cols-1 gap-3 rounded border border-rule p-4 text-sm md:grid-cols-4">
-        <label className="md:col-span-1">
-          <span className="kicker mb-1 block">Buscar</span>
-          <input value={q} onChange={(e) => setQ(e.target.value)} className="w-full rounded border border-rule bg-paper px-3 py-1.5" placeholder="título, organismo…" />
-        </label>
-        <label>
-          <span className="kicker mb-1 block">Partido</span>
-          <select value={party} onChange={(e) => setParty(e.target.value)} className="w-full rounded border border-rule bg-paper px-2 py-1.5">
-            <option value="">Todos</option>
-            {parties.map((p) => (
-              <option key={p.id} value={p.id}>
-                {p.shortName}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label>
-          <span className="kicker mb-1 block">Tipo de documento</span>
-          <select value={kind} onChange={(e) => setKind(e.target.value)} className="w-full rounded border border-rule bg-paper px-2 py-1.5">
-            <option value="">Todos</option>
-            {kinds.map((k) => (
-              <option key={k} value={k}>
-                {CATEGORY_LABELS[k as keyof typeof CATEGORY_LABELS] ?? k}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label>
-          <span className="kicker mb-1 block">Año</span>
-          <select value={year} onChange={(e) => setYear(e.target.value)} className="w-full rounded border border-rule bg-paper px-2 py-1.5">
-            <option value="">Todos</option>
-            {years.map((y) => (
-              <option key={y}>{y}</option>
-            ))}
-          </select>
-        </label>
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5" role="group" aria-label="Tipo de fuente">
+        {GROUPS.map((g) => {
+          const on = group === g.id;
+          return (
+            <button
+              key={g.id}
+              type="button"
+              aria-pressed={on}
+              onClick={() => {
+                setGroup((x) => (x === g.id ? "" : g.id));
+                reset();
+              }}
+              className={`flex items-center gap-3 rounded-[20px] p-4 text-left transition ${on ? "bg-ink text-bg" : "bg-surface shadow-[inset_0_0_0_1.5px_var(--line)] hover:bg-surface-2"}`}
+            >
+              <g.icon size={22} aria-hidden className={on ? "text-brand" : ""} />
+              <span>
+                <span className="num block text-2xl">{total(g.id)}</span>
+                <span className="text-sm font-bold">{g.label}</span>
+              </span>
+            </button>
+          );
+        })}
       </div>
-      <p className="kicker mt-4" role="status">
+
+      <div className="mt-4 flex flex-wrap items-center gap-2">
+        <label className="relative min-w-[220px] flex-1">
+          <span className="sr-only">Buscar en las fuentes</span>
+          <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-ink-3" aria-hidden />
+          <input
+            value={q}
+            onChange={(e) => {
+              setQ(e.target.value);
+              reset();
+            }}
+            className="field w-full !pl-11"
+            placeholder="Título u organismo…"
+          />
+        </label>
+        <div className="flex flex-wrap gap-1.5" role="group" aria-label="Partido">
+          {parties.map((p) => {
+            const v = partyVars(p.id);
+            const on = party === p.id;
+            return (
+              <button
+                key={p.id}
+                type="button"
+                aria-pressed={on}
+                onClick={() => {
+                  setParty((x) => (x === p.id ? "" : p.id));
+                  reset();
+                }}
+                className="chip"
+                style={on ? { background: v.primary, color: v.on, borderColor: v.primary } : undefined}
+              >
+                <span className="h-2.5 w-2.5 rounded-full" style={{ background: v.primary }} aria-hidden /> {p.shortName}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+      <p className="mt-4 text-sm font-extrabold text-ink-3" role="status">
         {docs.length + ex.length} documentos
       </p>
-      <ul className="mt-3 divide-y divide-rule border-y border-rule">
-        {docs.map((s) => (
-          <li key={s.id} className="grid gap-3 py-5 md:grid-cols-[1fr_280px]">
-            <div>
-              <p className="kicker">
-                {CATEGORY_LABELS[s.kind]}
-                {s.partyId ? ` · ${pmap[s.partyId]}` : ""}
-                {s.cycle && CYCLE_LABELS[s.cycle] ? ` · ${CYCLE_LABELS[s.cycle]}` : ""}
-              </p>
-              <p className="mt-1 text-lg font-medium leading-snug">{s.title}</p>
-              <p className="text-sm text-ink-2">
-                {s.author} · {formatDate(s.published)}
-                {s.pages ? ` · ${s.pages} págs.` : ""}
-              </p>
-              {s.notes && <p className="mt-2 text-sm text-ink-2">{s.notes}</p>}
-              <p className="mt-2 break-all font-mono text-[0.68rem] text-ink-3">{s.officialUrl}</p>
-            </div>
-            <div className="space-y-2 text-sm">
-              <p>
-                <span className={`cite-chip ${s.verification === "verificado" ? "" : "border-accent text-accent"}`}>{VERIFICATION_LABELS[s.verification]}</span>
-              </p>
-              <p className="text-xs text-ink-3">Comprobado el {formatDate(s.lastChecked)}</p>
-              {counts[s.id] ? <p className="text-xs">{counts[s.id]} citas usadas en la plataforma</p> : null}
-              <SourceLinks source={s} />
-            </div>
-          </li>
-        ))}
-        {ex.map((e) => (
-          <li key={e.id} className="grid gap-3 py-5 md:grid-cols-[1fr_280px]">
-            <div>
-              <p className="kicker">{CATEGORY_LABELS[e.kind as keyof typeof CATEGORY_LABELS] ?? e.kind} · {e.topic}</p>
-              <p className="mt-1 text-lg font-medium leading-snug">{e.title}</p>
-              <p className="text-sm text-ink-2">
-                {e.author} · {e.year}
-              </p>
-              <p className="mt-2 break-all font-mono text-[0.68rem] text-ink-3">{e.url}</p>
-            </div>
-            <div>
-              <a href={e.url} target="_blank" rel="noreferrer" className="kicker rounded-full border border-ink px-3 py-1.5">
-                Abrir ↗
-              </a>
-            </div>
-          </li>
-        ))}
-      </ul>
+
+      {docs.length > 0 && (
+        <ul className="mt-3 grid grid-cols-1 gap-3 md:grid-cols-2">
+          {docs.map((s) => {
+            const v = s.partyId ? partyVars(s.partyId) : null;
+            const G = groupOf(s.kind);
+            return (
+              <li key={s.id} className="card flex flex-col overflow-hidden">
+                <div className="flex items-center gap-2 px-5 py-3 text-sm font-extrabold" style={v ? { background: v.primary, color: v.on } : { background: "var(--surface-2)" }}>
+                  <G.icon size={16} aria-hidden />
+                  {s.partyId ? pmap[s.partyId] : CATEGORY_LABELS[s.kind]}
+                  {s.cycle && CYCLE_LABELS[s.cycle] ? <span className="ml-auto">{CYCLE_LABELS[s.cycle]}</span> : null}
+                </div>
+                <div className="flex flex-1 flex-col p-5">
+                  <p className="font-extrabold leading-snug">{s.title}</p>
+                  <p className="mt-1 text-sm font-semibold text-ink-2">
+                    {s.author} · {formatDate(s.published)}
+                    {s.pages ? ` · ${s.pages} págs.` : ""}
+                  </p>
+                  <div className="mt-3 flex flex-wrap gap-2 text-xs font-extrabold">
+                    <span className="tag" style={{ color: s.verification === "verificado" ? "var(--yes-ink)" : "var(--partial-ink)" }}>
+                      {s.verification === "verificado" ? "✓ " : ""}
+                      {VERIFICATION_LABELS[s.verification]}
+                    </span>
+                    {counts[s.id] ? <span className="tag">{counts[s.id]} citas</span> : null}
+                  </div>
+                  <div className="mt-4">
+                    <SourceLinks source={s} />
+                  </div>
+                  <Disclosure summary="Detalles" className="mt-3">
+                    {s.notes && <p>{s.notes}</p>}
+                    <p className="mt-2 text-xs">Comprobado el {formatDate(s.lastChecked)}</p>
+                    <p className="mt-1 break-all font-mono text-[0.7rem]">{s.officialUrl}</p>
+                    {s.sha256 && <p className="mt-1 break-all font-mono text-[0.7rem]">SHA-256 {s.sha256}</p>}
+                  </Disclosure>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      )}
+
+      {ex.length > 0 && (
+        <>
+          <ul className="mt-6 divide-y divide-line overflow-hidden rounded-[24px] bg-surface shadow-[inset_0_0_0_1.5px_var(--line)]">
+            {ex.slice(0, shown).map((e) => {
+              const G = groupOf(e.kind);
+              return (
+                <li key={e.id}>
+                  <a href={e.url} target="_blank" rel="noreferrer" className="flex items-center gap-4 px-5 py-3.5 hover:bg-surface-2">
+                    <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-surface-2" aria-hidden>
+                      <G.icon size={18} />
+                    </span>
+                    <span className="min-w-0 flex-1">
+                      <span className="line-clamp-2 font-bold leading-snug">{e.title}</span>
+                      <span className="block text-sm font-semibold text-ink-3">
+                        {e.author} · {e.year}
+                      </span>
+                    </span>
+                    <span className="text-sm font-extrabold" aria-hidden>
+                      ↗
+                    </span>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+          {ex.length > shown && (
+            <button type="button" onClick={() => setShown((n) => n + PAGE * 2)} className="btn btn-ghost mx-auto mt-4 flex">
+              Mostrar más ({ex.length - shown} restantes)
+            </button>
+          )}
+        </>
+      )}
     </div>
   );
 }

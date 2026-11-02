@@ -200,5 +200,25 @@
     "lastChecked": "2026-11-02",
     "notes": "Fuente periodística usada solo como contexto sobre la composición de Frente Amplio, a falta del documento de coalición de la Junta Electoral Central. Fecha exacta de publicación pendiente de comprobar.",
     "topics": []
+  },
+  {
+    "id": "congreso-ds-15-pl-7",
+    "title": "Diario de Sesiones del Congreso de los Diputados, Pleno, núm. 7 (15 de noviembre de 2023): debate de investidura de Pedro Sánchez Pérez-Castejón",
+    "author": "Congreso de los Diputados",
+    "kind": "declaracion",
+    "partyId": "psoe",
+    "cycle": "investidura-2023",
+    "published": "2023-11-15",
+    "officialUrl": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-7.PDF",
+    "archiveUrl": null,
+    "hostedByThirdParty": false,
+    "originalUnavailable": false,
+    "sha256": "be4e58a0aabcff227560d8c62619ef101dcff758717576fb696e3f6b9c981aa2",
+    "pages": 82,
+    "printedPageOffset": null,
+    "verification": "verificado",
+    "lastChecked": "2026-11-02",
+    "notes": "Intervención del candidato a la Presidencia del Gobierno en el debate de investidura. Se usa como fuente primaria de los compromisos personales de Pedro Sánchez.",
+    "topics": []
   }
 ]

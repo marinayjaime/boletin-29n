@@ -78,18 +78,15 @@ export type TopicCoincidence = {
   pct: number | null;
 };
 
-/**
- * Coincidencia descriptiva por tema y partido. No se agrega entre temas ni se ordena:
- * es una descripción de respuestas concretas, no una medida de afinidad política general.
- */
-export function topicCoincidence(
-  statements: { id: string; topicId: string; positions: { partyId: string; stance: Stance }[] }[],
-  answers: Answers,
-  topicId: string,
-  partyId: string,
-): TopicCoincidence {
+/** Mínimo de respuestas comparables para dar un porcentaje global de un partido. */
+export const MIN_OVERALL = 4;
+
+type St = { id: string; topicId: string; positions: { partyId: string; stance: Stance }[] };
+
+function count(statements: St[], answers: Answers, partyId: string, topicId: string, min: number): TopicCoincidence {
   const r: TopicCoincidence = { topicId, partyId, comparable: 0, coincide: 0, difiere: 0, matizada: 0, sinDatos: 0, pct: null };
-  for (const s of statements.filter((x) => x.topicId === topicId)) {
+  for (const s of statements) {
+    if (topicId !== "*" && s.topicId !== topicId) continue;
     const pos = s.positions.find((p) => p.partyId === partyId);
     if (!pos) continue;
     const rel = relation(answers[s.id], pos.stance);
@@ -99,6 +96,30 @@ export function topicCoincidence(
     else if (rel === "sin_datos") r.sinDatos++;
   }
   r.comparable = r.coincide + r.difiere;
-  r.pct = r.comparable >= MIN_COMPARABLE ? Math.round((r.coincide / r.comparable) * 100) : null;
+  r.pct = r.comparable >= min ? Math.round((r.coincide / r.comparable) * 100) : null;
   return r;
+}
+
+/** Coincidencia en un tema concreto (se usa en tests y en el detalle). */
+export function topicCoincidence(statements: St[], answers: Answers, topicId: string, partyId: string): TopicCoincidence {
+  return count(statements, answers, partyId, topicId, MIN_COMPARABLE);
+}
+
+/** Coincidencia global con un partido sobre todas las preguntas respondidas. */
+export function overallCoincidence(statements: St[], answers: Answers, partyId: string): TopicCoincidence {
+  return count(statements, answers, partyId, "*", MIN_OVERALL);
+}
+
+/**
+ * Resultado final del test: el partido (o partidos, si hay empate exacto) con mayor
+ * porcentaje global de coincidencia. Se compara la proporción exacta, no el redondeo.
+ * Devuelve `top` vacío si ningún partido alcanza MIN_OVERALL respuestas comparables.
+ */
+export function topMatch(statements: St[], answers: Answers, partyIds: string[]) {
+  const all = partyIds.map((id) => overallCoincidence(statements, answers, id));
+  const valid = all.filter((c) => c.pct !== null);
+  if (!valid.length) return { top: [] as TopicCoincidence[], all };
+  const best = valid.reduce((a, b) => (b.coincide * a.comparable > a.coincide * b.comparable ? b : a));
+  const top = valid.filter((c) => c.coincide * best.comparable === best.coincide * c.comparable);
+  return { top, all };
 }

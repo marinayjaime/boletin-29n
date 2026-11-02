@@ -1,6 +1,38 @@
 [
   {
     "date": "2026-11-02",
+    "entity": "Poll",
+    "entityId": "polls",
+    "action": "verificacion",
+    "detail": "Las 16 encuestas se contrastan con su publicación original: 3 verificadas, 1 corregida (Hamalgama), 1 horquilla, 1 de partido (Vox), 8 con reparto parcial y 2 no verificables. Solo las verificadas y completas sirven de escenario principal.",
+    "by": "Equipo editorial"
+  },
+  {
+    "date": "2026-11-02",
+    "entity": "SourceDocument",
+    "entityId": "congreso-ds-15-pl-7",
+    "action": "alta",
+    "detail": "Diario de Sesiones del debate de investidura (15 nov. 2023): descarga, SHA-256 y texto por página para citar los anuncios de Pedro Sánchez.",
+    "by": "Equipo editorial"
+  },
+  {
+    "date": "2026-11-02",
+    "entity": "HistoricalPromise",
+    "entityId": "psoe-2023-ampliacion",
+    "action": "alta",
+    "detail": "18 fichas nuevas: 12 anuncios de Sánchez en la investidura y 6 compromisos del programa (vivienda, SMI, IVA, fiscalidad, permisos, becas, transporte, pensiones). Las medidas ejecutivas sin evidencia quedan «no verificables», no «no cumplidas».",
+    "by": "Equipo editorial"
+  },
+  {
+    "date": "2026-11-02",
+    "entity": "RegistroBOE",
+    "entityId": "boe-leyes",
+    "action": "importacion",
+    "detail": "El registro del BOE incluye ahora los reales decretos (3.938) además de las 384 normas con rango de ley.",
+    "by": "Equipo editorial"
+  },
+  {
+    "date": "2026-11-02",
     "entity": "SourceDocument",
     "entityId": "pp-programa-2023",
     "action": "verificacion",

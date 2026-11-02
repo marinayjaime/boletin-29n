@@ -128,7 +128,7 @@ export function PageHero({
   return (
     <header className={`${cls} ${tone !== "plain" ? "mb-8" : ""}`}>
       <div className="mx-auto max-w-[1320px] px-4 pb-8 pt-8 md:px-8 md:pb-12 md:pt-14">
-        <p className={`eyebrow rise ${tone !== "plain" ? "!text-current opacity-70" : ""}`}>{eyebrow}</p>
+        <p className={`eyebrow rise ${tone !== "plain" ? "!text-current" : ""}`}>{eyebrow}</p>
         <h1 className="display rise mt-3 max-w-4xl text-[2.9rem] md:text-[5.2rem]" style={{ animationDelay: "60ms" }}>
           {title}
         </h1>
@@ -144,17 +144,17 @@ export function PageHero({
 }
 
 export const STATUS_STYLE = {
-  cumplido: { color: "var(--yes)", label: "Cumplido", glyph: "✓" },
-  cumplido_parcial: { color: "var(--partial)", label: "Parcial", glyph: "◐" },
-  en_tramitacion: { color: "var(--pending)", label: "En tramitación", glyph: "…" },
-  no_cumplido: { color: "var(--no)", label: "No cumplido", glyph: "✕" },
-  no_verificable: { color: "var(--abs)", label: "No verificable", glyph: "?" },
+  cumplido: { color: "var(--yes)", ink: "var(--yes-ink)", label: "Cumplido", glyph: "✓" },
+  cumplido_parcial: { color: "var(--partial)", ink: "var(--partial-ink)", label: "Parcial", glyph: "◐" },
+  en_tramitacion: { color: "var(--pending)", ink: "var(--pending-ink)", label: "En tramitación", glyph: "…" },
+  no_cumplido: { color: "var(--no)", ink: "var(--no-ink)", label: "No cumplido", glyph: "✕" },
+  no_verificable: { color: "var(--abs)", ink: "var(--abs-ink)", label: "No verificable", glyph: "?" },
 } as const;
 
 export function StatusBadge({ status, long }: { status: keyof typeof STATUS_STYLE; long?: string }) {
   const s = STATUS_STYLE[status];
   return (
-    <span className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-extrabold" style={{ background: `color-mix(in oklab, ${s.color} 16%, transparent)`, color: s.color }}>
+    <span className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-extrabold" style={{ background: `color-mix(in oklab, ${s.color} 12%, var(--surface))`, color: s.ink }}>
       <span className="grid h-4 w-4 place-items-center rounded-full text-[0.65rem] text-white" style={{ background: s.color }} aria-hidden>
         {s.glyph}
       </span>

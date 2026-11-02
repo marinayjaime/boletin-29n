@@ -41,11 +41,18 @@ test("test: temas, responder, revisar, porcentajes y borrar sin enviar datos", a
   await page.getByRole("button", { name: "Anterior" }).click();
   await expect(page.getByText(/^3\s*\/\s*28$/)).toBeVisible();
   expect(await page.evaluate(() => sessionStorage.getItem("boletin29n.test.v1"))).toContain("muy_acuerdo");
-  for (let i = 0; i < 26; i++) await page.getByRole("button", { name: /Siguiente|Revisar/ }).click();
+  for (const [k, a] of ["Muy de acuerdo", "En desacuerdo", "De acuerdo", "Muy en desacuerdo"].entries()) {
+    await page.getByRole("radio", { name: a, exact: true }).click();
+    await expect(page.getByText(new RegExp(`^${4 + k}\\s*/\\s*28$`))).toBeVisible();
+  }
+  for (let i = 0; i < 22; i++) await page.getByRole("button", { name: /Siguiente|Revisar/ }).click();
   await expect(page.getByRole("heading", { name: "Revisa tus respuestas" })).toBeVisible();
-  await page.getByRole("button", { name: "Ver las posturas documentadas" }).click();
-  await expect(page.getByRole("heading", { name: "Lo que dejaron escrito" })).toBeVisible();
-  await expect(page.getByText("¿Cómo se calcula el porcentaje?")).toBeVisible();
+  await page.getByRole("button", { name: "Ver mi resultado" }).click();
+  await expect(page.getByRole("heading", { name: "Tu resultado" })).toBeVisible();
+  const winner = page.getByRole("region", { name: "Partido con mayor coincidencia" });
+  await expect(winner.getByText(/Partido con el que más coincides|Empate/)).toBeVisible();
+  await expect(winner.getByText(/^\d+ %$/).first()).toBeVisible();
+  await expect(page.getByText("¿Cómo se calcula?")).toBeVisible();
   await expect(page.getByText(/ranking personal|partido ideal|deberías votar/i)).toHaveCount(0);
   await page.getByRole("button", { name: "Borrar mis respuestas" }).click();
   expect(await page.evaluate(() => sessionStorage.getItem("boletin29n.test.v1"))).toBeNull();

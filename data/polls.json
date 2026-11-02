@@ -19,36 +19,243 @@
   "CCA": "Coalición Canaria",
   "ADELANTE": "Adelante Andalucía",
   "PODEMOS": "Podemos",
-  "SALF": "SALF"
+  "SALF": "SALF",
+  "UPN": "UPN",
+  "ERC_PODEMOS": "ERC-Podemos (lista conjunta)",
+  "CHA": "Chunta Aragonesista",
+  "MES": "Més",
+  "CANARIAS": "CC o UPC"
  },
  "checkedAt": "2026-11-02",
- "note": "Escaños tal como los publica cada medio. Las horquillas no se convierten en cifras puntuales. Los escaños no publicados (otras candidaturas) no se estiman.",
+ "note": "Cada encuesta se ha contrastado con su publicación original. Solo las verificadas y completas se usan como escenario principal. Las cifras parciales no se completan y las horquillas no se convierten en cifras.",
  "polls": [
+  {
+   "id": "poll-03",
+   "firm": "EM-Analytics",
+   "media": "Electomanía",
+   "fieldwork": "28–30 Oct",
+   "published": "2026-11-01",
+   "title": "ElectoPanel (1 nov): el PSOE baja y vuelve a mínimos",
+   "url": "https://electomania.es/electopanel-1-nov-el-psoe-baja-y-vuelve-a-minimos/",
+   "type": "puntual",
+   "seats": {
+    "PP": 133,
+    "PSOE": 108,
+    "VOX": 64,
+    "FA": 12,
+    "ERC_PODEMOS": 8,
+    "BILDU": 7,
+    "PNV": 6,
+    "JUNTS": 5,
+    "FV": 2,
+    "ADELANTE": 2,
+    "BNG": 2,
+    "PODEMOS": 1
+   },
+   "verification": {
+    "status": "verificada",
+    "checkedAt": "2026-11-02",
+    "method": "Lectura del artículo original (texto publicado)",
+    "notes": "Coincide íntegramente con la tabla publicada (350 escaños). «ERC» concurre en lista conjunta con Podemos en Cataluña; Podemos obtiene además 1 escaño en solitario."
+   }
+  },
+  {
+   "id": "poll-12",
+   "firm": "EM-Analytics",
+   "media": "Electomanía",
+   "fieldwork": "17–23 Oct",
+   "published": "2026-10-25",
+   "title": "ElectoPanel (25 octubre): el PP baja de nuevo, Frente Amplio crece",
+   "url": "https://electomania.es/electopanel-25-octubre-el-pp-baja-de-nuevo-frente-amplio-crece/",
+   "type": "puntual",
+   "seats": {
+    "PP": 132,
+    "PSOE": 111,
+    "VOX": 62,
+    "FA": 11,
+    "ERC_PODEMOS": 8,
+    "BILDU": 7,
+    "PNV": 6,
+    "JUNTS": 5,
+    "FV": 2,
+    "ADELANTE": 2,
+    "BNG": 3,
+    "PODEMOS": 1
+   },
+   "verification": {
+    "status": "verificada",
+    "checkedAt": "2026-11-02",
+    "method": "Lectura del artículo original (texto publicado)",
+    "notes": "Coincide con la tabla publicada (350 escaños)."
+   }
+  },
+  {
+   "id": "poll-15",
+   "firm": "EM-Analytics",
+   "media": "Electomanía",
+   "fieldwork": "15–17 Oct",
+   "published": "2026-10-18",
+   "title": "ElectoPanel (18 oct): ERC y Frente Amplio ceden ante el PSOE. Podemos, en el límite de ser extraparlamentario",
+   "url": "https://electomania.es/electopanel-18-oct-erc-y-frente-amplio-ceden-ante-el-psoe-podemos-en-el-limite-de-ser-extraparlamentario/",
+   "type": "puntual",
+   "seats": {
+    "PP": 134,
+    "PSOE": 111,
+    "VOX": 62,
+    "FA": 7,
+    "ERC_PODEMOS": 8,
+    "BILDU": 7,
+    "PNV": 6,
+    "JUNTS": 5,
+    "FV": 3,
+    "ADELANTE": 3,
+    "BNG": 3,
+    "PODEMOS": 1
+   },
+   "verification": {
+    "status": "verificada",
+    "checkedAt": "2026-11-02",
+    "method": "Lectura del artículo original (texto publicado)",
+    "notes": "Coincide con el texto publicado (350 escaños)."
+   }
+  },
+  {
+   "id": "poll-06",
+   "firm": "Hamalgama Métrica",
+   "media": "Vozpópuli",
+   "fieldwork": "22–28 oct",
+   "published": "2026-11-02",
+   "title": "PP y Vox suman ya un techo histórico de 12,7 millones de votos y lograrían 205 escaños",
+   "url": "https://www.vozpopuli.com/espana/politica/pp-y-vox-suman-ya-un-techo-historico-de-127-millones-de-votos-y-lograrian-205-escanos.html",
+   "type": "puntual",
+   "seats": {
+    "PP": 135,
+    "UPN": 2,
+    "VOX": 70,
+    "PSOE": 106,
+    "FA": 7,
+    "ERC": 7,
+    "JUNTS": 7,
+    "BILDU": 7,
+    "PNV": 4,
+    "BNG": 2,
+    "ADELANTE": 2,
+    "PODEMOS": 1
+   },
+   "verification": {
+    "status": "corregida",
+    "checkedAt": "2026-11-02",
+    "method": "Lectura del artículo original (texto publicado)",
+    "notes": "El artículo original difiere de la recopilación secundaria (que atribuía 7 escaños a Front Valencià y otros repartos). Se usan las cifras del artículo: suman 350. UPN figura por separado (2)."
+   }
+  },
   {
    "id": "poll-00",
    "firm": "SocioMétrica",
    "media": "El Español",
    "fieldwork": "1 Sep–1 Nov",
    "published": "2026-11-01",
-   "type": "puntual",
    "title": "Primer sondeo tras la tragedia de Urda: PP con UPN sube a 139 escaños y Vox a 64; el PSOE cae a 106 y el Frente Amplio a 5",
    "url": "https://www.elespanol.com/espana/politica/20261101/primer-sondeo-tragedia-pp-vox-amplian-ventaja-sanchez-sigue-cayendo-pese-vaciar-frente-amplio/1003744442810_0.html",
+   "type": "puntual",
    "seats": {
-    "PP": 139,
-    "PSOE": 106,
+    "PP": 137,
+    "UPN": 2,
     "VOX": 64,
-    "FA": 7,
-    "FV": 3,
-    "ERC": 9,
-    "JUNTS": 6,
+    "PSOE": 106,
+    "FA": 5,
+    "ERC_PODEMOS": 9,
     "BILDU": 7,
     "PNV": 4,
-    "BNG": 2,
-    "CCA": 1,
+    "FV": 3,
     "ADELANTE": 2,
-    "PODEMOS": 0,
-    "SALF": 0
-   }
+    "BNG": 2,
+    "CHA": 1,
+    "MES": 1
+   },
+   "verification": {
+    "status": "parcial",
+    "checkedAt": "2026-11-02",
+    "method": "Lectura del artículo original (texto publicado)",
+    "notes": "El texto detalla 343 escaños. Los 7 restantes (previsiblemente Junts y Coalición Canaria) no figuran en el texto y no se completan. La recopilación secundaria atribuía 7 a Frente Amplio; el artículo dice 5."
+   },
+   "unpublishedSeats": 7
+  },
+  {
+   "id": "poll-09",
+   "firm": "SocioMétrica",
+   "media": "El Español",
+   "fieldwork": "1 Sep–25 Oct",
+   "published": "2026-10-26",
+   "title": "La izquierda no remonta: Feijóo aventaja a Sánchez en 29 escaños y la suma con Vox se mantiene en los 200 diputados",
+   "url": "https://www.elespanol.com/espana/politica/20261025/izquierda-no-remonta-sanchez-gana-escanos-costa-frente-podemos-sondeo-noche/1003744434105_0.html",
+   "type": "puntual",
+   "seats": {
+    "PP": 135,
+    "UPN": 2,
+    "VOX": 63,
+    "PSOE": 108,
+    "FA": 6,
+    "ERC_PODEMOS": 9,
+    "FV": 3,
+    "JUNTS": 7,
+    "BILDU": 7,
+    "PNV": 4
+   },
+   "verification": {
+    "status": "parcial",
+    "checkedAt": "2026-11-02",
+    "method": "Lectura del artículo original (texto publicado)",
+    "notes": "El texto detalla 344 escaños. Los 6 restantes no figuran en el texto y no se completan."
+   },
+   "unpublishedSeats": 6
+  },
+  {
+   "id": "poll-11",
+   "firm": "Winston",
+   "media": "Artículo14",
+   "fieldwork": "21–23 Oct",
+   "published": "2026-10-26",
+   "title": "El PSOE se coloca a 6 escaños del PP, que mantiene una mayoría de 190 escaños con Vox",
+   "url": "https://www.articulo14.es/politica/encuesta-articulo14-el-psoe-se-coloca-6-escanos-del-pp-que-mantiene-una-mayoria-de-190-escanos-con-vox-20261026.html",
+   "type": "puntual",
+   "seats": {
+    "PP": 121,
+    "PSOE": 115,
+    "VOX": 69,
+    "FA": 9
+   },
+   "verification": {
+    "status": "parcial",
+    "checkedAt": "2026-11-02",
+    "method": "Lectura del artículo original (texto publicado)",
+    "notes": "El texto solo detalla PP, PSOE, Vox y Frente Amplio (314 escaños); el resto aparece en un gráfico no legible automáticamente. La recopilación secundaria daba 122 al PP; el artículo dice 121."
+   },
+   "unpublishedSeats": 36
+  },
+  {
+   "id": "poll-16",
+   "firm": "IMOP",
+   "media": "El Confidencial",
+   "fieldwork": "13–16 Oct",
+   "published": "2026-10-23",
+   "title": "PSOE y Frente Amplio recortan 12 escaños a PP y Vox, pero la derecha mantiene una mayoría absoluta de 195",
+   "url": "https://www.elconfidencial.com/espana/2026-10-23/encuesta-imop-elecciones-29n-bloque-psoe-frente-amplio_4450302/",
+   "type": "puntual",
+   "seats": {
+    "PP": 123,
+    "VOX": 72,
+    "PSOE": 113,
+    "FA": 14,
+    "PODEMOS": 1
+   },
+   "verification": {
+    "status": "parcial",
+    "checkedAt": "2026-11-02",
+    "method": "Lectura del artículo original (texto publicado)",
+    "notes": "El texto detalla 323 escaños (el PP incluye 1 de UPN). Adelante Andalucía se deduciría de la suma publicada del bloque, pero no se muestra. La recopilación secundaria daba 0 a Podemos; el artículo dice 1."
+   },
+   "unpublishedSeats": 27
   },
   {
    "id": "poll-01",
@@ -56,9 +263,9 @@
    "media": "El Mundo",
    "fieldwork": "29–30 Oct",
    "published": "2026-11-01",
-   "type": "horquilla",
    "title": "El PSOE pierde 450.000 votos y cae por debajo de 100 escaños en la primera encuesta tras la tragedia de Urda",
    "url": "https://www.elmundo.es/espana/encuestas/2026/11/01/6ae77446e4d4d8f3698b458a.html",
+   "type": "horquilla",
    "seats": {
     "PP": {
      "min": 133,
@@ -76,9 +283,9 @@
      "min": 9,
      "max": 11
     },
-    "FV": {
-     "min": 2,
-     "max": 3
+    "PODEMOS": {
+     "min": 0,
+     "max": 1
     },
     "ERC": {
      "min": 9,
@@ -94,18 +301,21 @@
      "max": 6
     },
     "BNG": 2,
-    "CCA": {
-     "min": 0,
-     "max": 1
-    },
     "ADELANTE": {
      "min": 3,
      "max": 4
     },
-    "PODEMOS": {
-     "min": 0,
-     "max": 1
-    }
+    "FV": {
+     "min": 2,
+     "max": 3
+    },
+    "CANARIAS": 1
+   },
+   "verification": {
+    "status": "verificada",
+    "checkedAt": "2026-11-02",
+    "method": "Lectura del artículo original (texto publicado)",
+    "notes": "Horquillas verificadas en el texto. El escaño de Canarias se atribuye a «CC o UPC» sin precisar."
    }
   },
   {
@@ -114,9 +324,9 @@
    "media": "El Debate",
    "fieldwork": "28–30 Oct",
    "published": "2026-11-02",
-   "type": "horquilla",
    "title": "El accidente frena al PSOE y amplía el apoyo al PP y la mayoría absolutísima de la derecha",
    "url": "http://eldebate.com/espana/20261102/accidente-frena-psoe-amplia-apoyo-pp-mayoria-absolutisima-derecha_475640.html",
+   "type": "horquilla",
    "seats": {
     "PP": {
      "min": 131,
@@ -134,34 +344,13 @@
      "min": 9,
      "max": 11
     },
-    "ADELANTE": 1,
-    "PODEMOS": 0
-   }
-  },
-  {
-   "id": "poll-03",
-   "firm": "EM-Analytics",
-   "media": "Electomanía",
-   "fieldwork": "28–30 Oct",
-   "published": "2026-11-01",
-   "type": "puntual",
-   "title": "ElectoPanel (1 nov): el PSOE baja y vuelve a mínimos",
-   "url": "https://electomania.es/electopanel-1-nov-el-psoe-baja-y-vuelve-a-minimos/",
-   "seats": {
-    "PP": 133,
-    "PSOE": 108,
-    "VOX": 64,
-    "FA": 12,
-    "FV": 2,
-    "ERC": 8,
-    "JUNTS": 5,
-    "BILDU": 7,
-    "PNV": 6,
-    "BNG": 2,
-    "CCA": 0,
-    "ADELANTE": 2,
-    "PODEMOS": 1,
-    "SALF": 0
+    "PODEMOS": 1
+   },
+   "verification": {
+    "status": "parcial",
+    "checkedAt": "2026-11-02",
+    "method": "Lectura del artículo original (texto publicado)",
+    "notes": "El texto solo detalla PP, PSOE, Vox, Frente Amplio y Podemos. La recopilación secundaria daba 0 a Podemos; el artículo dice 1."
    }
   },
   {
@@ -170,13 +359,13 @@
    "media": "La Razón",
    "fieldwork": "26–29 Oct",
    "published": "2026-11-02",
-   "type": "horquilla",
    "title": "El PSOE frena el efecto remontada y la derecha consolida su mayoría absoluta",
    "url": "https://www.larazon.es/espana/psoe-frena-efecto-remontada-derecha-consolida-mayoria-absoluta_202611026ae783220250123215703bb1.html",
+   "type": "horquilla",
    "seats": {
     "PP": {
-     "min": 140,
-     "max": 142
+     "min": 138,
+     "max": 140
     },
     "PSOE": {
      "min": 100,
@@ -190,131 +379,20 @@
      "min": 9,
      "max": 10
     },
-    "FV": {
-     "min": 7,
-     "max": 8
-    },
-    "ERC": {
-     "min": 8,
-     "max": 9
-    },
-    "JUNTS": {
-     "min": 6,
-     "max": 7
-    },
-    "BILDU": {
-     "min": 4,
-     "max": 5
-    },
-    "PNV": 2,
-    "BNG": 1,
-    "CCA": {
-     "min": 2,
-     "max": 3
+    "PODEMOS": {
+     "min": 0,
+     "max": 1
     },
     "ADELANTE": {
-     "min": 0,
-     "max": 1
+     "min": 2,
+     "max": 3
     }
-   }
-  },
-  {
-   "id": "poll-06",
-   "firm": "Hamalgama Métrica",
-   "media": "Vozpópuli",
-   "fieldwork": "22–28 Oct",
-   "published": "2026-11-02",
-   "type": "puntual",
-   "title": "PP y Vox suman ya un techo histórico de 12,7 millones de votos y lograrían 205 escaños",
-   "url": "https://www.vozpopuli.com/espana/politica/pp-y-vox-suman-ya-un-techo-historico-de-127-millones-de-votos-y-lograrian-205-escanos.html",
-   "seats": {
-    "PP": 137,
-    "PSOE": 106,
-    "VOX": 70,
-    "FA": 7,
-    "FV": 7,
-    "ERC": 7,
-    "JUNTS": 7,
-    "BILDU": 4,
-    "PNV": 2,
-    "CCA": 2,
-    "ADELANTE": 1,
-    "PODEMOS": 0
-   }
-  },
-  {
-   "id": "poll-07",
-   "firm": "The Objective",
-   "media": "The Objective",
-   "fieldwork": "27 Oct",
-   "published": "2026-11-01",
-   "type": "horquilla",
-   "title": "Un sondeo interno de Vox coloca al partido en 71 escaños y a PSOE y PP en empate técnico",
-   "url": "https://theobjective.com/espana/2026-11-01/sondeo-vox-71-escanos/",
-   "seats": {
-    "PP": {
-     "min": 114,
-     "max": 118
-    },
-    "PSOE": {
-     "min": 117,
-     "max": 121
-    },
-    "VOX": {
-     "min": 67,
-     "max": 71
-    },
-    "FA": {
-     "min": 12,
-     "max": 14
-    },
-    "FV": 8,
-    "ERC": 5,
-    "JUNTS": {
-     "min": 6,
-     "max": 7
-    },
-    "BILDU": {
-     "min": 3,
-     "max": 4
-    },
-    "PNV": {
-     "min": 1,
-     "max": 2
-    },
-    "BNG": {
-     "min": 0,
-     "max": 1
-    },
-    "CCA": 2,
-    "ADELANTE": 1,
-    "PODEMOS": 0
-   }
-  },
-  {
-   "id": "poll-09",
-   "firm": "SocioMétrica",
-   "media": "El Español",
-   "fieldwork": "1 Sep–25 Oct",
-   "published": "2026-10-26",
-   "type": "puntual",
-   "title": "La izquierda no remonta: Feijóo aventaja a Sánchez en 29 escaños y la suma con Vox se mantiene en los 200 diputados",
-   "url": "https://www.elespanol.com/espana/politica/20261025/izquierda-no-remonta-sanchez-gana-escanos-costa-frente-podemos-sondeo-noche/1003744434105_0.html",
-   "seats": {
-    "PP": 137,
-    "PSOE": 108,
-    "VOX": 63,
-    "FA": 7,
-    "FV": 3,
-    "ERC": 9,
-    "JUNTS": 7,
-    "BILDU": 7,
-    "PNV": 4,
-    "BNG": 2,
-    "CCA": 1,
-    "ADELANTE": 2,
-    "PODEMOS": 0,
-    "SALF": 0
+   },
+   "verification": {
+    "status": "parcial",
+    "checkedAt": "2026-11-02",
+    "method": "Lectura del artículo original (texto publicado)",
+    "notes": "El texto detalla estas formaciones. La recopilación secundaria daba al PP 140–142 y a Adelante 0–1; el artículo dice 138–140 y 2–3."
    }
   },
   {
@@ -323,13 +401,13 @@
    "media": "La Razón",
    "fieldwork": "22–24 Oct",
    "published": "2026-10-26",
-   "type": "horquilla",
    "title": "Encuesta electoral 29N NC Report: El 18% de los votantes socialistas apoyan hoy a PP o Vox",
    "url": "https://www.larazon.es/espana/18-votantes-socialistas-apoyan-hoy-vox_202610266adea62a3eef771e1ac8d43d.html",
+   "type": "horquilla",
    "seats": {
     "PP": {
-     "min": 142,
-     "max": 144
+     "min": 141,
+     "max": 143
     },
     "PSOE": {
      "min": 100,
@@ -343,81 +421,113 @@
      "min": 8,
      "max": 9
     },
-    "FV": {
+    "PODEMOS": 1,
+    "ADELANTE": 3,
+    "ERC": {
      "min": 7,
      "max": 8
     },
-    "ERC": {
-     "min": 8,
-     "max": 9
-    },
     "JUNTS": {
+     "min": 7,
+     "max": 8
+    },
+    "BILDU": {
      "min": 6,
      "max": 7
     },
-    "BILDU": {
+    "PNV": {
      "min": 4,
      "max": 5
     },
+    "BNG": {
+     "min": 1,
+     "max": 2
+    }
+   },
+   "verification": {
+    "status": "parcial",
+    "checkedAt": "2026-11-02",
+    "method": "Lectura del artículo original (texto publicado)",
+    "notes": "El texto detalla estas formaciones; Coalición Canaria y otras no figuran. La recopilación secundaria contenía varias diferencias (p. ej. PNV 1–2, Bildu 4–5)."
+   }
+  },
+  {
+   "id": "poll-07",
+   "firm": "The Objective",
+   "media": "The Objective",
+   "fieldwork": "27 Oct",
+   "published": "2026-11-01",
+   "title": "Un sondeo interno de Vox coloca al partido en 71 escaños y a PSOE y PP en empate técnico",
+   "url": "https://theobjective.com/espana/2026-11-01/sondeo-vox-71-escanos/",
+   "type": "horquilla",
+   "seats": {
+    "PSOE": {
+     "min": 117,
+     "max": 121
+    },
+    "PP": {
+     "min": 114,
+     "max": 118
+    },
+    "VOX": {
+     "min": 67,
+     "max": 71
+    },
+    "FA": {
+     "min": 12,
+     "max": 14
+    },
+    "PODEMOS": 1,
+    "ERC": 8,
+    "JUNTS": 5,
+    "BILDU": {
+     "min": 6,
+     "max": 7
+    },
     "PNV": {
+     "min": 3,
+     "max": 4
+    },
+    "ADELANTE": 2,
+    "BNG": {
      "min": 1,
      "max": 2
     },
-    "BNG": 1,
-    "CCA": 3,
-    "ADELANTE": 1
-   }
+    "CCA": {
+     "min": 0,
+     "max": 1
+    }
+   },
+   "verification": {
+    "status": "verificada",
+    "checkedAt": "2026-11-02",
+    "method": "Lectura del artículo original (texto publicado)",
+    "notes": "Es un sondeo interno de Vox publicado por el medio, no una encuesta independiente. La recopilación secundaria contenía diferencias en ERC, Junts, Bildu, PNV, BNG, CC y Podemos."
+   },
+   "partisan": "Sondeo interno de Vox"
   },
   {
-   "id": "poll-11",
-   "firm": "Winston",
-   "media": "Artículo14",
-   "fieldwork": "21–23 Oct",
-   "published": "2026-10-26",
-   "type": "puntual",
-   "title": "El PSOE se coloca a 6 escaños del PP, que mantiene una mayoría de 190 escaños con Vox",
-   "url": "https://www.articulo14.es/politica/encuesta-articulo14-el-psoe-se-coloca-6-escanos-del-pp-que-mantiene-una-mayoria-de-190-escanos-con-vox-20261026.html",
+   "id": "poll-17",
+   "firm": "Sigma Dos",
+   "media": "El Mundo",
+   "fieldwork": "1–14 Oct",
+   "published": "2026-10-19",
+   "title": "La izquierda se desangra por toda España: puede perder escaños en 29 provincias mientras la derecha se impone en el 80% del mapa",
+   "url": "https://www.elmundo.es/espana/encuestas/2026/10/19/6ad4f168e9cf4a2c7a8b458b.html",
+   "type": "horquilla",
    "seats": {
-    "PP": 122,
-    "PSOE": 115,
-    "VOX": 69,
-    "FA": 9,
-    "FV": 3,
-    "ERC": 11,
-    "JUNTS": 4,
-    "BILDU": 7,
-    "PNV": 3,
-    "BNG": 1,
-    "CCA": 1,
-    "ADELANTE": 3,
-    "PODEMOS": 2,
-    "SALF": 0
-   }
-  },
-  {
-   "id": "poll-12",
-   "firm": "EM-Analytics",
-   "media": "Electomanía",
-   "fieldwork": "17–23 Oct",
-   "published": "2026-10-25",
-   "type": "puntual",
-   "title": "ElectoPanel (25 octubre): el PP baja de nuevo, Frente Amplio crece",
-   "url": "https://electomania.es/electopanel-25-octubre-el-pp-baja-de-nuevo-frente-amplio-crece/",
-   "seats": {
-    "PP": 132,
-    "PSOE": 111,
-    "VOX": 62,
-    "FA": 11,
-    "FV": 2,
-    "ERC": 8,
-    "JUNTS": 5,
-    "BILDU": 7,
-    "PNV": 6,
-    "BNG": 3,
-    "CCA": 0,
-    "ADELANTE": 2,
-    "PODEMOS": 1,
-    "SALF": 0
+    "PP": 136,
+    "VOX": 65,
+    "PSOE": {
+     "min": 101,
+     "max": 106
+    }
+   },
+   "verification": {
+    "status": "parcial",
+    "checkedAt": "2026-11-02",
+    "method": "Lectura del artículo original (texto publicado)",
+    "notes": "El texto da el escenario más probable para PP (136) y Vox (65) y una horquilla para el PSOE; el resto no figura."
    }
   },
   {
@@ -426,30 +536,15 @@
    "media": "elDiario.es",
    "fieldwork": "20–22 Oct",
    "published": "2026-10-25",
-   "type": "horquilla",
    "title": "El bloque de izquierdas recorta distancias, pero PP y Vox mantienen la mayoría absoluta",
    "url": "https://www.eldiario.es/politica/bloque-izquierdas-recorta-distancias-pp-vox-mantienen-mayoria-absoluta_1_13611052.html",
-   "seats": {
-    "PP": {
-     "min": 119,
-     "max": 134
-    },
-    "PSOE": {
-     "min": 102,
-     "max": 117
-    },
-    "VOX": {
-     "min": 64,
-     "max": 77
-    },
-    "FA": {
-     "min": 11,
-     "max": 17
-    },
-    "ADELANTE": {
-     "min": 0,
-     "max": 3
-    }
+   "type": "horquilla",
+   "seats": {},
+   "verification": {
+    "status": "no_verificable",
+    "checkedAt": "2026-11-02",
+    "method": "Lectura del artículo original (texto publicado)",
+    "notes": "El texto del artículo no es accesible sin suscripción; no se muestran cifras."
    }
   },
   {
@@ -458,159 +553,15 @@
    "media": "El Mundo",
    "fieldwork": "8–22 Oct",
    "published": "2026-10-26",
-   "type": "horquilla",
    "title": "Sánchez recorta distancia a Feijóo pero la suma de la derecha sigue muy cerca de los 200 escaños",
    "url": "https://www.elmundo.es/espana/encuestas/2026/10/26/6addf8c4fdddfff23d8b4581.html",
-   "seats": {
-    "PP": {
-     "min": 125,
-     "max": 131
-    },
-    "PSOE": {
-     "min": 103,
-     "max": 109
-    },
-    "VOX": {
-     "min": 66,
-     "max": 69
-    },
-    "FA": {
-     "min": 10,
-     "max": 12
-    },
-    "FV": {
-     "min": 2,
-     "max": 3
-    },
-    "ERC": {
-     "min": 8,
-     "max": 9
-    },
-    "JUNTS": {
-     "min": 6,
-     "max": 7
-    },
-    "BILDU": {
-     "min": 7,
-     "max": 8
-    },
-    "PNV": {
-     "min": 4,
-     "max": 5
-    },
-    "BNG": 2,
-    "CCA": {
-     "min": 0,
-     "max": 1
-    },
-    "ADELANTE": {
-     "min": 2,
-     "max": 3
-    },
-    "PODEMOS": 1
-   }
-  },
-  {
-   "id": "poll-15",
-   "firm": "EM-Analytics",
-   "media": "Electomanía",
-   "fieldwork": "15–17 Oct",
-   "published": "2026-10-18",
-   "type": "puntual",
-   "title": "ElectoPanel (18 oct): ERC y Frente Amplio ceden ante el PSOE. Podemos, en el límite de ser extraparlamentario",
-   "url": "https://electomania.es/electopanel-18-oct-erc-y-frente-amplio-ceden-ante-el-psoe-podemos-en-el-limite-de-ser-extraparlamentario/",
-   "seats": {
-    "PP": 134,
-    "PSOE": 111,
-    "VOX": 62,
-    "FA": 7,
-    "FV": 3,
-    "ERC": 8,
-    "JUNTS": 5,
-    "BILDU": 7,
-    "PNV": 6,
-    "BNG": 3,
-    "CCA": 0,
-    "ADELANTE": 3,
-    "PODEMOS": 1,
-    "SALF": 0
-   }
-  },
-  {
-   "id": "poll-16",
-   "firm": "IMOP",
-   "media": "El Confidencial",
-   "fieldwork": "13–16 Oct",
-   "published": "2026-10-23",
-   "type": "puntual",
-   "title": "PSOE y Frente Amplio recortan 12 escaños a PP y Vox, pero la derecha mantiene una mayoría absoluta de 195",
-   "url": "https://www.elconfidencial.com/espana/2026-10-23/encuesta-imop-elecciones-29n-bloque-psoe-frente-amplio_4450302/",
-   "seats": {
-    "PP": 123,
-    "PSOE": 113,
-    "VOX": 72,
-    "FA": 14,
-    "FV": 8,
-    "ERC": 4,
-    "JUNTS": 6,
-    "BILDU": 5,
-    "PNV": 2,
-    "BNG": 1,
-    "CCA": 1,
-    "ADELANTE": 1,
-    "PODEMOS": 0
-   }
-  },
-  {
-   "id": "poll-17",
-   "firm": "Sigma Dos",
-   "media": "El Mundo",
-   "fieldwork": "1–14 Oct",
-   "published": "2026-10-19",
    "type": "horquilla",
-   "title": "La izquierda se desangra por toda España: puede perder escaños en 29 provincias mientras la derecha se impone en el 80% del mapa",
-   "url": "https://www.elmundo.es/espana/encuestas/2026/10/19/6ad4f168e9cf4a2c7a8b458b.html",
-   "seats": {
-    "PP": {
-     "min": 132,
-     "max": 137
-    },
-    "PSOE": {
-     "min": 101,
-     "max": 106
-    },
-    "VOX": {
-     "min": 65,
-     "max": 68
-    },
-    "FA": {
-     "min": 9,
-     "max": 10
-    },
-    "FV": {
-     "min": 3,
-     "max": 4
-    },
-    "ERC": 9,
-    "JUNTS": {
-     "min": 6,
-     "max": 7
-    },
-    "BILDU": {
-     "min": 6,
-     "max": 7
-    },
-    "PNV": {
-     "min": 5,
-     "max": 6
-    },
-    "BNG": 2,
-    "CCA": 1,
-    "ADELANTE": {
-     "min": 1,
-     "max": 2
-    },
-    "PODEMOS": 1
+   "seats": {},
+   "verification": {
+    "status": "no_verificable",
+    "checkedAt": "2026-11-02",
+    "method": "Lectura del artículo original (texto publicado)",
+    "notes": "El texto accesible no detalla los escaños de cada formación; no se muestran cifras."
    }
   }
  ]

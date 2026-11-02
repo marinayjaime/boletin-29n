@@ -315,6 +315,10 @@ export const HistoricalPromiseSchema = z.object({
   topicId: slug,
   /** Agrupación editorial (p. ej. auditoría de compromisos legislativos del PSOE 2023). */
   series: z.string().optional(),
+  /** Procedencia: programa electoral, declaración personal (p. ej. discurso de investidura) o acuerdo de Gobierno. */
+  origin: z.enum(["programa", "declaracion", "acuerdo_gobierno"]).default("programa"),
+  /** Naturaleza: exige una ley, una medida ejecutiva (decreto, plan, presupuesto) o un resultado medible. */
+  nature: z.enum(["legislativa", "ejecutiva", "resultado", "internacional"]).default("legislativa"),
   promise: z.string(),
   promisedAt: isoDate,
   citation: CitationSchema,

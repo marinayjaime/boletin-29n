@@ -8,6 +8,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import { writeReview } from "./lib/review";
 
 const root = process.cwd();
 const read = (f: string) => JSON.parse(fs.readFileSync(path.join(root, "data", f), "utf8"));
@@ -54,7 +55,14 @@ async function main() {
   fs.writeFileSync(path.join(root, "data", "link-report.json"), JSON.stringify({ checkedAt: new Date().toISOString(), results }, null, 2));
   const broken = results.filter((r) => r.state === "roto" || r.state === "error");
   console.log(`\n${results.length} enlaces · ${broken.length} rotos o con error · ${results.filter((r) => r.state === "bloqueado").length} bloqueados`);
-  if (broken.length) process.exitCode = 1;
+  const nuevos = broken.filter((r) => !r.where.includes("[conocido"));
+  writeReview({
+    checker: "links",
+    ok: true,
+    findings: nuevos.map((r) => ({ kind: "enlace_roto", title: r.where, url: r.url, detail: `HTTP ${r.status}${"error" in r && r.error ? ` · ${r.error}` : ""}` })),
+    note: `${results.length} enlaces comprobados; ${results.filter((r) => r.state === "bloqueado").length} sitios bloquean el acceso automatizado (no se cuentan como rotos).`,
+  });
+  if (nuevos.length) process.exitCode = 1;
 }
 
 main();

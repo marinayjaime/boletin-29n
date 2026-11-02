@@ -14,7 +14,7 @@
   --surface-3: #e1e4ee;
   --ink: #0b0d17;
   --ink-2: #353a4d;
-  --ink-3: #6b7189;
+  --ink-3: #565c74;
   --line: #dfe2ec;
   --brand: #ffd60a; /* amarillo señal */
   --brand-ink: #0b0d17;
@@ -22,11 +22,17 @@
   --focus: #2563eb;
 
   /* estados (independientes de los colores de partido) */
-  --yes: #0d9488; /* sí / cumplido */
-  --no: #ea580c; /* no / no cumplido */
-  --abs: #94a3b8; /* abstención / no verificable */
-  --partial: #ca8a04; /* parcial */
-  --pending: #7c8db5; /* en tramitación */
+  --yes: #0f766e; /* sí / cumplido */
+  --no: #c2410c; /* no / no cumplido */
+  --abs: #64748b; /* abstención / no verificable */
+  --partial: #a16207; /* parcial */
+  --pending: #55648f; /* en tramitación */
+  /* variantes para texto sobre fondos claros (contraste ≥ 4,5:1) */
+  --yes-ink: #115e59;
+  --no-ink: #9a3412;
+  --abs-ink: #475569;
+  --partial-ink: #854d0e;
+  --pending-ink: #3d4a75;
 
   /* países / series no partidistas en gráficos */
   --c1: #0b0d17;
@@ -42,7 +48,7 @@
   --pp-soft: #e6eef8;
   --pp-strong: #1a4780;
   --pp-on: #ffffff;
-  --psoe: #ef1c27;
+  --psoe: #e01b26;
   --psoe-2: #f5747a;
   --psoe-soft: #fde8e9;
   --psoe-strong: #b5121b;
@@ -82,6 +88,11 @@
     --focus: #93b4ff;
     --yes: #2dd4bf;
     --no: #fb923c;
+    --yes-ink: #5eead4;
+    --no-ink: #fdba74;
+    --abs-ink: #cbd5e1;
+    --partial-ink: #fcd34d;
+    --pending-ink: #b4c0e4;
     --c1: #f3f4f8;
     --pp-soft: #172a45;
     --pp-strong: #8fb9e8;
@@ -111,6 +122,11 @@
   --focus: #93b4ff;
   --yes: #2dd4bf;
   --no: #fb923c;
+  --yes-ink: #5eead4;
+  --no-ink: #fdba74;
+  --abs-ink: #cbd5e1;
+  --partial-ink: #fcd34d;
+  --pending-ink: #b4c0e4;
   --c1: #f3f4f8;
   --pp-soft: #172a45;
   --pp-strong: #8fb9e8;
@@ -144,6 +160,10 @@
   --color-abs: var(--abs);
   --color-partial: var(--partial);
   --color-pending: var(--pending);
+  --color-yes-ink: var(--yes-ink);
+  --color-no-ink: var(--no-ink);
+  --color-abs-ink: var(--abs-ink);
+  --color-partial-ink: var(--partial-ink);
   --font-display: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
   --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
   --radius-card: var(--radius);

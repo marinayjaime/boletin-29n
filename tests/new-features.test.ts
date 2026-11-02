@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { ABSOLUTE_MAJORITY, investiture, pointSeats, setSeats, sumSeats, validateScenario } from "@/lib/seats";
-import { topicCoincidence, MIN_COMPARABLE } from "@/lib/quiz";
+import { ABSOLUTE_MAJORITY, investiture, isMainScenario, pointSeats, setSeats, sumSeats, validateScenario } from "@/lib/seats";
+import { topicCoincidence, MIN_COMPARABLE, MIN_OVERALL, overallCoincidence, topMatch } from "@/lib/quiz";
 import { PARTY_THEME, contrastRatio } from "@/lib/party-theme";
 import { commonForSelection, pairMatrix } from "@/lib/common";
 import { formatValue } from "@/lib/format";
@@ -28,11 +28,18 @@ describe("escaños y mayorías", () => {
   it("las horquillas no se convierten en escaños puntuales", () => {
     expect(pointSeats({ PP: { min: 130, max: 135 }, PSOE: 100 })).toBeNull();
   });
-  it("todas las encuestas puntuales suman 350 y tienen fuente", () => {
+  it("las encuestas puntuales suman 350 (contando los escaños no publicados) y tienen fuente", () => {
     const { polls } = getPolls();
     expect(polls.length).toBeGreaterThan(5);
-    for (const p of polls.filter((x) => x.type === "puntual")) expect(sumSeats(pointSeats(p.seats)!), p.id).toBe(350);
+    for (const p of polls.filter((x) => x.type === "puntual")) expect(sumSeats(pointSeats(p.seats)!) + (p.unpublishedSeats ?? 0), p.id).toBe(350);
     for (const p of polls) expect(p.url).toMatch(/^https?:\/\//);
+  });
+  it("solo las encuestas verificadas y completas sirven de escenario principal", () => {
+    const { polls } = getPolls();
+    const main = polls.filter(isMainScenario);
+    expect(main.length).toBeGreaterThan(0);
+    for (const p of main) expect(sumSeats(pointSeats(p.seats)!), p.id).toBe(350);
+    for (const p of polls.filter((x) => x.verification.status === "no_verificable" || x.unpublishedSeats)) expect(isMainScenario(p), p.id).toBe(false);
   });
 });
 
@@ -48,6 +55,41 @@ describe("test de coincidencias", () => {
   });
   it("sin respuestas no hay porcentaje", () => {
     for (const p of getParties()) expect(topicCoincidence(q, {}, "vivienda", p.id).pct).toBeNull();
+  });
+  it("el porcentaje global suma todas las preguntas y exige un mínimo", () => {
+    const answers = Object.fromEntries(q.map((s, k) => [s.id, (k % 3 === 0 ? "desacuerdo" : "acuerdo") as "acuerdo" | "desacuerdo"]));
+    for (const p of getParties()) {
+      const g = overallCoincidence(q, answers, p.id);
+      const topics = [...new Set(q.map((s) => s.topicId))].map((t) => topicCoincidence(q, answers, t, p.id));
+      expect(g.coincide).toBe(topics.reduce((a, t) => a + t.coincide, 0));
+      expect(g.comparable).toBe(topics.reduce((a, t) => a + t.comparable, 0));
+      expect(g.pct).toBe(g.comparable >= MIN_OVERALL ? Math.round((g.coincide / g.comparable) * 100) : null);
+    }
+  });
+  it("solo devuelve el partido con más coincidencia (o todos los empatados)", () => {
+    const answers = Object.fromEntries(q.map((s) => [s.id, "acuerdo" as const]));
+    const ids = getParties().map((p) => p.id);
+    const { top, all } = topMatch(q, answers, ids);
+    const ratios = all.filter((c) => c.pct !== null).map((c) => c.coincide / c.comparable);
+    expect(top.length).toBeGreaterThan(0);
+    for (const t of top) expect(t.coincide / t.comparable).toBeCloseTo(Math.max(...ratios), 10);
+    expect(topMatch(q, {}, ids).top).toEqual([]);
+  });
+  it("detecta empates exactos sin depender del redondeo", () => {
+    const st = [
+      { id: "a", topicId: "x", positions: [{ partyId: "p1", stance: "a_favor" as const }, { partyId: "p2", stance: "a_favor" as const }] },
+      { id: "b", topicId: "x", positions: [{ partyId: "p1", stance: "a_favor" as const }, { partyId: "p2", stance: "a_favor" as const }] },
+      { id: "c", topicId: "y", positions: [{ partyId: "p1", stance: "en_contra" as const }, { partyId: "p2", stance: "en_contra" as const }] },
+      { id: "d", topicId: "y", positions: [{ partyId: "p1", stance: "a_favor" as const }, { partyId: "p2", stance: "en_contra" as const }] },
+    ];
+    const ans = { a: "acuerdo", b: "acuerdo", c: "acuerdo", d: "acuerdo" } as const;
+    const r = topMatch(st, ans, ["p1", "p2"]);
+    expect(r.top.map((t) => t.partyId)).toEqual(["p1"]);
+    expect(r.top[0].pct).toBe(75);
+    const tie = topMatch(st, { a: "acuerdo", b: "acuerdo", c: "acuerdo", d: "indiferente" }, ["p1", "p2"]);
+    expect(tie.top).toEqual([]); // 3 comparables < mínimo
+    const tie2 = topMatch([...st, { ...st[0], id: "e" }], { a: "acuerdo", b: "acuerdo", c: "acuerdo", d: "indiferente", e: "acuerdo" }, ["p1", "p2"]);
+    expect(tie2.top.map((t) => t.partyId)).toEqual(["p1", "p2"]);
   });
   it("respuestas indiferentes no cuentan como comparables", () => {
     const answers = Object.fromEntries(q.map((s) => [s.id, "indiferente" as const]));
@@ -115,6 +157,21 @@ describe("promesas del PSOE 2023", () => {
       const ids = p.assessment.officialActions.map((a) => a.url.match(/BOE-A-\d{4}-\d+/)?.[0]).filter(Boolean);
       expect(ids.some((id) => laws.some((l) => l.id === id)), p.id).toBe(true);
     }
+  });  const all = getPromises().filter((p) => p.series?.startsWith("psoe-2023"));
+  it("distingue programa del PSOE y anuncios de Sánchez", () => {
+    expect(all.filter((p) => p.origin === "programa").length).toBeGreaterThan(21);
+    expect(all.filter((p) => p.origin === "declaracion").length).toBeGreaterThanOrEqual(10);
+    for (const p of all.filter((x) => x.origin === "declaracion")) expect(p.citation.sourceId, p.id).toBe("congreso-ds-15-pl-7");
+  });
+  it("una medida no legislativa nunca es «no cumplida» por falta de ley", () => {
+    for (const p of all.filter((x) => x.nature !== "legislativa")) expect(p.assessment.status, p.id).not.toBe("no_cumplido");
+  });
+  it("toda referencia al BOE de una ficha existe en el registro", () => {
+    for (const p of all)
+      for (const a of p.assessment.officialActions) {
+        const id = a.url.match(/BOE-A-\d{4}-\d+/)?.[0];
+        if (id) expect(laws.some((l) => l.id === id), `${p.id} ${id}`).toBe(true);
+      }
   });
 });
 

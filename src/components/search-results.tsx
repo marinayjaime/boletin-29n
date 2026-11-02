@@ -196,16 +196,16 @@ export function SearchResults({ parties, sources }: { parties: PartyLite[]; sour
               const p = doc.party ? pmap[doc.party] : null;
               const href = s ? `${s.archiveUrl ?? s.officialUrl}#page=${doc.page}` : "#";
               return (
-                <li key={doc.id} className="grid min-w-0 gap-2 py-4 md:grid-cols-[180px_1fr]">
+                <li key={doc.id} className="grid min-w-0 grid-cols-1 gap-2 py-4 md:grid-cols-[180px_1fr]">
                   <div className="text-sm">
                     <p className="font-semibold">{p?.shortName ?? "—"}</p>
                     <p className="text-xs text-ink-3">{s?.cycleLabel}</p>
                   </div>
                   <div>
-                    <p className="leading-relaxed text-ink-2">
+                    <p className="break-words leading-relaxed text-ink-2">
                       <Highlight text={doc.text} terms={terms} />
                     </p>
-                    <a href={href} target="_blank" rel="noreferrer" className="cite-chip mt-2 inline-block whitespace-normal hover:border-ink">
+                    <a href={href} target="_blank" rel="noreferrer" className="mt-2 inline-block break-words rounded-xl bg-surface-2 px-2.5 py-1 text-xs font-bold text-ink-2 hover:bg-surface-3">
                       {s?.title.slice(0, 60)}… · p. {doc.page} ↗
                     </a>
                   </div>
@@ -239,7 +239,7 @@ export function SearchResults({ parties, sources }: { parties: PartyLite[]; sour
           <h2 id="r-glo" className="kicker mb-4">
             Glosario
           </h2>
-          <ul className="grid gap-3 md:grid-cols-2">
+          <ul className="grid grid-cols-1 gap-3 md:grid-cols-2">
             {gloss.slice(0, 6).map(({ doc }) => (
               <li key={doc.id} className="rounded border border-rule p-3">
                 <Link href={doc.url} className="font-semibold hover:underline">

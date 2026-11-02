@@ -42,7 +42,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
       </nav>
       <header className="pb-8 pt-6">
         <div className="flex flex-wrap gap-2">
-          <span className="cite-chip" title={t.help}>
+          <span className="tag !bg-ink !text-bg" title={t.help}>
             {t.label}
           </span>
           {v.rollCall && <span className="cite-chip">Pública por llamamiento</span>}
@@ -53,12 +53,12 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
             </span>
           ))}
         </div>
-        <h1 className="display mt-4 text-3xl leading-tight md:text-5xl">{v.title || v.section}</h1>
+        <h1 className="display mt-4 text-[2.2rem] md:text-6xl">{v.title || v.section}</h1>
         {v.subgroupText && <p className="mt-3 text-lg text-ink-2">{[v.subgroup, v.subgroupText].filter((s, i, a) => s && a.indexOf(s) === i).join(" — ")}</p>}
         <p className="mt-3 text-sm text-ink-3">{t.help}</p>
       </header>
 
-      <section className="grid gap-px overflow-hidden rounded border border-rule bg-rule sm:grid-cols-3 lg:grid-cols-6" aria-label="Resumen">
+      <section className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6" aria-label="Resumen">
         {[
           ["Resultado", RESULT[v.result]],
           ["Fecha", formatDate(v.date)],
@@ -67,9 +67,9 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
           ["Abstenciones", String(v.totals.abst)],
           ["No votan", v.rollCall ? "n. d." : String(v.totals.noVota)],
         ].map(([k, val]) => (
-          <div key={k} className="bg-paper p-4">
-            <p className="kicker">{k}</p>
-            <p className="display tabular mt-1 text-2xl">{val}</p>
+          <div key={k} className="card p-4" style={k === "Resultado" ? { background: v.result === "rechazada" ? "var(--no)" : v.result === "aprobada" || v.result === "asentimiento" ? "var(--yes)" : undefined, color: v.result === "rechazada" || v.result === "aprobada" || v.result === "asentimiento" ? "#fff" : undefined } : undefined}>
+            <p className="text-xs font-extrabold uppercase tracking-wider opacity-70">{k}</p>
+            <p className="num mt-1 text-3xl">{val}</p>
           </div>
         ))}
       </section>
@@ -85,26 +85,26 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
         </dd>
       </dl>
       <div className="mt-4 flex flex-wrap gap-2">
-        <a href={dayUrl} target="_blank" rel="noreferrer" className="kicker rounded-full border border-ink px-3 py-1.5">
+        <a href={dayUrl} target="_blank" rel="noreferrer" className="btn btn-primary min-h-[42px] text-sm">
           Votaciones del día en el Congreso ↗
         </a>
         {initUrl && (
-          <a href={initUrl} target="_blank" rel="noreferrer" className="kicker rounded-full border border-rule px-3 py-1.5">
+          <a href={initUrl} target="_blank" rel="noreferrer" className="btn btn-ghost min-h-[42px] text-sm">
             Ficha de la iniciativa ↗
           </a>
         )}
         {v.detailUrl && (
-          <a href={v.detailUrl} target="_blank" rel="noreferrer" className="kicker rounded-full border border-rule px-3 py-1.5">
+          <a href={v.detailUrl} target="_blank" rel="noreferrer" className="btn btn-ghost min-h-[42px] text-sm">
             Diario de Sesiones ↗
           </a>
         )}
-        <a href={v.sourceZip} className="kicker rounded-full border border-rule px-3 py-1.5">
+        <a href={v.sourceZip} className="btn btn-ghost min-h-[42px] text-sm">
           Datos abiertos (ZIP) ↓
         </a>
       </div>
 
       <section className="mt-12" aria-labelledby="hemi">
-        <h2 id="hemi" className="display text-3xl">
+        <h2 id="hemi" className="display text-4xl md:text-5xl">
           El hemiciclo
         </h2>
         <div className="mt-4">

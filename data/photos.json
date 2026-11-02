@@ -1,0 +1,47 @@
+{
+  "pedro-sanchez": {
+    "file": "/img/personas/pedro-sanchez.jpg",
+    "commonsPage": "https://commons.wikimedia.org/wiki/File:Obisk_%C5%A1panskega_predsednika_vlade_v_Sloveniji_(53658605930)_(cropped).jpg",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "author": "Foto: Nebojša Tejić/STA",
+    "date": "2024-04-16",
+    "credit": "Obisk španskega predsednika vlade v Sloveniji, Vlada Republike Slovenije from Ljubljana, Slovenia"
+  },
+  "alberto-nunez-feijoo": {
+    "file": "/img/personas/alberto-nunez-feijoo.jpg",
+    "commonsPage": "https://commons.wikimedia.org/wiki/File:Alberto_N%C3%BA%C3%B1ez_Feij%C3%B3o_2025.jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "author": "European People's Party",
+    "date": "2025-01-17",
+    "credit": "This image has been extracted from another file"
+  },
+  "santiago-abascal": {
+    "file": "/img/personas/santiago-abascal.jpg",
+    "commonsPage": "https://commons.wikimedia.org/wiki/File:Santiago_Abascal_CPAC_2024_(2).jpg",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "author": "Vox España",
+    "date": "2024-02-23",
+    "credit": "https://www.flickr.com/photos/voxespana/53640387878/"
+  },
+  "irene-montero": {
+    "file": "/img/personas/irene-montero.jpg",
+    "commonsPage": "https://commons.wikimedia.org/wiki/File:Irene_Montero_Gil,_2024_(cropped).jpg",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "author": "The Left -MEP Irene Montero, Podemos - The Left in the European Parliament",
+    "date": "2024-07-11",
+    "credit": "https://www.flickr.com/photos/theleft_eu/53851893529"
+  },
+  "emilio-delgado": {
+    "file": "/img/personas/emilio-delgado.jpg",
+    "commonsPage": "https://commons.wikimedia.org/wiki/File:Emilio_Delgado_2016_(cropped)_(cropped).jpeg",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "author": "PODEMOS MADRID - COMUNICACIÓN (youtube)",
+    "date": "2016-06-20",
+    "credit": "Emilio Delgado (at 0min 01s)"
+  }
+}

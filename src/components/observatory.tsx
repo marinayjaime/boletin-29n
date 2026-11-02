@@ -9,6 +9,7 @@ import { byGeo, deflate, filterYears, periodKey, rebase, toCSV, yearOf, yearValu
 import { GEO_LABELS, NUTS2_ES } from "@/lib/jsonstat";
 import { formatDate, formatNumber, formatPeriod } from "@/lib/format";
 import { EChart, type EChartHandle } from "./echart";
+import { Banknote, Briefcase, HeartPulse, Home, PiggyBank, Users } from "lucide-react";
 
 export const AREAS = [
   { id: "economia", label: "Economía" },
@@ -30,12 +31,12 @@ type Mode = "abs" | "rel" | "real";
 type View = "linea" | "mapa" | "tabla";
 
 function useTokens() {
-  const [t, setT] = useState({ ink: "#16140f", ink3: "#6d685d", rule: "#cfc6b3", accent: "#a8640b", paper: "#f4f0e7", soft: "#f0dcb8" });
+  const [t, setT] = useState({ ink: "#0b0d17", ink3: "#6b7189", rule: "#dfe2ec", accent: "#0b0d17", paper: "#ffffff", soft: "#fff6c2", brand: "#ffd60a", series: ["#0d9488", "#f59e0b", "#0891b2", "#a16207", "#64748b"] });
   useEffect(() => {
     const read = () => {
       const s = getComputedStyle(document.documentElement);
       const g = (v: string) => s.getPropertyValue(v).trim();
-      setT({ ink: g("--ink"), ink3: g("--ink-3"), rule: g("--rule"), accent: g("--accent"), paper: g("--paper"), soft: g("--accent-soft") });
+      setT({ ink: g("--ink"), ink3: g("--ink-3"), rule: g("--line"), accent: g("--ink"), paper: g("--surface"), soft: g("--brand-soft"), brand: g("--brand"), series: ["--c2", "--c3", "--c5", "--c6", "--c4"].map(g) });
     };
     read();
     const mq = window.matchMedia("(prefers-color-scheme: dark)");
@@ -52,7 +53,23 @@ function useTokens() {
 
 const DASH = ["solid", "dashed", "dotted", [8, 3, 2, 3], [2, 4]] as const;
 
-export function Observatory({ indicators, events, pending }: { indicators: StatisticalIndicator[]; events: Events; pending: Pending[] }) {
+export type Kpi = { value: number; period: string; spark: number[] };
+
+function MiniSpark({ values, color }: { values: number[]; color: string }) {
+  if (values.length < 2) return null;
+  const min = Math.min(...values);
+  const span = Math.max(...values) - min || 1;
+  const d = values.map((v, i) => `${i ? "L" : "M"}${((i / (values.length - 1)) * 100).toFixed(1)},${(30 - ((v - min) / span) * 26).toFixed(1)}`).join(" ");
+  return (
+    <svg viewBox="0 0 100 32" preserveAspectRatio="none" className="h-full w-full" aria-hidden>
+      <path d={d} fill="none" stroke={color} strokeWidth={2.5} vectorEffect="non-scaling-stroke" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+const AREA_ICONS: Record<string, typeof Banknote> = { economia: Banknote, trabajo: Briefcase, vivienda: Home, pensiones: PiggyBank, "sanidad-educacion": HeartPulse, sociedad: Users };
+
+export function Observatory({ indicators, events, pending, kpis }: { indicators: StatisticalIndicator[]; events: Events; pending: Pending[]; kpis: Record<string, Kpi> }) {
   const sp = useSearchParams();
   const tok = useTokens();
   const chartRef = useRef<EChartHandle>(null);
@@ -79,7 +96,6 @@ export function Observatory({ indicators, events, pending }: { indicators: Stati
   // carga de la serie
   useEffect(() => {
     let cancel = false;
-    setData(null);
     setError(null);
     fetch(asset(`/data/stats/${ind.id}.json`))
       .then((r) => {
@@ -192,14 +208,17 @@ export function Observatory({ indicators, events, pending }: { indicators: Stati
       const isMain = g === ind.geos[0];
       const map = new Map(obs.map((o) => [o.period, o.value]));
       return {
+        id: g,
         name: GEO_LABELS[g] ?? g,
         type: "line" as const,
+        smooth: 0.2,
+        areaStyle: isMain ? { color: tok.ink, opacity: 0.06 } : undefined,
         showSymbol: periods.length < 40,
         symbolSize: 5,
         connectNulls: false,
         data: periods.map((p) => map.get(p) ?? null),
-        lineStyle: { width: isMain ? 2.6 : 1.4, color: isMain ? tok.accent : tok.ink, type: isMain ? "solid" : (DASH[k % DASH.length] as never), opacity: isMain ? 1 : 0.75 },
-        itemStyle: { color: isMain ? tok.accent : tok.ink },
+        lineStyle: { width: isMain ? 3.5 : 2.2, color: isMain ? tok.ink : tok.series[k % tok.series.length], type: isMain ? "solid" : (DASH[k % DASH.length] as never) },
+        itemStyle: { color: isMain ? tok.ink : tok.series[k % tok.series.length] },
         emphasis: { focus: "series" as const },
         z: isMain ? 10 : 2,
         markLine:
@@ -209,8 +228,8 @@ export function Observatory({ indicators, events, pending }: { indicators: Stati
                 silent: true,
                 animation: false,
                 data: [
-                  ...govMarks.map((m) => ({ ...(m as object), lineStyle: { color: tok.ink3, type: "dashed" as const, width: 1 }, label: { ...(m as { label: object }).label, position: "insideEndTop" as const, color: tok.ink3, fontSize: 10, fontFamily: "monospace" } })),
-                  ...evMarks.map((m) => ({ ...(m as object), lineStyle: { color: tok.accent, type: "dotted" as const, width: 1, opacity: 0.8 }, label: { ...(m as { label: object }).label, position: "insideStartTop" as const, color: tok.accent, fontSize: 10 } })),
+                  ...govMarks.map((m) => ({ ...(m as object), lineStyle: { color: tok.ink3, type: "dashed" as const, width: 1 }, label: { ...(m as { label: object }).label, position: "insideEndTop" as const, color: tok.ink3, fontSize: 10, fontWeight: 700 } })),
+                  ...evMarks.map((m) => ({ ...(m as object), lineStyle: { color: tok.series[1], type: "dotted" as const, width: 1.5 }, label: { ...(m as { label: object }).label, position: "insideStartTop" as const, color: tok.ink3, fontSize: 10, fontWeight: 700 } })),
                 ],
               }
             : undefined,
@@ -218,7 +237,7 @@ export function Observatory({ indicators, events, pending }: { indicators: Stati
     });
     return {
       grid: { left: 8, right: 16, top: 40, bottom: 56, containLabel: true },
-      textStyle: { fontFamily: "var(--font-instrument), system-ui", color: tok.ink },
+      textStyle: { fontFamily: "Manrope, system-ui", color: tok.ink, fontWeight: 600 },
       legend: { show: series.length > 1, top: 0, left: 0, icon: "roundRect", itemWidth: 18, itemHeight: 3, textStyle: { color: tok.ink } },
       tooltip: {
         trigger: "axis",
@@ -241,7 +260,7 @@ export function Observatory({ indicators, events, pending }: { indicators: Stati
         splitLine: { lineStyle: { color: tok.rule, opacity: 0.6 } },
         axisLabel: { color: tok.ink3, formatter: (v: number) => formatNumber(v, Math.abs(v) >= 1000 ? 0 : dec > 1 ? 1 : dec) },
       },
-      dataZoom: [{ type: "inside" }, { type: "slider", height: 18, bottom: 6, borderColor: tok.rule, fillerColor: tok.soft, textStyle: { color: tok.ink3 }, labelFormatter: (_: number, v: string) => formatPeriod(String(v)) }],
+      dataZoom: [{ type: "inside" }, { type: "slider", height: 18, bottom: 6, borderColor: tok.rule, fillerColor: tok.soft, handleStyle: { color: tok.brand }, textStyle: { color: tok.ink3 }, labelFormatter: (_: number, v: string) => formatPeriod(String(v)) }],
       series,
     } as EChartsOption;
   }, [visible, tok, ind, events, showGov, from, to, dec, mode]);
@@ -256,8 +275,8 @@ export function Observatory({ indicators, events, pending }: { indicators: Stati
         const x = p as { name: string; value: number };
         return `${GEO_LABELS[x.name] ?? x.name}<br/><b>${Number.isFinite(x.value) ? formatNumber(x.value, ind.decimals) + " " + ind.unitShort : "sin dato"}</b>`;
       } },
-      visualMap: { min: Math.min(...vals), max: Math.max(...vals), left: 0, bottom: 10, calculable: true, orient: "horizontal", itemWidth: 12, itemHeight: 160, inRange: { color: [tok.soft, tok.accent, tok.ink] }, textStyle: { color: tok.ink3 }, formatter: (v: unknown) => formatNumber(Number(v), ind.decimals) },
-      series: [{ type: "map", map: "es-nuts2", roam: false, aspectScale: 0.85, label: { show: false }, itemStyle: { borderColor: tok.paper, borderWidth: 0.8, areaColor: tok.rule }, emphasis: { label: { show: false }, itemStyle: { areaColor: tok.accent } }, select: { disabled: true }, data: rows.map((o) => ({ name: o.geo, value: o.value })) }],
+      visualMap: { min: Math.min(...vals), max: Math.max(...vals), left: 0, bottom: 10, calculable: true, orient: "horizontal", itemWidth: 12, itemHeight: 160, inRange: { color: [tok.soft, tok.brand, tok.series[0], tok.ink] }, textStyle: { color: tok.ink3 }, formatter: (v: unknown) => formatNumber(Number(v), ind.decimals) },
+      series: [{ type: "map", map: "es-nuts2", roam: false, aspectScale: 0.85, label: { show: false }, itemStyle: { borderColor: tok.paper, borderWidth: 0.8, areaColor: tok.rule }, emphasis: { label: { show: false }, itemStyle: { areaColor: tok.series[2] } }, select: { disabled: true }, data: rows.map((o) => ({ name: o.geo, value: o.value })) }],
     } as EChartsOption;
   }, [data, geo, mapYear, tok, ind]);
 
@@ -305,69 +324,65 @@ export function Observatory({ indicators, events, pending }: { indicators: Stati
   return (
     <div>
       {/* áreas */}
-      <div role="tablist" aria-label="Áreas" className="lane -mx-4 flex gap-1 overflow-x-auto border-b border-rule px-4 md:mx-0 md:px-0">
-        {AREAS.map((a) => (
-          <button
-            key={a.id}
-            role="tab"
-            aria-selected={area === a.id}
-            onClick={() => {
-              setArea(a.id);
-              const first = indicators.find((i) => i.area === a.id);
-              if (first) selectIndicator(first.id);
-            }}
-            className={`relative shrink-0 px-4 py-3 text-sm md:text-base ${area === a.id ? "text-ink" : "text-ink-3 hover:text-ink"}`}
-          >
-            {a.label}
-            {area === a.id && <span className="absolute inset-x-3 bottom-0 h-[3px] bg-accent" aria-hidden />}
-          </button>
-        ))}
+      <div role="tablist" aria-label="Áreas" className="lane -mx-4 flex gap-2 overflow-x-auto px-4 pb-1 md:mx-0 md:px-0">
+        {AREAS.map((a) => {
+          const Icon = AREA_ICONS[a.id];
+          return (
+            <button
+              key={a.id}
+              role="tab"
+              aria-selected={area === a.id}
+              onClick={() => {
+                setArea(a.id);
+                const first = indicators.find((i) => i.area === a.id);
+                if (first) selectIndicator(first.id);
+              }}
+              className="chip shrink-0 !min-h-[48px] !px-5 text-base"
+            >
+              <Icon size={18} aria-hidden /> {a.label}
+            </button>
+          );
+        })}
       </div>
 
-      <div className="mt-6 grid gap-8 lg:grid-cols-[260px_1fr]">
-        {/* indicadores */}
-        <nav aria-label="Indicadores" className="min-w-0">
-          <ul className="lane -mx-4 flex gap-2 overflow-x-auto px-4 lg:mx-0 lg:block lg:space-y-1 lg:px-0">
-            {inArea.map((i) => (
-              <li key={i.id} className="shrink-0">
-                <button
-                  onClick={() => selectIndicator(i.id)}
-                  aria-current={i.id === indId}
-                  className={`w-full rounded px-3 py-2 text-left text-sm transition-colors ${i.id === indId ? "bg-ink text-paper" : "border border-rule hover:border-ink lg:border-transparent"}`}
-                >
-                  {i.name}
-                </button>
-              </li>
-            ))}
-          </ul>
-          {pendingInArea.length > 0 && (
-            <div className="mt-6 hidden lg:block">
-              <p className="kicker mb-2">Pendientes de importación</p>
-              <ul className="space-y-2 text-xs text-ink-3">
-                {pendingInArea.map((p) => (
-                  <li key={p.name}>
-                    <a href={p.url} target="_blank" rel="noreferrer" className="link">
-                      {p.name}
-                    </a>{" "}
-                    — {p.source}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-        </nav>
+      {/* indicadores del área como tarjetas de cifra */}
+      <ul className="lane -mx-4 mt-5 flex gap-3 overflow-x-auto px-4 pb-2 md:mx-0 md:grid md:grid-cols-3 md:px-0 xl:grid-cols-5" aria-label="Indicadores">
+        {inArea.map((i) => {
+          const k = kpis[i.id];
+          const on = i.id === indId;
+          return (
+            <li key={i.id} className="w-[210px] shrink-0 md:w-auto">
+              <button
+                type="button"
+                onClick={() => selectIndicator(i.id)}
+                aria-current={on}
+                className={`flex h-full w-full flex-col rounded-[20px] p-4 text-left transition-all ${on ? "bg-ink text-bg shadow-[var(--shadow-lg)]" : "bg-surface shadow-[var(--shadow)] hover:-translate-y-0.5"}`}
+              >
+                <span className="text-sm font-extrabold leading-tight">{i.short}</span>
+                <span className="mt-2 flex items-baseline gap-1">
+                  <span className="num text-[2rem]">{k ? formatNumber(k.value, i.decimals) : "—"}</span>
+                  <span className={`text-xs font-extrabold ${on ? "opacity-70" : "text-ink-3"}`}>{i.unitShort}</span>
+                </span>
+                <span className="mt-2 h-8 w-full">{k && <MiniSpark values={k.spark} color={on ? "var(--brand)" : "var(--ink-3)"} />}</span>
+                <span className={`mt-1 text-xs font-bold ${on ? "opacity-70" : "text-ink-3"}`}>{k ? formatPeriod(k.period) : ""}</span>
+              </button>
+            </li>
+          );
+        })}
+      </ul>
 
+      <div className="mt-6">
         <section aria-labelledby="ind-title" className="min-w-0">
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div className="max-w-2xl">
-              <h2 id="ind-title" className="display text-3xl leading-tight md:text-4xl">
+              <h2 id="ind-title" className="display text-4xl md:text-5xl">
                 {ind.name}
               </h2>
-              <p className="mt-2 text-ink-2">{ind.description}</p>
+              <p className="mt-2 font-semibold text-ink-2">{ind.description}</p>
             </div>
             {last && (
               <div className="text-right">
-                <p className="display tabular text-5xl font-light leading-none">
+                <p className="num text-6xl">
                   {formatNumber(last.value, ind.decimals)}
                   <span className="ml-1 font-sans text-base text-ink-2">{ind.unitShort}</span>
                 </p>
@@ -379,7 +394,7 @@ export function Observatory({ indicators, events, pending }: { indicators: Stati
           </div>
 
           {/* controles */}
-          <div className="mt-6 grid gap-4 rounded border border-rule p-4 md:grid-cols-2 xl:grid-cols-4">
+          <div className="card mt-6 grid gap-5 p-5 md:grid-cols-2 xl:grid-cols-4">
             <fieldset>
               <legend className="kicker mb-2">Vista</legend>
               <div className="flex flex-wrap gap-1 text-sm">
@@ -390,7 +405,7 @@ export function Observatory({ indicators, events, pending }: { indicators: Stati
                     disabled={v === "mapa" && !ind.regional}
                     onClick={() => setView(v)}
                     title={v === "mapa" && !ind.regional ? "Este indicador no tiene datos por comunidad autónoma en esta versión" : undefined}
-                    className={`rounded-full border px-3 py-1 disabled:opacity-30 ${view === v ? "border-ink bg-ink text-paper" : "border-rule"}`}
+                    className="chip disabled:opacity-30"
                   >
                     {v === "linea" ? "Evolución" : v === "tabla" ? "Tabla" : "Por comunidad"}
                   </button>
@@ -403,7 +418,7 @@ export function Observatory({ indicators, events, pending }: { indicators: Stati
                 <label className="sr-only" htmlFor="desde">
                   Desde
                 </label>
-                <select id="desde" value={from} onChange={(e) => setFrom(Number(e.target.value))} className="rounded border border-rule bg-paper px-2 py-1">
+                <select id="desde" value={from} onChange={(e) => setFrom(Number(e.target.value))} className="field">
                   {allYears.map((y) => (
                     <option key={y} value={y} disabled={y > to}>
                       {y}
@@ -414,7 +429,7 @@ export function Observatory({ indicators, events, pending }: { indicators: Stati
                 <label className="sr-only" htmlFor="hasta">
                   Hasta
                 </label>
-                <select id="hasta" value={to} onChange={(e) => setTo(Number(e.target.value))} className="rounded border border-rule bg-paper px-2 py-1">
+                <select id="hasta" value={to} onChange={(e) => setTo(Number(e.target.value))} className="field">
                   {allYears.map((y) => (
                     <option key={y} value={y} disabled={y < from}>
                       {y}
@@ -426,14 +441,14 @@ export function Observatory({ indicators, events, pending }: { indicators: Stati
             <fieldset disabled={view === "mapa"}>
               <legend className="kicker mb-2">Cifras</legend>
               <div className="flex flex-wrap gap-1 text-sm">
-                <button aria-pressed={mode === "abs"} onClick={() => setMode("abs")} className={`rounded-full border px-3 py-1 ${mode === "abs" ? "border-ink bg-ink text-paper" : "border-rule"}`}>
+                <button aria-pressed={mode === "abs"} onClick={() => setMode("abs")} className="chip disabled:opacity-30">
                   Absolutas
                 </button>
-                <button aria-pressed={mode === "rel"} onClick={() => setMode("rel")} className={`rounded-full border px-3 py-1 ${mode === "rel" ? "border-ink bg-ink text-paper" : "border-rule"}`} title="Índice 100 en el primer periodo visible">
+                <button aria-pressed={mode === "rel"} onClick={() => setMode("rel")} className="chip disabled:opacity-30" title="Índice 100 en el primer periodo visible">
                   Relativas (base 100)
                 </button>
                 {ind.derived && (
-                  <button aria-pressed={mode === "real"} onClick={() => setMode("real")} className={`rounded-full border px-3 py-1 ${mode === "real" ? "border-ink bg-ink text-paper" : "border-rule"}`}>
+                  <button aria-pressed={mode === "real"} onClick={() => setMode("real")} className="chip disabled:opacity-30">
                     Reales
                   </button>
                 )}
@@ -449,7 +464,7 @@ export function Observatory({ indicators, events, pending }: { indicators: Stati
                       key={g}
                       aria-pressed={on}
                       onClick={() => setGeos((cur) => (on ? (cur.length > 1 ? cur.filter((x) => x !== g) : cur) : [...cur, g]))}
-                      className={`rounded-full border px-2.5 py-1 disabled:opacity-40 ${on ? "border-ink" : "border-rule text-ink-3"}`}
+                      className="chip disabled:opacity-30"
                     >
                       {GEO_LABELS[g] ?? g}
                     </button>
@@ -466,19 +481,19 @@ export function Observatory({ indicators, events, pending }: { indicators: Stati
                 Mostrar cambios de Gobierno y acontecimientos
               </label>
             )}
-            <button onClick={downloadCSV} disabled={!data} className="rounded-full border border-rule px-3 py-1 hover:border-ink">
+            <button onClick={downloadCSV} disabled={!data} className="chip">
               Descargar CSV
             </button>
-            <button onClick={downloadPNG} disabled={!data || view === "tabla"} className="rounded-full border border-rule px-3 py-1 hover:border-ink disabled:opacity-40">
+            <button onClick={downloadPNG} disabled={!data || view === "tabla"} className="chip disabled:opacity-40">
               Exportar imagen
             </button>
-            <button onClick={share} className="rounded-full border border-rule px-3 py-1 hover:border-ink">
+            <button onClick={share} className="chip">
               {copied ? "Enlace copiado ✓" : "Copiar enlace con filtros"}
             </button>
           </div>
 
           {/* gráfico */}
-          <div className="mt-4 border-y border-rule py-4">
+          <div className="card mt-4 p-3 md:p-5">
             {error && <p className="rounded border border-no p-3 text-sm">{error}</p>}
             {!data && !error && (
               <p role="status" className="py-24 text-center text-sm text-ink-3">
@@ -486,7 +501,7 @@ export function Observatory({ indicators, events, pending }: { indicators: Stati
               </p>
             )}
             {data && view === "linea" && (
-              <EChart ref={chartRef} option={lineOption} height={420} ariaLabel={`Gráfico de líneas: ${ind.name}, ${unitLabel}. Los valores exactos están en la vista Tabla.`} />
+              <EChart ref={chartRef} option={lineOption} height={460} ariaLabel={`Gráfico de líneas: ${ind.name}, ${unitLabel}. Los valores exactos están en la vista Tabla.`} />
             )}
             {data && view === "mapa" && mapOption && geo && (
               <div>
@@ -559,16 +574,16 @@ export function Observatory({ indicators, events, pending }: { indicators: Stati
 
           {/* comparar años */}
           {data && view !== "mapa" && allYears.length > 1 && (
-            <div className="mt-6 grid gap-4 rounded bg-paper-2 p-4 md:grid-cols-[auto_1fr]">
+            <div className="mt-4 grid gap-4 rounded-[20px] bg-brand-soft p-4 md:grid-cols-[auto_1fr]">
               <div className="flex items-center gap-2 text-sm">
                 <span className="kicker">Comparar años · {GEO_LABELS[ind.geos[0]]}</span>
-                <select aria-label="Primer año" value={yA} onChange={(e) => setYA(Number(e.target.value))} className="rounded border border-rule bg-paper px-2 py-1">
+                <select aria-label="Primer año" value={yA} onChange={(e) => setYA(Number(e.target.value))} className="field">
                   {allYears.map((y) => (
                     <option key={y}>{y}</option>
                   ))}
                 </select>
                 <span aria-hidden>→</span>
-                <select aria-label="Segundo año" value={yB} onChange={(e) => setYB(Number(e.target.value))} className="rounded border border-rule bg-paper px-2 py-1">
+                <select aria-label="Segundo año" value={yB} onChange={(e) => setYB(Number(e.target.value))} className="field">
                   {allYears.map((y) => (
                     <option key={y}>{y}</option>
                   ))}
@@ -638,11 +653,11 @@ export function Observatory({ indicators, events, pending }: { indicators: Stati
                 </dl>
               )}
               <div className="mt-3 flex flex-wrap gap-2">
-                <a href={ind.sourceUrl} target="_blank" rel="noreferrer" className="kicker rounded-full border border-ink px-3 py-1.5">
+                <a href={ind.sourceUrl} target="_blank" rel="noreferrer" className="btn btn-primary min-h-[42px] text-sm">
                   Abrir la fuente ↗
                 </a>
                 {data && (
-                  <a href={data.requestUrl} target="_blank" rel="noreferrer" className="kicker rounded-full border border-rule px-3 py-1.5">
+                  <a href={data.requestUrl} target="_blank" rel="noreferrer" className="btn btn-ghost min-h-[42px] text-sm">
                     Consulta exacta (API) ↗
                   </a>
                 )}
@@ -651,7 +666,7 @@ export function Observatory({ indicators, events, pending }: { indicators: Stati
           </div>
 
           {pendingInArea.length > 0 && (
-            <div className="mt-8 lg:hidden">
+            <div className="mt-8">
               <p className="kicker mb-2">Pendientes de importación en esta área</p>
               <ul className="space-y-2 text-sm text-ink-2">
                 {pendingInArea.map((p) => (

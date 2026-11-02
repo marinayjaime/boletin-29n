@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-02T11:53:37.850Z",
+  "checkedAt": "2026-11-02T13:22:49.582Z",
   "results": [
     {
       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742",
@@ -15,7 +15,7 @@
     },
     {
       "url": "https://www.pp.es/sites/default/files/documentos/programa_electoral_pp_23j_feijoo_2023.pdf",
-      "where": "fuente pp-programa-2023 (oficial)",
+      "where": "fuente pp-programa-2023 (oficial) [conocido: no disponible]",
       "status": 404,
       "state": "roto"
     },
@@ -285,7 +285,7 @@
     },
     {
       "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=22/02/2024",
-      "where": "promesa sumar-2023-jornada-37-5",
+      "where": "promesa psoe-2023-ley-paridad",
       "status": 200,
       "state": "ok"
     },
@@ -322,6 +322,102 @@
     {
       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2021-21652",
       "where": "promesa podemos-2019-pensiones-ipc",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=13/03/2025",
+      "where": "promesa psoe-2023-ley-funcion-publica",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-7967",
+      "where": "promesa psoe-2023-ley-economia-social",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=23/07/2024",
+      "where": "promesa psoe-2023-ley-paridad",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-15936",
+      "where": "promesa psoe-2023-ley-paridad",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=28/05/2024",
+      "where": "promesa psoe-2023-ley-donantes-vivos",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-26693",
+      "where": "promesa psoe-2023-ley-donantes-vivos",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-10324",
+      "where": "promesa psoe-2023-ley-politica-farmaceutica",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=28/05/2026",
+      "where": "promesa psoe-2023-ley-politica-farmaceutica",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=21/11/2024",
+      "where": "promesa psoe-2023-ley-cliente-financiero",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=13/11/2025",
+      "where": "promesa psoe-2023-ley-atencion-clientela",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26698",
+      "where": "promesa psoe-2023-ley-atencion-clientela",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=25/03/2025",
+      "where": "promesa psoe-2023-ley-lobbies",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-18148",
+      "where": "promesa psoe-2023-ley-lobbies",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=16/09/2026",
+      "where": "promesa psoe-2023-ley-lobbies",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=11/07/2024",
+      "where": "promesa psoe-2023-ley-derecho-defensa",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-23630",
+      "where": "promesa psoe-2023-ley-derecho-defensa",
       "status": 200,
       "state": "ok"
     },
@@ -410,17 +506,292 @@
       "state": "bloqueado"
     },
     {
-      "url": "https://www.educacionfpydeportes.gob.es",
+      "url": "https://www.educacionfpydeportes.gob.es/servicios-al-ciudadano/estadisticas.html",
       "where": "pendiente Formación Profesional y becas",
-      "status": 0,
-      "state": "error",
-      "error": "fetch failed"
+      "status": 200,
+      "state": "ok"
     },
     {
       "url": "https://www.interior.gob.es",
-      "where": "pendiente Balance de criminalidad (infracciones penales conocidas)",
+      "where": "estatutos podemos",
       "status": 403,
       "state": "bloqueado"
+    },
+    {
+      "url": "https://www.elespanol.com/espana/politica/20261101/primer-sondeo-tragedia-pp-vox-amplian-ventaja-sanchez-sigue-cayendo-pese-vaciar-frente-amplio/1003744442810_0.html",
+      "where": "encuesta SocioMétrica 2026-11-01",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.elmundo.es/espana/encuestas/2026/11/01/6ae77446e4d4d8f3698b458a.html",
+      "where": "encuesta Sigma Dos 2026-11-01",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "http://eldebate.com/espana/20261102/accidente-frena-psoe-amplia-apoyo-pp-mayoria-absolutisima-derecha_475640.html",
+      "where": "encuesta Target Point 2026-11-02",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://electomania.es/electopanel-1-nov-el-psoe-baja-y-vuelve-a-minimos/",
+      "where": "encuesta EM-Analytics 2026-11-01",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.larazon.es/espana/psoe-frena-efecto-remontada-derecha-consolida-mayoria-absoluta_202611026ae783220250123215703bb1.html",
+      "where": "encuesta NC Report 2026-11-02",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.vozpopuli.com/espana/politica/pp-y-vox-suman-ya-un-techo-historico-de-127-millones-de-votos-y-lograrian-205-escanos.html",
+      "where": "encuesta Hamalgama Métrica 2026-11-02",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://theobjective.com/espana/2026-11-01/sondeo-vox-71-escanos/|language=es",
+      "where": "encuesta The Objective 2026-11-01",
+      "status": 404,
+      "state": "roto"
+    },
+    {
+      "url": "https://www.elespanol.com/espana/politica/20261025/izquierda-no-remonta-sanchez-gana-escanos-costa-frente-podemos-sondeo-noche/1003744434105_0.html",
+      "where": "encuesta SocioMétrica 2026-10-26",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.larazon.es/espana/18-votantes-socialistas-apoyan-hoy-vox_202610266adea62a3eef771e1ac8d43d.html",
+      "where": "encuesta NC Report 2026-10-26",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.articulo14.es/politica/encuesta-articulo14-el-psoe-se-coloca-6-escanos-del-pp-que-mantiene-una-mayoria-de-190-escanos-con-vox-20261026.html",
+      "where": "encuesta Winston 2026-10-26",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://electomania.es/electopanel-25-octubre-el-pp-baja-de-nuevo-frente-amplio-crece/",
+      "where": "encuesta EM-Analytics 2026-10-25",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.eldiario.es/politica/bloque-izquierdas-recorta-distancias-pp-vox-mantienen-mayoria-absoluta_1_13611052.html",
+      "where": "encuesta Ateneo del Dato 2026-10-25",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.elmundo.es/espana/encuestas/2026/10/26/6addf8c4fdddfff23d8b4581.html",
+      "where": "encuesta Sigma Dos 2026-10-26",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://electomania.es/electopanel-18-oct-erc-y-frente-amplio-ceden-ante-el-psoe-podemos-en-el-limite-de-ser-extraparlamentario/",
+      "where": "encuesta EM-Analytics 2026-10-18",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.elconfidencial.com/espana/2026-10-23/encuesta-imop-elecciones-29n-bloque-psoe-frente-amplio_4450302/",
+      "where": "encuesta IMOP 2026-10-23",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.elmundo.es/espana/encuestas/2026/10/19/6ad4f168e9cf4a2c7a8b458b.html",
+      "where": "encuesta Sigma Dos 2026-10-19",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/presidente/biografia/Paginas/index.aspx",
+      "where": "gobierno Pedro Sánchez Pérez-Castejón",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-carlos-cuerpo.aspx",
+      "where": "gobierno Carlos Cuerpo Caballero",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-yolanda-diaz.aspx",
+      "where": "gobierno Yolanda Díaz Pérez",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-sara-aagesen.aspx",
+      "where": "gobierno Sara Aagesen Muñoz",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-jose-manuel-albares.aspx",
+      "where": "gobierno José Manuel Albares Bueno",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-felix-bolanos.aspx",
+      "where": "gobierno Félix Bolaños García",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-margarita-robles.aspx",
+      "where": "gobierno Margarita Robles Fernández",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-arcadi-espana.aspx",
+      "where": "gobierno Arcadi España García",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-fernando-grande-marlaska.aspx",
+      "where": "gobierno Fernando Grande-Marlaska Gómez",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-oscar-puente.aspx",
+      "where": "gobierno Óscar Puente Santiago",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-milagros-tolon.aspx",
+      "where": "gobierno Milagros Tolón Jaime",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-jordi-hereu.aspx",
+      "where": "gobierno Jordi Hereu Boher",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-luis-planas.aspx",
+      "where": "gobierno Luis Planas Puchades",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-angel-victor-torres.aspx",
+      "where": "gobierno Ángel Víctor Torres Pérez",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-isabel-rodriguez.aspx",
+      "where": "gobierno Isabel Rodríguez García",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-ernest-urtasun.aspx",
+      "where": "gobierno Ernest Urtasun Domènech",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-monica-garcia.aspx",
+      "where": "gobierno Mónica García Gómez",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-pablo-bustinduy.aspx",
+      "where": "gobierno Pablo Bustinduy Amador",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-diana-morant.aspx",
+      "where": "gobierno Diana Morant Ripoll",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-ana-redondo.aspx",
+      "where": "gobierno Ana Redondo García",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-elma-saiz.aspx",
+      "where": "gobierno Elma Saiz Delgado",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-oscar-lopez.aspx",
+      "where": "gobierno Óscar López Águeda",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-sira-rego.aspx",
+      "where": "gobierno Sira Rego",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Obisk_%C5%A1panskega_predsednika_vlade_v_Sloveniji_(53658605930)_(cropped).jpg",
+      "where": "foto pedro-sanchez",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Alberto_N%C3%BA%C3%B1ez_Feij%C3%B3o_2025.jpg",
+      "where": "foto alberto-nunez-feijoo",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Santiago_Abascal_CPAC_2024_(2).jpg",
+      "where": "foto santiago-abascal",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Irene_Montero_Gil,_2024_(cropped).jpg",
+      "where": "foto irene-montero",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Emilio_Delgado_2016_(cropped)_(cropped).jpeg",
+      "where": "foto emilio-delgado",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.pp.es/storage/2025/07/ESTATUTOS_PARTIDOPOPULAR_2025.pdf",
+      "where": "estatutos pp",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://web.archive.org/web/2024/https://movimientosumar.es/wp-content/uploads/2023/11/2023-11-08-estatutos.pdf",
+      "where": "estatutos frente-amplio",
+      "status": 200,
+      "state": "ok"
     }
   ]
 }

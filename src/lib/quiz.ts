@@ -61,3 +61,44 @@ export function clearAnswers() {
     sessionStorage.removeItem(STORAGE_KEY);
   } catch {}
 }
+
+/** Mínimo de respuestas comparables para mostrar un porcentaje temático. */
+export const MIN_COMPARABLE = 2;
+
+export type TopicCoincidence = {
+  topicId: string;
+  partyId: string;
+  /** Respuestas con dirección (acuerdo/desacuerdo) frente a una postura a favor/en contra documentada. */
+  comparable: number;
+  coincide: number;
+  difiere: number;
+  matizada: number;
+  sinDatos: number;
+  /** Porcentaje descriptivo; null si no hay evidencia suficiente. */
+  pct: number | null;
+};
+
+/**
+ * Coincidencia descriptiva por tema y partido. No se agrega entre temas ni se ordena:
+ * es una descripción de respuestas concretas, no una medida de afinidad política general.
+ */
+export function topicCoincidence(
+  statements: { id: string; topicId: string; positions: { partyId: string; stance: Stance }[] }[],
+  answers: Answers,
+  topicId: string,
+  partyId: string,
+): TopicCoincidence {
+  const r: TopicCoincidence = { topicId, partyId, comparable: 0, coincide: 0, difiere: 0, matizada: 0, sinDatos: 0, pct: null };
+  for (const s of statements.filter((x) => x.topicId === topicId)) {
+    const pos = s.positions.find((p) => p.partyId === partyId);
+    if (!pos) continue;
+    const rel = relation(answers[s.id], pos.stance);
+    if (rel === "coincide") r.coincide++;
+    else if (rel === "difiere") r.difiere++;
+    else if (rel === "matizada") r.matizada++;
+    else if (rel === "sin_datos") r.sinDatos++;
+  }
+  r.comparable = r.coincide + r.difiere;
+  r.pct = r.comparable >= MIN_COMPARABLE ? Math.round((r.coincide / r.comparable) * 100) : null;
+  return r;
+}

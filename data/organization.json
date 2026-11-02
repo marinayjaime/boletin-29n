@@ -1,0 +1,322 @@
+{
+ "constitutionUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+ "checkedAt": "2026-11-02",
+ "institutions": [
+  {
+   "id": "corona",
+   "name": "Jefatura del Estado",
+   "short": "La Corona",
+   "holder": "Felipe VI",
+   "role": "Rey de España",
+   "what": [
+    "Arbitra y modera el funcionamiento de las instituciones",
+    "Sanciona y promulga las leyes",
+    "Propone candidato a la Presidencia del Gobierno tras consultar a los grupos",
+    "Convoca elecciones y disuelve las Cortes a propuesta del presidente"
+   ],
+   "articles": "Título II, arts. 56–65; arts. 62, 91 y 99",
+   "icon": "crown"
+  },
+  {
+   "id": "cortes",
+   "name": "Cortes Generales",
+   "short": "Parlamento",
+   "holder": null,
+   "role": "Congreso + Senado",
+   "what": [
+    "Representan al pueblo español",
+    "Ejercen la potestad legislativa",
+    "Aprueban los Presupuestos",
+    "Controlan la acción del Gobierno"
+   ],
+   "articles": "Título III, art. 66",
+   "icon": "landmark",
+   "children": [
+    "congreso",
+    "senado"
+   ]
+  },
+  {
+   "id": "congreso",
+   "name": "Congreso de los Diputados",
+   "short": "Congreso",
+   "holder": null,
+   "role": "350 diputados",
+   "what": [
+    "Otorga la confianza al presidente (investidura)",
+    "Puede retirarla con una moción de censura",
+    "Convalida o deroga los decretos-leyes",
+    "Tiene la última palabra en las leyes"
+   ],
+   "articles": "arts. 68, 86, 90, 99 y 113",
+   "icon": "users"
+  },
+  {
+   "id": "senado",
+   "name": "Senado",
+   "short": "Senado",
+   "holder": null,
+   "role": "Cámara de representación territorial",
+   "what": [
+    "Puede vetar o enmendar las leyes aprobadas por el Congreso",
+    "El Congreso puede levantar el veto",
+    "Interviene en la aplicación del art. 155"
+   ],
+   "articles": "arts. 69, 90 y 155",
+   "icon": "map"
+  },
+  {
+   "id": "gobierno",
+   "name": "Gobierno",
+   "short": "Gobierno",
+   "holder": "Pedro Sánchez Pérez-Castejón",
+   "role": "Presidente del Gobierno",
+   "what": [
+    "Dirige la política interior y exterior",
+    "Dirige la Administración civil y militar y la defensa",
+    "Ejerce la función ejecutiva y la potestad reglamentaria",
+    "Responde políticamente ante el Congreso"
+   ],
+   "articles": "Título IV, arts. 97–108",
+   "icon": "briefcase"
+  },
+  {
+   "id": "judicial",
+   "name": "Poder Judicial",
+   "short": "Justicia",
+   "holder": null,
+   "role": "Jueces y magistrados independientes",
+   "what": [
+    "Juzga y hace ejecutar lo juzgado",
+    "El Consejo General del Poder Judicial (CGPJ) es su órgano de gobierno",
+    "El Tribunal Supremo es el órgano superior salvo en garantías constitucionales"
+   ],
+   "articles": "Título VI, arts. 117–127",
+   "icon": "scale"
+  },
+  {
+   "id": "tc",
+   "name": "Tribunal Constitucional",
+   "short": "Constitucional",
+   "holder": null,
+   "role": "12 magistrados",
+   "what": [
+    "Controla que las leyes respeten la Constitución",
+    "Resuelve recursos de amparo",
+    "Resuelve conflictos entre el Estado y las comunidades autónomas"
+   ],
+   "articles": "Título IX, arts. 159–165",
+   "icon": "shield"
+  },
+  {
+   "id": "ccaa",
+   "name": "Comunidades autónomas",
+   "short": "Autonomías",
+   "holder": null,
+   "role": "17 comunidades y 2 ciudades autónomas",
+   "what": [
+    "Tienen parlamento y gobierno propios",
+    "Gestionan sanidad, educación, vivienda y servicios sociales, entre otras competencias"
+   ],
+   "articles": "Título VIII, arts. 137–158",
+   "icon": "map-pin"
+  }
+ ],
+ "relations": [
+  {
+   "from": "congreso",
+   "to": "gobierno",
+   "label": "Elige al presidente y puede censurarlo",
+   "articles": "arts. 99 y 113"
+  },
+  {
+   "from": "corona",
+   "to": "gobierno",
+   "label": "Propone candidato y nombra al presidente",
+   "articles": "art. 62 y 99"
+  },
+  {
+   "from": "cortes",
+   "to": "gobierno",
+   "label": "Controlan su acción",
+   "articles": "art. 66"
+  },
+  {
+   "from": "corona",
+   "to": "cortes",
+   "label": "Sanciona las leyes que aprueban",
+   "articles": "art. 91"
+  },
+  {
+   "from": "cortes",
+   "to": "judicial",
+   "label": "Eligen a los vocales del CGPJ",
+   "articles": "art. 122.3"
+  },
+  {
+   "from": "cortes",
+   "to": "tc",
+   "label": "Congreso y Senado proponen 4 magistrados cada uno",
+   "articles": "art. 159.1"
+  },
+  {
+   "from": "gobierno",
+   "to": "tc",
+   "label": "Propone 2 magistrados",
+   "articles": "art. 159.1"
+  },
+  {
+   "from": "judicial",
+   "to": "tc",
+   "label": "El CGPJ propone 2 magistrados",
+   "articles": "art. 159.1"
+  },
+  {
+   "from": "tc",
+   "to": "cortes",
+   "label": "Puede anular leyes inconstitucionales",
+   "articles": "art. 161"
+  }
+ ],
+ "parties": {
+  "pp": {
+   "status": "documentado",
+   "doc": {
+    "title": "Estatutos del Partido Popular (2025)",
+    "url": "https://www.pp.es/storage/2025/07/ESTATUTOS_PARTIDOPOPULAR_2025.pdf",
+    "sha256": "cab648b6a7ea63ff113b89f417af40a9814a2bba5010ae49a0fdb70f7aa507b9",
+    "note": "PDF escaneado: la estructura se ha obtenido con reconocimiento óptico de caracteres (OCR) y revisión manual del índice y del artículo 23."
+   },
+   "organs": [
+    {
+     "id": "congreso",
+     "name": "Congreso Nacional",
+     "kind": "colegiado",
+     "what": "Máximo órgano del partido; se reúne en sesiones ordinarias y extraordinarias.",
+     "article": "arts. 27–30",
+     "children": [
+      "junta",
+      "comite"
+     ]
+    },
+    {
+     "id": "junta",
+     "name": "Junta Directiva Nacional",
+     "kind": "colegiado",
+     "what": "Órgano de gobierno entre congresos.",
+     "article": "arts. 33–35"
+    },
+    {
+     "id": "comite",
+     "name": "Comité Ejecutivo Nacional",
+     "kind": "colegiado",
+     "what": "Órgano de gobierno y administración ordinaria.",
+     "article": "arts. 36–38",
+     "children": [
+      "direccion"
+     ]
+    },
+    {
+     "id": "presidente",
+     "name": "Presidente",
+     "kind": "unipersonal",
+     "what": "Órgano unipersonal de dirección.",
+     "article": "art. 44",
+     "children": [
+      "secretario"
+     ]
+    },
+    {
+     "id": "secretario",
+     "name": "Secretario General",
+     "kind": "unipersonal",
+     "what": "Órgano unipersonal necesario.",
+     "article": "art. 45"
+    },
+    {
+     "id": "direccion",
+     "name": "Comité de Dirección Nacional",
+     "kind": "colegiado",
+     "what": "Órgano interno de coordinación.",
+     "article": "art. 47"
+    },
+    {
+     "id": "garantias",
+     "name": "Comité de Derechos y Garantías",
+     "kind": "control",
+     "what": "Órgano de garantías y régimen disciplinario.",
+     "article": "arts. 10 y 19"
+    },
+    {
+     "id": "cumplimiento",
+     "name": "Órgano de Cumplimiento Normativo",
+     "kind": "control",
+     "what": "Supervisión del cumplimiento normativo.",
+     "article": "art. 49"
+    }
+   ]
+  },
+  "frente-amplio": {
+   "status": "parcial",
+   "note": "Frente Amplio es una coalición electoral: no se ha localizado una estructura orgánica propia publicada. Se muestran los órganos de Movimiento Sumar, una de sus formaciones, según sus estatutos de 2023 (pueden haber cambiado).",
+   "doc": {
+    "title": "Estatutos de Movimiento Sumar (8 de noviembre de 2023)",
+    "url": "https://web.archive.org/web/2024/https://movimientosumar.es/wp-content/uploads/2023/11/2023-11-08-estatutos.pdf",
+    "sha256": "49f06e75e44e7e92a50f46307385251a9b2b60184e1e1040b84f2cf16581da55"
+   },
+   "organs": [
+    {
+     "id": "asamblea",
+     "name": "Asamblea",
+     "kind": "colegiado",
+     "what": "Máximo órgano de gobierno, formado por todas las personas afiliadas.",
+     "article": "art. 18",
+     "children": [
+      "mesa"
+     ]
+    },
+    {
+     "id": "mesa",
+     "name": "Mesa de Coordinación",
+     "kind": "colegiado",
+     "what": "De 3 a 10 personas; incluye Presidencia, Secretaría y Tesorería.",
+     "article": "art. 19"
+    },
+    {
+     "id": "garantias",
+     "name": "Comisión de Garantías",
+     "kind": "control",
+     "what": "Defiende los derechos de las personas afiliadas.",
+     "article": "art. 20"
+    }
+   ]
+  },
+  "psoe": {
+   "status": "pendiente",
+   "note": "psoe.es bloquea el acceso automatizado y no se ha localizado una copia archivada de sus estatutos. Pendiente de documentar.",
+   "doc": {
+    "title": "Registro de Partidos Políticos (Ministerio del Interior)",
+    "url": "https://www.interior.gob.es"
+   },
+   "organs": []
+  },
+  "vox": {
+   "status": "pendiente",
+   "note": "voxespana.es bloquea el acceso automatizado y no se ha localizado una copia archivada de sus estatutos. Pendiente de documentar.",
+   "doc": {
+    "title": "Registro de Partidos Políticos (Ministerio del Interior)",
+    "url": "https://www.interior.gob.es"
+   },
+   "organs": []
+  },
+  "podemos": {
+   "status": "pendiente",
+   "note": "podemos.info bloquea el acceso automatizado y no se ha localizado una copia archivada de sus estatutos. Pendiente de documentar.",
+   "doc": {
+    "title": "Registro de Partidos Políticos (Ministerio del Interior)",
+    "url": "https://www.interior.gob.es"
+   },
+   "organs": []
+  }
+ }
+}

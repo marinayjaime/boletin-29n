@@ -7,6 +7,9 @@ import { useSearchParams } from "next/navigation";
 import { VOTE_TYPE_LABELS } from "@/lib/votes-classify";
 import type { VoteType } from "@/lib/schema";
 import { GROUP_LABELS } from "@/lib/groups";
+import { GROUP_COLORS } from "@/lib/party-theme";
+
+const GROUP_SHORT: Record<string, string> = { GP: "PP", GS: "PSOE", GVOX: "Vox", GSUMAR: "Sumar" };
 import { formatShortDate } from "@/lib/format";
 import { normalize } from "@/lib/search";
 
@@ -89,12 +92,12 @@ export function VotesList({ topics }: { topics: Topic[] }) {
 
   return (
     <div className="grid gap-8 lg:grid-cols-[280px_1fr]">
-      <aside className="space-y-5 text-sm lg:sticky lg:top-24 lg:self-start" aria-label="Filtros">
+      <aside className="card space-y-5 self-start p-5 text-sm lg:sticky lg:top-24" aria-label="Filtros">
         <div>
           <label htmlFor="vq" className="kicker mb-1 block">
             Buscar en el título o expediente
           </label>
-          <input id="vq" value={q} onChange={(e) => setQ(e.target.value)} placeholder="vivienda, 130/000055…" className="w-full rounded border border-rule bg-paper px-3 py-2" />
+          <input id="vq" value={q} onChange={(e) => setQ(e.target.value)} placeholder="vivienda, 130/000055…" className="field w-full" />
         </div>
         <fieldset>
           <legend className="kicker mb-2">Tipo de iniciativa</legend>
@@ -103,7 +106,7 @@ export function VotesList({ topics }: { topics: Topic[] }) {
           </button>
           <div className="flex flex-wrap gap-1">
             {(Object.keys(VOTE_TYPE_LABELS) as VoteType[]).map((t) => (
-              <button key={t} aria-pressed={types.includes(t)} onClick={() => toggleType(t)} title={VOTE_TYPE_LABELS[t].help} className={`rounded-full border px-2.5 py-1 text-xs ${types.includes(t) ? "border-ink bg-ink text-paper" : "border-rule"}`}>
+              <button key={t} aria-pressed={types.includes(t)} onClick={() => toggleType(t)} title={VOTE_TYPE_LABELS[t].help} className="chip !min-h-[34px] !text-xs">
                 {VOTE_TYPE_LABELS[t].label}
               </button>
             ))}
@@ -112,16 +115,16 @@ export function VotesList({ topics }: { topics: Topic[] }) {
         <div className="grid grid-cols-2 gap-2">
           <label className="block">
             <span className="kicker mb-1 block">Desde</span>
-            <input type="date" value={from} min="2023-08-17" max="2026-10-06" onChange={(e) => setFrom(e.target.value)} className="w-full rounded border border-rule bg-paper px-2 py-1.5" />
+            <input type="date" value={from} min="2023-08-17" max="2026-10-06" onChange={(e) => setFrom(e.target.value)} className="field w-full" />
           </label>
           <label className="block">
             <span className="kicker mb-1 block">Hasta</span>
-            <input type="date" value={to} min="2023-08-17" max="2026-10-06" onChange={(e) => setTo(e.target.value)} className="w-full rounded border border-rule bg-paper px-2 py-1.5" />
+            <input type="date" value={to} min="2023-08-17" max="2026-10-06" onChange={(e) => setTo(e.target.value)} className="field w-full" />
           </label>
         </div>
         <label className="block">
           <span className="kicker mb-1 block">Resultado</span>
-          <select value={result} onChange={(e) => setResult(e.target.value)} className="w-full rounded border border-rule bg-paper px-2 py-1.5">
+          <select value={result} onChange={(e) => setResult(e.target.value)} className="field w-full">
             <option value="">Todos</option>
             {Object.entries(RESULT_LABEL)
               .filter(([k]) => k !== "indeterminado")
@@ -134,7 +137,7 @@ export function VotesList({ topics }: { topics: Topic[] }) {
         </label>
         <label className="block">
           <span className="kicker mb-1 block">Tema (orientativo)</span>
-          <select value={topic} onChange={(e) => setTopic(e.target.value)} className="w-full rounded border border-rule bg-paper px-2 py-1.5">
+          <select value={topic} onChange={(e) => setTopic(e.target.value)} className="field w-full">
             <option value="">Todos</option>
             {topics.map((t) => (
               <option key={t.id} value={t.id}>
@@ -145,7 +148,7 @@ export function VotesList({ topics }: { topics: Topic[] }) {
         </label>
         <fieldset className="grid grid-cols-2 gap-2">
           <legend className="kicker mb-1">Grupo parlamentario</legend>
-          <select aria-label="Grupo" value={group} onChange={(e) => setGroup(e.target.value)} className="col-span-2 rounded border border-rule bg-paper px-2 py-1.5">
+          <select aria-label="Grupo" value={group} onChange={(e) => setGroup(e.target.value)} className="field col-span-2">
             <option value="">Cualquiera</option>
             {Object.entries(GROUP_LABELS).map(([k, l]) => (
               <option key={k} value={k}>
@@ -153,7 +156,7 @@ export function VotesList({ topics }: { topics: Topic[] }) {
               </option>
             ))}
           </select>
-          <select aria-label="Sentido mayoritario del grupo" value={groupVote} disabled={!group} onChange={(e) => setGroupVote(e.target.value)} className="col-span-2 rounded border border-rule bg-paper px-2 py-1.5 disabled:opacity-40">
+          <select aria-label="Sentido mayoritario del grupo" value={groupVote} disabled={!group} onChange={(e) => setGroupVote(e.target.value)} className="field col-span-2 disabled:opacity-40">
             <option value="">Cualquier voto</option>
             <option value="si">Mayoría del grupo: sí</option>
             <option value="no">Mayoría del grupo: no</option>
@@ -191,33 +194,50 @@ export function VotesList({ topics }: { topics: Topic[] }) {
               {filtered.length.toLocaleString("es-ES")} votaciones · página {page} de {pages}
             </p>
             {filtered.length === 0 && <p className="hatch rounded border border-rule p-6 text-sm">Ninguna votación cumple estos filtros.</p>}
-            <ol className="divide-y divide-rule border-y border-rule">
+            <ol className="grid gap-3">
               {slice.map((v) => {
                 const total = v[7] + v[8] + v[9] || 1;
+                const big = ["GP", "GS", "GVOX", "GSUMAR"].map((g) => v[11].find((x) => x[0] === g)).filter(Boolean) as [string, number, number, number, number][];
                 const divided = v[11].filter(isDivided).map((g) => g[0]);
                 return (
                   <li key={v[0]}>
-                    <Link href={`/votaciones/${v[0]}`} className="grid gap-3 py-4 transition-colors hover:bg-paper-2 md:grid-cols-[110px_1fr_180px] md:px-2">
-                      <div className="font-mono text-xs text-ink-3">
-                        {formatShortDate(v[1])}
-                        <span className="mt-1 block">{v[13]}</span>
+                    <Link href={`/votaciones/${v[0]}`} className="card lift grid gap-4 p-4 md:grid-cols-[1fr_220px] md:p-5">
+                      <div className="min-w-0">
+                        <div className="flex flex-wrap items-center gap-1.5">
+                          <span className="tag !bg-ink !text-bg">{VOTE_TYPE_LABELS[v[2]].label}</span>
+                          <span className="tag">{formatShortDate(v[1])}</span>
+                          {v[12] === 1 && <span className="tag">Por llamamiento</span>}
+                          {divided.length > 0 && <span className="tag !bg-brand-soft !text-ink">Voto dividido</span>}
+                        </div>
+                        <p className="mt-2 line-clamp-2 text-[1.02rem] font-bold leading-snug">{v[4]}</p>
+                        {v[5] && <p className="mt-0.5 line-clamp-1 text-sm font-semibold text-ink-3">{v[5]}</p>}
+                        {big.length > 0 && (
+                          <div className="mt-3 flex flex-wrap gap-1.5">
+                            {big.map((g) => {
+                              const m = g[1] >= g[2] && g[1] >= g[3] ? "S" : g[2] >= g[3] ? "N" : "A";
+                              return (
+                                <span key={g[0]} className="inline-flex items-center gap-1.5 rounded-full py-0.5 pl-0.5 pr-2 text-xs font-extrabold" style={{ background: "var(--surface-2)" }}>
+                                  <span className="h-5 w-5 rounded-full" style={{ background: GROUP_COLORS[g[0]] }} aria-hidden />
+                                  {GROUP_SHORT[g[0]]} <span style={{ color: m === "S" ? "var(--yes)" : m === "N" ? "var(--no)" : "var(--ink-3)" }}>{m === "S" ? "Sí" : m === "N" ? "No" : "Abst."}</span>
+                                </span>
+                              );
+                            })}
+                          </div>
+                        )}
                       </div>
-                      <div>
-                        <span className="cite-chip">{VOTE_TYPE_LABELS[v[2]].label}</span>
-                        {v[12] === 1 && <span className="cite-chip ml-1">Por llamamiento</span>}
-                        <p className="mt-1.5 leading-snug">{v[4]}</p>
-                        {v[5] && <p className="mt-0.5 text-sm text-ink-3">{v[5]}</p>}
-                        {divided.length > 0 && <p className="mt-1 text-xs text-ink-2">Voto dividido en: {divided.map((g) => GROUP_LABELS[g] ?? g).join(", ")}</p>}
-                      </div>
-                      <div>
-                        <p className={`text-sm font-semibold ${v[3] === "aprobada" ? "" : "text-ink-2"}`}>{RESULT_LABEL[v[3]]}</p>
-                        <div className="mt-1 flex h-2 overflow-hidden rounded-sm bg-paper-3" aria-hidden>
+                      <div className="flex flex-col justify-center">
+                        <p className="text-sm font-extrabold" style={{ color: v[3] === "aprobada" || v[3] === "asentimiento" ? "var(--yes)" : v[3] === "rechazada" ? "var(--no)" : "var(--ink-2)" }}>
+                          {RESULT_LABEL[v[3]]}
+                        </p>
+                        <div className="mt-1.5 flex h-3 overflow-hidden rounded-full bg-surface-2" aria-hidden>
                           <span style={{ width: `${(v[7] / total) * 100}%`, background: "var(--yes)" }} />
                           <span style={{ width: `${(v[8] / total) * 100}%`, background: "var(--no)" }} />
                           <span style={{ width: `${(v[9] / total) * 100}%`, background: "var(--abs)" }} />
                         </div>
-                        <p className="mt-1 font-mono text-xs">
-                          Sí {v[7]} · No {v[8]} · Abst. {v[9]}
+                        <p className="mt-1.5 flex gap-3 text-sm font-bold">
+                          <span><span className="num text-xl">{v[7]}</span> sí</span>
+                          <span><span className="num text-xl">{v[8]}</span> no</span>
+                          <span><span className="num text-xl">{v[9]}</span> abst.</span>
                         </p>
                       </div>
                     </Link>
@@ -226,13 +246,13 @@ export function VotesList({ topics }: { topics: Topic[] }) {
               })}
             </ol>
             <nav aria-label="Paginación" className="mt-4 flex items-center justify-between text-sm">
-              <button onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page === 1} className="rounded-full border border-rule px-4 py-2 disabled:opacity-30">
+              <button onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page === 1} className="btn btn-ghost disabled:opacity-30">
                 ← Anteriores
               </button>
               <span className="font-mono">
                 {page} / {pages}
               </span>
-              <button onClick={() => setPage((p) => Math.min(pages, p + 1))} disabled={page === pages} className="rounded-full border border-rule px-4 py-2 disabled:opacity-30">
+              <button onClick={() => setPage((p) => Math.min(pages, p + 1))} disabled={page === pages} className="btn btn-ghost disabled:opacity-30">
                 Siguientes →
               </button>
             </nav>

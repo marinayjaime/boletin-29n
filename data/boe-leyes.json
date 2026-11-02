@@ -1,0 +1,2696 @@
+{
+ "from": "2023-11-17",
+ "to": "2026-10-31",
+ "importedAt": "2026-11-02T12:27:45.130Z",
+ "source": "https://www.boe.es/datosabiertos/api/boe/sumario/",
+ "items": [
+  {
+   "id": "BOE-A-2023-23345",
+   "date": "2023-11-18",
+   "title": "Ley 15/2023, de 2 de noviembre, de modificación de la Ley 8/1987, de 15 de abril, de creación, organización y control parlamentario de la Corporación Aragonesa de Radio y Televisión.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-23345"
+  },
+  {
+   "id": "BOE-A-2023-23888",
+   "date": "2023-11-24",
+   "title": "Ley 11/2023, de 7 de noviembre, de medidas fiscales urgentes por la que se modifica la Ley 10/2017, de 27 de octubre, por la que se consolidan las disposiciones legales de la Comunidad Autónoma de La Rioja en materia de impuestos propios y tributos cedidos.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-23888"
+  },
+  {
+   "id": "BOE-A-2023-24124",
+   "date": "2023-11-28",
+   "title": "Ley 6/2023, de 2 de noviembre, del patrimonio de la Comunidad Autónoma de Galicia.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-24124"
+  },
+  {
+   "id": "BOE-A-2023-24913",
+   "date": "2023-12-07",
+   "title": "Ley 11/2023, de 23 de noviembre, de modificación del Decreto Legislativo 1/2014, de 6 de junio, por el que se aprueba el texto refundido de las disposiciones legales de la Comunidad Autónoma de las Illes Balears en materia de tributos cedidos por el Estado.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-24913"
+  },
+  {
+   "id": "BOE-A-2023-25011",
+   "date": "2023-12-08",
+   "title": "Ley 10/2023, de 9 de noviembre, del Plan Vasco de Estadística 2023-2026 y de tercera modificación de la Ley de Estadística de la Comunidad Autónoma de Euskadi.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-25011"
+  },
+  {
+   "id": "BOE-A-2023-25012",
+   "date": "2023-12-08",
+   "title": "Ley 11/2023, de 9 de noviembre, de movilidad sostenible de Euskadi.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-25012"
+  },
+  {
+   "id": "BOE-A-2023-25632",
+   "date": "2023-12-19",
+   "title": "Ley 16/2023, de 16 de noviembre, de modificación del texto refundido de las disposiciones dictadas por la Comunidad Autónoma de Aragón en materia de tributos cedidos aprobado por Decreto-Legislativo 1/2005, de 26 de septiembre, del Gobierno de Aragón, en orden a la equiparación, en el Impuesto sobre Sucesiones y Donaciones, de las uniones de parejas no casadas reconocidas en los estados miembros de la Unión Europea y del Espacio Económico Europeo.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-25632"
+  },
+  {
+   "id": "BOE-A-2023-25758",
+   "date": "2023-12-20",
+   "title": "Real Decreto-ley 6/2023, de 19 de diciembre, por el que se aprueban medidas urgentes para la ejecución del Plan de Recuperación, Transformación y Resiliencia en materia de servicio público de justicia, función pública, régimen local y mecenazgo.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-25758"
+  },
+  {
+   "id": "BOE-A-2023-25759",
+   "date": "2023-12-20",
+   "title": "Real Decreto-ley 7/2023, de 19 de diciembre, por el que se adoptan medidas urgentes, para completar la transposición de la Directiva (UE) 2019/1158, del Parlamento Europeo y del Consejo, de 20 de junio de 2019, relativa a la conciliación de la vida familiar y la vida profesional de los progenitores y los cuidadores, y por la que se deroga la Directiva 2010/18/UE del Consejo, y para la simplificación y mejora del nivel asistencial de la protección por desempleo.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-25759"
+  },
+  {
+   "id": "BOE-A-2023-26338",
+   "date": "2023-12-27",
+   "title": "Ley 2/2023, de 9 de noviembre, de bonificaciones fiscales de tasas veterinarias.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-26338"
+  },
+  {
+   "id": "BOE-A-2023-26452",
+   "date": "2023-12-28",
+   "title": "Real Decreto-ley 8/2023, de 27 de diciembre, por el que se adoptan medidas para afrontar las consecuencias económicas y sociales derivadas de los conflictos en Ucrania y Oriente Próximo, así como para paliar los efectos de la sequía.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-26452"
+  },
+  {
+   "id": "BOE-A-2023-26466",
+   "date": "2023-12-28",
+   "title": "Ley 6/2023, de 22 de noviembre, de modificación de la Ley 13/1997, de 23 de diciembre, por la que se regula el tramo autonómico del Impuesto sobre la Renta de las Personas Físicas y restantes tributos cedidos, por lo que se refiere al Impuesto de Sucesiones y Donaciones.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-26466"
+  },
+  {
+   "id": "BOE-A-2023-26637",
+   "date": "2023-12-29",
+   "title": "Ley 12/2023, de 23 de noviembre, de los servicios de prevención y extinción de incendios y salvamento.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-26637"
+  },
+  {
+   "id": "BOE-A-2023-26638",
+   "date": "2023-12-29",
+   "title": "Ley 13/2023, de 30 de noviembre, de Salud Pública de Euskadi.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-26638"
+  },
+  {
+   "id": "BOE-A-2023-26639",
+   "date": "2023-12-29",
+   "title": "Ley 14/2023, de 30 de noviembre, de modificación de la Ley 6/2019, de 9 de mayo, de Patrimonio Cultural Vasco.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-26639"
+  },
+  {
+   "id": "BOE-A-2024-446",
+   "date": "2024-01-09",
+   "title": "Ley 11/2023, de 27 de diciembre, de fomento del asociacionismo.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-446"
+  },
+  {
+   "id": "BOE-A-2024-447",
+   "date": "2024-01-09",
+   "title": "Ley 12/2023, de 26 de diciembre, del Presupuesto de la Comunidad Autónoma de Andalucía para el año 2024.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-447"
+  },
+  {
+   "id": "BOE-A-2024-899",
+   "date": "2024-01-18",
+   "title": "Ley 15/2023, de 21 de diciembre, de Empleo.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-899"
+  },
+  {
+   "id": "BOE-A-2024-900",
+   "date": "2024-01-18",
+   "title": "Ley 16/2023, de 21 de diciembre, de la Autoridad Vasca de Protección de Datos.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-900"
+  },
+  {
+   "id": "BOE-A-2024-901",
+   "date": "2024-01-18",
+   "title": "Ley 17/2023, de 21 de diciembre, de Educación de la Comunidad Autónoma del País Vasco.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-901"
+  },
+  {
+   "id": "BOE-A-2024-902",
+   "date": "2024-01-18",
+   "title": "Ley 18/2023, de 21 de diciembre, de modificación de la Ley 2/2006, de 30 de junio, de Suelo y Urbanismo.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-902"
+  },
+  {
+   "id": "BOE-A-2024-903",
+   "date": "2024-01-18",
+   "title": "Ley 17/2023, de 22 de diciembre, de Presupuestos de la Comunidad Autónoma de Aragón para el ejercicio 2024.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-903"
+  },
+  {
+   "id": "BOE-A-2024-993",
+   "date": "2024-01-19",
+   "title": "Ley 19/2023, de 21 de diciembre, Reguladora del Instituto Vasco de Finanzas.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-993"
+  },
+  {
+   "id": "BOE-A-2024-994",
+   "date": "2024-01-19",
+   "title": "Ley 20/2023, de 21 de diciembre, Reguladora del Régimen de Subvenciones.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-994"
+  },
+  {
+   "id": "BOE-A-2024-995",
+   "date": "2024-01-19",
+   "title": "Ley 21/2023, de 22 de diciembre, por la que se aprueban los Presupuestos Generales de la Comunidad Autónoma de Euskadi para el ejercicio 2024.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-995"
+  },
+  {
+   "id": "BOE-A-2024-1310",
+   "date": "2024-01-24",
+   "title": "Ley 1/2024, de 3 de enero, de composición del Consejo de Educación de Cataluña.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-1310"
+  },
+  {
+   "id": "BOE-A-2024-1372",
+   "date": "2024-01-25",
+   "title": "Ley 2/2023, de 26 de diciembre, de Presupuestos Generales de la Comunidad Autónoma de Cantabria para el año 2024.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-1372"
+  },
+  {
+   "id": "BOE-A-2024-1373",
+   "date": "2024-01-25",
+   "title": "Ley 3/2023, de 26 de diciembre, de Medidas Fiscales y Administrativas.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-1373"
+  },
+  {
+   "id": "BOE-A-2024-1569",
+   "date": "2024-01-29",
+   "title": "Ley 12/2023, de 29 de diciembre, de Presupuestos Generales de la Comunidad Autónoma de las Illes Balears para el año 2024.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-1569"
+  },
+  {
+   "id": "BOE-A-2024-1776",
+   "date": "2024-01-31",
+   "title": "Ley 4/2023, de 29 de diciembre, de Presupuestos Generales para 2024.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-1776"
+  },
+  {
+   "id": "BOE-A-2024-1777",
+   "date": "2024-01-31",
+   "title": "Ley 12/2023, de 28 de diciembre, de Presupuestos Generales de la Comunidad Autónoma de La Rioja para el año 2024.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-1777"
+  },
+  {
+   "id": "BOE-A-2024-1778",
+   "date": "2024-01-31",
+   "title": "Ley 13/2023, de 28 de diciembre, de Medidas Fiscales y Administrativas para el año 2024.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-1778"
+  },
+  {
+   "id": "BOE-A-2024-2045",
+   "date": "2024-02-03",
+   "title": "Ley 4/2023, de 28 de diciembre, de Presupuestos Generales de la Comunidad Autónoma de la Región de Murcia para el ejercicio 2024.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-2045"
+  },
+  {
+   "id": "BOE-A-2024-2663",
+   "date": "2024-02-13",
+   "title": "Ley 7/2023, de 30 de noviembre, para la igualdad efectiva de mujeres y hombres de Galicia.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-2663"
+  },
+  {
+   "id": "BOE-A-2024-2664",
+   "date": "2024-02-13",
+   "title": "Ley 8/2023, de 14 de diciembre, de artesanía de Galicia.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-2664"
+  },
+  {
+   "id": "BOE-A-2024-2665",
+   "date": "2024-02-13",
+   "title": "Ley 1/2024, de 24 de enero, medidas temporales y urgentes para la protección del paisaje de La Rioja.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-2665"
+  },
+  {
+   "id": "BOE-A-2024-2666",
+   "date": "2024-02-13",
+   "title": "Ley 7/2023, de 26 de diciembre, de medidas fiscales, de gestión administrativa y financiera, y de organización de la Generalitat.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-2666"
+  },
+  {
+   "id": "BOE-A-2024-2667",
+   "date": "2024-02-13",
+   "title": "Ley 8/2023, de 27 de diciembre, de Presupuestos de la Generalitat para el ejercicio 2024.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-2667"
+  },
+  {
+   "id": "BOE-A-2024-2776",
+   "date": "2024-02-14",
+   "title": "Ley 9/2023, de 28 de diciembre, de presupuestos generales de la Comunidad Autónoma de Galicia para el año 2024.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-2776"
+  },
+  {
+   "id": "BOE-A-2024-2777",
+   "date": "2024-02-14",
+   "title": "Ley 10/2023, de 28 de diciembre, de medidas fiscales y administrativas.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-2777"
+  },
+  {
+   "id": "BOE-A-2024-2778",
+   "date": "2024-02-14",
+   "title": "Ley 1/2024, de 11 de enero, de la calidad alimentaria de Galicia.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-2778"
+  },
+  {
+   "id": "BOE-A-2024-3028",
+   "date": "2024-02-17",
+   "title": "Ley 11/2023, de 21 de diciembre, de Presupuestos Generales de la Junta de Comunidades de Castilla-La Mancha para 2024.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-3028"
+  },
+  {
+   "id": "BOE-A-2024-3101",
+   "date": "2024-02-19",
+   "title": "Ley 2/2024, de 7 de febrero, de bonificación del impuesto sobre sucesiones y donaciones.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-3101"
+  },
+  {
+   "id": "BOE-A-2024-3213",
+   "date": "2024-02-20",
+   "title": "Ley 1/2024, de 5 de febrero, de Presupuestos Generales de la Comunidad Autónoma de Extremadura para el año 2024.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-3213"
+  },
+  {
+   "id": "BOE-A-2024-3539",
+   "date": "2024-02-24",
+   "title": "Ley 2/2024, de 6 de febrero, de modificación de la Ley 21/2000, sobre los derechos de información concernientes a la salud y la autonomía del paciente, y la documentación clínica.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-3539"
+  },
+  {
+   "id": "BOE-A-2024-4289",
+   "date": "2024-03-05",
+   "title": "Ley 1/2024, de 8 de febrero, de apoyo al proyecto de vida de las personas con discapacidad en Castilla y León.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-4289"
+  },
+  {
+   "id": "BOE-A-2024-4617",
+   "date": "2024-03-09",
+   "title": "Ley 1/2024, de 15 de febrero, de derogación de la Ley 14/2018, de 8 de noviembre, de memoria democrática de Aragón.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-4617"
+  },
+  {
+   "id": "BOE-A-2024-4783",
+   "date": "2024-03-12",
+   "title": "Ley 1/2024, de 8 de febrero, de Transición Energética y Cambio Climático.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-4783"
+  },
+  {
+   "id": "BOE-A-2024-4784",
+   "date": "2024-03-12",
+   "title": "Ley 2/2024, de 15 de febrero, de Infancia y Adolescencia.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-4784"
+  },
+  {
+   "id": "BOE-A-2024-4866",
+   "date": "2024-03-13",
+   "title": "Ley 3/2024, de 15 de febrero, de Cooperación y Solidaridad.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-4866"
+  },
+  {
+   "id": "BOE-A-2024-4867",
+   "date": "2024-03-13",
+   "title": "Ley 4/2024, de 15 de febrero, de no discriminación por motivos de identidad de género y de reconocimiento de los derechos de las personas trans.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-4867"
+  },
+  {
+   "id": "BOE-A-2024-5609",
+   "date": "2024-03-21",
+   "title": "Ley 12/2023, de 15 de diciembre, por la que se modifica de manera temporal la bonificación del impuesto sobre el patrimonio en la Comunidad de Madrid durante el período de vigencia del impuesto de solidaridad de las grandes fortunas.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-5609"
+  },
+  {
+   "id": "BOE-A-2024-5610",
+   "date": "2024-03-21",
+   "title": "Ley 13/2023, de 15 de diciembre, por la que se modifica el Texto Refundido de las disposiciones legales de la Comunidad de Madrid en materia de tributos cedidos por el Estado, aprobado por Decreto Legislativo 1/2010, de 21 de octubre, para deflactar la escala autonómica, el mínimo personal y familiar, las cuantías de las deducciones autonómicas y los límites de renta para la aplicación de las mismas, en el Impuesto sobre la Renta de las Personas Físicas.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-5610"
+  },
+  {
+   "id": "BOE-A-2024-5611",
+   "date": "2024-03-21",
+   "title": "Ley 14/2023, de 20 de diciembre, por la que se crea la Agencia de Ciberseguridad de la Comunidad de Madrid.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-5611"
+  },
+  {
+   "id": "BOE-A-2024-5884",
+   "date": "2024-03-25",
+   "title": "Ley 1/2024, de 16 de febrero, de mejora de la regulación de los servicios de transporte con vehículos de hasta nueve plazas en las Illes Balears.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-5884"
+  },
+  {
+   "id": "BOE-A-2024-6864",
+   "date": "2024-04-08",
+   "title": "Ley 2/2024, de 15 de marzo, por la que se modifica la Ley 4/1998, de 24 de junio, reguladora del juego y de las apuestas de Castilla y León.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-6864"
+  },
+  {
+   "id": "BOE-A-2024-8368",
+   "date": "2024-04-26",
+   "title": "Ley 2/2024, de 12 de abril, para la aplicación al municipio de Badajoz del régimen de organización de municipios de gran población.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-8368"
+  },
+  {
+   "id": "BOE-A-2024-8369",
+   "date": "2024-04-26",
+   "title": "Ley 2/2024, de 11 de abril, de creación del Registro de Transparencia y Control del Patrimonio y de las Actividades de los Cargos Públicos de las Illes Balears.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-8369"
+  },
+  {
+   "id": "BOE-A-2024-8834",
+   "date": "2024-05-02",
+   "title": "Ley 3/2024, de 12 de abril, reguladora del modelo de atención en los centros de carácter residencial y centros de día de servicios sociales para cuidados de larga duración en Castilla y León.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-8834"
+  },
+  {
+   "id": "BOE-A-2024-9476",
+   "date": "2024-05-11",
+   "title": "Ley 1/2024, de 17 de abril, de creación del Colegio Profesional de Logopedas.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-9476"
+  },
+  {
+   "id": "BOE-A-2024-9699",
+   "date": "2024-05-15",
+   "title": "Real Decreto-ley 1/2024, de 14 de mayo, por el que se prorrogan las medidas de suspensión de lanzamientos sobre la vivienda habitual para la protección de los colectivos vulnerables.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-9699"
+  },
+  {
+   "id": "BOE-A-2024-10011",
+   "date": "2024-05-18",
+   "title": "Ley 7/2023, de 27 de diciembre, de Presupuestos Generales de la Comunidad Autónoma de Canarias para 2024.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-10011"
+  },
+  {
+   "id": "BOE-A-2024-10012",
+   "date": "2024-05-18",
+   "title": "Ley 8/2023, de 27 de diciembre, por la que se modifica la Ley 11/1997, de 2 de diciembre, de regulación del sector eléctrico canario.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-10012"
+  },
+  {
+   "id": "BOE-A-2024-10149",
+   "date": "2024-05-21",
+   "title": "Ley 1/2024, de 15 de marzo, de Medidas Administrativas y de Creación de la Agencia de Transformación Digital de Castilla-La Mancha.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-10149"
+  },
+  {
+   "id": "BOE-A-2024-10235",
+   "date": "2024-05-22",
+   "title": "Real Decreto-ley 2/2024, de 21 de mayo, por el que se adoptan medidas urgentes para la simplificación y mejora del nivel asistencial de la protección por desempleo, y para completar la transposición de la Directiva (UE) 2019/1158 del Parlamento Europeo y del Consejo, de 20 de junio de 2019, relativa a la conciliación de la vida familiar y la vida profesional de los progenitores y los cuidadores, y por la que se deroga la Directiva 2010/18/UE del Consejo.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-10235"
+  },
+  {
+   "id": "BOE-A-2024-10765",
+   "date": "2024-05-29",
+   "title": "Ley 15/2023, de 27 de diciembre, de Presupuestos Generales de la Comunidad de Madrid para el año 2024.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-10765"
+  },
+  {
+   "id": "BOE-A-2024-10766",
+   "date": "2024-05-29",
+   "title": "Ley 16/2023, de 27 de diciembre, de medidas para la simplificación y mejora de la eficacia de instituciones y organismos de la Comunidad de Madrid.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-10766"
+  },
+  {
+   "id": "BOE-A-2024-10767",
+   "date": "2024-05-29",
+   "title": "Ley 17/2023, de 27 de diciembre, por la que se modifica la Ley 2/2016, de 29 de marzo, de Identidad y Expresión de Género e Igualdad Social y no Discriminación de la Comunidad de Madrid.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-10767"
+  },
+  {
+   "id": "BOE-A-2024-10768",
+   "date": "2024-05-29",
+   "title": "Ley 18/2023, de 27 de diciembre, por la que se modifica la Ley 3/2016, de 22 de julio, de Protección Integral Contra la LGTBIfobia y la discriminación por razón de orientación e identidad sexual en la Comunidad de Madrid.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-10768"
+  },
+  {
+   "id": "BOE-A-2024-11191",
+   "date": "2024-06-03",
+   "title": "Ley 2/2024, de 30 de abril, de Impulso Demográfico.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-11191"
+  },
+  {
+   "id": "BOE-A-2024-11192",
+   "date": "2024-06-03",
+   "title": "Ley 3/2024, de 30 de abril, de modificación de la Ley del Principado de Asturias 2/2007, de 23 de marzo, de Coordinación de las Policías Locales, en materia de requisitos generales de acceso.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-11192"
+  },
+  {
+   "id": "BOE-A-2024-11373",
+   "date": "2024-06-05",
+   "title": "Real Decreto-ley 3/2024, de 4 de junio, de medidas de promoción del uso del transporte público colectivo terrestre por parte de los jóvenes para los viajes realizados en el periodo estival de 2024.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-11373"
+  },
+  {
+   "id": "BOE-A-2024-11538",
+   "date": "2024-06-07",
+   "title": "Ley 2/2024, de 23 de mayo, por la que se crean los Impuestos Medioambientales sobre parques eólicos y sobre parques fotovoltaicos en la Comunidad Autónoma de Aragón y se modifica el Impuesto Medioambiental sobre las instalaciones de transporte de energía eléctrica de alta tensión.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-11538"
+  },
+  {
+   "id": "BOE-A-2024-11613",
+   "date": "2024-06-08",
+   "title": "Ley 1/2024, de 7 de junio, por la que se regulan las enseñanzas artísticas superiores y se establece la organización y equivalencias de las enseñanzas artísticas profesionales.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-11613"
+  },
+  {
+   "id": "BOE-A-2024-11776",
+   "date": "2024-06-11",
+   "title": "Ley Orgánica 1/2024, de 10 de junio, de amnistía para la normalización institucional, política y social en Cataluña.",
+   "kind": "ley_organica",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-11776"
+  },
+  {
+   "id": "BOE-A-2024-12564",
+   "date": "2024-06-21",
+   "title": "Ley 4/2024, de 15 de mayo, de modificación en materia de incendios forestales de la Ley 3/2004, de 23 de noviembre, de Montes y Ordenación Forestal, en el marco de las modificaciones de la legislación básica estatal.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-12564"
+  },
+  {
+   "id": "BOE-A-2024-12944",
+   "date": "2024-06-27",
+   "title": "Real Decreto-ley 4/2024, de 26 de junio, por el que se prorrogan determinadas medidas para afrontar las consecuencias económicas y sociales derivadas de los conflictos en Ucrania y Oriente Próximo y se adoptan medidas urgentes en materia fiscal, energética y social.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-12944"
+  },
+  {
+   "id": "BOE-A-2024-13673",
+   "date": "2024-07-05",
+   "title": "Ley 3/2024, de 25 de junio, por la que se aprueba el Plan Regional de Carreteras 2024-2032.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-13673"
+  },
+  {
+   "id": "BOE-A-2024-13825",
+   "date": "2024-07-06",
+   "title": "Ley 1/2024, de 21 de junio, de creación del Instituto de Salud de Andalucía.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-13825"
+  },
+  {
+   "id": "BOE-A-2024-14006",
+   "date": "2024-07-09",
+   "title": "Ley 4/2024, de 1 de julio, de medidas administrativas y presupuestarias urgentes para la mejora de la prestación de los servicios públicos en La Rioja.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-14006"
+  },
+  {
+   "id": "BOE-A-2024-14392",
+   "date": "2024-07-15",
+   "title": "Ley 3/2024, de 13 de junio, de modificación del Código del Derecho Foral de Aragón en materia de capacidad jurídica de las personas.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-14392"
+  },
+  {
+   "id": "BOE-A-2024-14546",
+   "date": "2024-07-16",
+   "title": "Ley 4/2024, de 9 de mayo, de medidas tributarias, financieras y administrativas.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-14546"
+  },
+  {
+   "id": "BOE-A-2024-14547",
+   "date": "2024-07-16",
+   "title": "Ley 5/2024, de 9 de mayo, de Presupuestos Generales de la Comunidad de Castilla y León para 2024.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-14547"
+  },
+  {
+   "id": "BOE-A-2024-14928",
+   "date": "2024-07-20",
+   "title": "Ley 2/2024, de 14 de junio, de modificación de la Ley 4/2018, de 8 de octubre, para una Sociedad Libre de Violencia de Género en Castilla-La Mancha.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-14928"
+  },
+  {
+   "id": "BOE-A-2024-14999",
+   "date": "2024-07-22",
+   "title": "Ley 1/2024, de 17 de abril, de Economía Circular de la Comunidad de Madrid.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-14999"
+  },
+  {
+   "id": "BOE-A-2024-15000",
+   "date": "2024-07-22",
+   "title": "Ley 2/2024, de 22 de abril, por la que se regulan las Distinciones Honoríficas de la Comunidad de Madrid.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-15000"
+  },
+  {
+   "id": "BOE-A-2024-15001",
+   "date": "2024-07-22",
+   "title": "Ley 3/2024, de 28 de junio, de medidas urbanísticas para la promoción de vivienda protegida.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-15001"
+  },
+  {
+   "id": "BOE-A-2024-15101",
+   "date": "2024-07-23",
+   "title": "Ley 6/2024, de 17 de junio, de modificación de la Ley 6/1994, de 19 de mayo, de Sanidad Animal de Castilla y León.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-15101"
+  },
+  {
+   "id": "BOE-A-2024-15102",
+   "date": "2024-07-23",
+   "title": "Ley 7/2024, de 20 de junio, de Patrimonio Cultural de Castilla y León.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-15102"
+  },
+  {
+   "id": "BOE-A-2024-15350",
+   "date": "2024-07-25",
+   "title": "Ley 4/2024, de 28 de junio, del Sistema de Protección Civil y Gestión de Emergencias de Aragón.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-15350"
+  },
+  {
+   "id": "BOE-A-2024-15430",
+   "date": "2024-07-26",
+   "title": "Ley 1/2024, de 8 de julio, de modificación de la Ley 12/2014, de 16 de diciembre, de Transparencia y Participación Ciudadana de la Comunidad Autónoma de la Región de Murcia.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-15430"
+  },
+  {
+   "id": "BOE-A-2024-15509",
+   "date": "2024-07-27",
+   "title": "Ley 1/2024, de 16 de abril, de reconocimiento de la universidad privada \"Universidad Tecnológica de las Islas Canarias\".",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-15509"
+  },
+  {
+   "id": "BOE-A-2024-15574",
+   "date": "2024-07-29",
+   "title": "Ley 2/2024, de 11 de julio, de incremento del importe de las plazas y servicios correspondientes a los conciertos sociales de los sectores de menor y reforma.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-15574"
+  },
+  {
+   "id": "BOE-A-2024-15575",
+   "date": "2024-07-29",
+   "title": "Ley 3/2024, de 3 de mayo, de medidas urgentes en materia de vivienda.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-15575"
+  },
+  {
+   "id": "BOE-A-2024-15576",
+   "date": "2024-07-29",
+   "title": "Ley 4/2024, de 20 de junio, de la unificación por la absorción del Colegio Oficial de Titulados Mercantiles y Empresariales de Baleares por parte del Colegio Oficial de Economistas de las Illes Balears.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-15576"
+  },
+  {
+   "id": "BOE-A-2024-15709",
+   "date": "2024-07-31",
+   "title": "Ley 2/2024, de 29 de mayo, de medidas en materia territorial y urbanística para la recuperación económica y social de la isla de La Palma tras la erupción volcánica de Cumbre Vieja.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-15709"
+  },
+  {
+   "id": "BOE-A-2024-15936",
+   "date": "2024-08-02",
+   "title": "Ley Orgánica 2/2024, de 1 de agosto, de representación paritaria y presencia equilibrada de mujeres y hombres.",
+   "kind": "ley_organica",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-15936"
+  },
+  {
+   "id": "BOE-A-2024-15937",
+   "date": "2024-08-02",
+   "title": "Ley 2/2024, de 1 de agosto, de creación de la Autoridad Administrativa Independiente para la Investigación Técnica de Accidentes e Incidentes ferroviarios, marítimos y de aviación civil.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-15937"
+  },
+  {
+   "id": "BOE-A-2024-16127",
+   "date": "2024-08-05",
+   "title": "Ley Orgánica 3/2024, de 2 de agosto, de reforma de la Ley Orgánica 6/1985, de 1 de julio, del Poder Judicial y de reforma de la Ley 50/1981, de 30 de diciembre, por la que se regula el Estatuto Orgánico del Ministerio Fiscal.",
+   "kind": "ley_organica",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-16127"
+  },
+  {
+   "id": "BOE-A-2024-16511",
+   "date": "2024-08-09",
+   "title": "Ley 1/2024, de 27 de junio, por la que se regula la libertad educativa.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-16511"
+  },
+  {
+   "id": "BOE-A-2024-16512",
+   "date": "2024-08-09",
+   "title": "Ley 2/2024, de 27 de junio, de la Corporación Audiovisual de la Comunitat Valenciana.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-16512"
+  },
+  {
+   "id": "BOE-A-2024-16513",
+   "date": "2024-08-09",
+   "title": "Ley 3/2024, de 27 de junio, de modificación de la Ley 11/2016, de 28 de noviembre, de la Generalitat, de la Agencia de Prevención y lucha contra el Fraude y la Corrupción de la Comunitat Valenciana.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-16513"
+  },
+  {
+   "id": "BOE-A-2024-16885",
+   "date": "2024-08-15",
+   "title": "Ley 2/2024, de 19 de julio, del Consejo Consultivo de Andalucía.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-16885"
+  },
+  {
+   "id": "BOE-A-2024-16886",
+   "date": "2024-08-15",
+   "title": "Ley 3/2024, de 26 de julio, de reconocimiento de la universidad privada Universidad Alfonso X el Sabio Mare Nostrum.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-16886"
+  },
+  {
+   "id": "BOE-A-2024-16887",
+   "date": "2024-08-15",
+   "title": "Ley 4/2024, de 26 de julio, de reconocimiento de la universidad privada Universidad Europea de Andalucía.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-16887"
+  },
+  {
+   "id": "BOE-A-2024-16939",
+   "date": "2024-08-16",
+   "title": "Ley 3/2024, de 5 de julio, de concesión de un crédito extraordinario destinado a sufragar los gastos de las elecciones a las Cortes de Castilla-La Mancha celebradas el 28 de mayo de 2023.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-16939"
+  },
+  {
+   "id": "BOE-A-2024-19892",
+   "date": "2024-10-03",
+   "title": "Ley 3/2024, de 23 de julio, de medidas en materia agraria para la recuperación económica y social de la isla de La Palma tras la erupción volcánica de Cumbre Vieja.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-19892"
+  },
+  {
+   "id": "BOE-A-2024-20087",
+   "date": "2024-10-05",
+   "title": "Ley 8/2024, de 16 de septiembre, por la que se garantiza la prestación de los servicios autonómicos esenciales en la Comunidad de Castilla y León.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-20087"
+  },
+  {
+   "id": "BOE-A-2024-20162",
+   "date": "2024-10-07",
+   "title": "Ley 4/2024, de 26 de julio, de modificación de la Ley 1/2022, de 13 de abril, de Transparencia y Buen Gobierno de la Comunitat Valenciana, y de la Ley 8/2016, de 28 de octubre, de Incompatibilidades y Conflictos de Intereses de personas con cargos públicos no electos.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-20162"
+  },
+  {
+   "id": "BOE-A-2024-20163",
+   "date": "2024-10-07",
+   "title": "Ley 5/2024, de 26 de julio, de Concordia de la Comunitat Valenciana.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-20163"
+  },
+  {
+   "id": "BOE-A-2024-21414",
+   "date": "2024-10-19",
+   "title": "Ley Orgánica 4/2024, de 18 de octubre, por la que se modifica la Ley Orgánica 7/2014, de 12 de noviembre, sobre intercambio de información de antecedentes penales y consideración de resoluciones judiciales penales en la Unión Europea, para su adecuación a la normativa de la Unión Europea sobre el Sistema Europeo de Información de Antecedentes Penales (ECRIS).",
+   "kind": "ley_organica",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-21414"
+  },
+  {
+   "id": "BOE-A-2024-21699",
+   "date": "2024-10-23",
+   "title": "Real Decreto-ley 5/2024, de 22 de octubre, por el que se modifica la Ley 17/2006, de 5 de junio, de la radio y la televisión de titularidad estatal, para adoptar medidas urgentes relativas al régimen jurídico aplicable a la Corporación RTVE.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-21699"
+  },
+  {
+   "id": "BOE-A-2024-22438",
+   "date": "2024-10-31",
+   "title": "Ley 3/2024, de 30 de octubre, para mejorar la calidad de vida de personas con Esclerosis Lateral Amiotrófica y otras enfermedades o procesos de alta complejidad y curso irreversible.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-22438"
+  },
+  {
+   "id": "BOE-A-2024-22928",
+   "date": "2024-11-06",
+   "title": "Real Decreto-ley 6/2024, de 5 de noviembre, por el que se adoptan medidas urgentes de respuesta ante los daños causados por la Depresión Aislada en Niveles Altos (DANA) en diferentes municipios entre el 28 de octubre y el 4 de noviembre de 2024.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-22928"
+  },
+  {
+   "id": "BOE-A-2024-23271",
+   "date": "2024-11-09",
+   "title": "Ley 4/2024, de 8 de noviembre, básica de agentes forestales y medioambientales.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-23271"
+  },
+  {
+   "id": "BOE-A-2024-23272",
+   "date": "2024-11-09",
+   "title": "Ley 5/2024, de 8 de noviembre, básica de bomberos forestales.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-23272"
+  },
+  {
+   "id": "BOE-A-2024-23422",
+   "date": "2024-11-12",
+   "title": "Real Decreto-ley 7/2024, de 11 de noviembre, por el que se adoptan medidas urgentes para el impulso del Plan de respuesta inmediata, reconstrucción y relanzamiento frente a los daños causados por la Depresión Aislada en Niveles Altos (DANA) en diferentes municipios entre el 28 de octubre y el 4 de noviembre de 2024.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-23422"
+  },
+  {
+   "id": "BOE-A-2024-23630",
+   "date": "2024-11-14",
+   "title": "Ley Orgánica 5/2024, de 11 de noviembre, del Derecho de Defensa.",
+   "kind": "ley_organica",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-23630"
+  },
+  {
+   "id": "BOE-A-2024-24767",
+   "date": "2024-11-28",
+   "title": "Ley 1/2024, de 8 de noviembre, de Derogación de la Ley de Cantabria 8/2021, de 17 de noviembre, de Memoria Histórica y Democrática de Cantabria.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-24767"
+  },
+  {
+   "id": "BOE-A-2024-24840",
+   "date": "2024-11-29",
+   "title": "Real Decreto-ley 8/2024, de 28 de noviembre, por el que se adoptan medidas urgentes complementarias en el marco del Plan de respuesta inmediata, reconstrucción y relanzamiento frente a los daños causados por la Depresión Aislada en Niveles Altos (DANA) en diferentes municipios entre el 28 de octubre y el 4 de noviembre de 2024.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-24840"
+  },
+  {
+   "id": "BOE-A-2024-25051",
+   "date": "2024-12-02",
+   "title": "Ley 5/2024, de 13 de noviembre, por la que se establece la Red Autonómica de Escuelas Infantiles, se regula su extensión y la integración en la misma de las Escuelas Infantiles Municipales.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-25051"
+  },
+  {
+   "id": "BOE-A-2024-25052",
+   "date": "2024-12-02",
+   "title": "Ley 6/2024, de 13 de noviembre, de cuarta modificación de la Ley del Principado de Asturias 7/2001, de 22 de junio, de Turismo.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-25052"
+  },
+  {
+   "id": "BOE-A-2024-25451",
+   "date": "2024-12-06",
+   "title": "Ley Orgánica 6/2024, de 5 de diciembre, por la que se modifica la Ley Orgánica 13/1982, de 10 de agosto, de reintegración y amejoramiento del Régimen Foral de Navarra, en cuanto a tráfico, circulación de vehículos de motor y seguridad vial.",
+   "kind": "ley_organica",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-25451"
+  },
+  {
+   "id": "BOE-A-2024-25455",
+   "date": "2024-12-06",
+   "title": "Ley 5/2024, de 13 de noviembre, del Estatuto de las Mujeres Rurales y del Mar de Andalucía.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-25455"
+  },
+  {
+   "id": "BOE-A-2024-25587",
+   "date": "2024-12-09",
+   "title": "Ley 5/2024, de 21 de noviembre, de modificación de la Ley 21/2023, de 22 de diciembre, por la que se aprueban los Presupuestos Generales de la Comunidad Autónoma de Euskadi para el ejercicio 2024.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-25587"
+  },
+  {
+   "id": "BOE-A-2024-25869",
+   "date": "2024-12-12",
+   "title": "Ley 3/2024, de 11 de noviembre, de modificación del Decreto 74/2011, de 20 de mayo, por el que se regula el procedimiento para el reconocimiento de la situación de dependencia y del derecho a los servicios y prestaciones económicas del sistema para la autonomía y atención a la dependencia en la Comunidad Autónoma de la Región de Murcia y se establece el régimen de infracciones y sanciones.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-25869"
+  },
+  {
+   "id": "BOE-A-2024-25870",
+   "date": "2024-12-12",
+   "title": "Ley 4/2024, de 21 de noviembre, de modificación de la Ley 9/2004, de 29 de diciembre, sobre creación de la Empresa Pública Regional Radio Televisión de la Región de Murcia.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-25870"
+  },
+  {
+   "id": "BOE-A-2024-26254",
+   "date": "2024-12-17",
+   "title": "Ley 5/2024, de 11 de noviembre, de control de la afluencia de vehículos en la isla de Eivissa para la sostenibilidad turística.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-26254"
+  },
+  {
+   "id": "BOE-A-2024-26255",
+   "date": "2024-12-17",
+   "title": "Ley 6/2024, de 15 de noviembre, de modificación de la Ley 9/2017, de 3 de agosto, de regulación de las corridas de toros y de protección de los animales en las Illes Balears.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-26255"
+  },
+  {
+   "id": "BOE-A-2024-26693",
+   "date": "2024-12-21",
+   "title": "Ley 6/2024, de 20 de diciembre, para la mejora de la protección de las personas donantes en vivo de órganos o tejidos para su posterior trasplante.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-26693"
+  },
+  {
+   "id": "BOE-A-2024-26694",
+   "date": "2024-12-21",
+   "title": "Ley 7/2024, de 20 de diciembre, por la que se establecen un Impuesto Complementario para garantizar un nivel mínimo global de imposición para los grupos multinacionales y los grupos nacionales de gran magnitud, un Impuesto sobre el margen de intereses y comisiones de determinadas entidades financieras y un Impuesto sobre los líquidos para cigarrillos electrónicos y otros productos relacionados con el tabaco, y se modifican otras normas tributarias.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-26694"
+  },
+  {
+   "id": "BOE-A-2024-26915",
+   "date": "2024-12-24",
+   "title": "Real Decreto-ley 9/2024, de 23 de diciembre, por el que se adoptan medidas urgentes en materia económica, tributaria, de transporte, y de Seguridad Social, y se prorrogan determinadas medidas para hacer frente a situaciones de vulnerabilidad social.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-26915"
+  },
+  {
+   "id": "BOE-A-2024-26916",
+   "date": "2024-12-24",
+   "title": "Real Decreto-ley 10/2024, de 23 de diciembre, para el establecimiento de un gravamen temporal energético durante el año 2025.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-26916"
+  },
+  {
+   "id": "BOE-A-2024-26917",
+   "date": "2024-12-24",
+   "title": "Real Decreto-ley 11/2024, de 23 de diciembre, para la mejora de la compatibilidad de la pensión de jubilación con el trabajo.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-26917"
+  },
+  {
+   "id": "BOE-A-2025-1",
+   "date": "2025-01-01",
+   "title": "Ley 6/2024, de 5 de diciembre, de simplificación administrativa.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-1"
+  },
+  {
+   "id": "BOE-A-2025-76",
+   "date": "2025-01-03",
+   "title": "Ley Orgánica 1/2025, de 2 de enero, de medidas en materia de eficiencia del Servicio Público de Justicia.",
+   "kind": "ley_organica",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-76"
+  },
+  {
+   "id": "BOE-A-2025-237",
+   "date": "2025-01-06",
+   "title": "Ley 2/2024, de 7 de noviembre, de promoción de los beneficios sociales y económicos de los proyectos que utilizan los recursos naturales de Galicia.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-237"
+  },
+  {
+   "id": "BOE-A-2025-412",
+   "date": "2025-01-09",
+   "title": "Ley 6/2024, de 20 de diciembre, de participación institucional de las organizaciones sindicales y empresariales más representativas en la Comunidad Autónoma de Andalucía.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-412"
+  },
+  {
+   "id": "BOE-A-2025-413",
+   "date": "2025-01-09",
+   "title": "Ley 7/2024, de 23 de diciembre, del Presupuesto de la Comunidad Autónoma de Andalucía para el año 2025.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-413"
+  },
+  {
+   "id": "BOE-A-2025-590",
+   "date": "2025-01-15",
+   "title": "Ley 3/2024, de 5 de diciembre, de cultura inclusiva y accesible de Galicia.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-590"
+  },
+  {
+   "id": "BOE-A-2025-642",
+   "date": "2025-01-16",
+   "title": "Ley 2/2024, de 23 de diciembre, de Presupuestos Generales de la Comunidad Autónoma de Cantabria para 2025.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-642"
+  },
+  {
+   "id": "BOE-A-2025-643",
+   "date": "2025-01-16",
+   "title": "Ley 3/2024, de 23 de diciembre, de Medidas Fiscales y Administrativas.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-643"
+  },
+  {
+   "id": "BOE-A-2025-715",
+   "date": "2025-01-17",
+   "title": "Ley 1/2025, de 8 de enero, del Fondo Agrario y Ganadero.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-715"
+  },
+  {
+   "id": "BOE-A-2025-716",
+   "date": "2025-01-17",
+   "title": "Ley 7/2024, de 30 de diciembre, de modificación de la Ley 2/2003, de 28 de enero, de Consejos Sociales de las Universidades Públicas Valencianas, para su adaptación a la Ley Orgánica 2/2023, de 22 de marzo, del Sistema Universitario.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-716"
+  },
+  {
+   "id": "BOE-A-2025-717",
+   "date": "2025-01-17",
+   "title": "Ley 8/2024, de 30 de diciembre, de accesibilidad universal de la Comunitat Valenciana.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-717"
+  },
+  {
+   "id": "BOE-A-2025-720",
+   "date": "2025-01-17",
+   "title": "Ley 7/2024, de 11 de diciembre, de medidas urgentes de simplificación y racionalización administrativas de las administraciones públicas de las Illes Balears.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-720"
+  },
+  {
+   "id": "BOE-A-2025-938",
+   "date": "2025-01-21",
+   "title": "Ley 6/2024, de 19 de diciembre, de disolución del Colegio Oficial de Agentes y Comisionistas de Aduanas de Bilbao.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-938"
+  },
+  {
+   "id": "BOE-A-2025-939",
+   "date": "2025-01-21",
+   "title": "Ley 7/2024, de 19 de diciembre, de modificación de la Ley 11/2019, de 20 de diciembre, de Cooperativas de Euskadi.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-939"
+  },
+  {
+   "id": "BOE-A-2025-940",
+   "date": "2025-01-21",
+   "title": "Ley 8/2024, de 20 de diciembre, por la que se aprueban los Presupuestos Generales de la Comunidad Autónoma de Euskadi para el ejercicio 2025.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-940"
+  },
+  {
+   "id": "BOE-A-2025-1392",
+   "date": "2025-01-27",
+   "title": "Ley 5/2024, de 19 de diciembre, de medidas de fomento de comunidades energéticas y autoconsumo industrial en Aragón.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-1392"
+  },
+  {
+   "id": "BOE-A-2025-1479",
+   "date": "2025-01-28",
+   "title": "Ley 5/2024, de 27 de diciembre, de Presupuestos Generales de la Comunidad Autónoma de La Rioja para el año 2025.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-1479"
+  },
+  {
+   "id": "BOE-A-2025-1480",
+   "date": "2025-01-28",
+   "title": "Ley 6/2024, de 27 de diciembre, de Medidas Fiscales y Administrativas para el año 2025.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-1480"
+  },
+  {
+   "id": "BOE-A-2025-1560",
+   "date": "2025-01-29",
+   "title": "Real Decreto-ley 1/2025, de 28 de enero, por el que se aprueban medidas urgentes en materia económica, de transporte, de Seguridad Social, y para hacer frente a situaciones de vulnerabilidad.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-1560"
+  },
+  {
+   "id": "BOE-A-2025-2144",
+   "date": "2025-02-06",
+   "title": "Ley 4/2024, de 27 de diciembre, de Presupuestos Generales de la Comunidad Autónoma de Galicia para el año 2025.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-2144"
+  },
+  {
+   "id": "BOE-A-2025-2145",
+   "date": "2025-02-06",
+   "title": "Ley 5/2024, de 27 de diciembre, de medidas fiscales y administrativas.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-2145"
+  },
+  {
+   "id": "BOE-A-2025-2146",
+   "date": "2025-02-06",
+   "title": "Ley 6/2024, de 27 de diciembre, de estadística de Galicia.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-2146"
+  },
+  {
+   "id": "BOE-A-2025-2984",
+   "date": "2025-02-17",
+   "title": "Ley 2/2025, de 6 de febrero, de modificación de la Ley 15/1984, del juego, y la Ley 6/2014, de modificación de la Ley 2/1989, de 16 de febrero, sobre centros recreativos turísticos, y de establecimiento de normas en materia de tributación, comercio y juego.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-2984"
+  },
+  {
+   "id": "BOE-A-2025-3123",
+   "date": "2025-02-18",
+   "title": "Ley 7/2024, de 20 de diciembre, de Proyectos de Interés Estratégico.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-3123"
+  },
+  {
+   "id": "BOE-A-2025-3124",
+   "date": "2025-02-18",
+   "title": "Ley 8/2024, de 27 de diciembre, de Presupuestos Generales para 2025.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-3124"
+  },
+  {
+   "id": "BOE-A-2025-3302",
+   "date": "2025-02-20",
+   "title": "Ley 4/2024, de 20 de noviembre, por la que se modifica el texto refundido de las disposiciones legales de la Comunidad de Madrid en materia de tributos cedidos por el Estado, aprobado por Decreto Legislativo 1/2010, de 21 de octubre, del Consejo de Gobierno, para establecer una deducción por inversiones de nuevos contribuyentes procedentes del extranjero en el ámbito del Impuesto sobre la Renta de las Personas Físicas.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-3302"
+  },
+  {
+   "id": "BOE-A-2025-3303",
+   "date": "2025-02-20",
+   "title": "Ley 5/2024, de 20 de noviembre, por la que se modifica el texto refundido de las disposiciones legales de la Comunidad de Madrid en materia de tributos cedidos por el Estado, aprobado por Decreto Legislativo 1/2010, de 21 de octubre, del Consejo de Gobierno, para incorporar medidas fiscales con el fin de favorecer el acceso a la vivienda y el cambio de residencia a municipios en riesgo de despoblación.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-3303"
+  },
+  {
+   "id": "BOE-A-2025-3304",
+   "date": "2025-02-20",
+   "title": "Ley 6/2024, de 20 de diciembre, de Adaptación Normativa de la Comunidad de Madrid a la nueva terminología para referirse a las personas con discapacidad.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-3304"
+  },
+  {
+   "id": "BOE-A-2025-4169",
+   "date": "2025-03-03",
+   "title": "Ley 4/2024, de 19 de julio, de Integridad Pública de Castilla-La Mancha.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-4169"
+  },
+  {
+   "id": "BOE-A-2025-4170",
+   "date": "2025-03-03",
+   "title": "Ley 5/2024, de 6 de septiembre, por la que se modifica la Ley 2/2022, de 18 de febrero, de Aguas de la Comunidad Autónoma de Castilla-La Mancha.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-4170"
+  },
+  {
+   "id": "BOE-A-2025-4911",
+   "date": "2025-03-13",
+   "title": "Ley 1/2025, de 19 de febrero, de Ciencia, Tecnología e Innovación.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-4911"
+  },
+  {
+   "id": "BOE-A-2025-4912",
+   "date": "2025-03-13",
+   "title": "Ley 4/2024, de 26 de julio, por la que se adoptan medidas urgentes en materia de vivienda protegida para la recuperación económica y social de la isla de La Palma tras la erupción volcánica de Cumbre Vieja.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-4912"
+  },
+  {
+   "id": "BOE-A-2025-4913",
+   "date": "2025-03-13",
+   "title": "Ley 5/2024, de 26 de diciembre, de Presupuestos Generales de la Comunidad Autónoma de Canarias para 2025.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-4913"
+  },
+  {
+   "id": "BOE-A-2025-5052",
+   "date": "2025-03-14",
+   "title": "Ley 1/2025, de 28 de febrero, de medidas urgentes para el acceso a la vivienda.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-5052"
+  },
+  {
+   "id": "BOE-A-2025-5191",
+   "date": "2025-03-17",
+   "title": "Ley 1/2025, de 17 de febrero, de modificación de la Ley 5/2001, de 5 de diciembre, de personal estatutario del Servicio Murciano de Salud.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-5191"
+  },
+  {
+   "id": "BOE-A-2025-5404",
+   "date": "2025-03-19",
+   "title": "Real Decreto-ley 2/2025, de 18 de marzo, por el que se aprueban medidas urgentes para la garantía del interés superior de la infancia y la adolescencia ante situaciones de contingencias migratorias extraordinarias.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-5404"
+  },
+  {
+   "id": "BOE-A-2025-5522",
+   "date": "2025-03-20",
+   "title": "Ley 7/2024, de 26 de diciembre, de medidas para un desarrollo equilibrado en materia de medio ambiente y ordenación del territorio.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-5522"
+  },
+  {
+   "id": "BOE-A-2025-5523",
+   "date": "2025-03-20",
+   "title": "Ley 8/2024, de 26 de diciembre, de medidas para la mejora de la gestión pública en el ámbito local y autonómico de la Comunidad de Madrid.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-5523"
+  },
+  {
+   "id": "BOE-A-2025-5524",
+   "date": "2025-03-20",
+   "title": "Ley 9/2024, de 26 de diciembre, de Presupuestos Generales de la Comunidad de Madrid para el año 2025.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-5524"
+  },
+  {
+   "id": "BOE-A-2025-6193",
+   "date": "2025-03-28",
+   "title": "Ley 1/2025, de 14 de marzo, de servicios de los medios públicos de comunicación audiovisual de Galicia para la sociedad digital.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-6193"
+  },
+  {
+   "id": "BOE-A-2025-6381",
+   "date": "2025-03-31",
+   "title": "Ley 3/2025, de 18 de marzo, de modificación de la Ley 22/1998, de la Carta municipal de Barcelona.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-6381"
+  },
+  {
+   "id": "BOE-A-2025-6596",
+   "date": "2025-04-01",
+   "title": "Real Decreto-ley 3/2025, de 1 de abril, por el que se establece el programa de incentivos ligados a la movilidad eléctrica (MOVES III) para el año 2025.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-6596"
+  },
+  {
+   "id": "BOE-A-2025-6597",
+   "date": "2025-04-02",
+   "title": "Ley 1/2025, de 1 de abril, de prevención de las pérdidas y el desperdicio alimentario.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-6597"
+  },
+  {
+   "id": "BOE-A-2025-6951",
+   "date": "2025-04-07",
+   "title": "Ley 1/2025, de 19 de marzo, del Plan Estadístico 2025-2028.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-6951"
+  },
+  {
+   "id": "BOE-A-2025-7093",
+   "date": "2025-04-09",
+   "title": "Real Decreto-ley 4/2025, de 8 de abril, de medidas urgentes de respuesta a la amenaza arancelaria y de relanzamiento comercial.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-7093"
+  },
+  {
+   "id": "BOE-A-2025-7296",
+   "date": "2025-04-11",
+   "title": "Ley 4/2025, de 26 de marzo, de modificación de la Ley 16/2002, de protección contra la contaminación acústica.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-7296"
+  },
+  {
+   "id": "BOE-A-2025-7297",
+   "date": "2025-04-11",
+   "title": "Ley 5/2025, de 26 de marzo, de modificación de la Ley 21/2003, de fomento de la paz.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-7297"
+  },
+  {
+   "id": "BOE-A-2025-7443",
+   "date": "2025-04-12",
+   "title": "Ley 1/2025, de 20 de marzo, de modificación de la Ley 2/2011, de 17 de marzo, de Caza.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-7443"
+  },
+  {
+   "id": "BOE-A-2025-7444",
+   "date": "2025-04-12",
+   "title": "Ley 1/2025, de 3 de abril, de medidas fiscales urgentes en materia tributaria.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-7444"
+  },
+  {
+   "id": "BOE-A-2025-8567",
+   "date": "2025-04-30",
+   "title": "Ley 2/2025, de 29 de abril, por la que se modifican el texto refundido de la Ley del Estatuto de los Trabajadores, aprobado por el Real Decreto Legislativo 2/2015, de 23 de octubre, en materia de extinción del contrato de trabajo por incapacidad permanente de las personas trabajadoras, y el texto refundido de la Ley General de la Seguridad Social, aprobado por el Real Decreto Legislativo 8/2015, de 30 de octubre, en materia de incapacidad permanente.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-8567"
+  },
+  {
+   "id": "BOE-A-2025-8568",
+   "date": "2025-04-30",
+   "title": "Ley 3/2025, de 29 de abril, por la que se modifica la Ley 12/2002, de 23 de mayo, por la que se aprueba el Concierto Económico con la Comunidad Autónoma del País Vasco.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-8568"
+  },
+  {
+   "id": "BOE-A-2025-9742",
+   "date": "2025-05-17",
+   "title": "Ley 1/2025, de 15 de abril, de medidas extraordinarias en materia de personal del Sistema Valenciano de Salud; y, de organización, gestión y prestación de servicios sanitarios y educativos, para dar respuesta y favorecer la recuperación después de las graves inundaciones acontecidas el 29 de octubre de 2024, en la Comunitat Valenciana.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-9742"
+  },
+  {
+   "id": "BOE-A-2025-9743",
+   "date": "2025-05-17",
+   "title": "Ley 2/2025, de 15 de abril, de medidas urbanísticas urgentes para favorecer las tareas de reconstrucción después de los daños producidos por la dana.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-9743"
+  },
+  {
+   "id": "BOE-A-2025-10090",
+   "date": "2025-05-22",
+   "title": "Ley 2/2025, de 30 de abril, de modificación, en materia de órganos de selección de personal estatutario, de la Ley 7/2019, de 29 de marzo, de Salud.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-10090"
+  },
+  {
+   "id": "BOE-A-2025-10208",
+   "date": "2025-05-23",
+   "title": "Ley 6/2024, de 20 de diciembre, de Presupuestos Generales de la Junta de Comunidades de Castilla-La Mancha para 2025.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-10208"
+  },
+  {
+   "id": "BOE-A-2025-10780",
+   "date": "2025-05-31",
+   "title": "Ley 1/2025, de 15 de mayo, de modificación del Decreto Legislativo 1/2011, de 22 de marzo, del Gobierno de Aragón, por el que se aprueba, con el título de «Código del Derecho Foral de Aragón», el Texto Refundido de las Leyes civiles aragonesas, en materia de custodia o convivencia de los hijos y de sucesiones por causa de muerte.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-10780"
+  },
+  {
+   "id": "BOE-A-2025-10781",
+   "date": "2025-05-31",
+   "title": "Ley 2/2025, de 15 de mayo, de modificación de la Ley 6/2023, de 23 de febrero, de protección y modernización de la agricultura social y familiar y del patrimonio agrario de Aragón.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-10781"
+  },
+  {
+   "id": "BOE-A-2025-10884",
+   "date": "2025-06-02",
+   "title": "Ley 2/2025, de 2 de abril, de Simplificación Administrativa de Cantabria.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-10884"
+  },
+  {
+   "id": "BOE-A-2025-11006",
+   "date": "2025-06-03",
+   "title": "Ley 6/2025, de 21 de mayo, de modificación de la Ley 16/2014, de acción exterior y de relaciones con la Unión Europea.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-11006"
+  },
+  {
+   "id": "BOE-A-2025-11007",
+   "date": "2025-06-03",
+   "title": "Ley 2/2025, de 23 de mayo, por la que se modifica la Ley 2/2023, de 31 de enero, de biodiversidad y patrimonio natural de La Rioja.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-11007"
+  },
+  {
+   "id": "BOE-A-2025-11066",
+   "date": "2025-06-04",
+   "title": "Ley Orgánica 2/2025, de 3 de junio, por la que se autoriza la ratificación de cuatro enmiendas al artículo 8.2 del Estatuto de Roma de la Corte Penal Internacional.",
+   "kind": "ley_organica",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-11066"
+  },
+  {
+   "id": "BOE-A-2025-11205",
+   "date": "2025-06-05",
+   "title": "Ley 1/2025, de 17 de enero, del Consejo Social de la Universidad de Castilla-La Mancha.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-11205"
+  },
+  {
+   "id": "BOE-A-2025-11328",
+   "date": "2025-06-06",
+   "title": "Ley 2/2025, de 8 de mayo, de creación del Colegio Oficial de Criminología de Euskadi-Kriminologiaren Euskadiko Elkargo Ofiziala.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-11328"
+  },
+  {
+   "id": "BOE-A-2025-11329",
+   "date": "2025-06-06",
+   "title": "Ley 3/2025, de 8 de mayo, de modificación de la Ley 12/2012, de 21 de junio, contra el Dopaje en el Deporte en el País Vasco.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-11329"
+  },
+  {
+   "id": "BOE-A-2025-11442",
+   "date": "2025-06-07",
+   "title": "Ley 2/2025, de 11 de abril, de Medidas Administrativas y Tributarias de Castilla-La Mancha.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-11442"
+  },
+  {
+   "id": "BOE-A-2025-11645",
+   "date": "2025-06-10",
+   "title": "Ley 4/2025, de 22 de mayo, de creación del Euskadiko Ingurumen Zientzietako Tituludunen Elkargo Profesionala-Colegio Profesional de Personas Tituladas en Ciencias Ambientales de Euskadi.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-11645"
+  },
+  {
+   "id": "BOE-A-2025-11646",
+   "date": "2025-06-10",
+   "title": "Ley 5/2025, de 22 de mayo, de modificación de la Ley 8/2024, de 20 de diciembre, por la que se aprueban los Presupuestos Generales de la Comunidad Autónoma de Euskadi para el ejercicio 2025.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-11646"
+  },
+  {
+   "id": "BOE-A-2025-11647",
+   "date": "2025-06-10",
+   "title": "Ley 3/2025, de 22 de mayo, de protección y ordenación de la costa valenciana.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-11647"
+  },
+  {
+   "id": "BOE-A-2025-11648",
+   "date": "2025-06-10",
+   "title": "Ley 4/2025, de 22 de mayo, de voluntariado de la Comunitat Valenciana.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-11648"
+  },
+  {
+   "id": "BOE-A-2025-11722",
+   "date": "2025-06-11",
+   "title": "Real Decreto-ley 5/2025, de 10 de junio, de medidas de promoción del uso del transporte público colectivo por parte de la juventud para los viajes realizados en el periodo estival de 2025.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-11722"
+  },
+  {
+   "id": "BOE-A-2025-11959",
+   "date": "2025-06-14",
+   "title": "Ley 5/2025, de 30 de mayo, de medidas fiscales, de gestión administrativa y financiera, y de organización de la Generalitat.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-11959"
+  },
+  {
+   "id": "BOE-A-2025-11960",
+   "date": "2025-06-14",
+   "title": "Ley 6/2025, de 30 de mayo, de presupuestos de la Generalitat para el ejercicio 2025.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-11960"
+  },
+  {
+   "id": "BOE-A-2025-12308",
+   "date": "2025-06-18",
+   "title": "Real Decreto-ley 6/2025, de 17 de junio, por el que se adoptan medidas relativas a los recursos de los sistemas de financiación territorial.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-12308"
+  },
+  {
+   "id": "BOE-A-2025-12857",
+   "date": "2025-06-25",
+   "title": "Real Decreto-ley 7/2025, de 24 de junio, por el que se aprueban medidas urgentes para el refuerzo del sistema eléctrico.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-12857"
+  },
+  {
+   "id": "BOE-A-2025-13140",
+   "date": "2025-06-28",
+   "title": "Ley Orgánica 3/2025, de 27 de junio, por la que se modifica la Ley Orgánica 1/2002, de 22 de marzo, reguladora del derecho de asociación.",
+   "kind": "ley_organica",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-13140"
+  },
+  {
+   "id": "BOE-A-2025-13560",
+   "date": "2025-07-03",
+   "title": "Ley 3/2025, de 23 de junio, de garantías y derechos de las personas con necesidades paliativas.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-13560"
+  },
+  {
+   "id": "BOE-A-2025-14083",
+   "date": "2025-07-09",
+   "title": "Real Decreto-ley 8/2025, de 8 de julio, por el que se declaran diversas iniciativas y programas como acontecimientos de excepcional interés público.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-14083"
+  },
+  {
+   "id": "BOE-A-2025-14378",
+   "date": "2025-07-12",
+   "title": "Ley 4/2025, de 1 de julio, del paisaje de La Rioja.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-14378"
+  },
+  {
+   "id": "BOE-A-2025-14460",
+   "date": "2025-07-14",
+   "title": "Ley 1/2025, de 13 de junio, para prevenir la celebración de fiestas y actividades molestas en viviendas que se comercialicen como estancias turísticas.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-14460"
+  },
+  {
+   "id": "BOE-A-2025-14461",
+   "date": "2025-07-14",
+   "title": "Ley 2/2025, de 18 de junio, de medidas urgentes para la protección de las personas y el medio natural en el ámbito de la Comunidad Autónoma de las Illes Balears en lo que se refiere a determinadas explotaciones ganaderas intensivas de aves de corral.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-14461"
+  },
+  {
+   "id": "BOE-A-2025-14604",
+   "date": "2025-07-15",
+   "title": "Ley 3/2025, de 30 de junio, de Políticas de Juventud de Cantabria.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-14604"
+  },
+  {
+   "id": "BOE-A-2025-14790",
+   "date": "2025-07-17",
+   "title": "Ley 3/2025, 26 de junio, de apoyo fiscal a la empresa familiar por la que se modifica el Texto Refundido de las disposiciones dictadas por la Comunidad Autónoma de Aragón en materia de tributos cedidos, aprobado por Decreto Legislativo 1/2005, de 26 de septiembre, del Gobierno de Aragón.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-14790"
+  },
+  {
+   "id": "BOE-A-2025-14791",
+   "date": "2025-07-17",
+   "title": "Ley 1/2025, de 3 de junio, de delimitación gráfica del asentamiento rural preexistente de Cofete, en el Parque Natural de Jandía, en la isla de Fuerteventura.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-14791"
+  },
+  {
+   "id": "BOE-A-2025-15047",
+   "date": "2025-07-21",
+   "title": "Ley 3/2025, de 4 de julio, de medidas dirigidas a la conciliación de la vida personal, familiar y laboral en las Illes Balears.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-15047"
+  },
+  {
+   "id": "BOE-A-2025-15048",
+   "date": "2025-07-21",
+   "title": "Ley 1/2025, de 3 de julio, de reforma de la Ley 4/2009, de 28 de mayo, de publicidad institucional de Castilla y León.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-15048"
+  },
+  {
+   "id": "BOE-A-2025-15423",
+   "date": "2025-07-25",
+   "title": "Ley 4/2025, de 24 de julio, por la que se modifica la Ley 28/1990, de 26 de diciembre, por la que se aprueba el Convenio Económico entre el Estado y la Comunidad Foral de Navarra.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-15423"
+  },
+  {
+   "id": "BOE-A-2025-15424",
+   "date": "2025-07-25",
+   "title": "Ley 5/2025, de 24 de julio, por la que se modifican el texto refundido de la Ley sobre responsabilidad civil y seguro en la circulación de vehículos a motor, aprobado por el Real Decreto Legislativo 8/2004, de 29 de octubre, y la Ley 20/2015, de 14 de julio, de ordenación, supervisión y solvencia de las entidades aseguradoras y reaseguradoras.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-15424"
+  },
+  {
+   "id": "BOE-A-2025-15651",
+   "date": "2025-07-29",
+   "title": "Ley 6/2025, de 28 de julio, de modificación de la Ley 19/1994, de 6 de julio, de modificación del Régimen Económico y Fiscal de Canarias, para la regulación de las inversiones en elementos patrimoniales afectos a la actividad de arrendamiento de vivienda en las Islas Canarias.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-15651"
+  },
+  {
+   "id": "BOE-A-2025-15652",
+   "date": "2025-07-29",
+   "title": "Ley 7/2025, de 28 de julio, por la que se crea la Agencia Estatal de Salud Pública y se modifica la Ley 33/2011, de 4 de octubre, General de Salud Pública.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-15652"
+  },
+  {
+   "id": "BOE-A-2025-15655",
+   "date": "2025-07-29",
+   "title": "Ley 2/2025, de 26 de junio, de medidas urgentes para la reducción de la temporalidad, la gestión eficiente y la calidad en el empleo público de la Administración Pública de la Comunidad Autónoma de Canarias, así como para la protección de la infancia en el ámbito de los juegos de azar y apuestas.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-15655"
+  },
+  {
+   "id": "BOE-A-2025-15741",
+   "date": "2025-07-30",
+   "title": "Real Decreto-ley 9/2025, de 29 de julio, por el que se amplía el permiso de nacimiento y cuidado, mediante la modificación del texto refundido de la Ley del Estatuto de los Trabajadores, aprobado por el Real Decreto Legislativo 2/2015, de 23 de octubre, el texto refundido de la Ley del Estatuto Básico del Empleado Público, aprobado por el Real Decreto Legislativo 5/2015, de 30 de octubre, y el texto refundido de la Ley General de la Seguridad Social, aprobado por el Real Decreto Legislativo 8/2015, de 30 de octubre, para completar la transposición de la Directiva (UE) 2019/1158 del Parlamento Europeo y del Consejo, de 20 de junio de 2019, relativa a la conciliación de la vida familiar y la vida profesional de los progenitores y los cuidadores, y por la que se deroga la Directiva 2010/18/UE del Consejo.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-15741"
+  },
+  {
+   "id": "BOE-A-2025-16146",
+   "date": "2025-08-05",
+   "title": "Ley 2/2025, de 4 de julio, de modificación de la Ley 5/2017, de 5 de julio, de participación institucional de las organizaciones sindicales y empresariales más representativas en el ámbito de la Región de Murcia.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-16146"
+  },
+  {
+   "id": "BOE-A-2025-16147",
+   "date": "2025-08-05",
+   "title": "Ley 3/2025, de 23 de julio, de Presupuestos Generales de la Comunidad Autónoma de la Región de Murcia para el ejercicio 2025.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-16147"
+  },
+  {
+   "id": "BOE-A-2025-16832",
+   "date": "2025-08-14",
+   "title": "Ley 7/2025, de 30 de julio, de cambio de adscripción comarcal y veguerial del municipio de Aiguafreda.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-16832"
+  },
+  {
+   "id": "BOE-A-2025-16833",
+   "date": "2025-08-14",
+   "title": "Ley 8/2025, de 30 de julio, del Estatuto de los municipios rurales.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-16833"
+  },
+  {
+   "id": "BOE-A-2025-16834",
+   "date": "2025-08-14",
+   "title": "Ley 5/2025, de 21 de julio, de medidas fiscales de apoyo al medio rural.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-16834"
+  },
+  {
+   "id": "BOE-A-2025-16835",
+   "date": "2025-08-14",
+   "title": "Ley 6/2025, de 21 de julio, de medidas hacendísticas, presupuestarias, tributarias y administrativas.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-16835"
+  },
+  {
+   "id": "BOE-A-2025-17857",
+   "date": "2025-09-09",
+   "title": "Ley 3/2025, de 6 de junio, de determinación de la representatividad de las organizaciones profesionales agrarias en Castilla-La Mancha.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-17857"
+  },
+  {
+   "id": "BOE-A-2025-18521",
+   "date": "2025-09-19",
+   "title": "Ley 1/2025, de 26 de mayo, por la que se crea el Colegio Oficial de Criminología de Andalucía",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-18521"
+  },
+  {
+   "id": "BOE-A-2025-18522",
+   "date": "2025-09-19",
+   "title": "Ley 7/2025, de 9 de septiembre, de atención y ordenación farmacéutica de la Comunidad Autónoma de La Rioja.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-18522"
+  },
+  {
+   "id": "BOE-A-2025-18831",
+   "date": "2025-09-24",
+   "title": "Real Decreto-ley 10/2025, de 23 de septiembre, por el que se adoptan medidas urgentes contra el genocidio en Gaza y de apoyo a la población palestina.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-18831"
+  },
+  {
+   "id": "BOE-A-2025-18966",
+   "date": "2025-09-25",
+   "title": "Ley 4/2025, de 11 de julio, de Simplificación, Agilización y Digitalización Administrativa.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-18966"
+  },
+  {
+   "id": "BOE-A-2025-19339",
+   "date": "2025-09-30",
+   "title": "Ley 8/2025, de 29 de septiembre, por la que se modifican la Ley 48/1960, de 21 de julio, sobre Navegación Aérea, y la Ley 21/2003, de 7 de julio, de Seguridad Aérea.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-19339"
+  },
+  {
+   "id": "BOE-A-2025-19344",
+   "date": "2025-09-30",
+   "title": "Ley 1/2025, de 30 de abril, de modificación de la Ley 5/2018, de 17 de octubre, para la protección, reconocimiento y memoria de las víctimas del terrorismo en la Comunidad de Madrid.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-19344"
+  },
+  {
+   "id": "BOE-A-2025-19345",
+   "date": "2025-09-30",
+   "title": "Ley 2/2025, de 25 de junio, por la que se modifica el texto refundido de las disposiciones legales de la Comunidad de Madrid en materia de tributos cedidos por el Estado, aprobado por Decreto Legislativo 1/2010, de 21 de octubre, del Consejo de Gobierno, para incrementar la bonificación aplicable a los parientes incluidos en el Grupo III de parentesco en el Impuesto sobre Sucesiones y Donaciones y simplificar los requisitos de acceso a los beneficios fiscales en el Impuesto sobre Donaciones.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-19345"
+  },
+  {
+   "id": "BOE-A-2025-20901",
+   "date": "2025-10-18",
+   "title": "Ley 3/2025, de 25 de julio, de modificación de la Ley 11/2003, de 4 de abril, sobre Consejos Sociales y Coordinación del Sistema Universitario de Canarias.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-20901"
+  },
+  {
+   "id": "BOE-A-2025-20902",
+   "date": "2025-10-18",
+   "title": "Ley 4/2025, de 1 de agosto, de modificación urgente de la Ley 13/2007, de 17 de mayo, de Ordenación del Transporte por Carretera de Canarias.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-20902"
+  },
+  {
+   "id": "BOE-A-2025-20903",
+   "date": "2025-10-18",
+   "title": "Ley 2/2025, de 2 de octubre, de ayuda excepcional de emergencia a explotaciones ovinas y de cereza especialmente afectadas por desastres naturales en el marco del Fondo Europeo Agrícola de Desarrollo Rural.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-20903"
+  },
+  {
+   "id": "BOE-A-2025-21026",
+   "date": "2025-10-20",
+   "title": "Ley 2/2025, de 2 de abril, para el desarrollo e impulso de la inteligencia artificial en Galicia.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-21026"
+  },
+  {
+   "id": "BOE-A-2025-21205",
+   "date": "2025-10-22",
+   "title": "Real Decreto-ley 11/2025, de 21 de octubre, por el que se establecen medidas para el fortalecimiento del Sistema para la Autonomía y Atención a la Dependencia y cumplir con las obligaciones establecidas en la Ley 3/2024, de 30 de octubre, para mejorar la calidad de vida de las personas con Esclerosis Lateral Amiotrófica y otras enfermedades o procesos de alta complejidad y curso irreversible.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-21205"
+  },
+  {
+   "id": "BOE-A-2025-21451",
+   "date": "2025-10-25",
+   "title": "Ley 4/2025, de 9 de octubre, del Voluntariado de Cantabria.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-21451"
+  },
+  {
+   "id": "BOE-A-2025-21452",
+   "date": "2025-10-25",
+   "title": "Ley 5/2025, de 9 de octubre, de creación del Colegio Profesional de Terapeutas Ocupacionales de Cantabria.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-21452"
+  },
+  {
+   "id": "BOE-A-2025-21453",
+   "date": "2025-10-25",
+   "title": "Ley 3/2025, de 15 de octubre, de reconocimiento de la Universidad Internacional para el Desarrollo UNINDE.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-21453"
+  },
+  {
+   "id": "BOE-A-2025-21454",
+   "date": "2025-10-25",
+   "title": "Ley 4/2025, de 15 de octubre, de Concordia de Extremadura.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-21454"
+  },
+  {
+   "id": "BOE-A-2025-21544",
+   "date": "2025-10-27",
+   "title": "Ley 3/2025, de 26 de septiembre, por la que se modifica la Ley 1/1986, de 10 de abril, de la Función Pública de la Comunidad de Madrid, en materia de funcionarios interinos.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-21544"
+  },
+  {
+   "id": "BOE-A-2025-21725",
+   "date": "2025-10-29",
+   "title": "Real Decreto-ley 12/2025, de 28 de octubre, por el que se adoptan medidas urgentes de reactivación, refuerzo y prevención en el marco del Plan de respuesta inmediata, reconstrucción y relanzamiento frente a los daños causados por la Depresión Aislada en Niveles Altos (DANA) en diferentes municipios entre el 28 de octubre y el 4 de noviembre de 2024.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-21725"
+  },
+  {
+   "id": "BOE-A-2025-22026",
+   "date": "2025-11-01",
+   "title": "Ley 4/2025, de 18 de julio, de actuaciones urgentes destinadas a la obtención de suelo mediante proyectos residenciales estratégicos en las Illes Balears.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-22026"
+  },
+  {
+   "id": "BOE-A-2025-22027",
+   "date": "2025-11-01",
+   "title": "Ley 5/2025, de 18 de julio, de gestión y modernización de las áreas de promoción industrial de las Illes Balears.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-22027"
+  },
+  {
+   "id": "BOE-A-2025-22028",
+   "date": "2025-11-01",
+   "title": "Ley 6/2025, de 23 de julio, de presupuestos generales de la Comunidad Autónoma de las Illes Balears para el año 2025.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-22028"
+  },
+  {
+   "id": "BOE-A-2025-23424",
+   "date": "2025-11-20",
+   "title": "Ley 4/2025, de 16 de octubre, por la que se modifica la Ley 4/1985, de 27 de junio, reguladora del Justicia de Aragón, a fin de declarar oficialmente el 20 de diciembre «Día del Justicia de Aragón».",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-23424"
+  },
+  {
+   "id": "BOE-A-2025-23911",
+   "date": "2025-11-26",
+   "title": "Real Decreto-ley 13/2025, de 25 de noviembre, por el que se adoptan medidas complementarias urgentes para la recuperación económica y social de la isla de La Palma tras los daños ocasionados por las erupciones volcánicas.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-23911"
+  },
+  {
+   "id": "BOE-A-2025-24445",
+   "date": "2025-12-03",
+   "title": "Real Decreto-ley 14/2025, de 2 de diciembre, por el que se aprueban medidas urgentes en materia de retribuciones en el ámbito del sector público.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-24445"
+  },
+  {
+   "id": "BOE-A-2025-24446",
+   "date": "2025-12-03",
+   "title": "Real Decreto-ley 15/2025, de 2 de diciembre, por el que se adoptan medidas urgentes para favorecer la actividad inversora de las entidades locales y de las comunidades autónomas, y por el que se modifica el Real Decreto 1007/2023, de 5 de diciembre, por el que se aprueba el Reglamento que establece los requisitos que deben adoptar los sistemas y programas informáticos o electrónicos que soporten los procesos de facturación de empresarios y profesionales, y la estandarización de formatos de los registros de facturación.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-24446"
+  },
+  {
+   "id": "BOE-A-2025-24545",
+   "date": "2025-12-04",
+   "title": "Ley 9/2025, de 3 de diciembre, de Movilidad Sostenible.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-24545"
+  },
+  {
+   "id": "BOE-A-2025-24844",
+   "date": "2025-12-06",
+   "title": "Ley 5/2025, de 30 de septiembre, de volcanes de Canarias.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-24844"
+  },
+  {
+   "id": "BOE-A-2025-24940",
+   "date": "2025-12-08",
+   "title": "Ley 9/2025, de 13 de noviembre, de modificación de la Ley 26/2010, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-24940"
+  },
+  {
+   "id": "BOE-A-2025-26358",
+   "date": "2025-12-23",
+   "title": "Ley 6/2025, de 10 de diciembre, de Ordenación Sostenible del Uso Turístico de Viviendas.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26358"
+  },
+  {
+   "id": "BOE-A-2025-26458",
+   "date": "2025-12-24",
+   "title": "Real Decreto-ley 16/2025, de 23 de diciembre, por el que se prorrogan determinadas medidas para hacer frente a situaciones de vulnerabilidad social, y se adoptan medidas urgentes en materia tributaria y de Seguridad Social.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26458"
+  },
+  {
+   "id": "BOE-A-2025-26459",
+   "date": "2025-12-24",
+   "title": "Real Decreto-ley 17/2025, de 23 de diciembre, de medidas de promoción del uso del transporte público mediante la bonificación de abonos y títulos multiviaje.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26459"
+  },
+  {
+   "id": "BOE-A-2025-26698",
+   "date": "2025-12-27",
+   "title": "Ley 10/2025, de 26 de diciembre, por la que se regulan los servicios de atención a la clientela.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26698"
+  },
+  {
+   "id": "BOE-A-2025-26848",
+   "date": "2025-12-29",
+   "title": "Ley 2/2025, de 12 de diciembre, de impulso y promoción de la producción ecológica y otras producciones agrarias, pesqueras y acuícolas certificadas en Andalucía.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26848"
+  },
+  {
+   "id": "BOE-A-2025-26849",
+   "date": "2025-12-29",
+   "title": "Ley 3/2025, de 12 de diciembre, de Agentes Medioambientales de Andalucía.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26849"
+  },
+  {
+   "id": "BOE-A-2025-27120",
+   "date": "2025-12-31",
+   "title": "Ley 2/2025, de 1 de diciembre, de bonificaciones fiscales de las tasas veterinarias, de las tasas de caza y pesca y de la tasa por expedición de los certificados de profesionalidad, acreditaciones parciales acumulables y expedición de duplicados.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-27120"
+  },
+  {
+   "id": "BOE-A-2026-422",
+   "date": "2026-01-08",
+   "title": "Ley 4/2025, de 15 de diciembre, de espacios productivos para el fomento de la industria en Andalucía.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-422"
+  },
+  {
+   "id": "BOE-A-2026-423",
+   "date": "2026-01-08",
+   "title": "Ley 5/2025, de 16 de diciembre, de Vivienda de Andalucía.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-423"
+  },
+  {
+   "id": "BOE-A-2026-943",
+   "date": "2026-01-16",
+   "title": "Ley 6/2025, de 22 de diciembre, del Tercer Sector de Acción Social de Andalucía.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-943"
+  },
+  {
+   "id": "BOE-A-2026-944",
+   "date": "2026-01-16",
+   "title": "Ley 7/2025, de 22 de diciembre, del Patrimonio de la Comunidad Autónoma de Andalucía.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-944"
+  },
+  {
+   "id": "BOE-A-2026-945",
+   "date": "2026-01-16",
+   "title": "Ley 8/2025, de 22 de diciembre, del Presupuesto de la Comunidad Autónoma de Andalucía para el año 2026.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-945"
+  },
+  {
+   "id": "BOE-A-2026-990",
+   "date": "2026-01-17",
+   "title": "Ley 8/2025, de 29 de diciembre, de Presupuestos Generales de la Comunidad Autónoma de La Rioja para el año 2026.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-990"
+  },
+  {
+   "id": "BOE-A-2026-991",
+   "date": "2026-01-17",
+   "title": "Ley 9/2025, de 29 de diciembre, de Medidas Fiscales y Administrativas para el año 2026.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-991"
+  },
+  {
+   "id": "BOE-A-2026-992",
+   "date": "2026-01-17",
+   "title": "Ley 7/2025, de 26 de diciembre, de la Generalitat, reguladora del acceso al entorno de las personas con discapacidad usuarias de perro de asistencia.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-992"
+  },
+  {
+   "id": "BOE-A-2026-993",
+   "date": "2026-01-17",
+   "title": "Ley 8/2025, de 26 de diciembre, de la Generalitat, de disolución del Colegio Oficial de Doctores y Licenciados en Bellas Artes y Profesores de Dibujo de la Comunitat Valenciana.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-993"
+  },
+  {
+   "id": "BOE-A-2026-1256",
+   "date": "2026-01-20",
+   "title": "Ley 6/2025, de 11 de diciembre, de Medidas Urgentes en materia de Vivienda, Suelo y Urbanismo.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-1256"
+  },
+  {
+   "id": "BOE-A-2026-1257",
+   "date": "2026-01-20",
+   "title": "Ley 7/2025, de 23 de diciembre, por la que se aprueban los Presupuestos Generales de la Comunidad Autónoma de Euskadi para el ejercicio 2026.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-1257"
+  },
+  {
+   "id": "BOE-A-2026-1258",
+   "date": "2026-01-20",
+   "title": "Ley 7/2025, de 5 de enero, de Participación Ciudadana en la Administración de la Comunidad Autónoma de Cantabria.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-1258"
+  },
+  {
+   "id": "BOE-A-2026-1259",
+   "date": "2026-01-20",
+   "title": "Ley 3/2025, de 22 de diciembre, de medidas extraordinarias para impulsar la provisión estable y permanente de puestos sanitarios de difícil cobertura y garantizar la asistencia sanitaria en el Servicio de Salud de Castilla y León.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-1259"
+  },
+  {
+   "id": "BOE-A-2026-1682",
+   "date": "2026-01-24",
+   "title": "Ley 4/2025, de 15 de diciembre, de incremento del importe de las plazas y del Servicio de Atención Temprana en los conciertos sociales y convenios de los sectores de personas mayores y personas con discapacidad.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-1682"
+  },
+  {
+   "id": "BOE-A-2026-2023",
+   "date": "2026-01-28",
+   "title": "Real Decreto-ley 1/2026, de 27 de enero, de ayudas a las víctimas de los accidentes ferroviarios de Adamuz (Córdoba) y Gélida (Barcelona).",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2023"
+  },
+  {
+   "id": "BOE-A-2026-2547",
+   "date": "2026-02-04",
+   "title": "Real Decreto-ley 2/2026, de 3 de febrero, por el que se adoptan medidas urgentes para hacer frente a situaciones de vulnerabilidad social, en materia tributaria y relativas a los recursos de los sistemas de financiación territorial.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2547"
+  },
+  {
+   "id": "BOE-A-2026-2548",
+   "date": "2026-02-04",
+   "title": "Real Decreto-ley 3/2026, de 3 de febrero, para la revalorización de las pensiones públicas y otras medidas urgentes en materia de Seguridad Social.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2548"
+  },
+  {
+   "id": "BOE-A-2026-3012",
+   "date": "2026-02-10",
+   "title": "Ley 7/2025, de 16 de diciembre, de protección del arbolado urbano y del arbolado de especial protección de Canarias.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3012"
+  },
+  {
+   "id": "BOE-A-2026-3013",
+   "date": "2026-02-10",
+   "title": "Ley 8/2025, de 16 de diciembre, de Universidades Populares de Canarias.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3013"
+  },
+  {
+   "id": "BOE-A-2026-3084",
+   "date": "2026-02-11",
+   "title": "Real Decreto-ley 4/2026, de 10 de febrero, por el que se garantiza la accesibilidad equitativa a bienes y servicios en situaciones de emergencia.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3084"
+  },
+  {
+   "id": "BOE-A-2026-3216",
+   "date": "2026-02-12",
+   "title": "Ley 4/2025, de 17 de diciembre, de reconocimiento de la universidad privada «IE Universidad Madrid».",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3216"
+  },
+  {
+   "id": "BOE-A-2026-3217",
+   "date": "2026-02-12",
+   "title": "Ley 5/2025, de 23 de diciembre, de Hacienda de la Comunidad de Madrid.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3217"
+  },
+  {
+   "id": "BOE-A-2026-3218",
+   "date": "2026-02-12",
+   "title": "Ley 6/2025, de 23 de diciembre, de Presupuestos Generales de la Comunidad de Madrid para el año 2026.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3218"
+  },
+  {
+   "id": "BOE-A-2026-3382",
+   "date": "2026-02-14",
+   "title": "Ley 10/2025, de 26 de noviembre, de la Agencia de Atención Integrada Social y Sanitaria de Cataluña.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3382"
+  },
+  {
+   "id": "BOE-A-2026-3383",
+   "date": "2026-02-14",
+   "title": "Ley 3/2025, de 15 de diciembre, de modificación de la Ley 3/2012, de 2 de abril, del deporte de Galicia.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3383"
+  },
+  {
+   "id": "BOE-A-2026-3384",
+   "date": "2026-02-14",
+   "title": "Ley 4/2025, de 23 de diciembre, de presupuestos generales de la Comunidad Autónoma de Galicia para el año 2026.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3384"
+  },
+  {
+   "id": "BOE-A-2026-3385",
+   "date": "2026-02-14",
+   "title": "Ley 5/2025, de 23 de diciembre, de medidas fiscales y administrativas.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3385"
+  },
+  {
+   "id": "BOE-A-2026-3386",
+   "date": "2026-02-14",
+   "title": "Ley 6/2025, de 23 de diciembre, de protección de la salud de las personas menores y prevención de las conductas adictivas.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3386"
+  },
+  {
+   "id": "BOE-A-2026-3810",
+   "date": "2026-02-19",
+   "title": "Real Decreto-ley 5/2026, de 17 de febrero, por el que se adoptan medidas urgentes en respuesta a los daños causados por diversos fenómenos meteorológicos adversos, de especial afectación en las comunidades autónomas de Andalucía y Extremadura.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3810"
+  },
+  {
+   "id": "BOE-A-2026-3909",
+   "date": "2026-02-20",
+   "title": "Ley 1/2026, de 4 de febrero, de modificación del texto único de la Ley de la función pública de la Administración de la Generalitat de Catalunya aprobado por el Decreto Legislativo 1/1997.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3909"
+  },
+  {
+   "id": "BOE-A-2026-5060",
+   "date": "2026-03-04",
+   "title": "Real Decreto-ley 6/2026, de 3 de marzo, por el que se modifica la Ley 20/2022, de 19 de octubre, de Memoria Democrática, sobre reconocimiento a favor de personas fallecidas o con lesiones incapacitantes por su actividad en defensa y reivindicación de la Democracia.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-5060"
+  },
+  {
+   "id": "BOE-A-2026-5547",
+   "date": "2026-03-10",
+   "title": "Ley 11/2025, de 29 de diciembre, de medidas en materia de vivienda y urbanismo.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-5547"
+  },
+  {
+   "id": "BOE-A-2026-5549",
+   "date": "2026-03-10",
+   "title": "Ley 1/2026, de 5 de febrero, del clima de Galicia.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-5549"
+  },
+  {
+   "id": "BOE-A-2026-6544",
+   "date": "2026-03-21",
+   "title": "Real Decreto-ley 7/2026, de 20 de marzo, por el que se aprueba el Plan Integral de Respuesta a la Crisis en Oriente Medio.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-6544"
+  },
+  {
+   "id": "BOE-A-2026-6545",
+   "date": "2026-03-21",
+   "title": "Real Decreto-ley 8/2026, de 20 de marzo, de medidas en el alquiler en respuesta a las consecuencias económicas y sociales de la Guerra de Irán.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-6545"
+  },
+  {
+   "id": "BOE-A-2026-6642",
+   "date": "2026-03-23",
+   "title": "Ley 2/2026, de 6 de marzo, de modificación del impuesto sobre las estancias en establecimientos turísticos y de creación de la tasa por el servicio de gestión y recaudación del recargo municipal del impuesto.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-6642"
+  },
+  {
+   "id": "BOE-A-2026-6643",
+   "date": "2026-03-23",
+   "title": "Ley 1/2026, de 20 de febrero, Universitaria para Andalucía.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-6643"
+  },
+  {
+   "id": "BOE-A-2026-6979",
+   "date": "2026-03-26",
+   "title": "Ley 5/2025, de 19 de diciembre, de Presupuestos Generales de la Junta de Comunidades de Castilla-La Mancha para 2026.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-6979"
+  },
+  {
+   "id": "BOE-A-2026-7044",
+   "date": "2026-03-27",
+   "title": "Ley 2/2026, de 27 de febrero, de medida excepcional de carácter fiscal.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-7044"
+  },
+  {
+   "id": "BOE-A-2026-7298",
+   "date": "2026-03-31",
+   "title": "Ley 1/2026, de 18 de marzo, de disolución de la entidad local menor de Santa Lucía, en el municipio de Ocón.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-7298"
+  },
+  {
+   "id": "BOE-A-2026-7558",
+   "date": "2026-04-03",
+   "title": "Ley 2/2026, de 12 de marzo, para la Gestión Ambiental de Andalucía.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-7558"
+  },
+  {
+   "id": "BOE-A-2026-7559",
+   "date": "2026-04-03",
+   "title": "Ley 3/2026, de 13 de marzo, de Montes de Andalucía.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-7559"
+  },
+  {
+   "id": "BOE-A-2026-7560",
+   "date": "2026-04-03",
+   "title": "Ley 9/2025, de 23 de diciembre, de Presupuestos Generales de la Comunidad Autónoma de Canarias para 2026.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-7560"
+  },
+  {
+   "id": "BOE-A-2026-7636",
+   "date": "2026-04-04",
+   "title": "Ley 3/2026, de 12 de marzo, de modificación del texto refundido de la Ley municipal y de régimen local de Cataluña, en relación con el régimen jurídico aplicable a Arán.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-7636"
+  },
+  {
+   "id": "BOE-A-2026-7637",
+   "date": "2026-04-04",
+   "title": "Ley 1/2026, de 2 de marzo, de modificación de la Ley 6/1995, de 21 de abril, de modificación de los límites del Parque Regional de Sierra Espuña.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-7637"
+  },
+  {
+   "id": "BOE-A-2026-7638",
+   "date": "2026-04-04",
+   "title": "Ley 1/2026, de 25 de febrero, de la Generalitat, de creación del Ilustre Colegio de Economistas de València.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-7638"
+  },
+  {
+   "id": "BOE-A-2026-7828",
+   "date": "2026-04-07",
+   "title": "Ley 12/2025, de 29 de diciembre, de modificación de la Ley 18/2017, de comercio, servicios y ferias, y del Decreto-ley 1/2009, de ordenación de los equipamientos comerciales.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-7828"
+  },
+  {
+   "id": "BOE-A-2026-7966",
+   "date": "2026-04-09",
+   "title": "Ley Orgánica 1/2026, de 8 de abril, en materia de multirreincidencia, por la que se modifica la Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal y la Ley de Enjuiciamiento Criminal, aprobada por Real Decreto de 14 de septiembre de 1882.",
+   "kind": "ley_organica",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-7966"
+  },
+  {
+   "id": "BOE-A-2026-7967",
+   "date": "2026-04-09",
+   "title": "Ley 1/2026, de 8 de abril, integral de impulso de la economía social.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-7967"
+  },
+  {
+   "id": "BOE-A-2026-7969",
+   "date": "2026-04-09",
+   "title": "Ley 1/2026, de 24 de marzo, de derogación de la Ley 2/2018, de 13 de abril, de memoria y reconocimiento democráticos de las Illes Balears.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-7969"
+  },
+  {
+   "id": "BOE-A-2026-8073",
+   "date": "2026-04-11",
+   "title": "Ley 13/2025, de 29 de diciembre, de los derechos de las personas LGBTI y la erradicación de la LGBTI-fobia.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-8073"
+  },
+  {
+   "id": "BOE-A-2026-8283",
+   "date": "2026-04-15",
+   "title": "Real Decreto-ley 9/2026, de 14 de abril, de medidas urgentes en materia de transporte.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-8283"
+  },
+  {
+   "id": "BOE-A-2026-9286",
+   "date": "2026-04-29",
+   "title": "Real Decreto-ley 10/2026, de 28 de abril, por el que se aprueban medidas tributarias urgentes y otras medidas de apoyo en respuesta a los daños causados a las víctimas de siniestros de la DANA y otras situaciones de emergencia.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-9286"
+  },
+  {
+   "id": "BOE-A-2026-9524",
+   "date": "2026-05-02",
+   "title": "Ley 3/2026, de 30 de marzo, de modificación de la Ley 8/2008, de 10 de julio, de salud de Galicia, por la que se establecen medidas de prevención y protección integral contra la violencia en el Sistema de salud de Galicia.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-9524"
+  },
+  {
+   "id": "BOE-A-2026-9798",
+   "date": "2026-05-06",
+   "title": "Ley 4/2026, de 24 de marzo, de Patrimonio Cultural de Andalucía.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-9798"
+  },
+  {
+   "id": "BOE-A-2026-9799",
+   "date": "2026-05-06",
+   "title": "Ley 2/2026, de 14 de abril, de la Generalitat, para la mejora de la renta valenciana de inclusión.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-9799"
+  },
+  {
+   "id": "BOE-A-2026-9962",
+   "date": "2026-05-08",
+   "title": "Ley 4/2026, de 28 de abril, de Presupuestos Generales de la Comunidad Autónoma de Cantabria para el año 2026.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-9962"
+  },
+  {
+   "id": "BOE-A-2026-9963",
+   "date": "2026-05-08",
+   "title": "Ley 2/2026, de 27 de abril, de la Universidad de Mallorca.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-9963"
+  },
+  {
+   "id": "BOE-A-2026-10117",
+   "date": "2026-05-11",
+   "title": "Ley 2/2026, de 28 de abril, de simplificación administrativa, mercado abierto y calidad normativa.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-10117"
+  },
+  {
+   "id": "BOE-A-2026-10120",
+   "date": "2026-05-11",
+   "title": "Ley 1/2026, de 15 de abril, por la que se habilita a la Comunidad de Madrid para el ejercicio de la acción popular en determinados ámbitos.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-10120"
+  },
+  {
+   "id": "BOE-A-2026-10324",
+   "date": "2026-05-13",
+   "title": "Real Decreto-ley 11/2026, de 12 de mayo, por el que se modifica la aportación de los usuarios y sus beneficiarios en la prestación farmacéutica ambulatoria.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-10324"
+  },
+  {
+   "id": "BOE-A-2026-11397",
+   "date": "2026-05-27",
+   "title": "Real Decreto-ley 12/2026, de 26 de mayo, por el que se declaran diversas iniciativas y programas como acontecimientos de excepcional interés público.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-11397"
+  },
+  {
+   "id": "BOE-A-2026-11703",
+   "date": "2026-06-01",
+   "title": "Ley 1/2026, de 23 de abril, de modificación de la Ley 1/1987, de 27 de marzo, de Elecciones para las Juntas Generales de los Territorios Históricos de Álava, Bizkaia y Gipuzkoa.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-11703"
+  },
+  {
+   "id": "BOE-A-2026-11704",
+   "date": "2026-06-01",
+   "title": "Ley 2/2026, de 23 de abril, de modificación de la Ley 5/1990, de 15 de junio, de Elecciones al Parlamento Vasco.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-11704"
+  },
+  {
+   "id": "BOE-A-2026-11848",
+   "date": "2026-06-03",
+   "title": "Real Decreto-ley 13/2026, de 2 de junio, por el que se adoptan medidas relativas a los recursos de los sistemas de financiación territorial.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-11848"
+  },
+  {
+   "id": "BOE-A-2026-11851",
+   "date": "2026-06-03",
+   "title": "Ley 3/2026, de 14 de mayo, de Transparencia de Euskadi.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-11851"
+  },
+  {
+   "id": "BOE-A-2026-12516",
+   "date": "2026-06-10",
+   "title": "Real Decreto-ley 14/2026, de 9 de junio, de medidas de promoción del uso del transporte público colectivo por parte de la juventud para los viajes realizados en el periodo estival de 2026.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-12516"
+  },
+  {
+   "id": "BOE-A-2026-12517",
+   "date": "2026-06-10",
+   "title": "Real Decreto-ley 15/2026, de 9 de junio, de autorización de operaciones de crédito extraordinarias a organismos y entidades integrantes del sector público institucional estatal.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-12517"
+  },
+  {
+   "id": "BOE-A-2026-13107",
+   "date": "2026-06-17",
+   "title": "Real Decreto-ley 16/2026, de 16 de junio, de medidas para garantizar la prestación del servicio público encomendado a la Corporación Radio Televisión Española, SA, S.M.E.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-13107"
+  },
+  {
+   "id": "BOE-A-2026-13373",
+   "date": "2026-06-20",
+   "title": "Ley 2/2026, de 4 de junio, sobre infracciones y sanciones administrativas en materia de agresiones a profesionales sanitarios y demás personal de la red sanitaria de utilización pública de la Región de Murcia, en el ejercicio de sus funciones.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-13373"
+  },
+  {
+   "id": "BOE-A-2026-13575",
+   "date": "2026-06-23",
+   "title": "Ley 3/2026, de 27 de mayo, de modificación de la Ley 10/2005, de 21 de junio, de puertos de las Illes Balears.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-13575"
+  },
+  {
+   "id": "BOE-A-2026-13643",
+   "date": "2026-06-24",
+   "title": "Real Decreto-ley 17/2026, de 23 de junio, de medidas extraordinarias para el fortalecimiento y consolidación del Sistema para la Autonomía y Atención a la Dependencia.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-13643"
+  },
+  {
+   "id": "BOE-A-2026-13950",
+   "date": "2026-06-27",
+   "title": "Ley 4/2026, de 11 de junio, de modificación de la Ley 2/2022, de 10 de marzo, de Juventud.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-13950"
+  },
+  {
+   "id": "BOE-A-2026-14112",
+   "date": "2026-06-30",
+   "title": "Real Decreto-ley 18/2026, de 29 de junio, por el que se adoptan determinadas medidas en el marco del Plan Integral de Respuesta a la Crisis en Oriente Medio.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-14112"
+  },
+  {
+   "id": "BOE-A-2026-14113",
+   "date": "2026-06-30",
+   "title": "Real Decreto-ley 19/2026, de 29 de junio, de medidas urgentes en materia de jubilación parcial anticipada del personal laboral de las Administraciones Públicas y de complemento de insularidad en Illes Balears.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-14113"
+  },
+  {
+   "id": "BOE-A-2026-14329",
+   "date": "2026-07-02",
+   "title": "Ley Orgánica 2/2026, de 30 de junio, de modificación de la Ley Orgánica 5/1985, de 19 de junio, del Régimen Electoral General, para adaptarla a la reforma del apartado 3 del artículo 69 de la Constitución.",
+   "kind": "ley_organica",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-14329"
+  },
+  {
+   "id": "BOE-A-2026-14659",
+   "date": "2026-07-07",
+   "title": "Ley 8/2026, de 23 de junio, de Ordenación del Transporte Marítimo de Cantabria.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-14659"
+  },
+  {
+   "id": "BOE-A-2026-15131",
+   "date": "2026-07-11",
+   "title": "Ley 1/2026, de 2 de julio, de creación de la entidad pública empresarial Agencia Extremeña de la Energía (AGENEX).",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-15131"
+  },
+  {
+   "id": "BOE-A-2026-15303",
+   "date": "2026-07-14",
+   "title": "Ley 5/2026, de 25 de junio, de Medidas para la Normalización Lingüística, por la que se modifica la Ley 11/2022, de 1 de diciembre, de Empleo Público Vasco.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-15303"
+  },
+  {
+   "id": "BOE-A-2026-15304",
+   "date": "2026-07-14",
+   "title": "Ley 6/2026, de 25 de junio, de Regulación de los Festejos Taurinos Tradicionales de Fomento en Euskadi.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-15304"
+  },
+  {
+   "id": "BOE-A-2026-15463",
+   "date": "2026-07-16",
+   "title": "Ley 3/2026, de 1 de julio, de la gratuidad de los estudios oficiales de grado universitario o estudios superiores equivalentes en La Rioja.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-15463"
+  },
+  {
+   "id": "BOE-A-2026-15579",
+   "date": "2026-07-17",
+   "title": "Ley 4/2026, de 11 de junio, de medidas urgentes para acelerar proyectos estratégicos que contribuyan a la transformación económica de las Illes Balears y de otras medidas de simplificación y racionalización administrativas.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-15579"
+  },
+  {
+   "id": "BOE-A-2026-15678",
+   "date": "2026-07-18",
+   "title": "Ley 4/2026, de 11 de mayo, del Instituto de la Filmoteca Nacional de Cataluña.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-15678"
+  },
+  {
+   "id": "BOE-A-2026-15679",
+   "date": "2026-07-18",
+   "title": "Ley 5/2026, de 20 de mayo, de medidas urgentes de apoyo al sector agrario y forestal.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-15679"
+  },
+  {
+   "id": "BOE-A-2026-15680",
+   "date": "2026-07-18",
+   "title": "Ley 6/2026, de 28 de mayo, del tercer sector social.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-15680"
+  },
+  {
+   "id": "BOE-A-2026-15681",
+   "date": "2026-07-18",
+   "title": "Ley 7/2026, de 4 de junio, de modificación de la Ley 4/2006, ferroviaria, con relación al régimen sancionador de las conductas que deslucen o deterioran las infraestructuras ferroviarias.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-15681"
+  },
+  {
+   "id": "BOE-A-2026-15683",
+   "date": "2026-07-18",
+   "title": "Ley 3/2026, de 29 de junio, de la Generalitat, de medidas urgentes frente a la hiperregulación, la agilización de procedimientos y la garantía de la unidad de mercado.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-15683"
+  },
+  {
+   "id": "BOE-A-2026-16019",
+   "date": "2026-07-23",
+   "title": "Ley 3/2026, de 30 de junio, de Apoyo a la Empresa Familiar.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-16019"
+  },
+  {
+   "id": "BOE-A-2026-16360",
+   "date": "2026-07-28",
+   "title": "Ley 2/2026, de 11 de junio, de medidas urgentes para el incremento de la Oferta de Vivienda con Protección Pública.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-16360"
+  },
+  {
+   "id": "BOE-A-2026-16543",
+   "date": "2026-07-30",
+   "title": "Real Decreto-ley 20/2026, de 29 de julio, por el que se establecen medidas urgentes de protección laboral y social frente a los incendios forestales.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-16543"
+  },
+  {
+   "id": "BOE-A-2026-16652",
+   "date": "2026-07-31",
+   "title": "Ley Orgánica 3/2026, de 29 de julio, de transferencia de la titularidad y competencias de la autopista del Atlántico (AP-9) a la Comunidad Autónoma de Galicia.",
+   "kind": "ley_organica",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-16652"
+  },
+  {
+   "id": "BOE-A-2026-16653",
+   "date": "2026-07-31",
+   "title": "Ley 2/2026, de 29 de julio, de modificación del Real Decreto Legislativo 8/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley General de la Seguridad Social en relación con las mutualidades alternativas reguladas en sus disposiciones adicionales 18.ª y 19.ª.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-16653"
+  },
+  {
+   "id": "BOE-A-2026-16654",
+   "date": "2026-07-31",
+   "title": "Ley 3/2026, de 29 de julio, de modificación de normas sobre el programa de cribado neonatal del Sistema Nacional de Salud y de otra normativa.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-16654"
+  },
+  {
+   "id": "BOE-A-2026-16666",
+   "date": "2026-07-31",
+   "title": "Ley 4/2026, de 13 de julio, por la que se modifica la Ley 2/2022, de 6 de octubre, de medidas extraordinarias dirigidas a impulsar la provisión de puestos de difícil cobertura de determinado personal estatutario con título de especialista en ciencias de la salud del Servicio Gallego de Salud.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-16666"
+  },
+  {
+   "id": "BOE-A-2026-17187",
+   "date": "2026-08-07",
+   "title": "Ley 1/2026, de 28 de abril, de modificación de la Ley 7/1995, de 6 de abril, de ordenación del turismo de Canarias.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-17187"
+  },
+  {
+   "id": "BOE-A-2026-17188",
+   "date": "2026-08-07",
+   "title": "Ley 2/2026, de 27 de mayo, de modificación de la Ley 20/2003, de 28 de abril, del Himno de Canarias, para su adecuación al Estatuto de Autonomía de Canarias a fin de reconocer expresamente las ocho islas del archipiélago.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-17188"
+  },
+  {
+   "id": "BOE-A-2026-17189",
+   "date": "2026-08-07",
+   "title": "Ley 3/2026, de 16 de junio, de cabildos insulares.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-17189"
+  },
+  {
+   "id": "BOE-A-2026-17836",
+   "date": "2026-08-17",
+   "title": "Ley 8/2026, de 2 de julio, de la erradicación del amianto.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-17836"
+  },
+  {
+   "id": "BOE-A-2026-17837",
+   "date": "2026-08-17",
+   "title": "Ley 9/2026, de 6 de julio, de reconocimiento del Instituto de Estudios Catalanes como academia nacional.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-17837"
+  },
+  {
+   "id": "BOE-A-2026-17839",
+   "date": "2026-08-17",
+   "title": "Ley 2/2026, de 3 de agosto, de Presupuestos Generales de la Comunidad Autónoma de Extremadura para el año 2026.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-17839"
+  },
+  {
+   "id": "BOE-A-2026-18148",
+   "date": "2026-08-26",
+   "title": "Real Decreto-ley 21/2026, de 25 de agosto, de transparencia e integridad de las actividades de los grupos de interés.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-18148"
+  },
+  {
+   "id": "BOE-A-2026-18282",
+   "date": "2026-08-29",
+   "title": "Ley 4/2026, de 2 de julio, de Caza y Pesca de la Comunidad de Madrid.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-18282"
+  },
+  {
+   "id": "BOE-A-2026-18283",
+   "date": "2026-08-29",
+   "title": "Ley 5/2026, de 7 de julio, de reconocimiento del concebido en la aplicación de las medidas de apoyo a la familia en la Comunidad de Madrid.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-18283"
+  },
+  {
+   "id": "BOE-A-2026-18429",
+   "date": "2026-09-02",
+   "title": "Real Decreto-ley 22/2026, de 1 de septiembre, por el que se aprueban medidas urgentes de carácter social y económico de apoyo a la ciudad de Ceuta.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-18429"
+  },
+  {
+   "id": "BOE-A-2026-18828",
+   "date": "2026-09-09",
+   "title": "Real Decreto-ley 23/2026, de 8 de septiembre, por el que se adoptan medidas fiscales y financieras urgentes que contribuyan a la reconstrucción económica y social de la isla de La Palma, así como medidas tendentes a promover la ejecución de inversiones por parte de las comunidades autónomas que han registrado superávits presupuestarios y excesos de financiación pendientes de aplicar de ejercicios anteriores a 2026.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-18828"
+  },
+  {
+   "id": "BOE-A-2026-19330",
+   "date": "2026-09-17",
+   "title": "Ley 4/2026, de 22 de julio, de presupuestos de la Generalitat para el ejercicio 2026.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19330"
+  },
+  {
+   "id": "BOE-A-2026-19331",
+   "date": "2026-09-17",
+   "title": "Ley 5/2026, de 31 de julio, de medidas fiscales, de gestión administrativa y financiera, y de organización de la Generalitat.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-19331"
+  },
+  {
+   "id": "BOE-A-2026-20264",
+   "date": "2026-09-30",
+   "title": "Real Decreto-ley 24/2026, de 29 de septiembre, por el que se establecen medidas relacionadas con el plan de respuesta inmediata, reconstrucción y relanzamiento frente a los daños causados por la Depresión Aislada en Niveles Altos (DANA) en diferentes municipios entre el 28 de octubre y el 4 de noviembre de 2024.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20264"
+  },
+  {
+   "id": "BOE-A-2026-20265",
+   "date": "2026-09-30",
+   "title": "Real Decreto-ley 25/2026, de 29 de septiembre, por el que se adoptan y se prorrogan determinadas medidas en el marco del Plan Integral de Respuesta a la Crisis en Oriente Medio.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20265"
+  },
+  {
+   "id": "BOE-A-2026-20266",
+   "date": "2026-09-30",
+   "title": "Real Decreto-ley 26/2026, de 29 de septiembre, por el que se adoptan medidas urgentes para la protección de la función social de la vivienda y la ampliación de la oferta de vivienda asequible.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20266"
+  },
+  {
+   "id": "BOE-A-2026-20385",
+   "date": "2026-10-01",
+   "title": "Real Decreto-ley 27/2026, de 29 de septiembre, por el que se adoptan medidas urgentes para reforzar la estabilidad de los contratos de arrendamiento de vivienda habitual.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20385"
+  },
+  {
+   "id": "BOE-A-2026-20528",
+   "date": "2026-10-03",
+   "title": "Ley 4/2026, de 1 de octubre, por la que se modifican el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, aprobado por el Real Decreto Legislativo 1/2013, de 29 de noviembre, y la Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia, para la extensión y refuerzo de los derechos de las personas con discapacidad a la inclusión, la autonomía y la accesibilidad universal conforme al artículo 49 de la Constitución Española.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20528"
+  },
+  {
+   "id": "BOE-A-2026-20822",
+   "date": "2026-10-07",
+   "title": "Real Decreto-ley 28/2026, de 6 de octubre, por el que se adoptan medidas urgentes para reforzar la estabilidad de los contratos de arrendamiento de vivienda habitual.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20822"
+  },
+  {
+   "id": "BOE-A-2026-20823",
+   "date": "2026-10-07",
+   "title": "Real Decreto-ley 29/2026, de 6 de octubre, por el que se adoptan medidas urgentes para la protección de la función social de la vivienda y la ampliación de la oferta de vivienda asequible.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20823"
+  },
+  {
+   "id": "BOE-A-2026-21317",
+   "date": "2026-10-14",
+   "title": "Ley Orgánica 4/2026, de 13 de octubre, por la que se modifica el artículo ochenta de la Ley Orgánica 1/1979, de 26 de septiembre, General Penitenciaria para reconocer, a efectos legales, el carácter de agentes de la autoridad a los funcionarios de la Administración Penitenciaria.",
+   "kind": "ley_organica",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21317"
+  },
+  {
+   "id": "BOE-A-2026-21318",
+   "date": "2026-10-14",
+   "title": "Real Decreto-ley 30/2026, de 13 de octubre, por el que se aprueban medidas extraordinarias y urgentes de apoyo financiero a la Ciudad de Ceuta.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21318"
+  },
+  {
+   "id": "BOE-A-2026-21872",
+   "date": "2026-10-21",
+   "title": "Real Decreto-ley 31/2026, de 20 de octubre, para la mejora de la acción protectora de la Seguridad Social y de otras normas sociales.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21872"
+  }
+ ]
+}

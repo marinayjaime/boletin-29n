@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import { getTopics, getVotes } from "@/lib/data";
-import { PageHead } from "@/components/page-head";
+import { PageHero } from "@/components/ui";
 import { VotesList } from "@/components/votes-list";
 import { VOTE_TYPE_LABELS } from "@/lib/votes-classify";
 import { PARTY_GROUP_NOTE } from "@/lib/groups";
@@ -12,16 +12,11 @@ export const metadata: Metadata = { title: "Votaciones del Congreso", descriptio
 export default function Page() {
   const { importedAt, votes } = getVotes();
   return (
-    <div className="mx-auto max-w-[1320px] px-4 md:px-8">
-      <PageHead
-        kicker="Prioridad 4 · Votaciones"
-        title="Lo que se votó en el Congreso"
-        lede={`${votes.length.toLocaleString("es-ES")} votaciones del Pleno de la XV Legislatura (2023–2026), importadas de los datos abiertos del Congreso. Cada una indica su tipo de procedimiento: no es lo mismo aprobar una ley que una proposición no de ley.`}
-      >
-        <p className="mt-3 font-mono text-xs text-ink-3">Importado el {importedAt ? formatDate(importedAt) : "—"} · fuente: congreso.es/es/opendata/votaciones</p>
-      </PageHead>
+    <>
+      <PageHero eyebrow="Congreso · XV Legislatura" title="Lo que se votó" sub={`${votes.length.toLocaleString("es-ES")} votaciones del Pleno con el voto de cada diputado. Importado el ${importedAt ? formatDate(importedAt) : "—"}.`} />
 
-      <details className="mb-8 rounded border border-rule p-4 text-sm">
+      <div className="mx-auto max-w-[1320px] px-4 md:px-8">
+      <details className="card mb-8 p-5 text-sm">
         <summary className="cursor-pointer font-medium">Cómo leer las votaciones y su relación con los cinco partidos</summary>
         <div className="mt-4 grid gap-6 md:grid-cols-2">
           <dl className="space-y-2">
@@ -52,6 +47,7 @@ export default function Page() {
       <Suspense fallback={<p className="text-ink-3">Cargando…</p>}>
         <VotesList topics={getTopics().map((t) => ({ id: t.id, short: t.short }))} />
       </Suspense>
-    </div>
+      </div>
+    </>
   );
 }

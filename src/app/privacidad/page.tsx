@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { PageHead } from "@/components/page-head";
+import { PageHero } from "@/components/ui";
 
 export const metadata: Metadata = { title: "Privacidad" };
 
 export default function Page() {
   return (
-    <div className="mx-auto max-w-[760px] px-4 md:px-8">
-      <PageHead kicker="Política de privacidad" title="Tus opiniones no salen de tu navegador" lede="Esta política describe el tratamiento real de datos de la aplicación tal como está programada. Si se despliega con servicios adicionales, debe actualizarse." />
+    <>
+      <PageHero eyebrow="Política de privacidad" title="Tus opiniones no salen de tu navegador" sub="Sin registro, sin analítica, sin perfiles." />
+      <div className="mx-auto max-w-[760px] px-4 md:px-8">
       <div className="prose-civic text-ink-2">
         <h2 className="display mt-8 text-2xl text-ink">Qué no hacemos</h2>
         <ul className="list-disc space-y-1 pl-5">
@@ -41,5 +42,6 @@ export default function Page() {
         <p className="mt-8 text-sm">Esta política no constituye una certificación de cumplimiento normativo: no se ha realizado una auditoría externa.</p>
       </div>
     </div>
+    </>
   );
 }

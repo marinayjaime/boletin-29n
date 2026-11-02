@@ -36,3 +36,22 @@ export function daysUntil(iso: string, now = new Date()): number {
   const target = new Date(`${iso}T00:00:00+01:00`).getTime();
   return Math.max(0, Math.ceil((target - now.getTime()) / 86_400_000));
 }
+
+/**
+ * Formatea un valor con su unidad sin duplicarla. Única vía para mostrar cifras de indicadores.
+ * formatValue(5, "%") → "5,0 %" · formatValue(100.5, "% PIB") → "100,5 % del PIB"
+ */
+export function formatValue(v: number, unitShort: string, decimals = 1): string {
+  const n = formatNumber(v, decimals);
+  const u = unitShort.trim();
+  if (!u) return n;
+  if (u === "% PIB") return `${n}\u00a0% del PIB`;
+  if (u.startsWith("%")) return `${n}\u00a0${u}`;
+  if (u === "€" || u.startsWith("€/")) return `${n}\u00a0${u}`;
+  return `${n}\u00a0${u}`;
+}
+
+/** Unidad corta para acompañar una cifra grande (sin repetir la que ya se muestra). */
+export function unitSuffix(unitShort: string): string {
+  return unitShort === "% PIB" ? "% PIB" : unitShort;
+}

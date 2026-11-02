@@ -29,6 +29,7 @@ export const PartySchema = z.object({
   /** Grupos parlamentarios de la XV Legislatura con los que se relaciona (sin equiparar). */
   parliamentaryGroups: z.array(z.object({ code: z.string(), note: z.string() })),
   monogram: z.string().max(3),
+  representative: z.object({ name: z.string(), photo: z.string(), roles: z.array(z.object({ label: z.string(), sourceId: z.string() })) }),
 });
 export type Party = z.infer<typeof PartySchema>;
 
@@ -312,6 +313,8 @@ export const HistoricalPromiseSchema = z.object({
   government: z.string().nullable(),
   legislature: z.string(),
   topicId: slug,
+  /** Agrupación editorial (p. ej. auditoría de compromisos legislativos del PSOE 2023). */
+  series: z.string().optional(),
   promise: z.string(),
   promisedAt: isoDate,
   citation: CitationSchema,
@@ -346,3 +349,16 @@ export const GlossaryEntrySchema = z.object({
   sourceUrl: z.string().url().optional(),
 });
 export type GlossaryEntry = z.infer<typeof GlossaryEntrySchema>;
+
+/* ---------- Puntos en común ---------- */
+export const CommonalitySchema = z.object({
+  id: z.string(),
+  topicId: slug,
+  /** equivalente: misma medida · objetivo: mismo objetivo con medidas distintas · parcial: coinciden en una parte. */
+  kind: z.enum(["equivalente", "objetivo", "parcial"]),
+  title: z.string(),
+  shared: z.string(),
+  members: z.array(z.object({ proposalId: z.string(), difference: z.string().optional() })).min(2),
+  reviewedAt: isoDate,
+});
+export type Commonality = z.infer<typeof CommonalitySchema>;

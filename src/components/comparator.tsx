@@ -1,58 +1,101 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { AnimatePresence, LayoutGroup, motion, useReducedMotion } from "motion/react";
+import { ArrowLeft, ArrowRight, Check, Equal, Plus } from "lucide-react";
 import type { Party, PolicyTopic, Proposal, SourceDocument } from "@/lib/schema";
 import { buildMatrix, clampSelection, encodeCompareState } from "@/lib/compare";
-import { PartyMark } from "./party-mark";
+import { CYCLE_LABELS } from "@/lib/labels";
+import { partyVars } from "@/lib/party-theme";
+import { PartyAvatar, TopicIcon } from "./ui";
 import { Sheet } from "./sheet";
 import { ProposalDetail } from "./proposal-detail";
-import { CYCLE_LABELS } from "@/lib/labels";
 
 type Mode = "todo" | "diferencias";
 
-export function Comparator({
-  parties,
-  topics,
-  proposals,
-  sources,
+function ProposalCard({
+  p,
+  party,
+  sharedWith,
+  highlighted,
+  onOpen,
+  onHover,
 }: {
-  parties: Party[];
-  topics: PolicyTopic[];
-  proposals: Proposal[];
-  sources: SourceDocument[];
+  p: Proposal;
+  party: Party;
+  sharedWith: Party[];
+  highlighted: boolean;
+  onOpen: () => void;
+  onHover: (k: string | null) => void;
 }) {
+  const v = partyVars(party.id);
+  return (
+    <motion.button
+      layout
+      type="button"
+      onClick={onOpen}
+      onMouseEnter={() => onHover(p.positionKey ?? null)}
+      onMouseLeave={() => onHover(null)}
+      onFocus={() => onHover(p.positionKey ?? null)}
+      onBlur={() => onHover(null)}
+      className="group block w-full rounded-[18px] bg-surface p-4 text-left transition-shadow"
+      style={{ boxShadow: highlighted ? `0 0 0 3px ${v.primary}, var(--shadow-lg)` : `inset 4px 0 0 ${v.primary}, var(--shadow)` }}
+    >
+      <span className="block text-[1.02rem] font-bold leading-snug">{p.summary}</span>
+      <span className="mt-3 flex flex-wrap items-center gap-1.5">
+        <span className="tag">{CYCLE_LABELS[p.cycle]?.replace("Generales ", "")}</span>
+        <span className="tag">pág. {p.citations[0].pdfPage}</span>
+        {sharedWith.length > 0 && (
+          <span className="tag !bg-brand-soft !text-ink">
+            <Equal size={12} aria-hidden /> igual que {sharedWith.map((s) => s.shortName).join(", ")}
+          </span>
+        )}
+        <span className="ml-auto inline-flex items-center gap-1 text-sm font-extrabold transition-transform group-hover:translate-x-0.5" style={{ color: v.strong }}>
+          Explorar <ArrowRight size={14} aria-hidden />
+        </span>
+      </span>
+    </motion.button>
+  );
+}
+
+export function Comparator({ parties, topics, proposals, sources }: { parties: Party[]; topics: PolicyTopic[]; proposals: Proposal[]; sources: SourceDocument[] }) {
   const sp = useSearchParams();
   const reduce = useReducedMotion();
   const allIds = parties.map((p) => p.id);
-
   const [selected, setSelected] = useState<string[]>(() => {
-    const fromUrl = sp.get("p");
-    return fromUrl ? clampSelection(fromUrl.split(","), allIds) : allIds;
+    const u = sp.get("p");
+    return u ? clampSelection(u.split(","), allIds) : allIds;
   });
   const [topicId, setTopicId] = useState<string>(() => (topics.some((t) => t.id === sp.get("t")) ? (sp.get("t") as string) : "vivienda"));
   const [mode, setMode] = useState<Mode>(sp.get("m") === "diferencias" ? "diferencias" : "todo");
   const [openId, setOpenId] = useState<string | null>(null);
-  const [notice, setNotice] = useState<string>("");
+  const [notice, setNotice] = useState("");
+  const [hoverKey, setHoverKey] = useState<string | null>(null);
 
-  // sincronizar URL (comparación compartible)
   useEffect(() => {
-    const qs = encodeCompareState({ parties: selected, topic: topicId, mode });
-    window.history.replaceState(null, "", `?${qs}`);
+    window.history.replaceState(null, "", `?${encodeCompareState({ parties: selected, topic: topicId, mode })}`);
   }, [selected, topicId, mode]);
 
   const topic = topics.find((t) => t.id === topicId)!;
   const rows = useMemo(() => buildMatrix(proposals, topic, selected, mode), [proposals, topic, selected, mode]);
-  const partyById = useMemo(() => Object.fromEntries(parties.map((p) => [p.id, p])), [parties]);
-  const sourceById = useMemo(() => Object.fromEntries(sources.map((s) => [s.id, s])), [sources]);
+  const visibleRows = rows.filter((r) => !r.collapsed);
+  const pmap = useMemo(() => Object.fromEntries(parties.map((p) => [p.id, p])), [parties]);
+  const smap = useMemo(() => Object.fromEntries(sources.map((s) => [s.id, s])), [sources]);
   const countByTopic = useMemo(() => {
     const m: Record<string, number> = {};
     for (const p of proposals) if (selected.includes(p.partyId)) m[p.topicId] = (m[p.topicId] ?? 0) + 1;
     return m;
   }, [proposals, selected]);
+  const keyOwners = useMemo(() => {
+    const m: Record<string, string[]> = {};
+    for (const p of proposals) if (p.positionKey && selected.includes(p.partyId)) (m[p.positionKey] ??= []).push(p.partyId);
+    return m;
+  }, [proposals, selected]);
+  const hidden = rows.reduce((a, r) => a + r.cells.reduce((b, c) => b + c.hiddenAsCoincidence.length, 0), 0);
+  const perParty = (pid: string) => proposals.filter((p) => p.topicId === topicId && p.partyId === pid).length;
 
-  const toggle = (id: string) => {
+  const toggle = (id: string) =>
     setSelected((cur) => {
       if (cur.includes(id)) {
         if (cur.length <= 2) {
@@ -65,224 +108,211 @@ export function Comparator({
       setNotice("");
       return [...cur, id];
     });
-  };
-  const move = (id: string, dir: -1 | 1) =>
+  const move = (id: string, d: -1 | 1) =>
     setSelected((cur) => {
       const i = cur.indexOf(id);
-      const j = i + dir;
+      const j = i + d;
       if (j < 0 || j >= cur.length) return cur;
       const n = [...cur];
       [n[i], n[j]] = [n[j], n[i]];
       return n;
     });
-
-  // scroll sincronizado de los carriles (móvil): las columnas se desplazan juntas
-  const lanes = useRef<HTMLDivElement[]>([]);
-  const syncing = useRef(false);
-  const onLaneScroll = useCallback((e: React.UIEvent<HTMLDivElement>) => {
-    if (syncing.current) return;
-    syncing.current = true;
-    const x = e.currentTarget.scrollLeft;
-    for (const l of lanes.current) if (l && l !== e.currentTarget) l.scrollLeft = x;
-    requestAnimationFrame(() => (syncing.current = false));
-  }, []);
-  lanes.current = [];
-  const laneRef = (el: HTMLDivElement | null) => {
-    if (el) lanes.current.push(el);
-  };
-
   const open = proposals.find((p) => p.id === openId) ?? null;
-  const cols = selected.length;
-  const gridStyle = { gridTemplateColumns: `repeat(${cols}, minmax(min(78vw, 260px), 1fr))` };
-  const hiddenCount = rows.reduce((a, r) => a + r.cells.reduce((b, c) => b + c.hiddenAsCoincidence.length, 0), 0);
+  const shared = (p: Proposal) => (p.positionKey ? (keyOwners[p.positionKey] ?? []).filter((x) => x !== p.partyId).map((x) => pmap[x]) : []);
 
   return (
     <div>
-      {/* selección de partidos */}
-      <div role="group" aria-labelledby="sel-label" className="border-y border-rule py-5">
-        <p id="sel-label" className="kicker mb-3">Partidos que comparas · {selected.length} de 5 · mínimo 2</p>
-        <div className="flex flex-wrap gap-2">
+      <div role="group" aria-labelledby="sel" className="mb-6">
+        <p id="sel" className="eyebrow mb-3">
+          Elige de 2 a 5 · {selected.length} seleccionados
+        </p>
+        <div className="lane -mx-4 flex gap-3 overflow-x-auto px-4 pb-2 md:mx-0 md:grid md:grid-cols-5 md:px-0">
           {parties.map((p) => {
             const on = selected.includes(p.id);
+            const v = partyVars(p.id);
             return (
               <button
                 key={p.id}
                 type="button"
                 aria-pressed={on}
                 onClick={() => toggle(p.id)}
-                className={`flex items-center gap-2 rounded-full border py-1.5 pl-1.5 pr-4 text-sm transition-colors ${on ? "border-ink bg-ink text-paper" : "border-rule text-ink-2 hover:border-ink"}`}
+                className="flex min-w-[150px] shrink-0 items-center gap-3 rounded-[20px] p-3 text-left transition-all md:min-w-0"
+                style={on ? { background: v.primary, color: v.on, boxShadow: "var(--shadow)" } : { background: "var(--surface)", boxShadow: "inset 0 0 0 1.5px var(--line)", opacity: 0.75 }}
               >
-                <span className={`grid h-7 w-7 place-items-center rounded-full border font-mono text-[0.65rem] ${on ? "border-paper" : "border-ink-3"}`}>{p.monogram}</span>
-                {p.shortName}
+                <PartyAvatar party={p} size={44} ring={on ? 2 : 0} label={false} />
+                <span className="min-w-0 flex-1">
+                  <span className="block truncate font-extrabold">{p.shortName}</span>
+                  <span className="block text-xs font-bold opacity-80">{on ? "Comparando" : "Añadir"}</span>
+                </span>
+                <span className="grid h-7 w-7 place-items-center rounded-full bg-black/10" aria-hidden>
+                  {on ? <Check size={15} /> : <Plus size={15} />}
+                </span>
               </button>
             );
           })}
         </div>
-        <p role="status" aria-live="polite" className="mt-2 min-h-5 text-sm text-accent">
+        <p role="status" aria-live="polite" className="mt-1 min-h-5 text-sm font-bold text-no">
           {notice}
         </p>
       </div>
 
-      {/* temas */}
-      <div className="sticky top-14 z-30 -mx-4 border-b border-rule bg-paper/95 px-4 backdrop-blur md:top-16 md:-mx-8 md:px-8">
-        <div className="lane flex gap-1 overflow-x-auto py-3" role="tablist" aria-label="Tema">
+      <div className="sticky top-16 z-30 -mx-4 bg-bg/90 px-4 py-3 backdrop-blur-xl md:-mx-8 md:px-8">
+        <div className="lane flex gap-2 overflow-x-auto" role="tablist" aria-label="Tema">
           {topics.map((t) => {
             const on = t.id === topicId;
             const n = countByTopic[t.id] ?? 0;
             return (
-              <button
-                key={t.id}
-                role="tab"
-                aria-selected={on}
-                onClick={() => setTopicId(t.id)}
-                className={`shrink-0 rounded-full px-3.5 py-1.5 text-sm transition-colors ${on ? "bg-accent text-paper" : n ? "text-ink hover:bg-paper-2" : "text-ink-3 hover:bg-paper-2"}`}
-              >
+              <button key={t.id} role="tab" aria-selected={on} onClick={() => setTopicId(t.id)} className={`chip shrink-0 ${!n && !on ? "opacity-50" : ""}`}>
+                <TopicIcon id={t.id} size={16} />
                 {t.short}
-                <span className={`ml-1.5 font-mono text-[0.65rem] ${on ? "text-paper/80" : "text-ink-3"}`}>{n}</span>
+                <span className={`rounded-full px-1.5 text-xs ${on ? "bg-brand text-brand-ink" : "bg-surface-2"}`}>{n}</span>
               </button>
             );
           })}
         </div>
       </div>
 
-      <div className="mt-6 flex flex-wrap items-end justify-between gap-4">
-        <div>
-          <h2 className="display text-3xl md:text-4xl">{topic.name}</h2>
-          <p className="mt-1 max-w-2xl text-sm text-ink-2">
-            <span className="font-medium text-ink">Competencia: </span>
-            {topic.competence}
-          </p>
+      <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
+        <div className="flex items-center gap-4">
+          <span className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-ink text-brand">
+            <TopicIcon id={topic.id} size={28} />
+          </span>
+          <div>
+            <h2 className="display text-4xl md:text-5xl">{topic.name}</h2>
+            <details className="mt-1 text-sm font-semibold text-ink-2">
+              <summary className="cursor-pointer underline decoration-brand decoration-2 underline-offset-4">¿Quién decide sobre esto?</summary>
+              <p className="mt-1 max-w-xl">{topic.competence}</p>
+            </details>
+          </div>
         </div>
-        <div role="radiogroup" aria-label="Modo de comparación" className="flex rounded-full border border-ink p-0.5 text-sm">
+        <div role="radiogroup" aria-label="Modo" className="flex rounded-full bg-surface p-1 shadow-[inset_0_0_0_1.5px_var(--line)]">
           {(["todo", "diferencias"] as Mode[]).map((m) => (
-            <button
-              key={m}
-              role="radio"
-              aria-checked={mode === m}
-              onClick={() => setMode(m)}
-              className={`rounded-full px-4 py-1.5 ${mode === m ? "bg-ink text-paper" : "text-ink-2"}`}
-            >
+            <button key={m} role="radio" aria-checked={mode === m} onClick={() => setMode(m)} className={`rounded-full px-4 py-2.5 text-sm font-extrabold transition-colors ${mode === m ? "bg-ink text-bg" : "text-ink-2"}`}>
               {m === "todo" ? "Mostrar todo" : "Solo diferencias"}
             </button>
           ))}
         </div>
       </div>
       {mode === "diferencias" && (
-        <p className="mt-3 text-sm text-ink-2">
-          {hiddenCount > 0
-            ? `Se ocultan ${hiddenCount} propuesta(s) que coinciden entre todos los partidos seleccionados.`
-            : "No hay coincidencias documentadas entre todos los partidos seleccionados en este tema."}{" "}
-          Las coincidencias se marcan en revisión editorial, no de forma automática.
+        <p className="mt-3 inline-flex items-center gap-2 rounded-full bg-brand-soft px-4 py-2 text-sm font-bold">
+          <Equal size={16} aria-hidden /> {hidden > 0 ? `${hidden} coincidencias ocultas` : "Sin coincidencias entre todos los seleccionados"}
         </p>
       )}
 
-      {/* cabecera de columnas */}
-      <div className="sticky top-[7.6rem] z-20 mt-6 border-b-2 border-ink bg-paper md:top-[8.1rem]">
-        <div ref={laneRef} onScroll={onLaneScroll} className="lane overflow-x-auto [scrollbar-width:none]">
-          <div className="grid gap-3" style={gridStyle}>
-            <AnimatePresence initial={false}>
-              {selected.map((id, i) => {
-                const p = partyById[id];
-                return (
-                  <motion.div
-                    layout={!reduce}
-                    key={id}
-                    initial={reduce ? false : { opacity: 0, y: -6 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={reduce ? undefined : { opacity: 0 }}
-                    className="flex items-center gap-2 py-3"
-                  >
-                    <PartyMark monogram={p.monogram} size={34} />
-                    <span className="font-semibold">{p.shortName}</span>
-                    <span className="ml-auto flex gap-1">
-                      <button type="button" onClick={() => move(id, -1)} disabled={i === 0} className="h-7 w-7 rounded-full border border-rule text-xs disabled:opacity-30" aria-label={`Mover ${p.shortName} a la izquierda`}>←</button>
-                      <button type="button" onClick={() => move(id, 1)} disabled={i === cols - 1} className="h-7 w-7 rounded-full border border-rule text-xs disabled:opacity-30" aria-label={`Mover ${p.shortName} a la derecha`}>→</button>
-                    </span>
-                  </motion.div>
-                );
-              })}
-            </AnimatePresence>
+      <LayoutGroup>
+        <div className="mt-6 hidden md:block">
+          <div className="sticky top-[8.5rem] z-20 grid gap-3 pb-3" style={{ gridTemplateColumns: `repeat(${selected.length}, minmax(0,1fr))` }}>
+            {selected.map((id, i) => {
+              const p = pmap[id];
+              const v = partyVars(id);
+              return (
+                <motion.div layout={!reduce} key={id} className="flex items-center gap-3 rounded-[20px] p-3" style={{ background: v.primary, color: v.on }}>
+                  <PartyAvatar party={p} size={42} ring={2} />
+                  <div className="min-w-0 flex-1">
+                    <p className="truncate font-extrabold">{p.shortName}</p>
+                    <p className="text-xs font-bold opacity-80">{perParty(id)} propuestas</p>
+                  </div>
+                  <span className="flex gap-1">
+                    <button type="button" onClick={() => move(id, -1)} disabled={i === 0} className="grid h-8 w-8 place-items-center rounded-full bg-black/15 disabled:opacity-30" aria-label={`Mover ${p.shortName} a la izquierda`}>
+                      <ArrowLeft size={14} aria-hidden />
+                    </button>
+                    <button type="button" onClick={() => move(id, 1)} disabled={i === selected.length - 1} className="grid h-8 w-8 place-items-center rounded-full bg-black/15 disabled:opacity-30" aria-label={`Mover ${p.shortName} a la derecha`}>
+                      <ArrowRight size={14} aria-hidden />
+                    </button>
+                  </span>
+                </motion.div>
+              );
+            })}
           </div>
+          <AnimatePresence mode="wait" initial={false}>
+            <motion.div key={topicId + mode} initial={reduce ? false : { opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} exit={reduce ? undefined : { opacity: 0, y: -10 }} transition={{ duration: 0.28 }}>
+              {visibleRows.map((row) => (
+                <section key={row.dimensionId} className="mt-6" aria-labelledby={`r-${row.dimensionId}`}>
+                  <h3 id={`r-${row.dimensionId}`} className="mb-3 flex items-center gap-3 text-sm font-extrabold uppercase tracking-wide text-ink-2">
+                    <span className="h-px flex-1 bg-line" aria-hidden />
+                    {row.label}
+                    <span className="h-px flex-1 bg-line" aria-hidden />
+                  </h3>
+                  <div className="grid gap-3" style={{ gridTemplateColumns: `repeat(${selected.length}, minmax(0,1fr))` }}>
+                    {row.cells.map((cell) => (
+                      <motion.div layout={!reduce} key={cell.partyId} className="space-y-3">
+                        <span className="sr-only">{pmap[cell.partyId].shortName}:</span>
+                        {cell.proposals.length === 0 ? (
+                          <div className="hatch grid min-h-24 place-items-center rounded-[18px] p-3 text-center text-sm font-bold text-ink-3 shadow-[inset_0_0_0_1.5px_var(--line)]">
+                            {cell.hiddenAsCoincidence.length ? "Coincidencia (oculta)" : "Sin posición documentada"}
+                          </div>
+                        ) : (
+                          cell.proposals.map((p) => (
+                            <ProposalCard key={p.id} p={p} party={pmap[cell.partyId]} sharedWith={shared(p)} highlighted={!!hoverKey && p.positionKey === hoverKey} onOpen={() => setOpenId(p.id)} onHover={setHoverKey} />
+                          ))
+                        )}
+                      </motion.div>
+                    ))}
+                  </div>
+                </section>
+              ))}
+            </motion.div>
+          </AnimatePresence>
         </div>
-      </div>
+      </LayoutGroup>
 
-      {/* filas */}
       <AnimatePresence mode="wait" initial={false}>
-        <motion.div
-          key={topicId + mode}
-          initial={reduce ? false : { opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={reduce ? undefined : { opacity: 0, y: -8 }}
-          transition={{ duration: 0.25 }}
-        >
-          {rows.filter((r) => !r.collapsed).length === 0 && (
-            <div className="hatch mt-6 rounded border border-rule p-8 text-center">
-              <p className="display text-2xl">Sin posiciones documentadas en este tema</p>
-              <p className="mx-auto mt-2 max-w-lg text-sm text-ink-2">
-                Todavía no se han indexado propuestas verificadas de los partidos seleccionados sobre este tema. Que no figuren aquí no significa que
-                no tengan posición.
-              </p>
-            </div>
-          )}
-          {rows.filter((r) => !r.collapsed).map((row) => (
-            <section key={row.dimensionId} className="border-b border-rule py-5" aria-labelledby={`row-${row.dimensionId}`}>
-              <h3 id={`row-${row.dimensionId}`} className="kicker mb-3 text-ink">
+        <motion.div key={topicId + mode + "m"} className="mt-6 space-y-5 md:hidden" initial={reduce ? false : { opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={reduce ? undefined : { opacity: 0, x: -24 }} transition={{ duration: 0.25 }}>
+          {visibleRows.map((row) => (
+            <section key={row.dimensionId} className="card p-4" aria-labelledby={`m-${row.dimensionId}`}>
+              <h3 id={`m-${row.dimensionId}`} className="mb-3 text-base font-extrabold">
                 {row.label}
               </h3>
-              <div ref={laneRef} onScroll={onLaneScroll} className="lane overflow-x-auto pb-1">
-                <div className="grid gap-3" style={gridStyle}>
-                  {row.cells.map((cell) => (
-                    <motion.div layout={!reduce} key={cell.partyId} className="min-w-0">
-                      <span className="sr-only">{partyById[cell.partyId].shortName}: </span>
+              <ul className="space-y-2.5">
+                {row.cells.map((cell) => {
+                  const p = pmap[cell.partyId];
+                  const v = partyVars(cell.partyId);
+                  return (
+                    <li key={cell.partyId} className="rounded-2xl p-3" style={{ background: v.soft }}>
+                      <p className="mb-1.5 flex items-center gap-2 text-sm font-extrabold" style={{ color: v.strong }}>
+                        <PartyAvatar party={p} size={26} ring={2} label={false} /> {p.shortName}
+                      </p>
                       {cell.proposals.length === 0 ? (
-                        <div className="hatch flex h-full min-h-20 flex-col justify-center rounded border border-dashed border-rule p-3">
-                          <p className="text-sm text-ink-3">{cell.hiddenAsCoincidence.length ? "Coincidencia documentada (oculta)" : "Sin posición documentada"}</p>
-                          <span className="mt-1 font-mono text-[0.62rem] text-ink-3 md:hidden">{partyById[cell.partyId].shortName}</span>
-                        </div>
+                        <p className="text-sm font-semibold text-ink-3">{cell.hiddenAsCoincidence.length ? "Coincidencia (oculta)" : "Sin posición documentada"}</p>
                       ) : (
-                        <ul className="space-y-2">
-                          {cell.proposals.map((p) => {
-                            const src = sourceById[p.citations[0].sourceId];
-                            const shared = p.positionKey && row.sharedKeys.includes(p.positionKey);
-                            return (
-                              <li key={p.id}>
-                                <button
-                                  type="button"
-                                  onClick={() => setOpenId(p.id)}
-                                  className="group block w-full rounded border border-rule bg-paper p-3 text-left transition-[border-color,transform] hover:-translate-y-0.5 hover:border-ink"
-                                >
-                                  <span className="mb-1 block font-mono text-[0.62rem] text-ink-3 md:hidden">{partyById[cell.partyId].shortName}</span>
-                                  <span className="block text-[0.95rem] leading-snug">{p.summary}</span>
-                                  <span className="mt-2 flex flex-wrap items-center gap-1.5">
-                                    <span className="cite-chip">{CYCLE_LABELS[p.cycle]}</span>
-                                    <span className="cite-chip">p. {p.citations[0].pdfPage}</span>
-                                    {src?.hostedByThirdParty && <span className="cite-chip">copia de tercero</span>}
-                                    {shared && <span className="cite-chip border-accent text-accent">coincidencia</span>}
-                                    <span className="ml-auto text-xs text-ink-3 opacity-0 transition-opacity group-hover:opacity-100">Ver fuente →</span>
-                                  </span>
-                                </button>
-                              </li>
-                            );
-                          })}
-                        </ul>
+                        cell.proposals.map((pr) => (
+                          <button key={pr.id} type="button" onClick={() => setOpenId(pr.id)} className="mt-1 flex w-full items-start justify-between gap-2 rounded-xl bg-surface p-3 text-left font-bold leading-snug">
+                            <span>
+                              {pr.summary}
+                              {shared(pr).length > 0 && (
+                                <span className="tag ml-1 !bg-brand-soft !text-ink">
+                                  <Equal size={11} aria-hidden /> {shared(pr).map((s) => s.shortName).join(", ")}
+                                </span>
+                              )}
+                            </span>
+                            <ArrowRight size={16} className="mt-1 shrink-0" style={{ color: v.strong }} aria-hidden />
+                          </button>
+                        ))
                       )}
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
+                    </li>
+                  );
+                })}
+              </ul>
             </section>
           ))}
         </motion.div>
       </AnimatePresence>
 
-      <Sheet open={!!open} onClose={() => setOpenId(null)} title="Ficha de la propuesta">
+      {visibleRows.length === 0 && (
+        <div className="hatch mt-6 rounded-[24px] p-10 text-center shadow-[inset_0_0_0_1.5px_var(--line)]">
+          <p className="display text-3xl">Nada documentado aquí todavía</p>
+          <p className="mx-auto mt-2 max-w-md font-semibold text-ink-2">Que no aparezca no significa que no tengan posición: aún no hay propuestas verificadas de estos partidos sobre este tema.</p>
+        </div>
+      )}
+
+      <Sheet open={!!open} onClose={() => setOpenId(null)} title="Propuesta" accent={open ? partyVars(open.partyId).primary : undefined}>
         {open && (
           <ProposalDetail
             proposal={open}
-            source={sourceById[open.citations[0].sourceId]}
-            party={partyById[open.partyId]}
+            source={smap[open.citations[0].sourceId]}
+            party={pmap[open.partyId]}
             topic={topics.find((t) => t.id === open.topicId)!}
-            related={proposals.filter((p) => p.partyId === open.partyId && p.topicId === open.topicId && p.id !== open.id).slice(0, 5)}
+            related={proposals.filter((p) => p.partyId === open.partyId && p.topicId === open.topicId && p.id !== open.id)}
           />
         )}
       </Sheet>

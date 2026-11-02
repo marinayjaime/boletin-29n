@@ -1,244 +1,266 @@
 import Link from "next/link";
-import { getCycle, getIndicators, getParties, getProposals, getSeries, getVotes, getQuiz, lastDataUpdate } from "@/lib/data";
+import { ArrowRight, Columns3, Compass, Link2, ListChecks, Network, PieChart } from "lucide-react";
+import { getCycle, getIndicators, getParties, getPolls, getPromises, getProposals, getSeries, getVotes } from "@/lib/data";
 import { alphabetical } from "@/lib/compare";
 import { Countdown } from "@/components/countdown";
-import { PartyMark } from "@/components/party-mark";
-import { Sparkline } from "@/components/sparkline";
-import { formatDate, formatNumber, formatPeriod } from "@/lib/format";
 import { SearchBox } from "@/components/search-box";
+import { PartyAvatar, STATUS_STYLE, TopicIcon } from "@/components/ui";
+import { SeatChart } from "@/components/seat-chart";
+import { CountUp, DrawSpark } from "@/components/anim";
+import { POLL_PARTY, partyVars, type PollKey } from "@/lib/party-theme";
+import { pointSeats } from "@/lib/seats";
+import { formatDate, formatPeriod } from "@/lib/format";
 
-const HEADLINE_INDICATORS = ["inflacion", "paro", "salario-medio", "precio-vivienda", "gasto-vejez", "deuda-pib"];
+const HEADLINE = [
+  { id: "inflacion", color: "var(--c3)" },
+  { id: "paro", color: "var(--c2)" },
+  { id: "precio-vivienda", color: "var(--c5)" },
+  { id: "salario-medio", color: "var(--c6)" },
+  { id: "deuda-pib", color: "var(--c4)" },
+  { id: "gasto-vejez", color: "var(--c2)" },
+];
 
 export default function Home() {
   const cycle = getCycle();
   const parties = alphabetical(getParties());
   const proposals = getProposals();
-  const votes = getVotes();
-  const updated = lastDataUpdate();
+  const votes = getVotes().votes;
+  const polls = getPolls();
+  const latest = [...polls.polls].sort((a, b) => b.published.localeCompare(a.published)).find((p) => p.type === "puntual")!;
+  const seats = pointSeats(latest.seats)!;
+  const blocks = Object.entries(seats)
+    .sort((a, b) => b[1] - a[1])
+    .map(([k, v]) => ({ key: k, name: POLL_PARTY[k as PollKey]?.name ?? k, color: POLL_PARTY[k as PollKey]?.color ?? "#999", seats: v }));
   const inds = getIndicators();
-  const tiles = HEADLINE_INDICATORS.map((id) => {
+  const tiles = HEADLINE.map(({ id, color }) => {
     const ind = inds.find((i) => i.id === id)!;
-    const s = getSeries(id);
-    const es = (s?.observations ?? []).filter((o) => o.geo === "ES");
-    const last = es.at(-1);
-    return { ind, last, values: es.slice(-24).map((o) => o.value), fetchedAt: s?.fetchedAt };
+    const es = (getSeries(id)?.observations ?? []).filter((o) => o.geo === "ES");
+    return { ind, color, last: es.at(-1), values: es.slice(-24).map((o) => o.value) };
   });
-  const dissolution = votes.votes.filter((v) => v.date === "2026-10-02");
-
-  const doors = [
-    { href: "/comparador", n: "01", title: "Comparar partidos", text: "De dos a cinco formaciones, tema a tema, con la cita original de cada propuesta." },
-    { href: "/test", n: "02", title: "Test a ciegas", text: `${getQuiz().length} afirmaciones sin saber quién las defiende. Al final, las posturas documentadas.` },
-    { href: "/observatorio", n: "03", title: "Datos de España", text: "Inflación, empleo, vivienda, pensiones y más, con series oficiales y comparación europea." },
-    { href: "/votaciones", n: "04", title: "Votaciones del Congreso", text: `${votes.votes.length.toLocaleString("es-ES")} votaciones de la XV Legislatura, con el voto de cada diputado.` },
-    { href: "/promesas", n: "05", title: "Promesas y hechos", text: "Compromisos anteriores contrastados con decisiones oficiales y un criterio explícito." },
-  ];
+  const promises = getPromises().filter((p) => p.series === "psoe-2023-legislativas");
+  const byStatus = (s: string) => promises.filter((p) => p.assessment.status === s).length;
+  const lastVotes = votes.filter((v) => v.date === "2026-10-02");
 
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden border-b border-rule">
-        <div className="mx-auto grid max-w-[1320px] gap-10 px-4 pb-14 pt-10 md:grid-cols-12 md:px-8 md:pb-20 md:pt-16">
-          <div className="md:col-span-8">
-            <p className="kicker rise">Elecciones generales · 29 de noviembre de 2026</p>
-            <h1 className="display rise mt-4 text-[3.3rem] font-medium leading-[0.92] sm:text-[4.8rem] lg:text-[7.2rem]" style={{ animationDelay: "60ms" }}>
-              Tu voto.
+      <section className="relative overflow-hidden bg-ink text-bg">
+        <div className="pointer-events-none absolute -right-40 -top-40 h-[520px] w-[520px] rounded-full bg-brand/10 blur-3xl" aria-hidden />
+        <div className="mx-auto grid max-w-[1320px] items-center gap-10 px-4 pb-12 pt-10 md:px-8 lg:grid-cols-[1.05fr_1fr] lg:pb-20 lg:pt-16">
+          <div>
+            <Countdown date={cycle.electionDate} compact />
+            <h1 className="display rise mt-6 text-[3.6rem] sm:text-[5.4rem] lg:text-[6.6rem]">
+              Compara.
               <br />
-              <span className="italic text-ink-2" style={{ fontVariationSettings: '"SOFT" 100, "WONK" 1' }}>
-                Tus preguntas.
-              </span>
+              <span className="text-brand">Explora.</span>
               <br />
-              Los datos.
+              Descubre.
             </h1>
-            <p className="rise mt-6 max-w-xl text-lg leading-relaxed text-ink-2 md:text-xl" style={{ animationDelay: "140ms" }}>
-              Compara propuestas, consulta decisiones reales y entiende los principales indicadores de España antes de las elecciones.
+            <p className="rise mt-5 max-w-md text-lg font-semibold opacity-80" style={{ animationDelay: "100ms" }}>
+              Propuestas con su fuente, votaciones reales y datos de España. Tú sacas las conclusiones.
             </p>
-            <div className="rise mt-8 max-w-2xl" style={{ animationDelay: "200ms" }}>
-              <SearchBox placeholder="¿Qué propone cada partido para facilitar la compra de una vivienda?" />
-              <p className="mt-2 text-xs text-ink-3">
-                Busca en {proposals.length} propuestas verificadas y en el texto completo de los programas indexados. Solo devuelve pasajes reales, con su página.
-              </p>
+            <div className="rise mt-7 flex flex-wrap gap-3" style={{ animationDelay: "160ms" }}>
+              <Link href="/test" className="btn btn-brand">
+                <ListChecks size={18} aria-hidden /> Hacer el test
+              </Link>
+              <Link href="/comparador" className="btn bg-white/10 text-bg hover:bg-white/20">
+                <Columns3 size={18} aria-hidden /> Comparar partidos
+              </Link>
+            </div>
+            <div className="rise mt-8 max-w-xl" style={{ animationDelay: "220ms" }}>
+              <SearchBox placeholder="¿Qué propone cada partido sobre vivienda?" dark />
             </div>
           </div>
-          <aside className="flex flex-col justify-between gap-8 md:col-span-4 md:border-l md:border-rule md:pl-8">
-            <Countdown date={cycle.electionDate} />
-            <div className="space-y-3 text-sm">
-              <div className="hairline" />
-              <p>
-                <span className="kicker block">Convocatoria</span>
-                <a href={cycle.decree.url} className="link" target="_blank" rel="noreferrer">
-                  Real Decreto 806/2026
-                </a>{" "}
-                · BOE {formatDate(cycle.decree.published)}
-              </p>
-              <p>
-                <span className="kicker block">Campaña</span>
-                Del 13 al 27 de noviembre · {cycle.seats} escaños
-              </p>
-              <p>
-                <span className="kicker block">Datos actualizados</span>
-                <span className="font-mono">{formatDate(updated)}</span>
-              </p>
+
+          <div className="rise rounded-[28px] bg-white/[.04] p-4 md:p-6" style={{ animationDelay: "200ms" }}>
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <p className="text-sm font-extrabold uppercase tracking-wider text-brand">Encuesta más reciente</p>
+              <Link href="/pactos" className="text-sm font-bold underline decoration-brand decoration-2 underline-offset-4">
+                Simular pactos →
+              </Link>
             </div>
-          </aside>
+            <div className="text-ink [&_text]:fill-[var(--bg)] [&_line]:stroke-[var(--bg)]">
+              <SeatChart blocks={blocks} height={270} center={<p className="num text-5xl text-bg">350</p>} />
+            </div>
+            <ul className="mt-2 flex flex-wrap justify-center gap-x-3 gap-y-1 text-sm font-bold">
+              {blocks.slice(0, 6).map((b) => (
+                <li key={b.key} className="flex items-center gap-1.5">
+                  <span className="h-2.5 w-2.5 rounded-full" style={{ background: b.color }} aria-hidden />
+                  {b.name} <span className="opacity-60">{b.seats}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-3 text-center text-xs font-semibold opacity-60">
+              {latest.firm} para {latest.media} · publicado el {formatDate(latest.published)} ·{" "}
+              <a href={latest.url} className="underline" target="_blank" rel="noreferrer">
+                fuente
+              </a>
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* PUERTAS */}
-      <nav aria-label="Qué puedes hacer" className="border-b border-rule">
-        <ul className="mx-auto grid max-w-[1320px] md:grid-cols-5">
-          {doors.map((d, i) => (
-            <li key={d.href} className="border-b border-rule md:border-b-0 md:border-r last:border-r-0">
-              <Link href={d.href} className="group flex h-full flex-col gap-3 px-4 py-6 transition-colors hover:bg-paper-2 md:px-6 md:py-8 rise" style={{ animationDelay: `${240 + i * 50}ms` }}>
-                <span className="font-mono text-xs text-accent">{d.n}</span>
-                <span className="display text-2xl leading-tight">{d.title}</span>
-                <span className="text-sm leading-relaxed text-ink-2">{d.text}</span>
-                <span className="mt-auto text-sm text-ink transition-transform group-hover:translate-x-1" aria-hidden>
-                  →
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-
       {/* PARTIDOS */}
-      <section className="mx-auto max-w-[1320px] px-4 py-16 md:px-8" aria-labelledby="partidos">
-        <div className="flex flex-wrap items-end justify-between gap-4">
-          <div>
-            <p className="kicker">Las cinco candidaturas de esta primera versión</p>
-            <h2 id="partidos" className="display mt-2 text-4xl md:text-5xl">
-              Mismo espacio, mismo trato
-            </h2>
-          </div>
-          <p className="max-w-md text-sm text-ink-2">
-            Orden alfabético. Sin logotipos ni colores corporativos. Hay más candidaturas, incluidas las territoriales, que{" "}
-            <a className="link" href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22607" target="_blank" rel="noreferrer">
-              figuran en el BOE
-            </a>{" "}
-            y no se analizan aquí.
-          </p>
+      <section className="mx-auto max-w-[1320px] px-4 pt-14 md:px-8" aria-labelledby="partidos">
+        <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
+          <h2 id="partidos" className="display text-[2.4rem] md:text-6xl">
+            Cinco candidaturas
+          </h2>
+          <p className="max-w-xs text-sm font-semibold text-ink-3">Orden alfabético · mismo tamaño para todas · hay más candidaturas en el BOE</p>
         </div>
-        <ul className="mt-8 grid gap-px overflow-hidden rounded border border-rule bg-rule sm:grid-cols-2 lg:grid-cols-5">
-          {parties.map((p) => {
+        <ul className="lane -mx-4 flex gap-4 overflow-x-auto px-4 pb-4 md:mx-0 md:grid md:grid-cols-5 md:overflow-visible md:px-0">
+          {parties.map((p, i) => {
+            const v = partyVars(p.id);
             const n = proposals.filter((x) => x.partyId === p.id).length;
             return (
-              <li key={p.id} className="bg-paper">
-                <Link href={`/partidos/${p.id}`} className="group flex h-full flex-col gap-4 p-5 transition-colors hover:bg-paper-2">
-                  <PartyMark monogram={p.monogram} size={52} />
-                  <div>
-                    <p className="display text-2xl leading-tight">{p.shortName}</p>
-                    <p className="text-sm text-ink-3">{p.kind === "coalicion" ? "Coalición electoral" : "Partido político"}</p>
+              <li key={p.id} className="w-[72vw] shrink-0 sm:w-[46vw] md:w-auto">
+                <Link
+                  href={`/partidos/${p.id}`}
+                  className="lift rise group relative flex h-full flex-col overflow-hidden rounded-[26px]"
+                  style={{ background: v.primary, color: v.on, animationDelay: `${i * 60}ms` }}
+                >
+                  <div className="flex items-start justify-between p-5 pb-0">
+                    <span className="display text-3xl">{p.shortName}</span>
+                    <span className="grid h-9 w-9 place-items-center rounded-full bg-black/15 transition-transform group-hover:translate-x-1">
+                      <ArrowRight size={18} aria-hidden />
+                    </span>
                   </div>
-                  <dl className="mt-auto space-y-1 text-sm">
-                    <dt className="kicker">Cabeza de lista por Madrid (BOE)</dt>
-                    <dd>{p.madridListHead}</dd>
-                    <dt className="kicker pt-2">Propuestas indexadas</dt>
-                    <dd className="font-mono">{n}</dd>
-                  </dl>
-                  <span className="text-xs text-ink-3">Programa 2026 pendiente de publicación</span>
+                  <div className="mt-4 flex justify-center">
+                    <PartyAvatar party={p} size={132} ring={4} />
+                  </div>
+                  <div className="mt-auto space-y-1 p-5">
+                    <p className="font-extrabold leading-tight">{p.representative.name}</p>
+                    <p className="text-sm font-semibold opacity-80">Cabeza de lista por Madrid</p>
+                    <p className="pt-2 text-sm font-bold">
+                      <span className="num text-2xl">{n}</span> propuestas documentadas
+                    </p>
+                  </div>
                 </Link>
               </li>
             );
           })}
         </ul>
+        <p className="mt-1 text-xs font-semibold text-ink-3">Fotos: Wikimedia Commons (licencias libres, autor en cada ficha). Colores identificativos de cada formación; no implican valoración.</p>
       </section>
 
-      {/* DATOS */}
-      <section className="border-y border-rule bg-paper-2" aria-labelledby="datos">
-        <div className="mx-auto max-w-[1320px] px-4 py-16 md:px-8">
-          <div className="flex flex-wrap items-end justify-between gap-4">
-            <div>
-              <p className="kicker">Situación real · datos oficiales</p>
-              <h2 id="datos" className="display mt-2 text-4xl md:text-5xl">
-                España en seis cifras
-              </h2>
+      {/* BENTO */}
+      <section className="mx-auto max-w-[1320px] px-4 pt-14 md:px-8" aria-label="Herramientas">
+        <div className="grid grid-cols-3 gap-4 md:grid-cols-6">
+          <Link href="/test" className="lift group relative overflow-hidden rounded-[28px] bg-brand p-7 text-brand-ink col-span-3 md:col-span-3 md:col-start-1 md:row-span-2 md:row-start-1">
+            <ListChecks size={34} aria-hidden />
+            <p className="display mt-6 text-5xl md:text-6xl">
+              Test
+              <br />a ciegas
+            </p>
+            <p className="mt-3 max-w-xs text-lg font-bold">28 preguntas sin etiquetas. Después ves quién dijo qué, tema a tema.</p>
+            <span className="btn btn-primary mt-6">
+              Empezar <ArrowRight size={18} aria-hidden />
+            </span>
+            <div className="pointer-events-none absolute -bottom-10 -right-6 flex gap-2 opacity-90" aria-hidden>
+              {parties.map((p, i) => (
+                <span key={p.id} className="h-28 w-10 rounded-full transition-transform duration-500 group-hover:-translate-y-4" style={{ background: partyVars(p.id).primary, transitionDelay: `${i * 50}ms` }} />
+              ))}
             </div>
-            <Link href="/observatorio" className="link text-sm">
-              Abrir el Observatorio →
-            </Link>
-          </div>
-          <ul className="mt-8 grid gap-px overflow-hidden rounded border border-rule bg-rule sm:grid-cols-2 lg:grid-cols-3">
-            {tiles.map(({ ind, last, values }) => (
-              <li key={ind.id} className="bg-paper">
-                <Link href={`/observatorio?i=${ind.id}`} className="flex h-full flex-col gap-3 p-5 hover:bg-paper-3/40">
-                  <p className="kicker">{ind.short}</p>
-                  <p className="display tabular text-5xl font-light leading-none">
-                    {last ? formatNumber(last.value, ind.decimals) : "—"}
-                    <span className="ml-1 font-sans text-base text-ink-2">{ind.unitShort}</span>
-                  </p>
-                  <div className="h-10">
-                    <Sparkline values={values} />
-                  </div>
-                  <p className="text-xs text-ink-3">
-                    {ind.unit} · {last ? formatPeriod(last.period) : ""} · {ind.provider} ({ind.dataset})
-                  </p>
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <p className="mt-3 text-xs text-ink-3">
-            Datos de Eurostat descargados en la fecha indicada en cada gráfico. Una variación no implica por sí sola que se deba a un Gobierno concreto.
-          </p>
+          </Link>
+          <Link href="/pactos" className="lift card group col-span-3 p-6 md:col-span-3 md:col-start-4 md:row-start-1">
+            <div className="flex items-center justify-between">
+              <PieChart size={28} aria-hidden />
+              <span className="tag">{polls.polls.length} encuestas</span>
+            </div>
+            <p className="display mt-4 text-4xl">Pactos y mayorías</p>
+            <p className="mt-1 font-semibold text-ink-2">Reparte los 350 escaños y prueba alianzas. ¿Llegan a 176?</p>
+          </Link>
+          <Link href="/puntos-en-comun" className="lift card p-6 md:col-span-1 md:col-start-4 md:row-start-2">
+            <Link2 size={26} aria-hidden />
+            <p className="display mt-4 text-2xl leading-none">Puntos en común</p>
+          </Link>
+          <Link href="/quien-hace-que" className="lift card p-6 md:col-span-1 md:col-start-5 md:row-start-2">
+            <Network size={26} aria-hidden />
+            <p className="display mt-4 text-2xl leading-none">¿Quién hace qué?</p>
+          </Link>
+          <Link href="/promesas" className="lift card p-6 md:col-span-1 md:col-start-6 md:row-start-2">
+            <Compass size={26} aria-hidden />
+            <p className="display mt-4 text-2xl leading-none">Promesas 2023</p>
+            <div className="mt-3 flex h-2.5 overflow-hidden rounded-full" aria-label={`${byStatus("cumplido")} cumplidas, ${byStatus("no_cumplido")} no cumplidas, ${byStatus("no_verificable")} no verificables`} role="img">
+              {(["cumplido", "no_cumplido", "no_verificable"] as const).map((s) => (
+                <span key={s} style={{ flex: byStatus(s), background: STATUS_STYLE[s].color }} />
+              ))}
+            </div>
+          </Link>
         </div>
       </section>
 
-      {/* ÚLTIMA DECISIÓN */}
-      {dissolution.length > 0 && (
-        <section className="mx-auto max-w-[1320px] px-4 py-16 md:px-8" aria-labelledby="ultima">
-          <p className="kicker">Decisión parlamentaria · 2 de octubre de 2026</p>
-          <h2 id="ultima" className="display mt-2 max-w-3xl text-4xl md:text-5xl">
-            Las últimas votaciones de la legislatura
+      {/* DATOS */}
+      <section className="mx-auto max-w-[1320px] px-4 pt-14 md:px-8" aria-labelledby="datos">
+        <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
+          <h2 id="datos" className="display text-[2.4rem] md:text-6xl">
+            España en datos
           </h2>
-          <ul className="mt-8 grid gap-6 md:grid-cols-2">
-            {dissolution.map((v) => {
+          <Link href="/observatorio" className="btn btn-ghost">
+            Abrir el observatorio <ArrowRight size={18} aria-hidden />
+          </Link>
+        </div>
+        <ul className="grid grid-cols-2 gap-3 md:gap-4 lg:grid-cols-3">
+          {tiles.map(({ ind, last, values, color }) => (
+            <li key={ind.id}>
+              <Link href={`/observatorio?i=${ind.id}`} className="lift card flex h-full flex-col p-4 md:p-5">
+                <p className="text-sm font-extrabold text-ink-2">{ind.short}</p>
+                <p className="mt-2 flex items-baseline gap-1.5">
+                  {last ? <CountUp value={last.value} decimals={ind.decimals} className="num text-[2.3rem] md:text-[3.4rem]" /> : "—"}
+                  <span className="text-sm font-extrabold text-ink-3 md:text-lg">{ind.unitShort}</span>
+                </p>
+                <div className="mt-3 h-14">
+                  <DrawSpark values={values} color={color} />
+                </div>
+                <p className="mt-3 text-xs font-semibold text-ink-3">
+                  {last ? formatPeriod(last.period) : ""} · {ind.provider}
+                </p>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* ÚLTIMAS VOTACIONES */}
+      {lastVotes.length > 0 && (
+        <section className="mx-auto max-w-[1320px] px-4 pt-14 md:px-8" aria-labelledby="ultima">
+          <h2 id="ultima" className="display mb-6 text-[2.4rem] md:text-6xl">
+            Lo último en el Congreso
+          </h2>
+          <ul className="grid grid-cols-1 gap-4 md:grid-cols-2">
+            {lastVotes.map((v) => {
               const total = v.totals.si + v.totals.no + v.totals.abst || 1;
               return (
-                <li key={v.id} className="border-t-2 border-ink pt-4">
-                  <p className="text-sm text-ink-3">Convalidación o derogación de real decreto-ley · votación pública por llamamiento</p>
-                  <Link href={`/votaciones/${v.id}`} className="mt-2 block text-lg leading-snug hover:underline">
-                    {v.title}
+                <li key={v.id}>
+                  <Link href={`/votaciones/${v.id}`} className="lift card block p-6">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="tag">
+                        <TopicIcon id="vivienda" size={14} /> Decreto-ley · {formatDate(v.date)}
+                      </span>
+                      <span className="rounded-full px-3 py-1 text-sm font-extrabold text-white" style={{ background: v.result === "rechazada" ? "var(--no)" : "var(--yes)" }}>
+                        {v.result === "rechazada" ? "Derogado" : "Convalidado"}
+                      </span>
+                    </div>
+                    <p className="mt-3 line-clamp-2 text-lg font-bold leading-snug">{v.title.replace(/, por el que.*$/, "")}</p>
+                    <div className="mt-4 flex h-4 overflow-hidden rounded-full" aria-hidden>
+                      <span style={{ width: `${(v.totals.si / total) * 100}%`, background: "var(--yes)" }} />
+                      <span style={{ width: `${(v.totals.no / total) * 100}%`, background: "var(--no)" }} />
+                    </div>
+                    <p className="mt-2 flex gap-4 text-sm font-bold">
+                      <span>
+                        <span className="num text-2xl">{v.totals.si}</span> sí
+                      </span>
+                      <span>
+                        <span className="num text-2xl">{v.totals.no}</span> no
+                      </span>
+                    </p>
                   </Link>
-                  <div className="mt-4 flex h-3 overflow-hidden rounded-sm" aria-hidden>
-                    <span style={{ width: `${(v.totals.si / total) * 100}%`, background: "var(--yes)" }} />
-                    <span style={{ width: `${(v.totals.no / total) * 100}%`, background: "var(--no)" }} />
-                    <span style={{ width: `${(v.totals.abst / total) * 100}%`, background: "var(--abs)" }} />
-                  </div>
-                  <p className="mt-2 font-mono text-sm">
-                    Sí {v.totals.si} · No {v.totals.no} · Abst. {v.totals.abst} — <strong>{v.result === "rechazada" ? "Derogado" : "Convalidado"}</strong>
-                  </p>
                 </li>
               );
             })}
           </ul>
-          <p className="mt-4 max-w-2xl text-sm text-ink-2">
-            Al no convalidarse, ambos decretos-leyes quedaron derogados. El 6 de octubre el BOE publicó el Real Decreto 806/2026 de disolución de las
-            Cortes. Aquí solo se muestran los resultados oficiales, sin atribuir causas.
-          </p>
         </section>
       )}
-
-      {/* CÓMO LEER */}
-      <section className="mx-auto max-w-[1320px] px-4 pb-8 md:px-8" aria-labelledby="leer">
-        <div className="double-rule pt-8">
-          <h2 id="leer" className="display text-3xl">
-            Cuatro tipos de información, siempre separados
-          </h2>
-          <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              ["Situación real", "Estadísticas oficiales con unidad, periodo y fuente."],
-              ["Decisiones históricas", "Leyes, decretos y votaciones registradas en el Congreso y el BOE."],
-              ["Propuestas", "Lo que plantea cada partido, con cita literal, documento y página."],
-              ["Estimaciones", "Escenarios hipotéticos. Esta versión no incluye ninguno: no se publican cálculos sin una metodología completa."],
-            ].map(([t, d], i) => (
-              <li key={t}>
-                <p className="font-mono text-xs text-accent">0{i + 1}</p>
-                <p className="mt-1 text-lg font-semibold">{t}</p>
-                <p className="mt-1 text-sm text-ink-2">{d}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
     </>
   );
 }

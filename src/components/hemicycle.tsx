@@ -4,6 +4,7 @@ import { asset } from "@/lib/asset";
 import { useEffect, useMemo, useState } from "react";
 import { hemicycleSeats } from "@/lib/hemicycle";
 import { GROUP_LABELS, VOTE_COLORS, VOTE_LABELS } from "@/lib/groups";
+import { GROUP_COLORS } from "@/lib/party-theme";
 import { normalize } from "@/lib/search";
 
 type Code = keyof typeof VOTE_LABELS;
@@ -23,7 +24,9 @@ export function decodeVote(enc: string, deputies: string[], groups: string[]): R
 export function Hemicycle({ session, number, title }: { session: number; number: number; title: string }) {
   const [rows, setRows] = useState<Row[] | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [tilt, setTilt] = useState(false);
+  const [tilt, setTilt] = useState(0);
+  const [zoom, setZoom] = useState(1);
+  const [colorBy, setColorBy] = useState<"voto" | "grupo">("voto");
   const [hover, setHover] = useState<number | null>(null);
   const [focusGroup, setFocusGroup] = useState<string | null>(null);
   const [q, setQ] = useState("");
@@ -80,22 +83,33 @@ export function Hemicycle({ session, number, title }: { session: number; number:
             </li>
           ))}
         </ul>
-        <label className="flex items-center gap-2 text-sm">
-          <input type="checkbox" checked={tilt} onChange={(e) => setTilt(e.target.checked)} className="accent-[var(--accent)]" />
-          Vista inclinada (3D)
-        </label>
+        <div className="flex flex-wrap items-center gap-2 text-sm font-bold">
+          <span role="radiogroup" aria-label="Colorear por" className="flex rounded-full bg-surface p-1 shadow-[inset_0_0_0_1.5px_var(--line)]">
+            {(["voto", "grupo"] as const).map((c) => (
+              <button key={c} role="radio" aria-checked={colorBy === c} onClick={() => setColorBy(c)} className={`rounded-full px-3 py-1.5 ${colorBy === c ? "bg-ink text-bg" : ""}`}>
+                {c === "voto" ? "Por voto" : "Por grupo"}
+              </button>
+            ))}
+          </span>
+          <label className="flex items-center gap-2">
+            Inclinar
+            <input type="range" min={0} max={60} value={tilt} onChange={(e) => setTilt(Number(e.target.value))} className="w-24" style={{ accentColor: "var(--ink)" }} />
+          </label>
+          <button type="button" className="chip !min-h-[36px]" onClick={() => setZoom((z) => Math.min(1.8, z + 0.2))} aria-label="Ampliar">+</button>
+          <button type="button" className="chip !min-h-[36px]" onClick={() => setZoom((z) => Math.max(0.8, z - 0.2))} aria-label="Reducir">−</button>
+        </div>
       </div>
 
       <div className="relative mt-4" style={{ perspective: "1100px" }}>
         <svg
           viewBox={`0 0 ${W} ${H}`}
           className="mx-auto w-full max-w-[760px] transition-transform duration-700 [transform-style:preserve-3d] motion-reduce:transition-none"
-          style={{ transform: tilt ? "rotateX(48deg) translateY(-4%)" : "none", transformOrigin: "50% 100%" }}
+          style={{ transform: `rotateX(${tilt}deg) scale(${zoom})`, transformOrigin: "50% 100%" }}
           role="img"
           aria-label={`Hemiciclo de la votación «${title}». ${rows.filter((r) => r.vote === "S").length} sí, ${rows.filter((r) => r.vote === "N").length} no, ${rows.filter((r) => r.vote === "A").length} abstenciones. El detalle por diputado está en la lista inferior.`}
           onMouseLeave={() => setHover(null)}
         >
-          {tilt && <ellipse cx={W / 2} cy={H - 6} rx={scale + 14} ry="10" fill="var(--ink)" opacity="0.07" />}
+          {tilt > 0 && <ellipse cx={W / 2} cy={H - 6} rx={scale + 14} ry="10" fill="var(--ink)" opacity="0.07" />}
           {seats.map((s, i) => {
             const d = ordered[i];
             const dim = (focusGroup && d.group !== focusGroup) || (nq && !normalize(d.name).includes(nq));
@@ -103,13 +117,13 @@ export function Hemicycle({ session, number, title }: { session: number; number:
             const cy = H - 12 - s.y * scale;
             return (
               <g key={i} style={{ opacity: dim ? 0.15 : 1, transition: "opacity .25s" }}>
-                {tilt && <circle cx={cx} cy={cy + 2.2} r={rSeat} fill="var(--ink)" opacity="0.18" />}
+                {tilt > 0 && <circle cx={cx} cy={cy + 2.2} r={rSeat} fill="var(--ink)" opacity="0.18" />}
                 <circle
                   cx={cx}
                   cy={cy}
                   r={rSeat}
-                  fill={VOTE_COLORS[d.vote]}
-                  stroke={d.vote === "X" ? "var(--ink-3)" : hover === i ? "var(--ink)" : "var(--paper)"}
+                  fill={colorBy === "grupo" ? (d.vote === "X" ? "transparent" : GROUP_COLORS[d.group] ?? "#9aa1b8") : VOTE_COLORS[d.vote]}
+                  stroke={d.vote === "X" ? (colorBy === "grupo" ? GROUP_COLORS[d.group] ?? "var(--ink-3)" : "var(--ink-3)") : hover === i ? "var(--ink)" : "var(--paper)"}
                   strokeWidth={d.vote === "X" ? 1 : hover === i ? 1.6 : 0.6}
                   onMouseEnter={() => setHover(i)}
                   onClick={() => setHover(i)}
@@ -174,6 +188,7 @@ export function Hemicycle({ session, number, title }: { session: number; number:
                 <tr key={g} className={`border-t border-rule ${focusGroup === g ? "bg-paper-2" : ""}`} onMouseEnter={() => setFocusGroup(g)} onMouseLeave={() => setFocusGroup(null)}>
                   <th scope="row" className="py-2 text-left font-normal">
                     <button className="text-left hover:underline" onClick={() => setFocusGroup((f) => (f === g ? null : g))} aria-pressed={focusGroup === g}>
+                      <span className="mr-2 inline-block h-3 w-3 rounded-full align-middle" style={{ background: GROUP_COLORS[g] ?? "#9aa1b8" }} aria-hidden />
                       {GROUP_LABELS[g] ?? g}
                     </button>
                     {divided && <span className="cite-chip ml-2 border-accent text-accent">voto dividido</span>}

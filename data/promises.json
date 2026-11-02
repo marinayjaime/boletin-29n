@@ -59,7 +59,8 @@
       "limits": "Se evalúa la existencia de la norma, no si la subida compensó la inflación de cada pensionista. La revalorización es una decisión del Gobierno de coalición, no exclusiva del PSOE, y se apoya en la Ley 21/2021, aprobada en la legislatura anterior.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "series": "psoe-2023-otros"
   },
   {
     "id": "sumar-2023-jornada-37-5",
@@ -164,7 +165,8 @@
       "limits": "No es suficiente para afirmar el incumplimiento: algunas leyes se aprueban en comisión con competencia legislativa plena o incluyen esta materia en normas con otro título. Queda pendiente una revisión del BOE.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
-    }
+    },
+    "series": "psoe-2023-otros"
   },
   {
     "id": "pp-2023-ley-urbanismo",
@@ -231,6 +233,672 @@
       ],
       "outcome": "La primera parte se cumplió con la Ley 21/2021. No consta una reforma constitucional con ese contenido.",
       "limits": "La ley se aprobó con un Gobierno de coalición y con apoyos de otros grupos: no es atribuible solo a Podemos. La ausencia de la reforma constitucional se comprueba con el texto vigente de la Constitución.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-reglas-fiscales-ue",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "economia",
+    "promise": "Impulsar una reforma de las reglas fiscales europeas.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 34,
+      "quote": "Impulsaremos una reforma de las reglas fiscales europeas que permita conjugar la estabilidad presupuestaria a lo largo del ciclo y la consolidación de la deuda pública con el crecimiento económico, la creación de empleo y la agenda de inversiones sociales, verdes y digitales."
+    },
+    "series": "psoe-2023-legislativas",
+    "assessment": {
+      "status": "no_verificable",
+      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
+      "officialActions": [],
+      "outcome": "La reforma de las reglas fiscales es una decisión de la Unión Europea; las fuentes nacionales revisadas no permiten atribuir el resultado.",
+      "limits": "Compromiso de ámbito europeo: queda fuera del criterio (leyes publicadas en el BOE).",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-reforma-omc",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "ue-exterior",
+    "promise": "Impulsar la reforma de la Organización Mundial del Comercio.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 36,
+      "quote": "Impulsaremos la reforma de la Organización Mundial del Comercio (OMC) para recuperar un sistema multilateral en las relaciones comerciales internacionales."
+    },
+    "series": "psoe-2023-legislativas",
+    "assessment": {
+      "status": "no_verificable",
+      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
+      "officialActions": [],
+      "outcome": "Compromiso de ámbito internacional sin indicador verificable con las fuentes revisadas.",
+      "limits": "Fuera del criterio de leyes publicadas en el BOE.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-economia-social",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "economia",
+    "promise": "Aprobar la Ley Integral de Impulso de la Economía Social.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 40,
+      "quote": "Aprobaremos la Ley Integral de Impulso de la Economía Social, a través del dialogo con las entidades representativas de las familias de la economía social, para la modernización y adecuación de las leyes 5/2011 de economía social, 27/1999 de cooperativas, 44/2007 de empresas de inserción y 44/2015, "
+    },
+    "series": "psoe-2023-legislativas",
+    "assessment": {
+      "status": "cumplido",
+      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
+      "officialActions": [
+        {
+          "date": "2025-03-13",
+          "text": "El Congreso rechaza la enmienda a la totalidad al Proyecto de Ley integral de impulso de la economía social (33 sí, 175 no).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=13/03/2025"
+        },
+        {
+          "date": "2026-04-09",
+          "text": "BOE publica la Ley 1/2026, de 8 de abril, integral de impulso de la economía social.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-7967"
+        }
+      ],
+      "outcome": "Ley publicada en el BOE.",
+      "limits": "Se evalúa la aprobación de la ley, no su contenido detallado ni sus efectos.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-sociedades-laborales",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "economia",
+    "promise": "Impulsar una nueva Ley de Sociedades Laborales.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 40,
+      "quote": "Impulsaremos una nueva Ley de Sociedades Laborales con el objetivo de facilitar el emprendimiento colectivo a las nuevas situaciones del tejido productivo y posibilitar así que este modelo empresarial refuerce su atractivo económico y sea un instrumento eficaz para la transmisión de empresas mercant"
+    },
+    "series": "psoe-2023-legislativas",
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
+      "officialActions": [],
+      "outcome": "En el registro de normas con rango de ley publicadas en el BOE entre noviembre de 2023 y octubre de 2026 no figura ninguna ley estatal con este objeto.",
+      "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-agricultura-familiar",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "economia",
+    "promise": "Impulsar una Ley de Agricultura Familiar.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 69,
+      "quote": "Impulsaremos una Ley de Agricultura Familiar que favorezca y priorice este tipo de agricultura que genera mayor valor social y vinculación con el territorio."
+    },
+    "series": "psoe-2023-legislativas",
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
+      "officialActions": [],
+      "outcome": "En el registro de normas con rango de ley publicadas en el BOE entre noviembre de 2023 y octubre de 2026 no figura ninguna ley estatal con este objeto.",
+      "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-zonas-renovables",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "energia",
+    "promise": "Aprobar una ley para identificar áreas idóneas para renovables.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 74,
+      "quote": "Aprobaremos una ley para identificar, junto a las comunidades autónomas y las entidades locales, las áreas idóneas para el desarrollo de renovables y facilitar el acceso de los beneficios a las comunidades locales, garantizando el respeto al medio ambiente."
+    },
+    "series": "psoe-2023-legislativas",
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
+      "officialActions": [],
+      "outcome": "En el registro de normas con rango de ley publicadas en el BOE entre noviembre de 2023 y octubre de 2026 no figura ninguna ley estatal con este objeto.",
+      "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-ley-aguas",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "medio-ambiente",
+    "promise": "Reformar la Ley de Aguas para blindar el derecho de acceso al agua.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 91,
+      "quote": "Reformaremos la Ley de Aguas, para blindar el derecho ciudadano de acceso al agua."
+    },
+    "series": "psoe-2023-legislativas",
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
+      "officialActions": [],
+      "outcome": "En el registro de leyes del BOE de la legislatura no figura ninguna ley estatal cuyo título reforme la Ley de Aguas.",
+      "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-paridad",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "igualdad",
+    "promise": "Aprobar la Ley Orgánica de Representación Paritaria.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 146,
+      "quote": "Impulsaremos la aprobación de la Ley Orgánica de Representación Paritaria de Mujeres y Hombres en los Órganos de Decisión, que garantizará la igualdad efectiva en la toma de decisiones política, de la administración y de las empresas."
+    },
+    "series": "psoe-2023-legislativas",
+    "assessment": {
+      "status": "cumplido",
+      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
+      "officialActions": [
+        {
+          "date": "2024-02-22",
+          "text": "El Congreso rechaza la enmienda a la totalidad al proyecto (32 sí, 310 no).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=22/02/2024"
+        },
+        {
+          "date": "2024-07-23",
+          "text": "Votación de conjunto final en el Congreso (178 sí, 171 no).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=23/07/2024"
+        },
+        {
+          "date": "2024-08-02",
+          "text": "BOE publica la Ley Orgánica 2/2024, de representación paritaria.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-15936"
+        }
+      ],
+      "outcome": "Ley orgánica publicada en el BOE.",
+      "limits": "Se evalúa la aprobación de la ley, no su aplicación.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-donantes-vivos",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "sanidad",
+    "promise": "Impulsar una Ley de donantes vivos.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 201,
+      "quote": "Impulsaremos en el Congreso de los Diputados una Ley de donantes vivos."
+    },
+    "series": "psoe-2023-legislativas",
+    "assessment": {
+      "status": "cumplido",
+      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
+      "officialActions": [
+        {
+          "date": "2024-05-28",
+          "text": "El Congreso toma en consideración la proposición de ley socialista (340 sí, 0 no).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=28/05/2024"
+        },
+        {
+          "date": "2024-12-21",
+          "text": "BOE publica la Ley 6/2024, para la mejora de la protección de las personas donantes en vivo.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-26693"
+        }
+      ],
+      "outcome": "Ley publicada en el BOE.",
+      "limits": "Se evalúa la aprobación de la ley.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-politica-farmaceutica",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "sanidad",
+    "promise": "Promover una nueva ley de política farmacéutica.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 204,
+      "quote": "Promoveremos una ley que permita adecuar la normativa a las necesidades y desafíos actuales y futuros en política farmacéutica del SNS, en el marco de la Estrategia Farmacéutica Europea."
+    },
+    "series": "psoe-2023-legislativas",
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
+      "officialActions": [
+        {
+          "date": "2026-05-13",
+          "text": "BOE publica el Real Decreto-ley 11/2026, que modifica la aportación de los usuarios en la prestación farmacéutica ambulatoria (cambio parcial, no la ley anunciada).",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-10324"
+        },
+        {
+          "date": "2026-05-28",
+          "text": "El Congreso convalida el Real Decreto-ley 11/2026.",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=28/05/2026"
+        }
+      ],
+      "outcome": "No consta una nueva ley de política farmacéutica; solo una modificación parcial del copago farmacéutico mediante decreto-ley.",
+      "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-cliente-financiero",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "economia",
+    "promise": "Aprobar la ley de la Autoridad de Protección del Cliente Financiero.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 210,
+      "quote": "Aprobaremos definitivamente la ley de creación de la Autoridad de Protección del Cliente Financiero, también decaída como consecuencia del adelanto electoral, cuyas resoluciones serán de obligado cumplimiento para las entidades financieras, y que garantizará la inclusión financiera a través de la at"
+    },
+    "series": "psoe-2023-legislativas",
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
+      "officialActions": [
+        {
+          "date": "2024-11-21",
+          "text": "El Congreso rechaza la enmienda a la totalidad al proyecto de Autoridad de Defensa del Cliente Financiero (170 sí, 178 no) y sigue su tramitación.",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=21/11/2024"
+        }
+      ],
+      "outcome": "El proyecto superó el debate de totalidad, pero no consta ley publicada en el BOE antes de la disolución.",
+      "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-atencion-clientela",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "economia",
+    "promise": "Aprobar una ley de servicios de atención a la clientela.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 210,
+      "quote": "Aprobaremos una ley que regule los servicios de atención a la clientela."
+    },
+    "series": "psoe-2023-legislativas",
+    "assessment": {
+      "status": "cumplido",
+      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
+      "officialActions": [
+        {
+          "date": "2025-11-13",
+          "text": "El Congreso aprueba el dictamen del proyecto de ley (179 sí, 33 no).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=13/11/2025"
+        },
+        {
+          "date": "2025-12-27",
+          "text": "BOE publica la Ley 10/2025, por la que se regulan los servicios de atención a la clientela.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26698"
+        }
+      ],
+      "outcome": "Ley publicada en el BOE.",
+      "limits": "Se evalúa la aprobación de la ley.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-calidad-arquitectura",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "vivienda",
+    "promise": "Desarrollar la Ley de Calidad de la Arquitectura.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 224,
+      "quote": "Impulsaremos el desarrollo de la Ley 9/2022, de 14 de junio, de Calidad de la Arquitectura, alineada con la estrategia a largo plazo del gobierno y la propuesta /218 MADRID 7 DE JULIO 2023"
+    },
+    "series": "psoe-2023-legislativas",
+    "assessment": {
+      "status": "no_verificable",
+      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
+      "officialActions": [],
+      "outcome": "El desarrollo de una ley se hace sobre todo mediante normas reglamentarias y planes, que no forman parte del registro revisado.",
+      "limits": "Fuera del criterio (no exige una nueva ley).",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-cohesion-territorial",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "territorial",
+    "promise": "Aprobar una Ley de Cohesión Territorial.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 231,
+      "quote": "Aprobaremos una Ley de Cohesión Territorial y fomento de la colaboración que permita poner en práctica las lecciones aprendidas durante la pandemia y cubrir algunas deficiencias advertidas."
+    },
+    "series": "psoe-2023-legislativas",
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
+      "officialActions": [],
+      "outcome": "En el registro de normas con rango de ley publicadas en el BOE entre noviembre de 2023 y octubre de 2026 no figura ninguna ley estatal con este objeto.",
+      "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-funcion-publica",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "justicia",
+    "promise": "Aprobar la Ley de Función Pública de la Administración del Estado.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 242,
+      "quote": "Aprobaremos la Ley de Función Pública de la Administración del Estado, ya acordada con los sindicatos, que reforzará el papel de liderazgo de la Administración ante los retos de la sociedad, profundizando en la modernización de los servicios públicos e implantando un modelo de recursos humanos basad"
+    },
+    "series": "psoe-2023-legislativas",
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
+      "officialActions": [
+        {
+          "date": "2025-03-13",
+          "text": "El Pleno avoca la deliberación final del proyecto de ley de Función Pública (expediente 121/000031).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=13/03/2025"
+        }
+      ],
+      "outcome": "No consta ley estatal de Función Pública de la Administración del Estado publicada en el BOE antes de la disolución.",
+      "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-lobbies",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "justicia",
+    "promise": "Aprobar una Ley de Lobbies (grupos de interés).",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 243,
+      "quote": "Aprobaremos la Ley de Lobbies para dar transparencia a las actividades de los grupos de interés, creando un registro público y gratuito que permita monitorizar las actividades de influencia que se ejercen sobre el personal empleado público."
+    },
+    "series": "psoe-2023-legislativas",
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
+      "officialActions": [
+        {
+          "date": "2025-03-25",
+          "text": "El Congreso rechaza la enmienda a la totalidad al Proyecto de Ley de transparencia e integridad de los grupos de interés (32 sí, 177 no).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=25/03/2025"
+        },
+        {
+          "date": "2026-08-26",
+          "text": "BOE publica el Real Decreto-ley 21/2026, de transparencia e integridad de las actividades de los grupos de interés.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-18148"
+        },
+        {
+          "date": "2026-09-16",
+          "text": "El Congreso no convalida el Real Decreto-ley 21/2026 (155 sí, 179 no): queda derogado.",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=16/09/2026"
+        }
+      ],
+      "outcome": "La regulación llegó a estar en vigor por decreto-ley, pero el Congreso lo derogó y no hay ley en vigor al cierre del periodo.",
+      "limits": "El decreto-ley estuvo vigente entre agosto y septiembre de 2026.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-incompatibilidades",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "justicia",
+    "promise": "Aprobar una ley de incompatibilidades del personal del sector público.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 243,
+      "quote": "Aprobaremos una Ley que regule el sistema de incompatibilidades del personal al servicio del sector público para evitar los conflictos de intereses y la práctica de puertas giratorias."
+    },
+    "series": "psoe-2023-legislativas",
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
+      "officialActions": [],
+      "outcome": "En el registro de normas con rango de ley publicadas en el BOE entre noviembre de 2023 y octubre de 2026 no figura ninguna ley estatal con este objeto.",
+      "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-derecho-defensa",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "justicia",
+    "promise": "Aprobar la Ley de Derecho de Defensa.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 248,
+      "quote": "Promoveremos la aprobación inmediata de la Ley de Derecho de Defensa."
+    },
+    "series": "psoe-2023-legislativas",
+    "assessment": {
+      "status": "cumplido",
+      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
+      "officialActions": [
+        {
+          "date": "2024-07-11",
+          "text": "Votación de conjunto en el Congreso (178 sí, 0 no).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=11/07/2024"
+        },
+        {
+          "date": "2024-11-14",
+          "text": "BOE publica la Ley Orgánica 5/2024, del Derecho de Defensa.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-23630"
+        }
+      ],
+      "outcome": "Ley orgánica publicada en el BOE.",
+      "limits": "Se evalúa la aprobación de la ley.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-lecrim",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "justicia",
+    "promise": "Reformar de forma integral la Ley de Enjuiciamiento Criminal.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 250,
+      "quote": "Promoveremos la reforma integral de la Ley de Enjuiciamiento Criminal, modernizando y haciendo más garantista y ágil el proceso penal y los procedimientos de investigación."
+    },
+    "series": "psoe-2023-legislativas",
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
+      "officialActions": [],
+      "outcome": "No consta en el BOE una reforma integral de la Ley de Enjuiciamiento Criminal en la legislatura.",
+      "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-equipos-investigacion",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "seguridad",
+    "promise": "Aprobar la ley de Equipos Conjuntos de Investigación y agentes encubiertos.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 251,
+      "quote": "Promoveremos la aprobación urgente de la ley de Equipos Conjuntos de Investigación y Agentes encubiertos para una mayor eficacia de la investigación de asesinatos y desapariciones (particularmente de niños y niñas)."
+    },
+    "series": "psoe-2023-legislativas",
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
+      "officialActions": [],
+      "outcome": "En el registro de normas con rango de ley publicadas en el BOE entre noviembre de 2023 y octubre de 2026 no figura ninguna ley estatal con este objeto.",
+      "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-ley-nacionalidad-exterior",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "ue-exterior",
+    "promise": "Aprobar una Ley de Nacionalidad para la ciudadanía en el exterior.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 267,
+      "quote": "Promoveremos la aprobación de una Ley de Nacionalidad que regule los derechos de ciudadanía de los españoles y españolas en el exterior, tal como plantea el Consejo de Residentes Españoles en el Exterior – CRE."
+    },
+    "series": "psoe-2023-legislativas",
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
+      "officialActions": [],
+      "outcome": "En el registro de normas con rango de ley publicadas en el BOE entre noviembre de 2023 y octubre de 2026 no figura ninguna ley estatal con este objeto.",
+      "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
     }

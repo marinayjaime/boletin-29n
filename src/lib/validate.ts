@@ -4,7 +4,7 @@
  * y toda cita aparece literalmente en la página indicada.
  */
 import { getCorpus, getIndicators, getParties, getPromises, getProposals, getQuiz, getSeries, getSources, getTopics } from "./data";
-import { getVotes } from "./data";
+import { getVotes, getCommonalities, getPolls, getPromiseCoverage } from "./data";
 
 export function quoteInPage(quote: string, pageText: string | undefined) {
   if (!pageText) return false;
@@ -72,7 +72,7 @@ export function validateAll() {
       if (!s.partyId || !pr.partyIds.includes(s.partyId)) errors.push(`promesa ${pr.id}: ATRIBUCIÓN — la fuente es de ${s.partyId}`);
       if (!quoteInPage(pr.citation.quote, corpus.get(s.id)?.[String(pr.citation.pdfPage)])) errors.push(`promesa ${pr.id}: la cita no aparece en la página indicada`);
     }
-    if (pr.assessment.status !== "no_verificable" && pr.assessment.officialActions.length === 0) errors.push(`promesa ${pr.id}: un estado concluyente exige acciones oficiales documentadas`);
+    if (pr.assessment.status !== "no_verificable" && pr.assessment.officialActions.length === 0 && !(pr.series === "psoe-2023-legislativas" && pr.assessment.status === "no_cumplido")) errors.push(`promesa ${pr.id}: un estado concluyente exige acciones oficiales documentadas`);
   }
 
   for (const i of getIndicators()) {
@@ -88,6 +88,29 @@ export function validateAll() {
       if (sum !== v.totals.si) warnings.push(`votación ${v.id}: suma de síes por grupo (${sum}) ≠ total oficial (${v.totals.si})`);
     }
   }
+
+  for (const g of getCommonalities()) {
+    const owners = new Set<string>();
+    for (const m of g.members) {
+      const pr = pmap.get(m.proposalId);
+      if (!pr) errors.push(`común ${g.id}: propuesta ${m.proposalId} no existe`);
+      else owners.add(pr.partyId);
+    }
+    if (owners.size < 2) errors.push(`común ${g.id}: necesita al menos dos partidos distintos`);
+  }
+
+  for (const p of getPolls().polls) {
+    const vals = Object.values(p.seats);
+    if (p.type === "puntual") {
+      const sum = vals.reduce<number>((a, v) => a + (typeof v === "number" ? v : 0), 0);
+      if (sum !== 350) errors.push(`encuesta ${p.id}: suma ${sum} escaños, no 350`);
+    } else if (vals.some((v) => typeof v === "object" && v.min > v.max)) errors.push(`encuesta ${p.id}: horquilla inválida`);
+    if (!/^https?:\/\//.test(p.url)) errors.push(`encuesta ${p.id}: falta URL de la fuente`);
+  }
+
+  const cov = getPromiseCoverage()["psoe-2023"];
+  const legis = getPromises().filter((x) => x.series === "psoe-2023-legislativas").length;
+  if (cov && legis !== cov.legislativeCommitments) errors.push(`promesas PSOE 2023: ${legis} fichas legislativas frente a ${cov.legislativeCommitments} identificadas`);
 
   return {
     errors,

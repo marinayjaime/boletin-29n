@@ -1,0 +1,439 @@
+[
+  {
+    "id": "cc-01",
+    "topicId": "vivienda",
+    "kind": "equivalente",
+    "title": "Derogar la Ley de Vivienda",
+    "shared": "Proponen derogar la Ley 12/2023.",
+    "members": [
+      {
+        "proposalId": "pp-vivienda-02"
+      },
+      {
+        "proposalId": "vox-vivienda-05"
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  },
+  {
+    "id": "cc-02",
+    "topicId": "vivienda",
+    "kind": "parcial",
+    "title": "Avales públicos para la hipoteca de jóvenes",
+    "shared": "Un aval público para que los jóvenes accedan a una hipoteca.",
+    "members": [
+      {
+        "proposalId": "pp-vivienda-03",
+        "difference": "Hasta 35 años; financiación de hasta el 95 % del precio."
+      },
+      {
+        "proposalId": "psoe-vivienda-03",
+        "difference": "Línea ICO de 2.500 millones; aval del 20 % de la hipoteca, menores de 35 años."
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  },
+  {
+    "id": "cc-03",
+    "topicId": "vivienda",
+    "kind": "objetivo",
+    "title": "Más vivienda pública o social",
+    "shared": "Aumentar la vivienda pública, social o protegida.",
+    "members": [
+      {
+        "proposalId": "psoe-vivienda-01",
+        "difference": "Objetivo: 20 % de vivienda pública en alquiler."
+      },
+      {
+        "proposalId": "frente-amplio-vivienda-01",
+        "difference": "1 % del PIB al año durante diez años; más de 2 millones de viviendas."
+      },
+      {
+        "proposalId": "podemos-vivienda-02",
+        "difference": "50.000 viviendas al año mediante cesión obligatoria de vivienda vacía de grandes tenedores."
+      },
+      {
+        "proposalId": "vox-vivienda-03",
+        "difference": "Vivienda social en propiedad o alquiler con opción a compra."
+      },
+      {
+        "proposalId": "pp-vivienda-05",
+        "difference": "Movilizar suelo público para alquiler asequible."
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  },
+  {
+    "id": "cc-04",
+    "topicId": "vivienda",
+    "kind": "objetivo",
+    "title": "Limitar o regular los pisos turísticos",
+    "shared": "Actuar sobre la proliferación de viviendas turísticas.",
+    "members": [
+      {
+        "proposalId": "frente-amplio-vivienda-04",
+        "difference": "Limitar el alquiler turístico, de temporada y por habitaciones."
+      },
+      {
+        "proposalId": "podemos-vivienda-05",
+        "difference": "Estudiar un porcentaje máximo por barrio."
+      },
+      {
+        "proposalId": "vox-vivienda-08",
+        "difference": "Homogeneizar la normativa turística en toda España."
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  },
+  {
+    "id": "cc-05",
+    "topicId": "vivienda",
+    "kind": "objetivo",
+    "title": "Actuar contra la ocupación ilegal",
+    "shared": "Combatir la ocupación ilegal de viviendas.",
+    "members": [
+      {
+        "proposalId": "pp-vivienda-06",
+        "difference": "Desalojos en un máximo de 24 horas."
+      },
+      {
+        "proposalId": "vox-vivienda-01",
+        "difference": "Reforma penal y procesal, exención del IBI."
+      },
+      {
+        "proposalId": "psoe-vivienda-07",
+        "difference": "Combatir especialmente a las mafias."
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  },
+  {
+    "id": "cc-06",
+    "topicId": "energia",
+    "kind": "equivalente",
+    "title": "Alargar la vida de las nucleares",
+    "shared": "Extender la vida útil de las centrales nucleares existentes.",
+    "members": [
+      {
+        "proposalId": "pp-energia-01",
+        "difference": "Con el visto bueno del Consejo de Seguridad Nuclear."
+      },
+      {
+        "proposalId": "vox-energia-01",
+        "difference": "Además, minirreactores (SMR) en emplazamientos cerrados."
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  },
+  {
+    "id": "cc-07",
+    "topicId": "educacion",
+    "kind": "equivalente",
+    "title": "Educación de 0 a 3 años gratuita",
+    "shared": "Educación infantil de 0 a 3 años universal o gratuita.",
+    "members": [
+      {
+        "proposalId": "pp-educacion-01",
+        "difference": "Cofinanciada por Estado y comunidades autónomas."
+      },
+      {
+        "proposalId": "podemos-educacion-01",
+        "difference": "Universal, pública y gratuita."
+      },
+      {
+        "proposalId": "frente-amplio-educacion-01",
+        "difference": "Oferta suficiente con plazas gratuitas."
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  },
+  {
+    "id": "cc-08",
+    "topicId": "educacion",
+    "kind": "parcial",
+    "title": "Ampliar la red de 0 a 3 años",
+    "shared": "Más plazas de 0 a 3 años.",
+    "members": [
+      {
+        "proposalId": "psoe-educacion-01",
+        "difference": "Seguir ampliando la red pública, sin mencionar gratuidad."
+      },
+      {
+        "proposalId": "pp-educacion-01",
+        "difference": "Universal y gratuita."
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  },
+  {
+    "id": "cc-09",
+    "topicId": "sanidad",
+    "kind": "equivalente",
+    "title": "Tiempos máximos de espera por ley",
+    "shared": "Fijar por ley tiempos máximos de espera en la sanidad pública.",
+    "members": [
+      {
+        "proposalId": "psoe-sanidad-01",
+        "difference": "Cifra los plazos: 120, 60 y 30 días."
+      },
+      {
+        "proposalId": "frente-amplio-sanidad-01",
+        "difference": "Añade un registro homogéneo de listas de espera."
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  },
+  {
+    "id": "cc-10",
+    "topicId": "sanidad",
+    "kind": "objetivo",
+    "title": "Reducir las listas de espera",
+    "shared": "Reducir las listas de espera.",
+    "members": [
+      {
+        "proposalId": "psoe-sanidad-01",
+        "difference": "Mediante plazos máximos fijados por ley."
+      },
+      {
+        "proposalId": "frente-amplio-sanidad-01",
+        "difference": "Mediante una ley de listas de espera."
+      },
+      {
+        "proposalId": "vox-sanidad-01",
+        "difference": "Con incentivos y más conciertos con la sanidad privada."
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  },
+  {
+    "id": "cc-11",
+    "topicId": "sanidad",
+    "kind": "equivalente",
+    "title": "Dentista en la sanidad pública",
+    "shared": "Ampliar la cobertura bucodental pública.",
+    "members": [
+      {
+        "proposalId": "psoe-sanidad-02",
+        "difference": "Progresiva, empezando por mayores de 75 años."
+      },
+      {
+        "proposalId": "frente-amplio-sanidad-02",
+        "difference": "Junto a óptica, audioprótesis, psicoterapia y otras prestaciones."
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  },
+  {
+    "id": "cc-12",
+    "topicId": "sanidad",
+    "kind": "objetivo",
+    "title": "Reforzar la atención primaria",
+    "shared": "Más recursos para la atención primaria.",
+    "members": [
+      {
+        "proposalId": "pp-sanidad-01",
+        "difference": "Plan de choque por el déficit de especialistas."
+      },
+      {
+        "proposalId": "vox-sanidad-02",
+        "difference": "Más inversión, en especial en el medio rural."
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  },
+  {
+    "id": "cc-13",
+    "topicId": "pensiones",
+    "kind": "equivalente",
+    "title": "Pensiones ligadas al IPC por ley",
+    "shared": "Revalorizar las pensiones según el IPC por ley.",
+    "members": [
+      {
+        "proposalId": "frente-amplio-pensiones-01",
+        "difference": "Mantener la ley vigente y subir más las mínimas."
+      },
+      {
+        "proposalId": "podemos-pensiones-01",
+        "difference": "Además, incluirlo en la Constitución."
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  },
+  {
+    "id": "cc-14",
+    "topicId": "pensiones",
+    "kind": "equivalente",
+    "title": "Subir las pensiones mínimas",
+    "shared": "Aumentar las pensiones mínimas.",
+    "members": [
+      {
+        "proposalId": "psoe-pensiones-02"
+      },
+      {
+        "proposalId": "podemos-pensiones-02",
+        "difference": "Incluye las no contributivas."
+      },
+      {
+        "proposalId": "frente-amplio-pensiones-01",
+        "difference": "Por encima del IPC hasta el umbral de la pobreza."
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  },
+  {
+    "id": "cc-15",
+    "topicId": "pensiones",
+    "kind": "parcial",
+    "title": "Garantizar la revalorización",
+    "shared": "Garantizar que las pensiones se revaloricen.",
+    "members": [
+      {
+        "proposalId": "pp-pensiones-01",
+        "difference": "En el marco del Pacto de Toledo, sin fijar índice."
+      },
+      {
+        "proposalId": "psoe-pensiones-01",
+        "difference": "Sin fijar índice en la cita."
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  },
+  {
+    "id": "cc-16",
+    "topicId": "igualdad",
+    "kind": "equivalente",
+    "title": "Pacto de Estado contra la Violencia de Género",
+    "shared": "Mantener y reforzar el Pacto de Estado.",
+    "members": [
+      {
+        "proposalId": "pp-igualdad-01",
+        "difference": "Cumplirlo y actualizarlo."
+      },
+      {
+        "proposalId": "frente-amplio-igualdad-01",
+        "difference": "Blindarlo."
+      },
+      {
+        "proposalId": "psoe-igualdad-01",
+        "difference": "Defenderlo y renovarlo."
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  },
+  {
+    "id": "cc-17",
+    "topicId": "seguridad",
+    "kind": "equivalente",
+    "title": "Equiparación salarial de policías y guardias civiles",
+    "shared": "Equiparar salarios de los cuerpos de seguridad.",
+    "members": [
+      {
+        "proposalId": "pp-seguridad-01",
+        "difference": "Culminar el acuerdo de 2018."
+      },
+      {
+        "proposalId": "vox-seguridad-01",
+        "difference": "Incluye Fuerzas Armadas y policías autonómicas y locales."
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  },
+  {
+    "id": "cc-18",
+    "topicId": "medio-ambiente",
+    "kind": "equivalente",
+    "title": "Revisar el Pacto Verde Europeo",
+    "shared": "Revisar los objetivos o el calendario del Pacto Verde.",
+    "members": [
+      {
+        "proposalId": "pp-medio-ambiente-01",
+        "difference": "Flexibilizar el calendario."
+      },
+      {
+        "proposalId": "vox-medio-ambiente-02",
+        "difference": "Suspenderlo y revisarlo entero."
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  },
+  {
+    "id": "cc-19",
+    "topicId": "empleo",
+    "kind": "objetivo",
+    "title": "Reducir la jornada laboral",
+    "shared": "Trabajar menos horas sin perder salario.",
+    "members": [
+      {
+        "proposalId": "frente-amplio-empleo-01",
+        "difference": "37,5 horas por ley en 2024 y diálogo hacia 32."
+      },
+      {
+        "proposalId": "podemos-empleo-01",
+        "difference": "34 horas semanales."
+      },
+      {
+        "proposalId": "psoe-empleo-02",
+        "difference": "Proyecto piloto en empresas industriales."
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  },
+  {
+    "id": "cc-20",
+    "topicId": "familia",
+    "kind": "objetivo",
+    "title": "Más apoyo económico por hijos",
+    "shared": "Más ayudas económicas a la crianza.",
+    "members": [
+      {
+        "proposalId": "vox-familia-01",
+        "difference": "Deducción en el IRPF por nacimiento: de 1.200 € a 2.750 €."
+      },
+      {
+        "proposalId": "frente-amplio-familia-01",
+        "difference": "Prestación hasta los 18 años que unifica ayudas."
+      },
+      {
+        "proposalId": "psoe-familia-01",
+        "difference": "Universalizar la desgravación por hijo."
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  },
+  {
+    "id": "cc-21",
+    "topicId": "educacion",
+    "kind": "objetivo",
+    "title": "Mejorar las becas",
+    "shared": "Ampliar o mejorar el sistema de becas.",
+    "members": [
+      {
+        "proposalId": "pp-educacion-03",
+        "difference": "Sistema nacional de becas."
+      },
+      {
+        "proposalId": "vox-educacion-03",
+        "difference": "Becas universitarias y preuniversitarias."
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  },
+  {
+    "id": "cc-22",
+    "topicId": "fiscalidad",
+    "kind": "equivalente",
+    "title": "Impuesto a las grandes fortunas",
+    "shared": "Un impuesto específico sobre las grandes fortunas.",
+    "members": [
+      {
+        "proposalId": "frente-amplio-fiscalidad-01",
+        "difference": "Permanente, con tipos de al menos el 4 %."
+      },
+      {
+        "proposalId": "podemos-fiscalidad-eu02",
+        "difference": "En el ámbito europeo."
+      }
+    ],
+    "reviewedAt": "2026-11-02"
+  }
+]

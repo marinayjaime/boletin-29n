@@ -25,6 +25,10 @@ function collect(): { url: string; where: string }[] {
   for (const e of ev.events) out.push({ url: e.url, where: `acontecimiento ${e.label}` });
   for (const g of read("glossary.json")) if (g.sourceUrl) out.push({ url: g.sourceUrl, where: `glosario ${g.slug}` });
   for (const p of read("pending-indicators.json")) out.push({ url: p.url, where: `pendiente ${p.name}` });
+  for (const p of read("polls.json").polls) out.push({ url: p.url, where: `encuesta ${p.firm} ${p.published}` });
+  for (const m of read("government.json").members) out.push({ url: m.profileUrl, where: `gobierno ${m.name}` });
+  for (const [k, ph] of Object.entries(read("photos.json") as Record<string, { commonsPage: string }>)) out.push({ url: ph.commonsPage, where: `foto ${k}` });
+  for (const [k, o] of Object.entries(read("organization.json").parties as Record<string, { doc: { url: string } }>)) out.push({ url: o.doc.url, where: `estatutos ${k}` });
   return [...new Map(out.map((o) => [o.url, o])).values()];
 }
 

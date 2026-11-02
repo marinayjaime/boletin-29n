@@ -3,7 +3,7 @@ import path from "node:path";
 import type { Metadata } from "next";
 import { getIndicators, getParties, getPromises, getProposals, getSources } from "@/lib/data";
 import { alphabetical } from "@/lib/compare";
-import { PageHead } from "@/components/page-head";
+import { PageHero } from "@/components/ui";
 import { SourcesLibrary } from "@/components/sources-library";
 
 export const metadata: Metadata = { title: "Biblioteca de fuentes" };
@@ -27,13 +27,11 @@ export default function Page() {
   ];
   const uniq = [...new Map(extras.map((e) => [e.url + e.title, e])).values()];
   return (
-    <div className="mx-auto max-w-[1100px] px-4 md:px-8">
-      <PageHead
-        kicker="Prioridad 5 · Transparencia"
-        title="Biblioteca de fuentes"
-        lede="Todos los documentos que usa la plataforma, con su autor institucional, fecha, enlace original, copia archivada y estado de verificación. Para buscar dentro de su texto, usa el buscador documental."
-      />
+    <>
+      <PageHero eyebrow="Fuentes" title="De dónde sale todo" sub="Cada documento, con su enlace original, copia archivada y estado de verificación." />
+      <div className="mx-auto max-w-[1100px] px-4 md:px-8">
       <SourcesLibrary sources={getSources()} extras={uniq} parties={alphabetical(getParties()).map((p) => ({ id: p.id, shortName: p.shortName }))} counts={counts} />
     </div>
+    </>
   );
 }

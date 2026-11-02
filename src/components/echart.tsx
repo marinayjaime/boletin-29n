@@ -48,13 +48,13 @@ export const EChart = forwardRef<EChartHandle, { option: EChartsOption; height: 
     useEffect(() => {
       if (!ready || !chart.current) return;
       const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      chart.current.setOption({ animation: !reduce, ...option }, { notMerge: true });
+      chart.current.setOption({ animation: !reduce, animationDurationUpdate: 700, animationEasingUpdate: "cubicInOut", ...option }, { replaceMerge: ["series", "xAxis", "yAxis", "visualMap", "legend"] });
     }, [option, ready]);
 
     return (
       <div className="relative w-full" style={{ height }}>
         <div ref={el} role="img" aria-label={ariaLabel} className="absolute inset-0" />
-        {!ready && <div className="absolute inset-0 grid place-items-center text-sm text-ink-3">Cargando gráfico…</div>}
+        {!ready && <div className="absolute inset-0 grid place-items-center text-sm font-bold text-ink-3">Cargando gráfico…</div>}
       </div>
     );
   },

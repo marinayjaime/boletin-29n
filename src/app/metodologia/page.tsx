@@ -3,7 +3,7 @@ import Link from "next/link";
 import fs from "node:fs";
 import path from "node:path";
 import { getChangelog, getProposals, getQuiz, getSources, getVotes, getIndicators } from "@/lib/data";
-import { PageHead } from "@/components/page-head";
+import { PageHero } from "@/components/ui";
 import { formatDate } from "@/lib/format";
 
 export const metadata: Metadata = { title: "Metodología" };
@@ -27,8 +27,9 @@ export default function Page() {
   })();
   const thirdParty = getSources().filter((s) => s.hostedByThirdParty);
   return (
-    <div className="mx-auto max-w-[860px] px-4 md:px-8">
-      <PageHead kicker="Cómo trabajamos" title="Metodología" lede="Qué fuentes se usan, cómo se seleccionan y resumen las propuestas, cómo se comprueban y qué límites tiene cada sección." />
+    <>
+      <PageHero eyebrow="Cómo trabajamos" title="Metodología" sub="Qué fuentes se usan, cómo se seleccionan y resumen las propuestas, cómo se comprueban y qué límites tiene cada sección." />
+      <div className="mx-auto max-w-[860px] px-4 md:px-8">
       <nav aria-label="Índice" className="flex flex-wrap gap-2 text-sm">
         {[
           ["principios", "Principios"],
@@ -154,5 +155,6 @@ export default function Page() {
         </p>
       </div>
     </div>
+    </>
   );
 }

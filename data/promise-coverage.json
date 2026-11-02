@@ -1,0 +1,10 @@
+{
+  "psoe-2023": {
+    "sourceId": "psoe-programa-2023",
+    "futureCommitments": 1078,
+    "legislativeCommitments": 21,
+    "method": "Frases del programa que empiezan con un verbo en primera persona del plural en futuro (p. ej. «Aprobaremos», «Impulsaremos»). Recuento automático y aproximado sobre el texto extraído del PDF; algunas frases contienen varios compromisos y otras no son compromisos verificables.",
+    "legislativeMethod": "Subconjunto con verbo de compromiso seguido de «ley» o «reforma» a menos de 40 caracteres. Se evalúan todos.",
+    "periodEnd": "2026-10-06"
+  }
+}

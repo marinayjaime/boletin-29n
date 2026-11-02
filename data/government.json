@@ -1,0 +1,214 @@
+{
+ "source": "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+ "checkedAt": "2026-11-02",
+ "photoCredit": "La Moncloa (reproducción autorizada según su aviso legal, citando la fuente)",
+ "members": [
+  {
+   "id": "pedro-sanchez-perez-castejon",
+   "name": "Pedro Sánchez Pérez-Castejón",
+   "role": "Presidente del Gobierno",
+   "profileUrl": "https://www.lamoncloa.gob.es/presidente/biografia/Paginas/index.aspx",
+   "photo": "/img/gobierno/pedro-sanchez-perez-castejon.jpg",
+   "since": null,
+   "sinceContext": null
+  },
+  {
+   "id": "carlos-cuerpo-caballero",
+   "name": "Carlos Cuerpo Caballero",
+   "role": "Vicepresidente primero y ministro de Economía, Comercio y Empresa",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-carlos-cuerpo.aspx",
+   "photo": "/img/gobierno/carlos-cuerpo-caballero.jpg",
+   "since": "marzo 2026",
+   "sinceContext": "Trayectoria política y profesional Vicepresidente primero y ministro de Economía, Comercio y Empresa (marzo 2026-actualidad)"
+  },
+  {
+   "id": "yolanda-diaz-perez",
+   "name": "Yolanda Díaz Pérez",
+   "role": "Vicepresidenta segunda y ministra de Trabajo y Economía Social",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-yolanda-diaz.aspx",
+   "photo": "/img/gobierno/yolanda-diaz-perez.jpg",
+   "since": "julio 2021",
+   "sinceContext": "ación laboral, administración y poder político y sobre género Trayectoria política y profesional Vicepresidenta segunda y ministra de Trabajo y Economía Social (julio 2021-actualidad)"
+  },
+  {
+   "id": "sara-aagesen-munoz",
+   "name": "Sara Aagesen Muñoz",
+   "role": "Vicepresidenta tercera y ministra para la Transición Ecológica y el Reto Demográfico",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-sara-aagesen.aspx",
+   "photo": "/img/gobierno/sara-aagesen-munoz.jpg",
+   "since": "noviembre 2024",
+   "sinceContext": "Trayectoria política y profesional Vicepresidenta tercera y ministra para la Transición Ecológica y el Reto Demográfico (noviembre 2024-actualidad)"
+  },
+  {
+   "id": "jose-manuel-albares-bueno",
+   "name": "José Manuel Albares Bueno",
+   "role": "Ministro de Asuntos Exteriores, Unión Europea y Cooperación",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-jose-manuel-albares.aspx",
+   "photo": "/img/gobierno/jose-manuel-albares-bueno.jpg",
+   "since": "julio 2021",
+   "sinceContext": "Trayectoria Política y Profesional Ministro de Asuntos Exteriores, Unión Europea y Cooperación (julio 2021-actualidad)"
+  },
+  {
+   "id": "felix-bolanos-garcia",
+   "name": "Félix Bolaños García",
+   "role": "Ministro de la Presidencia, Justicia y Relaciones con las Cortes",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-felix-bolanos.aspx",
+   "photo": "/img/gobierno/felix-bolanos-garcia.jpg",
+   "since": "noviembre 2023",
+   "sinceContext": "Trayectoria política y profesional Ministro de la Presidencia, Justicia y Relaciones con las Cortes (noviembre 2023-actualidad)"
+  },
+  {
+   "id": "margarita-robles-fernandez",
+   "name": "Margarita Robles Fernández",
+   "role": "Ministra de Defensa",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-margarita-robles.aspx",
+   "photo": "/img/gobierno/margarita-robles-fernandez.jpg",
+   "since": "junio 2018",
+   "sinceContext": "Formación académica Licenciada en Derecho por la Universidad de Barcelona Trayectoria política y profesional Ministra de Defensa (junio 2018-actualidad)"
+  },
+  {
+   "id": "arcadi-espana-garcia",
+   "name": "Arcadi España García",
+   "role": "Ministro de Hacienda",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-arcadi-espana.aspx",
+   "photo": "/img/gobierno/arcadi-espana-garcia.jpg",
+   "since": "marzo 2026",
+   "sinceContext": "Trayectoria política y profesional Ministro de Hacienda (marzo 2026-actualidad)"
+  },
+  {
+   "id": "fernando-grande-marlaska-gomez",
+   "name": "Fernando Grande-Marlaska Gómez",
+   "role": "Ministro del Interior",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-fernando-grande-marlaska.aspx",
+   "photo": "/img/gobierno/fernando-grande-marlaska-gomez.jpg",
+   "since": "2018",
+   "sinceContext": "Formación académica Licenciado en Derecho Económico por la Universidad de Deusto Trayectoria política y profesional Ministro del Interior (2018-actualidad)"
+  },
+  {
+   "id": "oscar-puente-santiago",
+   "name": "Óscar Puente Santiago",
+   "role": "Ministro de Transportes y Movilidad Sostenible",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-oscar-puente.aspx",
+   "photo": "/img/gobierno/oscar-puente-santiago.jpg",
+   "since": "noviembre 2023",
+   "sinceContext": "Trayectoria política y Profesional Ministro de Transportes y Movilidad Sostenible (noviembre 2023-actualidad)"
+  },
+  {
+   "id": "milagros-tolon-jaime",
+   "name": "Milagros Tolón Jaime",
+   "role": "Ministra de Educación, Formación Profesional y Deportes",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-milagros-tolon.aspx",
+   "photo": "/img/gobierno/milagros-tolon-jaime.jpg",
+   "since": "diciembre 2025",
+   "sinceContext": "n Formación del Profesorado por la Universidad de Castilla-La Mancha Trayectoria política y profesional Ministra de Educación, Formación Profesional y Deportes (diciembre 2025-actualidad)"
+  },
+  {
+   "id": "jordi-hereu-boher",
+   "name": "Jordi Hereu Boher",
+   "role": "Ministro de Industria y Turismo",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-jordi-hereu.aspx",
+   "photo": "/img/gobierno/jordi-hereu-boher.jpg",
+   "since": "noviembre 2023",
+   "sinceContext": "Trayectoria política y profesional Ministro de Industria y Turismo (noviembre 2023-actualidad)"
+  },
+  {
+   "id": "luis-planas-puchades",
+   "name": "Luis Planas Puchades",
+   "role": "Ministro de Agricultura, Pesca y Alimentación",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-luis-planas.aspx",
+   "photo": "/img/gobierno/luis-planas-puchades.jpg",
+   "since": "2018",
+   "sinceContext": "Formación académica Licenciado en Derecho por la Universidad de Valencia Trayectoria política y profesional Ministro de Agricultura, Pesca y Alimentación (2018-actualidad)"
+  },
+  {
+   "id": "angel-victor-torres-perez",
+   "name": "Ángel Víctor Torres Pérez",
+   "role": "Ministro de Política Territorial y Memoria Democrática",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-angel-victor-torres.aspx",
+   "photo": "/img/gobierno/angel-victor-torres-perez.jpg",
+   "since": "noviembre 2023",
+   "sinceContext": "Trayectoria política y profesional Ministro de Política Territorial y Memoria Democrática (noviembre 2023-actualidad)"
+  },
+  {
+   "id": "isabel-rodriguez-garcia",
+   "name": "Isabel Rodríguez García",
+   "role": "Ministra de Vivienda y Agenda Urbana",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-isabel-rodriguez.aspx",
+   "photo": "/img/gobierno/isabel-rodriguez-garcia.jpg",
+   "since": "noviembre 2023",
+   "sinceContext": "Formación académica Licenciada en Derecho por la Universidad de Castilla-La Mancha Trayectoria política y profesional Ministra de Vivienda y Agenda Urbana (noviembre 2023-actualidad)"
+  },
+  {
+   "id": "ernest-urtasun-domenech",
+   "name": "Ernest Urtasun Domènech",
+   "role": "Ministro de Cultura",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-ernest-urtasun.aspx",
+   "photo": "/img/gobierno/ernest-urtasun-domenech.jpg",
+   "since": "noviembre 2023",
+   "sinceContext": "a Universidad de Barcelona Licenciatura en Ciencias Económicas por la Universidad Autónoma de Barcelona Trayectoria política y profesional: Ministro de Cultura (noviembre 2023-actualidad)"
+  },
+  {
+   "id": "monica-garcia-gomez",
+   "name": "Mónica García Gómez",
+   "role": "Ministra de Sanidad",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-monica-garcia.aspx",
+   "photo": "/img/gobierno/monica-garcia-gomez.jpg",
+   "since": null,
+   "sinceContext": null
+  },
+  {
+   "id": "pablo-bustinduy-amador",
+   "name": "Pablo Bustinduy Amador",
+   "role": "Ministro de Derechos Sociales, Consumo y Agenda 2030",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-pablo-bustinduy.aspx",
+   "photo": "/img/gobierno/pablo-bustinduy-amador.jpg",
+   "since": "noviembre 2023",
+   "sinceContext": "Trayectoria política y profesional Ministro de Derechos Sociales, Consumo y Agenda 2030 (noviembre 2023-actualidad)"
+  },
+  {
+   "id": "diana-morant-ripoll",
+   "name": "Diana Morant Ripoll",
+   "role": "Ministra de Ciencia, Innovación y Universidades",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-diana-morant.aspx",
+   "photo": "/img/gobierno/diana-morant-ripoll.jpg",
+   "since": "noviembre 2023",
+   "sinceContext": "ica Ingeniera de Telecomunicación por la Universidad Politécnica de Valencia Trayectoria política y profesional Ministra de Ciencia, Innovación y Universidades (noviembre 2023-actualidad)"
+  },
+  {
+   "id": "ana-redondo-garcia",
+   "name": "Ana Redondo García",
+   "role": "Ministra de Igualdad",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-ana-redondo.aspx",
+   "photo": "/img/gobierno/ana-redondo-garcia.jpg",
+   "since": "noviembre 2023",
+   "sinceContext": "Licenciada en Derecho por la Universidad de Valladolid Trayectoria política y profesional Ministra de Igualdad (noviembre 2023-actualidad)"
+  },
+  {
+   "id": "elma-saiz-delgado",
+   "name": "Elma Saiz Delgado",
+   "role": "Ministra de Inclusión, Seguridad Social y Migraciones y portavoz del Gobierno",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-elma-saiz.aspx",
+   "photo": "/img/gobierno/elma-saiz-delgado.jpg",
+   "since": "diciembre 2025",
+   "sinceContext": "Asesoría Fiscal por la Universidad de Navarra Trayectoria política y profesional Ministra de Inclusión, Seguridad Social y Migraciones y portavoz del Gobierno (diciembre 2025-actualidad)"
+  },
+  {
+   "id": "oscar-lopez-agueda",
+   "name": "Óscar López Águeda",
+   "role": "Ministro para la Transformación Digital y de la Función Pública",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-oscar-lopez.aspx",
+   "photo": "/img/gobierno/oscar-lopez-agueda.jpg",
+   "since": "septiembre 2024",
+   "sinceContext": "Trayectoria política y profesional Ministro para la Transformación Digital y de la Función Pública (septiembre 2024-actualidad)"
+  },
+  {
+   "id": "sira-rego",
+   "name": "Sira Rego",
+   "role": "Ministra de Juventud e Infancia",
+   "profileUrl": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-sira-rego.aspx",
+   "photo": "/img/gobierno/sira-rego.jpg",
+   "since": "noviembre 2023",
+   "sinceContext": "Formación académica: Diplomada en Nutrición humana y Dietética Trayectoria política y profesional: Ministra de Juventud e Infancia (noviembre 2023-actualidad)"
+  }
+ ]
+}

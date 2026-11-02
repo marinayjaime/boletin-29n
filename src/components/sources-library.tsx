@@ -46,7 +46,7 @@ export function SourcesLibrary({
 
   return (
     <div>
-      <div className="grid gap-3 rounded border border-rule p-4 text-sm md:grid-cols-4">
+      <div className="grid grid-cols-1 gap-3 rounded border border-rule p-4 text-sm md:grid-cols-4">
         <label className="md:col-span-1">
           <span className="kicker mb-1 block">Buscar</span>
           <input value={q} onChange={(e) => setQ(e.target.value)} className="w-full rounded border border-rule bg-paper px-3 py-1.5" placeholder="título, organismo…" />

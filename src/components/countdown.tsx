@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 
-/** Cuenta atrás hasta la jornada electoral (00:00 hora peninsular). Se calcula en el navegador. */
-export function Countdown({ date }: { date: string }) {
+/** Cuenta atrás hasta la jornada electoral (00:00 hora peninsular), calculada en el navegador. */
+export function Countdown({ date, compact = false }: { date: string; compact?: boolean }) {
   const target = new Date(`${date}T00:00:00+01:00`).getTime();
   const [now, setNow] = useState<number | null>(null);
   useEffect(() => {
@@ -12,20 +12,28 @@ export function Countdown({ date }: { date: string }) {
     return () => clearInterval(t);
   }, []);
   const diff = now === null ? null : Math.max(0, target - now);
-  const days = diff === null ? null : Math.floor(diff / 86_400_000);
-  const hours = diff === null ? null : Math.floor((diff % 86_400_000) / 3_600_000);
+  const days = diff === null ? "—" : Math.floor(diff / 86_400_000);
+  const hours = diff === null ? "—" : Math.floor((diff % 86_400_000) / 3_600_000);
+  if (compact)
+    return (
+      <span className="inline-flex items-center gap-2 rounded-full bg-brand px-3 py-1.5 text-sm font-extrabold text-brand-ink">
+        <span className="relative flex h-2 w-2">
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand-ink opacity-40" />
+          <span className="relative inline-flex h-2 w-2 rounded-full bg-brand-ink" />
+        </span>
+        Faltan {days} días · 29 de noviembre
+      </span>
+    );
   return (
-    <div aria-live="off">
-      <p className="kicker">Faltan</p>
-      <p className="display tabular mt-1 flex items-baseline gap-3 text-[4.5rem] font-light leading-none md:text-[6.5rem]">
-        <span>{days ?? "—"}</span>
-        <span className="font-sans text-base font-normal text-ink-2">días</span>
-        <span className="text-[2.2rem] md:text-[3rem]">{hours ?? "—"}</span>
-        <span className="font-sans text-base font-normal text-ink-2">h</span>
-      </p>
-      <p className="mt-2 text-sm text-ink-2">
-        para la jornada electoral del <strong className="text-ink">domingo 29 de noviembre de 2026</strong>
-      </p>
+    <div className="flex items-end gap-3">
+      <div>
+        <p className="num text-6xl md:text-7xl">{days}</p>
+        <p className="text-sm font-bold opacity-70">días</p>
+      </div>
+      <div>
+        <p className="num text-4xl md:text-5xl">{hours}</p>
+        <p className="text-sm font-bold opacity-70">horas</p>
+      </div>
     </div>
   );
 }

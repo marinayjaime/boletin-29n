@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getGlossary } from "@/lib/data";
-import { PageHead } from "@/components/page-head";
+import { PageHero } from "@/components/ui";
 
 export const metadata: Metadata = { title: "Glosario" };
 
@@ -8,11 +8,12 @@ export default function Page() {
   const g = [...getGlossary()].sort((a, b) => a.term.localeCompare(b.term, "es"));
   const letters = [...new Set(g.map((x) => x.term[0].toUpperCase()))];
   return (
-    <div className="mx-auto max-w-[900px] px-4 md:px-8">
-      <PageHead kicker="Glosario" title="Palabras que conviene entender" lede="Definiciones breves de conceptos económicos, estadísticos y parlamentarios que aparecen en la plataforma." />
-      <nav aria-label="Letras" className="flex flex-wrap gap-1 font-mono text-sm">
+    <>
+      <PageHero eyebrow="Glosario" title="Palabras que conviene entender" sub="Conceptos económicos, estadísticos y parlamentarios, en dos líneas." />
+      <div className="mx-auto max-w-[900px] px-4 md:px-8">
+      <nav aria-label="Letras" className="flex flex-wrap gap-1.5">
         {letters.map((l) => (
-          <a key={l} href={`#l-${l}`} className="rounded border border-rule px-2 py-1 hover:border-ink">
+          <a key={l} href={`#l-${l}`} className="chip !min-h-[40px] !px-3">
             {l}
           </a>
         ))}
@@ -40,5 +41,6 @@ export default function Page() {
         })}
       </dl>
     </div>
+    </>
   );
 }

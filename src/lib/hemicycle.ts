@@ -18,7 +18,8 @@ export function hemicycleSeats(n: number, rows = Math.max(4, Math.round(Math.sqr
     const k = perRow[row];
     for (let j = 0; j < k; j++) {
       const angle = k === 1 ? Math.PI / 2 : Math.PI - (Math.PI * j) / (k - 1);
-      seats.push({ x: r * Math.cos(angle), y: r * Math.sin(angle), angle, row });
+      // redondeo: evita diferencias de coma flotante entre servidor y navegador
+      seats.push({ x: Math.round(r * Math.cos(angle) * 1e4) / 1e4, y: Math.round(r * Math.sin(angle) * 1e4) / 1e4, angle, row });
     }
   });
   return seats.sort((a, b) => b.angle - a.angle || a.row - b.row);

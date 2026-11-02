@@ -116,3 +116,38 @@ export const getGroupMovers = cached(() => {
   }
   return [...acc.entries()].filter(([, g]) => Object.keys(g).length > 1).map(([name, groups]) => ({ name, groups }));
 });
+
+/* ---------- Ampliación: encuestas, gobierno, organigrama, fotos, coincidencias ---------- */
+import { CommonalitySchema } from "./schema";
+
+export type Poll = {
+  id: string;
+  firm: string;
+  media: string;
+  fieldwork: string;
+  published: string;
+  type: "puntual" | "horquilla";
+  title: string;
+  url: string;
+  seats: Record<string, number | { min: number; max: number }>;
+};
+export const getPolls = cached(() => read("polls.json") as { aggregator: { name: string; url: string; revision: string; revisionTimestamp: string }; checkedAt: string; note: string; polls: Poll[] });
+
+export type Minister = { id: string; name: string; role: string; profileUrl: string; photo: string | null; since: string | null; sinceContext: string | null };
+export const getGovernment = cached(() => read("government.json") as { source: string; checkedAt: string; photoCredit: string; members: Minister[] });
+
+export type Organization = {
+  constitutionUrl: string;
+  checkedAt: string;
+  institutions: { id: string; name: string; short: string; holder: string | null; role: string; what: string[]; articles: string; icon: string; children?: string[] }[];
+  relations: { from: string; to: string; label: string; articles: string }[];
+  parties: Record<string, { status: "documentado" | "parcial" | "pendiente"; note?: string; doc: { title: string; url: string; sha256?: string; note?: string }; organs: { id: string; name: string; kind: string; what: string; article: string; children?: string[] }[] }>;
+};
+export const getOrganization = cached(() => read("organization.json") as Organization);
+
+export type Photo = { file: string; commonsPage: string; license: string; licenseUrl: string; author: string; date: string; credit: string };
+export const getPhotos = cached(() => read("photos.json") as Record<string, Photo>);
+
+export const getCommonalities = cached(() => z.array(CommonalitySchema).parse(read("commonalities.json")));
+export const getBoeLaws = cached(() => read("boe-leyes.json") as { from: string; to: string; importedAt: string; items: { id: string; date: string; title: string; kind: string; url: string }[] });
+export const getPromiseCoverage = cached(() => read("promise-coverage.json") as Record<string, { sourceId: string; futureCommitments: number; legislativeCommitments: number; method: string; legislativeMethod: string; periodEnd: string }>);

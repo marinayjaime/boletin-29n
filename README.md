@@ -6,6 +6,28 @@ Plataforma web independiente para que cualquier persona pueda comparar propuesta
 
 ---
 
+
+## Versión 2 — rediseño y nuevas funciones (noviembre de 2026)
+
+**Diseño.** Sistema visual «Señal»: Bricolage Grotesque (titulares y cifras) + Manrope (interfaz), superficies claras y frías, tinta profunda y amarillo como color de marca. Modo claro y oscuro. Navegación inferior tipo app en móvil. Información progresiva: tarjetas breves y paneles de detalle con la cita, la fuente y el contexto.
+
+**Colores de partido** (fuente única: `src/lib/party-theme.ts`, replicada en `globals.css` y comprobada por tests): PP `#21599E` (web oficial), PSOE `#EF1C27`, Vox `#63BE21`, Podemos `#5A205A` (color de partido en Wikipedia; sus webs bloquean el acceso automatizado) y Frente Amplio `#E51C55` (color de movimientosumar.es; no hay manual de marca propio de la coalición). Los estados de voto y cumplimiento usan una gama independiente (verde azulado, naranja, gris y ocre).
+
+**Fotografías.** Representantes: Wikimedia Commons con licencia libre (`data/photos.json`, con autor y licencia). Gobierno: retratos oficiales de La Moncloa, cuyo aviso legal autoriza la reproducción citando la fuente (`data/government.json`). No se usan logotipos de partidos.
+
+**Nuevos módulos**
+- `/pactos`: encuestas con escaños (`data/polls.json`, recopiladas de Wikipedia con enlace al medio original y revisión fijada) y escenario propio con investidura en 1.ª y 2.ª votación (art. 99 CE), escenarios guardados en `localStorage`. Las horquillas no se convierten en cifras.
+- `/promesas` → «Las promesas de 2023: ¿qué se cumplió?»: los 21 compromisos legislativos del programa del PSOE de 2023, contrastados con el registro completo de leyes del BOE de la legislatura (`npm run import:boe` → `data/boe-leyes.json`, 384 normas). Cobertura: 23 de 1.078 frases de compromiso identificadas.
+- Test: selección de temas y porcentajes descriptivos por tema (coinciden ÷ comparables, mínimo 2), sin agregación entre temas.
+- `/quien-hace-que`: instituciones (Constitución), Gobierno (La Moncloa) y órganos de los partidos según estatutos (PP 2025 y Movimiento Sumar 2023; PSOE, Vox y Podemos pendientes).
+- `/puntos-en-comun`: 22 grupos de coincidencias revisados a mano (equivalente / objetivo compartido / parcial), matriz y diagrama.
+
+**Limitaciones de la versión 2**
+- Los anuncios personales de Pedro Sánchez no se incluyen todavía (requieren fuentes primarias verificadas).
+- Estructura orgánica de PSOE, Vox y Podemos: pendiente (estatutos no accesibles automáticamente).
+- Frente Amplio: sin web ni identidad gráfica propia localizada; se usa la de Movimiento Sumar.
+- Las encuestas se toman de una recopilación secundaria (Wikipedia) con enlace a cada medio; no se han verificado una a una en el medio original.
+
 ## Ejecutar en local
 
 Requisitos: Node.js 20 o superior y npm. Para incorporar documentos PDF nuevos hace falta además `poppler-utils` (`pdftotext`, `pdfinfo`).

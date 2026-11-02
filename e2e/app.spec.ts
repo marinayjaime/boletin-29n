@@ -98,5 +98,5 @@ test("votaciones: filtro por tipo y ficha con hemiciclo", async ({ page }) => {
 test("buscador y aviso de candidaturas no analizadas", async ({ page }) => {
   await page.goto("/buscar?q=alquiler");
   await expect(page.getByText(/Propuestas verificadas, por partido/)).toBeVisible({ timeout: 20000 });
-  await expect(page.getByRole("note").first()).toContainText("cinco candidaturas");
+  await expect(page.getByRole("contentinfo")).toHaveText("Hecho por Jaime Borras");
 });

@@ -1,0 +1,238 @@
+[
+  {
+    "id": "psoe-2023-revalorizacion-pensiones",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "pensiones",
+    "promise": "Garantizar la revalorización de las pensiones.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 166,
+      "quote": "Los pensionistas tendrán garantizada la revalorización de su pensión."
+    },
+    "assessment": {
+      "status": "cumplido",
+      "criterion": "Se considera cumplido si, para cada año completo de la legislatura (2024, 2025 y 2026), entró en vigor una norma con rango de ley que revalorizó las pensiones públicas y fue convalidada o aprobada por el Congreso. No se valora la cuantía.",
+      "officialActions": [
+        {
+          "date": "2023-12-28",
+          "text": "BOE publica el Real Decreto-ley 8/2023, que regula la revalorización de las pensiones para 2024 hasta la aprobación de los Presupuestos.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-26452"
+        },
+        {
+          "date": "2024-01-10",
+          "text": "El Congreso convalida el Real Decreto-ley 8/2023 (172 sí, 171 no, 7 abstenciones).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=10/01/2024"
+        },
+        {
+          "date": "2025-01-22",
+          "text": "El Congreso deroga el Real Decreto-ley 9/2024, que incluía la revalorización de 2025 entre otras medidas (171 sí, 177 no, 1 abstención).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=22/01/2025"
+        },
+        {
+          "date": "2025-01-29",
+          "text": "BOE publica el Real Decreto-ley 1/2025, que aborda «la revalorización de las pensiones y otras prestaciones públicas en el año 2025».",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-1560"
+        },
+        {
+          "date": "2025-02-12",
+          "text": "El Congreso convalida el Real Decreto-ley 1/2025 (315 sí, 33 no, 1 abstención).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=12/02/2025"
+        },
+        {
+          "date": "2026-02-04",
+          "text": "BOE publica el Real Decreto-ley 3/2026, para la revalorización de las pensiones públicas.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2548"
+        },
+        {
+          "date": "2026-02-26",
+          "text": "El Congreso convalida el Real Decreto-ley 3/2026 (317 sí, 33 no).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=26/02/2026"
+        }
+      ],
+      "outcome": "Consta una norma de revalorización en vigor y convalidada para 2024, 2025 y 2026. En 2025 el primer decreto fue derogado y la revalorización se aprobó en un segundo decreto una semana después.",
+      "limits": "Se evalúa la existencia de la norma, no si la subida compensó la inflación de cada pensionista. La revalorización es una decisión del Gobierno de coalición, no exclusiva del PSOE, y se apoya en la Ley 21/2021, aprobada en la legislatura anterior.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "sumar-2023-jornada-37-5",
+    "partyIds": [
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "empleo",
+    "promise": "Fijar por ley una jornada laboral máxima de 37,5 horas semanales en 2024 (compromiso de Sumar en 2023, antecedente de Frente Amplio).",
+    "promisedAt": "2023-07-10",
+    "citation": {
+      "sourceId": "sumar-programa-2023",
+      "pdfPage": 7,
+      "quote": "En 2024 se establecerá por ley una jornada laboral máxima de 37,5 horas"
+    },
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Se considera cumplido si se publica en el BOE una ley que fije la jornada máxima ordinaria en 37,5 horas semanales.",
+      "officialActions": [
+        {
+          "date": "2024-02-22",
+          "text": "El Congreso aprueba una proposición no de ley de Sumar sobre la reducción de la jornada máxima legal (169 sí, 33 no, 142 abstenciones). Una PNL no tiene fuerza de ley.",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=22/02/2024"
+        },
+        {
+          "date": "2025-09-10",
+          "text": "El Congreso aprueba las enmiendas a la totalidad de devolución de Junts, Vox y PP al Proyecto de Ley de reducción de la jornada (178 sí, 170 no): el proyecto se devuelve al Gobierno.",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=10/09/2025"
+        },
+        {
+          "date": "2025-10-14",
+          "text": "El Congreso rechaza tomar en consideración una proposición de ley del Grupo Mixto para reducir la jornada (162 sí, 178 no, 6 abstenciones).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=14/10/2025"
+        }
+      ],
+      "outcome": "No llegó a aprobarse ninguna ley que fijara la jornada máxima en 37,5 horas antes de la disolución de las Cortes (octubre de 2026).",
+      "limits": "El compromiso es de Sumar en 2023; Frente Amplio es una candidatura distinta. El Gobierno sí aprobó y remitió un proyecto de ley: el incumplimiento se debe a su devolución en el Congreso, no a la falta de iniciativa.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "sumar-2023-reforma-ley-vivienda",
+    "partyIds": [
+      "frente-amplio"
+    ],
+    "attribution": "partido",
+    "government": null,
+    "legislature": "XV",
+    "topicId": "vivienda",
+    "promise": "Modificar la Ley 12/2023 de Vivienda (alquiler social obligatorio para grandes tenedores, dación en pago, regulación efectiva de precios…).",
+    "promisedAt": "2023-07-10",
+    "citation": {
+      "sourceId": "sumar-programa-2023",
+      "pdfPage": 77,
+      "quote": "Modificaremos la Ley 12/2023 de Vivienda para incluir: el alquiler social obligatorio para grandes tenedores, la dación en pago"
+    },
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Se considera cumplido si se aprueba una ley que modifique la Ley 12/2023 en el sentido indicado.",
+      "officialActions": [
+        {
+          "date": "2025-11-27",
+          "text": "El Congreso rechaza tomar en consideración la proposición de ley de Sumar para modificar la Ley 12/2023 (44 sí, 179 no, 124 abstenciones).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=27/11/2025"
+        },
+        {
+          "date": "2026-09-15",
+          "text": "El Congreso vuelve a rechazar una proposición de ley de Sumar para modificar la Ley 12/2023 (44 sí, 175 no, 127 abstenciones).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=15/09/2026"
+        }
+      ],
+      "outcome": "Las dos iniciativas de Sumar para modificar la Ley 12/2023 no superaron la toma en consideración.",
+      "limits": "Solo se han revisado votaciones del Pleno. Otras normas (por ejemplo, decretos-leyes del Gobierno) pueden haber tocado aspectos parciales de la ley.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-2023-tiempos-espera",
+    "partyIds": [
+      "psoe"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "sanidad",
+    "promise": "Fijar por ley tiempos máximos de espera en el SNS: 120 días para cirugía, 60 para consultas especializadas y 30 para pruebas.",
+    "promisedAt": "2023-07-07",
+    "citation": {
+      "sourceId": "psoe-programa-2023",
+      "pdfPage": 201,
+      "quote": "Acabaremos con las listas de espera, estableciendo por ley unos tiempos máximos de espera en el SNS de 120 días para intervenciones quirúrgicas"
+    },
+    "assessment": {
+      "status": "no_verificable",
+      "criterion": "Se consideraría cumplido si se publica en el BOE una norma con rango de ley que fije esos tiempos máximos.",
+      "officialActions": [],
+      "outcome": "En las votaciones del Pleno de la XV Legislatura importadas en esta plataforma no figura ninguna ley con ese objeto en su título.",
+      "limits": "No es suficiente para afirmar el incumplimiento: algunas leyes se aprueban en comisión con competencia legislativa plena o incluyen esta materia en normas con otro título. Queda pendiente una revisión del BOE.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-2023-ley-urbanismo",
+    "partyIds": [
+      "pp"
+    ],
+    "attribution": "partido_en_oposicion",
+    "government": null,
+    "legislature": "XV",
+    "topicId": "vivienda",
+    "promise": "Impulsar una ley de seguridad jurídica en materia de urbanismo.",
+    "promisedAt": "2023-07-04",
+    "citation": {
+      "sourceId": "pp-programa-2023",
+      "pdfPage": 32,
+      "quote": "IMPULSAREMOS UNA LEY DE SEGURIDAD JURÍDICA EN MATERIA DE URBANISMO"
+    },
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Para un partido en la oposición se evalúa si presentó la iniciativa y su resultado. Se consideraría cumplido si la ley llega a aprobarse.",
+      "officialActions": [
+        {
+          "date": "2026-04-21",
+          "text": "El Congreso toma en consideración la Proposición de Ley del PP «de medidas administrativas y procesales para la seguridad jurídica de la ordenación territorial y urbanística» (178 sí, 163 no, 6 abstenciones).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=21/04/2026"
+        },
+        {
+          "date": "2026-10-06",
+          "text": "La disolución de las Cortes (Real Decreto 806/2026) hace decaer las iniciativas en tramitación.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742"
+        }
+      ],
+      "outcome": "La iniciativa se presentó y superó la toma en consideración, pero no llegó a aprobarse antes de la disolución.",
+      "limits": "El PP estaba en la oposición y no controlaba la agenda legislativa. Se valora la iniciativa presentada, no su capacidad de aprobarla.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-2019-pensiones-ipc",
+    "partyIds": [
+      "podemos"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Unidas Podemos (2020–2023)",
+    "legislature": "XIV",
+    "topicId": "pensiones",
+    "promise": "Actualizar por ley las pensiones con el IPC e incluir esta garantía en la Constitución.",
+    "promisedAt": "2019-10",
+    "citation": {
+      "sourceId": "podemos-programa-2019",
+      "pdfPage": 83,
+      "quote": "Estableceremos la actualización por ley de las pensiones al IPC de manera inmediata y buscaremos blindar esta garantía constitucionalizándola de forma expresa."
+    },
+    "assessment": {
+      "status": "cumplido_parcial",
+      "criterion": "Dos partes: (1) ley de actualización con el IPC; (2) reforma constitucional que la recoja expresamente.",
+      "officialActions": [
+        {
+          "date": "2021-12-29",
+          "text": "BOE publica la Ley 21/2021, de garantía del poder adquisitivo de las pensiones.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2021-21652"
+        }
+      ],
+      "outcome": "La primera parte se cumplió con la Ley 21/2021. No consta una reforma constitucional con ese contenido.",
+      "limits": "La ley se aprobó con un Gobierno de coalición y con apoyos de otros grupos: no es atribuible solo a Podemos. La ausencia de la reforma constitucional se comprueba con el texto vigente de la Constitución.",
+      "assessedAt": "2026-11-02",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  }
+]

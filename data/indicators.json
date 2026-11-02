@@ -1,0 +1,993 @@
+[
+  {
+    "id": "pib-crecimiento",
+    "area": "economia",
+    "name": "Crecimiento del PIB real",
+    "short": "PIB real",
+    "unit": "% de variación anual en volumen",
+    "unitShort": "%",
+    "description": "Variación anual del producto interior bruto a precios constantes.",
+    "methodology": "Cuentas nacionales (SEC 2010). Volúmenes encadenados; variación respecto al año anterior.",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "tec00115",
+    "query": {
+      "unit": "CLV_PCH_PRE",
+      "na_item": "B1GQ"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/tec00115/default/table?lang=es",
+    "caveats": [],
+    "decimals": 1
+  },
+  {
+    "id": "pib-per-capita",
+    "area": "economia",
+    "name": "PIB por habitante",
+    "short": "PIB per cápita",
+    "unit": "euros corrientes por habitante",
+    "unitShort": "€",
+    "description": "PIB a precios corrientes dividido entre la población.",
+    "methodology": "Euros corrientes: no descuenta la inflación. Para comparar poder adquisitivo entre países conviene usar estándares de poder de compra (PPS).",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "nama_10_pc",
+    "query": {
+      "unit": "CP_EUR_HAB",
+      "na_item": "B1GQ"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/nama_10_pc/default/table?lang=es",
+    "caveats": [
+      "Euros corrientes, sin ajustar por inflación ni por nivel de precios."
+    ],
+    "decimals": 0,
+    "regional": {
+      "dataset": "nama_10r_2gdp",
+      "query": {
+        "unit": "EUR_HAB"
+      },
+      "level": "NUTS2"
+    }
+  },
+  {
+    "id": "inflacion",
+    "area": "economia",
+    "name": "Inflación general (IPCA), tasa interanual",
+    "short": "Inflación",
+    "unit": "% de variación interanual",
+    "unitShort": "%",
+    "description": "Variación de los precios de consumo respecto al mismo mes del año anterior (Índice de Precios de Consumo Armonizado).",
+    "methodology": "IPCA (HICP) de Eurostat, clasificación ECOICOP v2. Es el índice armonizado europeo; puede diferir ligeramente del IPC del INE.",
+    "frequency": "M",
+    "provider": "Eurostat",
+    "dataset": "prc_hicp_minr",
+    "query": {
+      "unit": "RCH_A",
+      "coicop18": "TOTAL"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_minr/default/table?lang=es",
+    "caveats": [
+      "Tasa interanual: compara cada mes con el mismo mes del año anterior. No es inflación mensual ni acumulada.",
+      "IPCA armonizado, no IPC nacional."
+    ],
+    "decimals": 1
+  },
+  {
+    "id": "inflacion-mensual",
+    "area": "economia",
+    "name": "Inflación general (IPCA), tasa mensual",
+    "short": "Inflación mensual",
+    "unit": "% de variación respecto al mes anterior",
+    "unitShort": "%",
+    "description": "Variación de los precios respecto al mes anterior.",
+    "methodology": "IPCA (HICP), ECOICOP v2. Las tasas mensuales tienen fuerte estacionalidad (rebajas, turismo).",
+    "frequency": "M",
+    "provider": "Eurostat",
+    "dataset": "prc_hicp_minr",
+    "query": {
+      "unit": "RCH_M",
+      "coicop18": "TOTAL"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_minr/default/table?lang=es",
+    "caveats": [
+      "Tasa mensual: muy afectada por la estacionalidad; no es comparable con la interanual."
+    ],
+    "decimals": 1
+  },
+  {
+    "id": "inflacion-alimentos",
+    "area": "economia",
+    "name": "Inflación de los alimentos (IPCA), tasa interanual",
+    "short": "Inflación alimentos",
+    "unit": "% de variación interanual",
+    "unitShort": "%",
+    "description": "Variación interanual de los precios de los alimentos.",
+    "methodology": "IPCA (HICP), subíndice ECOICOP v2 CP011 «Alimentos».",
+    "frequency": "M",
+    "provider": "Eurostat",
+    "dataset": "prc_hicp_minr",
+    "query": {
+      "unit": "RCH_A",
+      "coicop18": "CP011"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_minr/default/table?lang=es",
+    "caveats": [],
+    "decimals": 1
+  },
+  {
+    "id": "deuda-pib",
+    "area": "economia",
+    "name": "Deuda pública sobre el PIB",
+    "short": "Deuda/PIB",
+    "unit": "% del PIB",
+    "unitShort": "% PIB",
+    "description": "Deuda bruta consolidada de las Administraciones públicas en porcentaje del PIB.",
+    "methodology": "Deuda según el Protocolo de Déficit Excesivo (PDE), sector S13.",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "gov_10dd_edpt1",
+    "query": {
+      "na_item": "GD",
+      "sector": "S13",
+      "unit": "PC_GDP"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1/default/table?lang=es",
+    "caveats": [],
+    "decimals": 1
+  },
+  {
+    "id": "deuda-euros",
+    "area": "economia",
+    "name": "Deuda pública en euros",
+    "short": "Deuda (€)",
+    "unit": "millones de euros corrientes",
+    "unitShort": "M€",
+    "description": "Deuda bruta consolidada de las Administraciones públicas, en millones de euros.",
+    "methodology": "Deuda PDE, sector S13. Cifra nominal: no tiene en cuenta inflación ni tamaño de la economía.",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "gov_10dd_edpt1",
+    "query": {
+      "na_item": "GD",
+      "sector": "S13",
+      "unit": "MIO_EUR"
+    },
+    "geos": [
+      "ES"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1/default/table?lang=es",
+    "caveats": [
+      "La deuda nominal crece con los precios y con el PIB; para comparar en el tiempo o entre países, use deuda/PIB."
+    ],
+    "decimals": 0
+  },
+  {
+    "id": "deficit",
+    "area": "economia",
+    "name": "Déficit (−) o superávit (+) público",
+    "short": "Déficit",
+    "unit": "% del PIB",
+    "unitShort": "% PIB",
+    "description": "Capacidad (+) o necesidad (−) de financiación de las Administraciones públicas.",
+    "methodology": "Saldo B9, sector S13, según PDE.",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "gov_10dd_edpt1",
+    "query": {
+      "na_item": "B9",
+      "sector": "S13",
+      "unit": "PC_GDP"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1/default/table?lang=es",
+    "caveats": [],
+    "decimals": 1
+  },
+  {
+    "id": "productividad",
+    "area": "economia",
+    "name": "Productividad real por hora trabajada",
+    "short": "Productividad",
+    "unit": "índice (2015 = 100)",
+    "unitShort": "2015=100",
+    "description": "PIB real por hora trabajada.",
+    "methodology": "Cuentas nacionales; índice base 2015 = 100.",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "nama_10_lp_ulc",
+    "query": {
+      "unit": "I15",
+      "na_item": "RLPR_HW"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/nama_10_lp_ulc/default/table?lang=es",
+    "caveats": [
+      "Un índice base 2015 compara la evolución de cada país consigo mismo, no niveles entre países."
+    ],
+    "decimals": 1
+  },
+  {
+    "id": "gasto-defensa",
+    "area": "economia",
+    "name": "Gasto público en defensa",
+    "short": "Gasto defensa",
+    "unit": "% del PIB",
+    "unitShort": "% PIB",
+    "description": "Gasto de las Administraciones públicas en la función «Defensa» (COFOG 02).",
+    "methodology": "Clasificación funcional COFOG; criterio de Eurostat, que no coincide con el criterio de la OTAN.",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "gov_10a_exp",
+    "query": {
+      "cofog99": "GF02",
+      "na_item": "TE",
+      "sector": "S13",
+      "unit": "PC_GDP"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table?lang=es",
+    "caveats": [
+      "El criterio COFOG de Eurostat difiere del que usa la OTAN para medir el gasto en defensa."
+    ],
+    "decimals": 1
+  },
+  {
+    "id": "paro",
+    "area": "trabajo",
+    "name": "Tasa de paro",
+    "short": "Paro",
+    "unit": "% de la población activa (15-74 años)",
+    "unitShort": "%",
+    "description": "Personas sin empleo que lo buscan activamente, en porcentaje de la población activa.",
+    "methodology": "Encuesta de Población Activa armonizada por Eurostat (definición OIT).",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "une_rt_a",
+    "query": {
+      "age": "Y15-74",
+      "unit": "PC_ACT",
+      "sex": "T"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/une_rt_a/default/table?lang=es",
+    "caveats": [],
+    "decimals": 1,
+    "regional": {
+      "dataset": "lfst_r_lfu3rt",
+      "query": {
+        "isced11": "TOTAL",
+        "age": "Y15-74",
+        "sex": "T",
+        "unit": "PC"
+      },
+      "level": "NUTS2"
+    }
+  },
+  {
+    "id": "paro-mensual",
+    "area": "trabajo",
+    "name": "Tasa de paro mensual (desestacionalizada)",
+    "short": "Paro mensual",
+    "unit": "% de la población activa",
+    "unitShort": "%",
+    "description": "Estimación mensual de la tasa de paro, corregida de estacionalidad.",
+    "methodology": "Estimación mensual de Eurostat a partir de la EPA y registros. No es el paro registrado del SEPE.",
+    "frequency": "M",
+    "provider": "Eurostat",
+    "dataset": "une_rt_m",
+    "query": {
+      "age": "TOTAL",
+      "unit": "PC_ACT",
+      "sex": "T",
+      "s_adj": "SA"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/une_rt_m/default/table?lang=es",
+    "caveats": [
+      "No confundir con el paro registrado en las oficinas de empleo (SEPE), que mide otra cosa."
+    ],
+    "decimals": 1
+  },
+  {
+    "id": "paro-juvenil",
+    "area": "trabajo",
+    "name": "Tasa de paro juvenil (15-24 años)",
+    "short": "Paro juvenil",
+    "unit": "% de la población activa de 15 a 24 años",
+    "unitShort": "%",
+    "description": "Paro de las personas de 15 a 24 años que buscan empleo.",
+    "methodology": "EPA armonizada (OIT). Se calcula sobre los jóvenes activos, no sobre todos los jóvenes: muchos estudian y no buscan empleo.",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "une_rt_a",
+    "query": {
+      "age": "Y15-24",
+      "unit": "PC_ACT",
+      "sex": "T"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/une_rt_a/default/table?lang=es",
+    "caveats": [
+      "Una tasa del 25 % no significa que una de cada cuatro personas jóvenes esté en paro: se calcula solo sobre quienes buscan empleo."
+    ],
+    "decimals": 1
+  },
+  {
+    "id": "empleo",
+    "area": "trabajo",
+    "name": "Tasa de empleo (20-64 años)",
+    "short": "Empleo",
+    "unit": "% de la población de 20 a 64 años",
+    "unitShort": "%",
+    "description": "Personas ocupadas en porcentaje de la población de 20 a 64 años.",
+    "methodology": "EPA armonizada.",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "lfsi_emp_a",
+    "query": {
+      "indic_em": "EMP_LFS",
+      "sex": "T",
+      "age": "Y20-64",
+      "unit": "PC_POP"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/lfsi_emp_a/default/table?lang=es",
+    "caveats": [],
+    "decimals": 1
+  },
+  {
+    "id": "temporalidad",
+    "area": "trabajo",
+    "name": "Temporalidad",
+    "short": "Temporalidad",
+    "unit": "% de asalariados (20-64 años)",
+    "unitShort": "%",
+    "description": "Asalariados con contrato temporal en porcentaje del total de asalariados.",
+    "methodology": "EPA armonizada. Desde 2022 la reforma laboral cambió el tipo de contratos disponibles; los fijos discontinuos cuentan como indefinidos.",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "tesem110",
+    "query": {
+      "wstatus": "EMP_TEMP",
+      "sex": "T",
+      "age": "Y20-64",
+      "unit": "PC_SAL"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/tesem110/default/table?lang=es",
+    "caveats": [
+      "Los contratos fijos discontinuos figuran como indefinidos; la comparación antes y después de 2022 tiene límites."
+    ],
+    "decimals": 1
+  },
+  {
+    "id": "smi",
+    "area": "trabajo",
+    "name": "Salario mínimo mensual (equivalente en 12 pagas)",
+    "short": "SMI",
+    "unit": "euros brutos al mes (12 pagas)",
+    "unitShort": "€/mes",
+    "description": "Salario mínimo legal mensual bruto según Eurostat.",
+    "methodology": "Eurostat expresa el salario mínimo español en 12 pagas: el SMI legal en 14 pagas se multiplica por 14/12. Datos semestrales (enero y julio).",
+    "frequency": "S",
+    "provider": "Eurostat",
+    "dataset": "earn_mw_cur",
+    "query": {
+      "currency": "EUR"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/earn_mw_cur/default/table?lang=es",
+    "caveats": [
+      "Importe en 12 pagas: no coincide con la cifra del real decreto, que se fija en 14 pagas.",
+      "Importe nominal, sin descontar la inflación."
+    ],
+    "decimals": 0
+  },
+  {
+    "id": "salario-medio",
+    "area": "trabajo",
+    "name": "Salario medio anual por asalariado a tiempo completo equivalente",
+    "short": "Salario medio",
+    "unit": "euros brutos al año",
+    "unitShort": "€/año",
+    "description": "Remuneración media anual por asalariado, ajustada a jornada completa.",
+    "methodology": "Cuentas nacionales (Eurostat). Es una media: la mediana sería menor porque los salarios altos elevan la media. Serie nominal.",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "nama_10_fte",
+    "query": {
+      "unit": "EUR"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/nama_10_fte/default/table?lang=es",
+    "caveats": [
+      "Media, no mediana.",
+      "Nominal: en el gráfico puede verse también en términos reales (deflactado con el IPCA)."
+    ],
+    "decimals": 0,
+    "derived": "Salario real = salario nominal / (índice IPCA medio anual / 100), base 2015."
+  },
+  {
+    "id": "precio-vivienda",
+    "area": "vivienda",
+    "name": "Índice de precios de la vivienda",
+    "short": "Precio vivienda",
+    "unit": "índice (2015 = 100)",
+    "unitShort": "2015=100",
+    "description": "Evolución de los precios de compraventa de vivienda (nueva y usada).",
+    "methodology": "Índice de precios de vivienda (HPI) armonizado por Eurostat a partir del IPV del INE. Trimestral.",
+    "frequency": "Q",
+    "provider": "Eurostat",
+    "dataset": "prc_hpi_q",
+    "query": {
+      "purchase": "TOTAL",
+      "unit": "I15_Q"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/prc_hpi_q/default/table?lang=es",
+    "caveats": [
+      "Un índice mide la evolución, no el precio en euros por metro cuadrado."
+    ],
+    "decimals": 1
+  },
+  {
+    "id": "alquiler-ipca",
+    "area": "vivienda",
+    "name": "Precios del alquiler de vivienda (IPCA), tasa interanual",
+    "short": "Alquiler (IPCA)",
+    "unit": "% de variación interanual",
+    "unitShort": "%",
+    "description": "Variación interanual de los alquileres pagados por los inquilinos según el índice de precios de consumo.",
+    "methodology": "Subíndice ECOICOP v2 CP041. Mide la evolución de los alquileres de todos los contratos vigentes, no solo de los nuevos; por eso suele crecer menos que los precios de oferta.",
+    "frequency": "M",
+    "provider": "Eurostat",
+    "dataset": "prc_hicp_minr",
+    "query": {
+      "unit": "RCH_A",
+      "coicop18": "CP041"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_minr/default/table?lang=es",
+    "caveats": [
+      "Incluye contratos antiguos: no refleja el precio de los alquileres nuevos."
+    ],
+    "decimals": 1
+  },
+  {
+    "id": "euribor",
+    "area": "vivienda",
+    "name": "Euríbor a 12 meses",
+    "short": "Euríbor",
+    "unit": "% (media mensual)",
+    "unitShort": "%",
+    "description": "Tipo de interés al que se prestan los bancos de la zona euro a un año; referencia habitual de las hipotecas variables.",
+    "methodology": "Tipos del mercado monetario de Eurostat; media mensual.",
+    "frequency": "M",
+    "provider": "Eurostat",
+    "dataset": "irt_st_m",
+    "query": {
+      "int_rt": "IRT_M12"
+    },
+    "geos": [
+      "EA"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/irt_st_m/default/table?lang=es",
+    "caveats": [],
+    "decimals": 3
+  },
+  {
+    "id": "gasto-vejez",
+    "area": "pensiones",
+    "name": "Gasto público en protección de la vejez",
+    "short": "Gasto vejez",
+    "unit": "% del PIB",
+    "unitShort": "% PIB",
+    "description": "Gasto de las Administraciones públicas en la función «Vejez» (COFOG 10.2), que incluye las pensiones de jubilación.",
+    "methodology": "COFOG. No coincide exactamente con el gasto en pensiones contributivas de la Seguridad Social (incluye otras prestaciones y excluye viudedad o incapacidad).",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "gov_10a_exp",
+    "query": {
+      "cofog99": "GF1002",
+      "na_item": "TE",
+      "sector": "S13",
+      "unit": "PC_GDP"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table?lang=es",
+    "caveats": [
+      "No es exactamente el gasto en pensiones: es la función «vejez» de la clasificación COFOG."
+    ],
+    "decimals": 1
+  },
+  {
+    "id": "dependencia-vejez",
+    "area": "pensiones",
+    "name": "Tasa de dependencia de la vejez",
+    "short": "Dependencia",
+    "unit": "personas de 65 o más años por cada 100 de 15 a 64",
+    "unitShort": "por 100",
+    "description": "Relación entre población de 65 o más años y población de 15 a 64 años.",
+    "methodology": "Indicador demográfico; no es el número de cotizantes por pensionista.",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "demo_pjanind",
+    "query": {
+      "indic_de": "OLDDEP1"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/demo_pjanind/default/table?lang=es",
+    "caveats": [
+      "Indicador demográfico: no mide cotizantes por pensionista."
+    ],
+    "decimals": 1
+  },
+  {
+    "id": "gasto-sanidad",
+    "area": "sanidad-educacion",
+    "name": "Gasto público en sanidad",
+    "short": "Gasto sanitario",
+    "unit": "% del PIB",
+    "unitShort": "% PIB",
+    "description": "Gasto de las Administraciones públicas en la función «Sanidad» (COFOG 07).",
+    "methodology": "COFOG; incluye Estado, comunidades autónomas y entidades locales.",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "gov_10a_exp",
+    "query": {
+      "cofog99": "GF07",
+      "na_item": "TE",
+      "sector": "S13",
+      "unit": "PC_GDP"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table?lang=es",
+    "caveats": [],
+    "decimals": 1
+  },
+  {
+    "id": "gasto-educacion",
+    "area": "sanidad-educacion",
+    "name": "Gasto público en educación",
+    "short": "Gasto educativo",
+    "unit": "% del PIB",
+    "unitShort": "% PIB",
+    "description": "Gasto de las Administraciones públicas en la función «Educación» (COFOG 09).",
+    "methodology": "COFOG.",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "gov_10a_exp",
+    "query": {
+      "cofog99": "GF09",
+      "na_item": "TE",
+      "sector": "S13",
+      "unit": "PC_GDP"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table?lang=es",
+    "caveats": [],
+    "decimals": 1
+  },
+  {
+    "id": "abandono-escolar",
+    "area": "sanidad-educacion",
+    "name": "Abandono temprano de la educación y la formación",
+    "short": "Abandono escolar",
+    "unit": "% de la población de 18 a 24 años",
+    "unitShort": "%",
+    "description": "Jóvenes de 18 a 24 años que no han completado la segunda etapa de secundaria y no siguen formándose.",
+    "methodology": "EPA armonizada (indicador europeo de «early leavers»).",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "edat_lfse_14",
+    "query": {
+      "sex": "T",
+      "age": "Y18-24",
+      "wstatus": "POP",
+      "unit": "PC"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_14/default/table?lang=es",
+    "caveats": [],
+    "decimals": 1
+  },
+  {
+    "id": "poblacion",
+    "area": "sociedad",
+    "name": "Población a 1 de enero",
+    "short": "Población",
+    "unit": "personas",
+    "unitShort": "personas",
+    "description": "Población residente a 1 de enero.",
+    "methodology": "Estadísticas demográficas de Eurostat a partir del INE.",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "demo_gind",
+    "query": {
+      "indic_de": "JAN"
+    },
+    "geos": [
+      "ES"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/demo_gind/default/table?lang=es",
+    "caveats": [],
+    "decimals": 0
+  },
+  {
+    "id": "fecundidad",
+    "area": "sociedad",
+    "name": "Indicador coyuntural de fecundidad",
+    "short": "Fecundidad",
+    "unit": "hijos por mujer",
+    "unitShort": "hijos/mujer",
+    "description": "Número medio de hijos que tendría una mujer si mantuviera las tasas de fecundidad del año observado.",
+    "methodology": "Eurostat.",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "demo_find",
+    "query": {
+      "indic_de": "TOTFERRT"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/demo_find/default/table?lang=es",
+    "caveats": [],
+    "decimals": 2
+  },
+  {
+    "id": "inmigracion",
+    "area": "sociedad",
+    "name": "Inmigraciones",
+    "short": "Inmigraciones",
+    "unit": "personas al año",
+    "unitShort": "personas",
+    "description": "Personas que establecen su residencia habitual en España durante el año (de cualquier nacionalidad, incluidas las españolas).",
+    "methodology": "Flujos de inmigración de Eurostat. No es el número de personas extranjeras residentes ni el saldo migratorio.",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "migr_imm1ctz",
+    "query": {
+      "citizen": "TOTAL",
+      "age": "TOTAL",
+      "agedef": "COMPLET",
+      "sex": "T",
+      "unit": "NR"
+    },
+    "geos": [
+      "ES"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/migr_imm1ctz/default/table?lang=es",
+    "caveats": [
+      "Es un flujo de entradas, no un saldo: no descuenta las salidas.",
+      "Incluye a personas de nacionalidad española que llegan a residir."
+    ],
+    "decimals": 0
+  },
+  {
+    "id": "arope",
+    "area": "sociedad",
+    "name": "Riesgo de pobreza o exclusión social (AROPE)",
+    "short": "AROPE",
+    "unit": "% de la población",
+    "unitShort": "%",
+    "description": "Población en riesgo de pobreza, con carencia material y social severa o en hogares con baja intensidad de empleo.",
+    "methodology": "Encuesta de Condiciones de Vida (UE-SILC), indicador AROPE de la Estrategia UE 2030.",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "ilc_peps01n",
+    "query": {
+      "unit": "PC",
+      "age": "TOTAL",
+      "sex": "T"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/ilc_peps01n/default/table?lang=es",
+    "caveats": [
+      "La renta de referencia de la encuesta corresponde al año anterior al de la encuesta."
+    ],
+    "decimals": 1,
+    "regional": {
+      "dataset": "ilc_peps11n",
+      "query": {
+        "unit": "PC"
+      },
+      "level": "NUTS2"
+    }
+  },
+  {
+    "id": "pobreza-infantil",
+    "area": "sociedad",
+    "name": "Riesgo de pobreza o exclusión social infantil (menores de 18)",
+    "short": "AROPE infantil",
+    "unit": "% de menores de 18 años",
+    "unitShort": "%",
+    "description": "Menores de 18 años en riesgo de pobreza o exclusión social.",
+    "methodology": "UE-SILC, indicador AROPE.",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "ilc_peps01n",
+    "query": {
+      "unit": "PC",
+      "age": "Y_LT18",
+      "sex": "T"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/ilc_peps01n/default/table?lang=es",
+    "caveats": [],
+    "decimals": 1
+  },
+  {
+    "id": "gini",
+    "area": "sociedad",
+    "name": "Coeficiente de Gini de la renta disponible",
+    "short": "Gini",
+    "unit": "índice (0 = igualdad total, 100 = desigualdad máxima)",
+    "unitShort": "0-100",
+    "description": "Mide la desigualdad en la distribución de la renta disponible equivalente.",
+    "methodology": "UE-SILC.",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "ilc_di12",
+    "query": {
+      "statinfo": "GINI_HND",
+      "age": "TOTAL"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/ilc_di12/default/table?lang=es",
+    "caveats": [],
+    "decimals": 1
+  },
+  {
+    "id": "homicidios",
+    "area": "sociedad",
+    "name": "Homicidios dolosos registrados por la policía",
+    "short": "Homicidios",
+    "unit": "por cada 100.000 habitantes",
+    "unitShort": "por 100.000",
+    "description": "Homicidios intencionados registrados por las fuerzas de seguridad, según la Clasificación Internacional de Delitos con Fines Estadísticos (ICCS 0101).",
+    "methodology": "Datos policiales: reflejan delitos conocidos y registrados, no todos los cometidos. Las diferencias legales y de registro limitan la comparación entre países.",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "crim_off_cat",
+    "query": {
+      "iccs": "ICCS0101",
+      "unit": "P_HTHAB"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/crim_off_cat/default/table?lang=es",
+    "caveats": [
+      "Delitos registrados, no cometidos.",
+      "Comparación entre países limitada por diferencias de registro."
+    ],
+    "decimals": 2
+  },
+  {
+    "id": "ipca-indice",
+    "area": "economia",
+    "name": "Índice de precios de consumo armonizado, media anual",
+    "short": "IPCA (índice)",
+    "unit": "índice (media anual)",
+    "unitShort": "índice",
+    "description": "Nivel medio anual del IPCA. Se usa para deflactar series nominales (salario real).",
+    "methodology": "IPCA (HICP) ECOICOP v2, media anual del índice.",
+    "frequency": "A",
+    "provider": "Eurostat",
+    "dataset": "prc_hicp_ainr",
+    "query": {
+      "unit": "INX_A_AVG",
+      "coicop18": "TOTAL"
+    },
+    "geos": [
+      "ES",
+      "EU27_2020",
+      "DE",
+      "FR",
+      "IT",
+      "PT"
+    ],
+    "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_ainr/default/table?lang=es",
+    "caveats": [],
+    "decimals": 2,
+    "hidden": true
+  }
+]

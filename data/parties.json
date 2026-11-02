@@ -1,0 +1,114 @@
+[
+  {
+    "id": "frente-amplio",
+    "officialName": "Frente Amplio",
+    "shortName": "Frente Amplio",
+    "acronym": "FA",
+    "kind": "coalicion",
+    "ballotNames2026": [
+      "FRENTE AMPLIO (FA)",
+      "FRENTE AMPLIO ANDALUZ (FA)",
+      "COMUNS-FRONT AMPLI (COMUNS-FRONT AMPLI)",
+      "FRENTE AMPLIO-FRONTE AMPLA (FRENTE AMPLIO-FRONTE AMPLA)",
+      "FRENTE AMPLIO-FRONTE ZABALA (FRENTE AMPLIO-FRONTE ZABALA)",
+      "ARAMÉS-FRONT AMPLI (ARAMÉS-EU-MS)"
+    ],
+    "ballotSource": "boe-candidaturas-2026",
+    "madridListHead": "Emilio Delgado Orgaz",
+    "website": "https://movimientosumar.es",
+    "summary": "Candidatura electoral que concurre a las generales de 2026 con varias denominaciones territoriales. Según la prensa, agrupa a Movimiento Sumar, Izquierda Unida, Comuns y Más Madrid, entre otras formaciones; la composición completa de la coalición registrada ante la Junta Electoral Central está pendiente de verificación documental en esta plataforma.",
+    "history": [
+      { "date": "2023-07-10", "text": "En las generales de 2023 concurrió la coalición Sumar, que incluía a Podemos. Su programa («Un programa para ti») se muestra aquí como antecedente documental, no como programa de Frente Amplio.", "sourceId": "sumar-programa-2023" },
+      { "date": "2026-10-28", "text": "El BOE publica las candidaturas presentadas a las generales de 2026, entre ellas las de Frente Amplio y sus denominaciones territoriales.", "sourceId": "boe-candidaturas-2026" }
+    ],
+    "parliamentaryGroups": [
+      { "code": "GSUMAR", "note": "Grupo Parlamentario Plurinacional SUMAR (XV Legislatura). No equivale a Frente Amplio: su composición cambió durante la legislatura y no coincide necesariamente con la coalición de 2026." }
+    ],
+    "monogram": "FA"
+  },
+  {
+    "id": "podemos",
+    "officialName": "Podemos",
+    "shortName": "Podemos",
+    "acronym": "PODEMOS",
+    "kind": "partido",
+    "ballotNames2026": ["PODEMOS (PODEMOS)", "PODEMOS (PAZ, CASA Y TRABAJO)"],
+    "ballotSource": "boe-candidaturas-2026",
+    "madridListHead": "Irene Montero Gil",
+    "website": "https://podemos.info",
+    "summary": "Partido político que concurre en 2026 con candidatura propia, separada de Frente Amplio, en la mayoría de circunscripciones. En Canarias figura además dentro de la candidatura «Unidad del Pueblo Canario» (NC-BC, PODEMOS, IU, SUMAR), según el BOE.",
+    "history": [
+      { "date": "2019-10", "text": "Último programa propio para unas elecciones generales: «Las razones siguen intactas» (10N 2019).", "sourceId": "podemos-programa-2019" },
+      { "date": "2023-07-10", "text": "En las generales de 2023 concurrió dentro de la coalición Sumar; por eso no tiene programa propio de 2023.", "sourceId": "sumar-programa-2023" },
+      { "date": "2024-05-20", "text": "Programa propio para las elecciones europeas de 2024 (ámbito de la UE).", "sourceId": "podemos-europeas-2024" },
+      { "date": "2026-10-28", "text": "El BOE publica sus candidaturas para las generales de 2026.", "sourceId": "boe-candidaturas-2026" }
+    ],
+    "parliamentaryGroups": [
+      { "code": "GSUMAR", "note": "Sus diputados fueron elegidos en las listas de Sumar en 2023." },
+      { "code": "GMx", "note": "Grupo Mixto. Los datos del Congreso muestran a diputados de Podemos votando en el Grupo Mixto durante la legislatura; el Grupo Mixto incluye también a otras formaciones." }
+    ],
+    "monogram": "P"
+  },
+  {
+    "id": "pp",
+    "officialName": "Partido Popular",
+    "shortName": "PP",
+    "acronym": "PP",
+    "kind": "partido",
+    "ballotNames2026": ["PARTIDO POPULAR (PP)", "PARTIT POPULAR/PARTIDO POPULAR (PP)"],
+    "ballotSource": "boe-candidaturas-2026",
+    "madridListHead": "Alberto Núñez Feijóo",
+    "website": "https://www.pp.es",
+    "summary": "Partido político que concurre en todas las circunscripciones según el BOE de candidaturas presentadas. Grupo parlamentario mayoritario en el Congreso durante la XV Legislatura (2023–2026).",
+    "history": [
+      { "date": "2023-07-04", "text": "Presenta su programa para las generales de 2023.", "sourceId": "pp-programa-2023" },
+      { "date": "2026-10-28", "text": "El BOE publica sus candidaturas para las generales de 2026.", "sourceId": "boe-candidaturas-2026" }
+    ],
+    "parliamentaryGroups": [{ "code": "GP", "note": "Grupo Parlamentario Popular en el Congreso." }],
+    "monogram": "PP"
+  },
+  {
+    "id": "psoe",
+    "officialName": "Partido Socialista Obrero Español",
+    "shortName": "PSOE",
+    "acronym": "PSOE",
+    "kind": "partido",
+    "ballotNames2026": [
+      "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+      "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE) (PSC)",
+      "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE (PSDEG-PSOE)",
+      "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE)",
+      "PARTIDO SOCIALISTA DE NAVARRA - PSOE (PSN-PSOE)",
+      "PARTIDO SOCIALISTA DE LAS ISLAS BALEARES (PSIB-PSOE)"
+    ],
+    "ballotSource": "boe-candidaturas-2026",
+    "madridListHead": "Pedro Sánchez Pérez-Castejón",
+    "website": "https://www.psoe.es",
+    "summary": "Partido político que encabezó el Gobierno durante la XV Legislatura (2023–2026), en coalición con Sumar. Concurre con denominaciones territoriales propias (PSC, PSdeG, PSE-EE, PSN, PSIB…), según el BOE.",
+    "history": [
+      { "date": "2023-07-07", "text": "Presenta su programa para las generales de 2023.", "sourceId": "psoe-programa-2023" },
+      { "date": "2026-10-06", "text": "El BOE publica el Real Decreto 806/2026 de disolución de las Cortes, refrendado por el presidente del Gobierno.", "sourceId": "boe-rd-806-2026" },
+      { "date": "2026-10-28", "text": "El BOE publica sus candidaturas para las generales de 2026.", "sourceId": "boe-candidaturas-2026" }
+    ],
+    "parliamentaryGroups": [{ "code": "GS", "note": "Grupo Parlamentario Socialista." }],
+    "monogram": "PS"
+  },
+  {
+    "id": "vox",
+    "officialName": "Vox",
+    "shortName": "Vox",
+    "acronym": "VOX",
+    "kind": "partido",
+    "ballotNames2026": ["VOX (VOX)"],
+    "ballotSource": "boe-candidaturas-2026",
+    "madridListHead": "Santiago Abascal Conde",
+    "website": "https://www.voxespana.es",
+    "summary": "Partido político que concurre en todas las circunscripciones según el BOE de candidaturas presentadas. Tercer grupo del Congreso al inicio de la XV Legislatura.",
+    "history": [
+      { "date": "2023-07-07", "text": "Publica su programa para las generales de 2023.", "sourceId": "vox-programa-2023" },
+      { "date": "2026-10-28", "text": "El BOE publica sus candidaturas para las generales de 2026.", "sourceId": "boe-candidaturas-2026" }
+    ],
+    "parliamentaryGroups": [{ "code": "GVOX", "note": "Grupo Parlamentario VOX." }],
+    "monogram": "V"
+  }
+]

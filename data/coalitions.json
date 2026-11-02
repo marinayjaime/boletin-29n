@@ -1,0 +1,15 @@
+[
+  {
+    "id": "frente-amplio-2026",
+    "partyId": "frente-amplio",
+    "members": [
+      { "name": "Movimiento Sumar", "note": "Según prensa; pendiente de documento de la JEC." },
+      { "name": "Izquierda Unida", "note": "Según prensa; pendiente de documento de la JEC." },
+      { "name": "Comuns", "note": "Concurre en Cataluña como «COMUNS-FRONT AMPLI» (BOE)." },
+      { "name": "Más Madrid", "note": "Según prensa; pendiente de documento de la JEC." }
+    ],
+    "explanation": "Frente Amplio es la candidatura de 2026 de las formaciones que en 2023 concurrieron como Sumar, aunque sin Podemos, que se presenta por separado. Por eso esta plataforma no atribuye a Frente Amplio la actividad parlamentaria del Grupo Plurinacional SUMAR como si fueran la misma organización, ni el programa de Sumar 2023 como programa de Frente Amplio: ambos se muestran como antecedentes, con su nombre original.",
+    "sources": ["boe-candidaturas-2026", "publico-frente-amplio", "sumar-programa-2023"],
+    "verification": "parcial"
+  }
+]

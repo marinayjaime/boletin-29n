@@ -1,0 +1,89 @@
+{
+  "governments": [
+    {
+      "start": "2008-04-12",
+      "label": "Zapatero II",
+      "party": "PSOE",
+      "note": "Toma de posesión del presidente."
+    },
+    {
+      "start": "2011-12-21",
+      "label": "Rajoy I",
+      "party": "PP",
+      "note": "Toma de posesión del presidente."
+    },
+    {
+      "start": "2016-10-31",
+      "label": "Rajoy II",
+      "party": "PP",
+      "note": "Toma de posesión del presidente (en funciones desde diciembre de 2015)."
+    },
+    {
+      "start": "2018-06-02",
+      "label": "Sánchez I",
+      "party": "PSOE",
+      "note": "Toma de posesión tras la moción de censura."
+    },
+    {
+      "start": "2020-01-08",
+      "label": "Sánchez II",
+      "party": "PSOE–Unidas Podemos",
+      "note": "Primer Gobierno de coalición."
+    },
+    {
+      "start": "2023-11-17",
+      "label": "Sánchez III",
+      "party": "PSOE–Sumar",
+      "note": "Gobierno de coalición."
+    }
+  ],
+  "governmentsSource": "https://www.lamoncloa.gob.es/gobierno/gobiernos/Paginas/index.aspx",
+  "events": [
+    {
+      "date": "2012-02-11",
+      "label": "Reforma laboral (RDL 3/2012)",
+      "topics": [
+        "trabajo"
+      ],
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2012-2076"
+    },
+    {
+      "date": "2020-03-14",
+      "label": "Estado de alarma COVID-19",
+      "topics": [
+        "economia",
+        "trabajo",
+        "vivienda",
+        "sanidad-educacion",
+        "sociedad",
+        "pensiones"
+      ],
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2020-3692"
+    },
+    {
+      "date": "2021-12-30",
+      "label": "Reforma laboral (RDL 32/2021)",
+      "topics": [
+        "trabajo"
+      ],
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2021-21788"
+    },
+    {
+      "date": "2022-02-24",
+      "label": "Invasión rusa de Ucrania",
+      "topics": [
+        "economia",
+        "vivienda"
+      ],
+      "url": "https://www.consilium.europa.eu/es/policies/eu-response-ukraine-invasion/"
+    },
+    {
+      "date": "2023-05-26",
+      "label": "Ley 12/2023 por el derecho a la vivienda",
+      "topics": [
+        "vivienda"
+      ],
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-12203"
+    }
+  ]
+}

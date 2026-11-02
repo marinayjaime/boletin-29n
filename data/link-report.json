@@ -1,0 +1,426 @@
+{
+  "checkedAt": "2026-11-02T11:53:37.850Z",
+  "results": [
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742",
+      "where": "promesa pp-2023-ley-urbanismo",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22607",
+      "where": "fuente boe-candidaturas-2026 (oficial)",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.pp.es/sites/default/files/documentos/programa_electoral_pp_23j_feijoo_2023.pdf",
+      "where": "fuente pp-programa-2023 (oficial)",
+      "status": 404,
+      "state": "roto"
+    },
+    {
+      "url": "https://web.archive.org/web/20230704150225/https://www.pp.es/sites/default/files/documentos/programa_electoral_pp_23j_feijoo_2023.pdf",
+      "where": "fuente pp-programa-2023 (copia)",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+      "where": "fuente psoe-programa-2023 (oficial)",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://web.archive.org/web/20230709064011/https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+      "where": "fuente psoe-programa-2023 (copia)",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf",
+      "where": "fuente sumar-programa-2023 (oficial)",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://web.archive.org/web/20230712065723/https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf",
+      "where": "fuente sumar-programa-2023 (copia)",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.voxespana.es/programa/programa-electoral-vox",
+      "where": "fuente vox-programa-2023 (oficial)",
+      "status": 403,
+      "state": "bloqueado"
+    },
+    {
+      "url": "https://theobjective.com/wp-content/uploads/2023/07/programa-vox-23j.pdf",
+      "where": "fuente vox-programa-2023 (copia)",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://podemos.info/wp-content/uploads/2019/10/Podemos_programa_generales_10N.pdf",
+      "where": "fuente podemos-programa-2019 (oficial)",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://web.archive.org/web/20240324003313/https://podemos.info/wp-content/uploads/2019/10/Podemos_programa_generales_10N.pdf",
+      "where": "fuente podemos-programa-2019 (copia)",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://podemos.info/wp-content/uploads/2024/05/Programa-PODEMOS-elecciones-europeas-2024.pdf",
+      "where": "fuente podemos-europeas-2024 (oficial)",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://web.archive.org/web/20240524025157/https://podemos.info/wp-content/uploads/2024/05/Programa-PODEMOS-elecciones-europeas-2024.pdf",
+      "where": "fuente podemos-europeas-2024 (copia)",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones",
+      "where": "fuente congreso-votaciones (oficial)",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/web/user-guides/data-browser/api-data-access/api-detailed-guidelines/api-statistics",
+      "where": "fuente eurostat-api (oficial)",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.publico.es/politica/partidos/frente-amplio-nueva-marca-partidos-sumar-generales.html",
+      "where": "fuente publico-frente-amplio (oficial)",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/tec00115/default/table?lang=es",
+      "where": "indicador pib-crecimiento",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10_pc/default/table?lang=es",
+      "where": "indicador pib-per-capita",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_minr/default/table?lang=es",
+      "where": "indicador alquiler-ipca",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1/default/table?lang=es",
+      "where": "indicador deficit",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10_lp_ulc/default/table?lang=es",
+      "where": "indicador productividad",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table?lang=es",
+      "where": "indicador gasto-educacion",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/une_rt_a/default/table?lang=es",
+      "where": "indicador paro-juvenil",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/une_rt_m/default/table?lang=es",
+      "where": "indicador paro-mensual",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/lfsi_emp_a/default/table?lang=es",
+      "where": "indicador empleo",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/tesem110/default/table?lang=es",
+      "where": "indicador temporalidad",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/earn_mw_cur/default/table?lang=es",
+      "where": "indicador smi",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10_fte/default/table?lang=es",
+      "where": "indicador salario-medio",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/prc_hpi_q/default/table?lang=es",
+      "where": "indicador precio-vivienda",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/irt_st_m/default/table?lang=es",
+      "where": "indicador euribor",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_pjanind/default/table?lang=es",
+      "where": "indicador dependencia-vejez",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_14/default/table?lang=es",
+      "where": "indicador abandono-escolar",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_gind/default/table?lang=es",
+      "where": "indicador poblacion",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_find/default/table?lang=es",
+      "where": "indicador fecundidad",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/migr_imm1ctz/default/table?lang=es",
+      "where": "indicador inmigracion",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/ilc_peps01n/default/table?lang=es",
+      "where": "indicador pobreza-infantil",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/ilc_di12/default/table?lang=es",
+      "where": "indicador gini",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/crim_off_cat/default/table?lang=es",
+      "where": "indicador homicidios",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_ainr/default/table?lang=es",
+      "where": "indicador ipca-indice",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-26452",
+      "where": "promesa psoe-2023-revalorizacion-pensiones",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=10/01/2024",
+      "where": "promesa psoe-2023-revalorizacion-pensiones",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=22/01/2025",
+      "where": "promesa psoe-2023-revalorizacion-pensiones",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-1560",
+      "where": "promesa psoe-2023-revalorizacion-pensiones",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=12/02/2025",
+      "where": "promesa psoe-2023-revalorizacion-pensiones",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2548",
+      "where": "promesa psoe-2023-revalorizacion-pensiones",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=26/02/2026",
+      "where": "promesa psoe-2023-revalorizacion-pensiones",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=22/02/2024",
+      "where": "promesa sumar-2023-jornada-37-5",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=10/09/2025",
+      "where": "promesa sumar-2023-jornada-37-5",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=14/10/2025",
+      "where": "promesa sumar-2023-jornada-37-5",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=27/11/2025",
+      "where": "promesa sumar-2023-reforma-ley-vivienda",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=15/09/2026",
+      "where": "promesa sumar-2023-reforma-ley-vivienda",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=21/04/2026",
+      "where": "promesa pp-2023-ley-urbanismo",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2021-21652",
+      "where": "promesa podemos-2019-pensiones-ipc",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/gobierno/gobiernos/Paginas/index.aspx",
+      "where": "gobiernos",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2012-2076",
+      "where": "acontecimiento Reforma laboral (RDL 3/2012)",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2020-3692",
+      "where": "acontecimiento Estado de alarma COVID-19",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2021-21788",
+      "where": "acontecimiento Reforma laboral (RDL 32/2021)",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.consilium.europa.eu/es/policies/eu-response-ukraine-invasion/",
+      "where": "acontecimiento Invasión rusa de Ucrania",
+      "status": 403,
+      "state": "bloqueado"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-12203",
+      "where": "acontecimiento Ley 12/2023 por el derecho a la vivienda",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203",
+      "where": "glosario gran-tenedor",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+      "where": "glosario real-decreto-ley",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.seg-social.es",
+      "where": "pendiente Edad efectiva de jubilación",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.ine.es",
+      "where": "pendiente Población extranjera residente",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.mivau.gob.es",
+      "where": "pendiente Viviendas terminadas y vivienda protegida",
+      "status": 403,
+      "state": "bloqueado"
+    },
+    {
+      "url": "https://www.bde.es",
+      "where": "pendiente Esfuerzo salarial para acceder a una vivienda",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.sanidad.gob.es",
+      "where": "pendiente Profesionales sanitarios",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.oecd.org/pisa/",
+      "where": "pendiente Resultados educativos comparables (PISA)",
+      "status": 403,
+      "state": "bloqueado"
+    },
+    {
+      "url": "https://www.educacionfpydeportes.gob.es",
+      "where": "pendiente Formación Profesional y becas",
+      "status": 0,
+      "state": "error",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://www.interior.gob.es",
+      "where": "pendiente Balance de criminalidad (infracciones penales conocidas)",
+      "status": 403,
+      "state": "bloqueado"
+    }
+  ]
+}

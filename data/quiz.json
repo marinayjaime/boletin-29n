@@ -1,0 +1,1141 @@
+[
+  {
+    "id": "alquiler-limite",
+    "topicId": "vivienda",
+    "statement": "Las administraciones deberían poder limitar el precio del alquiler en las zonas donde es especialmente caro.",
+    "context": "La Ley 12/2023 permite a las comunidades autónomas declarar «zonas de mercado tensionado» y aplicar allí límites a la renta. Es una de las medidas más debatidas.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "a_favor",
+        "proposalIds": [
+          "frente-amplio-vivienda-02"
+        ]
+      },
+      {
+        "partyId": "podemos",
+        "stance": "a_favor",
+        "proposalIds": [
+          "podemos-vivienda-01"
+        ]
+      },
+      {
+        "partyId": "pp",
+        "stance": "matizada",
+        "proposalIds": [
+          "pp-vivienda-02"
+        ],
+        "note": "Propone derogar la Ley 12/2023, que contiene este mecanismo; la cita no se refiere expresamente a la limitación de precios."
+      },
+      {
+        "partyId": "psoe",
+        "stance": "a_favor",
+        "proposalIds": [
+          "psoe-vivienda-04"
+        ],
+        "note": "Propone aplicar las medidas de contención de precios de la Ley de Vivienda."
+      },
+      {
+        "partyId": "vox",
+        "stance": "en_contra",
+        "proposalIds": [
+          "vox-vivienda-04"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ley-vivienda",
+    "topicId": "vivienda",
+    "statement": "Debería derogarse la Ley 12/2023, por el derecho a la vivienda.",
+    "context": "Ley estatal aprobada en mayo de 2023. Regula, entre otras cosas, zonas tensionadas, grandes tenedores y reservas de suelo para vivienda protegida.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "matizada",
+        "proposalIds": [
+          "frente-amplio-vivienda-03"
+        ],
+        "note": "No propone derogarla, sino reformarla para ampliarla."
+      },
+      {
+        "partyId": "podemos",
+        "stance": "no_comparable",
+        "proposalIds": [],
+        "note": "Su último programa de generales (2019) es anterior a la ley."
+      },
+      {
+        "partyId": "pp",
+        "stance": "a_favor",
+        "proposalIds": [
+          "pp-vivienda-02"
+        ]
+      },
+      {
+        "partyId": "psoe",
+        "stance": "matizada",
+        "proposalIds": [
+          "psoe-vivienda-04"
+        ],
+        "note": "Propone desarrollar sus medidas; no menciona expresamente la derogación."
+      },
+      {
+        "partyId": "vox",
+        "stance": "a_favor",
+        "proposalIds": [
+          "vox-vivienda-05"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "avales-jovenes",
+    "topicId": "vivienda",
+    "statement": "El Estado debería avalar parte de la hipoteca de los jóvenes que compran su primera vivienda.",
+    "context": "Un aval público cubre la parte del préstamo que el banco no financia habitualmente (normalmente, por encima del 80 % del valor).",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "podemos",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "pp",
+        "stance": "a_favor",
+        "proposalIds": [
+          "pp-vivienda-03"
+        ]
+      },
+      {
+        "partyId": "psoe",
+        "stance": "a_favor",
+        "proposalIds": [
+          "psoe-vivienda-03"
+        ]
+      },
+      {
+        "partyId": "vox",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      }
+    ]
+  },
+  {
+    "id": "parque-publico",
+    "topicId": "vivienda",
+    "statement": "Debería ampliarse de forma importante el parque de vivienda pública en alquiler.",
+    "context": "En España la vivienda social representa una proporción del parque inferior a la media europea, según datos citados en varios programas.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "a_favor",
+        "proposalIds": [
+          "frente-amplio-vivienda-01"
+        ]
+      },
+      {
+        "partyId": "podemos",
+        "stance": "a_favor",
+        "proposalIds": [
+          "podemos-vivienda-02"
+        ]
+      },
+      {
+        "partyId": "pp",
+        "stance": "matizada",
+        "proposalIds": [
+          "pp-vivienda-05"
+        ],
+        "note": "Propone movilizar suelo público para alquiler asequible, sin cifrar el parque."
+      },
+      {
+        "partyId": "psoe",
+        "stance": "a_favor",
+        "proposalIds": [
+          "psoe-vivienda-01"
+        ]
+      },
+      {
+        "partyId": "vox",
+        "stance": "matizada",
+        "proposalIds": [
+          "vox-vivienda-03"
+        ],
+        "note": "Propone vivienda social pública en propiedad o alquiler con opción a compra."
+      }
+    ]
+  },
+  {
+    "id": "okupacion-24h",
+    "topicId": "vivienda",
+    "statement": "Los desalojos de viviendas ocupadas ilegalmente deberían poder realizarse en un plazo muy breve, como 24 horas.",
+    "context": "Hoy el plazo depende del procedimiento judicial (civil o penal) y del tipo de inmueble.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "podemos",
+        "stance": "matizada",
+        "proposalIds": [
+          "podemos-vivienda-04"
+        ],
+        "note": "Propone que no haya desalojos de personas vulnerables sin realojo, también en casos de ocupación por falta de vivienda."
+      },
+      {
+        "partyId": "pp",
+        "stance": "a_favor",
+        "proposalIds": [
+          "pp-vivienda-06"
+        ]
+      },
+      {
+        "partyId": "psoe",
+        "stance": "matizada",
+        "proposalIds": [
+          "psoe-vivienda-07"
+        ],
+        "note": "Califica la ocupación ilegal de hecho grave; no fija plazos."
+      },
+      {
+        "partyId": "vox",
+        "stance": "matizada",
+        "proposalIds": [
+          "vox-vivienda-01"
+        ],
+        "note": "Propone reformar el Código Penal y las leyes procesales; la cita no fija un plazo."
+      }
+    ]
+  },
+  {
+    "id": "grandes-fortunas",
+    "topicId": "fiscalidad",
+    "statement": "Debería existir un impuesto específico sobre las grandes fortunas.",
+    "context": "Desde 2022 existe un Impuesto Temporal de Solidaridad de las Grandes Fortunas, que convive con el Impuesto sobre el Patrimonio.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "a_favor",
+        "proposalIds": [
+          "frente-amplio-fiscalidad-01"
+        ]
+      },
+      {
+        "partyId": "podemos",
+        "stance": "a_favor",
+        "proposalIds": [
+          "podemos-fiscalidad-eu02"
+        ],
+        "note": "En el ámbito de la UE (programa europeo de 2024)."
+      },
+      {
+        "partyId": "pp",
+        "stance": "en_contra",
+        "proposalIds": [
+          "pp-fiscalidad-02"
+        ]
+      },
+      {
+        "partyId": "psoe",
+        "stance": "matizada",
+        "proposalIds": [
+          "psoe-fiscalidad-01"
+        ],
+        "note": "Propone evaluar el impuesto y, en su caso, debatir la tributación de la riqueza."
+      },
+      {
+        "partyId": "vox",
+        "stance": "en_contra",
+        "proposalIds": [
+          "vox-fiscalidad-02"
+        ],
+        "note": "Propone suprimir el Impuesto sobre el Patrimonio."
+      }
+    ]
+  },
+  {
+    "id": "sucesiones",
+    "topicId": "fiscalidad",
+    "statement": "Debería suprimirse el Impuesto sobre Sucesiones y Donaciones.",
+    "context": "Es un impuesto estatal cedido a las comunidades autónomas, que pueden bonificarlo; por eso varía mucho según el territorio.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "en_contra",
+        "proposalIds": [
+          "frente-amplio-fiscalidad-02"
+        ],
+        "note": "Propone un mínimo estatal que las comunidades no puedan rebajar."
+      },
+      {
+        "partyId": "podemos",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "pp",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "psoe",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "vox",
+        "stance": "a_favor",
+        "proposalIds": [
+          "vox-fiscalidad-02"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "irpf-tipos",
+    "topicId": "fiscalidad",
+    "statement": "El IRPF debería tener menos tramos y tipos más bajos.",
+    "context": "El IRPF estatal tiene varios tramos con tipos crecientes, a los que se suma el tramo autonómico.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "en_contra",
+        "proposalIds": [
+          "frente-amplio-fiscalidad-03"
+        ],
+        "note": "Propone aumentar la progresividad."
+      },
+      {
+        "partyId": "podemos",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "pp",
+        "stance": "matizada",
+        "proposalIds": [
+          "pp-fiscalidad-01"
+        ],
+        "note": "Propone deflactar la tarifa para corregir la inflación, no cambiar su estructura."
+      },
+      {
+        "partyId": "psoe",
+        "stance": "matizada",
+        "proposalIds": [
+          "psoe-fiscalidad-02"
+        ],
+        "note": "Propone aumentar mínimos personales por hijos y dependientes."
+      },
+      {
+        "partyId": "vox",
+        "stance": "a_favor",
+        "proposalIds": [
+          "vox-fiscalidad-01"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jornada",
+    "topicId": "empleo",
+    "statement": "La jornada laboral máxima legal debería reducirse por debajo de las 40 horas semanales.",
+    "context": "El Estatuto de los Trabajadores fija desde 1983 una jornada máxima de 40 horas semanales de trabajo efectivo de promedio anual.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "a_favor",
+        "proposalIds": [
+          "frente-amplio-empleo-01"
+        ]
+      },
+      {
+        "partyId": "podemos",
+        "stance": "a_favor",
+        "proposalIds": [
+          "podemos-empleo-01"
+        ]
+      },
+      {
+        "partyId": "pp",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "psoe",
+        "stance": "matizada",
+        "proposalIds": [
+          "psoe-empleo-02"
+        ],
+        "note": "Propone continuar un proyecto piloto de reducción en empresas industriales."
+      },
+      {
+        "partyId": "vox",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      }
+    ]
+  },
+  {
+    "id": "smi-ipc",
+    "topicId": "empleo",
+    "statement": "El salario mínimo debería seguir subiendo por encima de la inflación.",
+    "context": "El Gobierno fija el SMI cada año por real decreto, tras consultar a sindicatos y patronal.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "a_favor",
+        "proposalIds": [
+          "frente-amplio-empleo-02"
+        ]
+      },
+      {
+        "partyId": "podemos",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "pp",
+        "stance": "matizada",
+        "proposalIds": [
+          "pp-empleo-01"
+        ],
+        "note": "Propone actualizarlo en el marco del diálogo social, sin fijar criterio."
+      },
+      {
+        "partyId": "psoe",
+        "stance": "matizada",
+        "proposalIds": [
+          "psoe-empleo-01"
+        ],
+        "note": "Propone vincularlo al 60 % del salario medio."
+      },
+      {
+        "partyId": "vox",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      }
+    ]
+  },
+  {
+    "id": "reforma-laboral",
+    "topicId": "empleo",
+    "statement": "Debería derogarse la reforma laboral de 2021.",
+    "context": "El Real Decreto-ley 32/2021 limitó los contratos temporales y reforzó el contrato indefinido, entre otros cambios.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "en_contra",
+        "proposalIds": [
+          "frente-amplio-empleo-03"
+        ],
+        "note": "La toma como base y propone profundizar en ella."
+      },
+      {
+        "partyId": "podemos",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "pp",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "psoe",
+        "stance": "en_contra",
+        "proposalIds": [
+          "psoe-empleo-03"
+        ]
+      },
+      {
+        "partyId": "vox",
+        "stance": "a_favor",
+        "proposalIds": [
+          "vox-empleo-01"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pensiones-ipc",
+    "topicId": "pensiones",
+    "statement": "Las pensiones deberían revalorizarse cada año según el IPC.",
+    "context": "Desde la Ley 21/2021 las pensiones contributivas se revalorizan con la media del IPC interanual de los doce meses previos a diciembre.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "a_favor",
+        "proposalIds": [
+          "frente-amplio-pensiones-01"
+        ]
+      },
+      {
+        "partyId": "podemos",
+        "stance": "a_favor",
+        "proposalIds": [
+          "podemos-pensiones-01"
+        ]
+      },
+      {
+        "partyId": "pp",
+        "stance": "matizada",
+        "proposalIds": [
+          "pp-pensiones-01"
+        ],
+        "note": "Garantiza la revalorización «en el marco del Pacto de Toledo», sin índice."
+      },
+      {
+        "partyId": "psoe",
+        "stance": "matizada",
+        "proposalIds": [
+          "psoe-pensiones-01"
+        ],
+        "note": "Garantiza la revalorización; la cita no menciona el índice."
+      },
+      {
+        "partyId": "vox",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      }
+    ]
+  },
+  {
+    "id": "pensiones-minimas",
+    "topicId": "pensiones",
+    "statement": "Las pensiones mínimas y no contributivas deberían subir más que el resto.",
+    "context": "Las pensiones mínimas y no contributivas protegen a quienes cotizaron poco o nada.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "a_favor",
+        "proposalIds": [
+          "frente-amplio-pensiones-01"
+        ]
+      },
+      {
+        "partyId": "podemos",
+        "stance": "a_favor",
+        "proposalIds": [
+          "podemos-pensiones-02"
+        ]
+      },
+      {
+        "partyId": "pp",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "psoe",
+        "stance": "matizada",
+        "proposalIds": [
+          "psoe-pensiones-02"
+        ],
+        "note": "Propone aumentarlas, sin comparar con el resto."
+      },
+      {
+        "partyId": "vox",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      }
+    ]
+  },
+  {
+    "id": "espera-ley",
+    "topicId": "sanidad",
+    "statement": "Deberían fijarse por ley tiempos máximos de espera en la sanidad pública.",
+    "context": "Existen garantías de tiempos máximos para algunos procedimientos (Real Decreto 1039/2011) y normas autonómicas propias.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "a_favor",
+        "proposalIds": [
+          "frente-amplio-sanidad-01"
+        ]
+      },
+      {
+        "partyId": "podemos",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "pp",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "psoe",
+        "stance": "a_favor",
+        "proposalIds": [
+          "psoe-sanidad-01"
+        ]
+      },
+      {
+        "partyId": "vox",
+        "stance": "matizada",
+        "proposalIds": [
+          "vox-sanidad-01"
+        ],
+        "note": "Propone reducir las listas con incentivos y conciertos, sin tiempos legales."
+      }
+    ]
+  },
+  {
+    "id": "conciertos",
+    "topicId": "sanidad",
+    "statement": "La sanidad pública debería apoyarse más en conciertos con centros privados para reducir las listas de espera.",
+    "context": "Las comunidades autónomas pueden concertar servicios con centros privados que atienden a pacientes del sistema público.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "matizada",
+        "proposalIds": [
+          "frente-amplio-sanidad-03"
+        ],
+        "note": "Propone impedir las formas de gestión privatizada; la cita no se refiere expresamente a los conciertos."
+      },
+      {
+        "partyId": "podemos",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "pp",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "psoe",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "vox",
+        "stance": "a_favor",
+        "proposalIds": [
+          "vox-sanidad-01"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dental",
+    "topicId": "sanidad",
+    "statement": "La sanidad pública debería cubrir el dentista para más personas.",
+    "context": "La cobertura bucodental pública es limitada y varía entre comunidades.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "a_favor",
+        "proposalIds": [
+          "frente-amplio-sanidad-02"
+        ]
+      },
+      {
+        "partyId": "podemos",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "pp",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "psoe",
+        "stance": "a_favor",
+        "proposalIds": [
+          "psoe-sanidad-02"
+        ]
+      },
+      {
+        "partyId": "vox",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      }
+    ]
+  },
+  {
+    "id": "cero-tres",
+    "topicId": "educacion",
+    "statement": "La educación de 0 a 3 años debería ser universal y gratuita.",
+    "context": "El primer ciclo de educación infantil (0-3 años) no es obligatorio y su oferta pública varía según el territorio.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "a_favor",
+        "proposalIds": [
+          "frente-amplio-educacion-01"
+        ]
+      },
+      {
+        "partyId": "podemos",
+        "stance": "a_favor",
+        "proposalIds": [
+          "podemos-educacion-01"
+        ]
+      },
+      {
+        "partyId": "pp",
+        "stance": "a_favor",
+        "proposalIds": [
+          "pp-educacion-01"
+        ]
+      },
+      {
+        "partyId": "psoe",
+        "stance": "matizada",
+        "proposalIds": [
+          "psoe-educacion-01"
+        ],
+        "note": "Propone seguir ampliando la red pública."
+      },
+      {
+        "partyId": "vox",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      }
+    ]
+  },
+  {
+    "id": "competencias-educacion",
+    "topicId": "educacion",
+    "statement": "Las competencias en educación deberían volver al Estado.",
+    "context": "La gestión educativa está transferida a las comunidades autónomas; el Estado fija las normas básicas.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "podemos",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "pp",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "psoe",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "vox",
+        "stance": "matizada",
+        "proposalIds": [
+          "vox-educacion-02"
+        ],
+        "note": "Propone consultar a la ciudadanía (art. 92 CE) sobre la devolución de las competencias."
+      }
+    ]
+  },
+  {
+    "id": "lenguas-vehiculares",
+    "topicId": "educacion",
+    "statement": "En las comunidades con dos lenguas oficiales, ambas deberían ser lenguas vehiculares en la escuela.",
+    "context": "La lengua vehicular es la que se usa para impartir las asignaturas.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "podemos",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "pp",
+        "stance": "a_favor",
+        "proposalIds": [
+          "pp-educacion-02"
+        ]
+      },
+      {
+        "partyId": "psoe",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "vox",
+        "stance": "matizada",
+        "proposalIds": [
+          "vox-educacion-01"
+        ],
+        "note": "Propone garantizar el derecho a ser educado en español en todo el territorio."
+      }
+    ]
+  },
+  {
+    "id": "regularizacion",
+    "topicId": "inmigracion",
+    "statement": "Debería existir un procedimiento permanente para regularizar a inmigrantes en situación irregular.",
+    "context": "Hoy existen vías de regularización individual (como el arraigo) reguladas en el Reglamento de Extranjería.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "a_favor",
+        "proposalIds": [
+          "frente-amplio-inmigracion-01"
+        ]
+      },
+      {
+        "partyId": "podemos",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "pp",
+        "stance": "matizada",
+        "proposalIds": [
+          "pp-inmigracion-02"
+        ],
+        "note": "Propone agilizar las órdenes de retorno."
+      },
+      {
+        "partyId": "psoe",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "vox",
+        "stance": "en_contra",
+        "proposalIds": [
+          "vox-inmigracion-01"
+        ],
+        "note": "Propone la expulsión inmediata de quienes entren de forma irregular."
+      }
+    ]
+  },
+  {
+    "id": "expulsion",
+    "topicId": "inmigracion",
+    "statement": "Las personas que entran de forma irregular deberían ser expulsadas de inmediato.",
+    "context": "La normativa española y europea establece procedimientos con garantías y el derecho a solicitar asilo.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "en_contra",
+        "proposalIds": [
+          "frente-amplio-inmigracion-02"
+        ],
+        "note": "Propone abandonar las devoluciones sumarias."
+      },
+      {
+        "partyId": "podemos",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "pp",
+        "stance": "matizada",
+        "proposalIds": [
+          "pp-inmigracion-02"
+        ],
+        "note": "Propone agilizar los retornos mediante acuerdos con países de origen y tránsito."
+      },
+      {
+        "partyId": "psoe",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "vox",
+        "stance": "a_favor",
+        "proposalIds": [
+          "vox-inmigracion-01"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nuclear",
+    "topicId": "energia",
+    "statement": "Debería alargarse la vida útil de las centrales nucleares.",
+    "context": "El calendario pactado en 2019 prevé el cierre escalonado de las centrales entre 2027 y 2035.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "en_contra",
+        "proposalIds": [
+          "frente-amplio-energia-01"
+        ]
+      },
+      {
+        "partyId": "podemos",
+        "stance": "en_contra",
+        "proposalIds": [
+          "podemos-energia-01"
+        ],
+        "note": "Programa de 2019: proponía el cierre antes de finales de 2024."
+      },
+      {
+        "partyId": "pp",
+        "stance": "a_favor",
+        "proposalIds": [
+          "pp-energia-01"
+        ]
+      },
+      {
+        "partyId": "psoe",
+        "stance": "matizada",
+        "proposalIds": [
+          "psoe-energia-01"
+        ],
+        "note": "Incluye en su plan de residuos el desmantelamiento ordenado y progresivo de las centrales."
+      },
+      {
+        "partyId": "vox",
+        "stance": "a_favor",
+        "proposalIds": [
+          "vox-energia-01"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "plurinacional",
+    "topicId": "territorial",
+    "statement": "España debería reconocerse como un Estado plurinacional.",
+    "context": "La Constitución reconoce «la Nación española» y el derecho a la autonomía de «nacionalidades y regiones» (art. 2).",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "a_favor",
+        "proposalIds": [
+          "frente-amplio-territorial-01"
+        ]
+      },
+      {
+        "partyId": "podemos",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "pp",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "psoe",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "vox",
+        "stance": "en_contra",
+        "proposalIds": [
+          "vox-territorial-01"
+        ],
+        "note": "Propone un Estado unitario administrativamente descentralizado."
+      }
+    ]
+  },
+  {
+    "id": "pacto-violencia",
+    "topicId": "igualdad",
+    "statement": "Debería mantenerse y reforzarse el Pacto de Estado contra la Violencia de Género.",
+    "context": "El Pacto de Estado se aprobó en el Congreso en 2017.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "a_favor",
+        "proposalIds": [
+          "frente-amplio-igualdad-01"
+        ]
+      },
+      {
+        "partyId": "podemos",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "pp",
+        "stance": "a_favor",
+        "proposalIds": [
+          "pp-igualdad-01"
+        ]
+      },
+      {
+        "partyId": "psoe",
+        "stance": "a_favor",
+        "proposalIds": [
+          "psoe-igualdad-01"
+        ]
+      },
+      {
+        "partyId": "vox",
+        "stance": "matizada",
+        "proposalIds": [
+          "vox-igualdad-01"
+        ],
+        "note": "Propone derogar la Ley Integral de Violencia de Género de 2004; la cita no se refiere al Pacto."
+      }
+    ]
+  },
+  {
+    "id": "aborto",
+    "topicId": "igualdad",
+    "statement": "El aborto debería estar garantizado en la sanidad pública en todo el territorio.",
+    "context": "La Ley Orgánica 2/2010, reformada en 2023, regula la interrupción voluntaria del embarazo.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "a_favor",
+        "proposalIds": [
+          "frente-amplio-igualdad-02"
+        ]
+      },
+      {
+        "partyId": "podemos",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "pp",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "psoe",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "vox",
+        "stance": "en_contra",
+        "proposalIds": [
+          "vox-igualdad-02"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ley-clima",
+    "topicId": "medio-ambiente",
+    "statement": "Debería derogarse la Ley de Cambio Climático y Transición Energética.",
+    "context": "La Ley 7/2021 fija objetivos de reducción de emisiones y de energías renovables para 2030 y 2050.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "en_contra",
+        "proposalIds": [
+          "frente-amplio-medio-ambiente-01"
+        ],
+        "note": "Propone aumentar su ambición."
+      },
+      {
+        "partyId": "podemos",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "pp",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "psoe",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "vox",
+        "stance": "a_favor",
+        "proposalIds": [
+          "vox-medio-ambiente-01"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pacto-verde",
+    "topicId": "medio-ambiente",
+    "statement": "Deberían flexibilizarse o revisarse los objetivos del Pacto Verde Europeo.",
+    "context": "El Pacto Verde es la estrategia de la UE para alcanzar la neutralidad climática en 2050.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "podemos",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "pp",
+        "stance": "a_favor",
+        "proposalIds": [
+          "pp-medio-ambiente-01"
+        ]
+      },
+      {
+        "partyId": "psoe",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "vox",
+        "stance": "a_favor",
+        "proposalIds": [
+          "vox-medio-ambiente-02"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ayudas-hijos",
+    "topicId": "familia",
+    "statement": "El Estado debería dar más ayudas económicas por tener hijos.",
+    "context": "Existen deducciones en el IRPF y prestaciones como el complemento de ayuda a la infancia del Ingreso Mínimo Vital.",
+    "positions": [
+      {
+        "partyId": "frente-amplio",
+        "stance": "a_favor",
+        "proposalIds": [
+          "frente-amplio-familia-01"
+        ]
+      },
+      {
+        "partyId": "podemos",
+        "stance": "sin_posicion_documentada",
+        "proposalIds": []
+      },
+      {
+        "partyId": "pp",
+        "stance": "matizada",
+        "proposalIds": [
+          "pp-familia-01"
+        ],
+        "note": "Propone fomentar la natalidad, sin concretar ayudas en la cita."
+      },
+      {
+        "partyId": "psoe",
+        "stance": "a_favor",
+        "proposalIds": [
+          "psoe-familia-01"
+        ]
+      },
+      {
+        "partyId": "vox",
+        "stance": "a_favor",
+        "proposalIds": [
+          "vox-familia-01"
+        ]
+      }
+    ]
+  }
+]

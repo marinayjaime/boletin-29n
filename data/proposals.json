@@ -1,0 +1,2995 @@
+[
+  {
+    "id": "pp-vivienda-01",
+    "partyId": "pp",
+    "topicId": "vivienda",
+    "dimensionId": "otras",
+    "summary": "Propone un pacto de Estado sobre vivienda con comunidades autónomas y entidades locales.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 31,
+        "quote": "PROPONDREMOS UN PACTO DE ESTADO SOBRE LA VIVIENDA que cuente con la participación e implicación de las Comunidades Autónomas y entidades locales."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-vivienda-02",
+    "partyId": "pp",
+    "topicId": "vivienda",
+    "dimensionId": "regulacion-alquiler",
+    "summary": "Propone derogar la Ley 12/2023, por el derecho a la vivienda.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 32,
+        "quote": "Derogaremos la ley de vivienda, que ha generado inseguridad jurídica y no resuelve ninguno de los problemas de fondo del mercado de la vivienda."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "derogar-ley-vivienda"
+  },
+  {
+    "id": "pp-vivienda-03",
+    "partyId": "pp",
+    "topicId": "vivienda",
+    "dimensionId": "jovenes",
+    "summary": "Programa de avales públicos para que jóvenes de hasta 35 años obtengan hipotecas de hasta el 95 % del precio.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 32,
+        "quote": "LLEVAREMOS A CABO UN PROGRAMA DE AVALES DESTINADO A JÓVENES de hasta 35 años, a fin de garantizar la concesión de créditos hipotecarios por valor de hasta un 95% de la totalidad del precio de la vivienda."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "avales-hipoteca-jovenes"
+  },
+  {
+    "id": "pp-vivienda-04",
+    "partyId": "pp",
+    "topicId": "vivienda",
+    "dimensionId": "suelo-urbanismo",
+    "summary": "Ley de seguridad jurídica urbanística para que los planes no decaigan por impugnaciones de aspectos no estructurales.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 32,
+        "quote": "IMPULSAREMOS UNA LEY DE SEGURIDAD JURÍDICA EN MATERIA DE URBANISMO, que garantice la perdurabilidad de los planes urbanísticos cuando se impugnen cuestiones no estructurantes de los mismos."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-vivienda-05",
+    "partyId": "pp",
+    "topicId": "vivienda",
+    "dimensionId": "vivienda-publica",
+    "summary": "Movilizar suelo público para promover vivienda en alquiler asequible.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 32,
+        "quote": "MOVILIZAREMOS EL SUELO DE TITULARIDAD PÚBLICA destinado a redes públicas de vivienda, tanto patrimonial como demanial, con destino a fórmulas de promoción de vivienda en alquiler asequible."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-vivienda-06",
+    "partyId": "pp",
+    "topicId": "vivienda",
+    "dimensionId": "ocupacion",
+    "summary": "Paquete legal contra la ocupación ilegal con desalojos en un plazo máximo de 24 horas.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 78,
+        "quote": "APROBAREMOS UN PAQUETE DE MEDIDAS “ANTI-OKUPACIÓN” para permitir que los desalojos se produzcan en un plazo máximo de 24 horas"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-vivienda-07",
+    "partyId": "pp",
+    "topicId": "vivienda",
+    "dimensionId": "fiscalidad-compra",
+    "summary": "Bonificar ITP-AJD o IBI en la compra de vivienda en el medio rural.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 30,
+        "quote": "Bonificaremos el Impuesto de Transmisiones y de Actos Jurídicos Documentados o el IBI por compra de una vivienda en el rural"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "competence": "El ITP-AJD está cedido a las comunidades autónomas y el IBI es un impuesto municipal."
+  },
+  {
+    "id": "psoe-vivienda-01",
+    "partyId": "psoe",
+    "topicId": "vivienda",
+    "dimensionId": "vivienda-publica",
+    "summary": "Objetivo de que el 20 % del parque sea vivienda pública en alquiler.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 222,
+        "quote": "El objetivo será alcanzar el 20% de vivienda pública en régimen de alquiler en los próximos años"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-vivienda-02",
+    "partyId": "psoe",
+    "topicId": "vivienda",
+    "dimensionId": "jovenes",
+    "summary": "Mantener el Bono Alquiler Joven.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 226,
+        "quote": "Consolidaremos el Bono Alquiler Joven como elemento esencial que facilite el acceso al alquiler asequible."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-vivienda-03",
+    "partyId": "psoe",
+    "topicId": "vivienda",
+    "dimensionId": "jovenes",
+    "summary": "Línea de avales ICO de 2.500 millones para la compra de vivienda por menores de 35 años.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 226,
+        "quote": "Desarrollaremos y aplicaremos la nueva línea de avales del Instituto de Crédito Oficial (ICO) de 2.500 millones de euros para ayudar a los jóvenes menores de 35 años."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "avales-hipoteca-jovenes"
+  },
+  {
+    "id": "psoe-vivienda-04",
+    "partyId": "psoe",
+    "topicId": "vivienda",
+    "dimensionId": "precio-alquiler",
+    "summary": "Aplicar las medidas de contención de precios previstas en la Ley de Vivienda.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 221,
+        "quote": "Desarrollaremos las medidas contempladas para la contención de los precios de la vivienda."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-vivienda-05",
+    "partyId": "psoe",
+    "topicId": "vivienda",
+    "dimensionId": "vivienda-publica",
+    "summary": "Incorporar 50.000 viviendas procedentes de la Sareb (alquiler social, construcción en su suelo y cesión a CCAA y entes locales).",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 223,
+        "quote": "50.000 viviendas procedentes de la Sareb"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-vivienda-06",
+    "partyId": "psoe",
+    "topicId": "vivienda",
+    "dimensionId": "suelo-urbanismo",
+    "summary": "Aumentar las reservas de suelo destinadas a vivienda social.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 223,
+        "quote": "Incrementaremos las reservas de suelo para vivienda social"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-vivienda-07",
+    "partyId": "psoe",
+    "topicId": "vivienda",
+    "dimensionId": "ocupacion",
+    "summary": "Considera la ocupación ilegal un hecho grave que debe combatirse, con foco en las mafias.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 251,
+        "quote": "La ocupación ilegal de viviendas es un hecho grave y debe combatirse, especialmente la acción de las mafias."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-vivienda-01",
+    "partyId": "frente-amplio",
+    "topicId": "vivienda",
+    "dimensionId": "vivienda-publica",
+    "summary": "Invertir el 1 % del PIB anual durante diez años para crear un parque de más de dos millones de viviendas protegidas en alquiler.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 76,
+        "quote": "Invertiremos sostenidamente, durante diez años, el 1% del PIB en construcción, compra, movilización y rehabilitación de vivienda para generar un verdadero parque de alquiler protegido, social, sostenible y asequible de más dos millones de viviendas protegidas en los siguientes diez años."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-vivienda-02",
+    "partyId": "frente-amplio",
+    "topicId": "vivienda",
+    "dimensionId": "precio-alquiler",
+    "summary": "Extender la regulación de alquileres a todas las zonas de mercado tensionado.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 77,
+        "quote": "Aplicaremos así la regulación de alquileres a todas las zonas de mercado tensionado para garantizar la igualdad de todos los inquilinos en el ejercicio de sus derechos."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-vivienda-03",
+    "partyId": "frente-amplio",
+    "topicId": "vivienda",
+    "dimensionId": "regulacion-alquiler",
+    "summary": "Reformar la Ley 12/2023 para incluir alquiler social obligatorio para grandes tenedores y dación en pago, entre otras medidas.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 77,
+        "quote": "Modificaremos la Ley 12/2023 de Vivienda para incluir: el alquiler social obligatorio para grandes tenedores, la dación en pago, obligaciones de resultado para las Administraciones públicas en materia de vivienda alternativa frente a los desahucios"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-vivienda-04",
+    "partyId": "frente-amplio",
+    "topicId": "vivienda",
+    "dimensionId": "regulacion-alquiler",
+    "summary": "Limitar el alquiler turístico, por habitaciones y de temporada.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 77,
+        "quote": "Estableceremos limitaciones al alquiler turístico, de habitaciones y de temporada para que no se conviertan en una opción que sortee la aplicación de la Ley de Vivienda."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-vivienda-05",
+    "partyId": "frente-amplio",
+    "topicId": "vivienda",
+    "dimensionId": "fiscalidad-compra",
+    "summary": "Rebajar el IVA de los proyectos de vivienda en alquiler social y asequible.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 76,
+        "quote": "Reduciremos también el IVA para proyectos de vivienda de alquiler social y asequible."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-vivienda-06",
+    "partyId": "frente-amplio",
+    "topicId": "vivienda",
+    "dimensionId": "suelo-urbanismo",
+    "summary": "Prohibir la venta de suelo y vivienda públicos (Sareb, Adif, Defensa), salvo cesión a entidades públicas.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 76,
+        "quote": "Prohibiremos de forma expresa la venta de patrimonio público de suelo y vivienda de las Administraciones (específicamente el correspondiente a la Sareb, Adif y Defensa)"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-vivienda-07",
+    "partyId": "frente-amplio",
+    "topicId": "vivienda",
+    "dimensionId": "otras",
+    "summary": "Convertir la Sareb en una herramienta pública de política de vivienda.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 77,
+        "quote": "Convertiremos la Sareb en una herramienta pública que tenga como objetivo garantizar el derecho a la vivienda."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-vivienda-01",
+    "partyId": "vox",
+    "topicId": "vivienda",
+    "dimensionId": "ocupacion",
+    "summary": "Reformar el Código Penal y las leyes procesales contra la ocupación ilegal y eximir del IBI a los propietarios afectados.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 40,
+        "quote": "Tolerancia cero con la ocupación ilegal."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-vivienda-02",
+    "partyId": "vox",
+    "topicId": "vivienda",
+    "dimensionId": "suelo-urbanismo",
+    "summary": "Liberar todo el suelo que no deba estar especialmente protegido y aprobar una nueva Ley del Suelo.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 40,
+        "quote": "Liberaremos todo el suelo que no esté o deba estar especialmente protegido por motivos de interés ambiental, paisajístico, productivo o para la Defensa Nacional."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-vivienda-03",
+    "partyId": "vox",
+    "topicId": "vivienda",
+    "dimensionId": "vivienda-publica",
+    "summary": "Construcción de vivienda social pública en propiedad o alquiler con opción a compra.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 41,
+        "quote": "Impulsaremos la construcción viviendas sociales públicas en régimen de propiedad o arrendamiento con opción a compra para garantizar que los jóvenes y familias puedan adquirir un hogar, especialmente aquellos con menos recursos."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-vivienda-04",
+    "partyId": "vox",
+    "topicId": "vivienda",
+    "dimensionId": "precio-alquiler",
+    "summary": "Eliminar el control de rentas y la expropiación temporal de viviendas.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 42,
+        "quote": "Acabaremos con la expropiación temporal de inmuebles y con el control de rentas en el contrato de arrendamiento puestos en marcha en los últimos años por distintas regiones."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-vivienda-05",
+    "partyId": "vox",
+    "topicId": "vivienda",
+    "dimensionId": "regulacion-alquiler",
+    "summary": "Derogar la Ley 12/2023, por el derecho a la vivienda.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 43,
+        "quote": "Derogaremos la Ley por el derecho a la vivienda aprobada por el gobierno de Sánchez"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "derogar-ley-vivienda"
+  },
+  {
+    "id": "vox-vivienda-06",
+    "partyId": "vox",
+    "topicId": "vivienda",
+    "dimensionId": "fiscalidad-compra",
+    "summary": "Suprimir el IVA en la compra de primera vivienda habitual.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 76,
+        "quote": "eliminaremos el IVA para la adquisición de primera vivienda habitual"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-vivienda-07",
+    "partyId": "vox",
+    "topicId": "vivienda",
+    "dimensionId": "fiscalidad-compra",
+    "summary": "Recuperar la deducción por vivienda habitual en el IRPF.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 75,
+        "quote": "Recuperaremos la deducción por inversión en vivienda habitual en el IRPF"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-vivienda-08",
+    "partyId": "vox",
+    "topicId": "vivienda",
+    "dimensionId": "otras",
+    "summary": "Homogeneizar la normativa sobre viviendas turísticas en toda España.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 42,
+        "quote": "Impulsaremos la homogeneización de la normativa turística en materia de viviendas con fines turísticos para toda España."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-vivienda-01",
+    "partyId": "podemos",
+    "topicId": "vivienda",
+    "dimensionId": "precio-alquiler",
+    "summary": "Control de precios del alquiler mediante índices de referencia locales.",
+    "category": "programa_anterior",
+    "cycle": "generales-2019-11",
+    "citations": [
+      {
+        "sourceId": "podemos-programa-2019",
+        "pdfPage": 90,
+        "quote": "Intervenir el mercado del alquiler para impedir subidas abusivas mediante el control de precios y garantizar un alquiler estable y seguro para personas inquilinas y pequeñas propietarias."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-vivienda-02",
+    "partyId": "podemos",
+    "topicId": "vivienda",
+    "dimensionId": "vivienda-publica",
+    "summary": "Aumentar en 50.000 viviendas anuales el parque de alquiler social mediante cesión obligatoria de vivienda vacía de grandes tenedores.",
+    "category": "programa_anterior",
+    "cycle": "generales-2019-11",
+    "citations": [
+      {
+        "sourceId": "podemos-programa-2019",
+        "pdfPage": 90,
+        "quote": "incrementaremos en 50 000 viviendas al año, durante toda la legislatura, el parque de vivienda en alquiler social mediante un mecanismo de cesión obligatoria de las viviendas vacías de los grandes tenedores de vivienda"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-vivienda-03",
+    "partyId": "podemos",
+    "topicId": "vivienda",
+    "dimensionId": "jovenes",
+    "summary": "Acceso prioritario de la juventud al parque público de alquiler.",
+    "category": "programa_anterior",
+    "cycle": "generales-2019-11",
+    "citations": [
+      {
+        "sourceId": "podemos-programa-2019",
+        "pdfPage": 91,
+        "quote": "La juventud tendrá un acceso prioritario a este parque de viviendas."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-vivienda-04",
+    "partyId": "podemos",
+    "topicId": "vivienda",
+    "dimensionId": "regulacion-alquiler",
+    "summary": "Prohibir desahucios de personas vulnerables sin realojo garantizado.",
+    "category": "programa_anterior",
+    "cycle": "generales-2019-11",
+    "citations": [
+      {
+        "sourceId": "podemos-programa-2019",
+        "pdfPage": 91,
+        "quote": "En ningún caso se podrá realizar el desalojo o desahucio de personas y sus familias en situación de vulnerabilidad, sin que la Administración competente garantice un realojo en condiciones dignas"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-vivienda-05",
+    "partyId": "podemos",
+    "topicId": "vivienda",
+    "dimensionId": "otras",
+    "summary": "Estudiar límites máximos de pisos turísticos por barrio.",
+    "category": "programa_anterior",
+    "cycle": "generales-2019-11",
+    "citations": [
+      {
+        "sourceId": "podemos-programa-2019",
+        "pdfPage": 91,
+        "quote": "Junto con las Administraciones locales, estudiaremos también establecer un porcentaje máximo de viviendas destinadas a pisos turísticos en función de las características de cada barrio"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-vivienda-eu06",
+    "partyId": "podemos",
+    "topicId": "vivienda",
+    "dimensionId": "regulacion-alquiler",
+    "summary": "(Ámbito UE) Directiva europea que prohíba a los «fondos buitre» poseer viviendas y limite el alquiler al 30 % de los ingresos del hogar.",
+    "category": "programa_anterior",
+    "cycle": "europeas-2024",
+    "citations": [
+      {
+        "sourceId": "podemos-europeas-2024",
+        "pdfPage": 37,
+        "quote": "Impulsaremos una directiva que prohiba que los fondos buitre puedan poseer viviendas y que regule y fije mecanismos de control sobre los precios de la vivienda en alquiler para que no superen el 30 % de los ingresos del hogar."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-fiscalidad-01",
+    "partyId": "pp",
+    "topicId": "fiscalidad",
+    "dimensionId": "irpf",
+    "summary": "Deflactar la tarifa del IRPF para corregir el efecto de la inflación.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 21,
+        "quote": "Corregiremos los efectos de la inflación en la tarifa del IRPF que supone una subida real de impuestos sobre la clase media."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-fiscalidad-02",
+    "partyId": "pp",
+    "topicId": "fiscalidad",
+    "dimensionId": "patrimonio-sucesiones",
+    "summary": "Suprimir el Impuesto Temporal de Solidaridad de las Grandes Fortunas.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 21,
+        "quote": "Eliminaremos el impuesto a las grandes fortunas"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-fiscalidad-03",
+    "partyId": "pp",
+    "topicId": "fiscalidad",
+    "dimensionId": "sociedades",
+    "summary": "Simplificar IRPF y Sociedades para pymes.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 21,
+        "quote": "simplificaremos el IRPF y el Impuesto sobre Sociedades para las pymes"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-fiscalidad-01",
+    "partyId": "psoe",
+    "topicId": "fiscalidad",
+    "dimensionId": "patrimonio-sucesiones",
+    "summary": "Evaluar el impuesto a las grandes fortunas y, en su caso, debatir la tributación de la riqueza en el marco de la financiación autonómica.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 39,
+        "quote": "Evaluaremos los resultados del Impuesto Temporal de Solidaridad de las Grandes Fortunas y, en su caso, avanzaremos en el debate sobre la tributación de la riqueza en el marco del modelo de financiación autonómica para acabar con la competencia fiscal desleal entre territorios."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-fiscalidad-02",
+    "partyId": "psoe",
+    "topicId": "fiscalidad",
+    "dimensionId": "irpf",
+    "summary": "Aumentar el mínimo por descendientes y dependientes en el IRPF.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 33,
+        "quote": "Aumentaremos el mínimo por descendientes y personas dependientes en el IRPF"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-fiscalidad-01",
+    "partyId": "frente-amplio",
+    "topicId": "fiscalidad",
+    "dimensionId": "patrimonio-sucesiones",
+    "summary": "Impuesto permanente a las grandes fortunas con tipos de al menos el 4 % en los patrimonios más altos.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 16,
+        "quote": "Implementaremos un impuesto a las grandes fortunas de forma permanente, reforzando además su progresividad, hasta llegar a tipos impositivos de al menos el 4% para los patrimonios más elevados."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-fiscalidad-02",
+    "partyId": "frente-amplio",
+    "topicId": "fiscalidad",
+    "dimensionId": "patrimonio-sucesiones",
+    "summary": "Mínimo estatal en Sucesiones y Donaciones que las comunidades no puedan rebajar.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 16,
+        "quote": "En el impuesto sobre sucesiones y donaciones se establecerá un mínimo en el conjunto de España que las comunidades autónomas no podrán rebajar."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-fiscalidad-03",
+    "partyId": "frente-amplio",
+    "topicId": "fiscalidad",
+    "dimensionId": "irpf",
+    "summary": "Aumentar la progresividad del IRPF.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 17,
+        "quote": "Aumento de la progresividad del impuesto sobre la renta de las personas físicas (IRPF)."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-fiscalidad-01",
+    "partyId": "vox",
+    "topicId": "fiscalidad",
+    "dimensionId": "irpf",
+    "summary": "IRPF con dos tipos: 15 % hasta 70.000 € de base y 25 % por encima.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 75,
+        "quote": "un tipo único reducido del 15% a aplicar sobre bases imponibles inferiores a 70.000 euros y un tipo ordinario del 25% a aplicar a bases imponibles superiores a dicha cantidad"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-fiscalidad-02",
+    "partyId": "vox",
+    "topicId": "fiscalidad",
+    "dimensionId": "patrimonio-sucesiones",
+    "summary": "Suprimir Patrimonio, Sucesiones y Donaciones y la plusvalía municipal.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 77,
+        "quote": "Suprimiremos el Impuesto sobre el Patrimonio, el Impuesto sobre Sucesiones y Donaciones y Plusvalías municipales en todo el territorio nacional"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-fiscalidad-01",
+    "partyId": "podemos",
+    "topicId": "fiscalidad",
+    "dimensionId": "sociedades",
+    "summary": "Reformar Sociedades para las grandes corporaciones y crear un impuesto específico a la banca.",
+    "category": "programa_anterior",
+    "cycle": "generales-2019-11",
+    "citations": [
+      {
+        "sourceId": "podemos-programa-2019",
+        "pdfPage": 54,
+        "quote": "una reforma del impuesto sobre sociedades respecto a la tributación de las grandes corporaciones y un impuesto específico a la banca"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-fiscalidad-eu02",
+    "partyId": "podemos",
+    "topicId": "fiscalidad",
+    "dimensionId": "patrimonio-sucesiones",
+    "summary": "(Ámbito UE) Impuesto europeo a las grandes fortunas.",
+    "category": "programa_anterior",
+    "cycle": "europeas-2024",
+    "citations": [
+      {
+        "sourceId": "podemos-europeas-2024",
+        "pdfPage": 58,
+        "quote": "un impuesto europeo a las grandes fortunas, que complementará los gravámenes sobre el patrimonio de los estados"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-empleo-01",
+    "partyId": "pp",
+    "topicId": "empleo",
+    "dimensionId": "smi",
+    "summary": "Actualizar el SMI dentro del diálogo social con sindicatos, empresarios y expertos.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 17,
+        "quote": "ACTUALIZAREMOS EL SALARIO MÍNIMO INTERPROFESIONAL EN EL MARCO DEL DIÁLOGO SOCIAL."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-empleo-01",
+    "partyId": "psoe",
+    "topicId": "empleo",
+    "dimensionId": "smi",
+    "summary": "Fijar en el Estatuto de los Trabajadores que el SMI se sitúe en el 60 % del salario medio.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 26,
+        "quote": "Garantizaremos en el Estatuto de los trabajadores que el SMI se acompase al 60% del salario medio"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-empleo-02",
+    "partyId": "psoe",
+    "topicId": "empleo",
+    "dimensionId": "jornada",
+    "summary": "Continuar el proyecto piloto de reducción de jornada sin merma salarial en empresas industriales.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 50,
+        "quote": "Continuaremos impulsando el proyecto piloto de reducción de jornada laboral para empresas industriales con medidas destinadas a la reducción de las jornadas laborales sin merma salarial."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-empleo-01",
+    "partyId": "frente-amplio",
+    "topicId": "empleo",
+    "dimensionId": "jornada",
+    "summary": "Jornada máxima legal de 37,5 horas en 2024 y diálogo social hacia 32 horas.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 7,
+        "quote": "En 2024 se establecerá por ley una jornada laboral máxima de 37,5 horas y se abrirá un proceso de diálogo social para seguir reduciendo la jornada hasta alcanzar las 32 horas semanales."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-empleo-02",
+    "partyId": "frente-amplio",
+    "topicId": "empleo",
+    "dimensionId": "smi",
+    "summary": "Subir el SMI por encima del IPC.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 7,
+        "quote": "Subiremos el salario mínimo interprofesional por encima del IPC anual para mantener la ganancia de poder adquisitivo de las personas que lo cobran."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-empleo-01",
+    "partyId": "vox",
+    "topicId": "empleo",
+    "dimensionId": "reforma-laboral",
+    "summary": "Derogar la reforma laboral de 2021 (RDL 32/2021).",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 24,
+        "quote": "Derogaremos la reforma laboral de Yolanda Díaz que ha maquillado las cifras de temporalidad sin adoptar medidas reales contra la precariedad"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-empleo-01",
+    "partyId": "podemos",
+    "topicId": "empleo",
+    "dimensionId": "jornada",
+    "summary": "Jornada laboral de 34 horas semanales.",
+    "category": "programa_anterior",
+    "cycle": "generales-2019-11",
+    "citations": [
+      {
+        "sourceId": "podemos-programa-2019",
+        "pdfPage": 29,
+        "quote": "Jornada laboral de 34 horas semanales y reorganización de los tiempos de trabajo, ocio y cuidados."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-pensiones-01",
+    "partyId": "pp",
+    "topicId": "pensiones",
+    "dimensionId": "revalorizacion",
+    "summary": "Garantizar la revalorización de las pensiones en el marco del Pacto de Toledo (no especifica índice).",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 18,
+        "quote": "GARANTIZAREMOS LA REVALORIZACIÓN DE LAS PENSIONES EN EL MARCO DEL PACTO DE TOLEDO."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-pensiones-01",
+    "partyId": "psoe",
+    "topicId": "pensiones",
+    "dimensionId": "revalorizacion",
+    "summary": "Garantizar la revalorización de las pensiones.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 166,
+        "quote": "Los pensionistas tendrán garantizada la revalorización de su pensión."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-pensiones-02",
+    "partyId": "psoe",
+    "topicId": "pensiones",
+    "dimensionId": "minimas",
+    "summary": "Aumentar las pensiones mínimas.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 166,
+        "quote": "Aumentaremos el montante de las pensiones mínimas."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "subir-pensiones-minimas"
+  },
+  {
+    "id": "frente-amplio-pensiones-01",
+    "partyId": "frente-amplio",
+    "topicId": "pensiones",
+    "dimensionId": "revalorizacion",
+    "summary": "Mantener la revalorización con el IPC y subir por encima del IPC mínimas y no contributivas hasta el umbral de la pobreza.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 15,
+        "quote": "Este compromiso se mantendrá de forma absoluta, pero además se subirán por encima del IPC las pensiones mínimas y las pensiones no contributivas, hasta que su cuantía alcance, al menos, el umbral de la pobreza."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "pensiones-ipc-ley"
+  },
+  {
+    "id": "vox-pensiones-01",
+    "partyId": "vox",
+    "topicId": "pensiones",
+    "dimensionId": "otras",
+    "summary": "Declarar exentas del IRPF las pensiones contributivas.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 75,
+        "quote": "las pensiones contributivas estarán exentas de IRPF"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-pensiones-01",
+    "partyId": "podemos",
+    "topicId": "pensiones",
+    "dimensionId": "revalorizacion",
+    "summary": "Actualización de las pensiones con el IPC por ley y su inclusión en la Constitución.",
+    "category": "programa_anterior",
+    "cycle": "generales-2019-11",
+    "citations": [
+      {
+        "sourceId": "podemos-programa-2019",
+        "pdfPage": 83,
+        "quote": "Estableceremos la actualización por ley de las pensiones al IPC de manera inmediata y buscaremos blindar esta garantía constitucionalizándola de forma expresa."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "pensiones-ipc-ley"
+  },
+  {
+    "id": "podemos-pensiones-02",
+    "partyId": "podemos",
+    "topicId": "pensiones",
+    "dimensionId": "minimas",
+    "summary": "Subir las pensiones mínimas y no contributivas.",
+    "category": "programa_anterior",
+    "cycle": "generales-2019-11",
+    "citations": [
+      {
+        "sourceId": "podemos-programa-2019",
+        "pdfPage": 83,
+        "quote": "Incrementar las pensiones mínimas y las no contributivas."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "subir-pensiones-minimas"
+  },
+  {
+    "id": "pp-sanidad-01",
+    "partyId": "pp",
+    "topicId": "sanidad",
+    "dimensionId": "atencion-primaria",
+    "summary": "Plan de choque en atención primaria por el déficit de especialistas.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 43,
+        "quote": "PROMOVEREMOS UN PLAN DE CHOQUE EN ATENCIÓN PRIMARIA para dar solución al grave problema de déficit de especialistas en este nivel asistencial que sufre España."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-sanidad-02",
+    "partyId": "pp",
+    "topicId": "sanidad",
+    "dimensionId": "atencion-primaria",
+    "summary": "Incentivos para plazas de medicina de familia y pediatría.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 43,
+        "quote": "Incorporaremos incentivos para hacer más atractivas las plazas de medicina de familia y comunitaria, y pediatría en Atención Primaria."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-sanidad-01",
+    "partyId": "psoe",
+    "topicId": "sanidad",
+    "dimensionId": "listas-espera",
+    "summary": "Tiempos máximos de espera por ley: 120 días cirugía, 60 consultas especializadas, 30 pruebas.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 201,
+        "quote": "Acabaremos con las listas de espera, estableciendo por ley unos tiempos máximos de espera en el SNS de 120 días para intervenciones quirúrgicas, 60 días para consultas externas especializadas, y 30 días para pruebas complementarias"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "ley-tiempos-espera"
+  },
+  {
+    "id": "psoe-sanidad-02",
+    "partyId": "psoe",
+    "topicId": "sanidad",
+    "dimensionId": "prestaciones",
+    "summary": "Ampliar progresivamente la cobertura bucodental, empezando por mayores de 75 años.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 204,
+        "quote": "Salud Bucodental: promoveremos la incorporación progresiva de servicios como las obturaciones (empastes) o los implantes dentales a más colectivos, comenzando por personas mayores de 75 años."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-sanidad-01",
+    "partyId": "frente-amplio",
+    "topicId": "sanidad",
+    "dimensionId": "listas-espera",
+    "summary": "Ley de listas de espera con tiempos máximos y registro homogéneo.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 89,
+        "quote": "aprobaremos una ley de listas de espera que establezca tiempos máximos de espera y garantice un registro homogéneo, transparente y fiable de las listas de espera en todo el país."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "ley-tiempos-espera"
+  },
+  {
+    "id": "frente-amplio-sanidad-02",
+    "partyId": "frente-amplio",
+    "topicId": "sanidad",
+    "dimensionId": "prestaciones",
+    "summary": "Nuevas prestaciones públicas: bucodental, óptica, audioprótesis, psicoterapia, fisioterapia, entre otras.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 89,
+        "quote": "Proponemos incorporar a los servicios sanitarios públicos nuevas prestaciones, como la salud bucodental, la nutrición, la salud óptica, la audioprótesis, la psicoterapia, la terapia ocupacional y la fisioterapia."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-sanidad-03",
+    "partyId": "frente-amplio",
+    "topicId": "sanidad",
+    "dimensionId": "otras",
+    "summary": "Impedir las formas de gestión privatizada en el SNS.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 89,
+        "quote": "Se blindará el carácter público del Sistema Nacional de Salud, impidiendo las formas de gestión privatizadas."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-sanidad-01",
+    "partyId": "vox",
+    "topicId": "sanidad",
+    "dimensionId": "listas-espera",
+    "summary": "Reducir listas de espera con incentivos a centros públicos y más conciertos con la sanidad privada.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 57,
+        "quote": "Reduciremos el volumen y tiempo de las listas de espera en todos los ámbitos, incentivando a los centros públicos para su reducción, y reforzando los conciertos con la sanidad privada."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-sanidad-02",
+    "partyId": "vox",
+    "topicId": "sanidad",
+    "dimensionId": "atencion-primaria",
+    "summary": "Más inversión en atención primaria, en especial rural.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 57,
+        "quote": "Incremento de la inversión en Atención Primaria, con potenciación de la atención rural, de las zonas más saturadas."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-sanidad-01",
+    "partyId": "podemos",
+    "topicId": "sanidad",
+    "dimensionId": "otras",
+    "summary": "Acceso universal a la sanidad y eliminación de copagos.",
+    "category": "programa_anterior",
+    "cycle": "generales-2019-11",
+    "citations": [
+      {
+        "sourceId": "podemos-programa-2019",
+        "pdfPage": 94,
+        "quote": "Garantizar el acceso universal a la sanidad y eliminar los copagos."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-educacion-01",
+    "partyId": "pp",
+    "topicId": "educacion",
+    "dimensionId": "infantil-0-3",
+    "summary": "Educación de 0 a 3 años universal y gratuita, cofinanciada por Estado y CCAA.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 48,
+        "quote": "LA EDUCACIÓN DE 0 A 3 AÑOS SERÁ UNIVERSAL Y GRATUITA y estará cofinanciada por el Estado y las Comunidades Autónomas"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "0-3-universal-gratuita"
+  },
+  {
+    "id": "pp-educacion-02",
+    "partyId": "pp",
+    "topicId": "educacion",
+    "dimensionId": "lenguas-competencias",
+    "summary": "En comunidades con dos lenguas oficiales, ambas serán vehiculares.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 49,
+        "quote": "GARANTIZAREMOS QUE, EN LAS COMUNIDADES AUTÓNOMAS CON MÁS DE UNA LENGUA OFICIAL, ambas tendrán la consideración de vehiculares"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-educacion-03",
+    "partyId": "pp",
+    "topicId": "educacion",
+    "dimensionId": "becas",
+    "summary": "Sistema nacional de becas y ayudas al estudio.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 49,
+        "quote": "GARANTIZAREMOS UN SISTEMA NACIONAL DE BECAS Y AYUDAS AL ESTUDIO para promover la igualdad de oportunidades."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-educacion-01",
+    "partyId": "psoe",
+    "topicId": "educacion",
+    "dimensionId": "infantil-0-3",
+    "summary": "Seguir ampliando la red pública de 0 a 3 años.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 33,
+        "quote": "Seguiremos ampliando el sistema público de escolaridad de 0 a 3 años"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-educacion-01",
+    "partyId": "frente-amplio",
+    "topicId": "educacion",
+    "dimensionId": "infantil-0-3",
+    "summary": "Oferta pública de 0 a 3 años suficiente, con plazas gratuitas.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 94,
+        "quote": "Vamos a asegurar una oferta que pueda responder a la demanda, así como plazas gratuitas y de calidad."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "0-3-universal-gratuita"
+  },
+  {
+    "id": "vox-educacion-01",
+    "partyId": "vox",
+    "topicId": "educacion",
+    "dimensionId": "lenguas-competencias",
+    "summary": "Garantizar el derecho a ser educado en español en todo el territorio.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 33,
+        "quote": "Aseguraremos de forma clara e inmediata el derecho a ser educado en español en todo el territorio nacional."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-educacion-02",
+    "partyId": "vox",
+    "topicId": "educacion",
+    "dimensionId": "lenguas-competencias",
+    "summary": "Consulta (art. 92 CE) sobre la devolución de las competencias educativas al Estado.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 32,
+        "quote": "se consultará al pueblo español mediante la aplicación del artículo 92 de la Constitución Española, relativo a consultas sobre decisiones políticas de especial trascendencia, su voluntad sobre el regreso de las competencias educativas al Estado."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-educacion-03",
+    "partyId": "vox",
+    "topicId": "educacion",
+    "dimensionId": "becas",
+    "summary": "Mejorar el sistema de becas universitarias y preuniversitarias.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 34,
+        "quote": "Se mejorará el sistema de becas en las etapas universitaria y preuniversitaria"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-educacion-01",
+    "partyId": "podemos",
+    "topicId": "educacion",
+    "dimensionId": "infantil-0-3",
+    "summary": "Educación de 0 a 3 años universal, pública y gratuita.",
+    "category": "programa_anterior",
+    "cycle": "generales-2019-11",
+    "citations": [
+      {
+        "sourceId": "podemos-programa-2019",
+        "pdfPage": 29,
+        "quote": "Garantizar la cobertura universal, pública y gratuita de la educación infantil (de 0 a 3 años)."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "0-3-universal-gratuita"
+  },
+  {
+    "id": "pp-inmigracion-01",
+    "partyId": "pp",
+    "topicId": "inmigracion",
+    "dimensionId": "migracion-regular",
+    "summary": "Inmigración legal cualificada con sistema de puntos.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 14,
+        "quote": "Implementaremos un nuevo programa de inmigración legal cualificada basado en un sistema de puntos que premiará la formación académica, las competencias lingüísticas y la capacidad innovadora."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-inmigracion-02",
+    "partyId": "pp",
+    "topicId": "inmigracion",
+    "dimensionId": "irregular",
+    "summary": "Agilizar retornos de inmigrantes irregulares y expulsiones por delito mediante acuerdos con países de origen y tránsito.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 77,
+        "quote": "AGILIZAREMOS EL CUMPLIMIENTO DE LAS ÓRDENES DE RETORNO de inmigrantes irregulares o expulsión de los que hayan cometido un delito"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-inmigracion-01",
+    "partyId": "psoe",
+    "topicId": "inmigracion",
+    "dimensionId": "migracion-regular",
+    "summary": "Migración regular, segura y ordenada con inclusión social y laboral.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 255,
+        "quote": "abogamos por una migración regular, segura y ordenada que garantice la plena inclusión social y laboral de las personas migrantes"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-inmigracion-02",
+    "partyId": "psoe",
+    "topicId": "inmigracion",
+    "dimensionId": "otras",
+    "summary": "Ampliar el sistema de acogida y su gestión pública.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 255,
+        "quote": "Incrementaremos las capacidades del sistema de acogida y reforzaremos la gestión pública y estable de las mismas"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-inmigracion-01",
+    "partyId": "frente-amplio",
+    "topicId": "inmigracion",
+    "dimensionId": "migracion-regular",
+    "summary": "Reformar la Ley de Extranjería para introducir un procedimiento de regularización permanente.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 104,
+        "quote": "Reforma de la Ley Orgánica sobre Derechos y Libertades de los Extranjeros en España y su Integración Social (LOEX) que prime los criterios de reconocimiento de derechos y que introduzca un procedimiento de regularización permanente."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-inmigracion-02",
+    "partyId": "frente-amplio",
+    "topicId": "inmigracion",
+    "dimensionId": "irregular",
+    "summary": "Abandonar las devoluciones sumarias.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 149,
+        "quote": "Abandono del paradigma securitario y de las devoluciones sumarias."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-inmigracion-01",
+    "partyId": "vox",
+    "topicId": "inmigracion",
+    "dimensionId": "irregular",
+    "summary": "Expulsión inmediata de quienes entren de forma irregular.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 100,
+        "quote": "Inmediata expulsión de todos los inmigrantes que accedan ilegalmente a nuestro país."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-inmigracion-02",
+    "partyId": "vox",
+    "topicId": "inmigracion",
+    "dimensionId": "migracion-regular",
+    "summary": "Inmigración legal ordenada según las necesidades del mercado laboral.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 23,
+        "quote": "Garantizaremos una inmigración legal, ordenada y adaptada a las necesidades y posibilidades de nuestro mercado laboral"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-inmigracion-03",
+    "partyId": "vox",
+    "topicId": "inmigracion",
+    "dimensionId": "otras",
+    "summary": "Suprimir ayudas públicas a inmigrantes en situación irregular y a entidades que la apoyen.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 100,
+        "quote": "Eliminaremos las ayudas públicas a inmigrantes en situación ilegal"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-inmigracion-eu01",
+    "partyId": "podemos",
+    "topicId": "inmigracion",
+    "dimensionId": "migracion-regular",
+    "summary": "(Ámbito UE) Vías legales y seguras de acceso a la UE, asilo en embajadas y visados humanitarios.",
+    "category": "programa_anterior",
+    "cycle": "europeas-2024",
+    "citations": [
+      {
+        "sourceId": "podemos-europeas-2024",
+        "pdfPage": 49,
+        "quote": "Estableceremos vías legales y seguras de acceso a Europa a través de un programa efectivo de reasentamiento"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-inmigracion-eu02",
+    "partyId": "podemos",
+    "topicId": "inmigracion",
+    "dimensionId": "irregular",
+    "summary": "(Ámbito UE) Derogar el Pacto Europeo de Migración y Asilo.",
+    "category": "programa_anterior",
+    "cycle": "europeas-2024",
+    "citations": [
+      {
+        "sourceId": "podemos-europeas-2024",
+        "pdfPage": 48,
+        "quote": "Aboliremos el actual pacto y crearemos un Sistema Común de Migraciones."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-energia-01",
+    "partyId": "pp",
+    "topicId": "energia",
+    "dimensionId": "nuclear",
+    "summary": "Extender la vida útil de las centrales nucleares con el visto bueno del CSN.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 36,
+        "quote": "PROPONDREMOS, CON EL VISTO BUENO DEL CONSEJO DE SEGURIDAD NUCLEAR, LA EXTENSIÓN DE LA VIDA ÚTIL DE LAS CENTRALES NUCLEARES EXISTENTES"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "extender-nucleares"
+  },
+  {
+    "id": "psoe-energia-01",
+    "partyId": "psoe",
+    "topicId": "energia",
+    "dimensionId": "nuclear",
+    "summary": "Aprobar el 7.º Plan General de Residuos Radiactivos, que integra el desmantelamiento «ordenado y progresivo» de las centrales nucleares (pp. 74-75).",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 74,
+        "quote": "Aprobaremos el 7º Plan General de Residuos Radioactivos."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-energia-01",
+    "partyId": "frente-amplio",
+    "topicId": "energia",
+    "dimensionId": "nuclear",
+    "summary": "Mantener el calendario de cierre nuclear y moratoria a nuevas iniciativas.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 48,
+        "quote": "Sumar se compromete a mantener el calendario de cierre del parque nuclear español, aplicando una moratoria a cualquier nueva iniciativa nuclear"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-energia-01",
+    "partyId": "vox",
+    "topicId": "energia",
+    "dimensionId": "nuclear",
+    "summary": "Extender la vida útil de las centrales y promover minirreactores (SMR).",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 117,
+        "quote": "Fomentaremos la inversión y actualización del parque de generación nuclear y promoveremos la extensión de la vida útil de las centrales nucleares existentes."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "extender-nucleares"
+  },
+  {
+    "id": "vox-energia-02",
+    "partyId": "vox",
+    "topicId": "energia",
+    "dimensionId": "renovables",
+    "summary": "Mix con fotovoltaica, eólica, hidráulica y nuclear.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 117,
+        "quote": "Estimularemos la disponibilidad de un mix energético que incluya energía fotovoltaica, eólica, hidráulica y nuclear"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-energia-01",
+    "partyId": "podemos",
+    "topicId": "energia",
+    "dimensionId": "nuclear",
+    "summary": "(2019) Cierre de las centrales nucleares antes de finales de 2024.",
+    "category": "programa_anterior",
+    "cycle": "generales-2019-11",
+    "citations": [
+      {
+        "sourceId": "podemos-programa-2019",
+        "pdfPage": 10,
+        "quote": "Objetivos de cierre de las centrales de carbón antes del final de 2025 (y siempre garantizando el uso de carbón nacional) y de las centrales nucleares antes del final de 2024."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-energia-02",
+    "partyId": "podemos",
+    "topicId": "energia",
+    "dimensionId": "renovables",
+    "summary": "100 % de producción renovable en 2040.",
+    "category": "programa_anterior",
+    "cycle": "generales-2019-11",
+    "citations": [
+      {
+        "sourceId": "podemos-programa-2019",
+        "pdfPage": 10,
+        "quote": "Reducir la producción energética primaria basada en combustibles fósiles a la mitad en una década y alcanzar el 100 % de la producción de fuentes renovables en 2040."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-territorial-01",
+    "partyId": "pp",
+    "topicId": "territorial",
+    "dimensionId": "financiacion",
+    "summary": "Reforma del sistema de financiación autonómica negociada con todas las CCAA.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 75,
+        "quote": "ACORDAREMOS UNA REFORMA DEL SISTEMA DE FINANCIACIÓN AUTONÓMICA que sustituya al vigente desde hace 15 años y lo negociaremos con todas las Comunidades Autónomas"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-territorial-01",
+    "partyId": "psoe",
+    "topicId": "territorial",
+    "dimensionId": "financiacion",
+    "summary": "Vincula la reforma fiscal al modelo de financiación autonómica y local.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 37,
+        "quote": "Como base de la financiación autonómica y local, la fiscalidad es también una parte sustancial del modelo territorial de nuestro país."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-territorial-01",
+    "partyId": "frente-amplio",
+    "topicId": "territorial",
+    "dimensionId": "modelo-estado",
+    "summary": "Define España como realidad plurinacional.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 120,
+        "quote": "España es una realidad plurinacional, un país de países, en el que todas las naciones y comunidades políticas deben desarrollarse en un marco igualitario y solidario."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-territorial-01",
+    "partyId": "vox",
+    "topicId": "territorial",
+    "dimensionId": "modelo-estado",
+    "summary": "Estado unitario administrativamente descentralizado.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 8,
+        "quote": "Promoveremos un estado unitario administrativamente descentralizado"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-territorial-02",
+    "partyId": "vox",
+    "topicId": "territorial",
+    "dimensionId": "otras",
+    "summary": "Reintroducir los delitos de referéndum ilegal y sedición.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 16,
+        "quote": "Reintroduciremos los delitos de referéndum ilegal, sedición, traición y malversación de caudales públicos"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-igualdad-01",
+    "partyId": "pp",
+    "topicId": "igualdad",
+    "dimensionId": "violencia-genero",
+    "summary": "Cumplir y actualizar el Pacto de Estado contra la Violencia de Género.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 58,
+        "quote": "CUMPLIREMOS EL PACTO DE ESTADO CONTRA LA VIOLENCIA DE GÉNERO PROMOVIDO POR EL PARTIDO POPULAR"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "pacto-violencia-genero"
+  },
+  {
+    "id": "frente-amplio-igualdad-01",
+    "partyId": "frente-amplio",
+    "topicId": "igualdad",
+    "dimensionId": "violencia-genero",
+    "summary": "Blindar el Pacto de Estado contra la Violencia de Género.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 111,
+        "quote": "Blindar el Pacto de Estado contra la Violencia de Género."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "pacto-violencia-genero"
+  },
+  {
+    "id": "frente-amplio-igualdad-02",
+    "partyId": "frente-amplio",
+    "topicId": "igualdad",
+    "dimensionId": "aborto",
+    "summary": "Garantizar el aborto en la sanidad pública en todo el territorio.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 111,
+        "quote": "Será una prioridad garantizar el acceso efectivo al derecho al aborto desde los servicios públicos de salud en todo el territorio y en condiciones de igualdad."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-igualdad-01",
+    "partyId": "vox",
+    "topicId": "igualdad",
+    "dimensionId": "violencia-genero",
+    "summary": "Derogar la Ley Orgánica 1/2004 de Violencia de Género.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 10,
+        "quote": "Derogaremos la Ley Integral de Violencia de Género"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-igualdad-02",
+    "partyId": "vox",
+    "topicId": "igualdad",
+    "dimensionId": "aborto",
+    "summary": "Derogar las leyes del aborto y de la eutanasia.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 58,
+        "quote": "la derogación de las leyes de eutanasia y del aborto"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-igualdad-01",
+    "partyId": "podemos",
+    "topicId": "igualdad",
+    "dimensionId": "violencia-genero",
+    "summary": "Ampliar la definición legal de violencia machista.",
+    "category": "programa_anterior",
+    "cycle": "generales-2019-11",
+    "citations": [
+      {
+        "sourceId": "podemos-programa-2019",
+        "pdfPage": 26,
+        "quote": "Actualizar la definición de violencia machista para que recoja todas las formas de violencia contra las mujeres."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-medio-ambiente-01",
+    "partyId": "pp",
+    "topicId": "medio-ambiente",
+    "dimensionId": "pacto-verde",
+    "summary": "Flexibilizar el calendario del Pacto Verde Europeo y de «De la Granja a la Mesa».",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 25,
+        "quote": "Trabajaremos para racionalizar los objetivos y flexibilizar el calendario de aplicación del Pacto Verde Europeo"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "revisar-pacto-verde"
+  },
+  {
+    "id": "frente-amplio-medio-ambiente-01",
+    "partyId": "frente-amplio",
+    "topicId": "medio-ambiente",
+    "dimensionId": "ley-clima",
+    "summary": "Elevar los objetivos de la Ley de Cambio Climático (55 % de reducción de emisiones en 2030, entre otros).",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 41,
+        "quote": "Modificar la Ley de Cambio Climático y Transición Energética para aumentar su ambición"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-medio-ambiente-01",
+    "partyId": "vox",
+    "topicId": "medio-ambiente",
+    "dimensionId": "ley-clima",
+    "summary": "Derogar la Ley 7/2021 de Cambio Climático.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 119,
+        "quote": "Derogación inmediata de la ley de cambio climático y transición energética"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-medio-ambiente-02",
+    "partyId": "vox",
+    "topicId": "medio-ambiente",
+    "dimensionId": "pacto-verde",
+    "summary": "Suspender y revisar el Pacto Verde Europeo.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 137,
+        "quote": "Impulsaremos desde el Consejo de la Unión Europea la suspensión inmediata y revisión de todo el Pacto Verde Europeo"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "revisar-pacto-verde"
+  },
+  {
+    "id": "pp-defensa-01",
+    "partyId": "pp",
+    "topicId": "defensa",
+    "dimensionId": "fuerzas-armadas",
+    "summary": "Reforzar las Fuerzas Armadas.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 91,
+        "quote": "Reforzaremos las Fuerzas Armadas como garantía del prestigio nacional, la disuasión y la defensa ante toda amenaza."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-defensa-01",
+    "partyId": "vox",
+    "topicId": "defensa",
+    "dimensionId": "alianzas",
+    "summary": "Reformar el Tratado del Atlántico Norte para incluir Ceuta y Melilla.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 92,
+        "quote": "Exigiremos la modificación del Tratado del Atlántico Norte para que este recoja e incluya, de forma explícita, a las ciudades españolas de Ceuta y Melilla bajo la protección de la OTAN."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-defensa-01",
+    "partyId": "podemos",
+    "topicId": "defensa",
+    "dimensionId": "alianzas",
+    "summary": "Desplazamiento progresivo de la OTAN hacia la defensa europea (PCSD).",
+    "category": "programa_anterior",
+    "cycle": "generales-2019-11",
+    "citations": [
+      {
+        "sourceId": "podemos-programa-2019",
+        "pdfPage": 55,
+        "quote": "Fortaleceremos la cooperación europea y un desplazamiento progresivo del espacio atlántico (OTAN) al europeo (PCSD)"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-defensa-eu02",
+    "partyId": "podemos",
+    "topicId": "defensa",
+    "dimensionId": "fuerzas-armadas",
+    "summary": "(Ámbito UE) Oposición al aumento del gasto militar.",
+    "category": "programa_anterior",
+    "cycle": "europeas-2024",
+    "citations": [
+      {
+        "sourceId": "podemos-europeas-2024",
+        "pdfPage": 6,
+        "quote": "Desde Podemos venimos trabajando, y seguiremos haciéndolo, por frenar la deriva hacia un régimen de guerra que obligue a los Estados a disparar su gasto militar"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-seguridad-01",
+    "partyId": "pp",
+    "topicId": "seguridad",
+    "dimensionId": "fuerzas-seguridad",
+    "summary": "Culminar la equiparación salarial de Policía Nacional y Guardia Civil.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 76,
+        "quote": "CULMINAREMOS EL “ACUERDO DE EQUIPARACIÓN SALARIAL” DE POLICÍA NACIONAL Y GUARDIA CIVIL"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "equiparacion-salarial-ffcc"
+  },
+  {
+    "id": "vox-seguridad-01",
+    "partyId": "vox",
+    "topicId": "seguridad",
+    "dimensionId": "fuerzas-seguridad",
+    "summary": "Equiparación salarial y jubilación para Fuerzas Armadas y cuerpos de seguridad.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 91,
+        "quote": "alcanzaremos la equiparación real en salario y la justa jubilación para las Fuerzas Armadas, Fuerzas y Cuerpos de Seguridad del Estado"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "equiparacion-salarial-ffcc"
+  },
+  {
+    "id": "psoe-seguridad-01",
+    "partyId": "psoe",
+    "topicId": "seguridad",
+    "dimensionId": "otras",
+    "summary": "Combatir las mafias de la ocupación de viviendas.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 238,
+        "quote": "Combatiremos las estructuras mafiosas que delinquen con las ocupaciones de vivienda y alteran la vida de las comunidades."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-justicia-01",
+    "partyId": "pp",
+    "topicId": "justicia",
+    "dimensionId": "instituciones",
+    "summary": "Exigir que los responsables de organismos independientes no hayan ocupado cargos políticos en los cinco años previos.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 67,
+        "quote": "GARANTIZAREMOS QUE LOS PRESIDENTES, DIRECTORES Y RESPONSABLES DE ORGANISMOS INDEPENDIENTES DEL ESTADO (Airef, INE, CIS, Tribunal de Cuentas…) no hayan ocupado puestos políticos"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-familia-01",
+    "partyId": "vox",
+    "topicId": "familia",
+    "dimensionId": "crianza",
+    "summary": "Deducción en el IRPF por nacimiento o adopción (1.200 € a 2.750 € según el número de hijos).",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 76,
+        "quote": "Aprobaremos una nueva deducción por nacimiento o adopción en el IRPF, por un importe de 1.200 euros para el primer hijo, 1.600 euros por el segundo, 2.500 por el tercero y 2.750 por el cuarto hijo en adelante"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-familia-01",
+    "partyId": "frente-amplio",
+    "topicId": "familia",
+    "dimensionId": "crianza",
+    "summary": "Prestación por crianza hasta los 18 años que unifique ayudas existentes.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 15,
+        "quote": "Se cobrará hasta los 18 años y unificará en una única ayuda el actual complemento de ayuda a la infancia del Ingreso Mínimo Vital y la deducción por maternidad en el IRPF."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-familia-01",
+    "partyId": "psoe",
+    "topicId": "familia",
+    "dimensionId": "crianza",
+    "summary": "Universalizar la desgravación por hijo a cargo.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 182,
+        "quote": "Universalizar la desgravación ya existente por hijo/a a cargo"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-familia-01",
+    "partyId": "pp",
+    "topicId": "familia",
+    "dimensionId": "crianza",
+    "summary": "Fomento de la natalidad, la conciliación y universalización de 0-3 años.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 39,
+        "quote": "fomentaremos la natalidad, protegeremos la maternidad, apoyaremos la conciliación y universalizaremos la educación de 0-3 años."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-transporte-01",
+    "partyId": "pp",
+    "topicId": "transporte",
+    "dimensionId": "ferrocarril",
+    "summary": "Impulsar los corredores ferroviarios Mediterráneo, Atlántico y Central.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 31,
+        "quote": "SEGUIREMOS IMPULSANDO EL DESARROLLO DE LOS CORREDORES FERROVIARIOS –Mediterráneo, Atlántico y Central–"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-transporte-02",
+    "partyId": "pp",
+    "topicId": "transporte",
+    "dimensionId": "ferrocarril",
+    "summary": "Plan de choque para la calidad de Cercanías.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 31,
+        "quote": "DESPLEGAREMOS UN PLAN DE CHOQUE PARA MEJORAR LA CALIDAD DEL SERVICIO EN LA MOVILIDAD DE CERCANÍAS EN TODAS LAS COMUNIDADES AUTÓNOMAS"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-transporte-01",
+    "partyId": "podemos",
+    "topicId": "transporte",
+    "dimensionId": "ferrocarril",
+    "summary": "Gestión pública de las infraestructuras ferroviarias estratégicas, sin privatizaciones.",
+    "category": "programa_anterior",
+    "cycle": "generales-2019-11",
+    "citations": [
+      {
+        "sourceId": "podemos-programa-2019",
+        "pdfPage": 13,
+        "quote": "garantizaremos la gestión y administración pública de las infraestructuras ferroviarias estratégicas públicas, sin permitir la privatización"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "vox-economia-01",
+    "partyId": "vox",
+    "topicId": "economia",
+    "dimensionId": "presupuesto-deficit",
+    "summary": "Presupuestos de base cero con el objetivo de eliminar progresivamente déficit y deuda.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "vox-programa-2023",
+        "pdfPage": 74,
+        "quote": "En materia presupuestaria, elaboraremos presupuestos de base 0, marcando como objetivo la eliminación progresiva del déficit y de la deuda pública"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-ue-exterior-01",
+    "partyId": "frente-amplio",
+    "topicId": "ue-exterior",
+    "dimensionId": "ue",
+    "summary": "Europa con autonomía estratégica y voz propia.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 139,
+        "quote": "Impulsaremos una Europa con un lugar autónomo y una voz propia en el mundo"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "podemos-ue-exterior-eu01",
+    "partyId": "podemos",
+    "topicId": "ue-exterior",
+    "dimensionId": "ue",
+    "summary": "(Ámbito UE) Política fiscal común europea.",
+    "category": "programa_anterior",
+    "cycle": "europeas-2024",
+    "citations": [
+      {
+        "sourceId": "podemos-europeas-2024",
+        "pdfPage": 7,
+        "quote": "Impulsaremos una política fiscal común que permita la redistribución justa de la riqueza y las oportunidades"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "pp-ue-exterior-01",
+    "partyId": "pp",
+    "topicId": "ue-exterior",
+    "dimensionId": "ue",
+    "summary": "Papel protagonista de España en la UE y la escena internacional.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "pp-programa-2023",
+        "pdfPage": 91,
+        "quote": "De España se espera un papel protagonista en la escena internacional, como miembro de la Unión Europea"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-empleo-03",
+    "partyId": "psoe",
+    "topicId": "empleo",
+    "dimensionId": "reforma-laboral",
+    "summary": "Defiende mantener la reforma laboral de 2021 como base para crear empleo de calidad.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 25,
+        "quote": "La reforma laboral, pactada con la UE y con los agentes sociales, proporciona la mejor base para seguir traduciendo el impulso inversor en creación de empleo de calidad."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "frente-amplio-empleo-03",
+    "partyId": "frente-amplio",
+    "topicId": "empleo",
+    "dimensionId": "reforma-laboral",
+    "summary": "Toma la reforma laboral de 2021 como punto de partida y propone profundizar en el contrato indefinido.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "sumar-programa-2023",
+        "pdfPage": 7,
+        "quote": "Continuando con los avances registrados tras la última reforma laboral, este contrato debe ser la base de un modelo de relaciones laborales estable"
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    }
+  },
+  {
+    "id": "psoe-igualdad-01",
+    "partyId": "psoe",
+    "topicId": "igualdad",
+    "dimensionId": "violencia-genero",
+    "summary": "Defender y renovar el Pacto de Estado contra la Violencia de Género.",
+    "category": "programa_anterior",
+    "cycle": "generales-2023",
+    "citations": [
+      {
+        "sourceId": "psoe-programa-2023",
+        "pdfPage": 151,
+        "quote": "Defender el Pacto de Estado contra la violencia de género es urgente."
+      }
+    ],
+    "status": "publicado",
+    "verification": {
+      "checkedAt": "2026-11-02",
+      "method": "cotejo_manual_pdf",
+      "reviewer": "Equipo editorial (revisión inicial)"
+    },
+    "positionKey": "pacto-violencia-genero"
+  }
+]

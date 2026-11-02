@@ -1,27 +1,45 @@
 {
-  "name": "web",
+  "name": "boletin-29n",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "tsx scripts/publish-data.ts",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "validate": "tsx scripts/validate-data.ts",
+    "import:eurostat": "tsx scripts/import-eurostat.ts",
+    "import:congreso": "tsx scripts/import-congreso.ts",
+    "import:all": "tsx scripts/import-eurostat.ts && tsx scripts/import-congreso.ts && tsx scripts/publish-data.ts",
+    "corpus:add": "tsx scripts/build-corpus.ts",
+    "candidates": "tsx scripts/extract-candidates.ts",
+    "links": "tsx scripts/check-links.ts"
   },
   "dependencies": {
+    "echarts": "^5.6.0",
+    "fflate": "^0.8.3",
+    "minisearch": "^7.2.0",
+    "motion": "^12.43.0",
+    "next": "15.5.28",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.5.28"
+    "zod": "^3.25.76"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@playwright/test": "^1.64.1",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.5.28",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vitest": "^3.2.7"
   }
 }

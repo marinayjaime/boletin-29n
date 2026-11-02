@@ -1,0 +1,77 @@
+[
+  { "id": "economia", "name": "Economía y crecimiento", "short": "Economía", "description": "Crecimiento, presupuestos, déficit y deuda pública.", "competence": "Estado, con reglas fiscales de la UE (Pacto de Estabilidad).", "dimensions": [
+    { "id": "presupuesto-deficit", "label": "Presupuesto, déficit y deuda" },
+    { "id": "otras", "label": "Otras propuestas relevantes" } ] },
+  { "id": "fiscalidad", "name": "Impuestos y fiscalidad", "short": "Impuestos", "description": "IRPF, patrimonio, sucesiones, sociedades e IVA.", "competence": "Estado (IRPF, Sociedades, IVA); las comunidades autónomas tienen capacidad normativa sobre tramos del IRPF, Patrimonio y Sucesiones.", "dimensions": [
+    { "id": "irpf", "label": "IRPF" },
+    { "id": "patrimonio-sucesiones", "label": "Patrimonio, grandes fortunas y sucesiones" },
+    { "id": "sociedades", "label": "Impuesto sobre Sociedades" },
+    { "id": "otras", "label": "Otras propuestas relevantes" } ] },
+  { "id": "empleo", "name": "Empleo y salarios", "short": "Empleo", "description": "Salario mínimo, jornada, contratación y reforma laboral.", "competence": "Estado (legislación laboral, art. 149.1.7.ª CE).", "dimensions": [
+    { "id": "smi", "label": "Salario mínimo interprofesional" },
+    { "id": "jornada", "label": "Jornada laboral" },
+    { "id": "reforma-laboral", "label": "Reforma laboral" },
+    { "id": "otras", "label": "Otras propuestas relevantes" } ] },
+  { "id": "vivienda", "name": "Vivienda", "short": "Vivienda", "description": "Alquiler, vivienda pública, compra, suelo y ocupación.", "competence": "Comunidades autónomas (competencia exclusiva en vivienda, art. 148.1.3.ª CE) y ayuntamientos (urbanismo); el Estado legisla sobre condiciones básicas, fiscalidad y arrendamientos civiles.", "dimensions": [
+    { "id": "precio-alquiler", "label": "Medidas sobre el precio del alquiler" },
+    { "id": "vivienda-publica", "label": "Construcción y parque de vivienda pública" },
+    { "id": "fiscalidad-compra", "label": "Fiscalidad de la compra" },
+    { "id": "jovenes", "label": "Ayudas a jóvenes" },
+    { "id": "regulacion-alquiler", "label": "Regulación del mercado de alquiler" },
+    { "id": "suelo-urbanismo", "label": "Suelo y urbanismo" },
+    { "id": "ocupacion", "label": "Viviendas ocupadas ilegalmente" },
+    { "id": "otras", "label": "Otras propuestas relevantes" } ] },
+  { "id": "pensiones", "name": "Pensiones y jubilación", "short": "Pensiones", "description": "Revalorización, pensiones mínimas y jubilación.", "competence": "Estado (Seguridad Social, art. 149.1.17.ª CE).", "dimensions": [
+    { "id": "revalorizacion", "label": "Revalorización" },
+    { "id": "minimas", "label": "Pensiones mínimas y no contributivas" },
+    { "id": "otras", "label": "Otras propuestas relevantes" } ] },
+  { "id": "sanidad", "name": "Sanidad", "short": "Sanidad", "description": "Listas de espera, atención primaria y prestaciones.", "competence": "Comunidades autónomas (gestión); Estado (bases y coordinación, art. 149.1.16.ª CE).", "dimensions": [
+    { "id": "listas-espera", "label": "Listas de espera" },
+    { "id": "atencion-primaria", "label": "Atención primaria" },
+    { "id": "prestaciones", "label": "Nuevas prestaciones" },
+    { "id": "otras", "label": "Otras propuestas relevantes" } ] },
+  { "id": "educacion", "name": "Educación", "short": "Educación", "description": "Educación infantil, becas y lenguas.", "competence": "Comunidades autónomas (gestión); Estado (normas básicas y títulos, art. 149.1.30.ª CE).", "dimensions": [
+    { "id": "infantil-0-3", "label": "Educación infantil de 0 a 3 años" },
+    { "id": "becas", "label": "Becas" },
+    { "id": "lenguas-competencias", "label": "Lenguas y competencias educativas" },
+    { "id": "otras", "label": "Otras propuestas relevantes" } ] },
+  { "id": "familia", "name": "Familia y conciliación", "short": "Familia", "description": "Natalidad, crianza y conciliación.", "competence": "Compartida entre Estado (prestaciones, fiscalidad, permisos) y comunidades autónomas (servicios sociales).", "dimensions": [
+    { "id": "crianza", "label": "Apoyo a la crianza" },
+    { "id": "otras", "label": "Otras propuestas relevantes" } ] },
+  { "id": "inmigracion", "name": "Inmigración", "short": "Inmigración", "description": "Migración regular, irregular, retornos y asilo.", "competence": "Estado (art. 149.1.2.ª CE), en el marco del derecho de la UE.", "dimensions": [
+    { "id": "migracion-regular", "label": "Migración regular y laboral" },
+    { "id": "irregular", "label": "Migración irregular, retornos y expulsiones" },
+    { "id": "otras", "label": "Otras propuestas relevantes" } ] },
+  { "id": "seguridad", "name": "Seguridad ciudadana", "short": "Seguridad", "description": "Fuerzas y cuerpos de seguridad y medidas penales.", "competence": "Estado (art. 149.1.29.ª CE) y policías autonómicas y locales.", "dimensions": [
+    { "id": "fuerzas-seguridad", "label": "Fuerzas y Cuerpos de Seguridad" },
+    { "id": "otras", "label": "Otras propuestas relevantes" } ] },
+  { "id": "justicia", "name": "Justicia y corrupción", "short": "Justicia", "description": "Independencia judicial, corrupción e instituciones.", "competence": "Estado.", "dimensions": [
+    { "id": "instituciones", "label": "Instituciones y órganos independientes" },
+    { "id": "otras", "label": "Otras propuestas relevantes" } ] },
+  { "id": "igualdad", "name": "Igualdad y derechos", "short": "Igualdad", "description": "Violencia de género, aborto y derechos.", "competence": "Estado (legislación penal y civil) y comunidades autónomas (servicios).", "dimensions": [
+    { "id": "violencia-genero", "label": "Violencia de género / Pacto de Estado" },
+    { "id": "aborto", "label": "Aborto" },
+    { "id": "otras", "label": "Otras propuestas relevantes" } ] },
+  { "id": "medio-ambiente", "name": "Medio ambiente", "short": "Clima", "description": "Cambio climático, emisiones y Pacto Verde.", "competence": "Estado (legislación básica) y UE; comunidades autónomas (gestión).", "dimensions": [
+    { "id": "ley-clima", "label": "Ley de Cambio Climático y objetivos" },
+    { "id": "pacto-verde", "label": "Pacto Verde Europeo" },
+    { "id": "otras", "label": "Otras propuestas relevantes" } ] },
+  { "id": "energia", "name": "Energía", "short": "Energía", "description": "Nuclear, renovables y mercado eléctrico.", "competence": "Estado (bases del régimen energético, art. 149.1.25.ª CE) y UE.", "dimensions": [
+    { "id": "nuclear", "label": "Energía nuclear" },
+    { "id": "renovables", "label": "Renovables y mix" },
+    { "id": "otras", "label": "Otras propuestas relevantes" } ] },
+  { "id": "transporte", "name": "Transporte e infraestructuras", "short": "Transporte", "description": "Ferrocarril, cercanías y carreteras.", "competence": "Estado (infraestructuras de interés general) y comunidades autónomas.", "dimensions": [
+    { "id": "ferrocarril", "label": "Ferrocarril y cercanías" },
+    { "id": "otras", "label": "Otras propuestas relevantes" } ] },
+  { "id": "territorial", "name": "Modelo territorial", "short": "Territorio", "description": "Estado autonómico, financiación y plurinacionalidad.", "competence": "Constitución (Título VIII); la reforma constitucional exige mayorías reforzadas (arts. 167–168 CE).", "dimensions": [
+    { "id": "modelo-estado", "label": "Modelo de Estado" },
+    { "id": "financiacion", "label": "Financiación autonómica" },
+    { "id": "otras", "label": "Otras propuestas relevantes" } ] },
+  { "id": "ue-exterior", "name": "Unión Europea y política exterior", "short": "UE y exterior", "description": "Papel en la UE y relaciones exteriores.", "competence": "Estado (art. 149.1.3.ª CE).", "dimensions": [
+    { "id": "ue", "label": "Unión Europea" },
+    { "id": "otras", "label": "Otras propuestas relevantes" } ] },
+  { "id": "defensa", "name": "Defensa", "short": "Defensa", "description": "Fuerzas Armadas, OTAN y gasto en defensa.", "competence": "Estado (art. 149.1.4.ª CE).", "dimensions": [
+    { "id": "fuerzas-armadas", "label": "Fuerzas Armadas y gasto" },
+    { "id": "alianzas", "label": "OTAN y defensa europea" },
+    { "id": "otras", "label": "Otras propuestas relevantes" } ] }
+]

@@ -1,0 +1,17 @@
+[
+  { "area": "trabajo", "name": "Afiliación a la Seguridad Social", "source": "Seguridad Social", "url": "https://www.seg-social.es", "reason": "Se publica en hojas de cálculo mensuales sin API estable; falta un importador verificable." },
+  { "area": "trabajo", "name": "Salario mediano y distribución salarial", "source": "INE, Encuesta Anual de Estructura Salarial", "url": "https://www.ine.es", "reason": "Pendiente de identificar las series de la API Tempus3 y validar su correspondencia." },
+  { "area": "vivienda", "name": "Precio por metro cuadrado", "source": "Ministerio de Vivienda y Agenda Urbana (valor tasado)", "url": "https://www.mivau.gob.es", "reason": "Ficheros Excel trimestrales; pendiente de importador." },
+  { "area": "vivienda", "name": "Viviendas terminadas y vivienda protegida", "source": "Ministerio de Vivienda y Agenda Urbana", "url": "https://www.mivau.gob.es", "reason": "Ficheros Excel; pendiente de importador." },
+  { "area": "vivienda", "name": "Hipotecas sobre viviendas", "source": "INE, Estadística de Hipotecas", "url": "https://www.ine.es", "reason": "Pendiente de identificar las series en la API del INE." },
+  { "area": "vivienda", "name": "Esfuerzo salarial para acceder a una vivienda", "source": "Banco de España, indicadores del mercado de la vivienda", "url": "https://www.bde.es", "reason": "Pendiente de importador desde los ficheros del Banco de España." },
+  { "area": "pensiones", "name": "Pensión media, mínima y número de pensionistas", "source": "Seguridad Social, estadísticas de pensiones", "url": "https://www.seg-social.es", "reason": "Ficheros mensuales sin API; pendiente de importador." },
+  { "area": "pensiones", "name": "Cotizantes por pensionista", "source": "Seguridad Social", "url": "https://www.seg-social.es", "reason": "Depende de las dos series anteriores." },
+  { "area": "pensiones", "name": "Edad efectiva de jubilación", "source": "Seguridad Social", "url": "https://www.seg-social.es", "reason": "Pendiente de localizar la serie oficial." },
+  { "area": "sanidad-educacion", "name": "Listas de espera", "source": "Ministerio de Sanidad (SISLE-SNS)", "url": "https://www.sanidad.gob.es", "reason": "Informes semestrales en PDF/Excel; pendiente de importador." },
+  { "area": "sanidad-educacion", "name": "Profesionales sanitarios", "source": "Ministerio de Sanidad / Eurostat", "url": "https://www.sanidad.gob.es", "reason": "Pendiente de validar serie comparable." },
+  { "area": "sanidad-educacion", "name": "Resultados educativos comparables (PISA)", "source": "OCDE", "url": "https://www.oecd.org/pisa/", "reason": "Datos trienales; pendiente de importador." },
+  { "area": "sanidad-educacion", "name": "Formación Profesional y becas", "source": "Ministerio de Educación, Formación Profesional y Deportes", "url": "https://www.educacionfpydeportes.gob.es/servicios-al-ciudadano/estadisticas.html", "reason": "Pendiente de importador." },
+  { "area": "sociedad", "name": "Población extranjera residente", "source": "INE, Estadística Continua de Población", "url": "https://www.ine.es", "reason": "Pendiente de importador desde la API del INE." },
+  { "area": "sociedad", "name": "Balance de criminalidad (infracciones penales conocidas)", "source": "Ministerio del Interior", "url": "https://www.interior.gob.es", "reason": "Informes trimestrales; pendiente de importador. Se muestra el homicidio doloso (Eurostat) como indicador comparable." }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "date": "2026-11-02",
+    "entity": "SourceDocument",
+    "entityId": "pp-programa-2023",
+    "action": "verificacion",
+    "detail": "Descarga del documento, cálculo de SHA-256 y extracción de texto por página.",
+    "by": "Equipo editorial"
+  },
+  {
+    "date": "2026-11-02",
+    "entity": "SourceDocument",
+    "entityId": "psoe-programa-2023",
+    "action": "verificacion",
+    "detail": "Descarga del documento, cálculo de SHA-256 y extracción de texto por página.",
+    "by": "Equipo editorial"
+  },
+  {
+    "date": "2026-11-02",
+    "entity": "SourceDocument",
+    "entityId": "sumar-programa-2023",
+    "action": "verificacion",
+    "detail": "Descarga del documento, cálculo de SHA-256 y extracción de texto por página.",
+    "by": "Equipo editorial"
+  },
+  {
+    "date": "2026-11-02",
+    "entity": "SourceDocument",
+    "entityId": "vox-programa-2023",
+    "action": "verificacion",
+    "detail": "Descarga del documento, cálculo de SHA-256 y extracción de texto por página.",
+    "by": "Equipo editorial"
+  },
+  {
+    "date": "2026-11-02",
+    "entity": "SourceDocument",
+    "entityId": "podemos-programa-2019",
+    "action": "verificacion",
+    "detail": "Descarga del documento, cálculo de SHA-256 y extracción de texto por página.",
+    "by": "Equipo editorial"
+  },
+  {
+    "date": "2026-11-02",
+    "entity": "SourceDocument",
+    "entityId": "podemos-europeas-2024",
+    "action": "verificacion",
+    "detail": "Descarga del documento, cálculo de SHA-256 y extracción de texto por página.",
+    "by": "Equipo editorial"
+  },
+  {
+    "date": "2026-11-02",
+    "entity": "SourceDocument",
+    "entityId": "boe-candidaturas-2026",
+    "action": "verificacion",
+    "detail": "Descarga del documento, cálculo de SHA-256 y extracción de texto por página.",
+    "by": "Equipo editorial"
+  },
+  {
+    "date": "2026-11-02",
+    "entity": "SourceDocument",
+    "entityId": "boe-rd-806-2026",
+    "action": "verificacion",
+    "detail": "Descarga del documento, cálculo de SHA-256 y extracción de texto por página.",
+    "by": "Equipo editorial"
+  },
+  {
+    "date": "2026-11-02",
+    "entity": "Proposal",
+    "entityId": "*",
+    "action": "alta",
+    "detail": "Alta inicial de propuestas con cotejo literal contra el texto de cada página citada (test automático quotes.test.ts).",
+    "by": "Equipo editorial"
+  },
+  {
+    "date": "2026-11-02",
+    "entity": "StatisticalObservation",
+    "entityId": "*",
+    "action": "importacion",
+    "detail": "Importación inicial de series de Eurostat (scripts/import-eurostat.ts).",
+    "by": "Importador automático"
+  },
+  {
+    "date": "2026-11-02",
+    "entity": "ParliamentaryVote",
+    "entityId": "*",
+    "action": "importacion",
+    "detail": "Importación de votaciones de la XV Legislatura desde los datos abiertos del Congreso (scripts/import-congreso.ts).",
+    "by": "Importador automático"
+  }
+]

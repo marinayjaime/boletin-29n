@@ -1,0 +1,154 @@
+[
+  {
+    "term": "PIB (producto interior bruto)",
+    "slug": "pib-producto-interior-bruto",
+    "definition": "Valor de todos los bienes y servicios finales producidos en un país durante un periodo. «Real» o «en volumen» significa descontado el efecto de los precios."
+  },
+  {
+    "term": "IPC e IPCA",
+    "slug": "ipc-e-ipca",
+    "definition": "El IPC es el índice de precios de consumo que elabora el INE. El IPCA es su versión armonizada para comparar países de la UE; ambos suelen dar cifras muy parecidas, pero no idénticas."
+  },
+  {
+    "term": "Tasa interanual",
+    "slug": "tasa-interanual",
+    "definition": "Variación de un indicador respecto al mismo periodo del año anterior. No es lo mismo que la variación mensual (respecto al mes anterior) ni que la acumulada (desde enero)."
+  },
+  {
+    "term": "Inflación acumulada",
+    "slug": "inflacion-acumulada",
+    "definition": "Variación de los precios entre dos fechas concretas, por ejemplo desde enero o desde 2019. Se calcula a partir del índice, no sumando tasas."
+  },
+  {
+    "term": "Deuda pública (PDE)",
+    "slug": "deuda-publica-pde",
+    "definition": "Deuda bruta consolidada de todas las Administraciones públicas según el Protocolo de Déficit Excesivo de la UE. Puede expresarse en euros o en porcentaje del PIB."
+  },
+  {
+    "term": "Déficit público",
+    "slug": "deficit-publico",
+    "definition": "Diferencia negativa entre ingresos y gastos de las Administraciones públicas en un año. Un valor positivo indica superávit."
+  },
+  {
+    "term": "Salario nominal y salario real",
+    "slug": "salario-nominal-y-salario-real",
+    "definition": "El nominal es la cantidad en euros corrientes. El real descuenta la subida de precios y mide el poder de compra."
+  },
+  {
+    "term": "Media y mediana",
+    "slug": "media-y-mediana",
+    "definition": "La media suma todos los valores y divide entre su número; la mediana es el valor central. En salarios, la media es mayor que la mediana porque los sueldos altos la elevan."
+  },
+  {
+    "term": "Salario mínimo interprofesional (SMI)",
+    "slug": "salario-minimo-interprofesional-smi",
+    "definition": "Retribución mínima legal por jornada completa, fijada cada año por el Gobierno mediante real decreto. En España se expresa habitualmente en 14 pagas."
+  },
+  {
+    "term": "Tasa de paro",
+    "slug": "tasa-de-paro",
+    "definition": "Porcentaje de personas que buscan empleo y no lo tienen sobre la población activa (quienes trabajan o buscan trabajo). Se mide con la Encuesta de Población Activa."
+  },
+  {
+    "term": "Paro registrado",
+    "slug": "paro-registrado",
+    "definition": "Número de personas inscritas como demandantes de empleo en los servicios públicos de empleo. No coincide con el paro de la EPA."
+  },
+  {
+    "term": "Temporalidad",
+    "slug": "temporalidad",
+    "definition": "Porcentaje de asalariados con contrato de duración determinada."
+  },
+  {
+    "term": "AROPE",
+    "slug": "arope",
+    "definition": "Indicador europeo de riesgo de pobreza o exclusión social: combina renta baja, carencia material y social severa y baja intensidad de empleo en el hogar."
+  },
+  {
+    "term": "Coeficiente de Gini",
+    "slug": "coeficiente-de-gini",
+    "definition": "Medida de desigualdad de la renta entre 0 (todos tienen lo mismo) y 100 (una persona lo tiene todo)."
+  },
+  {
+    "term": "Euríbor",
+    "slug": "euribor",
+    "definition": "Tipo de interés al que los bancos de la zona euro se prestan dinero. El euríbor a 12 meses es la referencia más usada en las hipotecas variables en España."
+  },
+  {
+    "term": "Zona de mercado residencial tensionado",
+    "slug": "zona-de-mercado-residencial-tensionado",
+    "definition": "Ámbito que una comunidad autónoma puede declarar, según la Ley 12/2023, cuando el precio de la vivienda es especialmente alto en relación con la renta; permite aplicar medidas específicas sobre el alquiler."
+  },
+  {
+    "term": "Gran tenedor",
+    "slug": "gran-tenedor",
+    "definition": "En la Ley 12/2023 (art. 3.k), persona física o jurídica titular de más de diez inmuebles urbanos de uso residencial o de más de 1.500 m² de uso residencial (excluidos garajes y trasteros). En zonas tensionadas puede rebajarse a cinco inmuebles si la comunidad autónoma lo justifica.",
+    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203"
+  },
+  {
+    "term": "Real decreto-ley",
+    "slug": "real-decreto-ley",
+    "definition": "Norma con rango de ley que aprueba el Gobierno en casos de extraordinaria y urgente necesidad. Entra en vigor de inmediato, pero el Congreso debe convalidarla o derogarla en 30 días (art. 86 CE).",
+    "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+  },
+  {
+    "term": "Proposición no de ley (PNL)",
+    "slug": "proposicion-no-de-ley-pnl",
+    "definition": "Iniciativa con la que el Congreso pide al Gobierno que actúe en un sentido determinado. No tiene fuerza de ley."
+  },
+  {
+    "term": "Moción consecuencia de interpelación",
+    "slug": "mocion-consecuencia-de-interpelacion",
+    "definition": "Iniciativa que se vota tras una interpelación al Gobierno y expresa la posición de la Cámara. No tiene fuerza de ley."
+  },
+  {
+    "term": "Enmienda a la totalidad",
+    "slug": "enmienda-a-la-totalidad",
+    "definition": "Propuesta para devolver un proyecto de ley al Gobierno o sustituirlo por un texto alternativo. Si se aprueba, el proyecto no sigue adelante."
+  },
+  {
+    "term": "Toma en consideración",
+    "slug": "toma-en-consideracion",
+    "definition": "Primera votación de una proposición de ley de los grupos o de otras instituciones: decide si se tramita. Aprobarla no significa aprobar la ley."
+  },
+  {
+    "term": "Votación de conjunto",
+    "slug": "votacion-de-conjunto",
+    "definition": "Votación final de un proyecto o proposición de ley en el Congreso. En las leyes orgánicas exige mayoría absoluta (176 votos a favor)."
+  },
+  {
+    "term": "Mayoría absoluta",
+    "slug": "mayoria-absoluta",
+    "definition": "En el Congreso, 176 votos a favor de 350. Se exige para leyes orgánicas y para la investidura en primera votación."
+  },
+  {
+    "term": "Grupo Mixto",
+    "slug": "grupo-mixto",
+    "definition": "Grupo parlamentario que reúne a diputados de formaciones que no alcanzan los requisitos para tener grupo propio o que abandonan el suyo. Sus miembros pueden votar de forma distinta."
+  },
+  {
+    "term": "Circunscripción",
+    "slug": "circunscripcion",
+    "definition": "Territorio en el que se reparten los escaños: en las generales, cada provincia más Ceuta y Melilla (52 en total)."
+  },
+  {
+    "term": "Coalición electoral",
+    "slug": "coalicion-electoral",
+    "definition": "Acuerdo entre partidos para presentar candidaturas conjuntas en unas elecciones concretas. Debe comunicarse a la Junta Electoral."
+  },
+  {
+    "term": "Programa electoral",
+    "slug": "programa-electoral",
+    "definition": "Documento con los compromisos que una candidatura presenta para unas elecciones. No es jurídicamente vinculante."
+  },
+  {
+    "term": "COFOG",
+    "slug": "cofog",
+    "definition": "Clasificación internacional del gasto público por funciones (sanidad, educación, defensa, protección social…), usada por Eurostat."
+  },
+  {
+    "term": "Población activa",
+    "slug": "poblacion-activa",
+    "definition": "Personas de 16 o más años que trabajan o buscan activamente trabajo."
+  }
+]

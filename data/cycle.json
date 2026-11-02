@@ -1,0 +1,20 @@
+{
+  "id": "generales-2026",
+  "name": "Elecciones generales 2026",
+  "electionDate": "2026-11-29",
+  "decree": {
+    "title": "Real Decreto 806/2026, de 5 de octubre, de disolución del Congreso de los Diputados y del Senado y de convocatoria de elecciones",
+    "boeId": "BOE-A-2026-20742",
+    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742",
+    "published": "2026-10-06"
+  },
+  "campaign": { "start": "2026-11-13", "end": "2026-11-27" },
+  "seats": 350,
+  "programStatus": [
+    { "partyId": "frente-amplio", "status": "pendiente", "checkedAt": "2026-11-02", "note": "No se ha localizado programa electoral 2026 publicado." },
+    { "partyId": "podemos", "status": "pendiente", "checkedAt": "2026-11-02", "note": "No se ha localizado programa electoral 2026 publicado." },
+    { "partyId": "pp", "status": "pendiente", "checkedAt": "2026-11-02", "note": "No se ha localizado programa electoral 2026. La prensa informa de un documento de compromisos («Contrato con España», 19-10-2026) que el partido no presenta como programa; no está indexado aquí." },
+    { "partyId": "psoe", "status": "pendiente", "checkedAt": "2026-11-02", "note": "No se ha localizado programa electoral 2026 publicado." },
+    { "partyId": "vox", "status": "pendiente", "checkedAt": "2026-11-02", "note": "No se ha localizado programa electoral 2026 publicado." }
+  ]
+}

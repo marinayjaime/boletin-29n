@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.cache
+/test-results
+/playwright-report
+.cache-congreso.log

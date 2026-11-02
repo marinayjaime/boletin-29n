@@ -1,0 +1,36 @@
+[
+  {
+    "date": "2026-11-02T11:26:32.601Z",
+    "importer": "congreso",
+    "ok": 147,
+    "failures": []
+  },
+  {
+    "date": "2026-11-02T11:24:46.532Z",
+    "importer": "congreso",
+    "ok": 147,
+    "failures": []
+  },
+  {
+    "date": "2026-11-02T11:18:22.756Z",
+    "importer": "eurostat",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-02T11:18:13.087Z",
+    "importer": "eurostat",
+    "ok": 1,
+    "failures": [
+      "ipca-indice: fetch failed"
+    ]
+  },
+  {
+    "date": "2026-11-02T11:17:55.235Z",
+    "importer": "eurostat",
+    "ok": 31,
+    "failures": [
+      "gini: La dimensión «age» tiene 2 valores; la consulta debe fijar uno solo."
+    ]
+  }
+]

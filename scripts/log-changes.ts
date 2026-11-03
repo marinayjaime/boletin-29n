@@ -56,7 +56,7 @@ for (const f of changed) {
     entries.push({ date: today, entity: "StatisticalIndicator", entityId: path.basename(f, ".json"), action: "importacion", detail: `Serie actualizada desde Eurostat (${n(a)} → ${n(b)} observaciones).`, by: BY });
   } else if (f === "data/link-report.json") {
     const broken = (d: { results?: { state: string }[] } | null) => (d?.results ?? []).filter((r) => r.state === "roto" || r.state === "error").length;
-    entries.push({ date: today, entity: "Enlaces", entityId: "link-report", action: "comprobacion", detail: `Comprobación de enlaces: ${broken(b)} rotos (antes ${broken(a)}).`, by: BY });
+    entries.push({ date: today, entity: "Enlaces", entityId: "link-report", action: "verificacion", detail: `Comprobación de enlaces: ${broken(b)} rotos (antes ${broken(a)}).`, by: BY });
   } else {
     entries.push({ date: today, entity: "Datos", entityId: f, action: "modificacion", detail: "Fichero modificado por la actualización automática.", by: BY });
   }

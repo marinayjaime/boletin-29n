@@ -4,7 +4,7 @@
  * y toda cita aparece literalmente en la página indicada.
  */
 import { getCorpus, getIndicators, getParties, getPromises, getProposals, getQuiz, getSeries, getSources, getTopics } from "./data";
-import { getVotes, getCommonalities, getPolls, getPromiseCoverage } from "./data";
+import { getVotes, getCommonalities, getPolls, getPromiseCoverage, getChangelog } from "./data";
 
 export function quoteInPage(quote: string, pageText: string | undefined) {
   if (!pageText) return false;
@@ -14,6 +14,11 @@ export function quoteInPage(quote: string, pageText: string | undefined) {
 export function validateAll() {
   const errors: string[] = [];
   const warnings: string[] = [];
+  try {
+    getChangelog();
+  } catch (e) {
+    errors.push(`registro de cambios no válido: ${(e as Error).message.slice(0, 300)}`);
+  }
   const parties = getParties();
   const pids = new Set(parties.map((p) => p.id));
   const sources = new Map(getSources().map((s) => [s.id, s]));

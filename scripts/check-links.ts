@@ -34,6 +34,16 @@ function collect(): { url: string; where: string }[] {
 }
 
 async function check(url: string) {
+  // Los fallos de red (sin respuesta HTTP) suelen ser límites de peticiones: se reintenta con espera creciente.
+  let r = await checkOnce(url);
+  for (let i = 1; i <= 3 && r.state === "error"; i++) {
+    await new Promise((res) => setTimeout(res, 4000 * i));
+    r = await checkOnce(url);
+  }
+  return r;
+}
+
+async function checkOnce(url: string) {
   try {
     const res = await fetch(url, { method: "GET", redirect: "follow", headers: { "User-Agent": "Mozilla/5.0 (comprobador de enlaces)" }, signal: AbortSignal.timeout(30000) });
     const body = res.status === 200 ? "" : await res.text().catch(() => "");
@@ -50,6 +60,7 @@ async function main() {
   for (const l of links) {
     const r = await check(l.url);
     results.push({ ...l, ...r });
+    await new Promise((res) => setTimeout(res, 400)); // ritmo amable con los servidores públicos
     console.log(`${r.state === "ok" ? "✓" : r.state === "bloqueado" ? "~" : "✗"} ${r.status} ${l.url}  (${l.where})`);
   }
   fs.writeFileSync(path.join(root, "data", "link-report.json"), JSON.stringify({ checkedAt: new Date().toISOString(), results }, null, 2));

@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-11-03T07:00:48.955Z",
+    "importer": "eurostat",
+    "ok": 33,
+    "failures": []
+  },
+  {
     "date": "2026-11-03T06:55:41.024Z",
     "importer": "eurostat",
     "ok": 33,

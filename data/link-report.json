@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-03T06:59:07.496Z",
+  "checkedAt": "2026-11-03T07:04:56.135Z",
   "results": [
     {
       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742",
@@ -718,9 +718,8 @@
     {
       "url": "https://www.lamoncloa.gob.es/presidente/biografia/Paginas/index.aspx",
       "where": "gobierno Pedro Sánchez Pérez-Castejón",
-      "status": 0,
-      "state": "error",
-      "error": "fetch failed"
+      "status": 200,
+      "state": "ok"
     },
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-carlos-cuerpo.aspx",
@@ -785,9 +784,8 @@
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-jordi-hereu.aspx",
       "where": "gobierno Jordi Hereu Boher",
-      "status": 0,
-      "state": "error",
-      "error": "fetch failed"
+      "status": 200,
+      "state": "ok"
     },
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-luis-planas.aspx",
@@ -798,9 +796,8 @@
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-angel-victor-torres.aspx",
       "where": "gobierno Ángel Víctor Torres Pérez",
-      "status": 0,
-      "state": "error",
-      "error": "fetch failed"
+      "status": 200,
+      "state": "ok"
     },
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-isabel-rodriguez.aspx",
@@ -811,16 +808,14 @@
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-ernest-urtasun.aspx",
       "where": "gobierno Ernest Urtasun Domènech",
-      "status": 0,
-      "state": "error",
-      "error": "fetch failed"
+      "status": 200,
+      "state": "ok"
     },
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-monica-garcia.aspx",
       "where": "gobierno Mónica García Gómez",
-      "status": 0,
-      "state": "error",
-      "error": "fetch failed"
+      "status": 200,
+      "state": "ok"
     },
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-pablo-bustinduy.aspx",
@@ -831,16 +826,14 @@
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-diana-morant.aspx",
       "where": "gobierno Diana Morant Ripoll",
-      "status": 0,
-      "state": "error",
-      "error": "fetch failed"
+      "status": 200,
+      "state": "ok"
     },
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-ana-redondo.aspx",
       "where": "gobierno Ana Redondo García",
-      "status": 0,
-      "state": "error",
-      "error": "fetch failed"
+      "status": 200,
+      "state": "ok"
     },
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-elma-saiz.aspx",

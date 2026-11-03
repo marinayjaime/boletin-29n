@@ -62,14 +62,14 @@ test("test: temas, responder, revisar, porcentajes y borrar sin enviar datos", a
 test("pactos: alianza hipotética y escenario propio con investidura", async ({ page }) => {
   await page.goto("/pactos");
   await page.getByRole("option", { name: /Hamalgama/ }).click();
-  await page.getByRole("button", { name: /^PP 137/ }).click();
+  await page.getByRole("button", { name: /^PP 135/ }).click();
   await page.getByRole("button", { name: /^Vox 70/ }).click();
-  await expect(page.getByText(/Supera la mayoría absoluta en 31/)).toBeVisible();
+  await expect(page.getByText(/Supera la mayoría absoluta en 29/)).toBeVisible();
   await page.getByRole("button", { name: "Usar esta encuesta en mi escenario" }).click();
   await expect(page.getByText("350 escaños asignados")).toBeVisible();
   await page.getByRole("radiogroup", { name: "Voto de PP" }).getByRole("radio", { name: "Sí" }).click();
   await page.getByRole("radiogroup", { name: "Voto de Vox" }).getByRole("radio", { name: "Sí" }).click();
-  await expect(page.getByText("207 sí · necesita 176")).toBeVisible();
+  await expect(page.getByText("205 sí · necesita 176")).toBeVisible();
 });
 
 test("puntos en común, organigrama y promesas 2023", async ({ page }) => {

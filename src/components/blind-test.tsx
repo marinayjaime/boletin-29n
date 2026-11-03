@@ -40,6 +40,9 @@ export function BlindTest({ statements, parties, topics, proposals, sources }: {
     if (Object.keys(a).length) setAnswers(a);
   }, []);
   useEffect(() => saveAnswers(answers), [answers]);
+  useEffect(() => {
+    if (stage === "resultados" || stage === "revision") window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+  }, [stage, reduce]);
 
   const list = useMemo(() => statements.filter((s) => chosen.includes(s.topicId)), [statements, chosen]);
   const st = list[Math.min(i, list.length - 1)];

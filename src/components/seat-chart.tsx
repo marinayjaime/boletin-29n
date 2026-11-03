@@ -88,11 +88,11 @@ export function SeatChart({
             y1={(H - 14 - Math.sin(majAngle) * (R * 0.32)).toFixed(2)}
             x2={(W / 2 + Math.cos(majAngle) * (R + 14)).toFixed(2)}
             y2={(H - 14 - Math.sin(majAngle) * (R + 14)).toFixed(2)}
-            stroke="var(--ink)"
+            stroke="currentColor"
             strokeWidth={2}
             strokeDasharray="4 4"
           />
-          <text x={(W / 2 + Math.cos(majAngle) * (R + 22)).toFixed(2)} y={(H - 14 - Math.sin(majAngle) * (R + 22)).toFixed(2)} textAnchor="middle" fontSize="13" fontWeight="800" fill="var(--ink)">
+          <text x={(W / 2 + Math.cos(majAngle) * (R + 22)).toFixed(2)} y={(H - 14 - Math.sin(majAngle) * (R + 22)).toFixed(2)} textAnchor="middle" fontSize="13" fontWeight="800" fill="currentColor">
             {majority}
           </text>
           {seats.map((s, i) => {

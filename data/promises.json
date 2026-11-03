@@ -60,7 +60,9 @@
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
     },
-    "series": "psoe-2023-otros"
+    "series": "psoe-2023-otros",
+    "nature": "ejecutiva",
+    "origin": "programa"
   },
   {
     "id": "sumar-2023-jornada-37-5",
@@ -166,7 +168,9 @@
       "assessedAt": "2026-11-02",
       "reviewer": "Equipo editorial (revisión inicial)"
     },
-    "series": "psoe-2023-otros"
+    "series": "psoe-2023-otros",
+    "nature": "legislativa",
+    "origin": "programa"
   },
   {
     "id": "pp-2023-ley-urbanismo",
@@ -264,7 +268,7 @@
       "reviewer": "Equipo editorial (revisión inicial)"
     },
     "origin": "programa",
-    "nature": "legislativa"
+    "nature": "internacional"
   },
   {
     "id": "psoe-2023-ley-reforma-omc",
@@ -293,7 +297,7 @@
       "reviewer": "Equipo editorial (revisión inicial)"
     },
     "origin": "programa",
-    "nature": "legislativa"
+    "nature": "internacional"
   },
   {
     "id": "psoe-2023-ley-economia-social",

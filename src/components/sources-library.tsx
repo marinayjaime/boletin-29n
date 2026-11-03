@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { BarChart3, FileText, Gavel, Landmark, Mic, Newspaper, Search, type LucideIcon } from "lucide-react";
+import { BarChart3, FileText, Gavel, Landmark, Mic, Search, type LucideIcon } from "lucide-react";
 import type { SourceDocument } from "@/lib/schema";
 import { CATEGORY_LABELS, CYCLE_LABELS, VERIFICATION_LABELS } from "@/lib/labels";
 import { formatDate } from "@/lib/format";

@@ -168,7 +168,7 @@ export function Disclosure({ summary, children, className = "" }: { summary: Rea
     <details className={`group rounded-2xl bg-surface-2 ${className}`}>
       <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 font-bold">
         {summary}
-        <span className="grid h-7 w-7 place-items-center rounded-full bg-surface text-sm transition-transform group-open:rotate-45" aria-hidden>
+        <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-surface text-sm transition-transform group-open:rotate-45" aria-hidden>
           +
         </span>
       </summary>

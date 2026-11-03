@@ -1,153 +1,157 @@
 # Boletín 29N
 
-Plataforma web independiente para que cualquier persona pueda comparar propuestas documentadas, consultar votaciones del Congreso y explorar datos públicos de España antes de las **elecciones generales del 29 de noviembre de 2026** ([Real Decreto 806/2026](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742)).
+Plataforma de información electoral para las elecciones generales del **29 de noviembre de 2026** ([Real Decreto 806/2026](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742)). Cubre cinco candidaturas: PP, PSOE, Vox, Frente Amplio y Podemos.
 
-**Informa, no recomienda el voto.** No hay rankings, puntuaciones de afinidad ni colores de partido. Cada afirmación política enlaza a su documento original, con la página y una cita literal.
+- **Web:** https://marinayjaime.github.io/boletin-29n/
+- **Principios:** informa y no recomienda el voto. Toda afirmación política enlaza su documento original, con página y cita literal. Las candidaturas tienen el mismo espacio y estilo, en orden alfabético. Cada partido se identifica por su color, su nombre y la foto de su candidato o candidata, nunca solo por el color.
 
----
+## Estado de los módulos (3 de noviembre de 2026)
 
+| Módulo | Ruta | Estado |
+|---|---|---|
+| Portada | `/` | Cuenta atrás, candidaturas con foto, última encuesta verificada, accesos |
+| Comparador | `/comparador` | 2–5 partidos, 135 propuestas con cita, modo «solo diferencias», URL compartible |
+| Test a ciegas | `/test` | 28 preguntas. Resultado: **solo el partido con mayor coincidencia global** (empates juntos), detalle por pregunta plegado |
+| Pactos y mayorías | `/pactos` | 16 encuestas contrastadas con el original; escenario propio con simulación de investidura |
+| Promesas frente a hechos | `/promesas` | 45 fichas; 41 del PSOE 2023: programa (29) y anuncios de Sánchez en la investidura (12) |
+| Puntos en común | `/puntos-en-comun` | 22 coincidencias revisadas a mano, red y matriz entre partidos |
+| ¿Quién hace qué? | `/quien-hace-que` | Mapa de instituciones, organigrama del Gobierno (fotos de La Moncloa), órganos de partido |
+| Observatorio | `/observatorio` | 33 series de Eurostat, mapa regional, tabla, CSV y PNG |
+| Votaciones | `/votaciones` | 2.188 votaciones del Pleno (XV Legislatura) con voto por grupo y hemiciclo |
+| Partidos | `/partidos/[slug]` | Ficha por candidatura: posturas, propuestas y votos del grupo |
+| Fuentes | `/fuentes` | Biblioteca filtrable por tipo y partido, con huella SHA-256 |
+| Buscador, glosario, metodología, privacidad | | Operativos |
 
-## Versión 2 — rediseño y nuevas funciones (noviembre de 2026)
+### Cálculo del test
 
-**Diseño.** Sistema visual «Señal»: Bricolage Grotesque (titulares y cifras) + Manrope (interfaz), superficies claras y frías, tinta profunda y amarillo como color de marca. Modo claro y oscuro. Navegación inferior tipo app en móvil. Información progresiva: tarjetas breves y paneles de detalle con la cita, la fuente y el contexto.
+Para cada partido: **coincidencias ÷ respuestas comparables**, sumando todas las preguntas respondidas.
 
-**Colores de partido** (fuente única: `src/lib/party-theme.ts`, replicada en `globals.css` y comprobada por tests): PP `#21599E` (web oficial), PSOE `#EF1C27`, Vox `#63BE21`, Podemos `#5A205A` (color de partido en Wikipedia; sus webs bloquean el acceso automatizado) y Frente Amplio `#E51C55` (color de movimientosumar.es; no hay manual de marca propio de la coalición). Los estados de voto y cumplimiento usan una gama independiente (verde azulado, naranja, gris y ocre).
+- Una respuesta es comparable si es «de acuerdo» o «en desacuerdo» y el partido tiene una postura documentada a favor o en contra.
+- Hacen falta al menos 4 respuestas comparables.
+- Solo se muestra el partido con la proporción más alta. Si hay un empate exacto, se muestran todos los empatados.
+- Las respuestas se guardan en `sessionStorage` y no se envían a ningún sitio (lo comprueban los tests de navegador).
 
-**Fotografías.** Representantes: Wikimedia Commons con licencia libre (`data/photos.json`, con autor y licencia). Gobierno: retratos oficiales de La Moncloa, cuyo aviso legal autoriza la reproducción citando la fuente (`data/government.json`). No se usan logotipos de partidos.
+### Encuestas
 
-**Nuevos módulos**
-- `/pactos`: encuestas con escaños (`data/polls.json`, recopiladas de Wikipedia con enlace al medio original y revisión fijada) y escenario propio con investidura en 1.ª y 2.ª votación (art. 99 CE), escenarios guardados en `localStorage`. Las horquillas no se convierten en cifras.
-- `/promesas` → «Las promesas de 2023: ¿qué se cumplió?»: los 21 compromisos legislativos del programa del PSOE de 2023, contrastados con el registro completo de leyes del BOE de la legislatura (`npm run import:boe` → `data/boe-leyes.json`, 384 normas). Cobertura: 23 de 1.078 frases de compromiso identificadas.
-- Test: selección de temas y porcentajes descriptivos por tema (coinciden ÷ comparables, mínimo 2), sin agregación entre temas.
-- `/quien-hace-que`: instituciones (Constitución), Gobierno (La Moncloa) y órganos de los partidos según estatutos (PP 2025 y Movimiento Sumar 2023; PSOE, Vox y Podemos pendientes).
-- `/puntos-en-comun`: 22 grupos de coincidencias revisados a mano (equivalente / objetivo compartido / parcial), matriz y diagrama.
+Cada una de las 16 encuestas se ha contrastado con su publicación original. Resultado:
 
-**Limitaciones de la versión 2**
-- Los anuncios personales de Pedro Sánchez no se incluyen todavía (requieren fuentes primarias verificadas).
-- Estructura orgánica de PSOE, Vox y Podemos: pendiente (estatutos no accesibles automáticamente).
-- Frente Amplio: sin web ni identidad gráfica propia localizada; se usa la de Movimiento Sumar.
-- Las encuestas se toman de una recopilación secundaria (Wikipedia) con enlace a cada medio; no se han verificado una a una en el medio original.
+| Resultado | Encuestas |
+|---|---|
+| Verificadas | 3 |
+| Corregidas con el original | 1 (Hamalgama) |
+| Horquilla | 1 |
+| Encargada por un partido (Vox), señalada | 1 |
+| Reparto parcial | 8 |
+| No verificables | 2 |
+
+Solo las verificadas o corregidas que tienen los 350 escaños repartidos sirven de escenario principal (`isMainScenario`). Los repartos parciales no se completan y las horquillas no se convierten en cifras.
+
+### Promesas
+
+Cada ficha indica su **procedencia** y su **naturaleza**.
+
+- **Procedencia:** programa electoral, declaración de Sánchez en la investidura (Diario de Sesiones, 15-11-2023) o acuerdo de Gobierno.
+- **Naturaleza:** exige una ley, es una medida del Gobierno (decreto, plan o presupuesto), es un resultado medible o es una acción internacional.
+- **Regla:** solo un compromiso que exige aprobar una ley puede marcarse «no cumplido» por ausencia de norma. Se contrasta con el registro completo del BOE de la legislatura: 384 normas con rango de ley y 3.938 reales decretos. Una medida ejecutiva sin pruebas queda como «no verificable».
+- La regla la aplican `src/lib/validate.ts` y los tests.
+
+## Limitaciones conocidas
+
+- Ningún partido ha publicado aún su programa de 2026: las propuestas proceden de programas anteriores (PP, PSOE y Sumar 2023; Vox 2023 en copia de un medio; Podemos 2019 y europeas 2024).
+- No se ha localizado el texto íntegro del acuerdo de coalición PSOE–Sumar en una fuente oficial, así que no hay fichas de esa procedencia.
+- Algunas promesas siguen como «no verificables»: alivio hipotecario hasta 38.000 €, avales del 20 %, 183.000 viviendas, becas y pensiones mínimas. Faltan datos presupuestarios o estadísticos oficiales.
+- Las webs de PSOE, Vox y Podemos bloquean el acceso automatizado. Sus colores se toman de Wikipedia y los cambios en ellas se revisan a mano.
+- El rojo del PSOE se ha oscurecido levemente (#ef1c27 → #e01b26) para que el texto blanco cumpla un contraste de 4,5:1.
+- Las votaciones por llamamiento no tienen voto nominal en los datos abiertos.
+- No hay auditoría externa. La accesibilidad se ha comprobado con axe-core (WCAG 2 A/AA) en todas las páginas, sin una auditoría manual completa.
 
 ## Ejecutar en local
 
-Requisitos: Node.js 20 o superior y npm. Para incorporar documentos PDF nuevos hace falta además `poppler-utils` (`pdftotext`, `pdfinfo`).
+Requisitos: Node.js 20 o superior. Para incorporar PDF nuevos hace falta además `poppler-utils`.
 
 ```bash
 npm install
-npm run dev          # http://localhost:3000
-# o en modo producción:
-npm run build        # ejecuta antes scripts/publish-data.ts (prebuild)
-npm start
+npm run dev                  # http://localhost:3000
+npm run build && npm start   # producción (prebuild publica los datos en public/data)
 ```
 
-**Variables de entorno:** ninguna es obligatoria. Opcional: `NEXT_PUBLIC_SITE_URL` (URL pública, para los metadatos). No se usan claves de API, servicios de pago ni modelos de IA.
+No se usan claves de API ni servicios de pago.
 
 ## Pruebas
 
 ```bash
-npm test                      # 28 pruebas unitarias e integridad de datos (Vitest)
-npm run validate              # validación completa de datos
-npx playwright install chromium
-npm run build && npm run test:e2e   # 7 flujos × escritorio y móvil (Playwright)
-npm run links                 # detector de enlaces rotos → data/link-report.json
+npm run validate      # validación de datos (Zod + reglas editoriales)
+npm test              # 54 pruebas unitarias y de integridad en 7 ficheros (Vitest)
+npm run build && npm run test:e2e   # 8 flujos × escritorio y móvil = 16 pruebas (Playwright)
+npm run links         # enlaces rotos → data/link-report.json
 ```
 
-Las pruebas de datos comprueban, entre otras cosas:
+Entre otras cosas, las pruebas comprueban:
 
-- que **cada cita aparece literalmente** en la página indicada del documento (sobre el texto extraído del PDF);
-- que **ninguna propuesta se atribuye a un partido distinto** del autor del documento (y que el programa de Sumar 2023 nunca aparece en la columna de Podemos);
-- que el comparador funciona con las **26 combinaciones de 2 a 5 partidos** sin mover propuestas de columna;
-- que las posturas del test se apoyan en propuestas existentes del mismo partido y que las afirmaciones no nombran partidos;
-- que la suma del voto nominal por grupo coincide con los totales oficiales en las 2.188 votaciones.
+- que cada cita aparece literalmente en la página indicada;
+- que ninguna propuesta se atribuye a otro partido;
+- las 26 combinaciones del comparador;
+- que la suma del voto por grupo coincide con los totales oficiales;
+- que las encuestas suman 350 escaños (contando los no publicados) y que solo las completas y verificadas sirven de escenario;
+- el cálculo global del test y el tratamiento de los empates;
+- que toda referencia al BOE de una promesa existe en el registro;
+- el contraste y la unicidad de los colores de partido.
+
+## Actualización de datos
+
+### Automática: `.github/workflows/update-data.yml`, cada día a las 06:15 UTC
+
+1. **Datos objetivos, que se publican solos:**
+   - series de Eurostat (`npm run import:eurostat`);
+   - registro del BOE en modo incremental (`npx tsx scripts/import-boe-leyes.ts --incremental`);
+   - informe de enlaces.
+
+   Solo se publican si pasan `validate` y `npm test`. Los cambios que afectan solo a marcas de tiempo se descartan. Cada cambio se anota en `data/changelog.json` (`scripts/log-changes.ts`) y después se lanza el despliegue (`pages.yml`).
+2. **Datos que requieren interpretación, que nunca se publican solos:**
+   - `scripts/check-polls.ts`: encuestas añadidas en Wikipedia desde la revisión de referencia;
+   - `scripts/check-government.ts`: altas, bajas y cambios de cargo en La Moncloa;
+   - `scripts/check-programs.ts`: posibles programas de 2026 en las webs de `data/watch.json`;
+   - enlaces rotos.
+
+   Los informes van a `data/review/` (ignorado por git), y `scripts/review-summary.ts` abre o actualiza una incidencia con la etiqueta `revision-datos`. Cuando no queda nada pendiente, la incidencia se cierra sola.
+
+### Manual (revisión humana)
+
+- **Encuesta nueva:** leer el original y añadirla a `data/polls.json` con `verification` (método y notas). Si el reparto no está completo, rellenar `unpublishedSeats`. Al aceptar los cambios de Wikipedia, actualizar `aggregator.revision`.
+- **Cambio de Gobierno:** editar `data/government.json`, con foto y fecha.
+- **Programa de 2026:**
+  1. Registrarlo en `data/sources.json` (`kind: "programa_2026"`, con su SHA-256).
+  2. Ejecutar `npm run corpus:add <id> <pdf>`.
+  3. Ejecutar `npm run candidates <id> <tema> "<patrón>"`.
+  4. Revisar a mano y pasar a `data/proposals.json`.
+  5. Actualizar `data/cycle.json` y `data/quiz.json`.
+- **Promesa:** añadirla a `data/promises.json` con `origin`, `nature`, criterio, acciones oficiales y límites. La cita debe estar en el corpus.
+- Siempre: `npm run validate && npm test` antes de publicar.
 
 ## Estructura
 
 ```
-data/                     Datos verificables (fuente de verdad, validados con Zod)
-  parties.json            Cinco candidaturas (denominaciones según el BOE de candidaturas)
-  coalitions.json         Relación Frente Amplio / Sumar / Podemos
-  cycle.json              Convocatoria y estado de los programas 2026
-  sources.json            Registro de documentos: URL oficial, copia archivada, SHA-256, verificación
-  corpus/                 Texto por página de cada programa (para citas y buscador)
-  topics.json             Taxonomía extensible (18 temas, filas comparables)
-  proposals.json          Propuestas con cita literal, página y verificación
-  quiz.json               Afirmaciones del test y posturas documentadas
-  promises.json           Promesas frente a hechos (criterio, acciones oficiales, límites)
-  indicators.json         Configuración de las series estadísticas
-  stats/                  Series descargadas (generadas por el importador)
-  votes/index.json        Votaciones del Congreso (generado)
-  events.json             Cambios de Gobierno y acontecimientos (con fuente)
-  pending-indicators.json Indicadores sin API estable, pendientes de importador
-  glossary.json, changelog.json, import-log.json, link-report.json
-public/data/              Ficheros que el navegador carga bajo demanda (generados)
-scripts/                  Importadores y mantenimiento
-src/lib/                  Modelo (schema.ts), acceso a datos, lógica pura (compare, quiz, series,
-                          hemicycle, votes-classify, search, validate)
-src/components/           Componentes de interfaz
-src/app/                  Rutas (App Router)
-tests/  e2e/              Pruebas unitarias y de extremo a extremo
+data/            Datos (fuente de verdad): parties, sources (+ corpus/), proposals, quiz, promises,
+                 polls, government, organization, commonalities, boe-leyes, indicators (+ stats/),
+                 votes/, events, glossary, changelog, watch
+scripts/         Importadores, vigilantes (check-*), registro de cambios, validación
+src/lib/         Modelo (schema.ts) y lógica pura: seats, quiz, compare, common, series, validate…
+src/components/  Interfaz (hemiciclo, comparador, test, pactos, promesas…)
+src/app/         Rutas (App Router, exportación estática)
+tests/ e2e/      Vitest y Playwright
 ```
 
-## Modelo de datos
+## Despliegue
 
-Definido y validado en [`src/lib/schema.ts`](src/lib/schema.ts): `Party`, `Coalition`, `ElectoralCycle`, `SourceDocument`, `PolicyTopic`, `Proposal`, `Citation`, `QuizStatement`, `StatisticalIndicator`, `StatisticalObservation` / `SeriesFile`, `ParliamentaryVote`, `ParliamentaryPosition`, `HistoricalPromise` (con `assessment`, que es el *PromiseAssessment*), `VerificationRecord` y `GlossaryEntry`. `ElectoralProgram` se representa como `SourceDocument` de tipo `programa_2026` o `programa_anterior`.
+GitHub Pages con `.github/workflows/pages.yml`: se despliega con cada push a `main`, tras pasar los tests. Hace una exportación estática con `STATIC_EXPORT=1` y `NEXT_PUBLIC_BASE_PATH=/boletin-29n` (unas 2.200 páginas).
 
-Categorías de procedencia separadas: programa 2026, propuesta anunciada en 2026, programa anterior, declaración, iniciativa parlamentaria, votación, ley, BOE, estadística y fuente periodística.
+## Fuentes principales
 
-## Importadores y mantenimiento
+- **BOE:** convocatoria (RD 806/2026), candidaturas (BOE-A-2026-22607) y registro de normas de la XV Legislatura (API de sumarios).
+- **Congreso:** datos abiertos de votaciones y Diario de Sesiones DSCD-15-PL-7 (investidura).
+- **Eurostat:** 33 series (JSON-stat), con geometría GISCO © EuroGeographics.
+- **La Moncloa:** composición del Gobierno y fotografías.
+- **Wikimedia Commons:** fotos de las candidaturas, con licencia indicada.
+- **Encuestas:** publicaciones originales de cada empresa o medio; Wikipedia solo se usa para detectar encuestas nuevas.
 
-| Comando | Qué hace |
-|---|---|
-| `npm run import:eurostat [id…]` | Descarga las series de Eurostat (API JSON-stat) y guarda la URL exacta y la fecha |
-| `npm run import:congreso [AAAAMMDD…]` | Importa las votaciones del Pleno (ZIP/JSON oficiales, con caché en `.cache/`) y el voto nominal |
-| `npm run corpus:add <sourceId> <pdf>` | Extrae el texto por página de un PDF nuevo y comprueba su SHA-256 |
-| `npm run candidates <sourceId> <tema> "<regex>"` | Propone pasajes **pendientes de revisión** (no se publican) en `data/candidates/` |
-| `npm run links` | Detecta enlaces rotos o bloqueados |
-| `npm run validate` | Valida todo el conjunto de datos |
-
-### Cuando se publique un programa electoral 2026
-
-1. Registrar el documento en `data/sources.json` con `kind: "programa_2026"`, `cycle: "generales-2026"` y su SHA-256.
-2. `npm run corpus:add <id> <ruta.pdf>`.
-3. `npm run candidates <id> <tema> "<patrón>"` para obtener pasajes candidatos.
-4. Revisar a mano, redactar el resumen, elegir la dimensión y pasar a `data/proposals.json` con `status: "publicado"`.
-5. Actualizar `programStatus` en `data/cycle.json` y las posturas afectadas en `data/quiz.json`.
-6. `npm test` (falla si alguna cita no está literalmente en su página).
-
-## Fuentes utilizadas
-
-- **BOE**: RD 806/2026 (convocatoria); candidaturas presentadas (BOE-A-2026-22607, 28-10-2026); RDL 8/2023, RDL 1/2025, RDL 3/2026, Ley 21/2021, Ley 12/2023, RDL 32/2021 y RD 463/2020.
-- **Congreso de los Diputados**: datos abiertos de votaciones de la XV Legislatura (2.188 votaciones, 411 diputados).
-- **Eurostat**: 33 series (PIB, IPCA, deuda, déficit, paro, empleo, temporalidad, salario mínimo, salario medio, vivienda, euríbor, gasto COFOG, demografía, AROPE, Gini, homicidios), con datos regionales NUTS 2 para PIB per cápita, paro y AROPE. Geometría GISCO (© EuroGeographics).
-- **Programas** (ver `data/sources.json`): PP 2023, PSOE 2023 y Sumar 2023 (copias del dominio oficial archivadas por Internet Archive); Vox 2023 (copia publicada por The Objective: voxespana.es bloquea las descargas automatizadas); Podemos 2019 (generales) y 2024 (europeas).
-
-## Despliegue (Vercel u otro)
-
-- **Vercel**: importar el repositorio; *build command* `npm run build`; sin variables obligatorias. Genera ~2.200 páginas estáticas.
-- **Cualquier servidor Node**: `npm run build && npm start`.
-- La actualización de datos se puede programar (por ejemplo, con una tarea diaria de CI) con `npm run import:all && npm test && npm run build`.
-
-## Funcionalidades
-
-**Completadas y verificadas**
-
-- Portada con hero, cuenta atrás, fecha de actualización, buscador, cinco candidaturas en orden alfabético, seis indicadores y aviso de candidaturas no analizadas.
-- Comparador de 2 a 5 partidos y 18 temas: reordenación de columnas, modos «Mostrar todo» y «Solo diferencias», URL compartible, panel de fuente (cita, página, documento, competencia, contexto) y carriles horizontales sincronizados en móvil.
-- Test a ciegas de 28 afirmaciones y 6 respuestas: saltar, retroceder, revisar, revelar posturas tema a tema sin puntuación global, consultar la fuente y borrar. Respuestas solo en `sessionStorage`, sin peticiones de red (verificado en e2e).
-- Observatorio con 32 indicadores en 6 áreas: periodo, comparación de países, cifras absolutas, relativas (base 100) o reales (salario), comparación de años, mapa por comunidad autónoma, tabla, CSV, PNG, URL con filtros, marcas de Gobierno con advertencia de no causalidad, acontecimientos con fuente y ficha metodológica.
-- Votaciones: 2.188 votaciones con filtros (texto, tipo, fecha, resultado, tema, grupo y sentido del grupo, grupo dividido), ficha con expediente, enlaces oficiales, hemiciclo interactivo con vista inclinada 3D, desglose por grupo y voto nominal.
-- Promesas frente a hechos: 6 fichas con criterio, línea temporal de acciones oficiales, resultado, límites y filtros.
-- Fichas de partido con estructura idéntica; biblioteca de fuentes filtrable; buscador documental en el navegador; metodología, privacidad, glosario y página 404.
-- Tema claro/oscuro, `prefers-reduced-motion`, navegación por teclado, enlace para saltar al contenido.
-
-**Pendientes / limitaciones**
-
-- Ningún programa 2026 publicado a 2 de noviembre de 2026: todas las propuestas proceden de programas anteriores, identificados como tales.
-- 135 propuestas: varios temas no tienen todavía posiciones de todos los partidos («Sin posición documentada»).
-- Composición de Frente Amplio: pendiente del documento oficial de la coalición (ahora se apoya en el BOE y en prensa).
-- Programa de Vox: copia de un tercero, pendiente de cotejo con el PDF oficial.
-- Indicadores sin API (pensiones de la Seguridad Social, listas de espera, precio por m², etc.): listados como pendientes, con su fuente.
-- Votaciones por llamamiento (investiduras, RDL 26 y 27/2026): solo totales; el voto nominal está en el Diario de Sesiones.
-- Los temas de las votaciones se asignan por palabras clave (orientativos).
-- Fase 2 no implementada (por diseño): simuladores, mapa por circunscripción, preguntas con IA, verificador de afirmaciones, exportación a PDF y partidos territoriales. La taxonomía y el modelo admiten nuevos partidos, temas y convocatorias.
-- Accesibilidad: objetivo WCAG 2.2 AA, sin auditoría externa. No hay certificación de cumplimiento legal.
+Hecho por Jaime Borras.

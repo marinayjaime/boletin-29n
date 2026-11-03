@@ -2,17 +2,29 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import fs from "node:fs";
 import path from "node:path";
-import { getChangelog, getProposals, getQuiz, getSources, getVotes, getIndicators } from "@/lib/data";
-import { PageHero } from "@/components/ui";
+import { BadgeCheck, FileSearch, Scale } from "lucide-react";
+import { getChangelog, getIndicators, getPolls, getPromises, getProposals, getQuiz, getSources, getVotes } from "@/lib/data";
+import { Disclosure, PageHero } from "@/components/ui";
 import { formatDate } from "@/lib/format";
+import { MIN_OVERALL } from "@/lib/quiz";
+import { isMainScenario } from "@/lib/seats";
 
 export const metadata: Metadata = { title: "Metodología" };
 
-function H({ id, children }: { id: string; children: React.ReactNode }) {
+function Section({ id, title, stat, children }: { id: string; title: string; stat?: string; children: React.ReactNode }) {
   return (
-    <h2 id={id} className="display mt-14 scroll-mt-24 border-t border-rule pt-8 text-3xl">
-      {children}
-    </h2>
+    <div id={id} className="scroll-mt-24">
+      <Disclosure
+        summary={
+          <span className="flex flex-1 items-baseline justify-between gap-3">
+            <span className="text-lg font-extrabold text-ink">{title}</span>
+            {stat && <span className="text-sm font-extrabold text-ink-3">{stat}</span>}
+          </span>
+        }
+      >
+        <div className="prose-civic space-y-3">{children}</div>
+      </Disclosure>
+    </div>
   );
 }
 
@@ -26,135 +38,117 @@ export default function Page() {
     }
   })();
   const thirdParty = getSources().filter((s) => s.hostedByThirdParty);
+  const { polls } = getPolls();
+  const promises = getPromises();
+  const PRINCIPLES = [
+    { icon: Scale, title: "Informa, no recomienda", text: "Mismo espacio y estilo para todas las candidaturas. Orden alfabético. Ninguna recomendación de voto." },
+    { icon: FileSearch, title: "Todo tiene fuente", text: "Cada propuesta enlaza su documento, con página y cita literal comprobada automáticamente." },
+    { icon: BadgeCheck, title: "Revisión humana", text: "Lo que exige interpretación (estados, encuestas, cargos) lo decide una persona, nunca un script." },
+  ];
   return (
     <>
-      <PageHero eyebrow="Cómo trabajamos" title="Metodología" sub="Qué fuentes se usan, cómo se seleccionan y resumen las propuestas, cómo se comprueban y qué límites tiene cada sección." />
-      <div className="mx-auto max-w-[860px] px-4 md:px-8">
-      <nav aria-label="Índice" className="flex flex-wrap gap-2 text-sm">
-        {[
-          ["principios", "Principios"],
-          ["propuestas", "Propuestas"],
-          ["test", "Test"],
-          ["estadistica", "Estadística"],
-          ["votaciones", "Votaciones"],
-          ["promesas", "Promesas"],
-          ["limites", "Límites"],
-          ["registro", "Registro de cambios"],
-        ].map(([id, l]) => (
-          <a key={id} href={`#${id}`} className="rounded-full border border-rule px-3 py-1 hover:border-ink">
-            {l}
-          </a>
-        ))}
-      </nav>
-      <div className="prose-civic mt-6 text-ink-2">
-        <H id="principios">Principios</H>
-        <p>
-          <strong className="text-ink">Informar, no recomendar.</strong> La plataforma no indica qué votar, no ordena partidos por calidad. El test a ciegas
-          muestra el partido con mayor coincidencia en las preguntas respondidas (coincidencias ÷ respuestas comparables, mínimo 4), con el cálculo a la vista. Todas las candidaturas reciben la misma estructura, el mismo espacio y el mismo estilo visual; el orden inicial es alfabético.
-        </p>
-        <p>
-          <strong className="text-ink">Toda afirmación política tiene fuente.</strong> Cada propuesta enlaza a su documento, con la página del PDF y una cita
-          literal. Si no hay documento, se muestra «Sin posición documentada», que no equivale a oposición.
-        </p>
-        <p>
-          <strong className="text-ink">Categorías separadas.</strong> Programa 2026, propuesta anunciada en 2026, programa anterior, declaración, iniciativa
-          parlamentaria, votación, ley y medida aplicada se etiquetan por separado. En esta versión, ningún partido ha publicado su programa 2026 y todas las
-          propuestas proceden de programas anteriores.
-        </p>
-
-        <H id="propuestas">Selección y verificación de propuestas</H>
-        <ol className="list-decimal space-y-2 pl-5">
-          <li>Se descarga el documento original (o su copia archivada en Internet Archive, cuando el original ya no está disponible) y se calcula su huella SHA-256.</li>
-          <li>Se extrae el texto de cada página con <code>pdftotext</code> y se normaliza (Unicode NFC, ligaduras tipográficas).</li>
-          <li>Una persona selecciona pasajes por tema, copia la cita literal y redacta un resumen que no añade nada que no esté en la cita.</li>
-          <li>
-            Un test automático (<code>tests/quotes.test.ts</code>) comprueba que <strong className="text-ink">cada cita aparece literalmente en la página indicada</strong>{" "}
-            del documento. Si no, el build falla.
-          </li>
-          <li>Las coincidencias entre partidos (modo «Solo diferencias») se marcan a mano con una clave común, nunca por similitud automática.</li>
-          <li>
-            El importador de candidatas (<code>scripts/extract-candidates.ts</code>) puede proponer pasajes de un documento nuevo, pero los guarda con estado{" "}
-            <code>pendiente_revision</code>: no se publican hasta que una persona los revise.
-          </li>
-        </ol>
-        <p>
-          Hoy hay {getProposals().length} propuestas publicadas. Es preferible una base pequeña y verificada a una grande sin evidencia: muchos temas aún no tienen
-          propuestas indexadas para todos los partidos.
-        </p>
-        {thirdParty.length > 0 && (
-          <p>
-            <strong className="text-ink">Copias de terceros.</strong> {thirdParty.map((s) => s.title).join("; ")}: el servidor oficial bloquea las descargas
-            automatizadas y no hay copia archivada. Se usa una copia publicada por un medio, marcada como tal hasta cotejarla con el original.
-          </p>
-        )}
-
-        <H id="test">Test a ciegas</H>
-        <p>
-          {getQuiz().length} afirmaciones redactadas para ser neutrales, sin premisas y con una sola idea cada una. Para cada partido se registra una postura
-          (a favor, en contra, matizada, sin posición documentada o no comparable) que debe apoyarse en propuestas concretas. «Matizada» indica que la
-          propuesta se relaciona con la afirmación pero no la responde directamente; la nota explica por qué. No se calcula ningún porcentaje de
-          afinidad global.
-        </p>
-
-        <H id="estadistica">Datos estadísticos</H>
-        <p>
-          {getIndicators().filter((i) => !i.hidden).length} series de la API de Eurostat (formato JSON-stat 2.0), descargadas por <code>scripts/import-eurostat.ts</code>,
-          que guarda la URL exacta de cada consulta y la fecha de descarga. No se interpolan ni se estiman valores. Las series derivadas (por ejemplo, el salario
-          real) indican su fórmula. Se usa Eurostat por su comparabilidad entre países y comunidades; algunas cifras pueden diferir ligeramente de las
-          publicadas por el INE (por ejemplo, IPCA frente a IPC).
-        </p>
-        <p>
-          Los cambios de Gobierno se marcan como contexto, no como causa. Indicadores sin API estable (pensiones de la Seguridad Social, listas de espera,
-          precio por metro cuadrado…) figuran como «pendientes de importación», con su fuente oficial.
-        </p>
-
-        <H id="votaciones">Votaciones parlamentarias</H>
-        <p>
-          {getVotes().votes.length.toLocaleString("es-ES")} votaciones del Pleno importadas por <code>scripts/import-congreso.ts</code> a partir de los ficheros oficiales
-          (JSON por votación). El desglose por grupo se calcula sumando el voto de cada diputado. El tipo de votación se deduce del epígrafe oficial del orden del
-          día; los temas se asignan por palabras clave y son orientativos.
-        </p>
-        <p>
-          Frente Amplio no existía como grupo parlamentario: la actividad del G. P. Plurinacional SUMAR se presenta como antecedente, con su nombre, y no como
-          actividad de Frente Amplio. Podemos no tuvo grupo propio; no se le atribuyen automáticamente los votos del Grupo Mixto.
-        </p>
-
-        <H id="promesas">Promesas frente a hechos</H>
-        <p>
-          Cada ficha incluye la cita del compromiso, un criterio de cumplimiento escrito antes de evaluar, las acciones oficiales con su enlace (BOE, Congreso),
-          el resultado acreditable y los límites de la evaluación. Los estados se asignan en revisión humana. La muestra actual es pequeña y no sirve para
-          comparar el grado de cumplimiento entre partidos.
-        </p>
-
-        <H id="limites">Límites conocidos</H>
-        <ul className="list-disc space-y-1 pl-5">
-          <li>No hay programas de 2026 publicados a fecha de la última comprobación.</li>
-          <li>Podemos no tiene programa propio de generales desde 2019; su programa de 2024 es para el Parlamento Europeo.</li>
-          <li>La composición exacta de la coalición Frente Amplio está pendiente de documento oficial.</li>
-          <li>La copia del programa de Vox procede de un tercero.</li>
-          <li>Las votaciones por llamamiento no tienen voto nominal en datos abiertos.</li>
-          <li>La plataforma no ha sido auditada externamente ni certificada en accesibilidad o protección de datos.</li>
-        </ul>
-
-        <H id="registro">Registro de cambios e importaciones</H>
-        <ul className="space-y-1 text-sm">
-          {log.map((l, i) => (
-            <li key={i} className="font-mono text-xs">
-              {formatDate(l.date)} · {l.action} · {l.entity} {l.entityId} — {l.detail}
-            </li>
-          ))}
-          {imports.slice(0, 6).map((l, i) => (
-            <li key={`i${i}`} className="font-mono text-xs">
-              {formatDate(l.date)} · importación {l.importer}: {l.ok} correctas{l.failures.length ? `, ${l.failures.length} fallos` : ""}
+      <PageHero eyebrow="Cómo trabajamos" title="Metodología" sub="Qué fuentes se usan, cómo se comprueban y qué límites tiene cada sección." />
+      <div className="mx-auto max-w-[960px] px-4 md:px-8">
+        <ul className="grid grid-cols-1 gap-3 md:grid-cols-3">
+          {PRINCIPLES.map((p) => (
+            <li key={p.title} className="card p-6">
+              <span className="grid h-12 w-12 place-items-center rounded-2xl bg-ink text-brand">
+                <p.icon size={24} aria-hidden />
+              </span>
+              <p className="display mt-4 text-2xl">{p.title}</p>
+              <p className="mt-2 font-semibold text-ink-2">{p.text}</p>
             </li>
           ))}
         </ul>
-        <p className="text-sm">
-          ¿Has visto un error? El código y los datos están en el repositorio del proyecto; consulta el README. También puedes ver la{" "}
-          <Link href="/privacidad">política de privacidad</Link>.
+
+        <div className="mt-8 space-y-2">
+          <Section id="propuestas" title="Propuestas" stat={`${getProposals().length} con cita`}>
+            <p>
+              Se descarga el documento (o su copia en Internet Archive), se calcula su huella SHA-256 y se extrae el texto de cada página. Una persona copia la cita
+              literal y redacta un resumen que no añade nada. Un test comprueba que <strong>cada cita aparece en la página indicada</strong>; si no, el build falla.
+            </p>
+            <p>Si no hay documento se muestra «Sin posición documentada», que no equivale a oposición. Ningún partido ha publicado aún su programa de 2026: las propuestas proceden de programas anteriores.</p>
+            {thirdParty.length > 0 && <p>Copias de terceros: {thirdParty.map((s) => s.title).join("; ")}. Marcadas como tales hasta cotejarlas con el original.</p>}
+          </Section>
+
+          <Section id="test" title="Test a ciegas" stat={`${getQuiz().length} preguntas`}>
+            <p>
+              Cada afirmación tiene, por partido, una postura documentada (a favor, en contra, matizada o sin datos) apoyada en propuestas concretas. Al terminar se
+              muestra el partido con mayor proporción de <strong>coincidencias ÷ respuestas comparables</strong> sumando todas las preguntas.
+            </p>
+            <p>Comparables: tu respuesta es de acuerdo o en desacuerdo y el partido tiene postura a favor o en contra. Hacen falta al menos {MIN_OVERALL}. Los empates exactos se muestran juntos. Las respuestas no salen del navegador.</p>
+          </Section>
+
+          <Section id="encuestas" title="Encuestas y pactos" stat={`${polls.filter(isMainScenario).length} de ${polls.length} aptas como escenario`}>
+            <p>
+              Cada encuesta se contrasta con su publicación original (fecha, empresa, escaños, horquillas y coaliciones). Solo las verificadas o corregidas y con reparto completo de los 350 escaños sirven
+              de escenario principal. Los repartos parciales no se completan y las horquillas no se convierten en cifras. Las encuestas encargadas por un partido se señalan.
+            </p>
+            <p>Investidura: mayoría absoluta (176) en primera votación; más síes que noes en la segunda (art. 99 CE).</p>
+          </Section>
+
+          <Section id="promesas" title="Promesas frente a hechos" stat={`${promises.length} fichas`}>
+            <p>
+              Cada ficha separa su procedencia (programa electoral, declaración de Pedro Sánchez en la investidura o acuerdo de Gobierno) y su naturaleza (exige una ley, una medida del Gobierno o un resultado medible). El
+              criterio se escribe antes de evaluar y cada acción oficial enlaza al BOE o al Congreso.
+            </p>
+            <p>
+              Solo un compromiso que exige aprobar una ley puede marcarse «no cumplido» por no encontrar la norma, tras revisar el registro completo del BOE de la legislatura. Una medida ejecutiva sin pruebas queda como
+              «no verificable». La muestra no sirve para comparar partidos.
+            </p>
+          </Section>
+
+          <Section id="estadistica" title="Datos estadísticos" stat={`${getIndicators().filter((i) => !i.hidden).length} series`}>
+            <p>
+              Series de Eurostat (JSON-stat), con la URL exacta de cada consulta y su fecha de descarga. No se interpolan ni se estiman valores. Pueden diferir ligeramente del INE (IPCA frente a IPC). Los cambios de
+              Gobierno se marcan como contexto, no como causa.
+            </p>
+          </Section>
+
+          <Section id="votaciones" title="Votaciones del Congreso" stat={`${getVotes().votes.length.toLocaleString("es-ES")} votaciones`}>
+            <p>
+              Ficheros oficiales del Congreso, una votación por fichero. El voto por grupo se calcula sumando el de cada diputado; los temas se asignan por palabras clave y son orientativos. La actividad del grupo
+              SUMAR se presenta como antecedente de Frente Amplio, no como suya. A Podemos no se le atribuyen los votos del Grupo Mixto.
+            </p>
+          </Section>
+
+          <Section id="actualizacion" title="Actualizaciones automáticas" stat="cada día">
+            <p>
+              Un proceso diario de GitHub Actions importa las series de Eurostat y el registro del BOE y comprueba los enlaces. Esos cambios solo se publican si pasan la validación de datos y los tests, y quedan anotados en el registro de cambios.
+            </p>
+            <p>Encuestas nuevas, cambios en el Gobierno, programas de 2026 y enlaces rotos se detectan, pero no se publican: abren una incidencia para revisión humana.</p>
+          </Section>
+
+          <Section id="limites" title="Límites conocidos">
+            <ul className="list-disc space-y-1 pl-5">
+              <li>No hay programas de 2026 publicados a fecha de la última comprobación.</li>
+              <li>Podemos no tiene programa propio de generales desde 2019; su programa de 2024 es europeo.</li>
+              <li>No se ha localizado el texto íntegro del acuerdo de coalición PSOE–Sumar en una fuente oficial.</li>
+              <li>Las votaciones por llamamiento no tienen voto nominal en datos abiertos.</li>
+              <li>Varias webs de partidos bloquean el acceso automatizado: sus cambios se revisan a mano.</li>
+              <li>La plataforma no ha sido auditada externamente.</li>
+            </ul>
+          </Section>
+
+          <Section id="registro" title="Registro de cambios" stat={`${log.length} entradas`}>
+            <ul className="space-y-2 text-sm">
+              {log.slice(0, 30).map((l, i) => (
+                <li key={i}>
+                  <span className="font-extrabold text-ink">{formatDate(l.date)}</span> · {l.entityId} — {l.detail}
+                </li>
+              ))}
+              {imports.slice(0, 6).map((l, i) => (
+                <li key={`i${i}`}>
+                  <span className="font-extrabold text-ink">{formatDate(l.date)}</span> · importación {l.importer}: {l.ok} correctas{l.failures.length ? `, ${l.failures.length} fallos` : ""}
+                </li>
+              ))}
+            </ul>
+          </Section>
+        </div>
+        <p className="mt-6 text-sm font-semibold text-ink-3">
+          Código y datos en el repositorio del proyecto. <Link href="/privacidad" className="underline">Privacidad</Link>.
         </p>
       </div>
-    </div>
     </>
   );
 }

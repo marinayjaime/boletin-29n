@@ -80,7 +80,9 @@ export default function Home() {
               </Link>
             </div>
             <div className="text-ink [&_text]:fill-[var(--bg)] [&_line]:stroke-[var(--bg)]">
+              <div className="text-bg">
               <SeatChart blocks={blocks} height={270} center={<p className="num text-5xl text-bg">350</p>} />
+              </div>
             </div>
             <ul className="mt-2 flex flex-wrap justify-center gap-x-3 gap-y-1 text-sm font-bold">
               {blocks.slice(0, 6).map((b) => (

@@ -22,7 +22,7 @@ const LAYOUT: Record<string, { x: number; y: number }> = {
   tc: { x: 88, y: 80 },
   ccaa: { x: 50, y: 52 },
 };
-const COLORS: Record<string, string> = { corona: "var(--c6)", cortes: "var(--c2)", congreso: "var(--c2)", senado: "var(--c2)", gobierno: "var(--c5)", judicial: "var(--c3)", tc: "var(--c3)", ccaa: "var(--c4)" };
+const COLORS: Record<string, string> = { corona: "#a16207", cortes: "#0f766e", congreso: "#0f766e", senado: "#0f766e", gobierno: "#0e7490", judicial: "#b45309", tc: "#b45309", ccaa: "#475569" };
 
 function Avatar({ m, size = 64 }: { m: Minister; size?: number }) {
   return (

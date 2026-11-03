@@ -6,6 +6,7 @@ import { VotesList } from "@/components/votes-list";
 import { VOTE_TYPE_LABELS } from "@/lib/votes-classify";
 import { PARTY_GROUP_NOTE } from "@/lib/groups";
 import { formatDate } from "@/lib/format";
+import { DataStatus } from "@/components/data-status";
 
 export const metadata: Metadata = { title: "Votaciones del Congreso", description: "Todas las votaciones del Pleno de la XV Legislatura con el voto de cada diputado." };
 
@@ -16,6 +17,7 @@ export default function Page() {
       <PageHero eyebrow="Congreso · XV Legislatura" title="Lo que se votó" sub={`${votes.length.toLocaleString("es-ES")} votaciones del Pleno con el voto de cada diputado. Importado el ${importedAt ? formatDate(importedAt) : "—"}.`} />
 
       <div className="mx-auto max-w-[1320px] px-4 md:px-8">
+        <DataStatus datasets={["congreso"]} editorial={[]} />
       <details className="card mb-8 p-5 text-sm">
         <summary className="cursor-pointer font-medium">Cómo leer las votaciones y su relación con los cinco partidos</summary>
         <div className="mt-4 grid gap-6 md:grid-cols-2">

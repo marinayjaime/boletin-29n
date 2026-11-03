@@ -17,8 +17,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -39,8 +39,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "derogar-ley-vivienda"
   },
@@ -62,8 +62,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "avales-hipoteca-jovenes"
   },
@@ -85,8 +85,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -107,8 +107,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -129,8 +129,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -151,8 +151,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "competence": "El ITP-AJD está cedido a las comunidades autónomas y el IBI es un impuesto municipal."
   },
@@ -174,8 +174,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -196,8 +196,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -218,8 +218,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "avales-hipoteca-jovenes"
   },
@@ -241,8 +241,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -263,8 +263,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -285,8 +285,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -307,8 +307,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -329,8 +329,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -351,8 +351,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -373,8 +373,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -395,8 +395,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -417,8 +417,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -439,8 +439,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -461,8 +461,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -483,8 +483,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -505,8 +505,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -527,8 +527,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -549,8 +549,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -571,8 +571,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "derogar-ley-vivienda"
   },
@@ -594,8 +594,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -616,8 +616,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -638,8 +638,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -660,8 +660,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -682,8 +682,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -704,8 +704,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -726,8 +726,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -748,8 +748,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -770,8 +770,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -792,8 +792,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -814,8 +814,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -836,8 +836,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -858,8 +858,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -880,8 +880,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -902,8 +902,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -924,8 +924,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -946,8 +946,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -968,8 +968,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -990,8 +990,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1012,8 +1012,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1034,8 +1034,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1056,8 +1056,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1078,8 +1078,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1100,8 +1100,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1122,8 +1122,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1144,8 +1144,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1166,8 +1166,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1188,8 +1188,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1210,8 +1210,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1232,8 +1232,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1254,8 +1254,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "subir-pensiones-minimas"
   },
@@ -1277,8 +1277,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "pensiones-ipc-ley"
   },
@@ -1300,8 +1300,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1322,8 +1322,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "pensiones-ipc-ley"
   },
@@ -1345,8 +1345,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "subir-pensiones-minimas"
   },
@@ -1368,8 +1368,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1390,8 +1390,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1412,8 +1412,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "ley-tiempos-espera"
   },
@@ -1435,8 +1435,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1457,8 +1457,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "ley-tiempos-espera"
   },
@@ -1480,8 +1480,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1502,8 +1502,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1524,8 +1524,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1546,8 +1546,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1568,8 +1568,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1590,8 +1590,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "0-3-universal-gratuita"
   },
@@ -1613,8 +1613,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1635,8 +1635,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1657,8 +1657,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1679,8 +1679,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "0-3-universal-gratuita"
   },
@@ -1702,8 +1702,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1724,8 +1724,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1746,8 +1746,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1768,8 +1768,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "0-3-universal-gratuita"
   },
@@ -1791,8 +1791,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1813,8 +1813,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1835,8 +1835,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1857,8 +1857,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1879,8 +1879,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1901,8 +1901,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1923,8 +1923,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1945,8 +1945,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1967,8 +1967,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -1989,8 +1989,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2011,8 +2011,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2033,8 +2033,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "extender-nucleares"
   },
@@ -2056,8 +2056,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2078,8 +2078,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2100,8 +2100,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "extender-nucleares"
   },
@@ -2123,8 +2123,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2145,8 +2145,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2167,8 +2167,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2189,8 +2189,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2211,8 +2211,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2233,8 +2233,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2255,8 +2255,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2277,8 +2277,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2299,8 +2299,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "pacto-violencia-genero"
   },
@@ -2322,8 +2322,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "pacto-violencia-genero"
   },
@@ -2345,8 +2345,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2367,8 +2367,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2389,8 +2389,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2411,8 +2411,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2433,8 +2433,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "revisar-pacto-verde"
   },
@@ -2456,8 +2456,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2478,8 +2478,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2500,8 +2500,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "revisar-pacto-verde"
   },
@@ -2523,8 +2523,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2545,8 +2545,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2567,8 +2567,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2589,8 +2589,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2611,8 +2611,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "equiparacion-salarial-ffcc"
   },
@@ -2634,8 +2634,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "equiparacion-salarial-ffcc"
   },
@@ -2657,8 +2657,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2679,8 +2679,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2701,8 +2701,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2723,8 +2723,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2745,8 +2745,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2767,8 +2767,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2789,8 +2789,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2811,8 +2811,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2833,8 +2833,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2855,8 +2855,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2877,8 +2877,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2899,8 +2899,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2921,8 +2921,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2943,8 +2943,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2965,8 +2965,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     }
   },
   {
@@ -2987,8 +2987,8 @@
     "status": "publicado",
     "verification": {
       "checkedAt": "2026-11-02",
-      "method": "cotejo_manual_pdf",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "method": "cotejo_automatico_texto",
+      "reviewer": "Asistente de IA (Claude): selección y resumen sin revisión humana; cita comprobada automáticamente en el texto del PDF"
     },
     "positionKey": "pacto-violencia-genero"
   }

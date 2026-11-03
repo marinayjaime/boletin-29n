@@ -1,0 +1,116 @@
+{
+  "note": "Estado de cada conjunto de datos. «lastSuccess»: última ejecución automática correcta. «editorial»: última revisión de contenido (quién y si fue humana). Lo actualizan los importadores (scripts/lib/status.ts); la parte editorial se edita a mano.",
+  "datasets": {
+    "eurostat": {
+      "label": "Eurostat",
+      "lastAttempt": {
+        "at": "2026-11-03T07:00:48.955Z",
+        "ok": true
+      },
+      "lastSuccess": "2026-11-03T07:00:48.955Z",
+      "lastError": {
+        "at": "2026-11-02T11:18:13.087Z",
+        "message": "ipca-indice: fetch failed"
+      }
+    },
+    "boe": {
+      "label": "Registro del BOE",
+      "lastAttempt": {
+        "at": "2026-11-03T07:23:46.624Z",
+        "ok": true
+      },
+      "lastSuccess": "2026-11-03T07:23:46.624Z"
+    },
+    "boe-texto": {
+      "label": "Texto íntegro de las leyes",
+      "lastAttempt": {
+        "at": "2026-11-03T07:35:13.309Z",
+        "ok": true,
+        "detail": "385 de 385 textos disponibles"
+      },
+      "lastSuccess": "2026-11-03T07:35:13.309Z"
+    },
+    "congreso": {
+      "label": "Votaciones del Congreso",
+      "lastAttempt": {
+        "at": "2026-11-02T11:26:32.601Z",
+        "ok": true
+      },
+      "lastSuccess": "2026-11-02T11:26:32.601Z"
+    },
+    "vigilante-polls": {
+      "label": "Búsqueda de encuestas nuevas",
+      "lastAttempt": {
+        "at": "2026-11-03T07:35:17.801Z",
+        "ok": true,
+        "detail": "0 hallazgos para revisión"
+      },
+      "lastSuccess": "2026-11-03T07:35:17.801Z"
+    },
+    "vigilante-government": {
+      "label": "Cambios en el Gobierno",
+      "lastAttempt": {
+        "at": "2026-11-03T07:35:18.587Z",
+        "ok": true,
+        "detail": "0 hallazgos para revisión"
+      },
+      "lastSuccess": "2026-11-03T07:35:18.587Z"
+    },
+    "vigilante-programs": {
+      "label": "Programas de 2026",
+      "lastAttempt": {
+        "at": "2026-11-03T07:35:32.708Z",
+        "ok": true,
+        "detail": "0 hallazgos para revisión"
+      },
+      "lastSuccess": "2026-11-03T07:35:32.708Z"
+    },
+    "vigilante-links": {
+      "label": "Enlaces"
+    }
+  },
+  "editorial": {
+    "polls": {
+      "label": "Verificación de encuestas",
+      "date": "2026-11-02",
+      "by": "Asistente de IA (Claude)",
+      "human": false,
+      "scope": "16 encuestas contrastadas con su publicación original"
+    },
+    "promises": {
+      "label": "Evaluaciones",
+      "date": "2026-11-03",
+      "by": "Asistente de IA (Claude)",
+      "human": false,
+      "scope": "65 fichas preparadas con fuentes oficiales; ninguna revisada por una persona"
+    },
+    "proposals": {
+      "label": "Propuestas",
+      "date": "2026-11-02",
+      "by": "Asistente de IA (Claude)",
+      "human": false,
+      "scope": "Selección y resúmenes; las citas se comprueban automáticamente contra el PDF"
+    },
+    "quiz": {
+      "label": "Posturas del test",
+      "date": "2026-11-02",
+      "by": "Asistente de IA (Claude)",
+      "human": false,
+      "scope": "Posturas de cada partido en las 28 preguntas"
+    },
+    "commonalities": {
+      "label": "Puntos en común",
+      "date": "2026-11-02",
+      "by": "Asistente de IA (Claude)",
+      "human": false,
+      "scope": "22 coincidencias"
+    },
+    "government": {
+      "label": "Gobierno",
+      "date": "2026-11-02",
+      "by": "Asistente de IA (Claude)",
+      "human": false,
+      "scope": "23 cargos contrastados con La Moncloa"
+    }
+  }
+}

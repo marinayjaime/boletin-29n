@@ -4,6 +4,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import { recordRun } from "./status";
 
 export type Finding = { kind: string; title: string; detail?: string; url?: string };
 export type Review = { checker: string; checkedAt: string; ok: boolean; error?: string; findings: Finding[]; note?: string };
@@ -17,6 +18,7 @@ export function writeReview(r: Omit<Review, "checkedAt">) {
   const out: Review = { ...r, checkedAt: new Date().toISOString() };
   fs.writeFileSync(path.join(dir, `${r.checker}.json`), JSON.stringify(out, null, 2) + "\n");
   console.log(`${r.checker}: ${r.error ? "ERROR " + r.error : `${r.findings.length} hallazgos`}`);
+  recordRun(`vigilante-${r.checker}`, r.ok, r.error ?? `${r.findings.length} hallazgos para revisión`);
 }
 
 export const UA = { "User-Agent": "Boletin29N-monitor/1.0 (+https://github.com/marinayjaime/boletin-29n)" };

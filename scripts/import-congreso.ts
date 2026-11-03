@@ -16,6 +16,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import { recordRun } from "./lib/status";
 import { unzipSync, strFromU8 } from "fflate";
 import { classifyVote, topicsForVote, computeResult, requiresAbsoluteMajority } from "../src/lib/votes-classify";
 
@@ -298,10 +299,7 @@ async function main() {
     fs.writeFileSync(path.join(OUT_DETAIL, `S${String(ses).padStart(3, "0")}.json`), JSON.stringify(detail));
   }
   fs.writeFileSync(path.join(OUT_DETAIL, "registry.json"), JSON.stringify({ deputies, groups, encoding: "por diputado: 2 caracteres base36 (índice en deputies) + 1 letra (índice en groups) + voto S/N/A/X" }));
-  const log = path.join(ROOT, "data", "import-log.json");
-  const prev = fs.existsSync(log) ? JSON.parse(fs.readFileSync(log, "utf8")) : [];
-  prev.unshift({ date: new Date().toISOString(), importer: "congreso", ok: days.length - failures.length, failures });
-  fs.writeFileSync(log, JSON.stringify(prev.slice(0, 50), null, 2));
+  recordRun("congreso", failures.length === 0, `${days.length - failures.length} de ${days.length} sesiones importadas`, failures);
   console.log(`Total: ${votes.length} votaciones. Diputados: ${deputies.length}. Fallos: ${failures.length}`);
   if (failures.length) process.exitCode = 1;
 }

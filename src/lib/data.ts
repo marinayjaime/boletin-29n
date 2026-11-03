@@ -155,5 +155,11 @@ export type Photo = { file: string; commonsPage: string; license: string; licens
 export const getPhotos = cached(() => read("photos.json") as Record<string, Photo>);
 
 export const getCommonalities = cached(() => z.array(CommonalitySchema).parse(read("commonalities.json")));
-export const getBoeLaws = cached(() => read("boe-leyes.json") as { from: string; to: string; importedAt: string; items: { id: string; date: string; title: string; kind: string; url: string }[] });
+export const getBoeLaws = cached(() => read("boe-leyes.json") as { from: string; to: string; importedAt: string; items: { id: string; date: string; title: string; kind: string; url: string; scope?: "estatal" | "autonomica" }[] });
 export const getPromiseCoverage = cached(() => read("promise-coverage.json") as Record<string, { sourceId: string; futureCommitments: number; legislativeCommitments: number; method: string; legislativeMethod: string; periodEnd: string }>);
+
+export type DataStatusFile = {
+  datasets: Record<string, { label: string; lastAttempt?: { at: string; ok: boolean; detail?: string }; lastSuccess?: string; lastError?: { at: string; message: string } }>;
+  editorial: Record<string, { label: string; date: string; by: string; human: boolean; scope: string }>;
+};
+export const getDataStatus = cached(() => read("data-status.json") as DataStatusFile);

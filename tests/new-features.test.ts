@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { ABSOLUTE_MAJORITY, investiture, isMainScenario, pointSeats, setSeats, sumSeats, validateScenario } from "@/lib/seats";
-import { topicCoincidence, MIN_COMPARABLE, MIN_OVERALL, overallCoincidence, topMatch } from "@/lib/quiz";
+import { topicCoincidence, MIN_COMPARABLE, MIN_OVERALL, overallCoincidence } from "@/lib/quiz";
 import { PARTY_THEME, contrastRatio } from "@/lib/party-theme";
 import { commonForSelection, pairMatrix } from "@/lib/common";
 import { formatValue } from "@/lib/format";
@@ -66,30 +66,20 @@ describe("test de coincidencias", () => {
       expect(g.pct).toBe(g.comparable >= MIN_OVERALL ? Math.round((g.coincide / g.comparable) * 100) : null);
     }
   });
-  it("solo devuelve el partido con más coincidencia (o todos los empatados)", () => {
-    const answers = Object.fromEntries(q.map((s) => [s.id, "acuerdo" as const]));
-    const ids = getParties().map((p) => p.id);
-    const { top, all } = topMatch(q, answers, ids);
-    const ratios = all.filter((c) => c.pct !== null).map((c) => c.coincide / c.comparable);
-    expect(top.length).toBeGreaterThan(0);
-    for (const t of top) expect(t.coincide / t.comparable).toBeCloseTo(Math.max(...ratios), 10);
-    expect(topMatch(q, {}, ids).top).toEqual([]);
-  });
-  it("detecta empates exactos sin depender del redondeo", () => {
+  it("cada partido tiene su propia base: el porcentaje no oculta cuántas respuestas lo sostienen", () => {
     const st = [
       { id: "a", topicId: "x", positions: [{ partyId: "p1", stance: "a_favor" as const }, { partyId: "p2", stance: "a_favor" as const }] },
-      { id: "b", topicId: "x", positions: [{ partyId: "p1", stance: "a_favor" as const }, { partyId: "p2", stance: "a_favor" as const }] },
-      { id: "c", topicId: "y", positions: [{ partyId: "p1", stance: "en_contra" as const }, { partyId: "p2", stance: "en_contra" as const }] },
+      { id: "b", topicId: "x", positions: [{ partyId: "p1", stance: "a_favor" as const }, { partyId: "p2", stance: "sin_posicion_documentada" as const }] },
+      { id: "c", topicId: "y", positions: [{ partyId: "p1", stance: "en_contra" as const }, { partyId: "p2", stance: "matizada" as const }] },
       { id: "d", topicId: "y", positions: [{ partyId: "p1", stance: "a_favor" as const }, { partyId: "p2", stance: "en_contra" as const }] },
+      { id: "e", topicId: "y", positions: [{ partyId: "p1", stance: "a_favor" as const }, { partyId: "p2", stance: "a_favor" as const }] },
     ];
-    const ans = { a: "acuerdo", b: "acuerdo", c: "acuerdo", d: "acuerdo" } as const;
-    const r = topMatch(st, ans, ["p1", "p2"]);
-    expect(r.top.map((t) => t.partyId)).toEqual(["p1"]);
-    expect(r.top[0].pct).toBe(75);
-    const tie = topMatch(st, { a: "acuerdo", b: "acuerdo", c: "acuerdo", d: "indiferente" }, ["p1", "p2"]);
-    expect(tie.top).toEqual([]); // 3 comparables < mínimo
-    const tie2 = topMatch([...st, { ...st[0], id: "e" }], { a: "acuerdo", b: "acuerdo", c: "acuerdo", d: "indiferente", e: "acuerdo" }, ["p1", "p2"]);
-    expect(tie2.top.map((t) => t.partyId)).toEqual(["p1", "p2"]);
+    const ans = { a: "acuerdo", b: "acuerdo", c: "acuerdo", d: "acuerdo", e: "acuerdo" } as const;
+    const p1 = overallCoincidence(st, ans, "p1");
+    const p2 = overallCoincidence(st, ans, "p2");
+    expect([p1.coincide, p1.comparable, p1.pct]).toEqual([4, 5, 80]);
+    // p2: 2 coinciden, 1 difiere, 2 sin información → base 3, por debajo del mínimo: sin porcentaje
+    expect([p2.coincide, p2.comparable, p2.matizada + p2.sinDatos, p2.pct]).toEqual([2, 3, 2, null]);
   });
   it("respuestas indiferentes no cuentan como comparables", () => {
     const answers = Object.fromEntries(q.map((s) => [s.id, "indiferente" as const]));

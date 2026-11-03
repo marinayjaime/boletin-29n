@@ -6,8 +6,9 @@ import { BadgeCheck, FileSearch, Scale } from "lucide-react";
 import { getChangelog, getIndicators, getPolls, getPromises, getProposals, getQuiz, getSources, getVotes } from "@/lib/data";
 import { Disclosure, PageHero } from "@/components/ui";
 import { formatDate } from "@/lib/format";
-import { MIN_OVERALL } from "@/lib/quiz";
+import { MIN_COMPARABLE, MIN_OVERALL, SMALL_BASE } from "@/lib/quiz";
 import { isMainScenario } from "@/lib/seats";
+import { DataStatusTable } from "@/components/data-status";
 
 export const metadata: Metadata = { title: "Metodología" };
 
@@ -43,7 +44,7 @@ export default function Page() {
   const PRINCIPLES = [
     { icon: Scale, title: "Informa, no recomienda", text: "Mismo espacio y estilo para todas las candidaturas. Orden alfabético. Ninguna recomendación de voto." },
     { icon: FileSearch, title: "Todo tiene fuente", text: "Cada propuesta enlaza su documento, con página y cita literal comprobada automáticamente." },
-    { icon: BadgeCheck, title: "Revisión humana", text: "Lo que exige interpretación (estados, encuestas, cargos) lo decide una persona, nunca un script." },
+    { icon: BadgeCheck, title: "Autoría a la vista", text: "Los datos los preparó un asistente de IA. Cada evaluación dice si una persona la ha revisado; hoy, ninguna." },
   ];
   return (
     <>
@@ -64,8 +65,7 @@ export default function Page() {
         <div className="mt-8 space-y-2">
           <Section id="propuestas" title="Propuestas" stat={`${getProposals().length} con cita`}>
             <p>
-              Se descarga el documento (o su copia en Internet Archive), se calcula su huella SHA-256 y se extrae el texto de cada página. Una persona copia la cita
-              literal y redacta un resumen que no añade nada. Un test comprueba que <strong>cada cita aparece en la página indicada</strong>; si no, el build falla.
+              Se descarga el documento (o su copia en Internet Archive), se calcula su huella SHA-256 y se extrae el texto de cada página. Un asistente de IA (Claude) selecciona la cita literal y redacta un resumen que no añade nada; ninguna persona lo ha revisado aún. Un test comprueba que <strong>cada cita aparece en la página indicada</strong>; si no, el build falla.
             </p>
             <p>Si no hay documento se muestra «Sin posición documentada», que no equivale a oposición. Ningún partido ha publicado aún su programa de 2026: las propuestas proceden de programas anteriores.</p>
             {thirdParty.length > 0 && <p>Copias de terceros: {thirdParty.map((s) => s.title).join("; ")}. Marcadas como tales hasta cotejarlas con el original.</p>}
@@ -73,10 +73,12 @@ export default function Page() {
 
           <Section id="test" title="Test a ciegas" stat={`${getQuiz().length} preguntas`}>
             <p>
-              Cada afirmación tiene, por partido, una postura documentada (a favor, en contra, matizada o sin datos) apoyada en propuestas concretas. Al terminar se
-              muestra el partido con mayor proporción de <strong>coincidencias ÷ respuestas comparables</strong> sumando todas las preguntas.
+              Cada afirmación tiene, por partido, una postura documentada (a favor, en contra, matizada o sin datos) apoyada en propuestas concretas. Al terminar se muestran los cinco partidos por igual, en orden
+              alfabético, con <strong>coincidencias ÷ respuestas comparables</strong> en total y por tema. No se destaca a ningún partido.
             </p>
-            <p>Comparables: tu respuesta es de acuerdo o en desacuerdo y el partido tiene postura a favor o en contra. Hacen falta al menos {MIN_OVERALL}. Los empates exactos se muestran juntos. Las respuestas no salen del navegador.</p>
+            <p>
+              Comparables: tu respuesta es de acuerdo o en desacuerdo y el partido tiene postura a favor o en contra. El porcentaje global exige al menos {MIN_OVERALL} comparables y por tema {MIN_COMPARABLE}; con menos de {SMALL_BASE} se avisa de base pequeña. Cada respuesta se dibuja como un cuadrado para que se vea cuántas sostienen cada cifra. Las respuestas no salen del navegador.
+            </p>
           </Section>
 
           <Section id="encuestas" title="Encuestas y pactos" stat={`${polls.filter(isMainScenario).length} de ${polls.length} aptas como escenario`}>
@@ -89,12 +91,16 @@ export default function Page() {
 
           <Section id="promesas" title="Promesas frente a hechos" stat={`${promises.length} fichas`}>
             <p>
-              Cada ficha separa su procedencia (programa electoral, declaración de Pedro Sánchez en la investidura o acuerdo de Gobierno) y su naturaleza (exige una ley, una medida del Gobierno o un resultado medible). El
-              criterio se escribe antes de evaluar y cada acción oficial enlaza al BOE o al Congreso.
+              Para el PSOE de 2023 se distinguen tres documentos: el programa electoral (julio), el acuerdo de Gobierno con Sumar (octubre) y el discurso de investidura de Pedro Sánchez (noviembre). Si un compromiso
+              aparece en varios, es una sola ficha con todas sus citas. Cada ficha indica si exige una ley, una medida del Gobierno o un resultado medible.
             </p>
             <p>
-              Solo un compromiso que exige aprobar una ley puede marcarse «no cumplido» por no encontrar la norma, tras revisar el registro completo del BOE de la legislatura. Una medida ejecutiva sin pruebas queda como
-              «no verificable». La muestra no sirve para comparar partidos.
+              Antes de declarar un compromiso «no cumplido» se busca en el <strong>texto íntegro</strong> de las normas estatales con rango de ley de la legislatura (no solo en sus títulos), para encontrar reformas
+              incluidas en otras normas. Un real decreto-ley solo cuenta si el Congreso lo convalidó. Una medida del Gobierno o un resultado sin datos oficiales queda «no verificable», con la lista de lo comprobado.
+            </p>
+            <p>
+              Las evaluaciones las preparó un asistente de IA (Claude) y están <strong>pendientes de revisión humana</strong>. Cuando una persona revise una ficha, constarán su nombre y la fecha; la validación de
+              datos impide marcar como revisada una ficha sin revisor identificado o revisada por un sistema automático.
             </p>
           </Section>
 
@@ -117,6 +123,14 @@ export default function Page() {
               Un proceso diario de GitHub Actions importa las series de Eurostat y el registro del BOE y comprueba los enlaces. Esos cambios solo se publican si pasan la validación de datos y los tests, y quedan anotados en el registro de cambios.
             </p>
             <p>Encuestas nuevas, cambios en el Gobierno, programas de 2026 y enlaces rotos se detectan, pero no se publican: abren una incidencia para revisión humana.</p>
+            <p>
+              Si una importación falla, la web conserva los últimos datos correctos y el fallo queda registrado con su fecha y su mensaje. Cada página muestra por separado la última actualización correcta y la
+              última revisión editorial: un dato pendiente de revisión nunca aparece solo como «actualizado».
+            </p>
+          </Section>
+
+          <Section id="estado" title="Estado de los datos" stat="actualización y revisión">
+            <DataStatusTable />
           </Section>
 
           <Section id="limites" title="Límites conocidos">

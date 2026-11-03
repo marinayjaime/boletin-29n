@@ -3,6 +3,7 @@ import { getGovernment, getOrganization, getParties } from "@/lib/data";
 import { alphabetical } from "@/lib/compare";
 import { PageHero } from "@/components/ui";
 import { WhoDoesWhat } from "@/components/who-does-what";
+import { DataStatus } from "@/components/data-status";
 
 export const metadata: Metadata = { title: "¿Quién hace qué?", description: "Instituciones del Estado, composición del Gobierno y organización de los partidos." };
 
@@ -11,6 +12,7 @@ export default function Page() {
     <>
       <PageHero eyebrow="Organigrama" title="¿Quién hace qué en España?" sub="Pulsa una institución, una persona o un órgano para descubrir qué hace." tone="ink" />
       <div className="mx-auto max-w-[1320px] px-4 md:px-8">
+        <DataStatus datasets={["vigilante-government"]} editorial={["government"]} />
         <WhoDoesWhat org={getOrganization()} government={getGovernment()} parties={alphabetical(getParties())} />
       </div>
     </>

@@ -19,6 +19,7 @@ export const CYCLE_LABELS: Record<string, string> = {
   "generales-2019-11": "Generales 10-N 2019",
   "europeas-2024": "Europeas 2024",
   "investidura-2023": "Investidura nov. 2023",
+  "acuerdo-gobierno-2023": "Acuerdo de Gobierno oct. 2023",
 };
 
 export const STANCE_LABELS: Record<Stance, { label: string; short: string }> = {

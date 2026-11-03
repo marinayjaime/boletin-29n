@@ -220,5 +220,23 @@
     "lastChecked": "2026-11-02",
     "notes": "Intervención del candidato a la Presidencia del Gobierno en el debate de investidura. Se usa como fuente primaria de los compromisos personales de Pedro Sánchez.",
     "topics": []
+  },
+  {
+    "id": "acuerdo-psoe-sumar-2023",
+    "title": "España avanza. Acuerdo para un Gobierno de coalición progresista PSOE–Sumar (octubre de 2023)",
+    "author": "PSOE y Sumar",
+    "kind": "declaracion",
+    "partyId": "psoe",
+    "cycle": "acuerdo-gobierno-2023",
+    "published": "2023-10-24",
+    "officialUrl": "https://www.psoe.es/media-content/2023/10/ACUERDO_GOBIERNO_COALICIO%CC%81N_2023-DEF.pdf",
+    "archiveUrl": "https://web.archive.org/web/20260903203200/https://www.psoe.es/media-content/2023/10/ACUERDO_GOBIERNO_COALICIO%CC%81N_2023-DEF.pdf?utm_source=chatgpt.com",
+    "hostedByThirdParty": false,
+    "sha256": "9728b674a8135c1ea001f8b5876498df9d6b6b31049c0949fade1811f2eae285",
+    "pages": 48,
+    "verification": "verificado",
+    "lastChecked": "2026-11-03",
+    "notes": "Acuerdo firmado por el PSOE y Sumar y publicado en psoe.es. El servidor bloquea las descargas automatizadas; se usa la copia del mismo PDF archivada por Internet Archive (fecha de creación del PDF: 24-10-2023). Firmado por ambas formaciones: sus compromisos se atribuyen al Gobierno de coalición, no solo al PSOE.",
+    "topics": []
   }
 ]

@@ -31,6 +31,12 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      - name: Caché de textos del BOE
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: boe-${{ github.run_id }}
+          restore-keys: boe-
 
       # ── 1. Datos objetivos ────────────────────────────────────────────────
       - name: Series estadísticas (Eurostat)
@@ -38,6 +44,9 @@ jobs:
         continue-on-error: true
       - name: Registro de normas del BOE (incremental)
         run: npx tsx scripts/import-boe-leyes.ts --incremental
+        continue-on-error: true
+      - name: Texto íntegro de las normas nuevas (y ámbito estatal o autonómico)
+        run: npx tsx scripts/boe-fulltext.ts
         continue-on-error: true
       - name: Enlaces
         run: npm run links

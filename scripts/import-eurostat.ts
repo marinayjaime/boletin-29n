@@ -10,6 +10,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import { recordRun } from "./lib/status";
 import { StatisticalIndicatorSchema, SeriesFileSchema, type StatisticalIndicator } from "../src/lib/schema";
 import { parseJsonStat, NUTS2_ES } from "../src/lib/jsonstat";
 
@@ -100,10 +101,7 @@ async function main() {
       console.error(`✗ ${ind.id}: ${(e as Error).message}`);
     }
   }
-  const log = path.join(ROOT, "data", "import-log.json");
-  const prev = fs.existsSync(log) ? JSON.parse(fs.readFileSync(log, "utf8")) : [];
-  prev.unshift({ date: new Date().toISOString(), importer: "eurostat", ok: list.length - failures.length, failures });
-  fs.writeFileSync(log, JSON.stringify(prev.slice(0, 50), null, 2));
+  recordRun("eurostat", failures.length === 0, `${list.length - failures.length} de ${list.length} series descargadas`, failures);
   if (failures.length) process.exitCode = 1;
 }
 

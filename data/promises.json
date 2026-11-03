@@ -58,22 +58,42 @@
       "outcome": "Consta una norma de revalorización en vigor y convalidada para 2024, 2025 y 2026. En 2025 el primer decreto fue derogado y la revalorización se aprobó en un segundo decreto una semana después.",
       "limits": "Se evalúa la existencia de la norma, no si la subida compensó la inflación de cada pensionista. La revalorización es una decisión del Gobierno de coalición, no exclusiva del PSOE, y se apoya en la Ley 21/2021, aprobada en la legislatura anterior.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Acciones oficiales enlazadas en la ficha (BOE y votaciones del Pleno), comprobadas una a una."
+      ]
     },
     "series": "psoe-2023-otros",
     "nature": "ejecutiva",
-    "origin": "programa"
+    "origin": "programa",
+    "alsoIn": [
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 24,
+        "quote": "Seguiremos garantizando la sostenibilidad de las pensiones y su actualización conforme al IPC, para asegurar el poder adquisitivo de los pensionistas."
+      },
+      {
+        "sourceId": "congreso-ds-15-pl-7",
+        "pdfPage": 13,
+        "quote": "vamos a seguir revalorizando las pensiones conforme al IPC, vamos a aumentar los recursos destinados a la dependencia ―ayer, en el último Consejo de Ministros, inyectamos 1000 millones de euros al Sistema Nacional de Dependencia a través de las comunidades autónomas― y vamos a conseguir ese modelo asistencial de mejor calidad, más personalizada y que priorice la atención domiciliaria."
+      }
+    ]
   },
   {
     "id": "sumar-2023-jornada-37-5",
     "partyIds": [
-      "frente-amplio"
+      "frente-amplio",
+      "psoe"
     ],
     "attribution": "gobierno_coalicion",
     "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
     "legislature": "XV",
     "topicId": "empleo",
-    "promise": "Fijar por ley una jornada laboral máxima de 37,5 horas semanales en 2024 (compromiso de Sumar en 2023, antecedente de Frente Amplio).",
+    "promise": "Reducir por ley la jornada laboral máxima a 37,5 horas semanales.",
     "promisedAt": "2023-07-10",
     "citation": {
       "sourceId": "sumar-programa-2023",
@@ -103,8 +123,29 @@
       "outcome": "No llegó a aprobarse ninguna ley que fijara la jornada máxima en 37,5 horas antes de la disolución de las Cortes (octubre de 2026).",
       "limits": "El compromiso es de Sumar en 2023; Frente Amplio es una candidatura distinta. El Gobierno sí aprobó y remitió un proyecto de ley: el incumplimiento se debe a su devolución en el Congreso, no a la falta de iniciativa.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
-    }
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Búsqueda de «37,5 horas» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Búsqueda de «treinta y siete horas y media» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Votaciones del Pleno de la XV Legislatura (datos abiertos del Congreso): sin votación final de una ley con este objeto."
+      ]
+    },
+    "alsoIn": [
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 11,
+        "quote": "Reduciremos la jornada laboral máxima legal sin reducción salarial para establecerla en 37 horas y media semanales."
+      },
+      {
+        "sourceId": "congreso-ds-15-pl-7",
+        "pdfPage": 12,
+        "quote": "la legislatura en la que impulsaremos una reducción de la jornada laboral a las 37,5 horas semanales, incorporando incentivos para que las empresas ofrezcan horarios más flexibles y potencien el teletrabajo siempre que sea posible."
+      }
+    ]
   },
   {
     "id": "sumar-2023-reforma-ley-vivienda",
@@ -140,7 +181,17 @@
       "outcome": "Las dos iniciativas de Sumar para modificar la Ley 12/2023 no superaron la toma en consideración.",
       "limits": "Solo se han revisado votaciones del Pleno. Otras normas (por ejemplo, decretos-leyes del Gobierno) pueden haber tocado aspectos parciales de la ley.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Búsqueda de «ley 12/2023» + «se modifica» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 8 resultado(s): Real Decreto-ley 8/2023; Real Decreto-ley 9/2024; Real Decreto-ley 1/2025; Real Decreto-ley 16/2025….",
+        "Búsqueda de «grandes tenedores» + «alquiler social» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 1 resultado(s): Real Decreto-ley 26/2026.",
+        "Votaciones del Pleno de la XV Legislatura (datos abiertos del Congreso): sin votación final de una ley con este objeto.",
+        "Hallazgo: los RDL 26/2026 y 27/2026 sobre vivienda no fueron convalidados por el Congreso (2-10-2026) y decayeron."
+      ]
     }
   },
   {
@@ -166,11 +217,26 @@
       "outcome": "En las votaciones del Pleno de la XV Legislatura importadas en esta plataforma no figura ninguna ley con ese objeto en su título.",
       "limits": "No es suficiente para afirmar el incumplimiento: algunas leyes se aprueban en comisión con competencia legislativa plena o incluyen esta materia en normas con otro título. Queda pendiente una revisión del BOE.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Registro completo del BOE de la legislatura (títulos de leyes, decretos-leyes y reales decretos).",
+        "Sin datos oficiales suficientes para medir el resultado: se mantiene «no verificable» en lugar de «no cumplido»."
+      ]
     },
     "series": "psoe-2023-otros",
     "nature": "legislativa",
-    "origin": "programa"
+    "origin": "programa",
+    "alsoIn": [
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 25,
+        "quote": "Acabaremos con las listas de espera en la sanidad pública, estableciendo por ley unos tiempos máximos de espera en el SNS: 120 días para para intervenciones quirúrgicas, 60 días para consultas externas especializadas y 30 días para pruebas complementarias, con independencia del lugar de residencia."
+      }
+    ]
   },
   {
     "id": "pp-2023-ley-urbanismo",
@@ -206,7 +272,15 @@
       "outcome": "La iniciativa se presentó y superó la toma en consideración, pero no llegó a aprobarse antes de la disolución.",
       "limits": "El PP estaba en la oposición y no controlaba la agenda legislativa. Se valora la iniciativa presentada, no su capacidad de aprobarla.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Búsqueda de «seguridad juridica» + «urbanismo» + «ley 7/2015» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Votaciones del Pleno de la XV Legislatura (datos abiertos del Congreso): sin votación final de una ley con este objeto."
+      ]
     }
   },
   {
@@ -238,7 +312,14 @@
       "outcome": "La primera parte se cumplió con la Ley 21/2021. No consta una reforma constitucional con ese contenido.",
       "limits": "La ley se aprobó con un Gobierno de coalición y con apoyos de otros grupos: no es atribuible solo a Podemos. La ausencia de la reforma constitucional se comprueba con el texto vigente de la Constitución.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Acciones oficiales enlazadas en la ficha (BOE y votaciones del Pleno), comprobadas una a una."
+      ]
     }
   },
   {
@@ -265,10 +346,25 @@
       "outcome": "La reforma de las reglas fiscales es una decisión de la Unión Europea; las fuentes nacionales revisadas no permiten atribuir el resultado.",
       "limits": "Compromiso de ámbito europeo: queda fuera del criterio (leyes publicadas en el BOE).",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Registro completo del BOE de la legislatura (títulos de leyes, decretos-leyes y reales decretos).",
+        "Sin datos oficiales suficientes para medir el resultado: se mantiene «no verificable» en lugar de «no cumplido»."
+      ]
     },
     "origin": "programa",
-    "nature": "internacional"
+    "nature": "internacional",
+    "alsoIn": [
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 6,
+        "quote": "Impulsaremos una reforma de las reglas fiscales europeas que permita conjugar la estabilidad presupuestaria a lo largo del ciclo y la sostenibilidad de las cuentas públicas con el crecimiento económico, la creación de empleo y una ambiciosa agenda de inversiones sociales, verdes y digitales."
+      }
+    ]
   },
   {
     "id": "psoe-2023-ley-reforma-omc",
@@ -294,7 +390,15 @@
       "outcome": "Compromiso de ámbito internacional sin indicador verificable con las fuentes revisadas.",
       "limits": "Fuera del criterio de leyes publicadas en el BOE.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Registro completo del BOE de la legislatura (títulos de leyes, decretos-leyes y reales decretos).",
+        "Sin datos oficiales suficientes para medir el resultado: se mantiene «no verificable» en lugar de «no cumplido»."
+      ]
     },
     "origin": "programa",
     "nature": "internacional"
@@ -334,10 +438,24 @@
       "outcome": "Ley publicada en el BOE.",
       "limits": "Se evalúa la aprobación de la ley, no su contenido detallado ni sus efectos.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Acciones oficiales enlazadas en la ficha (BOE y votaciones del Pleno), comprobadas una a una."
+      ]
     },
     "origin": "programa",
-    "nature": "legislativa"
+    "nature": "legislativa",
+    "alsoIn": [
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 13,
+        "quote": "Aprobaremos una Ley integral de impulso a la economía social, relativa a la modificación de la Ley de cooperativas, la Ley de empresas de inserción y la Ley de la economía social."
+      }
+    ]
   },
   {
     "id": "psoe-2023-ley-sociedades-laborales",
@@ -363,7 +481,16 @@
       "outcome": "En el registro de normas con rango de ley publicadas en el BOE entre noviembre de 2023 y octubre de 2026 no figura ninguna ley estatal con este objeto.",
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Búsqueda de «sociedades laborales» + «se modifica» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 3 resultado(s): Real Decreto-ley 7/2023; Real Decreto-ley 2/2024; Ley 1/2026.",
+        "Búsqueda de «ley 44/2015» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Votaciones del Pleno de la XV Legislatura (datos abiertos del Congreso): sin votación final de una ley con este objeto."
+      ]
     },
     "origin": "programa",
     "nature": "legislativa"
@@ -392,10 +519,30 @@
       "outcome": "En el registro de normas con rango de ley publicadas en el BOE entre noviembre de 2023 y octubre de 2026 no figura ninguna ley estatal con este objeto.",
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Búsqueda de «agricultura familiar» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Votaciones del Pleno de la XV Legislatura (datos abiertos del Congreso): sin votación final de una ley con este objeto."
+      ]
     },
     "origin": "programa",
-    "nature": "legislativa"
+    "nature": "legislativa",
+    "alsoIn": [
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 20,
+        "quote": "Impulsaremos una Ley de Agricultura Familiar que favorezca y priorice este tipo de agricultura que genera mayor valor social y vinculación con el territorio y continuaremos adoptando medidas en favor de la ganadería extensiva."
+      },
+      {
+        "sourceId": "congreso-ds-15-pl-7",
+        "pdfPage": 15,
+        "quote": "Y quiero anunciarles que vamos a aprobar una ley de agricultura familiar que va a hacer eso, favorecer este tipo de agricultura, que va a generar valor añadido social y vinculación con el territorio."
+      }
+    ]
   },
   {
     "id": "psoe-2023-ley-zonas-renovables",
@@ -415,13 +562,32 @@
     },
     "series": "psoe-2023-legislativas",
     "assessment": {
-      "status": "no_cumplido",
-      "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
-      "officialActions": [],
-      "outcome": "En el registro de normas con rango de ley publicadas en el BOE entre noviembre de 2023 y octubre de 2026 no figura ninguna ley estatal con este objeto.",
-      "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
-      "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "status": "cumplido_parcial",
+      "criterion": "Compromiso legislativo: cumplido si una norma estatal con rango de ley establece cómo identificar, con comunidades autónomas y entidades locales, las áreas idóneas para renovables y cómo llegan sus beneficios a las comunidades locales.",
+      "officialActions": [
+        {
+          "date": "2026-03-21",
+          "text": "El Real Decreto-ley 7/2026 crea un régimen básico estatal de «zonas de aceleración renovable» (áreas especialmente adecuadas para renovables, con criterios ambientales, patrimoniales y territoriales).",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-6544"
+        },
+        {
+          "date": "2026-03-26",
+          "text": "El Congreso convalida el Real Decreto-ley 7/2026 (175 sí, 33 no, 141 abstenciones).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=26/03/2026"
+        }
+      ],
+      "outcome": "Existe una norma estatal con rango de ley que regula la identificación de zonas idóneas para renovables. No se ha comprobado que incluya el reparto de beneficios a las comunidades locales que también prometía el programa.",
+      "limits": "Encontrado al buscar en el texto íntegro de las normas: el título del real decreto-ley (un plan de respuesta a la crisis de Oriente Medio) no lo indica. Anteriormente esta ficha figuraba como «no cumplida» por revisar solo títulos.",
+      "assessedAt": "2026-11-03",
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      },
+      "checks": [
+        "Búsqueda de «zonas de aceleracion renovable» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 1 resultado(s): Real Decreto-ley 7/2026.",
+        "Corrección del 3-11-2026: antes «no cumplido» (búsqueda solo por títulos)."
+      ]
     },
     "origin": "programa",
     "nature": "legislativa"
@@ -450,10 +616,26 @@
       "outcome": "En el registro de leyes del BOE de la legislatura no figura ninguna ley estatal cuyo título reforme la Ley de Aguas.",
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Búsqueda de «texto refundido de la ley de aguas» + «derecho humano» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Búsqueda de «acceso al agua» + «derecho» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Votaciones del Pleno de la XV Legislatura (datos abiertos del Congreso): sin votación final de una ley con este objeto."
+      ]
     },
     "origin": "programa",
-    "nature": "legislativa"
+    "nature": "legislativa",
+    "alsoIn": [
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 17,
+        "quote": "Actualizaremos la Ley de Aguas blindando el derecho ciudadano de acceso al agua y su gestión en clave de emergencia climática."
+      }
+    ]
   },
   {
     "id": "psoe-2023-ley-paridad",
@@ -495,10 +677,24 @@
       "outcome": "Ley orgánica publicada en el BOE.",
       "limits": "Se evalúa la aprobación de la ley, no su aplicación.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Acciones oficiales enlazadas en la ficha (BOE y votaciones del Pleno), comprobadas una a una."
+      ]
     },
     "origin": "programa",
-    "nature": "legislativa"
+    "nature": "legislativa",
+    "alsoIn": [
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 34,
+        "quote": "Impulsaremos la paridad en los ámbitos políticos, administrativos y empresariales, aprobando la Ley de representación paritaria y presencia equilibrada de mujeres y hombres."
+      }
+    ]
   },
   {
     "id": "psoe-2023-ley-donantes-vivos",
@@ -535,7 +731,14 @@
       "outcome": "Ley publicada en el BOE.",
       "limits": "Se evalúa la aprobación de la ley.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Acciones oficiales enlazadas en la ficha (BOE y votaciones del Pleno), comprobadas una a una."
+      ]
     },
     "origin": "programa",
     "nature": "legislativa"
@@ -575,7 +778,17 @@
       "outcome": "No consta una nueva ley de política farmacéutica; solo una modificación parcial del copago farmacéutico mediante decreto-ley.",
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Búsqueda de «politica farmaceutica» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 1 resultado(s): Ley 3/2026.",
+        "Búsqueda de «ley de garantias y uso racional de los medicamentos» + «se modifica» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 3 resultado(s): Ley 7/2025; Real Decreto-ley 12/2026; Ley 3/2026.",
+        "Votaciones del Pleno de la XV Legislatura (datos abiertos del Congreso): sin votación final de una ley con este objeto.",
+        "Hallazgo: la Ley 7/2025 (Agencia Estatal de Salud Pública) modifica un artículo de la ley del medicamento; no es la nueva ley de política farmacéutica prometida."
+      ]
     },
     "origin": "programa",
     "nature": "legislativa"
@@ -610,10 +823,26 @@
       "outcome": "El proyecto superó el debate de totalidad, pero no consta ley publicada en el BOE antes de la disolución.",
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Búsqueda de «autoridad de defensa del cliente financiero» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Búsqueda de «cliente financiero» + «autoridad» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Votaciones del Pleno de la XV Legislatura (datos abiertos del Congreso): sin votación final de una ley con este objeto."
+      ]
     },
     "origin": "programa",
-    "nature": "legislativa"
+    "nature": "legislativa",
+    "alsoIn": [
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 7,
+        "quote": "Pondremos en marcha la Autoridad de Defensa del Cliente Financiero para proteger a la ciudadanía en relación con sus reclamaciones en el ámbito bancario, de seguros y de inversión financiera."
+      }
+    ]
   },
   {
     "id": "psoe-2023-ley-atencion-clientela",
@@ -650,10 +879,24 @@
       "outcome": "Ley publicada en el BOE.",
       "limits": "Se evalúa la aprobación de la ley.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Acciones oficiales enlazadas en la ficha (BOE y votaciones del Pleno), comprobadas una a una."
+      ]
     },
     "origin": "programa",
-    "nature": "legislativa"
+    "nature": "legislativa",
+    "alsoIn": [
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 8,
+        "quote": "Se aprobará una nueva Ley de Condiciones Generales de la Contratación y una Ley de Servicios de Atención a la Clientela."
+      }
+    ]
   },
   {
     "id": "psoe-2023-ley-calidad-arquitectura",
@@ -679,7 +922,15 @@
       "outcome": "El desarrollo de una ley se hace sobre todo mediante normas reglamentarias y planes, que no forman parte del registro revisado.",
       "limits": "Fuera del criterio (no exige una nueva ley).",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Registro completo del BOE de la legislatura (títulos de leyes, decretos-leyes y reales decretos).",
+        "Sin datos oficiales suficientes para medir el resultado: se mantiene «no verificable» en lugar de «no cumplido»."
+      ]
     },
     "origin": "programa",
     "nature": "legislativa"
@@ -708,7 +959,15 @@
       "outcome": "En el registro de normas con rango de ley publicadas en el BOE entre noviembre de 2023 y octubre de 2026 no figura ninguna ley estatal con este objeto.",
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Búsqueda de «ley de cohesion territorial» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Votaciones del Pleno de la XV Legislatura (datos abiertos del Congreso): sin votación final de una ley con este objeto."
+      ]
     },
     "origin": "programa",
     "nature": "legislativa"
@@ -743,10 +1002,25 @@
       "outcome": "No consta ley estatal de Función Pública de la Administración del Estado publicada en el BOE antes de la disolución.",
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Búsqueda de «funcion publica de la administracion del estado» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 1 resultado(s): Real Decreto-ley 6/2023.",
+        "Votaciones del Pleno de la XV Legislatura (datos abiertos del Congreso): sin votación final de una ley con este objeto."
+      ]
     },
     "origin": "programa",
-    "nature": "legislativa"
+    "nature": "legislativa",
+    "alsoIn": [
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 41,
+        "quote": "Aprobaremos la Ley de Función Pública de la Administración del Estado, ya acordada con los sindicatos."
+      }
+    ]
   },
   {
     "id": "psoe-2023-ley-lobbies",
@@ -770,25 +1044,30 @@
       "criterion": "Compromiso legislativo: se considera cumplido si se publica en el BOE una ley (u orgánica) estatal con ese objeto antes de la disolución de las Cortes (6 de octubre de 2026). Fuente de control: registro completo de leyes del BOE de la legislatura (data/boe-leyes.json) y votaciones del Pleno.",
       "officialActions": [
         {
-          "date": "2025-03-25",
-          "text": "El Congreso rechaza la enmienda a la totalidad al Proyecto de Ley de transparencia e integridad de los grupos de interés (32 sí, 177 no).",
-          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=25/03/2025"
-        },
-        {
           "date": "2026-08-26",
-          "text": "BOE publica el Real Decreto-ley 21/2026, de transparencia e integridad de las actividades de los grupos de interés.",
+          "text": "Real Decreto-ley 21/2026, de transparencia e integridad de las actividades de los grupos de interés.",
           "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-18148"
         },
         {
           "date": "2026-09-16",
-          "text": "El Congreso no convalida el Real Decreto-ley 21/2026 (155 sí, 179 no): queda derogado.",
+          "text": "El Congreso no convalida el Real Decreto-ley 21/2026 (155 sí, 179 no, 12 abstenciones): la norma queda derogada.",
           "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=16/09/2026"
         }
       ],
-      "outcome": "La regulación llegó a estar en vigor por decreto-ley, pero el Congreso lo derogó y no hay ley en vigor al cierre del periodo.",
-      "limits": "El decreto-ley estuvo vigente entre agosto y septiembre de 2026.",
-      "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "outcome": "El Gobierno aprobó la regulación de los grupos de interés por real decreto-ley, pero el Congreso no lo convalidó y quedó derogado. No hay ley en vigor.",
+      "limits": "Encontrado al buscar en el texto íntegro: el título no contiene la palabra «lobbies». Un real decreto-ley no convalidado no cuenta como cumplimiento.",
+      "assessedAt": "2026-11-03",
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      },
+      "checks": [
+        "Búsqueda de «grupos de interes» + «registro de transparencia» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 1 resultado(s): Real Decreto-ley 21/2026.",
+        "Búsqueda de «grupos de interes» + «registro» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 1 resultado(s): Real Decreto-ley 21/2026.",
+        "Votaciones del Pleno: convalidación del RDL 21/2026 rechazada el 16-9-2026; ninguna otra votación final.",
+        "Corrección del 3-11-2026: la ficha decía que no había ninguna norma; sí la hubo (RDL 21/2026), pero no se convalidó."
+      ]
     },
     "origin": "programa",
     "nature": "legislativa"
@@ -817,7 +1096,15 @@
       "outcome": "En el registro de normas con rango de ley publicadas en el BOE entre noviembre de 2023 y octubre de 2026 no figura ninguna ley estatal con este objeto.",
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Búsqueda de «ley 53/1984» + «se modifica» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 3 resultado(s): Ley 1/2024; Real Decreto-ley 11/2024; Ley Orgánica 1/2025.",
+        "Votaciones del Pleno de la XV Legislatura (datos abiertos del Congreso): sin votación final de una ley con este objeto."
+      ]
     },
     "origin": "programa",
     "nature": "legislativa"
@@ -857,7 +1144,14 @@
       "outcome": "Ley orgánica publicada en el BOE.",
       "limits": "Se evalúa la aprobación de la ley.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Acciones oficiales enlazadas en la ficha (BOE y votaciones del Pleno), comprobadas una a una."
+      ]
     },
     "origin": "programa",
     "nature": "legislativa"
@@ -886,7 +1180,15 @@
       "outcome": "No consta en el BOE una reforma integral de la Ley de Enjuiciamiento Criminal en la legislatura.",
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Búsqueda de «nueva ley de enjuiciamiento criminal» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 1 resultado(s): Ley Orgánica 1/2025.",
+        "Votaciones del Pleno de la XV Legislatura (datos abiertos del Congreso): sin votación final de una ley con este objeto."
+      ]
     },
     "origin": "programa",
     "nature": "legislativa"
@@ -915,7 +1217,16 @@
       "outcome": "En el registro de normas con rango de ley publicadas en el BOE entre noviembre de 2023 y octubre de 2026 no figura ninguna ley estatal con este objeto.",
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Búsqueda de «equipos conjuntos de investigacion» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Búsqueda de «agente encubierto» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Votaciones del Pleno de la XV Legislatura (datos abiertos del Congreso): sin votación final de una ley con este objeto."
+      ]
     },
     "origin": "programa",
     "nature": "legislativa"
@@ -944,55 +1255,19 @@
       "outcome": "En el registro de normas con rango de ley publicadas en el BOE entre noviembre de 2023 y octubre de 2026 no figura ninguna ley estatal con este objeto.",
       "limits": "Se comprueban títulos de leyes. Una modificación parcial dentro de otra norma con título distinto podría no detectarse. La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Búsqueda de «nacionalidad» + «espanoles en el exterior» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Búsqueda de «nacionalidad de origen» + «exterior» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Votaciones del Pleno de la XV Legislatura (datos abiertos del Congreso): sin votación final de una ley con este objeto."
+      ]
     },
     "origin": "programa",
     "nature": "legislativa"
-  },
-  {
-    "id": "sanchez-2023-smi-ley",
-    "partyIds": [
-      "psoe"
-    ],
-    "attribution": "gobierno_coalicion",
-    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
-    "legislature": "XV",
-    "topicId": "empleo",
-    "series": "psoe-2023-ampliacion",
-    "origin": "declaracion",
-    "nature": "legislativa",
-    "promise": "Garantizar por ley que el SMI suba cada año para mantenerse en el 60 % del salario medio.",
-    "promisedAt": "2023-11-15",
-    "citation": {
-      "sourceId": "congreso-ds-15-pl-7",
-      "pdfPage": 12,
-      "quote": "la legislatura en la que vamos a garantizar por ley que el salario mínimo interprofesional siga aumentando cada año para mantenerse en el 60 % del sueldo medio"
-    },
-    "assessment": {
-      "status": "cumplido_parcial",
-      "criterion": "Dos partes: (1) subidas anuales del SMI; (2) garantía legal del 60 % (cambio en el Estatuto de los Trabajadores u otra ley).",
-      "officialActions": [
-        {
-          "date": "2024-02-07",
-          "text": "Real Decreto 145/2024 fija el SMI para 2024.",
-          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-2251"
-        },
-        {
-          "date": "2025-02-12",
-          "text": "Real Decreto 87/2025 fija el SMI para 2025.",
-          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-2576"
-        },
-        {
-          "date": "2026-02-19",
-          "text": "Real Decreto 126/2026 fija el SMI para 2026 y «mantiene el objetivo» del 60 % del salario medio.",
-          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3815"
-        }
-      ],
-      "outcome": "El SMI se ha fijado y subido cada año por real decreto. No consta en el BOE una ley que garantice el 60 %: el decreto de 2026 lo presenta como «objetivo».",
-      "limits": "No se evalúa si el SMI alcanza exactamente el 60 % del salario medio: depende de la estadística salarial de referencia.",
-      "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
-    }
   },
   {
     "id": "psoe-2023-smi-estatuto",
@@ -1036,8 +1311,27 @@
       "outcome": "Subidas anuales por real decreto; sin modificación del Estatuto con ese contenido en el BOE.",
       "limits": "Una modificación incluida en una ley con otro título podría no detectarse.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
-    }
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Acciones oficiales enlazadas en la ficha (BOE y votaciones del Pleno), comprobadas una a una."
+      ]
+    },
+    "alsoIn": [
+      {
+        "sourceId": "congreso-ds-15-pl-7",
+        "pdfPage": 12,
+        "quote": "la legislatura en la que vamos a garantizar por ley que el salario mínimo interprofesional siga aumentando cada año para mantenerse en el 60 % del sueldo medio"
+      },
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 11,
+        "quote": "El SMI seguirá creciendo a lo largo de la legislatura para asegurar su poder adquisitivo, garantizándose en el Estatuto de los Trabajadores que aumentará acompasado al 60% del salario medio."
+      }
+    ]
   },
   {
     "id": "sanchez-2023-iva-alimentos",
@@ -1076,7 +1370,14 @@
       "outcome": "La prórroga consta en el BOE y fue convalidada.",
       "limits": "No se evalúa el efecto sobre los precios.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Acciones oficiales enlazadas en la ficha (BOE y votaciones del Pleno), comprobadas una a una."
+      ]
     }
   },
   {
@@ -1105,8 +1406,23 @@
       "outcome": "No se ha localizado la cifra de 38.000 euros en el Real Decreto-ley 8/2023 ni en los títulos de las normas revisadas.",
       "limits": "La medida pudo aprobarse en una norma no revisada a texto completo. Pendiente de comprobar en el Código de Buenas Prácticas bancario.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
-    }
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Registro completo del BOE de la legislatura (títulos de leyes, decretos-leyes y reales decretos).",
+        "Sin datos oficiales suficientes para medir el resultado: se mantiene «no verificable» en lugar de «no cumplido»."
+      ]
+    },
+    "alsoIn": [
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 30,
+        "quote": "Ampliaremos hasta la renta media (37.800€) el umbral para acceder a las medidas de apoyo a los afectados por la subida de tipos de interés de las hipotecas: ampliación de crédito hasta 7 años y congelación de cuota de 1 año."
+      }
+    ]
   },
   {
     "id": "sanchez-2023-impuesto-minimo",
@@ -1145,8 +1461,22 @@
       "outcome": "La tributación mínima global se aprobó para grandes grupos empresariales; no es un mínimo general para todas las empresas.",
       "limits": "La Ley 7/2024 transpone una directiva europea; el alcance exacto se describe en su texto.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
-    }
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Acciones oficiales enlazadas en la ficha (BOE y votaciones del Pleno), comprobadas una a una."
+      ]
+    },
+    "alsoIn": [
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 37,
+        "quote": "Esta reforma asegurará que se alcanza el 15% efectivo de tributación sobre el resultado contable de las grandes empresas en el impuesto de sociedades en los términos acordados a nivel global y en la UE"
+      }
+    ]
   },
   {
     "id": "sanchez-2023-permiso-20",
@@ -1185,8 +1515,22 @@
       "outcome": "Ampliado a 19 semanas; las 20 semanas figuran como compromiso futuro en la propia norma.",
       "limits": "",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
-    }
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Acciones oficiales enlazadas en la ficha (BOE y votaciones del Pleno), comprobadas una a una."
+      ]
+    },
+    "alsoIn": [
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 22,
+        "quote": "Extenderemos el permiso de paternidad y maternidad hasta las 20 semanas, incorporando mayor flexibilidad con el trabajo a tiempo parcial desde la semana 16"
+      }
+    ]
   },
   {
     "id": "sanchez-2023-amnistia",
@@ -1230,7 +1574,14 @@
       "outcome": "Ley orgánica publicada en el BOE.",
       "limits": "Se evalúa la aprobación de la ley, no su aplicación ni los recursos judiciales posteriores.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Acciones oficiales enlazadas en la ficha (BOE y votaciones del Pleno), comprobadas una a una."
+      ]
     }
   },
   {
@@ -1259,8 +1610,24 @@
       "outcome": "No figura en el registro completo de normas del BOE ni en las votaciones finales del Pleno.",
       "limits": "Registro completo de normas del BOE de la legislatura (leyes, decretos-leyes y reales decretos) y votaciones del Pleno.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
-    }
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Búsqueda de «ley de derechos culturales» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Búsqueda de «derechos culturales» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 1 resultado(s): Real Decreto-ley 12/2025.",
+        "Votaciones del Pleno de la XV Legislatura (datos abiertos del Congreso): sin votación final de una ley con este objeto."
+      ]
+    },
+    "alsoIn": [
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 45,
+        "quote": "Garantizaremos el derecho a la cultura de todas las personas y en todos los territorios a través de una Ley de Derechos Culturales y el mantenimiento del Bono Cultural Joven."
+      }
+    ]
   },
   {
     "id": "sanchez-2023-servicios-30-min",
@@ -1288,8 +1655,25 @@
       "outcome": "No figura una ley con ese objeto en el registro completo de normas del BOE de la legislatura.",
       "limits": "Registro completo de normas del BOE de la legislatura (leyes, decretos-leyes y reales decretos) y votaciones del Pleno.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
-    }
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Búsqueda de «30 minutos» + «servicios» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 1 resultado(s): Ley 9/2025.",
+        "Búsqueda de «treinta minutos» + «servicio basico» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Votaciones del Pleno de la XV Legislatura (datos abiertos del Congreso): sin votación final de una ley con este objeto.",
+        "Hallazgo: la Ley 8/2025 del Estatuto de los municipios rurales fija un estándar de treinta minutos, pero es una ley autonómica (Cataluña), no estatal."
+      ]
+    },
+    "alsoIn": [
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 20,
+        "quote": "Aprobaremos la cartera de servicios básicos de calidad a menos de 30 minutos del lugar de residencia."
+      }
+    ]
   },
   {
     "id": "sanchez-2023-deuda-autonomica",
@@ -1317,7 +1701,17 @@
       "outcome": "No consta en el BOE una norma que asuma deuda autonómica ni una votación final en el Pleno con ese objeto.",
       "limits": "Registro completo de normas del BOE de la legislatura (leyes, decretos-leyes y reales decretos) y votaciones del Pleno. La asunción de deuda podría tramitarse por otra vía no revisada.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Búsqueda de «deuda autonomica» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Búsqueda de «condonacion» + «comunidades autonomas» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 3 resultado(s): Real Decreto-ley 9/2024; Real Decreto-ley 24/2026; Real Decreto-ley 26/2026.",
+        "Votaciones del Pleno de la XV Legislatura (datos abiertos del Congreso): sin votación final de una ley con este objeto.",
+        "Hallazgo: una ley autonómica de presupuestos de Castilla-La Mancha (2025) alude a un «proceso de asunción de la deuda autonómica por parte del Estado» todavía en curso; no consta una norma estatal publicada."
+      ]
     }
   },
   {
@@ -1352,7 +1746,15 @@
       "outcome": "No se ha localizado una estadística oficial que cuantifique las viviendas habilitadas.",
       "limits": "Las cifras de vivienda dependen de comunidades autónomas, ayuntamientos y entidades públicas como Sepes/Casa 47.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Registro completo del BOE de la legislatura (títulos de leyes, decretos-leyes y reales decretos).",
+        "Sin datos oficiales suficientes para medir el resultado: se mantiene «no verificable» en lugar de «no cumplido»."
+      ]
     }
   },
   {
@@ -1381,8 +1783,23 @@
       "outcome": "Las líneas de avales se gestionan por el ICO mediante acuerdos del Consejo de Ministros que no figuran en el registro de normas revisado.",
       "limits": "Pendiente de contrastar con la documentación del ICO.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
-    }
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Registro completo del BOE de la legislatura (títulos de leyes, decretos-leyes y reales decretos).",
+        "Sin datos oficiales suficientes para medir el resultado: se mantiene «no verificable» en lugar de «no cumplido»."
+      ]
+    },
+    "alsoIn": [
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 30,
+        "quote": "Desarrollaremos y aplicaremos la nueva línea de avales del Instituto de Crédito Oficial (ICO) de 2."
+      }
+    ]
   },
   {
     "id": "sanchez-2023-becas-tasas",
@@ -1426,8 +1843,23 @@
       "outcome": "Constan los decretos anuales de becas, pero no se ha comparado la dotación total ni los precios de matrícula, que fijan las comunidades autónomas.",
       "limits": "Se necesitan los datos presupuestarios y de precios públicos por comunidad.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
-    }
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Registro completo del BOE de la legislatura (títulos de leyes, decretos-leyes y reales decretos).",
+        "Sin datos oficiales suficientes para medir el resultado: se mantiene «no verificable» en lugar de «no cumplido»."
+      ]
+    },
+    "alsoIn": [
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 28,
+        "quote": "En el ámbito universitario, incrementaremos nuevamente la dotación de becas y seguiremos reduciendo el precio de las tasas universitarias, tendiendo a la gratuidad."
+      }
+    ]
   },
   {
     "id": "psoe-2023-transporte-jovenes",
@@ -1466,7 +1898,14 @@
       "outcome": "Hubo descuentos estatales para jóvenes en periodos concretos; no consta una gratuidad total del transporte urbano hasta los 24 años.",
       "limits": "El transporte urbano depende de ayuntamientos y comunidades; el Estado actúa con ayudas.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Acciones oficiales enlazadas en la ficha (BOE y votaciones del Pleno), comprobadas una a una."
+      ]
     }
   },
   {
@@ -1501,8 +1940,22 @@
       "outcome": "El nuevo plan incluye ayudas al alquiler y a la emancipación de los jóvenes. No se ha comparado su dotación con la del plan anterior.",
       "limits": "",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
-    }
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Acciones oficiales enlazadas en la ficha (BOE y votaciones del Pleno), comprobadas una a una."
+      ]
+    },
+    "alsoIn": [
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 30,
+        "quote": "Consolidaremos el Bono Alquiler Joven como elemento esencial para facilitar el acceso al alquiler asequible, y que se convierta en una medida a largo plazo, ampliando la financiación, para llegar a toda la población joven."
+      }
+    ]
   },
   {
     "id": "psoe-2023-gratuidad-universidad",
@@ -1530,7 +1983,15 @@
       "outcome": "No se ha localizado una norma estatal con esa gratuidad en el registro de normas del BOE.",
       "limits": "Los precios universitarios los fijan las comunidades autónomas; la medida podría aplicarse por otras vías.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Registro completo del BOE de la legislatura (títulos de leyes, decretos-leyes y reales decretos).",
+        "Sin datos oficiales suficientes para medir el resultado: se mantiene «no verificable» en lugar de «no cumplido»."
+      ]
     }
   },
   {
@@ -1559,8 +2020,25 @@
       "outcome": "No figura en el registro completo de normas del BOE ni en las votaciones finales del Pleno.",
       "limits": "Registro completo de normas del BOE de la legislatura (leyes, decretos-leyes y reales decretos) y votaciones del Pleno.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
-    }
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Búsqueda de «ley de familias» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Búsqueda de «familias monoparentales» + «familias numerosas» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 1 resultado(s): Real Decreto-ley 9/2025.",
+        "Votaciones del Pleno de la XV Legislatura (datos abiertos del Congreso): sin votación final de una ley con este objeto.",
+        "Hallazgo: el RDL 9/2025 amplía permisos y protege a familias monoparentales, pero no es la Ley de Familias."
+      ]
+    },
+    "alsoIn": [
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 23,
+        "quote": "Aprobaremos una Ley de Familias que reconozca y proteja a las diferentes modalidades de familias."
+      }
+    ]
   },
   {
     "id": "psoe-2023-pensiones-minimas",
@@ -1594,7 +2072,931 @@
       "outcome": "Las cuantías mínimas se actualizan cada año por norma; falta comparar los importes con los de 2023 y con la inflación.",
       "limits": "Pendiente de extraer los importes de los anexos.",
       "assessedAt": "2026-11-02",
-      "reviewer": "Equipo editorial (revisión inicial)"
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-02"
+      },
+      "checks": [
+        "Registro completo del BOE de la legislatura (títulos de leyes, decretos-leyes y reales decretos).",
+        "Sin datos oficiales suficientes para medir el resultado: se mantiene «no verificable» en lugar de «no cumplido»."
+      ]
+    },
+    "alsoIn": [
+      {
+        "sourceId": "acuerdo-psoe-sumar-2023",
+        "pdfPage": 24,
+        "quote": "Seguiremos aumentando durante la legislatura las pensiones mínimas y no contributivas por encima de la revalorización de las pensiones contributivas, hasta alcanzar la media europea."
+      }
+    ]
+  },
+  {
+    "id": "acuerdo-2023-subsidio-desempleo",
+    "partyIds": [
+      "psoe",
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "empleo",
+    "series": "psoe-2023-acuerdo",
+    "origin": "acuerdo_gobierno",
+    "nature": "legislativa",
+    "promise": "Simplificar y mejorar el subsidio por desempleo (nivel asistencial).",
+    "promisedAt": "2023-10-24",
+    "citation": {
+      "sourceId": "acuerdo-psoe-sumar-2023",
+      "pdfPage": 12,
+      "quote": "Simplificaremos y mejoraremos el nivel asistencial por desempleo, facilitando el acceso, la compatibilidad con el trabajo, dotándolo de las prestaciones suficientes y reforzando los incentivos al empleo."
+    },
+    "assessment": {
+      "status": "cumplido",
+      "criterion": "Cumplido si una norma estatal reforma el nivel asistencial de la protección por desempleo.",
+      "officialActions": [
+        {
+          "date": "2024-05-22",
+          "text": "Real Decreto-ley 2/2024: simplificación y mejora del nivel asistencial de la protección por desempleo.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-10235"
+        },
+        {
+          "date": "2024-06-20",
+          "text": "El Congreso convalida el Real Decreto-ley 2/2024 (178 sí, 0 no, 171 abstenciones).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=20/06/2024"
+        }
+      ],
+      "outcome": "La reforma del subsidio se aprobó por real decreto-ley y fue convalidada.",
+      "limits": "Se evalúa la aprobación de la reforma, no sus efectos.",
+      "assessedAt": "2026-11-03",
+      "checks": [
+        "Búsqueda de «nivel asistencial» + «subsidio por desempleo» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 2 resultado(s): Real Decreto-ley 7/2023; Real Decreto-ley 2/2024."
+      ],
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      }
+    }
+  },
+  {
+    "id": "acuerdo-2023-jubilacion-parcial",
+    "partyIds": [
+      "psoe",
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "pensiones",
+    "series": "psoe-2023-acuerdo",
+    "origin": "acuerdo_gobierno",
+    "nature": "legislativa",
+    "promise": "Nueva regulación de la jubilación parcial y del contrato de relevo.",
+    "promisedAt": "2023-10-24",
+    "citation": {
+      "sourceId": "acuerdo-psoe-sumar-2023",
+      "pdfPage": 12,
+      "quote": "Se llevará a cabo una nueva regulación de la jubilación parcial y del contrato de relevo que garantice la calidad en el empleo de los relevistas y que tenga en cuenta la mayor penosidad del desarrollo de ciertas actividades (en muchos casos, fuertemente feminizadas) a partir de cierta edad, especialmente de la industria manufacturera."
+    },
+    "assessment": {
+      "status": "cumplido",
+      "criterion": "Cumplido si una norma estatal regula de nuevo la jubilación parcial y el contrato de relevo.",
+      "officialActions": [
+        {
+          "date": "2024-12-24",
+          "text": "Real Decreto-ley 11/2024: regula de nuevo la jubilación parcial (reducción de jornada entre el 25 % y el 75 %) y el contrato de relevo.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-26917"
+        },
+        {
+          "date": "2025-01-22",
+          "text": "El Congreso convalida el Real Decreto-ley 11/2024 (298 sí, 51 no).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=22/01/2025"
+        }
+      ],
+      "outcome": "Nueva regulación aprobada y convalidada.",
+      "limits": "No se evalúa si garantiza la calidad del empleo de los relevistas, como también prometía el acuerdo.",
+      "assessedAt": "2026-11-03",
+      "checks": [
+        "Búsqueda de «contrato de relevo» + «jubilacion parcial» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 3 resultado(s): Real Decreto-ley 8/2023; Real Decreto-ley 11/2024; Real Decreto-ley 19/2026."
+      ],
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      }
+    }
+  },
+  {
+    "id": "acuerdo-2023-articulo-49",
+    "partyIds": [
+      "psoe",
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "igualdad",
+    "series": "psoe-2023-acuerdo",
+    "origin": "acuerdo_gobierno",
+    "nature": "legislativa",
+    "promise": "Reformar el artículo 49 de la Constitución para suprimir el término «disminuidos».",
+    "promisedAt": "2023-10-24",
+    "citation": {
+      "sourceId": "acuerdo-psoe-sumar-2023",
+      "pdfPage": 24,
+      "quote": "Culminaremos la reforma del artículo 49 de la Constitución para suprimir el término “disminuidos” y reforzar la protección constitucional de los derechos de las personas con discapacidad."
+    },
+    "assessment": {
+      "status": "cumplido",
+      "criterion": "Cumplido si se publica la reforma constitucional.",
+      "officialActions": [
+        {
+          "date": "2024-01-18",
+          "text": "El Congreso aprueba la reforma del artículo 49 (312 sí, 32 no).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=18/01/2024"
+        },
+        {
+          "date": "2024-02-17",
+          "text": "BOE publica la Reforma del artículo 49 de la Constitución Española, de 15 de febrero de 2024.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-3099"
+        }
+      ],
+      "outcome": "Reforma constitucional publicada.",
+      "limits": "",
+      "assessedAt": "2026-11-03",
+      "checks": [
+        "Registro del BOE: reforma constitucional localizada (BOE-A-2024-3099)."
+      ],
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      }
+    }
+  },
+  {
+    "id": "acuerdo-2023-abonos-2024",
+    "partyIds": [
+      "psoe",
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "transporte",
+    "series": "psoe-2023-acuerdo",
+    "origin": "acuerdo_gobierno",
+    "nature": "ejecutiva",
+    "promise": "Mantener durante 2024 la rebaja de los abonos de transporte para toda la ciudadanía.",
+    "promisedAt": "2023-10-24",
+    "citation": {
+      "sourceId": "acuerdo-psoe-sumar-2023",
+      "pdfPage": 31,
+      "quote": "Mantendremos para todos los ciudadanos la reducción del precio de los abonos de transporte durante 2024, y transformaremos más adelante esta medida en una política de transporte permanente para determinados colectivos, con la cofinanciación de las Comunidades Autónomas y la administración local."
+    },
+    "assessment": {
+      "status": "cumplido",
+      "criterion": "Cumplido si una norma mantiene la rebaja de los abonos durante 2024.",
+      "officialActions": [
+        {
+          "date": "2023-12-28",
+          "text": "El Real Decreto-ley 8/2023 mantiene la reducción del precio de los abonos y títulos multiviaje del transporte colectivo.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-26452"
+        },
+        {
+          "date": "2024-01-10",
+          "text": "El Congreso convalida el Real Decreto-ley 8/2023 (172 sí, 171 no, 7 abstenciones).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=10/01/2024"
+        }
+      ],
+      "outcome": "La rebaja se mantuvo en 2024 por real decreto-ley.",
+      "limits": "La segunda parte (convertirla en política permanente para determinados colectivos) no se evalúa aquí.",
+      "assessedAt": "2026-11-03",
+      "checks": [
+        "Búsqueda de «abonos» + «transporte colectivo» + «2024» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 5 resultado(s): Real Decreto-ley 8/2023; Real Decreto-ley 9/2024; Real Decreto-ley 1/2025; Ley 9/2025…."
+      ],
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      }
+    }
+  },
+  {
+    "id": "acuerdo-2023-empleo-paro",
+    "partyIds": [
+      "psoe",
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "empleo",
+    "series": "psoe-2023-acuerdo",
+    "origin": "acuerdo_gobierno",
+    "nature": "resultado",
+    "promise": "Situar la tasa de empleo por encima del 70 % y acercar la tasa de paro a la media europea.",
+    "promisedAt": "2023-10-24",
+    "citation": {
+      "sourceId": "acuerdo-psoe-sumar-2023",
+      "pdfPage": 4,
+      "quote": "Desarrollaremos una política económica responsable y coherente, orientada a alcanzar el pleno empleo y a lograr que la tasa de paro converja con la media europea a lo largo de la legislatura y, en cualquier caso, y en línea con el resto de economías de la UE, situando la tasa de empleo por encima del 70%."
+    },
+    "assessment": {
+      "status": "cumplido_parcial",
+      "criterion": "Dos objetivos medibles con Eurostat: tasa de empleo (20-64 años) por encima del 70 % y tasa de paro convergente con la media de la UE.",
+      "officialActions": [
+        {
+          "date": "2026-04-24",
+          "text": "Eurostat: tasa de empleo de España (20-64 años) del 72,4 % en 2025 (70,5 % en 2023).",
+          "url": "https://ec.europa.eu/eurostat/databrowser/view/lfsi_emp_a/default/table?lang=es"
+        },
+        {
+          "date": "2026-04-24",
+          "text": "Eurostat: tasa de paro de España del 10,5 % en 2025, frente al 6,0 % de la UE (12,2 % y 6,1 % en 2023).",
+          "url": "https://ec.europa.eu/eurostat/databrowser/view/une_rt_a/default/table?lang=es"
+        }
+      ],
+      "outcome": "El empleo supera el 70 %. El paro baja pero sigue muy por encima de la media europea: la convergencia no se ha alcanzado.",
+      "limits": "El acuerdo no precisa el tramo de edad de la tasa de empleo; se usa el indicador principal de Eurostat (20-64 años). Fecha de las acciones: publicación anual aproximada de Eurostat.",
+      "assessedAt": "2026-11-03",
+      "checks": [
+        "Series de Eurostat del Observatorio (lfsi_emp_a y une_rt_a), descargadas con su URL de consulta."
+      ],
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      }
+    }
+  },
+  {
+    "id": "acuerdo-2023-gravamenes",
+    "partyIds": [
+      "psoe",
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "fiscalidad",
+    "series": "psoe-2023-acuerdo",
+    "origin": "acuerdo_gobierno",
+    "nature": "legislativa",
+    "promise": "Mantener los gravámenes a la banca y a las energéticas cuando expire su periodo de aplicación.",
+    "promisedAt": "2023-10-24",
+    "citation": {
+      "sourceId": "acuerdo-psoe-sumar-2023",
+      "pdfPage": 38,
+      "quote": "Revisaremos los gravámenes sobre la banca y las empresas energéticas con el objetivo de readaptarlos y mantenerlos una vez que expire su periodo de aplicación actual,."
+    },
+    "assessment": {
+      "status": "cumplido_parcial",
+      "criterion": "Cumplido si ambos gravámenes se mantienen por norma estatal tras su vigencia temporal.",
+      "officialActions": [
+        {
+          "date": "2024-12-21",
+          "text": "Ley 7/2024 crea el impuesto sobre el margen de intereses y comisiones de determinadas entidades financieras (sustituye al gravamen temporal a la banca).",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-26694"
+        },
+        {
+          "date": "2024-12-24",
+          "text": "Real Decreto-ley 10/2024: gravamen temporal energético para 2025.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-26916"
+        },
+        {
+          "date": "2025-01-22",
+          "text": "El Congreso no convalida el Real Decreto-ley 10/2024 (165 sí, 183 no): el gravamen energético decae.",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=22/01/2025"
+        }
+      ],
+      "outcome": "El gravamen a la banca se mantiene como impuesto; el energético no superó la convalidación.",
+      "limits": "",
+      "assessedAt": "2026-11-03",
+      "checks": [
+        "Búsqueda de «impuesto sobre el margen de intereses» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 8 resultado(s): Ley 7/2024; Real Decreto-ley 9/2024; Ley 3/2025; Ley 4/2025….",
+        "Búsqueda de «gravamen temporal energetico» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 1 resultado(s): Real Decreto-ley 10/2024."
+      ],
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      }
+    }
+  },
+  {
+    "id": "acuerdo-2023-desperdicio",
+    "partyIds": [
+      "psoe",
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "medio-ambiente",
+    "series": "psoe-2023-acuerdo",
+    "origin": "acuerdo_gobierno",
+    "nature": "legislativa",
+    "promise": "Aprobar la Ley contra el Desperdicio Alimentario.",
+    "promisedAt": "2023-10-24",
+    "citation": {
+      "sourceId": "acuerdo-psoe-sumar-2023",
+      "pdfPage": 19,
+      "quote": "Retomaremos la Ley contra el Desperdicio Alimentario."
+    },
+    "assessment": {
+      "status": "cumplido",
+      "criterion": "Cumplido si se publica la ley.",
+      "officialActions": [
+        {
+          "date": "2025-04-02",
+          "text": "BOE publica la Ley 1/2025, de prevención de las pérdidas y el desperdicio alimentario.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-6597"
+        }
+      ],
+      "outcome": "Ley publicada.",
+      "limits": "",
+      "assessedAt": "2026-11-03",
+      "checks": [
+        "Búsqueda de «desperdicio alimentario» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 1 resultado(s): Ley 1/2025."
+      ],
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      }
+    }
+  },
+  {
+    "id": "acuerdo-2023-bomberos-forestales",
+    "partyIds": [
+      "psoe",
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "medio-ambiente",
+    "series": "psoe-2023-acuerdo",
+    "origin": "acuerdo_gobierno",
+    "nature": "legislativa",
+    "promise": "Aprobar las leyes básicas de bomberos y de agentes forestales.",
+    "promisedAt": "2023-10-24",
+    "citation": {
+      "sourceId": "acuerdo-psoe-sumar-2023",
+      "pdfPage": 18,
+      "quote": "se finalizará la tramitación de las Leyes Básicas para el Estatuto de los Bomberos y Agentes Forestales."
+    },
+    "assessment": {
+      "status": "cumplido_parcial",
+      "criterion": "Dos leyes: cumplido si se publican ambas; parcial si solo una.",
+      "officialActions": [
+        {
+          "date": "2024-11-09",
+          "text": "BOE publica la Ley 4/2024, básica de agentes forestales y medioambientales.",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-23271"
+        }
+      ],
+      "outcome": "Se aprobó la ley de agentes forestales; no consta la de bomberos.",
+      "limits": "La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-03",
+      "checks": [
+        "Búsqueda de «agentes forestales y medioambientales» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 3 resultado(s): Ley 4/2024; Real Decreto-ley 16/2025; Real Decreto-ley 3/2026.",
+        "Búsqueda de «bomberos» + «ley basica» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Votaciones del Pleno de la XV Legislatura: sin votación final de una ley con este objeto."
+      ],
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      }
+    }
+  },
+  {
+    "id": "acuerdo-2023-cne",
+    "partyIds": [
+      "psoe",
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "energia",
+    "series": "psoe-2023-acuerdo",
+    "origin": "acuerdo_gobierno",
+    "nature": "legislativa",
+    "promise": "Restablecer la Comisión Nacional de la Energía como regulador propio.",
+    "promisedAt": "2023-10-24",
+    "citation": {
+      "sourceId": "acuerdo-psoe-sumar-2023",
+      "pdfPage": 16,
+      "quote": "Impulsaremos el establecimiento de una Comisión Nacional de la Energía."
+    },
+    "assessment": {
+      "status": "cumplido_parcial",
+      "criterion": "Cumplido si una ley crea el organismo; parcial si el Gobierno lo impulsa con un proyecto de ley que no llega a aprobarse.",
+      "officialActions": [
+        {
+          "date": "2026-03-21",
+          "text": "El Real Decreto-ley 7/2026 menciona «el proyecto de ley de restablecimiento de la Comisión Nacional de la Energía, aún en trámite parlamentario».",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-6544"
+        }
+      ],
+      "outcome": "El Gobierno lo impulsó con un proyecto de ley que no llegó a aprobarse antes de la disolución.",
+      "limits": "La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-03",
+      "checks": [
+        "Búsqueda de «comision nacional de la energia» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 1 resultado(s): Real Decreto-ley 7/2026."
+      ],
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      }
+    }
+  },
+  {
+    "id": "acuerdo-2023-palestina",
+    "partyIds": [
+      "psoe",
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "ue-exterior",
+    "series": "psoe-2023-acuerdo",
+    "origin": "acuerdo_gobierno",
+    "nature": "internacional",
+    "promise": "Reconocer el Estado de Palestina.",
+    "promisedAt": "2023-10-24",
+    "citation": {
+      "sourceId": "acuerdo-psoe-sumar-2023",
+      "pdfPage": 48,
+      "quote": "Apostaremos por el reconocimiento del Estado palestino conformemente a la Resolución del Congreso de los Diputados de 18 de noviembre de 2014."
+    },
+    "assessment": {
+      "status": "cumplido",
+      "criterion": "Cumplido si el Gobierno reconoce oficialmente el Estado de Palestina.",
+      "officialActions": [
+        {
+          "date": "2025-09-24",
+          "text": "El Real Decreto-ley 10/2025 recoge «el reconocimiento internacional del Estado de Palestina por el Gobierno el pasado 28 de mayo de 2024».",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-18831"
+        }
+      ],
+      "outcome": "Reconocimiento acordado por el Gobierno el 28 de mayo de 2024.",
+      "limits": "La fuente es una referencia en el BOE; el acuerdo del Consejo de Ministros no figura en el registro de normas.",
+      "assessedAt": "2026-11-03",
+      "checks": [
+        "Búsqueda de «estado de palestina» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 1 resultado(s): Real Decreto-ley 10/2025."
+      ],
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      }
+    }
+  },
+  {
+    "id": "acuerdo-2023-tiempo-respuesta",
+    "partyIds": [
+      "psoe",
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "territorial",
+    "series": "psoe-2023-acuerdo",
+    "origin": "acuerdo_gobierno",
+    "nature": "legislativa",
+    "promise": "Fijar por ley un tiempo máximo de respuesta de los servicios públicos (30 días para prestaciones como desempleo o dependencia).",
+    "promisedAt": "2023-10-24",
+    "citation": {
+      "sourceId": "acuerdo-psoe-sumar-2023",
+      "pdfPage": 41,
+      "quote": "Garantizaremos por ley un tiempo máximo de respuesta en los servicios públicos y estableceremos un tiempo máximo de 30 días para la recepción de prestaciones sociales más importantes como la prestación por desempleo o a las ayudas a la dependencia."
+    },
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: cumplido si se publica en el BOE una norma estatal con rango de ley con ese objeto antes de la disolución (6-10-2026).",
+      "officialActions": [
+        {
+          "date": "2024-10-31",
+          "text": "La Ley 3/2024 (ELA) solo prevé crear un grupo de trabajo con las comunidades para abordar ese tiempo máximo (disposición adicional sexta).",
+          "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-22438"
+        }
+      ],
+      "outcome": "No se fijó por ley ningún plazo máximo; solo consta un mandato para estudiarlo.",
+      "limits": "La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-03",
+      "checks": [
+        "Búsqueda de «tiempo maximo de respuesta» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 1 resultado(s): Ley 3/2024.",
+        "Búsqueda de «plazo maximo» + «prestacion por desempleo» + «30 dias» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Votaciones del Pleno de la XV Legislatura: sin votación final de una ley con este objeto."
+      ],
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      }
+    }
+  },
+  {
+    "id": "acuerdo-2023-ley-mordaza",
+    "partyIds": [
+      "psoe",
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "seguridad",
+    "series": "psoe-2023-acuerdo",
+    "origin": "acuerdo_gobierno",
+    "nature": "legislativa",
+    "promise": "Reformar la Ley de Seguridad Ciudadana («ley mordaza») en lo que limita la reunión y la expresión.",
+    "promisedAt": "2023-10-24",
+    "citation": {
+      "sourceId": "acuerdo-psoe-sumar-2023",
+      "pdfPage": 43,
+      "quote": "Reformaremos, y derogaremos, aquellos aspectos de la normativa vigente que limita los derechos de reunión y libertad de expresión (la «ley mordaza» y el Código Penal)."
+    },
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: cumplido si se publica en el BOE una norma estatal con rango de ley con ese objeto antes de la disolución (6-10-2026).",
+      "officialActions": [
+        {
+          "date": "2024-10-29",
+          "text": "El Congreso toma en consideración la proposición de ley orgánica de protección de la seguridad ciudadana del PSOE, Sumar, EH Bildu y PNV (176 sí, 170 no).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=29/10/2024"
+        },
+        {
+          "date": "2024-12-12",
+          "text": "El Pleno rechaza una enmienda a la totalidad a otra proposición sobre seguridad ciudadana (33 sí, 176 no).",
+          "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=12/12/2024"
+        }
+      ],
+      "outcome": "La reforma se tramitó pero no llegó a aprobarse antes de la disolución.",
+      "limits": "La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-03",
+      "checks": [
+        "Búsqueda de «ley organica 4/2015» + «se modifica» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 2 resultado(s): Ley Orgánica 1/2024; Ley 4/2024.",
+        "Votaciones del Pleno de la XV Legislatura: sin votación final de una ley con este objeto."
+      ],
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      }
+    }
+  },
+  {
+    "id": "acuerdo-2023-estatuto-becario",
+    "partyIds": [
+      "psoe",
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "empleo",
+    "series": "psoe-2023-acuerdo",
+    "origin": "acuerdo_gobierno",
+    "nature": "legislativa",
+    "promise": "Aprobar el Estatuto del becario.",
+    "promisedAt": "2023-10-24",
+    "citation": {
+      "sourceId": "acuerdo-psoe-sumar-2023",
+      "pdfPage": 11,
+      "quote": "Aprobaremos el estatuto del becario."
+    },
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: cumplido si se publica en el BOE una norma estatal con rango de ley con ese objeto antes de la disolución (6-10-2026).",
+      "officialActions": [],
+      "outcome": "No consta en el BOE una norma estatal con este objeto ni una votación final en el Pleno.",
+      "limits": "La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-03",
+      "checks": [
+        "Búsqueda de «estatuto del becario» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Búsqueda de «practicas formativas» + «estatuto» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 3 resultado(s): Real Decreto-ley 7/2023; Real Decreto-ley 8/2023; Real Decreto-ley 2/2024.",
+        "Votaciones del Pleno de la XV Legislatura: sin votación final de una ley con este objeto."
+      ],
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      }
+    }
+  },
+  {
+    "id": "acuerdo-2023-usos-tiempo",
+    "partyIds": [
+      "psoe",
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "empleo",
+    "series": "psoe-2023-acuerdo",
+    "origin": "acuerdo_gobierno",
+    "nature": "legislativa",
+    "promise": "Aprobar una Ley de usos del tiempo.",
+    "promisedAt": "2023-10-24",
+    "citation": {
+      "sourceId": "acuerdo-psoe-sumar-2023",
+      "pdfPage": 11,
+      "quote": "Aprobaremos una Ley de usos del tiempo que, en consenso con todos los agentes de la sociedad, permita avanzar hacia una organización del tiempo más equilibrada entre mujeres y hombres fomentando el bienestar de las personas, la eficiencia del tejido empresarial y asociativo."
+    },
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: cumplido si se publica en el BOE una norma estatal con rango de ley con ese objeto antes de la disolución (6-10-2026).",
+      "officialActions": [],
+      "outcome": "No consta en el BOE una norma estatal con este objeto ni una votación final en el Pleno.",
+      "limits": "La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-03",
+      "checks": [
+        "Búsqueda de «usos del tiempo» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Votaciones del Pleno de la XV Legislatura: sin votación final de una ley con este objeto."
+      ],
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      }
+    }
+  },
+  {
+    "id": "acuerdo-2023-estatuto-trabajo",
+    "partyIds": [
+      "psoe",
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "empleo",
+    "series": "psoe-2023-acuerdo",
+    "origin": "acuerdo_gobierno",
+    "nature": "legislativa",
+    "promise": "Culminar un Estatuto del Trabajo del siglo XXI.",
+    "promisedAt": "2023-10-24",
+    "citation": {
+      "sourceId": "acuerdo-psoe-sumar-2023",
+      "pdfPage": 10,
+      "quote": "Culminaremos un Estatuto del Trabajo del siglo XXI, que articule una red básica de derechos para todos aquellos que prestan actividades profesionales, desde los autónomos hasta los cooperativistas, y un desarrollo del trabajo por cuenta ajena que incorpore expresamente la transición digital, incluido el gobierno de los algoritmos, y la transición verde, a través de fórmulas de negociación colectiva que garanticen la sostenibilidad."
+    },
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: cumplido si se publica en el BOE una norma estatal con rango de ley con ese objeto antes de la disolución (6-10-2026).",
+      "officialActions": [],
+      "outcome": "No consta en el BOE una norma estatal con este objeto ni una votación final en el Pleno.",
+      "limits": "La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-03",
+      "checks": [
+        "Búsqueda de «estatuto del trabajo del siglo xxi» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Votaciones del Pleno de la XV Legislatura: sin votación final de una ley con este objeto."
+      ],
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      }
+    }
+  },
+  {
+    "id": "acuerdo-2023-ley-trata",
+    "partyIds": [
+      "psoe",
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "igualdad",
+    "series": "psoe-2023-acuerdo",
+    "origin": "acuerdo_gobierno",
+    "nature": "legislativa",
+    "promise": "Tramitar una ley integral contra la trata de personas.",
+    "promisedAt": "2023-10-24",
+    "citation": {
+      "sourceId": "acuerdo-psoe-sumar-2023",
+      "pdfPage": 34,
+      "quote": "Tramitaremos una ley integral contra la trata de personas que cubra todas y cada una de las distintas formas de trata, con especial atención a las que afectan principalmente a las mujeres."
+    },
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: cumplido si se publica en el BOE una norma estatal con rango de ley con ese objeto antes de la disolución (6-10-2026).",
+      "officialActions": [],
+      "outcome": "No consta en el BOE una norma estatal con este objeto ni una votación final en el Pleno.",
+      "limits": "La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-03",
+      "checks": [
+        "Búsqueda de «ley organica integral contra la trata» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Búsqueda de «trata» + «ley integral» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Votaciones del Pleno de la XV Legislatura: sin votación final de una ley con este objeto."
+      ],
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      }
+    }
+  },
+  {
+    "id": "acuerdo-2023-ley-racismo",
+    "partyIds": [
+      "psoe",
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "igualdad",
+    "series": "psoe-2023-acuerdo",
+    "origin": "acuerdo_gobierno",
+    "nature": "legislativa",
+    "promise": "Aprobar una Ley contra el Racismo.",
+    "promisedAt": "2023-10-24",
+    "citation": {
+      "sourceId": "acuerdo-psoe-sumar-2023",
+      "pdfPage": 36,
+      "quote": "Aprobaremos una Ley contra el Racismo, en sintonía con el Plan de Acción de la Unión Europea Antirracismo 2020-2025, cuyo objetivo sea prevenir y, en su caso, denunciar, sancionar y reparar la intolerancia y la discriminación racial, en aras del fomento de la igualdad y la convivencia social."
+    },
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: cumplido si se publica en el BOE una norma estatal con rango de ley con ese objeto antes de la disolución (6-10-2026).",
+      "officialActions": [],
+      "outcome": "No consta en el BOE una norma estatal con este objeto ni una votación final en el Pleno.",
+      "limits": "La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-03",
+      "checks": [
+        "Búsqueda de «contra el racismo» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Votaciones del Pleno de la XV Legislatura: sin votación final de una ley con este objeto."
+      ],
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      }
+    }
+  },
+  {
+    "id": "acuerdo-2023-bebes-robados",
+    "partyIds": [
+      "psoe",
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "justicia",
+    "series": "psoe-2023-acuerdo",
+    "origin": "acuerdo_gobierno",
+    "nature": "legislativa",
+    "promise": "Aprobar una ley de «bebés robados».",
+    "promisedAt": "2023-10-24",
+    "citation": {
+      "sourceId": "acuerdo-psoe-sumar-2023",
+      "pdfPage": 43,
+      "quote": "Impulsaremos una ley de “bebés robados” que garantice verdad, justicia y reparación para todas las víctimas y familias, permitiendo el acceso a los archivos, documentos públicos y privados y garantizando que todas las víctimas reciban reparación integral."
+    },
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: cumplido si se publica en el BOE una norma estatal con rango de ley con ese objeto antes de la disolución (6-10-2026).",
+      "officialActions": [],
+      "outcome": "No consta en el BOE una norma estatal con este objeto ni una votación final en el Pleno.",
+      "limits": "La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-03",
+      "checks": [
+        "Búsqueda de «bebes robados» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Búsqueda de «sustraccion de recien nacidos» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Votaciones del Pleno de la XV Legislatura: sin votación final de una ley con este objeto."
+      ],
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      }
+    }
+  },
+  {
+    "id": "acuerdo-2023-equidad-sns",
+    "partyIds": [
+      "psoe",
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "sanidad",
+    "series": "psoe-2023-acuerdo",
+    "origin": "acuerdo_gobierno",
+    "nature": "legislativa",
+    "promise": "Aprobar la Ley de Equidad, Universalidad y Cohesión del Sistema Nacional de Salud.",
+    "promisedAt": "2023-10-24",
+    "citation": {
+      "sourceId": "acuerdo-psoe-sumar-2023",
+      "pdfPage": 24,
+      "quote": "Blindaremos la universalidad de nuestro Sistema Nacional de Salud, culminando la aprobación en las Cortes de la Ley por la que se modifican diversas normas para consolidar la Equidad, Universalidad y Cohesión del Sistema Nacional de Salud, que ya aprobó el Consejo de Ministros."
+    },
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: cumplido si se publica en el BOE una norma estatal con rango de ley con ese objeto antes de la disolución (6-10-2026).",
+      "officialActions": [],
+      "outcome": "No consta en el BOE una norma estatal con este objeto ni una votación final en el Pleno.",
+      "limits": "La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-03",
+      "checks": [
+        "Búsqueda de «equidad, universalidad y cohesion» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Votaciones del Pleno de la XV Legislatura: sin votación final de una ley con este objeto."
+      ],
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      }
+    }
+  },
+  {
+    "id": "acuerdo-2023-servicios-sociales",
+    "partyIds": [
+      "psoe",
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "igualdad",
+    "series": "psoe-2023-acuerdo",
+    "origin": "acuerdo_gobierno",
+    "nature": "legislativa",
+    "promise": "Aprobar una Ley de Garantía de la Igualdad de Acceso a los Servicios Sociales.",
+    "promisedAt": "2023-10-24",
+    "citation": {
+      "sourceId": "acuerdo-psoe-sumar-2023",
+      "pdfPage": 23,
+      "quote": "Aprobaremos una Ley de Garantía de la Igualdad de Acceso a los Servicios Sociales, que declare estos servicios públicos como esenciales y promueva su universalización efectiva."
+    },
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: cumplido si se publica en el BOE una norma estatal con rango de ley con ese objeto antes de la disolución (6-10-2026).",
+      "officialActions": [],
+      "outcome": "No consta en el BOE una norma estatal con este objeto ni una votación final en el Pleno.",
+      "limits": "La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-03",
+      "checks": [
+        "Búsqueda de «igualdad de acceso a los servicios sociales» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Búsqueda de «servicios sociales» + «universalizacion» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Votaciones del Pleno de la XV Legislatura: sin votación final de una ley con este objeto."
+      ],
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      }
+    }
+  },
+  {
+    "id": "acuerdo-2023-regimen-local",
+    "partyIds": [
+      "psoe",
+      "frente-amplio"
+    ],
+    "attribution": "gobierno_coalicion",
+    "government": "Gobierno de coalición PSOE–Sumar (2023–2026)",
+    "legislature": "XV",
+    "topicId": "territorial",
+    "series": "psoe-2023-acuerdo",
+    "origin": "acuerdo_gobierno",
+    "nature": "legislativa",
+    "promise": "Reformar la ley de Administración Local y aprobar una Ley de Régimen Local.",
+    "promisedAt": "2023-10-24",
+    "citation": {
+      "sourceId": "acuerdo-psoe-sumar-2023",
+      "pdfPage": 40,
+      "quote": "Reformaremos en paralelo la ley de Racionalización y Sostenibilidad de la Administración Local, estableciendo un marco competencial y financiero que garantice el principio de suficiencia financiera de forma que se asegure la prestación de unos servicios públicos de calidad por los municipios."
+    },
+    "assessment": {
+      "status": "no_cumplido",
+      "criterion": "Compromiso legislativo: cumplido si se publica en el BOE una norma estatal con rango de ley con ese objeto antes de la disolución (6-10-2026).",
+      "officialActions": [],
+      "outcome": "No consta en el BOE una norma estatal con este objeto ni una votación final en el Pleno.",
+      "limits": "La disolución de las Cortes hizo decaer las iniciativas en tramitación.",
+      "assessedAt": "2026-11-03",
+      "checks": [
+        "Búsqueda de «ley 27/2013» + «se modifica» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): 2 resultado(s): Real Decreto-ley 15/2025; Real Decreto-ley 13/2026.",
+        "Búsqueda de «ley de regimen local» en el texto íntegro de las 92 normas estatales con rango de ley publicadas en el BOE entre el 17-11-2023 y la disolución (6-10-2026): sin resultados.",
+        "Votaciones del Pleno de la XV Legislatura: sin votación final de una ley con este objeto."
+      ],
+      "review": {
+        "status": "pendiente",
+        "preparedBy": "Asistente de IA (Claude) con fuentes oficiales",
+        "preparedAt": "2026-11-03"
+      }
     }
   }
 ]

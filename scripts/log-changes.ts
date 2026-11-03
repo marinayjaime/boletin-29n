@@ -46,6 +46,14 @@ const entries: Entry[] = [];
 for (const f of changed) {
   const a = old(f);
   const b = cur(f);
+  if (f === "data/data-status.json") {
+    // Solo se anotan los fallos nuevos: la web sigue con los datos anteriores, pero el fallo queda registrado.
+    const before = (a?.datasets ?? {}) as Record<string, { lastError?: { at: string; message: string } }>;
+    for (const [id, d] of Object.entries((b.datasets ?? {}) as Record<string, { label: string; lastError?: { at: string; message: string } }>))
+      if (d.lastError && d.lastError.at !== before[id]?.lastError?.at)
+        entries.push({ date: today, entity: "Importacion", entityId: id, action: "verificacion", detail: `Fallo en «${d.label}»: ${d.lastError.message}. Se mantienen los últimos datos correctos.`, by: BY });
+    continue;
+  }
   if (f === "data/boe-leyes.json") {
     const known = new Set((a?.items ?? []).map((x: { id: string }) => x.id));
     const nuevos = b.items.filter((x: { id: string }) => !known.has(x.id));

@@ -1,6 +1,70 @@
 [
   {
     "date": "2026-11-03",
+    "entity": "SourceDocument",
+    "entityId": "acuerdo-psoe-sumar-2023",
+    "action": "alta",
+    "detail": "Acuerdo de Gobierno PSOE–Sumar «España avanza» (oct. 2023): copia archivada del PDF de psoe.es, SHA-256 y texto por página (48 págs.).",
+    "by": "Asistente de IA (Claude)"
+  },
+  {
+    "date": "2026-11-03",
+    "entity": "HistoricalPromise",
+    "entityId": "psoe-2023-acuerdo",
+    "action": "alta",
+    "detail": "20 compromisos nuevos del acuerdo de Gobierno y citas adicionales en 22 fichas existentes. La ficha duplicada del SMI (Sánchez) se funde con la del programa.",
+    "by": "Asistente de IA (Claude)"
+  },
+  {
+    "date": "2026-11-03",
+    "entity": "HistoricalPromise",
+    "entityId": "psoe-2023-ley-zonas-renovables",
+    "action": "modificacion",
+    "detail": "De «no cumplido» a «cumplido parcialmente»: el RDL 7/2026 (convalidado) regula las zonas de aceleración renovable. No se detectó antes porque solo se revisaban títulos.",
+    "by": "Asistente de IA (Claude)"
+  },
+  {
+    "date": "2026-11-03",
+    "entity": "HistoricalPromise",
+    "entityId": "psoe-2023-ley-lobbies",
+    "action": "modificacion",
+    "detail": "Sigue «no cumplido», con la explicación corregida: hubo un RDL 21/2026 sobre grupos de interés, pero el Congreso no lo convalidó.",
+    "by": "Asistente de IA (Claude)"
+  },
+  {
+    "date": "2026-11-03",
+    "entity": "RegistroBOE",
+    "entityId": "boe-leyes",
+    "action": "modificacion",
+    "detail": "Corrección: de las 384 normas antes descritas como «con rango de ley», 288 son leyes autonómicas. Ahora se distingue el ámbito y se añade la reforma del artículo 49 de la Constitución.",
+    "by": "Asistente de IA (Claude)"
+  },
+  {
+    "date": "2026-11-03",
+    "entity": "HistoricalPromise",
+    "entityId": "revision",
+    "action": "modificacion",
+    "detail": "Cada evaluación incluye la lista de lo comprobado y un estado de revisión verificable; las 65 están pendientes de revisión humana.",
+    "by": "Asistente de IA (Claude)"
+  },
+  {
+    "date": "2026-11-03",
+    "entity": "Interfaz",
+    "entityId": "test",
+    "action": "modificacion",
+    "detail": "El resultado del test muestra los cinco partidos por igual, en total y por tema, con la base de cada porcentaje visible. Se elimina el «partido con el que más coincides».",
+    "by": "Asistente de IA (Claude)"
+  },
+  {
+    "date": "2026-11-03",
+    "entity": "Datos",
+    "entityId": "atribucion",
+    "action": "modificacion",
+    "detail": "Corrección de atribución: las entradas antes firmadas por «Equipo editorial» las preparó un asistente de IA (Claude) y no han tenido revisión humana. Las evaluaciones de promesas incluyen ahora un estado de revisión verificable.",
+    "by": "Asistente de IA (Claude)"
+  },
+  {
+    "date": "2026-11-03",
     "entity": "Enlaces",
     "entityId": "link-report",
     "action": "verificacion",
@@ -21,7 +85,7 @@
     "entityId": "polls",
     "action": "verificacion",
     "detail": "Las 16 encuestas se contrastan con su publicación original: 3 verificadas, 1 corregida (Hamalgama), 1 horquilla, 1 de partido (Vox), 8 con reparto parcial y 2 no verificables. Solo las verificadas y completas sirven de escenario principal.",
-    "by": "Equipo editorial"
+    "by": "Asistente de IA (Claude)"
   },
   {
     "date": "2026-11-02",
@@ -29,7 +93,7 @@
     "entityId": "congreso-ds-15-pl-7",
     "action": "alta",
     "detail": "Diario de Sesiones del debate de investidura (15 nov. 2023): descarga, SHA-256 y texto por página para citar los anuncios de Pedro Sánchez.",
-    "by": "Equipo editorial"
+    "by": "Asistente de IA (Claude)"
   },
   {
     "date": "2026-11-02",
@@ -37,7 +101,7 @@
     "entityId": "psoe-2023-ampliacion",
     "action": "alta",
     "detail": "18 fichas nuevas: 12 anuncios de Sánchez en la investidura y 6 compromisos del programa (vivienda, SMI, IVA, fiscalidad, permisos, becas, transporte, pensiones). Las medidas ejecutivas sin evidencia quedan «no verificables», no «no cumplidas».",
-    "by": "Equipo editorial"
+    "by": "Asistente de IA (Claude)"
   },
   {
     "date": "2026-11-02",
@@ -45,7 +109,7 @@
     "entityId": "boe-leyes",
     "action": "importacion",
     "detail": "El registro del BOE incluye ahora los reales decretos (3.938) además de las 384 normas con rango de ley.",
-    "by": "Equipo editorial"
+    "by": "Asistente de IA (Claude)"
   },
   {
     "date": "2026-11-02",
@@ -53,7 +117,7 @@
     "entityId": "pp-programa-2023",
     "action": "verificacion",
     "detail": "Descarga del documento, cálculo de SHA-256 y extracción de texto por página.",
-    "by": "Equipo editorial"
+    "by": "Asistente de IA (Claude)"
   },
   {
     "date": "2026-11-02",
@@ -61,7 +125,7 @@
     "entityId": "psoe-programa-2023",
     "action": "verificacion",
     "detail": "Descarga del documento, cálculo de SHA-256 y extracción de texto por página.",
-    "by": "Equipo editorial"
+    "by": "Asistente de IA (Claude)"
   },
   {
     "date": "2026-11-02",
@@ -69,7 +133,7 @@
     "entityId": "sumar-programa-2023",
     "action": "verificacion",
     "detail": "Descarga del documento, cálculo de SHA-256 y extracción de texto por página.",
-    "by": "Equipo editorial"
+    "by": "Asistente de IA (Claude)"
   },
   {
     "date": "2026-11-02",
@@ -77,7 +141,7 @@
     "entityId": "vox-programa-2023",
     "action": "verificacion",
     "detail": "Descarga del documento, cálculo de SHA-256 y extracción de texto por página.",
-    "by": "Equipo editorial"
+    "by": "Asistente de IA (Claude)"
   },
   {
     "date": "2026-11-02",
@@ -85,7 +149,7 @@
     "entityId": "podemos-programa-2019",
     "action": "verificacion",
     "detail": "Descarga del documento, cálculo de SHA-256 y extracción de texto por página.",
-    "by": "Equipo editorial"
+    "by": "Asistente de IA (Claude)"
   },
   {
     "date": "2026-11-02",
@@ -93,7 +157,7 @@
     "entityId": "podemos-europeas-2024",
     "action": "verificacion",
     "detail": "Descarga del documento, cálculo de SHA-256 y extracción de texto por página.",
-    "by": "Equipo editorial"
+    "by": "Asistente de IA (Claude)"
   },
   {
     "date": "2026-11-02",
@@ -101,7 +165,7 @@
     "entityId": "boe-candidaturas-2026",
     "action": "verificacion",
     "detail": "Descarga del documento, cálculo de SHA-256 y extracción de texto por página.",
-    "by": "Equipo editorial"
+    "by": "Asistente de IA (Claude)"
   },
   {
     "date": "2026-11-02",
@@ -109,7 +173,7 @@
     "entityId": "boe-rd-806-2026",
     "action": "verificacion",
     "detail": "Descarga del documento, cálculo de SHA-256 y extracción de texto por página.",
-    "by": "Equipo editorial"
+    "by": "Asistente de IA (Claude)"
   },
   {
     "date": "2026-11-02",
@@ -117,7 +181,7 @@
     "entityId": "*",
     "action": "alta",
     "detail": "Alta inicial de propuestas con cotejo literal contra el texto de cada página citada (test automático quotes.test.ts).",
-    "by": "Equipo editorial"
+    "by": "Asistente de IA (Claude)"
   },
   {
     "date": "2026-11-02",

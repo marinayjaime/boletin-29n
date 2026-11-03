@@ -4,7 +4,8 @@
  * y toda cita aparece literalmente en la página indicada.
  */
 import { getCorpus, getIndicators, getParties, getPromises, getProposals, getQuiz, getSeries, getSources, getTopics } from "./data";
-import { getVotes, getCommonalities, getPolls, getPromiseCoverage, getChangelog } from "./data";
+import { reviewProblems } from "./review";
+import { getVotes, getCommonalities, getPolls, getPromiseCoverage, getChangelog, getBoeLaws } from "./data";
 
 export function quoteInPage(quote: string, pageText: string | undefined) {
   if (!pageText) return false;
@@ -70,17 +71,51 @@ export function validateAll() {
     }
   }
 
+  const boeById = new Map(getBoeLaws().items.map((x) => [x.id, x]));
+  const plenary = getVotes().votes;
   for (const pr of getPromises()) {
     const s = sources.get(pr.citation.sourceId);
     if (!s) errors.push(`promesa ${pr.id}: fuente desconocida`);
     else {
       if (!s.partyId || !pr.partyIds.includes(s.partyId)) errors.push(`promesa ${pr.id}: ATRIBUCIÓN — la fuente es de ${s.partyId}`);
+      if (s.cycle === "acuerdo-gobierno-2023" && !(pr.partyIds.includes("psoe") && pr.partyIds.includes("frente-amplio"))) errors.push(`promesa ${pr.id}: el acuerdo de coalición se atribuye a PSOE y a Sumar (Frente Amplio)`);
       if (!quoteInPage(pr.citation.quote, corpus.get(s.id)?.[String(pr.citation.pdfPage)])) errors.push(`promesa ${pr.id}: la cita no aparece en la página indicada`);
     }
     // Regla editorial: solo un compromiso que exige una ley puede declararse incumplido por ausencia de norma.
     if (pr.nature !== "legislativa" && pr.assessment.status === "no_cumplido" && pr.assessment.officialActions.length === 0) errors.push(`promesa ${pr.id}: una medida ejecutiva o de resultado no puede ser «no cumplida» solo por no encontrar una ley`);
-    if (pr.assessment.status !== "no_verificable" && pr.assessment.officialActions.length === 0 && !(pr.nature === "legislativa" && pr.assessment.status === "no_cumplido" && pr.series?.startsWith("psoe-2023"))) errors.push(`promesa ${pr.id}: un estado concluyente exige acciones oficiales documentadas`);
+    if (pr.assessment.status !== "no_verificable" && pr.assessment.officialActions.length === 0 && !(pr.nature === "legislativa" && pr.assessment.status === "no_cumplido" && pr.assessment.checks.some((c) => c.includes("texto íntegro"))))
+      errors.push(`promesa ${pr.id}: un estado concluyente exige acciones oficiales o una búsqueda documentada en el texto íntegro de las normas`);
+    // El mismo compromiso en otros documentos: cada cita debe existir en su página.
+    for (const c of pr.alsoIn ?? []) {
+      const src = sources.get(c.sourceId);
+      if (!src) errors.push(`promesa ${pr.id}: fuente adicional desconocida ${c.sourceId}`);
+      else if (!quoteInPage(c.quote, corpus.get(src.id)?.[String(c.pdfPage)])) errors.push(`promesa ${pr.id}: la cita adicional no aparece en ${c.sourceId} p. ${c.pdfPage}`);
+      if (c.sourceId === pr.citation.sourceId && c.pdfPage === pr.citation.pdfPage) errors.push(`promesa ${pr.id}: documento adicional repetido`);
+    }
+    // Revisión: solo cuenta como humana si hay una persona identificada distinta de quien la preparó.
+    for (const m of reviewProblems(pr.assessment.review)) errors.push(`promesa ${pr.id}: ${m}`);
+    // Un real decreto-ley solo prueba cumplimiento si el Congreso lo convalidó.
+    if (pr.assessment.status === "cumplido" || pr.assessment.status === "cumplido_parcial") {
+      for (const a of pr.assessment.officialActions) {
+        const id = a.url.match(/BOE-A-\d{4}-\d+/)?.[0];
+        const law = id ? boeById.get(id) : undefined;
+        const n = law?.kind === "real_decreto_ley" ? law.title.match(/^Real Decreto-ley (\d+\/\d{4})/)?.[1] : undefined;
+        if (!n) continue;
+        const conv = plenary.filter((v) => v.type === "real_decreto_ley" && v.title.startsWith(`Real Decreto-ley ${n},`));
+        const ok = conv.some((v) => v.result === "aprobada");
+        const documentedRejection = pr.assessment.officialActions.some((x) => /no convalida/i.test(x.text) && x.text.includes(n));
+        if (!ok && !(pr.assessment.status === "cumplido_parcial" && documentedRejection)) errors.push(`promesa ${pr.id}: el Real Decreto-ley ${n} no consta convalidado`);
+      }
+    }
   }
+  // Una misma cita no puede sostener dos fichas distintas (evita duplicar promesas).
+  const seenQuote = new Map<string, string>();
+  for (const pr of getPromises())
+    for (const c of [pr.citation, ...(pr.alsoIn ?? [])]) {
+      const k = `${c.sourceId}|${c.quote}`;
+      if (seenQuote.has(k) && seenQuote.get(k) !== pr.id) errors.push(`promesa ${pr.id}: cita duplicada con ${seenQuote.get(k)}`);
+      seenQuote.set(k, pr.id);
+    }
 
   for (const i of getIndicators()) {
     const s = getSeries(i.id);

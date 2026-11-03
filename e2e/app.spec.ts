@@ -48,12 +48,22 @@ test("test: temas, responder, revisar, porcentajes y borrar sin enviar datos", a
   for (let i = 0; i < 22; i++) await page.getByRole("button", { name: /Siguiente|Revisar/ }).click();
   await expect(page.getByRole("heading", { name: "Revisa tus respuestas" })).toBeVisible();
   await page.getByRole("button", { name: "Ver mi resultado" }).click();
-  await expect(page.getByRole("heading", { name: "Tu resultado" })).toBeVisible();
-  const winner = page.getByRole("region", { name: "Partido con mayor coincidencia" });
-  await expect(winner.getByText(/Partido con el que más coincides|Empate/)).toBeVisible();
-  await expect(winner.getByText(/^\d+ %$/).first()).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Tus coincidencias" })).toBeVisible();
+  // Los cinco partidos, con el mismo formato y en orden alfabético; ninguno destacado como ganador.
+  const cards = page.getByRole("region", { name: /Coincidencia global/ }).locator("li[data-party]");
+  await expect(cards).toHaveCount(5);
+  const names = await cards.evaluateAll((els) => els.map((e) => e.getAttribute("data-party")));
+  expect(names).toEqual(["Frente Amplio", "Podemos", "PP", "PSOE", "Vox"]);
+  await expect(page.getByText(/más coincides|mayor coincidencia|ganador|deberías votar|partido ideal/i)).toHaveCount(0);
+  await expect(cards.first().getByText(/\d+ de \d+ comparables/)).toBeVisible();
+  // Matriz por tema: cada casilla abre las preguntas, las posturas y las fuentes.
+  const table = page.getByRole("table", { name: "Coincidencias por tema y partido" });
+  await expect(table.getByRole("columnheader").filter({ hasText: /\S/ })).toHaveCount(5);
+  await table.getByRole("cell").first().click();
+  const sheet = page.getByRole("dialog");
+  await expect(sheet.getByText("Resultado").first()).toBeVisible();
+  await sheet.getByRole("button", { name: /Cerrar/ }).click();
   await expect(page.getByText("¿Cómo se calcula?")).toBeVisible();
-  await expect(page.getByText(/ranking personal|partido ideal|deberías votar/i)).toHaveCount(0);
   await page.getByRole("button", { name: "Borrar mis respuestas" }).click();
   expect(await page.evaluate(() => sessionStorage.getItem("boletin29n.test.v1"))).toBeNull();
   expect(posts).toEqual([]);
@@ -80,8 +90,18 @@ test("puntos en común, organigrama y promesas 2023", async ({ page }) => {
   await expect(page.getByText("Carlos Cuerpo Caballero")).toBeVisible();
   await page.goto("/promesas");
   await expect(page.getByText("frases de compromiso identificadas")).toBeVisible();
-  await page.getByRole("button", { name: /Aprobar la Ley de Derecho de Defensa/ }).click();
-  await expect(page.getByRole("dialog").getByText(/Ley Orgánica 5\/2024/).first()).toBeVisible();
+  await expect(page.getByText(/evaluaciones revisadas por una persona/)).toBeVisible();
+  // Filtro por documento: el acuerdo PSOE–Sumar de octubre de 2023.
+  await page.getByRole("group", { name: "Documento de origen" }).getByRole("button", { name: /Acuerdo PSOE–Sumar/ }).click();
+  await page.getByRole("button", { name: /jornada laboral máxima a 37,5/ }).first().click();
+  const d = page.getByRole("dialog");
+  await expect(d.getByText(/en 3 documentos/)).toBeVisible();
+  await expect(d.getByText("Pendiente de revisión humana")).toBeVisible();
+  await d.getByText(/Qué se ha comprobado/).click();
+  await expect(d.getByText(/texto íntegro/).first()).toBeVisible();
+  await d.getByRole("button", { name: /Cerrar/ }).click();
+  await page.goto("/observatorio");
+  await expect(page.getByRole("list", { name: "Estado de los datos" }).getByText(/Eurostat · actualizado/)).toBeVisible();
 });
 
 test("observatorio: serie, tabla y CSV", async ({ page }) => {

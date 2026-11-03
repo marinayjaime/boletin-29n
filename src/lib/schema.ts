@@ -146,7 +146,7 @@ export const ProposalSchema = z.object({
   context: z.string().optional(),
   /**
    * Clave de coincidencia documentada: dos propuestas con la misma clave plantean lo mismo
-   * (asignado manualmente en revisión editorial). Lo usa el modo «Solo diferencias».
+   * (asignado por quien prepara los datos; hoy, un asistente de IA sin revisión humana). Lo usa el modo «Solo diferencias».
    */
   positionKey: z.string().optional(),
   status: z.enum(["publicado", "pendiente_revision", "rechazado"]),
@@ -322,6 +322,8 @@ export const HistoricalPromiseSchema = z.object({
   promise: z.string(),
   promisedAt: isoDate,
   citation: CitationSchema,
+  /** El mismo compromiso en otros documentos (programa, acuerdo de Gobierno, investidura): una ficha, varias fuentes. */
+  alsoIn: z.array(CitationSchema).optional(),
   assessment: z.object({
     status: PromiseStatusSchema,
     criterion: z.string(),
@@ -329,7 +331,20 @@ export const HistoricalPromiseSchema = z.object({
     outcome: z.string(),
     limits: z.string(),
     assessedAt: isoDate,
-    reviewer: z.string(),
+    /** Qué se ha comprobado y dónde (búsquedas, registros, votaciones). */
+    checks: z.array(z.string()).min(1),
+    /**
+     * Estado de revisión verificable. «pendiente»: preparada (p. ej. por un asistente de IA), sin revisión humana.
+     * «revisada»: una persona identificada la ha comprobado contra las fuentes. «corregida»: la revisión cambió la evaluación.
+     */
+    review: z.object({
+      status: z.enum(["pendiente", "revisada", "corregida"]),
+      preparedBy: z.string(),
+      preparedAt: isoDate,
+      reviewedBy: z.string().optional(),
+      reviewedAt: isoDate.optional(),
+      notes: z.string().optional(),
+    }),
   }),
 });
 export type HistoricalPromise = z.infer<typeof HistoricalPromiseSchema>;

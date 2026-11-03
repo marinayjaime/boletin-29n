@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { getIndicators, getSeries } from "@/lib/data";
 import { PageHero } from "@/components/ui";
 import { Observatory, type Kpi } from "@/components/observatory";
+import { DataStatus } from "@/components/data-status";
 
 export const metadata: Metadata = { title: "Datos de España", description: "Series oficiales de economía, trabajo, vivienda, pensiones, sanidad, educación y sociedad, con comparación europea y por comunidades." };
 
@@ -21,6 +22,7 @@ export default function Page() {
     <>
       <PageHero eyebrow="Observatorio" title="España, en datos" sub={`${indicators.length} indicadores oficiales. Elige uno y juega con el periodo, los países y las comunidades.`} />
       <div className="mx-auto max-w-[1320px] px-4 md:px-8">
+        <DataStatus datasets={["eurostat"]} editorial={[]} />
         <Suspense fallback={<p className="font-bold text-ink-3">Cargando…</p>}>
           <Observatory indicators={indicators} events={read("events.json")} pending={read("pending-indicators.json")} kpis={kpis} />
         </Suspense>

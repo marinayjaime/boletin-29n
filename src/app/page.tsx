@@ -154,7 +154,7 @@ export default function Home() {
               Test
               <br />a ciegas
             </p>
-            <p className="mt-3 max-w-xs text-lg font-bold">28 preguntas sin etiquetas. Al final, el partido con el que más coincides y sus fuentes.</p>
+            <p className="mt-3 max-w-xs text-lg font-bold">28 preguntas sin etiquetas. Al final, tus coincidencias con los cinco partidos, tema a tema.</p>
             <span className="btn btn-primary mt-6">
               Empezar <ArrowRight size={18} aria-hidden />
             </span>

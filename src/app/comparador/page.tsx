@@ -4,6 +4,7 @@ import { getParties, getProposals, getSources, getTopics } from "@/lib/data";
 import { alphabetical } from "@/lib/compare";
 import { Comparator } from "@/components/comparator";
 import { PageHero, Disclosure } from "@/components/ui";
+import { DataStatus } from "@/components/data-status";
 
 export const metadata: Metadata = { title: "Comparador", description: "Compara entre dos y cinco partidos, tema a tema, con la cita original de cada propuesta." };
 
@@ -12,6 +13,7 @@ export default function Page() {
     <>
       <PageHero eyebrow="Comparador" title="¿Qué propone cada uno?" sub="Elige partidos y tema. Toca una propuesta para ver la cita y el documento." />
       <div className="mx-auto max-w-[1320px] px-4 md:px-8">
+        <DataStatus datasets={[]} editorial={["proposals"]} />
         <Suspense fallback={<p className="py-10 font-bold text-ink-3">Cargando…</p>}>
           <Comparator parties={alphabetical(getParties())} topics={getTopics()} proposals={getProposals()} sources={getSources()} />
         </Suspense>

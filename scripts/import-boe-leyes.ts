@@ -9,6 +9,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import { recordRun } from "./lib/status";
 
 const root = process.cwd();
 const cache = path.join(root, ".cache", "boe");
@@ -47,6 +48,7 @@ async function sumario(day: string): Promise<string> {
 async function main() {
   if (from > to) {
     console.log(`Registro del BOE al día (hasta ${prev?.to}).`);
+    recordRun("boe", true, `Al día hasta ${prev?.to}`);
     return;
   }
   const out: Item[] = incremental && prev ? [...prev.items] : [];
@@ -57,7 +59,7 @@ async function main() {
       const id = m[1].match(/<identificador>(.*?)<\/identificador>/)?.[1];
       const title = m[1].match(/<titulo>([\s\S]*?)<\/titulo>/)?.[1]?.replace(/\s+/g, " ").trim();
       if (!id || !title) continue;
-      const kind = /^Ley Orgánica \d+\/\d{4}/.test(title) ? "ley_organica" : /^Ley \d+\/\d{4}/.test(title) ? "ley" : /^Real Decreto-ley \d+\/\d{4}/.test(title) ? "real_decreto_ley" : /^Real Decreto \d+\/\d{4}/.test(title) ? "real_decreto" : null;
+      const kind = /^Reforma del artículo \d+(\.\d+)? de la Constitución/.test(title) ? "reforma_constitucional" : /^Ley Orgánica \d+\/\d{4}/.test(title) ? "ley_organica" : /^Ley \d+\/\d{4}/.test(title) ? "ley" : /^Real Decreto-ley \d+\/\d{4}/.test(title) ? "real_decreto_ley" : /^Real Decreto \d+\/\d{4}/.test(title) ? "real_decreto" : null;
       if (kind) out.push({ id, date: day, title, kind, url: `https://www.boe.es/diario_boe/txt.php?id=${id}` });
     }
   }
@@ -65,5 +67,10 @@ async function main() {
   const start = incremental && prev ? prev.from : from;
   fs.writeFileSync(OUT, JSON.stringify({ from: start, to, importedAt: new Date().toISOString(), source: "https://www.boe.es/datosabiertos/api/boe/sumario/", items: uniq }, null, 1));
   console.log(`${uniq.length} normas entre ${start} y ${to} (${uniq.length - (incremental && prev ? prev.items.length : 0)} nuevas)`);
+  recordRun("boe", true, `Registro hasta ${to}`);
 }
-main();
+main().catch((e) => {
+  console.error(e);
+  recordRun("boe", false, (e as Error).message);
+  process.exitCode = 1;
+});

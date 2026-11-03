@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-11-03T07:35:32.708Z",
+    "importer": "vigilante-programs",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-03T07:35:18.587Z",
+    "importer": "vigilante-government",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-03T07:35:17.801Z",
+    "importer": "vigilante-polls",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-03T07:35:13.309Z",
+    "importer": "boe-texto",
+    "ok": 1,
+    "failures": []
+  },
+  {
     "date": "2026-11-03T07:00:48.955Z",
     "importer": "eurostat",
     "ok": 33,

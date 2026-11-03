@@ -24,6 +24,35 @@ const ORIGIN: Record<Origin, { label: string; short: string; first: string }> = 
   declaracion: { label: "Pedro Sánchez · discurso de investidura", short: "Sánchez", first: "Anuncio de Pedro Sánchez en el Congreso" },
   acuerdo_gobierno: { label: "Acuerdo del Gobierno de coalición", short: "Coalición", first: "Compromiso del acuerdo de Gobierno" },
 };
+/** Los tres documentos del PSOE de 2023 que se distinguen. Una ficha puede aparecer en varios. */
+const DOCS = [
+  { id: "psoe-programa-2023", key: "P", label: "Programa del PSOE", date: "jul. 2023" },
+  { id: "acuerdo-psoe-sumar-2023", key: "A", label: "Acuerdo PSOE–Sumar", date: "oct. 2023" },
+  { id: "congreso-ds-15-pl-7", key: "S", label: "Sánchez en la investidura", date: "nov. 2023" },
+] as const;
+type DocId = (typeof DOCS)[number]["id"];
+const docsOf = (p: HistoricalPromise) => new Set([p.citation.sourceId, ...(p.alsoIn ?? []).map((c) => c.sourceId)]);
+const inPsoe2023 = (p: HistoricalPromise) => DOCS.some((d) => docsOf(p).has(d.id));
+
+function DocDots({ p }: { p: HistoricalPromise }) {
+  const has = docsOf(p);
+  return (
+    <span className="flex gap-1" aria-label={`Aparece en: ${DOCS.filter((d) => has.has(d.id)).map((d) => d.label).join(", ")}`}>
+      {DOCS.map((d) => (
+        <span key={d.id} title={d.label} aria-hidden className={`grid h-6 w-6 place-items-center rounded-full text-[0.65rem] font-black ${has.has(d.id) ? "bg-ink text-bg" : "bg-surface-2 text-ink-3 line-through"}`}>
+          {d.key}
+        </span>
+      ))}
+    </span>
+  );
+}
+
+const REVIEW: Record<HistoricalPromise["assessment"]["review"]["status"], { label: string; tone: string }> = {
+  pendiente: { label: "Pendiente de revisión humana", tone: "var(--partial-ink)" },
+  revisada: { label: "Revisada por una persona", tone: "var(--yes-ink)" },
+  corregida: { label: "Corregida en revisión humana", tone: "var(--yes-ink)" },
+};
+
 const NATURE: Record<HistoricalPromise["nature"], string> = {
   legislativa: "Exige aprobar una ley",
   ejecutiva: "Medida del Gobierno (decreto, plan o presupuesto)",
@@ -70,9 +99,13 @@ function Donut({ counts, total, label }: { counts: Record<Status, number>; total
   );
 }
 
-function Evidence({ p, source, parties, topics }: { p: HistoricalPromise; source?: SourceDocument; parties: Record<string, Party>; topics: Record<string, PolicyTopic> }) {
+function Evidence({ p, sources, parties, topics }: { p: HistoricalPromise; sources: Record<string, SourceDocument>; parties: Record<string, Party>; topics: Record<string, PolicyTopic> }) {
+  const cites = [p.citation, ...(p.alsoIn ?? [])];
+  const rv = p.assessment.review;
   const v = partyVars(p.partyIds[0]);
-  const timeline = [{ date: p.promisedAt, text: ORIGIN[p.origin].first, url: "", kind: "promesa" as const }, ...p.assessment.officialActions.map((a) => ({ ...a, kind: "accion" as const }))].sort((a, b) => a.date.localeCompare(b.date));
+  const docDates: Record<string, string> = { "psoe-programa-2023": "2023-07-07", "acuerdo-psoe-sumar-2023": "2023-10-24", "congreso-ds-15-pl-7": "2023-11-15" };
+  const firsts = cites.map((c) => ({ date: docDates[c.sourceId] ?? p.promisedAt, text: `Compromiso en: ${DOCS.find((d) => d.id === c.sourceId)?.label ?? sources[c.sourceId]?.title ?? ORIGIN[p.origin].first}`, url: "", kind: "promesa" as const }));
+  const timeline = [...firsts, ...p.assessment.officialActions.map((a) => ({ ...a, kind: "accion" as const }))].sort((a, b) => a.date.localeCompare(b.date));
   return (
     <article className="space-y-6">
       <header className="rounded-[24px] p-5" style={{ background: v.primary, color: v.on }}>
@@ -81,7 +114,7 @@ function Evidence({ p, source, parties, topics }: { p: HistoricalPromise; source
         </p>
         <h2 className="display mt-3 text-3xl">{p.promise}</h2>
         <p className="mt-2 text-sm font-bold">
-          {p.series?.startsWith("psoe-2023") ? `${ORIGIN[p.origin].label} · ${NATURE[p.nature]}` : ATTR[p.attribution]}
+          {inPsoe2023(p) ? NATURE[p.nature] : ATTR[p.attribution]}
           {p.government ? ` · ${p.government}` : ""}
         </p>
       </header>
@@ -89,11 +122,17 @@ function Evidence({ p, source, parties, topics }: { p: HistoricalPromise; source
 
       <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
         <div className="rounded-2xl bg-surface p-4">
-          <p className="eyebrow">Lo prometido</p>
-          <p className="mt-2 font-semibold">«{p.citation.quote}»</p>
-          <p className="mt-2 text-xs font-bold text-ink-3">
-            {formatDate(p.promisedAt)} · pág. {p.citation.pdfPage}
-          </p>
+          <p className="eyebrow">Lo prometido {cites.length > 1 ? `· en ${cites.length} documentos` : ""}</p>
+          <ul className="mt-2 space-y-3">
+            {cites.map((c, k) => (
+              <li key={k}>
+                <p className="text-xs font-extrabold" style={{ color: v.strong }}>
+                  {DOCS.find((d) => d.id === c.sourceId)?.label ?? sources[c.sourceId]?.title} · pág. {c.pdfPage}
+                </p>
+                <p className="font-semibold">«{c.quote}»</p>
+              </li>
+            ))}
+          </ul>
         </div>
         <div className="rounded-2xl p-4" style={{ background: `color-mix(in oklab, ${STATUS_STYLE[p.assessment.status].color} 12%, var(--surface))` }}>
           <p className="eyebrow">Lo que consta</p>
@@ -127,11 +166,29 @@ function Evidence({ p, source, parties, topics }: { p: HistoricalPromise; source
       <div className="space-y-2">
         <Disclosure summary="Criterio de evaluación">{p.assessment.criterion}</Disclosure>
         <Disclosure summary="Límites de la evaluación">{p.assessment.limits}</Disclosure>
-        <Disclosure summary="Documento del compromiso">{source && <SourceLinks source={source} page={p.citation.pdfPage} />}</Disclosure>
+        <Disclosure summary={`Qué se ha comprobado (${p.assessment.checks.length})`}>
+          <ul className="list-disc space-y-1.5 pl-5 text-sm">
+            {p.assessment.checks.map((c, k) => (
+              <li key={k}>{c}</li>
+            ))}
+          </ul>
+        </Disclosure>
+        <Disclosure summary={`Documento${cites.length > 1 ? "s" : ""} del compromiso`}>
+          <div className="space-y-4">
+            {cites.map((c, k) => (sources[c.sourceId] ? <SourceLinks key={k} source={sources[c.sourceId]} page={c.pdfPage} /> : null))}
+          </div>
+        </Disclosure>
       </div>
-      <p className="text-xs font-semibold text-ink-3">
-        Evaluado el {formatDate(p.assessment.assessedAt)} · {p.assessment.reviewer} · revisión humana, sin asignación automática.
-      </p>
+      <div className="rounded-2xl bg-surface-2 p-4 text-sm">
+        <p className="font-extrabold" style={{ color: REVIEW[rv.status].tone }}>
+          {REVIEW[rv.status].label}
+        </p>
+        <p className="mt-1 font-semibold text-ink-2">
+          Preparada por {rv.preparedBy} el {formatDate(rv.preparedAt)}.
+          {rv.reviewedBy && rv.reviewedAt ? ` Revisada por ${rv.reviewedBy} el ${formatDate(rv.reviewedAt)}.` : " Nadie la ha revisado todavía."}
+          {rv.notes ? ` ${rv.notes}` : ""}
+        </p>
+      </div>
     </article>
   );
 }
@@ -157,18 +214,18 @@ export function PromisesBoard({
   const [status, setStatus] = useState<Status | "">("");
   const [topic, setTopic] = useState("");
   const [party, setParty] = useState("");
-  const [origin, setOrigin] = useState<Origin | "">("");
+  const [origin, setOrigin] = useState<DocId | "">("");
   const [open, setOpen] = useState<string | null>(null);
   const pmap = Object.fromEntries(parties.map((p) => [p.id, p]));
   const tmap = Object.fromEntries(topics.map((t) => [t.id, t]));
   const smap = Object.fromEntries(sources.map((s) => [s.id, s]));
 
-  const psoe = promises.filter((p) => p.series?.startsWith("psoe-2023"));
-
-  const others = promises.filter((p) => !p.series?.startsWith("psoe-2023"));
+  const psoe = promises.filter(inPsoe2023);
+  const others = promises.filter((p) => !inPsoe2023(p));
+  const reviewed = psoe.filter((p) => p.assessment.review.status !== "pendiente").length;
   const base = tab === "psoe" ? psoe : others;
-  const list = useMemo(() => base.filter((p) => (!status || p.assessment.status === status) && (!topic || p.topicId === topic) && (!party || p.partyIds.includes(party)) && (!origin || p.origin === origin)), [base, status, topic, party, origin]);
-  const scope = origin ? psoe.filter((p) => p.origin === origin) : psoe;
+  const list = useMemo(() => base.filter((p) => (!status || p.assessment.status === status) && (!topic || p.topicId === topic) && (!party || p.partyIds.includes(party)) && (!origin || docsOf(p).has(origin))), [base, status, topic, party, origin]);
+  const scope = origin ? psoe.filter((p) => docsOf(p).has(origin)) : psoe;
   const counts = Object.fromEntries(ORDER.map((s) => [s, scope.filter((p) => p.assessment.status === s).length])) as Record<Status, number>;
   const laws = scope.flatMap((p) => p.assessment.officialActions.filter((a) => a.url.includes("boe.es")).map((a) => ({ ...a, p }))).sort((a, b) => a.date.localeCompare(b.date));
   const current = promises.find((p) => p.id === open);
@@ -204,12 +261,32 @@ export function PromisesBoard({
         <motion.div key={tab} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}>
           {tab === "psoe" && (
             <>
-              <div className="mt-6 flex flex-wrap gap-2" role="group" aria-label="Procedencia de la promesa">
-                {([["", "Todas", psoe.length], ...(Object.keys(ORIGIN) as Origin[]).map((o) => [o, ORIGIN[o].label, psoe.filter((p) => p.origin === o).length] as const)] as const).map(([k, l, n]) => (
-                  <button key={k || "all"} type="button" disabled={!n} aria-pressed={origin === k} onClick={() => setOrigin(k as Origin | "")} className={`chip ${origin === k ? "!bg-ink !text-bg" : ""} disabled:opacity-40`}>
-                    {l} <span className="num">{n}</span>
-                  </button>
-                ))}
+              <div className="mt-6 grid grid-cols-2 gap-2 md:grid-cols-4" role="group" aria-label="Documento de origen">
+                {[{ id: "" as const, key: "∑", label: "Todas", date: "sin duplicados" }, ...DOCS].map((d) => {
+                  const n = d.id ? psoe.filter((p) => docsOf(p).has(d.id)).length : psoe.length;
+                  const on = origin === d.id;
+                  return (
+                    <button key={d.key} type="button" aria-pressed={on} onClick={() => setOrigin(d.id)} className={`flex items-center gap-3 rounded-[20px] p-3 text-left transition ${on ? "bg-ink text-bg" : "bg-surface shadow-[inset_0_0_0_1.5px_var(--line)] hover:bg-surface-2"}`}>
+                      <span className={`grid h-10 w-10 shrink-0 place-items-center rounded-full text-sm font-black ${on ? "bg-brand text-brand-ink" : "bg-surface-2"}`} aria-hidden>
+                        {d.key}
+                      </span>
+                      <span className="min-w-0">
+                        <span className="num block text-2xl leading-none">{n}</span>
+                        <span className="block text-sm font-extrabold leading-tight">{d.label}</span>
+                        <span className={`block text-xs font-bold ${on ? "" : "text-ink-3"}`}>{d.date}</span>
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+              <div className="mt-3 flex flex-wrap items-center gap-3 rounded-2xl bg-brand-soft px-4 py-3 text-sm font-bold" role="note">
+                <span className="num text-xl">
+                  {reviewed}/{psoe.length}
+                </span>
+                <span className="h-2 w-24 overflow-hidden rounded-full bg-surface" aria-hidden>
+                  <span className="block h-full bg-yes" style={{ width: `${(reviewed / Math.max(1, psoe.length)) * 100}%` }} />
+                </span>
+                <span>evaluaciones revisadas por una persona. Las demás las preparó un asistente de IA con fuentes oficiales y están pendientes de revisión.</span>
               </div>
               <div className="mt-4 grid gap-4 lg:grid-cols-[1.2fr_1fr]">
                 <div className="card p-6">
@@ -241,13 +318,13 @@ export function PromisesBoard({
                       <p>{coverage.method}</p>
                       <p className="mt-2">{coverage.legislativeMethod}</p>
                     </Disclosure>
-                    <Disclosure summary="Programa, Sánchez y Gobierno de coalición">Los anuncios de Pedro Sánchez proceden del Diario de Sesiones del debate de investidura (15 nov. 2023). El texto íntegro del acuerdo de coalición PSOE–Sumar no se ha localizado en una fuente oficial; por eso todavía no hay fichas de esa categoría.</Disclosure>
+                    <Disclosure summary="Tres documentos, sin duplicar">Programa electoral del PSOE (julio de 2023), acuerdo de Gobierno PSOE–Sumar «España avanza» (octubre de 2023) y discurso de investidura de Pedro Sánchez (Diario de Sesiones, 15 de noviembre de 2023). Si un compromiso aparece en varios, es una sola ficha con todas sus citas.</Disclosure>
                   </div>
                 </div>
                 <div className="card flex flex-col items-center gap-4 p-6 sm:flex-row lg:flex-col xl:flex-row">
                   <Donut counts={counts} total={scope.length} label="PROMESAS" />
                   <div className="w-full">
-                    <p className="eyebrow mb-3">{origin ? ORIGIN[origin].label : "Todas las promesas evaluadas"}</p>
+                    <p className="eyebrow mb-3">{origin ? DOCS.find((d) => d.id === origin)?.label : "Todas las promesas evaluadas"}</p>
                     <ul className="space-y-1">
                       {ORDER.filter((s) => counts[s]).map((s) => (
                         <li key={s}>
@@ -261,7 +338,7 @@ export function PromisesBoard({
                       ))}
                     </ul>
                     <p className="mt-3 text-xs font-semibold text-ink-3">
-                      Contrastado con {boeCount.toLocaleString("es-ES")} normas con rango de ley y {rdCount.toLocaleString("es-ES")} reales decretos publicados en el BOE hasta el {formatDate(coverage.periodEnd)}. Una medida ejecutiva sin evidencia se marca «no verificable», nunca «no cumplida».
+                      Contrastado con el texto íntegro de {boeCount.toLocaleString("es-ES")} normas estatales con rango de ley y los títulos de {rdCount.toLocaleString("es-ES")} reales decretos publicados en el BOE hasta el {formatDate(coverage.periodEnd)}. Una medida ejecutiva sin evidencia se marca «no verificable», nunca «no cumplida».
                     </p>
                   </div>
                 </div>
@@ -333,7 +410,12 @@ export function PromisesBoard({
                     </span>
                     <StatusBadge status={p.assessment.status} />
                   </span>
-                  {tab === "psoe" && <span className="mt-3 text-xs font-extrabold uppercase tracking-wide text-ink-3">{ORIGIN[p.origin].short} · {NATURE[p.nature]}</span>}
+                  {tab === "psoe" && (
+                    <span className="mt-3 flex items-center justify-between gap-2">
+                      <DocDots p={p} />
+                      <span className="text-right text-[0.7rem] font-extrabold uppercase tracking-wide text-ink-3">{NATURE[p.nature]}</span>
+                    </span>
+                  )}
                   <span className="mt-2 text-lg font-extrabold leading-snug">{p.promise}</span>
                   <span className="mt-auto flex items-center justify-between pt-4 text-sm font-bold text-ink-3">
                     <span>
@@ -351,7 +433,7 @@ export function PromisesBoard({
       </AnimatePresence>
 
       <Sheet open={!!current} onClose={() => setOpen(null)} title="Promesa y evidencias" accent={current ? partyVars(current.partyIds[0]).primary : undefined}>
-        {current && <Evidence p={current} source={smap[current.citation.sourceId]} parties={pmap} topics={tmap} />}
+        {current && <Evidence p={current} sources={smap} parties={pmap} topics={tmap} />}
       </Sheet>
     </div>
   );

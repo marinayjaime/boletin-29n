@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-02T13:22:49.582Z",
+  "checkedAt": "2026-11-03T06:59:07.496Z",
   "results": [
     {
       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742",
@@ -64,8 +64,8 @@
     {
       "url": "https://podemos.info/wp-content/uploads/2019/10/Podemos_programa_generales_10N.pdf",
       "where": "fuente podemos-programa-2019 (oficial)",
-      "status": 200,
-      "state": "ok"
+      "status": 403,
+      "state": "bloqueado"
     },
     {
       "url": "https://web.archive.org/web/20240324003313/https://podemos.info/wp-content/uploads/2019/10/Podemos_programa_generales_10N.pdf",
@@ -76,8 +76,8 @@
     {
       "url": "https://podemos.info/wp-content/uploads/2024/05/Programa-PODEMOS-elecciones-europeas-2024.pdf",
       "where": "fuente podemos-europeas-2024 (oficial)",
-      "status": 200,
-      "state": "ok"
+      "status": 403,
+      "state": "bloqueado"
     },
     {
       "url": "https://web.archive.org/web/20240524025157/https://podemos.info/wp-content/uploads/2024/05/Programa-PODEMOS-elecciones-europeas-2024.pdf",
@@ -100,6 +100,12 @@
     {
       "url": "https://www.publico.es/politica/partidos/frente-amplio-nueva-marca-partidos-sumar-generales.html",
       "where": "fuente publico-frente-amplio (oficial)",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-7.PDF",
+      "where": "fuente congreso-ds-15-pl-7 (oficial)",
       "status": 200,
       "state": "ok"
     },
@@ -243,13 +249,13 @@
     },
     {
       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-26452",
-      "where": "promesa psoe-2023-revalorizacion-pensiones",
+      "where": "promesa sanchez-2023-iva-alimentos",
       "status": 200,
       "state": "ok"
     },
     {
       "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=10/01/2024",
-      "where": "promesa psoe-2023-revalorizacion-pensiones",
+      "where": "promesa sanchez-2023-iva-alimentos",
       "status": 200,
       "state": "ok"
     },
@@ -273,7 +279,7 @@
     },
     {
       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2548",
-      "where": "promesa psoe-2023-revalorizacion-pensiones",
+      "where": "promesa psoe-2023-pensiones-minimas",
       "status": 200,
       "state": "ok"
     },
@@ -422,6 +428,102 @@
       "state": "ok"
     },
     {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-2251",
+      "where": "promesa psoe-2023-smi-estatuto",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-2576",
+      "where": "promesa psoe-2023-smi-estatuto",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3815",
+      "where": "promesa psoe-2023-smi-estatuto",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-26694",
+      "where": "promesa sanchez-2023-impuesto-minimo",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-6598",
+      "where": "promesa sanchez-2023-impuesto-minimo",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-15741",
+      "where": "promesa sanchez-2023-permiso-20",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=09/09/2025",
+      "where": "promesa sanchez-2023-permiso-20",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=12/12/2023",
+      "where": "promesa sanchez-2023-amnistia",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=30/05/2024",
+      "where": "promesa sanchez-2023-amnistia",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-11776",
+      "where": "promesa sanchez-2023-amnistia",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-8872",
+      "where": "promesa psoe-2023-ayudas-alquiler",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-3787",
+      "where": "promesa sanchez-2023-becas-tasas",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-4320",
+      "where": "promesa sanchez-2023-becas-tasas",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-5713",
+      "where": "promesa sanchez-2023-becas-tasas",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-11373",
+      "where": "promesa psoe-2023-transporte-jovenes",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-11722",
+      "where": "promesa psoe-2023-transporte-jovenes",
+      "status": 200,
+      "state": "ok"
+    },
+    {
       "url": "https://www.lamoncloa.gob.es/gobierno/gobiernos/Paginas/index.aspx",
       "where": "gobiernos",
       "status": 200,
@@ -518,8 +620,50 @@
       "state": "bloqueado"
     },
     {
+      "url": "https://electomania.es/electopanel-1-nov-el-psoe-baja-y-vuelve-a-minimos/",
+      "where": "encuesta EM-Analytics 2026-11-01",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://electomania.es/electopanel-25-octubre-el-pp-baja-de-nuevo-frente-amplio-crece/",
+      "where": "encuesta EM-Analytics 2026-10-25",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://electomania.es/electopanel-18-oct-erc-y-frente-amplio-ceden-ante-el-psoe-podemos-en-el-limite-de-ser-extraparlamentario/",
+      "where": "encuesta EM-Analytics 2026-10-18",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.vozpopuli.com/espana/politica/pp-y-vox-suman-ya-un-techo-historico-de-127-millones-de-votos-y-lograrian-205-escanos.html",
+      "where": "encuesta Hamalgama Métrica 2026-11-02",
+      "status": 200,
+      "state": "ok"
+    },
+    {
       "url": "https://www.elespanol.com/espana/politica/20261101/primer-sondeo-tragedia-pp-vox-amplian-ventaja-sanchez-sigue-cayendo-pese-vaciar-frente-amplio/1003744442810_0.html",
       "where": "encuesta SocioMétrica 2026-11-01",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.elespanol.com/espana/politica/20261025/izquierda-no-remonta-sanchez-gana-escanos-costa-frente-podemos-sondeo-noche/1003744434105_0.html",
+      "where": "encuesta SocioMétrica 2026-10-26",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.articulo14.es/politica/encuesta-articulo14-el-psoe-se-coloca-6-escanos-del-pp-que-mantiene-una-mayoria-de-190-escanos-con-vox-20261026.html",
+      "where": "encuesta Winston 2026-10-26",
+      "status": 403,
+      "state": "bloqueado"
+    },
+    {
+      "url": "https://www.elconfidencial.com/espana/2026-10-23/encuesta-imop-elecciones-29n-bloque-psoe-frente-amplio_4450302/",
+      "where": "encuesta IMOP 2026-10-23",
       "status": 200,
       "state": "ok"
     },
@@ -536,32 +680,8 @@
       "state": "ok"
     },
     {
-      "url": "https://electomania.es/electopanel-1-nov-el-psoe-baja-y-vuelve-a-minimos/",
-      "where": "encuesta EM-Analytics 2026-11-01",
-      "status": 200,
-      "state": "ok"
-    },
-    {
       "url": "https://www.larazon.es/espana/psoe-frena-efecto-remontada-derecha-consolida-mayoria-absoluta_202611026ae783220250123215703bb1.html",
       "where": "encuesta NC Report 2026-11-02",
-      "status": 200,
-      "state": "ok"
-    },
-    {
-      "url": "https://www.vozpopuli.com/espana/politica/pp-y-vox-suman-ya-un-techo-historico-de-127-millones-de-votos-y-lograrian-205-escanos.html",
-      "where": "encuesta Hamalgama Métrica 2026-11-02",
-      "status": 200,
-      "state": "ok"
-    },
-    {
-      "url": "https://theobjective.com/espana/2026-11-01/sondeo-vox-71-escanos/|language=es",
-      "where": "encuesta The Objective 2026-11-01",
-      "status": 404,
-      "state": "roto"
-    },
-    {
-      "url": "https://www.elespanol.com/espana/politica/20261025/izquierda-no-remonta-sanchez-gana-escanos-costa-frente-podemos-sondeo-noche/1003744434105_0.html",
-      "where": "encuesta SocioMétrica 2026-10-26",
       "status": 200,
       "state": "ok"
     },
@@ -572,14 +692,14 @@
       "state": "ok"
     },
     {
-      "url": "https://www.articulo14.es/politica/encuesta-articulo14-el-psoe-se-coloca-6-escanos-del-pp-que-mantiene-una-mayoria-de-190-escanos-con-vox-20261026.html",
-      "where": "encuesta Winston 2026-10-26",
+      "url": "https://theobjective.com/espana/2026-11-01/sondeo-vox-71-escanos/",
+      "where": "encuesta The Objective 2026-11-01",
       "status": 200,
       "state": "ok"
     },
     {
-      "url": "https://electomania.es/electopanel-25-octubre-el-pp-baja-de-nuevo-frente-amplio-crece/",
-      "where": "encuesta EM-Analytics 2026-10-25",
+      "url": "https://www.elmundo.es/espana/encuestas/2026/10/19/6ad4f168e9cf4a2c7a8b458b.html",
+      "where": "encuesta Sigma Dos 2026-10-19",
       "status": 200,
       "state": "ok"
     },
@@ -596,28 +716,11 @@
       "state": "ok"
     },
     {
-      "url": "https://electomania.es/electopanel-18-oct-erc-y-frente-amplio-ceden-ante-el-psoe-podemos-en-el-limite-de-ser-extraparlamentario/",
-      "where": "encuesta EM-Analytics 2026-10-18",
-      "status": 200,
-      "state": "ok"
-    },
-    {
-      "url": "https://www.elconfidencial.com/espana/2026-10-23/encuesta-imop-elecciones-29n-bloque-psoe-frente-amplio_4450302/",
-      "where": "encuesta IMOP 2026-10-23",
-      "status": 200,
-      "state": "ok"
-    },
-    {
-      "url": "https://www.elmundo.es/espana/encuestas/2026/10/19/6ad4f168e9cf4a2c7a8b458b.html",
-      "where": "encuesta Sigma Dos 2026-10-19",
-      "status": 200,
-      "state": "ok"
-    },
-    {
       "url": "https://www.lamoncloa.gob.es/presidente/biografia/Paginas/index.aspx",
       "where": "gobierno Pedro Sánchez Pérez-Castejón",
-      "status": 200,
-      "state": "ok"
+      "status": 0,
+      "state": "error",
+      "error": "fetch failed"
     },
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-carlos-cuerpo.aspx",
@@ -682,8 +785,9 @@
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-jordi-hereu.aspx",
       "where": "gobierno Jordi Hereu Boher",
-      "status": 200,
-      "state": "ok"
+      "status": 0,
+      "state": "error",
+      "error": "fetch failed"
     },
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-luis-planas.aspx",
@@ -694,8 +798,9 @@
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-angel-victor-torres.aspx",
       "where": "gobierno Ángel Víctor Torres Pérez",
-      "status": 200,
-      "state": "ok"
+      "status": 0,
+      "state": "error",
+      "error": "fetch failed"
     },
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-isabel-rodriguez.aspx",
@@ -706,14 +811,16 @@
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-ernest-urtasun.aspx",
       "where": "gobierno Ernest Urtasun Domènech",
-      "status": 200,
-      "state": "ok"
+      "status": 0,
+      "state": "error",
+      "error": "fetch failed"
     },
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-monica-garcia.aspx",
       "where": "gobierno Mónica García Gómez",
-      "status": 200,
-      "state": "ok"
+      "status": 0,
+      "state": "error",
+      "error": "fetch failed"
     },
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministro-pablo-bustinduy.aspx",
@@ -724,14 +831,16 @@
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-diana-morant.aspx",
       "where": "gobierno Diana Morant Ripoll",
-      "status": 200,
-      "state": "ok"
+      "status": 0,
+      "state": "error",
+      "error": "fetch failed"
     },
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-ana-redondo.aspx",
       "where": "gobierno Ana Redondo García",
-      "status": 200,
-      "state": "ok"
+      "status": 0,
+      "state": "error",
+      "error": "fetch failed"
     },
     {
       "url": "https://www.lamoncloa.gob.es/gobierno/Paginas/biografias-xv-legislatura/ministra-elma-saiz.aspx",
@@ -790,8 +899,9 @@
     {
       "url": "https://web.archive.org/web/2024/https://movimientosumar.es/wp-content/uploads/2023/11/2023-11-08-estatutos.pdf",
       "where": "estatutos frente-amplio",
-      "status": 200,
-      "state": "ok"
+      "status": 0,
+      "state": "error",
+      "error": "fetch failed"
     }
   ]
 }

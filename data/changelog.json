@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-03",
+    "entity": "Enlaces",
+    "entityId": "link-report",
+    "action": "comprobacion",
+    "detail": "Comprobación de enlaces: 9 rotos (antes 2).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
     "date": "2026-11-02",
     "entity": "Poll",
     "entityId": "polls",

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-03T07:04:56.135Z",
+  "checkedAt": "2026-11-03T07:55:30.964Z",
   "results": [
     {
       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742",
@@ -110,6 +110,18 @@
       "state": "ok"
     },
     {
+      "url": "https://www.psoe.es/media-content/2023/10/ACUERDO_GOBIERNO_COALICIO%CC%81N_2023-DEF.pdf",
+      "where": "fuente acuerdo-psoe-sumar-2023 (oficial)",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://web.archive.org/web/20260903203200/https://www.psoe.es/media-content/2023/10/ACUERDO_GOBIERNO_COALICIO%CC%81N_2023-DEF.pdf?utm_source=chatgpt.com",
+      "where": "fuente acuerdo-psoe-sumar-2023 (copia)",
+      "status": 200,
+      "state": "ok"
+    },
+    {
       "url": "https://ec.europa.eu/eurostat/databrowser/view/tec00115/default/table?lang=es",
       "where": "indicador pib-crecimiento",
       "status": 200,
@@ -147,7 +159,7 @@
     },
     {
       "url": "https://ec.europa.eu/eurostat/databrowser/view/une_rt_a/default/table?lang=es",
-      "where": "indicador paro-juvenil",
+      "where": "promesa acuerdo-2023-empleo-paro",
       "status": 200,
       "state": "ok"
     },
@@ -159,7 +171,7 @@
     },
     {
       "url": "https://ec.europa.eu/eurostat/databrowser/view/lfsi_emp_a/default/table?lang=es",
-      "where": "indicador empleo",
+      "where": "promesa acuerdo-2023-empleo-paro",
       "status": 200,
       "state": "ok"
     },
@@ -249,19 +261,19 @@
     },
     {
       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-26452",
-      "where": "promesa sanchez-2023-iva-alimentos",
+      "where": "promesa acuerdo-2023-abonos-2024",
       "status": 200,
       "state": "ok"
     },
     {
       "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=10/01/2024",
-      "where": "promesa sanchez-2023-iva-alimentos",
+      "where": "promesa acuerdo-2023-abonos-2024",
       "status": 200,
       "state": "ok"
     },
     {
       "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=22/01/2025",
-      "where": "promesa psoe-2023-revalorizacion-pensiones",
+      "where": "promesa acuerdo-2023-gravamenes",
       "status": 200,
       "state": "ok"
     },
@@ -344,6 +356,18 @@
       "state": "ok"
     },
     {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-6544",
+      "where": "promesa acuerdo-2023-cne",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=26/03/2026",
+      "where": "promesa psoe-2023-ley-zonas-renovables",
+      "status": 200,
+      "state": "ok"
+    },
+    {
       "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=23/07/2024",
       "where": "promesa psoe-2023-ley-paridad",
       "status": 200,
@@ -398,12 +422,6 @@
       "state": "ok"
     },
     {
-      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=25/03/2025",
-      "where": "promesa psoe-2023-ley-lobbies",
-      "status": 200,
-      "state": "ok"
-    },
-    {
       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-18148",
       "where": "promesa psoe-2023-ley-lobbies",
       "status": 200,
@@ -447,7 +465,7 @@
     },
     {
       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-26694",
-      "where": "promesa sanchez-2023-impuesto-minimo",
+      "where": "promesa acuerdo-2023-gravamenes",
       "status": 200,
       "state": "ok"
     },
@@ -520,6 +538,78 @@
     {
       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-11722",
       "where": "promesa psoe-2023-transporte-jovenes",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-10235",
+      "where": "promesa acuerdo-2023-subsidio-desempleo",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=20/06/2024",
+      "where": "promesa acuerdo-2023-subsidio-desempleo",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-26917",
+      "where": "promesa acuerdo-2023-jubilacion-parcial",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=18/01/2024",
+      "where": "promesa acuerdo-2023-articulo-49",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-3099",
+      "where": "promesa acuerdo-2023-articulo-49",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-26916",
+      "where": "promesa acuerdo-2023-gravamenes",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-6597",
+      "where": "promesa acuerdo-2023-desperdicio",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-23271",
+      "where": "promesa acuerdo-2023-bomberos-forestales",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-18831",
+      "where": "promesa acuerdo-2023-palestina",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-22438",
+      "where": "promesa acuerdo-2023-tiempo-respuesta",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=29/10/2024",
+      "where": "promesa acuerdo-2023-ley-mordaza",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.congreso.es/es/opendata/votaciones?p_p_id=votaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&targetLegislatura=XV&targetDate=12/12/2024",
+      "where": "promesa acuerdo-2023-ley-mordaza",
       "status": 200,
       "state": "ok"
     },

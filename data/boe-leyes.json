@@ -1,7 +1,7 @@
 {
  "from": "2023-11-17",
- "to": "2026-11-03",
- "importedAt": "2026-11-04T14:38:37.275Z",
+ "to": "2026-11-04",
+ "importedAt": "2026-11-05T14:44:42.043Z",
  "source": "https://www.boe.es/datosabiertos/api/boe/sumario/",
  "items": [
   {
@@ -34586,6 +34586,54 @@
    "title": "Real Decreto 923/2026, de 28 de octubre, por el que se regula la concesión directa de subvenciones a favor de determinadas entidades y asociaciones para proyectos dirigidos a la población joven con el fin de reforzar su adhesión a los valores democráticos, la confianza en las instituciones públicas, frenar la polarización, combatir la desinformación y promover su participación como sujetos activos de la sociedad.",
    "kind": "real_decreto",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22791",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23171",
+   "date": "2026-11-04",
+   "title": "Real Decreto 974/2026, de 4 de noviembre, por el que se dispone el cese de don Óscar Puente Santiago como Ministro de Transportes y Movilidad Sostenible.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23171",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23172",
+   "date": "2026-11-04",
+   "title": "Real Decreto 975/2026, de 4 de noviembre, por el que se dispone que el Vicepresidente Primero del Gobierno y Ministro de Economía, Comercio y Empresa asuma el despacho ordinario de los asuntos del Ministerio de Transportes y Movilidad Sostenible.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23172",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23104",
+   "date": "2026-11-04",
+   "title": "Real Decreto-ley 32/2026, de 3 de noviembre, de ayudas a las víctimas del accidente ferroviario de Urda (Toledo) y por el que se garantiza la accesibilidad equitativa a bienes y servicios en situaciones de emergencia.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23104",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23106",
+   "date": "2026-11-04",
+   "title": "Real Decreto 959/2026, de 3 de noviembre, por el que se dispone el cese de doña Ana Paredes Prieto como Embajadora de España en la República de Cabo Verde.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23106",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23107",
+   "date": "2026-11-04",
+   "title": "Real Decreto 960/2026, de 3 de noviembre, por el que se designa Embajador de España en la República de Cabo Verde a don Juan Manglano Aboín.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23107",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23108",
+   "date": "2026-11-04",
+   "title": "Real Decreto 961/2026, de 3 de noviembre, por el que se designa Embajador de España en el Estado de Brunéi Darusalam a don Sergio Farré Salvá.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23108",
    "scope": "estatal"
   }
  ]

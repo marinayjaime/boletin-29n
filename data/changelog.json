@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-11-05",
+    "entity": "RegistroBOE",
+    "entityId": "boe-leyes",
+    "action": "importacion",
+    "detail": "6 normas nuevas (2023-11-17 → 2026-11-04): Real Decreto 974/2026; Real Decreto 975/2026; Real Decreto-ley 32/2026; Real Decreto 959/2026; Real Decreto 960/2026.",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-05",
+    "entity": "Enlaces",
+    "entityId": "link-report",
+    "action": "verificacion",
+    "detail": "Comprobación de enlaces: 2 rotos (antes 1).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
     "date": "2026-11-04",
     "entity": "RegistroBOE",
     "entityId": "boe-leyes",

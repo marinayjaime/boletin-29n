@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-05T14:49:21.524Z",
+  "checkedAt": "2026-11-06T14:27:07.743Z",
   "results": [
     {
       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742",
@@ -70,8 +70,8 @@
     {
       "url": "https://web.archive.org/web/20240324003313/https://podemos.info/wp-content/uploads/2019/10/Podemos_programa_generales_10N.pdf",
       "where": "fuente podemos-programa-2019 (copia)",
-      "status": 200,
-      "state": "ok"
+      "status": 500,
+      "state": "roto"
     },
     {
       "url": "https://podemos.info/wp-content/uploads/2024/05/Programa-PODEMOS-elecciones-europeas-2024.pdf",
@@ -82,8 +82,8 @@
     {
       "url": "https://web.archive.org/web/20240524025157/https://podemos.info/wp-content/uploads/2024/05/Programa-PODEMOS-elecciones-europeas-2024.pdf",
       "where": "fuente podemos-europeas-2024 (copia)",
-      "status": 200,
-      "state": "ok"
+      "status": 500,
+      "state": "roto"
     },
     {
       "url": "https://www.congreso.es/es/opendata/votaciones",

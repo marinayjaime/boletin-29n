@@ -1,5 +1,77 @@
 [
   {
+    "date": "2026-11-06",
+    "entity": "RegistroBOE",
+    "entityId": "boe-leyes",
+    "action": "importacion",
+    "detail": "4 normas nuevas (2023-11-17 → 2026-11-05): Real Decreto 957/2026; Real Decreto 958/2026; Real Decreto 947/2026; Real Decreto 948/2026.",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-06",
+    "entity": "Enlaces",
+    "entityId": "link-report",
+    "action": "verificacion",
+    "detail": "Comprobación de enlaces: 4 rotos (antes 2).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-06",
+    "entity": "StatisticalIndicator",
+    "entityId": "euribor",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (321 → 322 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-06",
+    "entity": "StatisticalIndicator",
+    "entityId": "gini",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (72 → 125 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-06",
+    "entity": "StatisticalIndicator",
+    "entityId": "paro-mensual",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (1926 → 1926 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-06",
+    "entity": "StatisticalIndicator",
+    "entityId": "pib-crecimiento",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (72 → 72 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-06",
+    "entity": "StatisticalIndicator",
+    "entityId": "pib-per-capita",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (186 → 186 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-06",
+    "entity": "StatisticalIndicator",
+    "entityId": "productividad",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (186 → 186 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-06",
+    "entity": "StatisticalIndicator",
+    "entityId": "salario-medio",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (173 → 179 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
     "date": "2026-11-05",
     "entity": "RegistroBOE",
     "entityId": "boe-leyes",

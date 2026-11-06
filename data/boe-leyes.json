@@ -1,7 +1,7 @@
 {
  "from": "2023-11-17",
- "to": "2026-11-04",
- "importedAt": "2026-11-05T14:44:42.043Z",
+ "to": "2026-11-05",
+ "importedAt": "2026-11-06T14:22:21.118Z",
  "source": "https://www.boe.es/datosabiertos/api/boe/sumario/",
  "items": [
   {
@@ -34634,6 +34634,38 @@
    "title": "Real Decreto 961/2026, de 3 de noviembre, por el que se designa Embajador de España en el Estado de Brunéi Darusalam a don Sergio Farré Salvá.",
    "kind": "real_decreto",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23108",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23176",
+   "date": "2026-11-05",
+   "title": "Real Decreto 957/2026, de 4 de noviembre, de desarrollo del régimen jurídico de la prestación económica por cuidado de menores afectados por cáncer u otra enfermedad grave en el sistema de la Seguridad Social.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23176",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23177",
+   "date": "2026-11-05",
+   "title": "Real Decreto 958/2026, de 4 de noviembre, por el que se adoptan medidas de impulso de la tecnología DAB+ en el servicio de radiodifusión sonora digital terrestre.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23177",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23181",
+   "date": "2026-11-05",
+   "title": "Real Decreto 947/2026, de 28 de octubre, por el que se nombra Presidenta del Tribunal de Instancia de Santander a la Magistrada doña María Rosa Martínez López.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23181",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23182",
+   "date": "2026-11-05",
+   "title": "Real Decreto 948/2026, de 28 de octubre, por el que se nombra Presidenta del Tribunal de Instancia de Santa Cruz de Tenerife a la Magistrada doña Ana Delia Hernández Sarmiento.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23182",
    "scope": "estatal"
   }
  ]

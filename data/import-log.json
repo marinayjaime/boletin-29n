@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-11-06T14:27:15.547Z",
+    "importer": "vigilante-programs",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-06T14:27:09.919Z",
+    "importer": "vigilante-government",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-06T14:27:08.595Z",
+    "importer": "vigilante-polls",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-06T14:27:07.745Z",
+    "importer": "vigilante-links",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-06T14:22:21.985Z",
+    "importer": "boe-texto",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-06T14:22:21.127Z",
+    "importer": "boe",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-06T14:22:19.813Z",
+    "importer": "eurostat",
+    "ok": 1,
+    "failures": []
+  },
+  {
     "date": "2026-11-05T14:49:29.544Z",
     "importer": "vigilante-programs",
     "ok": 1,

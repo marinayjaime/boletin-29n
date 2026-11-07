@@ -1,7 +1,7 @@
 {
  "from": "2023-11-17",
- "to": "2026-11-05",
- "importedAt": "2026-11-06T14:22:21.118Z",
+ "to": "2026-11-06",
+ "importedAt": "2026-11-07T13:09:36.881Z",
  "source": "https://www.boe.es/datosabiertos/api/boe/sumario/",
  "items": [
   {
@@ -34666,6 +34666,134 @@
    "title": "Real Decreto 948/2026, de 28 de octubre, por el que se nombra Presidenta del Tribunal de Instancia de Santa Cruz de Tenerife a la Magistrada doña Ana Delia Hernández Sarmiento.",
    "kind": "real_decreto",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23182",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23265",
+   "date": "2026-11-06",
+   "title": "Real Decreto 950/2026, de 4 de noviembre, por el que se establecen criterios para el fomento de una alimentación saludable y sostenible en centros de titularidad pública y en centros para personas en situación de dependencia o personas con necesidades especiales de titularidad privada.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23265",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23266",
+   "date": "2026-11-06",
+   "title": "Real Decreto 951/2026, de 4 de noviembre, por el que se modifica el Real Decreto 1146/2006, de 6 de octubre, por el que se regula la relación laboral especial de residencia para la formación de especialistas en Ciencias de la Salud.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23266",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23267",
+   "date": "2026-11-06",
+   "title": "Real Decreto 952/2026, de 4 de noviembre, por el que se regula el registro y las condiciones de autorización, fabricación, comercialización y uso de biocidas.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23267",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23268",
+   "date": "2026-11-06",
+   "title": "Real Decreto 953/2026, de 4 de noviembre, por el que se modifica el Real Decreto 1052/2022, de 27 de diciembre, por el que se regulan las zonas de bajas emisiones.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23268",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23269",
+   "date": "2026-11-06",
+   "title": "Real Decreto 955/2026, de 5 de noviembre, por el que se regula la concesión directa de subvenciones a la Real Sociedad Geográfica y al Observatorio del Ebro durante el ejercicio presupuestario 2026.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23269",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23274",
+   "date": "2026-11-06",
+   "title": "Ley 3/2026, de 8 de octubre, por la que se regulan los Bienes de Interés Turístico de la Región de Murcia y se modifica la Ley 12/2013, de 20 de diciembre, de Turismo de la Región de Murcia.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23274",
+   "scope": "autonomica"
+  },
+  {
+   "id": "BOE-A-2026-23278",
+   "date": "2026-11-06",
+   "title": "Real Decreto 962/2026, de 4 de noviembre, por el que se adjudica plaza vacante de segunda categoría de la Fiscalía Provincial de Madrid a doña Elena Ortiz García.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23278",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23279",
+   "date": "2026-11-06",
+   "title": "Real Decreto 963/2026, de 4 de noviembre, por el que se promueve al empleo de General de División del Cuerpo General del Ejército del Aire y del Espacio al General de Brigada don Enrique Fernández Ambel.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23279",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23280",
+   "date": "2026-11-06",
+   "title": "Real Decreto 964/2026, de 4 de noviembre, por el que se promueve al empleo de General de División del Cuerpo General del Ejército del Aire y del Espacio al General de Brigada don Pascual Soria Martínez.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23280",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23314",
+   "date": "2026-11-06",
+   "title": "Real Decreto 965/2026, de 4 de noviembre, por el que se concede la nacionalidad española por carta de naturaleza a don Félix Alejandro Maradiaga Blandón.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23314",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23315",
+   "date": "2026-11-06",
+   "title": "Real Decreto 966/2026, de 4 de noviembre, por el que se concede la nacionalidad española por carta de naturaleza a don Umanzor López Baltodano.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23315",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23316",
+   "date": "2026-11-06",
+   "title": "Real Decreto 967/2026, de 4 de noviembre, por el que se concede la nacionalidad española por carta de naturaleza a doña Rosa Yolanda Villavicencio Mapy.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23316",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23317",
+   "date": "2026-11-06",
+   "title": "Real Decreto 968/2026, de 4 de noviembre, por el que se concede la nacionalidad española por carta de naturaleza a don Stefano Mandozzi.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23317",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23318",
+   "date": "2026-11-06",
+   "title": "Real Decreto 969/2026, de 4 de noviembre, por el que se concede la nacionalidad española por carta de naturaleza a doña Julissa Reynoso Pantaleón.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23318",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23319",
+   "date": "2026-11-06",
+   "title": "Real Decreto 970/2026, de 4 de noviembre, por el que se concede la nacionalidad española por carta de naturaleza a don Hernando de Jesús Herrera Mercado.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23319",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23320",
+   "date": "2026-11-06",
+   "title": "Real Decreto 971/2026, de 4 de noviembre, por el que se concede la nacionalidad española por carta de naturaleza a don Marco Aurelio Quiñones Gómez.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23320",
    "scope": "estatal"
   }
  ]

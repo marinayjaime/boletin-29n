@@ -4,11 +4,11 @@
     "eurostat": {
       "label": "Eurostat",
       "lastAttempt": {
-        "at": "2026-11-06T14:22:19.813Z",
+        "at": "2026-11-07T13:09:34.884Z",
         "ok": true,
         "detail": "33 de 33 series descargadas"
       },
-      "lastSuccess": "2026-11-06T14:22:19.813Z",
+      "lastSuccess": "2026-11-07T13:09:34.884Z",
       "lastError": {
         "at": "2026-11-02T11:18:13.087Z",
         "message": "ipca-indice: fetch failed"
@@ -17,20 +17,20 @@
     "boe": {
       "label": "Registro del BOE",
       "lastAttempt": {
-        "at": "2026-11-06T14:22:21.127Z",
+        "at": "2026-11-07T13:09:36.890Z",
         "ok": true,
-        "detail": "Registro hasta 2026-11-05"
+        "detail": "Registro hasta 2026-11-06"
       },
-      "lastSuccess": "2026-11-06T14:22:21.127Z"
+      "lastSuccess": "2026-11-07T13:09:36.890Z"
     },
     "boe-texto": {
       "label": "Texto íntegro de las leyes",
       "lastAttempt": {
-        "at": "2026-11-06T14:22:21.985Z",
+        "at": "2026-11-07T13:09:38.783Z",
         "ok": true,
-        "detail": "386 de 386 textos disponibles"
+        "detail": "387 de 387 textos disponibles"
       },
-      "lastSuccess": "2026-11-06T14:22:21.985Z"
+      "lastSuccess": "2026-11-07T13:09:38.783Z"
     },
     "congreso": {
       "label": "Votaciones del Congreso",
@@ -43,38 +43,38 @@
     "vigilante-polls": {
       "label": "Búsqueda de encuestas nuevas",
       "lastAttempt": {
-        "at": "2026-11-06T14:27:08.595Z",
+        "at": "2026-11-07T13:15:32.220Z",
         "ok": true,
-        "detail": "7 hallazgos para revisión"
+        "detail": "8 hallazgos para revisión"
       },
-      "lastSuccess": "2026-11-06T14:27:08.595Z"
+      "lastSuccess": "2026-11-07T13:15:32.220Z"
     },
     "vigilante-government": {
       "label": "Cambios en el Gobierno",
       "lastAttempt": {
-        "at": "2026-11-06T14:27:09.919Z",
+        "at": "2026-11-07T13:15:33.737Z",
         "ok": true,
         "detail": "1 hallazgos para revisión"
       },
-      "lastSuccess": "2026-11-06T14:27:09.919Z"
+      "lastSuccess": "2026-11-07T13:15:33.737Z"
     },
     "vigilante-programs": {
       "label": "Programas de 2026",
       "lastAttempt": {
-        "at": "2026-11-06T14:27:15.547Z",
+        "at": "2026-11-07T13:15:39.518Z",
         "ok": true,
         "detail": "0 hallazgos para revisión"
       },
-      "lastSuccess": "2026-11-06T14:27:15.547Z"
+      "lastSuccess": "2026-11-07T13:15:39.518Z"
     },
     "vigilante-links": {
       "label": "Enlaces",
       "lastAttempt": {
-        "at": "2026-11-06T14:27:07.745Z",
+        "at": "2026-11-07T13:15:31.123Z",
         "ok": true,
-        "detail": "3 hallazgos para revisión"
+        "detail": "2 hallazgos para revisión"
       },
-      "lastSuccess": "2026-11-06T14:27:07.745Z"
+      "lastSuccess": "2026-11-07T13:15:31.123Z"
     }
   },
   "editorial": {

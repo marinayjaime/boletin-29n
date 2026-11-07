@@ -1,5 +1,53 @@
 [
   {
+    "date": "2026-11-07",
+    "entity": "RegistroBOE",
+    "entityId": "boe-leyes",
+    "action": "importacion",
+    "detail": "16 normas nuevas (2023-11-17 → 2026-11-06): Real Decreto 950/2026; Real Decreto 951/2026; Real Decreto 952/2026; Real Decreto 953/2026; Real Decreto 955/2026.",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-07",
+    "entity": "Enlaces",
+    "entityId": "link-report",
+    "action": "verificacion",
+    "detail": "Comprobación de enlaces: 3 rotos (antes 4).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-07",
+    "entity": "StatisticalIndicator",
+    "entityId": "empleo",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (108 → 108 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-07",
+    "entity": "StatisticalIndicator",
+    "entityId": "paro-juvenil",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (108 → 108 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-07",
+    "entity": "StatisticalIndicator",
+    "entityId": "paro",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (108 → 108 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-07",
+    "entity": "StatisticalIndicator",
+    "entityId": "temporalidad",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (106 → 106 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
     "date": "2026-11-06",
     "entity": "RegistroBOE",
     "entityId": "boe-leyes",

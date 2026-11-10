@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-10",
+    "entity": "RegistroBOE",
+    "entityId": "boe-leyes",
+    "action": "importacion",
+    "detail": "7 normas nuevas (2023-11-17 → 2026-11-09): Real Decreto 954/2026; Ley 1/2026; Ley 2/2026; Ley 3/2026; Ley 4/2026.",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
     "date": "2026-11-09",
     "entity": "RegistroBOE",
     "entityId": "boe-leyes",

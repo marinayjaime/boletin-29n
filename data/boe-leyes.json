@@ -1,7 +1,7 @@
 {
  "from": "2023-11-17",
- "to": "2026-11-08",
- "importedAt": "2026-11-09T16:29:10.641Z",
+ "to": "2026-11-09",
+ "importedAt": "2026-11-10T14:58:21.242Z",
  "source": "https://www.boe.es/datosabiertos/api/boe/sumario/",
  "items": [
   {
@@ -34794,6 +34794,62 @@
    "title": "Real Decreto 971/2026, de 4 de noviembre, por el que se concede la nacionalidad española por carta de naturaleza a don Marco Aurelio Quiñones Gómez.",
    "kind": "real_decreto",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23320",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23384",
+   "date": "2026-11-09",
+   "title": "Real Decreto 954/2026, de 4 de noviembre, por el que se aprueba el Reglamento de desarrollo de la Ley 40/2006, de 14 de diciembre, del Estatuto de la ciudadanía española en el exterior.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23384",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23387",
+   "date": "2026-11-09",
+   "title": "Ley 1/2026, de 26 de marzo, de Medidas Administrativas y Tributarias de Castilla-La Mancha.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23387",
+   "scope": "autonomica"
+  },
+  {
+   "id": "BOE-A-2026-23388",
+   "date": "2026-11-09",
+   "title": "Ley 2/2026, de 9 de abril, por la que se modifica la Ley 5/2005, de 27 de junio, de Ordenación del Servicio Farmacéutico de Castilla-La Mancha.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23388",
+   "scope": "autonomica"
+  },
+  {
+   "id": "BOE-A-2026-23389",
+   "date": "2026-11-09",
+   "title": "Ley 3/2026, de 30 de abril, de modificación de la Ley 3/2019, de 22 de marzo, del Estatuto de las Personas Consumidoras en Castilla-La Mancha.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23389",
+   "scope": "autonomica"
+  },
+  {
+   "id": "BOE-A-2026-23390",
+   "date": "2026-11-09",
+   "title": "Ley 4/2026, de 7 de mayo, de medidas urgentes en materia de acceso a la vivienda y suelo de Castilla-La Mancha.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23390",
+   "scope": "autonomica"
+  },
+  {
+   "id": "BOE-A-2026-23391",
+   "date": "2026-11-09",
+   "title": "Real Decreto 972/2026, de 4 de noviembre, por el que se nombra Presidenta del Tribunal de Instancia de Castellón de la Plana a la Magistrada doña María Lidón Calero Marzá.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23391",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23392",
+   "date": "2026-11-09",
+   "title": "Real Decreto 973/2026, de 4 de noviembre, por el que se nombra Presidente del Tribunal de Instancia de Elche al Magistrado don José Luis Casells Bonacho.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23392",
    "scope": "estatal"
   }
  ]

@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-11-11",
+    "entity": "RegistroBOE",
+    "entityId": "boe-leyes",
+    "action": "importacion",
+    "detail": "0 normas nuevas (2023-11-17 → 2026-11-10).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-11",
+    "entity": "Enlaces",
+    "entityId": "link-report",
+    "action": "verificacion",
+    "detail": "Comprobación de enlaces: 1 rotos (antes 2).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
     "date": "2026-11-10",
     "entity": "RegistroBOE",
     "entityId": "boe-leyes",

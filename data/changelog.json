@@ -1,5 +1,53 @@
 [
   {
+    "date": "2026-11-12",
+    "entity": "RegistroBOE",
+    "entityId": "boe-leyes",
+    "action": "importacion",
+    "detail": "7 normas nuevas (2023-11-17 → 2026-11-11): Real Decreto-ley 33/2026; Real Decreto-ley 34/2026; Real Decreto-ley 35/2026; Real Decreto-ley 36/2026; Real Decreto 956/2026.",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-12",
+    "entity": "Enlaces",
+    "entityId": "link-report",
+    "action": "verificacion",
+    "detail": "Comprobación de enlaces: 2 rotos (antes 1).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-12",
+    "entity": "StatisticalIndicator",
+    "entityId": "euribor",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (322 → 322 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-12",
+    "entity": "StatisticalIndicator",
+    "entityId": "pib-crecimiento",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (72 → 72 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-12",
+    "entity": "StatisticalIndicator",
+    "entityId": "pib-per-capita",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (186 → 186 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-12",
+    "entity": "StatisticalIndicator",
+    "entityId": "productividad",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (186 → 186 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
     "date": "2026-11-11",
     "entity": "RegistroBOE",
     "entityId": "boe-leyes",

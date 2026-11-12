@@ -1,7 +1,7 @@
 {
  "from": "2023-11-17",
- "to": "2026-11-10",
- "importedAt": "2026-11-11T14:29:05.046Z",
+ "to": "2026-11-11",
+ "importedAt": "2026-11-12T15:20:39.187Z",
  "source": "https://www.boe.es/datosabiertos/api/boe/sumario/",
  "items": [
   {
@@ -34850,6 +34850,62 @@
    "title": "Real Decreto 973/2026, de 4 de noviembre, por el que se nombra Presidente del Tribunal de Instancia de Elche al Magistrado don José Luis Casells Bonacho.",
    "kind": "real_decreto",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23392",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23602",
+   "date": "2026-11-11",
+   "title": "Real Decreto-ley 33/2026, de 10 de noviembre, por el que se adoptan medidas urgentes en respuesta a los daños causados por las inundaciones y otros sucesos acaecidos entre los días 17 y 19 de octubre de 2026, como consecuencia de la Depresión Aislada en Niveles Altos (DANA), denominada Adam.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23602",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23603",
+   "date": "2026-11-11",
+   "title": "Real Decreto-ley 34/2026, de 10 de noviembre, de medidas urgentes para el refuerzo de la seguridad operacional en el transporte ferroviario y la protección social del personal ferroviario.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23603",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23604",
+   "date": "2026-11-11",
+   "title": "Real Decreto-ley 35/2026, de 10 de noviembre, de medidas urgentes para el reconocimiento y protección a las familias monoparentales y otras medidas de apoyo a familias.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23604",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23605",
+   "date": "2026-11-11",
+   "title": "Real Decreto-ley 36/2026, de 10 de noviembre, de medidas para el adecuado despliegue de la reforma del Sistema para la Autonomía y Atención a la Dependencia.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23605",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23606",
+   "date": "2026-11-11",
+   "title": "Real Decreto 956/2026, de 4 de noviembre, por el que se regula la estructura y funcionamiento del Centro para la Innovación y el Desarrollo de la Educación a Distancia.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23606",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23608",
+   "date": "2026-11-11",
+   "title": "Real Decreto 991/2026, de 10 de noviembre, por el que se declara el cese de doña Encarnación Sandonis Rodríguez como Directora del Gabinete del Ministro de Transportes y Movilidad Sostenible.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23608",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23609",
+   "date": "2026-11-11",
+   "title": "Real Decreto 992/2026, de 10 de noviembre, por el que se dispone el cese de don Luis Pedro Marco de la Peña como Presidente de la Entidad Pública Empresarial Administrador de Infraestructuras Ferroviarias.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23609",
    "scope": "estatal"
   }
  ]

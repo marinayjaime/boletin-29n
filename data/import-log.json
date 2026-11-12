@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-11-12T15:25:35.019Z",
+    "importer": "vigilante-programs",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-12T15:25:29.643Z",
+    "importer": "vigilante-government",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-12T15:25:16.511Z",
+    "importer": "vigilante-polls",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-12T15:25:15.835Z",
+    "importer": "vigilante-links",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-12T15:20:42.029Z",
+    "importer": "boe-texto",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-12T15:20:39.194Z",
+    "importer": "boe",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-12T15:20:38.054Z",
+    "importer": "eurostat",
+    "ok": 1,
+    "failures": []
+  },
+  {
     "date": "2026-11-11T14:33:55.591Z",
     "importer": "vigilante-programs",
     "ok": 1,
@@ -437,14 +479,6 @@
     "ok": 1,
     "failures": [
       "ipca-indice: fetch failed"
-    ]
-  },
-  {
-    "date": "2026-11-02T11:17:55.235Z",
-    "importer": "eurostat",
-    "ok": 31,
-    "failures": [
-      "gini: La dimensión «age» tiene 2 valores; la consulta debe fijar uno solo."
     ]
   }
 ]

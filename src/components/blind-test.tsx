@@ -116,7 +116,7 @@ export function BlindTest({ statements, parties, topics, proposals, sources }: {
             <p className="mt-2 font-semibold opacity-80">No verás qué partido defiende cada idea hasta el final. Al final verás tus coincidencias con los cinco, tema a tema.</p>
           </div>
           <Disclosure summary="Privacidad">Las respuestas se guardan solo en esta pestaña del navegador (sessionStorage) y se borran al cerrarla. No se envían a ningún servidor.</Disclosure>
-          <Disclosure summary="¿Cómo se construyen las posturas?">Cada postura enlaza a una propuesta citada literalmente. «Sin posición documentada» no significa oposición. Los programas 2026 no están publicados: se usan documentos anteriores.</Disclosure>
+          <Disclosure summary="¿Cómo se construyen las posturas?">Cada postura enlaza a una propuesta citada literalmente. «Sin posición documentada» no significa oposición. Las propuestas de los programas de 2026 aún no están incorporadas: se usan documentos anteriores.</Disclosure>
           <Disclosure summary="¿Me dirá a quién votar?">No. Muestra, para los cinco partidos por igual, cuántas de tus respuestas coinciden con sus posturas documentadas. No destaca a ninguno ni recomienda un voto.</Disclosure>
         </div>
       </div>

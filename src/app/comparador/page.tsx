@@ -18,7 +18,7 @@ export default function Page() {
           <Comparator parties={alphabetical(getParties())} topics={getTopics()} proposals={getProposals()} sources={getSources()} />
         </Suspense>
         <div className="mt-12 grid gap-2 md:grid-cols-3">
-          <Disclosure summary="Programas 2026: pendientes">Ningún partido había publicado su programa 2026 al comprobarlo (2 de noviembre de 2026). Se muestran documentos anteriores, siempre etiquetados.</Disclosure>
+          <Disclosure summary="Programas 2026: aún sin incorporar">PP y Vox han publicado su programa 2026; PSOE, Frente Amplio y Podemos no tenían documento localizable al comprobarlo (13 de noviembre de 2026). Las propuestas de 2026 aún no están extraídas: se muestran documentos anteriores, siempre etiquetados.</Disclosure>
           <Disclosure summary="Frente Amplio y Podemos">En la columna de Frente Amplio aparece el programa de la coalición Sumar de 2023 (que entonces incluía a Podemos) como antecedente. En la de Podemos, su programa de generales de 2019 y su programa europeo de 2024.</Disclosure>
           <Disclosure summary="¿Por qué colores de partido?">Sirven para identificar, no para valorar. Todos tienen el mismo tamaño y el nombre siempre acompaña al color. El orden inicial es alfabético y puedes cambiarlo.</Disclosure>
         </div>

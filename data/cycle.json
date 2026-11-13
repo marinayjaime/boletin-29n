@@ -11,10 +11,10 @@
   "campaign": { "start": "2026-11-13", "end": "2026-11-27" },
   "seats": 350,
   "programStatus": [
-    { "partyId": "frente-amplio", "status": "pendiente", "checkedAt": "2026-11-02", "note": "No se ha localizado programa electoral 2026 publicado." },
-    { "partyId": "podemos", "status": "pendiente", "checkedAt": "2026-11-02", "note": "No se ha localizado programa electoral 2026 publicado." },
-    { "partyId": "pp", "status": "pendiente", "checkedAt": "2026-11-02", "note": "No se ha localizado programa electoral 2026. La prensa informa de un documento de compromisos («Contrato con España», 19-10-2026) que el partido no presenta como programa; no está indexado aquí." },
-    { "partyId": "psoe", "status": "pendiente", "checkedAt": "2026-11-02", "note": "No se ha localizado programa electoral 2026 publicado." },
-    { "partyId": "vox", "status": "pendiente", "checkedAt": "2026-11-02", "note": "No se ha localizado programa electoral 2026 publicado." }
+    { "partyId": "frente-amplio", "status": "pendiente", "checkedAt": "2026-11-13", "note": "No se ha localizado el documento del programa electoral 2026. La prensa informa de que la coalición presentó en Santiago de Compostela el 12-11-2026 un programa «100+15» (cien medidas generales y quince para Galicia), pero su texto no está publicado en una fuente localizable; no está indexado aquí." },
+    { "partyId": "podemos", "status": "pendiente", "checkedAt": "2026-11-13", "note": "No se ha localizado programa electoral 2026 publicado." },
+    { "partyId": "pp", "status": "publicado", "checkedAt": "2026-11-13", "sourceId": "pp-programa-2026", "note": "Programa «La Reconstrucción Nacional», presentado el 10-11-2026 (82 páginas, 249 medidas). El documento está registrado y enlazado; sus propuestas aún no están extraídas ni revisadas, por lo que el comparador y el test siguen usando documentos anteriores." },
+    { "partyId": "psoe", "status": "pendiente", "checkedAt": "2026-11-13", "note": "No se ha localizado programa electoral 2026 publicado. La prensa sitúa su presentación el 15-11-2026." },
+    { "partyId": "vox", "status": "publicado", "checkedAt": "2026-11-13", "sourceId": "vox-programa-2026", "note": "Programa «Es sentido común», presentado el 12-11-2026 (66 páginas, 115 medidas). Se usa la copia publicada por un medio, pendiente de cotejo con el PDF oficial; sus propuestas aún no están extraídas ni revisadas, por lo que el comparador y el test siguen usando documentos anteriores." }
   ]
 }

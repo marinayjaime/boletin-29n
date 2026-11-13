@@ -66,7 +66,7 @@ export function ProposalDetail({ proposal, source, party, topic, related }: { pr
 
       {proposal.cycle !== "generales-2026" && (
         <p className="rounded-2xl bg-brand-soft p-4 text-sm font-bold">
-          Documento anterior a 2026. El programa 2026 de {party.shortName} está pendiente de publicación.
+          Documento anterior a 2026: no es el programa de {party.shortName} para el 29-N.
         </p>
       )}
 

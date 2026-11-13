@@ -1,6 +1,30 @@
 [
   {
     "date": "2026-11-13",
+    "entity": "SourceDocument",
+    "entityId": "pp-programa-2026",
+    "action": "alta",
+    "detail": "Programa del PP para las generales de 2026 («La Reconstrucción Nacional», presentado el 10 de noviembre): PDF oficial de pp.es, copia archivada, SHA-256 y texto por página (82 págs.). Propuestas aún sin extraer.",
+    "by": "Asistente de IA (Claude)"
+  },
+  {
+    "date": "2026-11-13",
+    "entity": "SourceDocument",
+    "entityId": "vox-programa-2026",
+    "action": "alta",
+    "detail": "Programa de Vox para las generales de 2026 («Es sentido común», presentado el 12 de noviembre): copia publicada por Infobae (voxespana.es bloquea la descarga), SHA-256 y texto por página (66 págs.). Pendiente de cotejo con el PDF oficial. Propuestas aún sin extraer.",
+    "by": "Asistente de IA (Claude)"
+  },
+  {
+    "date": "2026-11-13",
+    "entity": "ElectoralCycle",
+    "entityId": "generales-2026",
+    "action": "modificacion",
+    "detail": "Estado de los programas de 2026 comprobado el 13 de noviembre: PP y Vox, publicados; PSOE (presentación anunciada para el 15 de noviembre), Frente Amplio (programa «100+15» presentado según la prensa, sin documento localizable) y Podemos, pendientes.",
+    "by": "Asistente de IA (Claude)"
+  },
+  {
+    "date": "2026-11-13",
     "entity": "RegistroBOE",
     "entityId": "boe-leyes",
     "action": "importacion",

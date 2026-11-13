@@ -67,7 +67,7 @@ export default function Page() {
             <p>
               Se descarga el documento (o su copia en Internet Archive), se calcula su huella SHA-256 y se extrae el texto de cada página. Un asistente de IA (Claude) selecciona la cita literal y redacta un resumen que no añade nada; ninguna persona lo ha revisado aún. Un test comprueba que <strong>cada cita aparece en la página indicada</strong>; si no, el build falla.
             </p>
-            <p>Si no hay documento se muestra «Sin posición documentada», que no equivale a oposición. Ningún partido ha publicado aún su programa de 2026: las propuestas proceden de programas anteriores.</p>
+            <p>Si no hay documento se muestra «Sin posición documentada», que no equivale a oposición. PP y Vox han publicado su programa de 2026, pero sus propuestas aún no están extraídas: las que se muestran proceden de programas anteriores.</p>
             {thirdParty.length > 0 && <p>Copias de terceros: {thirdParty.map((s) => s.title).join("; ")}. Marcadas como tales hasta cotejarlas con el original.</p>}
           </Section>
 
@@ -135,7 +135,7 @@ export default function Page() {
 
           <Section id="limites" title="Límites conocidos">
             <ul className="list-disc space-y-1 pl-5">
-              <li>No hay programas de 2026 publicados a fecha de la última comprobación.</li>
+              <li>Los programas de 2026 ya publicados (PP y Vox) están registrados como documento, pero sus propuestas aún no están incorporadas; PSOE, Frente Amplio y Podemos no tenían programa localizable en la última comprobación.</li>
               <li>Podemos no tiene programa propio de generales desde 2019; su programa de 2024 es europeo.</li>
               <li>No se ha localizado el texto íntegro del acuerdo de coalición PSOE–Sumar en una fuente oficial.</li>
               <li>Las votaciones por llamamiento no tienen voto nominal en datos abiertos.</li>

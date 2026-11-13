@@ -62,7 +62,7 @@ Solo las verificadas o corregidas que tienen los 350 escaños repartidos sirven 
 
 ## Limitaciones conocidas
 
-- Ningún partido ha publicado aún su programa de 2026: las propuestas proceden de programas anteriores (PP, PSOE y Sumar 2023; Vox 2023 en copia de un medio; Podemos 2019 y europeas 2024).
+- PP y Vox han publicado su programa de 2026 (registrados en `data/sources.json` y en el corpus; el de Vox, en copia de un medio), pero sus propuestas aún no están extraídas: las que se muestran proceden de programas anteriores (PP, PSOE y Sumar 2023; Vox 2023 en copia de un medio; Podemos 2019 y europeas 2024). PSOE, Frente Amplio y Podemos no tenían programa localizable el 13 de noviembre de 2026.
 - Las evaluaciones, propuestas, posturas del test y puntos en común los preparó un asistente de IA y están pendientes de revisión humana.
 - psoe.es bloquea las descargas automatizadas: el acuerdo PSOE–Sumar se toma de la copia del mismo PDF en Internet Archive.
 - Algunas promesas siguen como «no verificables»: alivio hipotecario hasta 38.000 €, avales del 20 %, 183.000 viviendas, becas y pensiones mínimas. Faltan datos presupuestarios o estadísticos oficiales.

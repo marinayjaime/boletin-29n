@@ -238,5 +238,43 @@
     "lastChecked": "2026-11-03",
     "notes": "Acuerdo firmado por el PSOE y Sumar y publicado en psoe.es. El servidor bloquea las descargas automatizadas; se usa la copia del mismo PDF archivada por Internet Archive (fecha de creación del PDF: 24-10-2023). Firmado por ambas formaciones: sus compromisos se atribuyen al Gobierno de coalición, no solo al PSOE.",
     "topics": []
+  },
+  {
+    "id": "pp-programa-2026",
+    "title": "La Reconstrucción Nacional. El programa del cambio necesario para España (Partido Popular, elecciones generales del 29 de noviembre de 2026)",
+    "author": "Partido Popular",
+    "kind": "programa_2026",
+    "partyId": "pp",
+    "cycle": "generales-2026",
+    "published": "2026-11-10",
+    "officialUrl": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+    "archiveUrl": "https://web.archive.org/web/20261110150323/https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+    "hostedByThirdParty": false,
+    "sha256": "cea8f2a052278e51ad682d19444eb0e9089997adbde8df76babf7f236bb5ffbe",
+    "pages": 82,
+    "printedPageOffset": 0,
+    "verification": "verificado",
+    "lastChecked": "2026-11-13",
+    "notes": "PDF descargado de pp.es el 13 de noviembre de 2026, enlazado desde la portada del partido. Presentado el 10 de noviembre de 2026; 249 medidas numeradas. Sus propuestas aún no están extraídas ni revisadas.",
+    "topics": []
+  },
+  {
+    "id": "vox-programa-2026",
+    "title": "Es sentido común. Programa electoral para las elecciones generales del 29 de noviembre de 2026 (Vox)",
+    "author": "Vox",
+    "kind": "programa_2026",
+    "partyId": "vox",
+    "cycle": "generales-2026",
+    "published": "2026-11-12",
+    "officialUrl": "https://www.voxespana.es/programa",
+    "archiveUrl": "https://drive.google.com/file/d/1axCHbt0paR2H05zlW_I3geW7p_P7x0HO/view",
+    "hostedByThirdParty": true,
+    "sha256": "065abf6720be2f7b19b8e911920c2ee2ce5c2059d0ae8bf09770bc790ed11b65",
+    "pages": 66,
+    "printedPageOffset": 0,
+    "verification": "copia_tercero",
+    "lastChecked": "2026-11-13",
+    "notes": "voxespana.es responde 403 a descargas automatizadas y no se ha localizado copia archivada del PDF oficial. Se usa la copia publicada por Infobae el 13 de noviembre de 2026 (alojada en Google Drive). Presentado el 12 de noviembre de 2026; 115 medidas numeradas en trece bloques. Pendiente de cotejo con el PDF oficial. Sus propuestas aún no están extraídas ni revisadas.",
+    "topics": []
   }
 ]

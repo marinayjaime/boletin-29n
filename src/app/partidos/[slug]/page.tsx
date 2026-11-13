@@ -109,13 +109,13 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
             <h2 id="prog" className="display text-3xl" style={{ color: v.strong }}>
               Programa 2026
             </h2>
-            <p className="mt-2 text-lg font-extrabold">Pendiente de publicación</p>
+            <p className="mt-2 text-lg font-extrabold">{status?.status === "publicado" ? "Publicado · propuestas pendientes de incorporar" : "Pendiente de publicación"}</p>
             <p className="mt-1 text-sm font-semibold text-ink-2">
               {status?.note} Comprobado el {status ? formatDate(status.checkedAt) : "—"}.
             </p>
           </div>
           <div className="card p-6">
-            <p className="eyebrow">Documentos usados mientras tanto</p>
+            <p className="eyebrow">{status?.status === "publicado" ? "Documentos registrados" : "Documentos usados mientras tanto"}</p>
             <ul className="mt-3 space-y-4">
               {docs.map((d) => (
                 <li key={d.id}>

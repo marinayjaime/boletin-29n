@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-11-13",
+    "entity": "RegistroBOE",
+    "entityId": "boe-leyes",
+    "action": "importacion",
+    "detail": "6 normas nuevas (2023-11-17 → 2026-11-12): Real Decreto 976/2026; Real Decreto 982/2026; Real Decreto 983/2026; Real Decreto 984/2026; Real Decreto 985/2026.",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-13",
+    "entity": "StatisticalIndicator",
+    "entityId": "dependencia-vejez",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (179 → 179 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-13",
+    "entity": "StatisticalIndicator",
+    "entityId": "gini",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (125 → 125 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-13",
+    "entity": "StatisticalIndicator",
+    "entityId": "inmigracion",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (27 → 27 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
     "date": "2026-11-12",
     "entity": "RegistroBOE",
     "entityId": "boe-leyes",

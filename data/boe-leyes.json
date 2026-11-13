@@ -1,7 +1,7 @@
 {
  "from": "2023-11-17",
- "to": "2026-11-11",
- "importedAt": "2026-11-12T15:20:39.187Z",
+ "to": "2026-11-12",
+ "importedAt": "2026-11-13T14:39:39.556Z",
  "source": "https://www.boe.es/datosabiertos/api/boe/sumario/",
  "items": [
   {
@@ -34906,6 +34906,54 @@
    "title": "Real Decreto 992/2026, de 10 de noviembre, por el que se dispone el cese de don Luis Pedro Marco de la Peña como Presidente de la Entidad Pública Empresarial Administrador de Infraestructuras Ferroviarias.",
    "kind": "real_decreto",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23609",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23663",
+   "date": "2026-11-12",
+   "title": "Real Decreto 976/2026, de 11 de noviembre, por el que se regula la concesión directa de subvenciones para la cooperación internacional al desarrollo sostenible por la Secretaría de Estado de Cooperación Internacional del Ministerio de Asuntos Exteriores, Unión Europea y Cooperación.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23663",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23664",
+   "date": "2026-11-12",
+   "title": "Real Decreto 982/2026, de 11 de noviembre, por el que se modifica el Real Decreto 1009/2022, de 5 de diciembre, por el que se establecen las normas reguladoras de la concesión directa de un préstamo a la empresa Airbus Helicopters España, S.A.U., para el programa de los helicópteros Tigre MKIII.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23664",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23665",
+   "date": "2026-11-12",
+   "title": "Real Decreto 983/2026, de 11 de noviembre, por el que se regula la concesión directa de una subvención destinada a la Fundación para la Transformación de La Rioja para contribuir al proyecto de creación del Centro Nacional de Tecnologías del Envase (CENTIDE), con cargo al ejercicio presupuestario 2026.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23665",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23666",
+   "date": "2026-11-12",
+   "title": "Real Decreto 984/2026, de 11 de noviembre, por el que se regula la concesión directa de una subvención a la Comunidad Autónoma de las Illes Balears y otra a la Comunidad Autónoma de Canarias para financiar inversiones en actuaciones relativas al ciclo integral del agua.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23666",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23667",
+   "date": "2026-11-12",
+   "title": "Real Decreto 985/2026, de 11 de noviembre, por el que se regula la Cámara Oficial de Comercio, Industria, Servicios y Navegación de Melilla.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23667",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23669",
+   "date": "2026-11-12",
+   "title": "Real Decreto 987/2026, de 11 de noviembre, por el que se regula la concesión directa de una subvención a la Asociación Española de Normalización (UNE) destinada a impulsar la actividad de normalización y estandarización, así como el soporte a secretaría y acción internacional en comités, tanto en el ámbito de las tecnologías digitales y la digitalización, como de las telecomunicaciones e infraestructuras digitales.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23669",
    "scope": "estatal"
   }
  ]

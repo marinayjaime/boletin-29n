@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-11-13T14:46:00.927Z",
+    "importer": "vigilante-programs",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-13T14:45:55.284Z",
+    "importer": "vigilante-government",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-13T14:45:53.887Z",
+    "importer": "vigilante-polls",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-13T14:45:52.942Z",
+    "importer": "vigilante-links",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-13T14:39:40.151Z",
+    "importer": "boe-texto",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-13T14:39:39.563Z",
+    "importer": "boe",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-13T14:39:37.846Z",
+    "importer": "eurostat",
+    "ok": 1,
+    "failures": []
+  },
+  {
     "date": "2026-11-12T15:25:35.019Z",
     "importer": "vigilante-programs",
     "ok": 1,
@@ -436,49 +478,5 @@
     "importer": "vigilante-polls",
     "ok": 1,
     "failures": []
-  },
-  {
-    "date": "2026-11-03T07:35:13.309Z",
-    "importer": "boe-texto",
-    "ok": 1,
-    "failures": []
-  },
-  {
-    "date": "2026-11-03T07:00:48.955Z",
-    "importer": "eurostat",
-    "ok": 33,
-    "failures": []
-  },
-  {
-    "date": "2026-11-03T06:55:41.024Z",
-    "importer": "eurostat",
-    "ok": 33,
-    "failures": []
-  },
-  {
-    "date": "2026-11-02T11:26:32.601Z",
-    "importer": "congreso",
-    "ok": 147,
-    "failures": []
-  },
-  {
-    "date": "2026-11-02T11:24:46.532Z",
-    "importer": "congreso",
-    "ok": 147,
-    "failures": []
-  },
-  {
-    "date": "2026-11-02T11:18:22.756Z",
-    "importer": "eurostat",
-    "ok": 1,
-    "failures": []
-  },
-  {
-    "date": "2026-11-02T11:18:13.087Z",
-    "importer": "eurostat",
-    "ok": 1,
-    "failures": [
-      "ipca-indice: fetch failed"
-    ]
   }
 ]

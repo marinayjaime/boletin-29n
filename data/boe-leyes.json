@@ -1,7 +1,7 @@
 {
  "from": "2023-11-17",
- "to": "2026-11-12",
- "importedAt": "2026-11-13T14:39:39.556Z",
+ "to": "2026-11-13",
+ "importedAt": "2026-11-14T13:37:47.112Z",
  "source": "https://www.boe.es/datosabiertos/api/boe/sumario/",
  "items": [
   {
@@ -34954,6 +34954,70 @@
    "title": "Real Decreto 987/2026, de 11 de noviembre, por el que se regula la concesión directa de una subvención a la Asociación Española de Normalización (UNE) destinada a impulsar la actividad de normalización y estandarización, así como el soporte a secretaría y acción internacional en comités, tanto en el ámbito de las tecnologías digitales y la digitalización, como de las telecomunicaciones e infraestructuras digitales.",
    "kind": "real_decreto",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23669",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23756",
+   "date": "2026-11-13",
+   "title": "Real Decreto 977/2026, de 11 de noviembre, por el que se regula la concesión directa de subvenciones a las confesiones religiosas minoritarias firmantes de acuerdos de cooperación con el Estado.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23756",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23757",
+   "date": "2026-11-13",
+   "title": "Real Decreto 978/2026, de 11 de noviembre, por el que se modifican el Real Decreto 1106/2020, de 15 de diciembre, por el que se regula el Estatuto de los consumidores electrointensivos, y el Real Decreto 309/2022, de 3 de mayo, por el que se establece el mecanismo de compensación de costes indirectos para los sectores y subsectores industriales a los que se considera expuestos a un riesgo significativo de fuga de carbono durante el periodo 2021-2030.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23757",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23758",
+   "date": "2026-11-13",
+   "title": "Real Decreto 979/2026, de 11 de noviembre, por el que se modifica el Real Decreto 278/1995, de 24 de febrero, por el que se crea en España el Registro previsto en el Convenio de 12 de noviembre de 1974 de la Asamblea General de las Naciones Unidas.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23758",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23759",
+   "date": "2026-11-13",
+   "title": "Real Decreto 980/2026, de 11 de noviembre, por el que se desarrolla el régimen jurídico de la obligación de promoción de obra audiovisual europea y de la diversidad lingüística.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23759",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23760",
+   "date": "2026-11-13",
+   "title": "Real Decreto 981/2026, de 11 de noviembre, por el que se crea el Defensor/a de Víctimas de Accidentes de Transporte Colectivo, y se modifican el Real Decreto 1009/2023, de 5 de diciembre, por el que se establece la estructura orgánica básica de los departamentos ministeriales, y el Real Decreto 253/2024, de 12 de marzo, por el que se desarrolla la estructura orgánica básica del Ministerio de Transportes y Movilidad Sostenible.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23760",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23763",
+   "date": "2026-11-13",
+   "title": "Real Decreto 986/2026, de 11 de noviembre, sobre identificación de animales de compañía.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23763",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23764",
+   "date": "2026-11-13",
+   "title": "Real Decreto 993/2026, de 11 de noviembre, por el que se nombra Presidente del Tribunal de Instancia Exclusivo de Las Palmas de Gran Canaria al Magistrado don Mariano López Molina.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23764",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23765",
+   "date": "2026-11-13",
+   "title": "Real Decreto 994/2026, de 11 de noviembre, por el que se nombra Presidente del Tribunal de Instancia de León al Magistrado don José Manuel Soto Guitián.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23765",
    "scope": "estatal"
   }
  ]

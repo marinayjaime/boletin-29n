@@ -1,5 +1,45 @@
 [
   {
+    "date": "2026-11-14",
+    "entity": "RegistroBOE",
+    "entityId": "boe-leyes",
+    "action": "importacion",
+    "detail": "8 normas nuevas (2023-11-17 → 2026-11-13): Real Decreto 977/2026; Real Decreto 978/2026; Real Decreto 979/2026; Real Decreto 980/2026; Real Decreto 981/2026.",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-14",
+    "entity": "Enlaces",
+    "entityId": "link-report",
+    "action": "verificacion",
+    "detail": "Comprobación de enlaces: 2 rotos (antes 2).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-14",
+    "entity": "StatisticalIndicator",
+    "entityId": "dependencia-vejez",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (179 → 179 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-14",
+    "entity": "StatisticalIndicator",
+    "entityId": "fecundidad",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (166 → 163 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-14",
+    "entity": "StatisticalIndicator",
+    "entityId": "inmigracion",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (27 → 27 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
     "date": "2026-11-13",
     "entity": "SourceDocument",
     "entityId": "pp-programa-2026",

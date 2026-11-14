@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-12T15:25:15.833Z",
+  "checkedAt": "2026-11-14T13:42:25.510Z",
   "results": [
     {
       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742",
@@ -118,9 +118,33 @@
     {
       "url": "https://web.archive.org/web/20260903203200/https://www.psoe.es/media-content/2023/10/ACUERDO_GOBIERNO_COALICIO%CC%81N_2023-DEF.pdf?utm_source=chatgpt.com",
       "where": "fuente acuerdo-psoe-sumar-2023 (copia)",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+      "where": "fuente pp-programa-2026 (oficial)",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "url": "https://web.archive.org/web/20261110150323/https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+      "where": "fuente pp-programa-2026 (copia)",
       "status": 0,
       "state": "error",
       "error": "fetch failed"
+    },
+    {
+      "url": "https://www.voxespana.es/programa",
+      "where": "fuente vox-programa-2026 (oficial)",
+      "status": 403,
+      "state": "bloqueado"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1axCHbt0paR2H05zlW_I3geW7p_P7x0HO/view",
+      "where": "fuente vox-programa-2026 (copia)",
+      "status": 200,
+      "state": "ok"
     },
     {
       "url": "https://ec.europa.eu/eurostat/databrowser/view/tec00115/default/table?lang=es",

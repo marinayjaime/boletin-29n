@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-11-15",
+    "entity": "RegistroBOE",
+    "entityId": "boe-leyes",
+    "action": "importacion",
+    "detail": "4 normas nuevas (2023-11-17 → 2026-11-14): Real Decreto 997/2026; Real Decreto 998/2026; Real Decreto 999/2026; Real Decreto 1000/2026.",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-15",
+    "entity": "Enlaces",
+    "entityId": "link-report",
+    "action": "verificacion",
+    "detail": "Comprobación de enlaces: 1 rotos (antes 2).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
     "date": "2026-11-14",
     "entity": "RegistroBOE",
     "entityId": "boe-leyes",

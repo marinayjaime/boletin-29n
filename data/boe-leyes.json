@@ -1,7 +1,7 @@
 {
  "from": "2023-11-17",
- "to": "2026-11-13",
- "importedAt": "2026-11-14T13:37:47.112Z",
+ "to": "2026-11-14",
+ "importedAt": "2026-11-15T14:00:02.647Z",
  "source": "https://www.boe.es/datosabiertos/api/boe/sumario/",
  "items": [
   {
@@ -35018,6 +35018,38 @@
    "title": "Real Decreto 994/2026, de 11 de noviembre, por el que se nombra Presidente del Tribunal de Instancia de León al Magistrado don José Manuel Soto Guitián.",
    "kind": "real_decreto",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23765",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23832",
+   "date": "2026-11-14",
+   "title": "Real Decreto 997/2026, de 13 de noviembre, por el que se dispone el cese de don Álvaro Fernández Heredia como Presidente de la Entidad Pública Empresarial RENFE-Operadora.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23832",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23833",
+   "date": "2026-11-14",
+   "title": "Real Decreto 998/2026, de 13 de noviembre, por el que se nombra Director del Gabinete del Ministro de Transportes y Movilidad Sostenible a don Jorge Fabra Portela.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23833",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23834",
+   "date": "2026-11-14",
+   "title": "Real Decreto 999/2026, de 13 de noviembre, por el que se nombra Presidente de la Entidad Pública Empresarial Administrador de Infraestructuras Ferroviarias a don Joaquim Hortalà Vallvé.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23834",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-23835",
+   "date": "2026-11-14",
+   "title": "Real Decreto 1000/2026, de 13 de noviembre, por el que se nombra Presidenta de la Entidad Pública Empresarial RENFE-Operadora a doña Inmaculada Gutiérrez Carrizo.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23835",
    "scope": "estatal"
   }
  ]

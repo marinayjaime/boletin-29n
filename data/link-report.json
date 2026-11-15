@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-14T13:42:25.510Z",
+  "checkedAt": "2026-11-15T14:04:20.614Z",
   "results": [
     {
       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742",
@@ -130,9 +130,8 @@
     {
       "url": "https://web.archive.org/web/20261110150323/https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
       "where": "fuente pp-programa-2026 (copia)",
-      "status": 0,
-      "state": "error",
-      "error": "fetch failed"
+      "status": 200,
+      "state": "ok"
     },
     {
       "url": "https://www.voxespana.es/programa",

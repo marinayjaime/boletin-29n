@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-11-16",
+    "entity": "RegistroBOE",
+    "entityId": "boe-leyes",
+    "action": "importacion",
+    "detail": "0 normas nuevas (2023-11-17 → 2026-11-15).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-16",
+    "entity": "Enlaces",
+    "entityId": "link-report",
+    "action": "verificacion",
+    "detail": "Comprobación de enlaces: 3 rotos (antes 1).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-16",
+    "entity": "StatisticalIndicator",
+    "entityId": "dependencia-vejez",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (179 → 179 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
     "date": "2026-11-15",
     "entity": "RegistroBOE",
     "entityId": "boe-leyes",

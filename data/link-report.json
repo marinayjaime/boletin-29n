@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-16T15:59:46.172Z",
+  "checkedAt": "2026-11-17T16:14:04.563Z",
   "results": [
     {
       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742",
@@ -131,9 +131,8 @@
     {
       "url": "https://web.archive.org/web/20261110150323/https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
       "where": "fuente pp-programa-2026 (copia)",
-      "status": 0,
-      "state": "error",
-      "error": "fetch failed"
+      "status": 200,
+      "state": "ok"
     },
     {
       "url": "https://www.voxespana.es/programa",
@@ -1008,8 +1007,9 @@
     {
       "url": "https://web.archive.org/web/2024/https://movimientosumar.es/wp-content/uploads/2023/11/2023-11-08-estatutos.pdf",
       "where": "estatutos frente-amplio",
-      "status": 200,
-      "state": "ok"
+      "status": 0,
+      "state": "error",
+      "error": "fetch failed"
     }
   ]
 }

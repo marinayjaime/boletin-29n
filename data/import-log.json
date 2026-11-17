@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-11-17T16:14:12.154Z",
+    "importer": "vigilante-programs",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-17T16:14:06.502Z",
+    "importer": "vigilante-government",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-17T16:14:05.288Z",
+    "importer": "vigilante-polls",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-17T16:14:04.564Z",
+    "importer": "vigilante-links",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-17T16:07:16.176Z",
+    "importer": "boe-texto",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-17T16:07:15.515Z",
+    "importer": "boe",
+    "ok": 1,
+    "failures": []
+  },
+  {
+    "date": "2026-11-17T16:07:14.260Z",
+    "importer": "eurostat",
+    "ok": 1,
+    "failures": []
+  },
+  {
     "date": "2026-11-16T16:00:06.861Z",
     "importer": "vigilante-programs",
     "ok": 1,
@@ -433,48 +475,6 @@
   },
   {
     "date": "2026-11-06T14:27:08.595Z",
-    "importer": "vigilante-polls",
-    "ok": 1,
-    "failures": []
-  },
-  {
-    "date": "2026-11-06T14:27:07.745Z",
-    "importer": "vigilante-links",
-    "ok": 1,
-    "failures": []
-  },
-  {
-    "date": "2026-11-06T14:22:21.985Z",
-    "importer": "boe-texto",
-    "ok": 1,
-    "failures": []
-  },
-  {
-    "date": "2026-11-06T14:22:21.127Z",
-    "importer": "boe",
-    "ok": 1,
-    "failures": []
-  },
-  {
-    "date": "2026-11-06T14:22:19.813Z",
-    "importer": "eurostat",
-    "ok": 1,
-    "failures": []
-  },
-  {
-    "date": "2026-11-05T14:49:29.544Z",
-    "importer": "vigilante-programs",
-    "ok": 1,
-    "failures": []
-  },
-  {
-    "date": "2026-11-05T14:49:23.880Z",
-    "importer": "vigilante-government",
-    "ok": 1,
-    "failures": []
-  },
-  {
-    "date": "2026-11-05T14:49:22.351Z",
     "importer": "vigilante-polls",
     "ok": 1,
     "failures": []

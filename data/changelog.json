@@ -1,5 +1,53 @@
 [
   {
+    "date": "2026-11-18",
+    "entity": "RegistroBOE",
+    "entityId": "boe-leyes",
+    "action": "importacion",
+    "detail": "9 normas nuevas (2023-11-17 → 2026-11-17): Real Decreto 995/2026; Real Decreto 996/2026; Ley 10/2026; Ley 11/2026; Ley 12/2026.",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-18",
+    "entity": "Enlaces",
+    "entityId": "link-report",
+    "action": "verificacion",
+    "detail": "Comprobación de enlaces: 1 rotos (antes 3).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-18",
+    "entity": "StatisticalIndicator",
+    "entityId": "alquiler-ipca",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (1915 → 1921 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-18",
+    "entity": "StatisticalIndicator",
+    "entityId": "inflacion-alimentos",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (1915 → 1921 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-18",
+    "entity": "StatisticalIndicator",
+    "entityId": "inflacion-mensual",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (1931 → 1932 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-18",
+    "entity": "StatisticalIndicator",
+    "entityId": "inflacion",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (1920 → 1921 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
     "date": "2026-11-17",
     "entity": "RegistroBOE",
     "entityId": "boe-leyes",

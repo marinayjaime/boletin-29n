@@ -1,7 +1,7 @@
 {
  "from": "2023-11-17",
- "to": "2026-11-17",
- "importedAt": "2026-11-18T15:44:45.950Z",
+ "to": "2026-11-18",
+ "importedAt": "2026-11-19T15:50:34.961Z",
  "source": "https://www.boe.es/datosabiertos/api/boe/sumario/",
  "items": [
   {
@@ -35122,6 +35122,46 @@
    "title": "Real Decreto 990/2026, de 11 de noviembre, por el que se promueve al empleo de General de Brigada del Cuerpo de la Guardia Civil al Coronel don Roberto Blanes González.",
    "kind": "real_decreto",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24014",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24119",
+   "date": "2026-11-18",
+   "title": "Real Decreto-ley 37/2026, de 17 de noviembre, por el que se aprueban medidas urgentes en materia de retribuciones del personal al servicio del sector público.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24119",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24120",
+   "date": "2026-11-18",
+   "title": "Real Decreto-ley 38/2026, de 17 de noviembre, por el que se adoptan medidas relativas a los recursos de los sistemas de financiación territorial y medidas fiscales urgentes para evitar la tributación del salario mínimo interprofesional de 2027 en el Impuesto sobre la Renta de las Personas Físicas.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24120",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24121",
+   "date": "2026-11-18",
+   "title": "Real Decreto-ley 39/2026, de 17 de noviembre, por el que se modifican el texto refundido de la Ley del Estatuto de los Trabajadores, aprobado por el Real Decreto Legislativo 2/2015, de 23 de octubre; el Real Decreto 902/2020, de 13 de octubre, de igualdad retributiva entre mujeres y hombres; la Ley 3/2023, de 28 de febrero, de Empleo; y el Real Decreto 723/2026, de 9 de septiembre, por el que se transpone la Directiva (UE) 2019/1152 del Parlamento Europeo y del Consejo, de 20 de junio de 2019, relativa a unas condiciones laborales transparentes y previsibles en la Unión Europea.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24121",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24123",
+   "date": "2026-11-18",
+   "title": "Real Decreto 1027/2026, de 17 de noviembre, por el que se dispone el cese de doña María Marcos Salvador como Directora del Departamento de Seguridad de la Presidencia del Gobierno.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24123",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24125",
+   "date": "2026-11-18",
+   "title": "Real Decreto 1028/2026, de 17 de noviembre, por el que se nombra Gobernadora Alterna por España en el Banco Africano de Desarrollo, el Fondo Africano de Desarrollo, el Banco Asiático de Desarrollo, el Fondo Asiático de Desarrollo, la Corporación Interamericana de Inversiones y el Banco Interamericano de Desarrollo a doña Paula Conthe Calvo.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24125",
    "scope": "estatal"
   }
  ]

@@ -1,7 +1,7 @@
 {
  "from": "2023-11-17",
- "to": "2026-11-18",
- "importedAt": "2026-11-19T15:50:34.961Z",
+ "to": "2026-11-19",
+ "importedAt": "2026-11-20T15:32:25.276Z",
  "source": "https://www.boe.es/datosabiertos/api/boe/sumario/",
  "items": [
   {
@@ -35162,6 +35162,46 @@
    "title": "Real Decreto 1028/2026, de 17 de noviembre, por el que se nombra Gobernadora Alterna por España en el Banco Africano de Desarrollo, el Fondo Africano de Desarrollo, el Banco Asiático de Desarrollo, el Fondo Asiático de Desarrollo, la Corporación Interamericana de Inversiones y el Banco Interamericano de Desarrollo a doña Paula Conthe Calvo.",
    "kind": "real_decreto",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24125",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24187",
+   "date": "2026-11-19",
+   "title": "Real Decreto 1001/2026, de 18 de noviembre, por el que se regula la concesión directa de una subvención al CEI-Fundación Privada Centro de Estudios Internacionales durante el ejercicio presupuestario 2026.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24187",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24188",
+   "date": "2026-11-19",
+   "title": "Real Decreto 1002/2026, de 18 de noviembre, por el que se regula la concesión directa de subvenciones en materia de cooperación para el desarrollo sostenible por la Agencia Española de Cooperación Internacional para el Desarrollo.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24188",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24189",
+   "date": "2026-11-19",
+   "title": "Real Decreto 1013/2026, de 18 de noviembre, por el que se fija el salario mínimo interprofesional para 2027.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24189",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24190",
+   "date": "2026-11-19",
+   "title": "Real Decreto 1026/2026, de 18 de noviembre, por el que se aprueba el Reglamento relativo al servicio universal de telecomunicaciones y otras obligaciones de servicio público en el suministro de redes y en la prestación de servicios de comunicaciones electrónicas.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24190",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24258",
+   "date": "2026-11-19",
+   "title": "Real Decreto 1031/2026, de 17 de noviembre, por el que se concede, a título póstumo, la Gran Cruz de la Real Orden de Reconocimiento Civil a las Víctimas del Terrorismo a don Guillem Agulló Salvador.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24258",
    "scope": "estatal"
   }
  ]

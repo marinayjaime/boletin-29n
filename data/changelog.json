@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-11-20",
+    "entity": "RegistroBOE",
+    "entityId": "boe-leyes",
+    "action": "importacion",
+    "detail": "5 normas nuevas (2023-11-17 → 2026-11-19): Real Decreto 1001/2026; Real Decreto 1002/2026; Real Decreto 1013/2026; Real Decreto 1026/2026; Real Decreto 1031/2026.",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-20",
+    "entity": "Enlaces",
+    "entityId": "link-report",
+    "action": "verificacion",
+    "detail": "Comprobación de enlaces: 1 rotos (antes 3).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-20",
+    "entity": "StatisticalIndicator",
+    "entityId": "dependencia-vejez",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (179 → 179 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-20",
+    "entity": "StatisticalIndicator",
+    "entityId": "paro-mensual",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (1926 → 1926 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
     "date": "2026-11-19",
     "entity": "RegistroBOE",
     "entityId": "boe-leyes",

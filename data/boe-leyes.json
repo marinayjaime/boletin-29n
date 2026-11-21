@@ -1,7 +1,7 @@
 {
  "from": "2023-11-17",
- "to": "2026-11-19",
- "importedAt": "2026-11-20T15:32:25.276Z",
+ "to": "2026-11-20",
+ "importedAt": "2026-11-21T14:43:35.567Z",
  "source": "https://www.boe.es/datosabiertos/api/boe/sumario/",
  "items": [
   {
@@ -35202,6 +35202,166 @@
    "title": "Real Decreto 1031/2026, de 17 de noviembre, por el que se concede, a título póstumo, la Gran Cruz de la Real Orden de Reconocimiento Civil a las Víctimas del Terrorismo a don Guillem Agulló Salvador.",
    "kind": "real_decreto",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24258",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24299",
+   "date": "2026-11-20",
+   "title": "Real Decreto 1003/2026, de 18 de noviembre, por el que se aprueba el Estatuto de la Agencia Estatal de Salud Pública.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24299",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24300",
+   "date": "2026-11-20",
+   "title": "Real Decreto 1004/2026, de 18 de noviembre, por el que se modifica el Real Decreto 988/2022, de 29 de noviembre, por el que se regula el Registro General de las Mejores Técnicas Disponibles en Explotaciones y el soporte para el cálculo, seguimiento y notificación de las emisiones en ganadería, y se modifican diversas normas en materia agraria.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24300",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24301",
+   "date": "2026-11-20",
+   "title": "Real Decreto 1005/2026, de 18 de noviembre, por el que se regulan los términos y las condiciones de inclusión en el Régimen General de la Seguridad Social de los ministros de culto de la Iglesia Ortodoxa Rumana en España.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24301",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24302",
+   "date": "2026-11-20",
+   "title": "Real Decreto 1006/2026, de 18 de noviembre, sobre el uso de los sistemas de limpieza de gases de escape de buques.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24302",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24303",
+   "date": "2026-11-20",
+   "title": "Real Decreto 1007/2026, de 18 de noviembre, por el que se regula la concesión directa de una subvención a la Universidad Politécnica de Madrid para el Observatorio de la Movilidad Metropolitana.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24303",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24304",
+   "date": "2026-11-20",
+   "title": "Real Decreto 1014/2026, de 18 de noviembre, por el que se establecen las normas reguladoras de la concesión directa de anticipos reembolsables en la forma de préstamos a varias empresas para el desarrollo tecnológico e industrial de varios programas especiales de modernización de múltiples capacidades para las Fuerzas Armadas.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24304",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24305",
+   "date": "2026-11-20",
+   "title": "Real Decreto 1015/2026, de 18 de noviembre, por el que se modifica el Real Decreto 1008/2022, de 5 de diciembre, por el que se establecen las normas reguladoras de la concesión directa de un préstamo a la empresa Airbus Defence and Space, S.A.U., para el programa Euromale RPAS.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24305",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24306",
+   "date": "2026-11-20",
+   "title": "Real Decreto 1016/2026, de 18 de noviembre, por el que se regula la concesión directa de subvenciones en materia de turismo por el Ministerio de Industria y Turismo, durante el ejercicio presupuestario 2026.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24306",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24307",
+   "date": "2026-11-20",
+   "title": "Real Decreto 1017/2026, de 18 de noviembre, por el que se regula el acceso y la gestión de los recursos pesqueros.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24307",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24308",
+   "date": "2026-11-20",
+   "title": "Real Decreto 1018/2026, de 18 de noviembre, por el que se modifica el Real Decreto 197/2017, de 3 de marzo, por el que se establece el Programa nacional de control y erradicación de Tecia (Scrobipalpopsis) solanivora (Povolny).",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24308",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24309",
+   "date": "2026-11-20",
+   "title": "Real Decreto 1019/2026, de 18 de noviembre, por el que se modifica el Real Decreto 267/2017, de 17 de marzo, por el que se desarrolla la Ley 6/2015, de 12 de mayo, de Denominaciones de Origen e Indicaciones Geográficas Protegidas de ámbito territorial supraautonómico, en relación con el reconocimiento de las agrupaciones de productores.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24309",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24311",
+   "date": "2026-11-20",
+   "title": "Real Decreto 1020/2026, de 18 de noviembre, por el que se regula la concesión directa de una subvención al Centro Nacional de Tecnología y Seguridad Alimentaria para el programa «Sandbox AgriFoodTech», con cargo al ejercicio 2026.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24311",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24312",
+   "date": "2026-11-20",
+   "title": "Real Decreto 1021/2026, de 18 de noviembre, por el que se regula la concesión directa de una subvención a la Federación Española de Centros Tecnológicos para fomentar la contribución de los centros tecnológicos en la transferencia del conocimiento y la innovación.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24312",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24313",
+   "date": "2026-11-20",
+   "title": "Real Decreto 1022/2026, de 18 de noviembre, por el que se regula la concesión directa de subvenciones a entidades que prestan servicios de interés general al sistema español de ciencia y tecnología.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24313",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24314",
+   "date": "2026-11-20",
+   "title": "Real Decreto 1023/2026, de 18 de noviembre, por el que se regula la concesión directa de subvenciones a determinadas entidades para actuaciones de relevancia en materia de universidades y de interés público durante el ejercicio 2026.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24314",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24315",
+   "date": "2026-11-20",
+   "title": "Real Decreto 1024/2026, de 18 de noviembre, por el que se regula el procedimiento para la acreditación del profesorado permanente laboral por la Agencia Nacional de Evaluación de la Calidad y Acreditación, O.A., y se modifica el Real Decreto 678/2023, de 18 de julio, por el que se regula la acreditación estatal para el acceso a los cuerpos docentes universitarios y el régimen de los concursos de acceso a plazas de dichos cuerpos.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24315",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24316",
+   "date": "2026-11-20",
+   "title": "Real Decreto 1025/2026, de 18 de noviembre, por el que se determinan las especialidades de conocimiento, a efectos del establecimiento de los perfiles de los concursos de las plazas de profesorado universitario de las universidades públicas, y los ámbitos de conocimiento, a efectos de la adscripción de los puestos de trabajo del profesorado universitario, y se modifica el Real Decreto 898/1985, de 30 de abril, sobre régimen del profesorado universitario.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24316",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24317",
+   "date": "2026-11-20",
+   "title": "Ley 5/2026, de 16 de julio, de modificación de la Ley 2/2020, de 7 de febrero, de Evaluación Ambiental de Castilla-La Mancha.",
+   "kind": "ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24317",
+   "scope": "autonomica"
+  },
+  {
+   "id": "BOE-A-2026-24319",
+   "date": "2026-11-20",
+   "title": "Real Decreto 1029/2026, de 18 de noviembre, por el que se promueve al empleo de Almirante del Cuerpo General de la Armada al Vicealmirante don Francisco Javier Roca Rivero.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24319",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24320",
+   "date": "2026-11-20",
+   "title": "Real Decreto 1030/2026, de 18 de noviembre, por el que se promueve al empleo de General de División del Cuerpo de Infantería de Marina al General de Brigada don Francisco Javier González Vázquez.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24320",
    "scope": "estatal"
   }
  ]

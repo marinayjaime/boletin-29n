@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-11-21",
+    "entity": "RegistroBOE",
+    "entityId": "boe-leyes",
+    "action": "importacion",
+    "detail": "20 normas nuevas (2023-11-17 → 2026-11-20): Real Decreto 1003/2026; Real Decreto 1004/2026; Real Decreto 1005/2026; Real Decreto 1006/2026; Real Decreto 1007/2026.",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-21",
+    "entity": "StatisticalIndicator",
+    "entityId": "paro-mensual",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (1926 → 1926 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
     "date": "2026-11-20",
     "entity": "RegistroBOE",
     "entityId": "boe-leyes",

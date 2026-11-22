@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-11-22",
+    "entity": "RegistroBOE",
+    "entityId": "boe-leyes",
+    "action": "importacion",
+    "detail": "3 normas nuevas (2023-11-17 → 2026-11-21): Real Decreto-ley 40/2026; Real Decreto-ley 41/2026; Real Decreto 1032/2026.",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-22",
+    "entity": "Enlaces",
+    "entityId": "link-report",
+    "action": "verificacion",
+    "detail": "Comprobación de enlaces: 3 rotos (antes 1).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
     "date": "2026-11-21",
     "entity": "RegistroBOE",
     "entityId": "boe-leyes",

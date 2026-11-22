@@ -1,7 +1,7 @@
 {
  "from": "2023-11-17",
- "to": "2026-11-20",
- "importedAt": "2026-11-21T14:43:35.567Z",
+ "to": "2026-11-21",
+ "importedAt": "2026-11-22T14:40:35.560Z",
  "source": "https://www.boe.es/datosabiertos/api/boe/sumario/",
  "items": [
   {
@@ -35362,6 +35362,30 @@
    "title": "Real Decreto 1030/2026, de 18 de noviembre, por el que se promueve al empleo de General de División del Cuerpo de Infantería de Marina al General de Brigada don Francisco Javier González Vázquez.",
    "kind": "real_decreto",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24320",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24437",
+   "date": "2026-11-21",
+   "title": "Real Decreto-ley 40/2026, de 20 de noviembre, de medidas urgentes para el impulso de la competitividad y la soberanía tecnológica en el ámbito científico e investigador.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24437",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24438",
+   "date": "2026-11-21",
+   "title": "Real Decreto-ley 41/2026, de 20 de noviembre, por el que se modifica la Ley 1/2005, de 9 de marzo, por la que se regula el régimen del comercio de derechos de emisión de gases de efecto invernadero.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24438",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24439",
+   "date": "2026-11-21",
+   "title": "Real Decreto 1032/2026, de 20 de noviembre, por el que se regulan los requisitos de sostenibilidad energética, medioambiental y de resiliencia y soberanía digital aplicables a los centros de datos.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24439",
    "scope": "estatal"
   }
  ]

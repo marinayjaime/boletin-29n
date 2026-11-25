@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-11-25",
+    "entity": "RegistroBOE",
+    "entityId": "boe-leyes",
+    "action": "importacion",
+    "detail": "5 normas nuevas (2023-11-17 → 2026-11-24): Real Decreto 1008/2026; Real Decreto 1009/2026; Real Decreto 1010/2026; Real Decreto 1011/2026; Real Decreto 1012/2026.",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-25",
+    "entity": "StatisticalIndicator",
+    "entityId": "pib-crecimiento",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (72 → 72 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-25",
+    "entity": "StatisticalIndicator",
+    "entityId": "pib-per-capita",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (186 → 186 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-25",
+    "entity": "StatisticalIndicator",
+    "entityId": "productividad",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (186 → 186 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
     "date": "2026-11-24",
     "entity": "RegistroBOE",
     "entityId": "boe-leyes",

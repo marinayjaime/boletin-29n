@@ -1,7 +1,7 @@
 {
  "from": "2023-11-17",
- "to": "2026-11-24",
- "importedAt": "2026-11-25T17:18:57.907Z",
+ "to": "2026-11-25",
+ "importedAt": "2026-11-26T16:58:54.543Z",
  "source": "https://www.boe.es/datosabiertos/api/boe/sumario/",
  "items": [
   {
@@ -35426,6 +35426,38 @@
    "title": "Real Decreto 1012/2026, de 19 de noviembre, por el que se establece el Certificado profesional en Apoyos y cuidados a personas en situación de dependencia y/o con discapacidad para la promoción de su autonomía personal, de la familia profesional Servicios Socioculturales y a la Comunidad, se fija su currículo y las ofertas de grados B y A incluidas en este certificado profesional.",
    "kind": "real_decreto",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24616",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24700",
+   "date": "2026-11-25",
+   "title": "Real Decreto-ley 42/2026, de 24 de noviembre, por el que se modifican el texto refundido de la Ley del Estatuto de los Trabajadores, aprobado por el Real Decreto Legislativo 2/2015, de 23 de octubre, y el texto refundido de la Ley del Estatuto Básico del Empleado Público, aprobado por el Real Decreto Legislativo 5/2015, de 30 de octubre, en materia de adaptación y reducción de jornada, de permisos por duelo en caso de fallecimiento, de prestación de ayuda para morir y de nacimiento y cuidado del menor.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24700",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24701",
+   "date": "2026-11-25",
+   "title": "Real Decreto-ley 43/2026, de 24 de noviembre, por el que se prorroga para 2027 la aplicación del Impuesto sobre el margen de intereses y comisiones de determinadas entidades financieras, se adoptan medidas de naturaleza tributaria para incentivar la actividad económica llevada a cabo por los trabajadores autónomos y medidas urgentes para el impulso de la competitividad económica.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24701",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24702",
+   "date": "2026-11-25",
+   "title": "Real Decreto-ley 44/2026, de 24 de noviembre, de contratos de créditos al consumo y de protección de los prestatarios en la cesión de carteras de créditos dudosos.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24702",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24703",
+   "date": "2026-11-25",
+   "title": "Real Decreto-ley 45/2026, de 24 de noviembre, de medidas de promoción del uso del transporte público mediante la bonificación de abonos y títulos multiviaje en el año 2027 y de medidas financieras para la renovación de la flota española por razones medioambientales.",
+   "kind": "real_decreto_ley",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24703",
    "scope": "estatal"
   }
  ]

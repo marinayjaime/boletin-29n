@@ -1,5 +1,61 @@
 [
   {
+    "date": "2026-11-26",
+    "entity": "RegistroBOE",
+    "entityId": "boe-leyes",
+    "action": "importacion",
+    "detail": "4 normas nuevas (2023-11-17 → 2026-11-25): Real Decreto-ley 42/2026; Real Decreto-ley 43/2026; Real Decreto-ley 44/2026; Real Decreto-ley 45/2026.",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-26",
+    "entity": "Enlaces",
+    "entityId": "link-report",
+    "action": "verificacion",
+    "detail": "Comprobación de enlaces: 2 rotos (antes 3).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-26",
+    "entity": "StatisticalIndicator",
+    "entityId": "dependencia-vejez",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (179 → 179 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-26",
+    "entity": "StatisticalIndicator",
+    "entityId": "fecundidad",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (163 → 163 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-26",
+    "entity": "StatisticalIndicator",
+    "entityId": "homicidios",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (85 → 85 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-26",
+    "entity": "StatisticalIndicator",
+    "entityId": "inmigracion",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (27 → 27 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-26",
+    "entity": "StatisticalIndicator",
+    "entityId": "poblacion",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (32 → 32 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
     "date": "2026-11-25",
     "entity": "RegistroBOE",
     "entityId": "boe-leyes",

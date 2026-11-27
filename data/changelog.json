@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-11-27",
+    "entity": "RegistroBOE",
+    "entityId": "boe-leyes",
+    "action": "importacion",
+    "detail": "13 normas nuevas (2023-11-17 → 2026-11-26): Real Decreto 1033/2026; Real Decreto 1045/2026; Real Decreto 1046/2026; Real Decreto 1055/2026; Real Decreto 1056/2026.",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-27",
+    "entity": "Enlaces",
+    "entityId": "link-report",
+    "action": "verificacion",
+    "detail": "Comprobación de enlaces: 1 rotos (antes 2).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
+    "date": "2026-11-27",
+    "entity": "StatisticalIndicator",
+    "entityId": "inmigracion",
+    "action": "importacion",
+    "detail": "Serie actualizada desde Eurostat (27 → 27 observaciones).",
+    "by": "Actualización automática (GitHub Actions)"
+  },
+  {
     "date": "2026-11-26",
     "entity": "RegistroBOE",
     "entityId": "boe-leyes",

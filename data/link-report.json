@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-26T17:03:37.174Z",
+  "checkedAt": "2026-11-27T16:48:55.833Z",
   "results": [
     {
       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742",
@@ -1006,9 +1006,8 @@
     {
       "url": "https://web.archive.org/web/2024/https://movimientosumar.es/wp-content/uploads/2023/11/2023-11-08-estatutos.pdf",
       "where": "estatutos frente-amplio",
-      "status": 0,
-      "state": "error",
-      "error": "fetch failed"
+      "status": 200,
+      "state": "ok"
     }
   ]
 }

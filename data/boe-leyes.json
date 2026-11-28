@@ -1,7 +1,7 @@
 {
  "from": "2023-11-17",
- "to": "2026-11-26",
- "importedAt": "2026-11-27T16:44:33.748Z",
+ "to": "2026-11-27",
+ "importedAt": "2026-11-28T15:37:36.486Z",
  "source": "https://www.boe.es/datosabiertos/api/boe/sumario/",
  "items": [
   {
@@ -35562,6 +35562,238 @@
    "title": "Real Decreto 1078/2026, de 25 de noviembre, por el que se dispone la suplencia en la Secretaría General de Movilidad Sostenible.",
    "kind": "real_decreto",
    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24811",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24906",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1034/2026, de 25 de noviembre, por el que se regula la Comisión Asesora de Libertad Religiosa.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24906",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24907",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1035/2026, de 25 de noviembre, por el que se regula la Seguridad Social de las personas acogedoras especializadas de dedicación exclusiva.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24907",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24908",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1036/2026, de 25 de noviembre, por el que se aprueba el Estatuto de la Agencia estatal «Agencia Española de Medicamentos y Productos Sanitarios».",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24908",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24909",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1037/2026, de 25 de noviembre, por el que se regula la información previa al consentimiento en la interrupción voluntaria del embarazo y el comité clínico.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24909",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24910",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1038/2026, de 25 de noviembre, por el que se modifica el Estatuto del Organismo Autónomo Consejo Superior de Deportes, aprobado por Real Decreto 460/2015, de 5 de junio.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24910",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24911",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1039/2026, de 25 de noviembre, por el que se modifica el Real Decreto 2033/2009, de 30 de diciembre, por el que se determinan los puestos tipo adscritos al Cuerpo de Secretarios Judiciales a efectos del complemento general de puesto, la asignación inicial del complemento específico y las retribuciones por sustituciones que impliquen el desempeño conjunto de otra función.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24911",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24912",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1040/2026, de 25 de noviembre, por el que se aprueba el Estatuto del Instituto de Crédito Oficial.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24912",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24913",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1041/2026, de 25 de noviembre, por el que se modifica el Estatuto de la Agencia Estatal de Evaluación de Políticas Públicas, aprobado por el Real Decreto 65/2026, de 3 de febrero.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24913",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24914",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1042/2026, de 25 de noviembre, por el que se regula la concesión y utilización del distintivo «Igualdad en la empresa y por una sociedad libre de violencia de género».",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24914",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24915",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1043/2026, de 25 de noviembre, por el que se modifica el Real Decreto 345/2025, de 22 de abril, por el que se desarrolla el régimen jurídico de la Empresa de Transformación Agraria, SA, S.M.E., M.P. (TRAGSA) y de su filial Tecnologías y Servicios Agrarios, SA, S.M.E., M.P. (TRAGSATEC).",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24915",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24916",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1047/2026, de 26 de noviembre, de garantía de calidad de los centros privados del Sistema de Formación Profesional integrados en el sistema educativo, y por el que se regulan los centros asociados, los centros de segunda oportunidad en el Sistema de Formación Profesional, la Red Estatal de Centros de Excelencia de Formación Profesional, y se modifican el Real Decreto 1558/2005, de 23 de diciembre, por el que se regulan los requisitos básicos de los Centros integrados de formación profesional, el Real Decreto 229/2008, de 15 de febrero, por el que se regulan los Centros de Referencia Nacional en el ámbito de la formación profesional, y el Real Decreto 659/2023, de 18 de julio, por el que se desarrolla la ordenación del Sistema de Formación Profesional.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24916",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24917",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1048/2026, de 26 de noviembre, por el que se califica como Centro de Referencia Nacional de Industrias Extractivas de Materiales Críticos a la Escuela Laboral del Bierzo de la Fundación Santa Bárbara, perteneciente a la Comunidad de Castilla y León, en el área profesional de Industrias Extractivas de Materiales Críticos, de la familia profesional de Industrias Extractivas, en el ámbito de la formación profesional.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24917",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24918",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1049/2026, de 26 de noviembre, por el que se califica como Centro de Referencia Nacional de Confección en Textil y Piel al Centro Integrado de Formación Profesional Paseo das Pontes, perteneciente a la Xunta de Galicia, en el área profesional de Confección en Textil y Piel, de la familia profesional de Textil, Confección y Piel, en el ámbito de la formación profesional.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24918",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24919",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1050/2026, de 26 de noviembre, por el que se establece la ordenación de las enseñanzas artísticas superiores y los procedimientos de garantía de su calidad.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24919",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24920",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1051/2026, de 26 de noviembre, por el que se modifican diversos reales decretos que establecen las especialidades de los cuerpos docentes a los que se refiere la Ley Orgánica 2/2006, de 3 de mayo, de Educación, en relación con las lenguas no oficiales que gocen de protección legal en las comunidades autónomas.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24920",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24921",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1052/2026, de 26 de noviembre, por el que se modifican el Real Decreto 132/2010, de 12 de febrero, por el que se establecen los requisitos mínimos de los centros que impartan las enseñanzas del segundo ciclo de la educación infantil, la educación primaria y la educación secundaria, y el Real Decreto 659/2023, de 18 de julio, por el que se desarrolla la ordenación del Sistema de Formación Profesional.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24921",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24922",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1053/2026, de 26 de noviembre, por el que se regula la concesión directa de una subvención a la Real Federación Española de Automovilismo para la organización del Rally Islas Canarias WRC 2026.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24922",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24923",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1054/2026, de 26 de noviembre, por el que se regula la concesión directa de una subvención a la Generalitat de Cataluña en concepto de espacios ocupados por el personal que gestiona las becas y ayudas al estudio durante el año 2026.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24923",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24924",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1062/2026, de 26 de noviembre, por el que se modifican determinadas disposiciones normativas para adoptar medidas urgentes para la integración de la generación renovable y la agilización de los procedimientos de acceso, conexión y autorización en el sector energético y la información a los consumidores.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24924",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24925",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1063/2026, de 26 de noviembre, por el que se modifican determinados aspectos relativos al autoconsumo de energía eléctrica y de impulso al almacenamiento distribuido.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24925",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24926",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1064/2026, de 26 de noviembre, por el que se establecen requisitos mínimos de diseño, equipamiento, funcionamiento y seguridad de las instalaciones que se conecten a las redes de transporte y distribución de energía eléctrica.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24926",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24927",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1065/2026, de 26 de noviembre, por el que se desarrollan las figuras de las comunidades de energías renovables y las comunidades ciudadanas de energía.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24927",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24928",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1066/2026, de 26 de noviembre, por el que se regula la comercialización y uso de los gases fluorados de efecto invernadero, refrigerantes naturales y equipos que los contienen, y la formación de los profesionales que los manipulan.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24928",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24929",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1067/2026, de 26 de noviembre, por el que se regula la concesión directa de determinadas subvenciones en el ámbito del medio ambiente para el ejercicio presupuestario 2026.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24929",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24931",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1068/2026, de 26 de noviembre, por el que se regula la Comisión Liquidadora de Fundaciones de competencia estatal, se establece el procedimiento de liquidación a instancias del Protectorado de Fundaciones de competencia estatal, y se modifica el Reglamento de fundaciones de competencia estatal, aprobado por el Real Decreto 1337/2005, de 11 de noviembre.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24931",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24932",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1069/2026, de 26 de noviembre, por el que se aprueba el Reglamento de los Museos de titularidad estatal y del Sistema Español de Museos.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24932",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24933",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1075/2026, de 25 de noviembre, por el que se crea la Consejería de Economía y Comercio en la Misión Diplomática de España en los Estados Unidos de América, con sede en San Francisco.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24933",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24934",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1076/2026, de 25 de noviembre, por el que se crea la Agregaduría de Defensa de la Misión Diplomática Permanente de España en Japón.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24934",
+   "scope": "estatal"
+  },
+  {
+   "id": "BOE-A-2026-24935",
+   "date": "2026-11-27",
+   "title": "Real Decreto 1077/2026, de 25 de noviembre, por el que se crea la Consejería de Transición Ecológica y el Reto Demográfico en Ginebra.",
+   "kind": "real_decreto",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24935",
    "scope": "estatal"
   }
  ]
